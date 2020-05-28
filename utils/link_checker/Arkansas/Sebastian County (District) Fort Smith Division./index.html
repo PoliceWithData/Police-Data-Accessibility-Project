@@ -1,0 +1,558 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Home - District Court</title>
+    <style type="text/css">
+        <!
+        -- --
+        >
+        .style1
+        {
+            font-weight: bold;
+        }
+        .MsoNormal
+        {
+            text-align: left;
+        }
+    </style>
+    <link href="styles/CourtStyles.css" rel="stylesheet" type="text/css" />
+    <!--[if IE 5]>
+<link href="CourtStyles_IE.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+    <script src="SpryAssets/SpryValidationCheckbox.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+<!--
+        function MM_preloadImages() { //v3.0
+            var d = document; if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+            }
+        }
+
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n); return x;
+        }
+
+        function MM_nbGroup(event, grpName) { //v6.0
+            var i, img, nbArr, args = MM_nbGroup.arguments;
+            if (event == "init" && args.length > 2) {
+                if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+                    img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+                    if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+                    nbArr[nbArr.length] = img;
+                    for (i = 4; i < args.length - 1; i += 2) if ((img = MM_findObj(args[i])) != null) {
+                        if (!img.MM_up) img.MM_up = img.src;
+                        img.src = img.MM_dn = args[i + 1];
+                        nbArr[nbArr.length] = img;
+                    }
+                }
+            } else if (event == "over") {
+                document.MM_nbOver = nbArr = new Array();
+                for (i = 1; i < args.length - 1; i += 3) if ((img = MM_findObj(args[i])) != null) {
+                    if (!img.MM_up) img.MM_up = img.src;
+                    img.src = (img.MM_dn && args[i + 2]) ? args[i + 2] : ((args[i + 1]) ? args[i + 1] : img.MM_up);
+                    nbArr[nbArr.length] = img;
+                }
+            } else if (event == "out") {
+                for (i = 0; i < document.MM_nbOver.length; i++) {
+                    img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up;
+                }
+            } else if (event == "down") {
+                nbArr = document[grpName];
+                if (nbArr)
+                    for (i = 0; i < nbArr.length; i++) { img = nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+                document[grpName] = nbArr = new Array();
+                for (i = 2; i < args.length - 1; i += 2) if ((img = MM_findObj(args[i])) != null) {
+                    if (!img.MM_up) img.MM_up = img.src;
+                    img.src = img.MM_dn = (args[i + 1]) ? args[i + 1] : img.MM_up;
+                    nbArr[nbArr.length] = img;
+                }
+            }
+        }
+        function MM_swapImgRestore() { //v3.0
+            var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+        }
+        function MM_swapImage() { //v3.0
+            var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
+                if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+        }
+//-->
+    </script>
+
+    <link href="SpryAssets/SpryValidationCheckbox.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="twoColFixLtHdr" onload="MM_preloadImages('2009CourtSite/Images/OverImages_r4_c1.gif','2009CourtSite/Images/OverImages_r5_c1.gif','2009CourtSite/Images/OverImages_r6_c1.gif','2009CourtSite/Images/OverImages_r7_c1.gif','2009CourtSite/Images/OverImages_r8_c1.gif','2009CourtSite/Images/OverImages_r9_c1.gif','2009CourtSite/Images/OverImages_r10_c1.gif','2009CourtSite/Images/OverImages_r2_c3.gif','2009CourtSite/Images/OverImages_r2_c4.gif','2009CourtSite/Images/OverImages_r2_c5.gif','2009CourtSite/Images/OverImages_r2_c6.gif')">
+    <div id="container">
+        <!-- #BeginLibraryItem "/Library/SideNav.lbi" -->
+
+        <script type="text/javascript">
+<!--
+            function MM_preloadImages() { //v3.0
+                var d = document; if (d.images) {
+                    if (!d.MM_p) d.MM_p = new Array();
+                    var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+                        if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+                }
+            }
+
+            function MM_findObj(n, d) { //v4.01
+                var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                    d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+                }
+                if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+                for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+                if (!x && d.getElementById) x = d.getElementById(n); return x;
+            }
+
+            function MM_nbGroup(event, grpName) { //v6.0
+                var i, img, nbArr, args = MM_nbGroup.arguments;
+                if (event == "init" && args.length > 2) {
+                    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+                        img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+                        if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+                        nbArr[nbArr.length] = img;
+                        for (i = 4; i < args.length - 1; i += 2) if ((img = MM_findObj(args[i])) != null) {
+                            if (!img.MM_up) img.MM_up = img.src;
+                            img.src = img.MM_dn = args[i + 1];
+                            nbArr[nbArr.length] = img;
+                        }
+                    }
+                } else if (event == "over") {
+                    document.MM_nbOver = nbArr = new Array();
+                    for (i = 1; i < args.length - 1; i += 3) if ((img = MM_findObj(args[i])) != null) {
+                        if (!img.MM_up) img.MM_up = img.src;
+                        img.src = (img.MM_dn && args[i + 2]) ? args[i + 2] : ((args[i + 1]) ? args[i + 1] : img.MM_up);
+                        nbArr[nbArr.length] = img;
+                    }
+                } else if (event == "out") {
+                    for (i = 0; i < document.MM_nbOver.length; i++) {
+                        img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up;
+                    }
+                } else if (event == "down") {
+                    nbArr = document[grpName];
+                    if (nbArr)
+                        for (i = 0; i < nbArr.length; i++) { img = nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+                    document[grpName] = nbArr = new Array();
+                    for (i = 2; i < args.length - 1; i += 2) if ((img = MM_findObj(args[i])) != null) {
+                        if (!img.MM_up) img.MM_up = img.src;
+                        img.src = img.MM_dn = (args[i + 1]) ? args[i + 1] : img.MM_up;
+                        nbArr[nbArr.length] = img;
+                    }
+                }
+            }
+//-->
+        </script>
+
+        <body onload="MM_preloadImages('../Images/OverImages_r4_c1.gif','../Images/OverImages_r5_c1.gif','../Images/OverImages_r6_c1.gif','../Images/OverImages_r7_c1.gif','../Images/OverImages_r8_c1.gif','../Images/OverImages_r9_c1.gif','../Images/OverImages_r10_c1.gif')">
+            <div class="NavBar">
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            <a href="Online Services.html" target="_top" onclick="MM_nbGroup('down','group1','OnlineServices','',1)"
+                                onmouseover="MM_nbGroup('over','OnlineServices','Images/OverImages_r4_c1.gif','',1)"
+                                onmouseout="MM_nbGroup('out')">
+                                <img src="Images/SlicedImages_r4_c1.gif" alt="" name="OnlineServices" border="0"
+                                    id="OnlineServices" onload="" /></a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="GeneralInformation.html" target="_top" onclick="MM_nbGroup('down','group1','GeneralInfo','',1)"
+                                onmouseover="MM_nbGroup('over','GeneralInfo','Images/OverImages_r5_c1.gif','',1)"
+                                onmouseout="MM_nbGroup('out')">
+                                <img name="GeneralInfo" src="Images/SlicedImages_r5_c1.gif" border="0" alt="" onload="" /></a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="FAQ.html" target="_top" onclick="MM_nbGroup('down','group1','FAQ','',1)"
+                                onmouseover="MM_nbGroup('over','FAQ','Images/OverImages_r6_c1.gif','',1)" onmouseout="MM_nbGroup('out')">
+                                <img name="FAQ" src="Images/SlicedImages_r6_c1.gif" border="0" alt="" onload="" /></a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="CriminalTraffic.html" target="_top" onclick="MM_nbGroup('down','group1','CriminalTraffic','',1)"
+                                onmouseover="MM_nbGroup('over','CriminalTraffic','Images/OverImages_r7_c1.gif','',1)"
+                                onmouseout="MM_nbGroup('out')">
+                                <img name="CriminalTraffic" src="Images/SlicedImages_r7_c1.gif" border="0" alt=""
+                                    onload="" /></a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="CivilSmallClaims.html" target="_top" onclick="MM_nbGroup('down','group1','CivilSmall','',1)"
+                                onmouseover="MM_nbGroup('over','CivilSmall','Images/OverImages_r8_c1.gif','',1)"
+                                onmouseout="MM_nbGroup('out')">
+                                <img name="CivilSmall" src="Images/SlicedImages_r8_c1.gif" border="0" alt="" onload="" /></a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="CommService.html" target="_top" onclick="MM_nbGroup('down','group1','CommService','',1)"
+                                onmouseover="MM_nbGroup('over','CommService','Images/OverImages_r9_c1.gif','',1)"
+                                onmouseout="MM_nbGroup('out')">
+                                <img name="CommService" src="Images/SlicedImages_r9_c1.gif" border="0" alt="" onload="" /></a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="CourtRelatedLinks.html" target="_top" onclick="MM_nbGroup('down','group1','CourtLinks','',1)"
+                                onmouseover="MM_nbGroup('over','CourtLinks','Images/OverImages_r10_c1.gif','',1)"
+                                onmouseout="MM_nbGroup('out')">
+                                <img name="CourtLinks" src="Images/SlicedImages_r10_c1.gif" border="0" alt="" onload="" /></a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="documents/Plea Form.pdf" target="_blank" onclick="MM_nbGroup('down','group1','PleaForm','',1)"
+                                onmouseover="MM_nbGroup('over','PleaForm','','',1)" onmouseout="MM_nbGroup('out')">
+                                <img src="Images/PleaFormSlice_r2_c1.gif" alt="" name="PleaForm" width="141" height="86"
+                                    border="0" onload=""></a></td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <a href="http://www.myfinepayment.com" target="_blank">
+                                <img src="Images/fines.png" alt="" name="PleaForm" border="0" onload=""></a>
+                        </td>
+                    </tr>
+                </table> 
+            </div>
+            <!-- #EndLibraryItem -->
+            <div id="header">
+                <h1>
+                    &nbsp;</h1>
+                <!-- #BeginLibraryItem "/Library/TopNavigation.lbi" -->
+                <div id="Topnav">
+                    <a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Home','','Images/OverImages_r2_c3.gif',1)">
+                        <img src="Images/SlicedImages_r2_c3.gif" alt="Home" name="Home" width="61" height="24"
+                            border="0" id="Home" /></a><a href="LocateUs.html" onmouseout="MM_swapImgRestore()"
+                                onmouseover="MM_swapImage('LocateUs','','Images/OverImages_r2_c4.gif',1)"><img src="Images/SlicedImages_r2_c4.gif"
+                                    alt="LocateUs" name="LocateUs" width="72" height="24" border="0" id="LocateUs" /></a><a
+                                        href="ContactUs.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('ContactUs','','Images/OverImages_r2_c5.gif',1)"><img
+                                            src="Images/SlicedImages_r2_c5.gif" alt="ContactUs" name="ContactUs" width="82"
+                                            height="24" border="0" id="ContactUs" /></a><a href="SiteMap.html" onmouseout="MM_swapImgRestore()"
+                                                onmouseover="MM_swapImage('SiteMap','','Images/OverImages_r2_c6.gif',1)"><img src="Images/SlicedImages_r2_c6.gif"
+                                                    alt="SiteMap" name="SiteMap" width="92" height="24" border="0" id="SiteMap" /></a></div>
+                <!-- #EndLibraryItem -->
+                <p align="right">
+                    &nbsp;</p>
+                <p align="right">
+                    &nbsp;</p>
+                <p align="right">
+                    &nbsp;</p>
+                <p align="right">
+                    &nbsp;</p>
+                <div class="Image">
+                    <img src="Images/2ndFloorView.png" width="410" height="171" alt="View from second floor of courts building.  Photo by Skip Vincent." /></div>
+                <p align="right">
+                    &nbsp;</p>
+                <p align="right">
+                    &nbsp;</p>
+                <!-- end #header -->
+            </div>
+            <div id="mainContent">
+                <div id="bodyregion">
+                    <table width="588" align="center">
+                        <tbody>
+                            <tr>
+                                <td align="middle" 
+                                    
+                                    style="text-align: left; font-size: large; height: 25px; text-decoration: underline; color: #000066;">
+                                    <i><b>Online Fine Payment Service</b></i></td>
+                            </tr>
+                            <tr>
+                                <td align="middle" style="text-align: left">
+                                    <b>Sebastian County District Court, Fort Smith Division</b></td>
+                            </tr>
+                            <tr>
+                                <td align="middle" style="text-align: left">
+                                    <b>Court Fines &amp; Fees Online Payment Service</b></td>
+                            </tr>
+                            <tr>
+                                <td align="middle">
+                                    &nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td align="middle" style="text-align: left">
+                                   
+                                        Welcome to the court fines &amp; fees online payment service, a premium service 
+                                        provided by Court Solutions, LLC.<span style="mso-spacerun:yes">&nbsp; </span>
+                                        This site was created to give patrons of the Court an opportunity to pay court 
+                                        fines, fees and court costs online.
+                                   
+                                        <br />
+                                        <br />
+                                        Because we are a government entity, all costs associated with the convenience of 
+                                        credit card usage and bank account transfers cannot be deducted from your court 
+                                        fines, fees or court costs.<span style="mso-spacerun:yes">&nbsp; </span>
+                                        Therefore, an additional processing fee is charged when payments are made 
+                                        online.<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>Sebastian County 
+                                        District Court does not receive any portion of this convenience fee.
+                                    
+                                        Payments made online will be credited to your account within 48 hours.<span 
+                                            style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; 
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="middle" style="text-align: center">
+                                    <a href="http://www.myfinepayment.com" target="_blank">www.myfinepayment.com</a> </td>
+                            </tr>
+                            <tr>
+                                <td align="middle" style="text-align: center">
+                                    OR</td>
+                            </tr>
+                            <tr>
+                                <td align="middle" style="text-align: center">
+                                    Credit Card payments can be made over the phone by calling this toll free 
+                                    number:</td>
+                            </tr>
+                            <tr>
+                                <td align="middle" style="text-align: center">
+                                    877-591-8768</td>
+                            </tr>
+                            <tr>
+                                <td align="middle">
+                                    &nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td align="middle" 
+                                    
+                                    style="text-align: left; font-size: large; text-decoration: underline; color: #000066;">
+                                    <i><b>Online Record Search</b></i></td>
+                            </tr>
+                            <tr>
+                                <td align="middle" style="text-align: left; ">
+                                    This website provides public access to the case records of the Sebastian County 
+                                    District Court.</td>
+                            </tr>
+                            <tr>
+                                <td align="middle" style="text-align: left; ">
+                                    &nbsp;&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td align="middle" style="text-align: left; font-size: 14px">
+                    
+                                    <span style="font-size: 14px">If you have been arrested or received a citation, this website may not contain the
+                        accurate fines and costs for each charge. Mailing a payment based upon the information
+                        contained on this website, prior to entering a plea on the charge, will not prevent
+                        you from being required to appear in court. Please contact the court before mailing
+                        your payment, if you have not already done so, to ensure the information contained
+                        on your record is complete and correct. </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="middle" style="text-align: left; font-size: large" valign="top">
+                                    &nbsp;&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td align="middle">
+                                    <p align="center">
+                                        <strong>Acceptance of the following agreement is required to continue. </strong>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table width="595" height="721" border="3" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td width="700" align="left" valign="top" bgcolor="#CCCCCC">
+                                <p>
+                                    In Arkansas, laws exist to ensure that District Court records are open and that
+                                    the public has access to appropriate records and information in its possession.
+                                    At the same time, both state and federal laws provide exceptions that serve various
+                                    needs, including the privacy of individuals.
+                                </p>
+                                <p>
+                                    While much information is made available to the public through this site, some information
+                                    may be restricted. All of the information collected at this site becomes a public
+                                    record that may be subject to inspection and copying by members of the public, unless
+                                    an exemption in law exists.
+                                </p>
+                                <p>
+                                    The information available through the Sebastian County District Court's (SCDC) database
+                                    may be limited in SCOPE (extent of information available), HISTORY (years of available
+                                    information), and RELIABILITY (general accuracy of information).
+                                </p>
+                                <p>
+                                    I. Scope of Information
+                                    <br />
+                                    Information is available on all civil, traffic, and criminal cases that occurred
+                                    within the city limits of Fort Smith. This information includes defendant name,
+                                    city and state, case number, date of birth, plaintiff name (civil cases only), trial
+                                    date, charge, and case disposition.
+                                </p>
+                                <p>
+                                    II. Historical Information
+                                </p>
+                                <p>
+                                    All information contained in the SCDC database are cases that originated in the
+                                    City of Fort Smith. The SCDC database only includes some criminal and traffic charges
+                                    filed between 1984 and 1993 and all criminal and traffic charges filed from 1993
+                                    to present. The SCDC database also includes Civil and Small Claims filed from 1993
+                                    to present.
+                                </p>
+                                <p>
+                                    III. Reliability of Information.</p>
+                                <p>
+                                    This site reflects the electronic record of the cases presented and may not always
+                                    reflect the information maintained within the official case file. The data may not
+                                    be reliable in the sense that further action may occur in the case that would affect
+                                    the record.
+                                    <br />
+                                    If you believe information provided is inaccurate, please send written notice to
+                                    the Sebastian County District Court at the following address:<br />
+                                </p>
+                                <p>
+                                    Sebastian County District Court<br />
+                                    901 S. B Street, Suite 103<br />
+                                    Fort Smith, AR 72901
+                                </p>
+                                <p>
+                                    Note: Requests for corrections will not be accepted by telephone. The Sebastian
+                                    County District Court, its agencies, officers, or employees do not guarantee the
+                                    accuracy, reliability or timeliness of any information contained in this system.
+                                    Users rely on this information at their own risk.
+                                </p>
+                                <strong><em>By clicking continue, you will be re-directed to the Sebastian County website
+                                    which maintains the online records for the District Court of Sebastian County, Fort
+                                    Smith Division.</em></strong>
+                                <form action="http://s10a9602.co.sebastian.ar.us:2060/webaccess/iWA5250?access=*PUBLIC&sessname=SCWebSessA" method="post" name="form3" target="_self" id="form3">
+                                <label>&nbsp;</label><table style="width: 100%">
+                                    <tr>
+                                        <td colspan="2">
+        <label>
+  <span id="sprycheckbox1">
+  <input type="checkbox" name="Accept" id="Accept" />
+  <span class="checkboxRequiredMsg">You must agree to the terms.</span></span>I have read, understand and agree to the terms, conditions, and limitations noted above.<br />
+  <em><strong>I also understand the password may change at anytime and I will need to refer to the instructions for updates. 
+        </strong></em></label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" style="width: 446px; height: 184px">
+                                            <table style="width: 100%">
+                                                <tr>
+                                                    <td>
+        <label>
+          <input type="submit" name="Submit" id="Submit" value="Continue to Record Search" /></label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        &nbsp;&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                        <a href="OnLineInstructions.html" target="_blank">Click Here for Instructions on how
+                            to use the Online site</a></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td style="background-image:url('images/usernamebg.png'); height: 184px;" 
+                                            valign="top" width="50%">
+                                            <table style="width: 100%">
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <span style="color: #FFFFFF">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        &nbsp;&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        &nbsp;&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="height: 20px">
+                                                        &nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+&nbsp;</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="style1" 
+                                                        style="text-align: right; font-size: medium; color: #FFFFFF; width: 113px">
+                                                        User name:</td>
+                                                    <td style="font-size: medium; color: #FFFFFF">
+                                                        <b>public</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="style1" 
+                                                        style="text-align: right; font-size: medium; color: #FEFFFF; height: 23px; width: 113px">
+                                                        Password:</td>
+                                                    <td style="font-size: medium; color: #FEFFFF; height: 23px">
+                                                        <b>password</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        &nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+      </form>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <h1>
+                    <!-- end #mainContent -->
+                </h1>
+            </div>
+            <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+            <br class="clearfloat" />
+            <div id="footer">
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <center>
+                    <h6>
+                        District Court of Sebastian County maintains this Web site in order to increase
+                        public access to district court information. The information is not intended to
+                        be a source of legal advice. This web site is not sponsored or associated with any
+                        other linked entity. The existence of any link is simply intended to make other
+                        resources available to the reader. This Court does not guarantee the accuracy or
+                        sources of any information found on any such web sites. While the Web site is constantly
+                        updated and revised in an effort to provide timely and accurate information, we
+                        make no guarantees. We will make every attempt to correct errors as they are brought
+                        to our attention.</h6>
+                    <h6>
+                        This Web site contains information originating from other organizations and departments,
+                        both public and private. While every attempt is made to ensure that all information
+                        is accurately referenced on our site, we do not guarantee the accuracy, timeliness
+                        or quality of the content of every source.
+                    </h6>
+                    <h6>
+                        Content authored by Rachel Sims, District Court Clerk. Site designed by Laurie Burnett,
+                        Webmaster.<br />
+                        If you have any problems navigating this web site, please contact the <a href="mailto:webmaster@fortsmithar.gov">
+                            Webmaster</a>.
+                        <br />
+                        Photos courtesy of Skip Vincent.
+                        <br />
+                    </h6>
+                </center>
+                <h6>
+                    &nbsp;</h6>
+            </div>
+            <!-- end #container -->
+    </div>
+
+    <script type="text/javascript">
+<!--
+        var sprycheckbox1 = new Spry.Widget.ValidationCheckbox("sprycheckbox1");
+//-->
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,680 @@
+﻿<!DOCTYPE html>
+<html lang="en"> 
+
+<!-- #BeginTemplate "beta/layout_basic_nav.dwt" -->
+
+<head>
+<!--BeginNoIndex-->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<!--EndNoIndex-->
+<!-- #BeginEditable "doctitle" -->
+
+<title>Case Look-up CT Judicial Branch</title>
+
+<!-- #EndEditable -->
+
+<link href="external/super/E-Services/Nav/CSS_Nav/menu_source/styles.css" rel="stylesheet" type="text/css">
+
+<!--THE JQUERY-1.9.1.MIN.JS FILE NEEDS TO BE FIRST-->
+<script src="features/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<!--THE JQUERY-UI-1.10.3.MIN.JS FILE SHOULD BE RIGHT AFTER JQUERY-1.9.1.MIN.JS-->
+<script src="features/js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
+
+<script type='text/javascript' src="external/super/E-Services/Nav/CSS_Nav/menu_source/menu_jquery.js"></script>
+
+<!--START OF TABS CONTROL-->
+<link rel="stylesheet" href="beta/new/master/stylesheets/jquery_tabs.css" type="text/css" media="all" >
+<script>
+	$(document).ready(function () {
+		$( "#tabs" ).tabs();
+		/*This code gets and displays the url of the selected tab in the address bar
+		$('#tabs ul li a').click(function () {location.href = $(this).attr('href');});*/
+	});
+</script>
+<!--END OF TABS CONTROL-->
+
+<!--START OF SLIDER CONTROL-->
+<script src="features/js/jquery.slides.js"></script>
+	<script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 800,
+        height: 300,
+        play: {
+          active: true,
+          auto: true,
+          interval: 7500,
+          effect: "fade",
+          swap: true
+        }
+      });
+    });
+  </script>
+ <!--END OF SLIDER CONTROL-->
+
+
+<!-- #BeginEditable "description" --> 
+
+<meta name="DESCRIPTION" content=" "> 
+<!-- #EndEditable -->  
+
+<!-- #BeginEditable "keywords" -->
+<meta name="KEYWORDS" content=" ">
+
+
+<!-- #EndEditable --> 
+
+
+<meta http-equiv="content-style-type" content="text/css">
+
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<!--<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1"/>-->
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=2">
+
+<script type="text/javascript" src="beta/new/accordion/ddaccordion.js"></script>
+
+<link href="beta/new/master/stylesheets/jud.css" rel="stylesheet" type="text/css">
+<link href="beta/new/master/stylesheets/layout.css" rel="stylesheet" type="text/css">
+<link href="beta/new/master/stylesheets/printStyle.css" media="print" rel="stylesheet" type="text/css">
+<link href="beta/new/master/stylesheets/social.css" rel="stylesheet" type="text/css">
+<link href="beta/new/master/stylesheets/redbutton.css" rel="stylesheet" type="text/css">
+
+
+<!--[if IE]> 
+<link rel="stylesheet" media="screen" type="text/css" href="beta/new/master/stylesheets/ie-jud.css">
+<link rel="stylesheet" media="screen" type="text/css" href="beta/new/master/stylesheets/ie-layout.css">
+<link href="beta/new/master/stylesheets/printStyle.css" media="print" rel="stylesheet" type="text/css">
+<![endif]-->
+
+<!--[if IE 9]>
+	
+<link href="beta/new/master/stylesheets/jud.css" rel="stylesheet" type="text/css">
+<link href="beta/new/master/stylesheets/layout.css" rel="stylesheet" type="text/css">
+<link href="beta/new/master/stylesheets/printStyle.css" media="print" rel="stylesheet" type="text/css">
+<![endif]-->
+
+
+<!-- START OF ACCORDION CONTROL -->
+<script type="text/javascript">
+
+ddaccordion.init({
+	headerclass: "submenuheader", //Shared CSS class name of headers group
+	contentclass: "submenu", //Shared CSS class name of contents group
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+	defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["", ""], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["suffix", "<img src='http://www.jud.ct.gov/beta/accordion/plus_y4.gif' alt='more' class='statusicon' />", "<img src='http://www.jud.ct.gov/beta/accordion/minus_y4.gif' alt='less' class='statusicon' />"], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "normal", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+</script>
+<!-- END OF ACCORDION CONTROL -->
+
+<style type="text/css">
+
+
+.glossymenu{
+	border-bottom-width: 0;
+	border-style: none;
+	border-width: thin;
+	border-color: #9eb8fb;
+	margin: 5px 0;
+	padding: 0;
+	/*width: 170px;*/ /*width of menu*/;
+	background-color: #FEF8E5;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.glossymenu a.menuitem{
+	background: #1F3776 repeat-x left bottom;
+	font: bold .8em Arial, Helvetica, sans-serif;
+	color: white;
+	display: block;
+	position: relative; /*To help in the anchoring of the ".statusicon" icon image*/;
+	width: auto;
+	padding: 5px 0;
+	padding-left: 6px;
+	text-decoration: none;
+	text-align: left;
+}
+.glossymenu a.menuitem:visited, .glossymenu .menuitem:active{
+	color: white;
+}
+.glossymenu a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	border: none;
+}
+.glossymenu a.menuitem:hover{
+	background: #cfc0a7;
+}
+.glossymenu div.submenu{ /*DIV that contains each sub menu*/
+	background: #fef8e5;
+	border-right: 1px #1f3776;
+}
+.glossymenu div.submenu ul{ /*UL of each sub menu*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.glossymenu div.submenu ul li{
+	border-bottom: 1px #9EB8FB solid;
+	border-right-color: #1f3776;
+	border-right-width: 1px;
+}
+.glossymenu div.submenu ul li a{
+	border-color: #9eb8fb;
+	display: block;
+	font: normal 0.8em Arial, Helvetica, sans-serif;
+	color: black;
+	text-decoration: none;
+	padding-left: 8px;
+	background-color: #fef8e5;
+	padding-right: 0;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.glossymenu div.submenu ul li a:hover{
+	background: #CFC0A7;
+	color: black;
+}
+.image {
+	border-width: 0px;
+	padding-top:5px;
+	padding-left:7px;
+}
+
+</style>
+<!-- accordion -->
+
+
+<style type="text/css">
+
+body {
+	font-size: 1em;
+}
+A:hover {color: #CC0000;}
+
+p {
+	font-family:Arial, Helvetica, sans-serif; font-size:1em; line-height:18px;
+}
+h1 {
+	font-family:"Times New Roman", Times, serif;font-size:24px; font-weight:bold; color:#1f3776;
+}
+h2 {
+	font-family:Arial, Helvetica, sans-serif; color:#CC0000; font-size:19px; font-weight:bold;
+}
+h3 {
+font-family:Arial, Helvetica, sans-serif; color: #1f3776; font-weight:bold; font-size:16px;
+
+}
+
+</style>
+
+
+<style type="text/css">
+
+
+.class1_links a:link    {color:blue;}
+.class1_links a:visited {color:#7A5A5B}
+.class1_links a:hover   {color:#CFC0A7;}
+
+.class2_links a:link    {color:white;}
+.class2_links a:visited {color:white}
+.class2_links a:hover   {color:#CFC0A7;}
+.class2_links a:active  {color:white;}
+
+</style>
+</head>
+
+
+
+<body>
+<!--BeginNoIndex-->
+<div id="skip">
+<a href="#page_content_new">Skip to Main Content</a>
+</div>
+<div id="masthead"><a id="top"></a>
+	
+<div class="banner">
+	<a href="../index.asp">
+	<img alt="Connecticut Judicial Branch" src="imgs/banner_seal8.jpg" id="banner" style="border:0px black none"></a>
+	
+   <!-- banner links begin -->
+<div id="banner_links2">
+	<span class="class2_links" style="float:right; padding-right:10px; margin-right:0px; font-size :1.1em; font-variant:small-caps; text-align:right">
+	<a href="espanol.htm">espa&ntilde;ol</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="polski.htm">polski</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="portugues.htm">portugu&ecirc;s
+	</a><br></span>
+	
+	<span id="search2" style="float:right; clear:both; padding-top:5px">
+		<form name="seek" method="get" action="/Search/JudSearch.aspx">
+                            <input type="hidden" name="col" value="allconn">
+                            <input type="hidden" name="qp1" value="url:www.jud.ct.gov">
+                            <input type="hidden" name="ws" value="0">
+                            <input type="hidden" name="qm" value="0">
+                            <input type="hidden" name="st" value="1">
+                            <input type="hidden" name="nh" value="20">
+                            <input type="hidden" name="lk" value="1">
+                            <input type="hidden" name="rf" value="0">
+                            <input type="hidden" name="rq" value="0">
+                            <input type="hidden" name="qp2" value="url:www.jud.ct.gov">
+                            <input type="hidden" name="qp3" value="url:www.jud.ct.gov">
+                            <input type="hidden" name="qp" value="url.www.jud.ct.gov">
+                            <input type="hidden" name="SinglePane" value="Y">          										
+                        <input id="search_box" type="text" title="Search" name="qt" size="28" value="Search" onFocus="if(this.value == 'Search') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Search';}" maxlength="2047">
+
+							       
+            							       
+            </form></span>
+            </div>
+            
+<div class="mission2">
+The mission of the Connecticut Judicial Branch is to serve the interests of justice and the public by resolving matters brought before it in a fair, timely, efficient and open manner.</div>
+<div id="rule1"></div>
+<div id="rule2"></div> 
+<!-- mission statement ends -->
+
+<!-- mobile menu begins -->
+
+<div id="mobile_menu">
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='http://jud.ct.gov/'><span>Home</span></a></li>
+<!--   <li class='has-sub'><a href='../external/super/altdisp.htm'><span>Alternative Dispute Resolution (ADR)</span></a> -->
+   <li class='has-sub'><a href='ADA/'><span>Americans with Disabilities (ADA)</span></a>
+   <li class='has-sub'><a href='jud2.htm'><span>Case Look-up</span></a>
+   <li class='has-sub'><a href='CSC/'><span>Court Service Centers</span></a>
+   <li class='has-sub'><a href='courts.htm'><span>Courts</span></a>
+   <li class='has-sub'><a href='directories.htm'><span>Directories</span></a>
+   <li class='has-sub'><a href='divorce.htm'><span>Divorce</span></a>
+   <li class='has-sub'><a href='external/super/E-Services/efile/'><span>E-Services</span></a>
+   <li class='has-sub'><a href='webforms/'><span>Forms</span></a>
+   <li class='has-sub'><a href='faq/'><span>Frequently Asked Questions</span></a>
+   <li class='has-sub'><a href='lawlib/'><span>Law Libraries</span></a>
+   <li class='has-sub'><a href='LEP/'><span>Limited English Proficiency (LEP)</span></a>
+   <li class='has-sub'><a href='decisions.htm'><span>Opinions</span></a>
+   <li class='has-sub'><a href='opportunities.htm'><span>Opportunities</span></a>
+   <li class='has-sub'><a href='selfhelp.htm'><span>Self-Help</span></a>
+   <li class='has-sub'><a href='statistics/'><span>Statistics / Reports</span></a>
+   <li class='last'><a href='https://www.jud2.ct.gov/cibepay/'><span>Traffic Tickets</span></a></li>
+</ul>
+</div>  
+</div>
+<!-- mobile menu ends -->
+
+</div>
+
+
+<div id="container">
+<div class="nav">
+<div id="left_col_new">
+
+
+<!-- accordion menu begins -->	
+<!--webbot bot="Include" TAG="BODY" U-Include="beta/accordion/accordion.htm" startspan -->
+
+
+<!-- HOME BUTTON -->
+
+		<a class="litetanbtn" href="./" style="text-decoration:none; font-size:0.8em; margin:30px 5px 3px 5px;">Judicial&nbsp;HOME</a>
+
+<!-- end BUTTON -->
+
+
+<div class="navigation" style="margin-top:6px;">
+<div class="glossymenu">
+
+
+<a class="menuitem" style="line-height:145%;" href="ADA/default.htm">Americans with Disabilities (ADA)</a>
+	
+
+<a class="menuitem submenuheader" href="/jud2.htm">Case Look-up</a>
+<div class="submenu">
+	<ul>
+	<li><a href="/jud2.htm"><strong>Case Look-up Home</strong></a></li>
+	<li><a href="http://appellateinquiry.jud.ct.gov/">Supreme and Appellate</a></li>
+	<li><a href="http://civilinquiry.jud.ct.gov/">Civil / Family / Housing / Small Claims</a></li>
+	<li><a href="/crim.htm">Criminal / Motor Vehicle</a></li>
+	<li><a href="/housing.htm">Housing Sessions</a></li>
+	<li><a href="http://www.jud2.ct.gov/Small_Claims/">Centralized Small Claims Case Look-up</a></li>
+
+	</ul>
+</div>
+
+
+<a class="menuitem" href="csc/default.htm">Court Service Centers</a>
+
+
+
+<a class="menuitem submenuheader" href="courts.htm">Courts</a>
+<div class="submenu">
+	<ul>
+	<li><a href="courts.htm"><strong>Courts Home</strong></a></li>
+	<li><a href="supremecourt/">Supreme Court</a></li>
+	<li><a href="appellatecourt/">Appellate Court</a></li>
+	<li><a href="superiorcourt/">Superior Court</a></li>
+	<li><a href="http://www.ctprobate.gov">Probate Court</a></li>
+	</ul>
+</div>
+
+<a class="menuitem" href="directory/court_directions.htm">Directions</a>
+
+<a class="menuitem submenuheader" href="directories.htm">Directories</a>
+<div class="submenu">
+	<ul>
+	<li><a href="directories.htm"><strong>Directories Home</strong></a></li>
+	<li><a href="directory/JudDir.pdf#page=30">Administration - PDF</a></li>
+	<li><a href="directory/directory/adultprob.htm">Adult Probation</a></li>
+	<li><a href="directory/directory/bail_services.htm">Bail Services</a></li>
+	<li><a href="csc/loc.htm">Court Service Centers</a></li>
+	<li><a href="CSSD/directory.htm">Court Support Services</a></li>
+	<li><a href="directory/directory/family.htm">Family Services</a></li>
+	<li><a href="http://www.jud2.ct.gov/judsearch/fsm.asp">Family Support Magistrates</a></li>
+	<li><a href="directory/directory/ga/Default.htm">Geographical Areas</a></li>
+	<li><a href="directory/directory/housing.htm">Housing</a></li>
+	<li><a href="http://www.jud2.ct.gov/judsearch/">Judges</a></li>
+	<li><a href="directory/directory/location/Default.htm">Judicial Districts</a></li>
+	<li><a href="directory/directory/juvdet.htm">Juvenile Detention</a></li>
+	<li><a href="directory/JudDir.pdf#page=135">Juvenile Matters - PDF</a></li>
+	<li><a href="directory/directory/juvprob.htm">Juvenile Probation</a></li>
+	<li><a href="lawlib/staff.htm">Law Libraries</a></li>
+	<li><a href="directory/Magistrates_SCMV.pdf">Magistrates - PDF</a></li>
+	<li><a href="http://www.ctprobate.gov/Pages/Directory.aspx">Probate Courts</a></li>
+	<li><a href="directory/directory/smallclaims.htm">Small Claims</a></li>
+	<li><a href="http://www.jud2.ct.gov/empsearch">Staff Phone Directory</a></li>
+	<li><a href="faq3/marshals.htm">State Marshals</a></li>
+	<li><a href="childsupport/directory.htm">Support Enforcement</a></li>
+	</ul>
+</div>
+
+<a class="menuitem" href="forms/grouped/family/divorce.htm">Divorce</a>
+
+<a class="menuitem" href="external/super/E-Services/efile/">E-Services</a>
+
+<a class="menuitem submenuheader" href="faq/">FAQs</a>
+<div class="submenu">
+	<ul>
+	<li><a href="faq/"><strong>FAQ Home</strong></a></li>
+	<li><a href="faq/attorney.html">About Attorneys</a></li>
+	<li><a href="external/news/Adult_vs_Juvenile_charges.pdf#page=1">Adult &amp; Juvenile Offenses for 16-yr olds - PDF</a></li>
+	<li><a href="faq/adultprob.html">Adult Probation</a></li>
+	<li><a href="ADA/faq.htm">Americans with Disabilities Act</a></li>
+	<li><a href="cssd/bail_faq.htm">Bail</a></li>
+	<li><a href="childsupport/faq_eng.htm">Child Support</a></li>
+	<li><a href="faq/LawJournal.htm">Connecticut Law Journal</a></li>
+	<li><a href="faq/courtrec.html">Court Records</a></li>
+	<li><a href="faq/family.htm#Divorce">Divorce</a></li>
+	<li><a href="faq/DOJ.htm">DOJ Civil Rights Complaints</a></li>
+	<li><a href="faq/DomViolence.htm">Domestic Violence</a></li>
+	<li><a href="external/super/E-Services/efile/efile-faq.pdf#page=1">E-filing FAQs - PDF</a></li>
+	<li><a href="forms/grouped/family/family.htm">Family</a></li>
+	<!--<li><a href="../../faq/family.htm">Family Matters</a></li>
+	<li><a href="../../CSSD/family-faq.htm">Family Services</a></li> -->
+	<li><a href="foreclosure/">Foreclosure Mediation</a></li>
+	<li><a href="faq/judge_complaint.html">How can I complain about a judge?</a></li>
+	<li><a href="jury/faq.htm">Jury Service</a></li>
+	<li><a href="juvenile/default.htm">Juvenile Matters Links</a></li>
+	<li><a href="CSSD/juvprob_faq.htm">Juvenile Probation</a></li>
+	<li><a href="CSSD/JuvRes_faq.htm">Juvenile Residential Services</a></li>
+	<li><a href="faq/landlord.html">Landlord/Tenant/ Housing</a></li>
+	<li><a href="LEP/faq.htm">Language Help (LEP)</a></li>
+	<li><a href="lawlib/faqs.htm">Law Libraries FAQs</a></li>
+	<li><a href="clinics/">Legal Clinics and Help</a></li>
+	<li><a href="faq/LegalNotices.htm">Legal Notices by Publication</a></li>
+	<li><a href="external/media/faq.htm">Media </a></li>
+	<li><a href="mcle/MCLE_FAQs.htm">Minimum Continuing Legal Education</a></li>
+	<li><a href="https://www.jud.ct.gov/odr/ODR_FAQs.htm">Online Dispute Resolution</a></li>
+	<li><a href="https://jud.ct.gov/PREA/">Prison Rape Elimination Act (PREA)</a></li>
+	<li><a href="http://www.ctprobate.gov/Pages/FAQs.aspx">Probate Court</a>
+	<li><a href="faq/represent.html">Representing Yourself</a></li>
+	<li><a href="faq/smallclaims.html">Small Claims</a></li>
+	<li><a href="faq/traffic.html">Traffic Violations</a> </li>
+	<li><a href="crimevictim/compensation.htm#FAQs">Victim Services</a></li>
+	<li><a href="CSSD/default.htm">What is CSSD?</a></li>
+	</ul>
+</div>
+
+<a class="menuitem" href="webforms/">Forms</a>
+
+
+<a class="menuitem submenuheader" href="lawlib/">Law Libraries</a>
+<div class="submenu">
+	<ul>
+	<li><a href="lawlib/"><strong>Law Libraries Home</strong></a></li>
+	<li><a href="lawlib/contactus.htm">Ask a Librarian</a></li>
+	<li><a href="lawlib/history/">Doses of CT Legal History</a></li>
+	<li><a href="lawlib/staff.htm">Find a Library</a></li>
+	<li><a href="lawlib/how.htm">How do I?</a></li>
+	<li><a href="lawlib/law/">Law by Subject</a></li>
+	<li><a href="lawlib/faqs.htm">Law Libraries FAQs</a></li>
+	<li><a href="http://jud.ct.gov/LawLib/LawLibNews/">NewsLog</a></li>
+	<li><a href="lawlib/publicrecords.htm">Public Records Online</a></li>
+	<li><a href="lawlib/SRP/">Representing Yourself</a></li>
+	<li><a href="lawlib/selfguides.htm">Research Guides</a></li>	
+	</ul>
+</div>
+
+<a class="menuitem" style="line-height:145%" href="http://civilinquiry.jud.ct.gov/LegalNoticeList.aspx ">Legal Notices</a>
+
+<a class="menuitem" style="line-height:145%" href="LEP/">Limited English Proficiency (LEP)</a>
+
+<a class="menuitem" style="line-height:145%" href="MCLE/">Minimum Continuing Legal Education (MCLE)</a>
+
+<a class="menuitem submenuheader" href="opinions.htm">Opinions</a>
+<div class="submenu">
+	<ul>
+	<li><a href="opinions.htm"><strong>Opinions Home</strong></a></li>
+	<li><a href="external/supapp/aro.htm#Supreme">Supreme Court</a></li>
+	<li><a href="external/supapp/aro.htm#Appellate">Appellate Court</a></li>
+	<li><a href="sgc/Adv_opinions/default.htm">Attorney Advertising</a></li>
+	<li><a href="lawjournal">Connecticut Law Journal</a></li>
+	<li><a href="Committees/ethics/opinions.htm">Ethics Advisory</a></li>
+	<li><a href="lawlib/fsm.htm">Family Support Magistrate Decisions</a></li>
+	<li><a href="http://jud.ct.gov/sgcdecisions/">Grievance Decisions</a></li>
+	<li><a href="external/super/Tax/recent.htm">Tax Decisions</a></li>
+	</ul>
+</div>
+	
+<a class="menuitem submenuheader" href="opportunities.htm">Opportunities</a>
+<div class="submenu">
+	<ul>
+	<li><a href="opportunities.htm"><strong>Opportunities Home</strong></a></li>
+	<li><a href="external/news/busopp/Default.htm">Bid Opportunities</a></li>
+	<li><a href="courtaide/">Court Aide</a></li>
+	<li><a href="elp/">Experiential Learning Programs</a></li>
+	<li><a href="external/news/jobs/">Job Openings</a></li>
+	<li><a href="Education/JS/default.htm">Job Shadow</a></li>
+	<li><a href="vol/default.htm">Volunteer Program</a></li>
+	</ul>
+</div>
+
+<a class="menuitem submenuheader" href="selfhelp.htm">Self-Help</a>
+<div class="submenu">
+	<ul>
+	<li><a href="selfhelp.htm"><strong>Self-Help Home</strong></a></li>
+	<li><a href="legalterms.htm">Common Legal Words</a></li>
+	<li><a href="pb.htm">Court Rules</a></li>
+	<li><a href="csc/">Court Service Centers</a></li>
+	<li><a href="webforms/">Forms</a></li>
+	<li><a href="howdoi.htm">How Do I?</a></li>
+	<li><a href="lawlib/">Law Libraries</a></li>
+	<li><a href="clinics/">Legal Clinics and Help</a></li>
+	<li><a href="pid/">Public Information Desks</a></li>
+	<li><a href="pub.htm">Publications/Videos</a></li>
+	<li><a href="faq3/represent.html">Representing Yourself</a></li>
+	<li><a href="faq3/smallclaims.html">Small Claims</a></li>
+	<li><a href="directory/directory/directions/Default.htm">Where to File</a></li>
+	</ul>
+</div>
+
+<a class="menuitem submenuheader" href="Statistics/">Statistics / Reports</a>
+<div class="submenu">
+	<ul>
+	<li><a href="statistics/"><strong>Statistics Home</strong></a></li>
+	<li><a href="statistics/probation/">Adult Probation</a></li>
+	<li><a href="statistics/Fail_to_appear.htm">Arrest Warrants</a></li>
+	<li><a href="cbec/stats.htm">Bar Examination</a></li>
+	<li><a href="statistics/civil">Civil Cases</a></li>
+	<li><a href="HomePDFs/CivilGideon.pdf">Civil Gideon Pilot Program Report</a></li>
+	<li><a href="statistics/criminal">Criminal / Motor Vehicle</a></li>
+	<li><a href="statistics/DUI/">DUI Cases</a></li>
+	<li><a href="statistics/family/">Family Cases</a></li>
+	<li><a href="family/Family_Court_Reports.html">Family Court Reports</a></li>
+	<li><a href="statistics/reports/fiscal/">Fiscal Reports</a></li>
+	<li><a href="statistics/fmp/">Foreclosure Mediation</a></li>
+	<li><a href="statistics/housing/">Housing Matters</a></li>
+	<li><a href="statistics/interpreter/">Interpreter Services</a></li>
+	<li><a href="statistics/jury/">Jury Administration</a></li>
+	<li><a href="statistics/juvenile/">Juvenile Cases</a></li>
+	<li><a href="statistics/juvdet/">Juvenile Detention</a></li>
+	<li><a href="statistics/prot_restrain/">Protective / Restraining Orders</a></li>
+	<li><a href="statistics/smallclaims/">Small Claims Cases</a></li>
+	<li><a href="HomePDFs/StateoftheJudiciary_Report.pdf#page=1">State of the Judiciary Report</a></li>
+	</ul>
+</div>
+
+<a class="menuitem" href="https://www.jud2.ct.gov/cibepay/">Traffic Tickets</a>
+
+	
+</div>
+
+
+<!-- CT Savin -->
+<div style="margin:5px;">
+		<a class="litetanbtn" href="https://vinelink.vineapps.com/search/CT" style="text-decoration:none; font-size:0.9em">&nbsp;&nbsp;CT&nbsp;SAVIN&nbsp;&nbsp;</a>
+</div>
+<!-- end CT Savin -->
+
+
+
+<!-- icons begin -->
+<div id="icons" style="margin:15px 10px 10px 10px;">
+	<a style="font-family:socicon; color:white; text-decoration:none; padding:10px; font-size:2.1em" href="https://twitter.com/ctstatecourts" title="Follow us on Twitter">a</a>&nbsp;  <a style="font-family:socicon; color:white; text-decoration:none; font-size:2.1em;" href="https://www.youtube.com/user/ctjudicialbranch" title="See our videos on YouTube">r</a>
+</div>
+<!-- icons end -->
+
+
+
+<!--webbot bot="Include" endspan i-checksum="39628" --></div></div>
+<!-- accordion menu ends -->
+
+			
+<!--EndNoIndex-->	
+<div id="page_content_new">
+<!-- #BeginEditable "page_content" -->
+	
+	
+
+<!-- accordion menu ends -->
+
+			
+		
+		
+
+	
+		
+<br>
+		
+		
+					
+			
+	<div id="subcat_banner">
+			&nbsp;
+			Case Look-up</div>
+		
+	<div id="img.left">		
+		<img alt="New Britain Superior Court" src="imgs/caselookup2_NB.jpg" style="float:left; padding-right:2%; width: 28%"><span class="text"><br>  </span>
+	<span class="text_large" style="line-height:175%">This section of 
+		the website provides users with information about Supreme and Appellate, civil, family, 
+		criminal, motor vehicle, housing, and small claims cases.</span><br><br>
+		
+		<span  class="text_large" style="line-height:220%">
+		<a href="http://appellateinquiry.jud.ct.gov">Supreme and Appellate Court Case Look-up</a><br>
+		<a href="http://civilinquiry.jud.ct.gov/">Superior Court Case Look-up</a><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://civilinquiry.jud.ct.gov">Civil / Family / Housing/ Small 
+		Claims </a><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="crim.htm">Criminal / Motor Vehicle</a><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="housing.htm">Housing Session</a><br>
+		<a href="SmallClaims.htm#CSC_Case_Look-up">Centralized Small Claims Case Look-up</a></span>
+</div>
+	
+
+		
+		
+<br class="line_br">
+<br class="line_br">
+<br class="line_br">
+<br class="line_br">
+<br class="line_br">
+
+			
+<div class="feature_links_home_480" style="width:19%">
+	<a href="topics.htm" class="decoration_none">
+	<span class="tan_text">Topic Search</span></a>
+</div>
+<div class="feature_links_home_480" style="width:19%">
+	<a href="sitemap.htm" class="decoration_none">
+	<span class="tan_text">Site Map</span></a>
+</div>
+<div class="feature_links_home_480" style="width:19%">
+	<a href="contactus.htm" class="decoration_none">
+	<span class="tan_text">Contact Us</span></a>
+</div>
+<div class="feature_links_home_480" style="width:19%">
+	<a href="disclaimer.htm" class="decoration_none">
+	<span class="tan_text">Disclaimer</span></a>
+	</div>
+<div class="feature_links_home_480" style="width:19%">
+	<a href="index.asp" class="decoration_none">
+	<span class="tan_text">Home</span></a>
+	</div>
+	
+		
+	
+		
+		
+	
+	
+	
+	
+	
+	<!-- #EndEditable -->
+	</div>
+	
+	
+	
+<!--BeginNoIndex-->
+<div id="footer">
+<div class="footer">
+<span class="class3_links">
+	<br>	
+	<a href="../index.asp">Home</a>&nbsp; |&nbsp;
+	<a href="../legalterms.htm">Common Legal Words</a>&nbsp; |&nbsp; 
+	<a href="../contactus.htm">Contact Us</a>&nbsp; |&nbsp; 
+	<a href="../rellinks.htm">Related Links</a>&nbsp; |&nbsp; 
+	<a href="../sitemap.htm">Site Index</a>&nbsp; |&nbsp; 
+	<a href="../awards.htm">Website Awards</a>&nbsp; |&nbsp; 
+	<a href="../policies.htm">Policies and Disclaimers</a>&nbsp; |&nbsp; 
+	<a href="http://ct.gov">CT.gov</a>&nbsp;	|&nbsp; 
+	<a href="http://www.ct.gov/ocpd/site/default.asp">Public Defender Services</a><br>
+	Connecticut Judicial Branch &copy; 2017</span></div>
+</div></div></div>
+<!--EndNoIndex-->
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

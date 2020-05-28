@@ -1,0 +1,472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"5b3b1abfe1",applicationID:"244531511"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="/case-index-lookup" />
+<link rel="shortlink" href="/node/32" />
+<link rel="shortcut icon" href="https://www.stanct.org/sites/all/themes/stanislaus_court/favicon.ico" type="image/vnd.microsoft.icon" />
+  <title>Case Index Lookup | stanislaus court</title>
+  <style type="text/css" media="all">
+@import url("https://www.stanct.org/modules/system/system.base.css?qb05gm");
+@import url("https://www.stanct.org/modules/system/system.menus.css?qb05gm");
+@import url("https://www.stanct.org/modules/system/system.messages.css?qb05gm");
+@import url("https://www.stanct.org/modules/system/system.theme.css?qb05gm");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.stanct.org/sites/all/modules/contrib/colorbox_node/colorbox_node.css?qb05gm");
+@import url("https://www.stanct.org/modules/comment/comment.css?qb05gm");
+@import url("https://www.stanct.org/sites/all/modules/contrib/date/date_api/date.css?qb05gm");
+@import url("https://www.stanct.org/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?qb05gm");
+@import url("https://www.stanct.org/sites/all/modules/contrib/date/date_repeat_field/date_repeat_field.css?qb05gm");
+@import url("https://www.stanct.org/modules/field/theme/field.css?qb05gm");
+@import url("https://www.stanct.org/modules/node/node.css?qb05gm");
+@import url("https://www.stanct.org/modules/search/search.css?qb05gm");
+@import url("https://www.stanct.org/modules/user/user.css?qb05gm");
+@import url("https://www.stanct.org/sites/all/modules/contrib/views/css/views.css?qb05gm");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.stanct.org/sites/all/libraries/colorbox/example3/colorbox.css?qb05gm");
+@import url("https://www.stanct.org/sites/all/modules/contrib/ctools/css/ctools.css?qb05gm");
+@import url("https://www.stanct.org/sites/all/modules/contrib/panels/css/panels.css?qb05gm");
+</style>
+<style type="text/css" media="screen">
+<!--/*--><![CDATA[/*><!--*/
+body{font-size:76%  !important;}body.textsize-66{font-size:66% !important;}body.textsize-76{font-size:76% !important;}body.textsize-86{font-size:86% !important;}
+
+/*]]>*/-->
+</style>
+<style type="text/css" media="all">
+@import url("https://www.stanct.org/sites/all/modules/contrib/textsize/textsize.css?qb05gm");
+@import url("https://www.stanct.org/sites/all/modules/contrib/print/print_ui/css/print_ui.theme.css?qb05gm");
+@import url("https://www.stanct.org/sites/default/files/ctools/css/8679a2bdb5dee5d05bc57bc18578a092.css?qb05gm");
+@import url("https://www.stanct.org/sites/all/modules/contrib/nice_menus/css/nice_menus.css?qb05gm");
+@import url("https://www.stanct.org/sites/all/modules/contrib/nice_menus/css/nice_menus_default.css?qb05gm");
+@import url("https://www.stanct.org/sites/default/files/ctools/css/b5404dc87ecd6d117da9c88dbb63a372.css?qb05gm");
+@import url("https://www.stanct.org/sites/all/modules/contrib/panels/plugins/layouts/flexible/flexible.css?qb05gm");
+@import url("https://www.stanct.org/sites/default/files/ctools/css/01d0a4f388f8b82214ba0e4eff5f2cc0.css?qb05gm");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.stanct.org/sites/all/themes/stanislaus_court/css/common/css/styles.css?qb05gm");
+</style>
+<style type="text/css" media="medium">
+@import url("https://www.stanct.org/sites/all/themes/stanislaus_court/css/common/css/medium.css?qb05gm");
+</style>
+<style type="text/css" media="large">
+@import url("https://www.stanct.org/sites/all/themes/stanislaus_court/css/common/css/large.css?qb05gm");
+</style>
+  <script type="text/javascript" src="https://www.stanct.org/sites/all/modules/contrib/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
+<script type="text/javascript" src="https://www.stanct.org/misc/jquery-extend-3.4.0.js?v=1.7.2"></script>
+<script type="text/javascript" src="https://www.stanct.org/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://www.stanct.org/misc/drupal.js?qb05gm"></script>
+<script type="text/javascript" src="https://www.stanct.org/sites/all/modules/contrib/nice_menus/js/jquery.bgiframe.js?v=2.1"></script>
+<script type="text/javascript" src="https://www.stanct.org/sites/all/modules/contrib/nice_menus/js/jquery.hoverIntent.js?v=0.5"></script>
+<script type="text/javascript" src="https://www.stanct.org/sites/all/modules/contrib/nice_menus/js/superfish.js?v=1.4.8"></script>
+<script type="text/javascript" src="https://www.stanct.org/sites/all/modules/contrib/nice_menus/js/nice_menus.js?v=1.0"></script>
+<script type="text/javascript" src="https://www.stanct.org/misc/ajax.js?v=7.69"></script>
+<script type="text/javascript" src="https://www.stanct.org/sites/all/modules/contrib/jquery_update/js/jquery_update.js?v=0.0.1"></script>
+<script type="text/javascript" src="https://www.stanct.org/sites/all/libraries/colorbox/jquery.colorbox-min.js?qb05gm"></script>
+<script type="text/javascript" src="https://www.stanct.org/sites/all/modules/contrib/colorbox/js/colorbox.js?qb05gm"></script>
+<script type="text/javascript" src="https://www.stanct.org/sites/all/modules/contrib/colorbox/js/colorbox_load.js?qb05gm"></script>
+<script type="text/javascript" src="https://www.stanct.org/sites/all/modules/contrib/colorbox/js/colorbox_inline.js?qb05gm"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  var textsizeCookieExpires = 365;
+  var textsizeCookieDomain = "/";
+  var textsizeElement = "body";
+  var textsizeElementClass = "";
+  var textsizeIncrement = 10;
+  var textsizeNormal = 76;
+  var textsizeMinimum = 66;
+  var textsizeMaximum = 86;
+  var textsizeIncrementDisplay = 13;
+  var textsizeNormalDisplay = 100;
+  var textsizeDisplay = 1;
+  var textsizeMinT = "<abbr title=\"Minimum\" class=\"textsize\">Min.</abbr> ";
+  var textsizeMaxT = "<abbr title=\"Maximum\" class=\"textsize\">Max.</abbr> ";
+  var textsizeCurrentText = "Current Size";
+  var textsizeReset = 0;
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.stanct.org/sites/all/modules/contrib/textsize/jquery.textsize.js?qb05gm"></script>
+<script type="text/javascript" src="https://www.stanct.org/misc/jquery.cookie.js?qb05gm"></script>
+<script type="text/javascript" src="https://www.stanct.org/sites/all/modules/contrib/clientside_validation/jquery-validate/jquery.validate.js?qb05gm"></script>
+<script type="text/javascript" src="https://www.stanct.org/sites/all/themes/stanislaus_court/js/accordian.js?qb05gm"></script>
+<script type="text/javascript" src="https://www.stanct.org/sites/all/themes/stanislaus_court/js/scrollto.js?qb05gm"></script>
+<script type="text/javascript" src="https://www.stanct.org/sites/all/libraries/jquery.scrollTo/jquery.scrollTo.js?qb05gm"></script>
+<script type="text/javascript" src="https://www.stanct.org/misc/progress.js?v=7.69"></script>
+<script type="text/javascript" src="https://www.stanct.org/sites/all/modules/contrib/colorbox_node/colorbox_node.js?qb05gm"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"stanislaus_court","theme_token":"3BRZf3L1s5Xycnk6AYF37ubWzvdP5cYZvxPFym7uNO4","jquery_version":"1.7","js":{"0":1,"sites\/all\/modules\/contrib\/clientside_validation\/clientside_validation.ie8.js":1,"sites\/all\/modules\/contrib\/clientside_validation\/clientside_validation_html5\/clientside_validation_html5.js":1,"sites\/all\/modules\/contrib\/clientside_validation\/clientside_validation.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/jquery.bgiframe.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/jquery.hoverIntent.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/superfish.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/nice_menus.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox_load.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox_inline.js":1,"1":1,"sites\/all\/modules\/contrib\/textsize\/jquery.textsize.js":1,"misc\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/clientside_validation\/jquery-validate\/jquery.validate.js":1,"sites\/all\/themes\/stanislaus_court\/js\/accordian.js":1,"sites\/all\/themes\/stanislaus_court\/js\/scrollto.js":1,"sites\/all\/libraries\/jquery.scrollTo\/jquery.scrollTo.js":1,"misc\/progress.js":1,"sites\/all\/modules\/contrib\/colorbox_node\/colorbox_node.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/colorbox_node\/colorbox_node.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/contrib\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/libraries\/colorbox\/example3\/colorbox.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"0":1,"sites\/all\/modules\/contrib\/textsize\/textsize.css":1,"sites\/all\/modules\/contrib\/print\/print_ui\/css\/print_ui.theme.css":1,"public:\/\/ctools\/css\/8679a2bdb5dee5d05bc57bc18578a092.css":1,"sites\/all\/modules\/contrib\/nice_menus\/css\/nice_menus.css":1,"sites\/all\/modules\/contrib\/nice_menus\/css\/nice_menus_default.css":1,"public:\/\/ctools\/css\/b5404dc87ecd6d117da9c88dbb63a372.css":1,"sites\/all\/modules\/contrib\/panels\/plugins\/layouts\/flexible\/flexible.css":1,"public:\/\/ctools\/css\/01d0a4f388f8b82214ba0e4eff5f2cc0.css":1,"sites\/all\/themes\/stanislaus_court\/css\/common\/css\/styles.css":1,"sites\/all\/themes\/stanislaus_court\/css\/common\/css\/medium.css":1,"sites\/all\/themes\/stanislaus_court\/css\/common\/css\/large.css":1}},"colorbox":{"transition":"elastic","speed":"350","opacity":"0.65","slideshow":false,"slideshowAuto":true,"slideshowSpeed":"2500","slideshowStart":"start slideshow","slideshowStop":"stop slideshow","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","overlayClose":true,"returnFocus":true,"maxWidth":"98%","maxHeight":"98%","initialWidth":"300","initialHeight":"250","fixed":true,"scrolling":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"urlIsAjaxTrusted":{"\/case-index-lookup":true},"nice_menus_options":{"delay":800,"speed":"slow"},"colorbox_node":{"width":"600px","height":"600px"},"clientsideValidation":{"forms":{"common-search-form":{"errorPlacement":"1","general":{"errorClass":"error","wrapper":"li","validateTabs":0,"scrollTo":1,"scrollSpeed":"1000","disableHtml5Validation":"1","validateOnBlur":"1","validateOnBlurAlways":"0","validateOnKeyUp":"1","validateBeforeAjax":"0","validateOnSubmit":"1","showMessages":"1","errorElement":"label"},"rules":{"search_api_views_fulltext":{"maxlength":255,"messages":{"maxlength":" field has to have maximum 255 values."}}}}},"general":{"usexregxp":0,"months":{"January":1,"Jan":1,"February":2,"Feb":2,"March":3,"Mar":3,"April":4,"Apr":4,"May":5,"June":6,"Jun":6,"July":7,"Jul":7,"August":8,"Aug":8,"September":9,"Sep":9,"October":10,"Oct":10,"November":11,"Nov":11,"December":12,"Dec":12}},"groups":{"common-search-form":{}}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-32 node-type-page i18n-en" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="mainContainer">
+
+<!-- Fade Background -->
+<div class="containerfade">
+
+<!-- Start Header -->
+<div id="headerWrap">
+    
+      <div class="region region-header">
+    <div id="block-panels-mini-header" class="block block-panels-mini">
+
+    
+  <div class="content">
+    <div class="panel-flexible panels-flexible-2 clearfix" id="mini-panel-header">
+<div class="panel-flexible-inside panels-flexible-2-inside">
+<div class="panels-flexible-region panels-flexible-region-2-center panels-flexible-region-first ">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-2-center-inside panels-flexible-region-inside-first">
+<div class="panel-pane pane-custom pane-1 contact"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="contact">
+<a href="/contact">Contact Us</a>    </div>  </div>
+
+  
+  </div>
+  </div>
+</div>
+<div class="panels-flexible-region panels-flexible-region-2-date ">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-2-date-inside">
+<div class="panel-pane pane-custom pane-2 date"  >
+  
+      
+  
+  <div class="pane-content">
+    May 27, 2020  </div>
+
+  
+  </div>
+  </div>
+</div>
+<div class="panels-flexible-region panels-flexible-region-2-test_size ">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-2-test_size-inside">
+<div class="panel-pane pane-block pane-text-resize-0 toolbar"  >
+  
+        <h2 class="pane-title">
+           </h2>
+    
+  
+  <div class="pane-content">
+    <a class="feedback" href="/please-submit-your-feedback-webform">Feedback</a><a href="javascript:;" class="normal ts_decrease_variable " id="">A</a> <a href="javascript:;" class="medium ts_normal_variable" id="">A</a> <a href="javascript:;" class="large ts_increase_variable" id="">A</a> <div id="google_translate_element"></div><script type="text/javascript">function googleTranslateElementInit() { new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,ar,es,hi,km,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element'); } </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></div><div id="text_resize_clear"></div>  </div>
+
+  
+  </div>
+  </div>
+</div>
+<div class="panels-flexible-region panels-flexible-region-2-logo ">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-2-logo-inside">
+<div class="panel-pane pane-page-logo logo"  >
+  
+      
+  
+  <div class="pane-content">
+    <a href="/" rel="home" id="logo" title="Home"><img typeof="foaf:Image" src="https://www.stanct.org/sites/default/files/logo_0.gif" alt="Home" /></a>  </div>
+
+  
+  </div>
+  </div>
+</div>
+<div class="panels-flexible-region panels-flexible-region-2-search panels-flexible-region-last ">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-2-search-inside panels-flexible-region-inside-last">
+<div class="panel-pane pane-block pane-common-common-search-block searchWrap"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="container-inline">
+
+
+	<div id="btngoWrap">
+	
+	<div class=""><form class="container-inline" action="/case-index-lookup" method="post" id="common-search-form" accept-charset="UTF-8"><div><input type="hidden" name="form_build_id" value="form-kXdDAs3KsK66U19kj36zK086yQIKlSkESNtLvcM-o6M" />
+<input type="hidden" name="form_id" value="common_search_form" />
+<div class="cus-selectarea"><div class="form-item form-type-textfield form-item-search-api-views-fulltext">
+  <input class="searchfield form-text" placeholder="Search" onblur="if(this.value==&#039;&#039;) {this.value=&#039;Search&#039;}" onfocus="if(this.value==&#039;Search&#039;) {this.value=&#039;&#039;;}" type="text" id="edit-search-api-views-fulltext" name="search_api_views_fulltext" value="Search" size="15" maxlength="255" />
+</div>
+</div><input type="image" id="searchfor" name="submit" value="Find" src="/sites/all/themes/stanislaus_court/images/btn-go.gif" class="form-submit" /></div></form></div> 
+	
+	<!--<form action="" id="" method="">
+		
+	<div class="">		
+		<div class="cus-selectarea">
+					</div>
+		
+				
+	</div>
+	
+		
+		</form>-->
+	
+	</div>
+</div>	  </div>
+
+  
+  </div>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+</div>
+  </div>
+    
+<div class="cleaner"></div>    
+</div>
+<!-- End Header -->
+
+<!-- Start MainMenu -->
+  <div class="region region-top-menu">
+    <div id="block-nice-menus-1" class="block block-nice-menus">
+
+    
+  <div class="content">
+    <ul id="menu"><li class="menu-402 menu-path-front first odd "><a href="/" id="home">Home</a></li>
+<li class="menu-403 menuparent  menu-path-node-6 active-trail  even "><a href="/online-services" id="online">Online Services</a><ul><li class="menu-410 menu-path-node-32 active-trail first odd "><a href="/case-index-lookup" class="active">Online Case Index</a></li>
+<li class="menu-1044 menu-path-sportalstanctorg-portal-  even "><a href="https://portal.stanct.org/Portal/">Pay Traffic Tickets</a></li>
+<li class="menu-928 menu-path-calendar-court  odd "><a href="/calendar-court">Court Calendar</a></li>
+<li class="menu-412  menu-path-node-31  even "><a href="/tentative-ruling-announcements">Tentative Rulings</a></li>
+<li class="menu-413 menu-path-node-409  odd "><a href="/court-transcript-requests">Court Reporter Transcripts</a></li>
+<li class="menu-1041 menu-path-sjurystanctorg-login  even "><a href="https://jury.stanct.org/login">Juror Summons Login</a></li>
+<li class="menu-1223 menu-path-node-43  odd "><a href="/complete-forms-home">COMPLETE FORMS AT HOME</a></li>
+<li class="menu-1063 menu-path-node-2119823  even last"><a href="/e-filing">E-Filing</a></li>
+</ul></li>
+<li class="menu-404 menuparent  menu-path-node-22  odd "><a href="/forms-filing" id="forms">Forms &amp; Filing</a><ul><li class="menu-801 menu-path-node-318 first odd "><a href="/document-guidelines">Drop Box Filing</a></li>
+<li class="menu-499 menu-path-node-25  even "><a href="/common-forms-packets">Common Forms &amp; Packets</a></li>
+<li class="menu-1222 menu-path-node-43  odd last"><a href="/complete-forms-home">COMPLETE FORMS AT HOME</a></li>
+</ul></li>
+<li class="menu-405 menuparent  menu-path-node-429  even "><a href="/self-help" id="selfhelp">Self-Help</a><ul><li class="menu-731  menu-path-node-274 first odd "><a href="/office-family-law-facilitator-0">Family Law Facilitator Info</a></li>
+<li class="menu-733  menu-path-node-276  even "><a href="/self-help-center">Self Help Center Info</a></li>
+<li class="menu-531 menu-path-node-43  odd last"><a href="/complete-forms-home">COMPLETE FORMS AT HOME</a></li>
+</ul></li>
+<li class="menu-406 menuparent  menu-path-node-28  odd "><a href="/divisions" id="divisions">Divisions</a><ul><li class="menu-512  menu-path-node-112 first odd "><a href="/civil">Civil</a></li>
+<li class="menu-513  menu-path-node-95  even "><a href="/related-links">Criminal</a></li>
+<li class="menu-518  menu-path-node-34  odd "><a href="/family-law">Family Law</a></li>
+<li class="menu-787  menu-path-node-304  even "><a href="/grand-jury">Grand Jury</a></li>
+<li class="menu-646  menu-path-node-30  odd "><a href="/jury-services">Jury Services</a></li>
+<li class="menu-516  menu-path-node-239  even "><a href="/juvenile">Juvenile</a></li>
+<li class="menu-515  menu-path-node-191  odd "><a href="/probate">Probate</a></li>
+<li class="menu-514  menu-path-node-163  even "><a href="/small-claims-division">Small Claims</a></li>
+<li class="menu-517  menu-path-node-238  odd last"><a href="/traffic-division">Traffic</a></li>
+</ul></li>
+<li class="menu-407 menuparent  menu-path-node-29  even last"><a href="/general-info" id="info">General Info</a><ul><li class="menu-882 menu-path-node-384 first odd "><a href="/ada-information">ADA Information</a></li>
+<li class="menu-799  menu-path-node-316  even "><a href="/administration">Administration</a></li>
+<li class="menu-935  menu-path-node-388  odd "><a href="/court-locations-hours">Court Locations &amp; Hours</a></li>
+<li class="menu-806  menu-path-node-323  even "><a href="/courts-and-community">Courts and Community</a></li>
+<li class="menu-1075 menu-path-node-2636667  odd "><a href="/fiscal-services">Fiscal Services</a></li>
+<li class="menu-1139 menu-path-node-3131808  even "><a href="/government-claims-forms">Government Claim Forms</a></li>
+<li class="menu-855  menu-path-node-10864  odd "><a href="/human-resources">Human Resources</a></li>
+<li class="menu-754  menu-path-node-289  even "><a href="/interpreter-information">Interpreter Information</a></li>
+<li class="menu-800 menu-path-node-317  odd "><a href="/judicial-assignments">Judicial Assignments</a></li>
+<li class="menu-860  menu-path-node-337  even "><a href="/local-rules-fee-schedule">Local Rules &amp; Fee Schedule</a></li>
+<li class="menu-635  menu-path-node-266  odd "><a href="/news-media">News &amp; Media</a></li>
+<li class="menu-869  menu-path-node-372  even "><a href="/public-information">Public Information</a></li>
+<li class="menu-872  menu-path-node-376  odd "><a href="/resources-related-links">Related Links</a></li>
+<li class="menu-861  menu-path-node-343  even last"><a href="/vendor-resources">Vendor Resources</a></li>
+</ul></li>
+</ul>
+  </div>
+</div>
+  </div>
+<!-- End MainMenu -->
+
+<!-- Start MainContent -->
+<div id="containerLanding">
+
+	<!-- Start SubMenu -->
+  <div class="subMenu">
+    	<!--<p><a href="#">Home</a> &raquo; <span class="selected">Online Services</span></p>-->
+					
+					<p><a href="/">Home</a> » <a href="/online-services" id="online">Online Services</a> » Case Index Lookup</p>					<div class="tabContent">
+										</div>
+    </div>
+    <!-- End SubMenu -->
+    
+	<!-- Start Content -->
+  	<div id="mainContentWrap" class="bgTwoColumn">
+    
+    	<!-- Start LeftContent-->
+        
+        <div class="contentColumn">&nbsp;
+        
+												<!-- Start LeftNavigation -->
+              <div class="region region-sidebar-first">
+    <div id="block-panels-mini-first-sidebar" class="block block-panels-mini">
+
+    
+  <div class="content">
+    <div class="panel-flexible panels-flexible-4 clearfix" id="mini-panel-first_sidebar">
+<div class="panel-flexible-inside panels-flexible-4-inside">
+<div class="panels-flexible-region panels-flexible-region-4-center panels-flexible-region-first panels-flexible-region-last">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-4-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-block pane-sidebar-block-sidebar-menu-tree-links-block"  >
+  
+      
+  
+  <div class="pane-content">
+    <div id="leftNav">
+    <ul>
+        <li><a href="#">Online Services</a>
+    <ul class="nice-menu nice-menu-right nice-menu-menu-top-menu" id="nice-menu-"><li class="menu-410 menu-path-node-32 active-trail first odd "><a href="/case-index-lookup" class="active">Online Case Index</a></li>
+<li class="menu-1044 menu-path-sportalstanctorg-portal-  even "><a href="https://portal.stanct.org/Portal/">Pay Traffic Tickets</a></li>
+<li class="menu-928 menu-path-calendar-court  odd "><a href="/calendar-court">Court Calendar</a></li>
+<li class="menu-412 menu-path-node-31  even "><a href="/tentative-ruling-announcements">Tentative Rulings</a></li>
+<li class="menu-413 menu-path-node-409  odd "><a href="/court-transcript-requests">Court Reporter Transcripts</a></li>
+<li class="menu-1041 menu-path-sjurystanctorg-login  even "><a href="https://jury.stanct.org/login">Juror Summons Login</a></li>
+<li class="menu-1223 menu-path-node-43  odd "><a href="/complete-forms-home">COMPLETE FORMS AT HOME</a></li>
+<li class="menu-1063 menu-path-node-2119823  even last"><a href="/e-filing">E-Filing</a></li>
+</ul>
+        </li>
+    </ul>
+</div>
+  </div>
+
+  
+  </div>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+</div>
+  </div>
+            <!-- End LeftNavigation -->                   	
+            
+								</div>
+	<!-- End LeftContent-->
+        
+    <!-- Start CenterContentWide -->
+    <div class="contentCenterWide">
+																<div class="hero">
+								<div class="title">Case Index Lookup</div>
+								</div>
+								          <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-32" class="node node-page en node-full clearfix" about="/case-index-lookup" typeof="foaf:Document">
+
+      <span property="dc:title" content="Case Index Lookup" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><h4>Welcome to The Superior Court of California, County of Stanislaus Portal.</h4>
+<p><em><strong> </strong></em></p>
+<p>If you have any suggestions to help improve our case index we would like to hear from you. You can complete the feedback form on our website to share your feedback with us. Please be aware that the feedback form is not a form for you to ask case specific questions. Any completed form containing case specific questions may not be responded to. The feedback form can be found at <a style="font-size: 13.008px;" href="/please-submit-your-feedback-webform">https://www.stanct.org/please-submit-your-feedback-webform.</a></p>
+<p> </p>
+<p><a href="https://portal.stanct.org/Portal/">Click Here</a> to start a search.</p>
+</div></div></div>  </div>
+
+      <div class="link-wrapper">
+      <ul class="links inline"><li class="print_html first"><a href="/print/32" title="Display a printer-friendly version of this page." class="print" rel="nofollow">Printer-friendly version</a></li>
+<li class="print_mail last"><a href="/printmail/32" title="Send this page by email." class="email" rel="nofollow">Send by email</a></li>
+</ul>    </div>
+  
+  
+</div>
+  </div>
+</div>
+  </div>
+
+
+
+
+    <div class="updated"> Last updated: September 03, 2019  9:30 AM</div>
+  
+
+        
+    <!-- End CenterContentWide -->
+        
+  </div>
+  <!-- End Content -->
+
+<div class="cleaner"></div>
+</div>
+<!-- Fade Background -->
+
+</div>
+<!-- End MainContent -->
+
+<!-- Start Footer -->
+<div id="footerWrap">
+  <div class="region region-footer">
+    <div id="block-panels-mini-footer" class="block block-panels-mini">
+
+    
+  <div class="content">
+    <div class="panel-flexible panels-flexible-3 clearfix" id="mini-panel-footer">
+<div class="panel-flexible-inside panels-flexible-3-inside">
+<div class="panels-flexible-region panels-flexible-region-3-footer_link panels-flexible-region-first ">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-3-footer_link-inside panels-flexible-region-inside-first">
+<div class="panel-pane pane-block pane-menu-menu-footer-menu footerLeft"  >
+  
+        <h2 class="pane-title">
+           </h2>
+    
+  
+  <div class="pane-content">
+    <ul class="menu"><li class="first leaf"><a href="/please-submit-your-feedback-webform">Feedback</a></li>
+<li class="leaf"><a href="/sitemap">Site Map</a></li>
+<li class="leaf"><a href="http://agency.governmentjobs.com/scstanct/default.cfm" target="_blank">Jobs</a></li>
+<li class="leaf"><a href="/ada">ADA</a></li>
+<li class="leaf"><a href="/disclaimer">Disclaimer</a></li>
+<li class="last leaf"><a href="/privacy-statement">Privacy Policy</a></li>
+</ul>  </div>
+
+  
+  </div>
+  </div>
+</div>
+<div class="panels-flexible-region panels-flexible-region-3-copy panels-flexible-region-last ">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-3-copy-inside panels-flexible-region-inside-last">
+<div class="panel-pane pane-custom pane-3 footerRight"  >
+  
+      
+  
+  <div class="pane-content">
+    <p>Copyright © 2020 Stanislaus County Superior Court. All Rights Reserved.</p>  </div>
+
+  
+  </div>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+<!-- End Footer -->
+
+<div class="cleaner"></div>
+</div>
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+	document.write(unescape("%3Cscript type='text/javascript'%3E(function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://widget.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({ c: '46866593-dbba-4ff9-a0ae-953b2c0d4aa1', f: true }); done = true; } }; })();%3C/script%3E"));
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.stanct.org/sites/all/modules/contrib/clientside_validation/clientside_validation.ie8.js?qb05gm"></script>
+<script type="text/javascript" src="https://www.stanct.org/sites/all/modules/contrib/clientside_validation/clientside_validation_html5/clientside_validation_html5.js?qb05gm"></script>
+<script type="text/javascript" src="https://www.stanct.org/sites/all/modules/contrib/clientside_validation/clientside_validation.js?qb05gm"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"5b3b1abfe1","applicationID":"244531511","transactionName":"MwdRNUpXCEBZU0dfDQpNcgJMXwldF15cUgc7ElIGXWkQWl1H","queueTime":0,"applicationTime":132,"atts":"H0BSQwJNG04=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

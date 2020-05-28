@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html  >
+<head id="head"><title>
+	Minnesota Judicial Branch - AccessCaseRecords
+</title><meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"5e8754de12","applicationID":"382646600","transactionName":"YlxbYUMCXkRWV0ZaXVsWeGZhTFNaRERTVFdGFklaQxdRW0NRX0NeVE1cG1AQQE8=","queueTime":0,"applicationTime":24,"ttGuid":"632443FC4B85642B","agent":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"5e8754de12",applicationID:"382646600"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script> 
+<link href="/CMSPages/GetResource.ashx?stylesheetname=CIOGlobal" type="text/css" rel="stylesheet"/>
+<!-- Meta -->
+<!--<meta charset="UTF-8" />-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<meta name="Copyright" content="Copyright  2013-2014. All Rights Reserved." />
+<meta name="keywords" content="" />
+<meta name="DC.title" content="" />
+<meta name="DC.subject" content="" />
+<meta name="DC.creator" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<link rel="shortcut icon" href="/favicon.ico" />
+<link href="/CMSPages/GetResource.ashx?stylesheetname=CIOSlider" rel="stylesheet" type="text/css" media="all" />
+<link href="/CMSPages/GetCSS.aspx?stylesheetname=CIOIconsFonts" rel="stylesheet" type="text/css" media="all" />
+<link href="/CMSPages/GetResource.ashx?stylesheetfile=/App_Themes/Default/Custom/icon-fonts.css" type="text/css" rel="stylesheet" />
+<link href="/CMSPages/GetResource.ashx?stylesheetname=CIOGlobal" rel="stylesheet" type="text/css" media="all" />
+<link href='//fonts.googleapis.com/css?family=Open%20Sans%3A400italic%2C600italic%2C700italic%2C400%2C600%2C700%7CQuattrocento%3A400%2C700' rel='stylesheet' type='text/css' /> 
+<link href="/App_Themes/Default/Images/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+<link href="/App_Themes/Default/Images/favicon.ico" type="image/x-icon" rel="icon"/>
+</head>
+<body class="LTR Chrome ENUS ContentBody" >
+    
+    <form method="post" action="/Access-Case-Records.aspx" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="__CMSCsrfToken" id="__CMSCsrfToken" value="MRQF4SonpXv12YGBdDHyiyKJd7r7Olw8hoNHxbT0jKzqfarrMVlyYXeZ9EpNjPmSuuc75sQ5t96+ohru4IdFYKm2C5Oyg3bp2S7ljgbvG/A=" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBLuWuWWZmNwvZS4aGdeMlX9d1VjL-FMTXJHLWjVUB_E4w_UPJ2bMwYVbcgYLRq_RA2&amp;t=636765283264470882" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script src="/CMSPages/GetResource.ashx?scriptfile=%7e%2fCMSScripts%2fWebServiceCall.js" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="/ScriptResource.axd?d=uHIkleVeDJf4xS50Krz-yL6a1PUn-uyJtQpRzXYugChxqvLroQtt04_7IJKTLMsx-UcVj6KK2z7bKd0NqXKkB34QdBujMXI81zGcKPLVb3FMLHMCdDtUh-vSSs1xdU2XBI5ckn5JeKEu4IjadqCD_kcwrvPi-J9XcFKtr0PHNsI1&amp;t=ffffffff999c3159" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Jw6tUGWnA15YEa3ai3FadHu2Gm3tOmFtJ9cJ3UBJxsa4mIv10xPcnMwPoKjDds_2QakMb6hFpYWNhYF63JlCql_AKf-EPplD6xJ2kz8Q3nkwr16PM3_TYH73INTsmb62fvNLsO3GDierHLEfd-9D-W8VFp39JDGTxBcD9H62UDY1&amp;t=ffffffff999c3159" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "language": "en",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDebuggingEnabled": false,
+  "applicationUrl": "/",
+  "isDialog": false,
+  "isRTL": "false"
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    
+
+<nav id="mobileNav">
+	<ul class="mainNav">
+		<li><a href="/Help-Topics.aspx">Help Topics</a></li>
+		<li><a href="/Find-Courts.aspx">Find Courts</a></li>
+		<li><a href="/Pay-a-Fine.aspx">Pay Fines</a></li>
+		<li><a href="/GetForms.aspx">Get Forms</a></li>
+		<li><a href="/Access-Case-Records.aspx">Access Case Records</a></li>
+		<li><a href="/File-a-Case.aspx">File a Case</a></li>
+	</ul>
+	<ul class="secondaryNav">
+		<li><a href="/Attorneys.aspx">Attorneys</a></li>
+		<li><a href="/Jurors.aspx">Jurors</a></li>
+		<li><a href="/GovernmentPartners.aspx">Government Partners</a></li>
+		<li><a href="/Media.aspx">Media</a></li>
+		<li><a href="/Teachers-and-Students.aspx">Teachers and Students</a></li>
+		<li><a href="/Help-Topics/Language-Access-Plans/Resources-in-Spanish.aspx">Español</a></li>
+		<li><a href="/Help-Topics/Language-Access-Plans/Resources-in-Hmong.aspx">Hmoob</a></li>
+		<li><a href="/Help-Topics/Language-Access-Plans/Resources-in-Somali.aspx">Soomaali</a></li>
+        <li><a href="/Help-Topics/Language-Access-Plans/Resources-in-Other-Languages.aspx">Other</a></li>
+	</ul>
+</nav>
+
+<div id="mobileSlide">
+	<header class="siteHeader group">
+		<a href="/" class="logoPrint"><img src="/Images/CIOImages/logoPrint.aspx" alt="Logo" /></a>
+		<div class="siteWrapper">
+			<nav class="utilityNavWrapper">
+				<ul>
+					<li><a href="/Help-Topics/Language-Access-Plans/Resources-in-Spanish.aspx">Español</a></li>
+					<li><a href="/Help-Topics/Language-Access-Plans/Resources-in-Hmong.aspx">Hmoob</a></li>
+					<li><a href="/Help-Topics/Language-Access-Plans/Resources-in-Somali.aspx">Soomaali</a></li>
+                    <li><a href="/Help-Topics/Language-Access-Plans/Resources-in-Other-Languages.aspx">Other</a></li>
+				</ul>
+			</nav>
+			<a href="" id="mobileNavBtn" class="custom-mobile-menu" rel="Show/Hide Mobile Menu" title="Show/Hide Mobile Menu"></a>
+			<a href="/" class="logo"><img src="/Images/CIOImages/logo.aspx" alt="Logo" /></a>
+          
+ 
+			<a href="" id="mobileSearchBtn" class="custom-magnify" rel="Show/Hide Search Box" title="Show/Hide Search Box"></a>
+			<aside class="searchWrapper group">
+                <div id="p_lt_ctl00_FunnelbackSearchBox_mjbGSAWrapper" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;p_lt_ctl00_FunnelbackSearchBox_mjbGSASearchButton&#39;)">
+	
+    <label for="p_lt_ctl00_FunnelbackSearchBox_mjbGSASearchText" id="p_lt_ctl00_FunnelbackSearchBox_mjbGSASearchLabel" class="mjbAccessabilityOnlyDisplay">Search</label>
+    <input name="p$lt$ctl00$FunnelbackSearchBox$mjbGSASearchText" type="text" id="p_lt_ctl00_FunnelbackSearchBox_mjbGSASearchText" placeholder="Search" />
+    <a id="p_lt_ctl00_FunnelbackSearchBox_mjbGSASearchButton" title="Search" class="custom-magnify" href="javascript:__doPostBack(&#39;p$lt$ctl00$FunnelbackSearchBox$mjbGSASearchButton&#39;,&#39;&#39;)"></a>
+
+</div>
+				<!-- <input type="text" value="Search" title="Search" />
+				<button type="submit" class="custom-magnify"></button> -->
+			</aside>
+		</div>
+		<nav class="mainNav group">
+			<div class="siteWrapper">
+				<ul>
+					<li><a href="/Help-Topics.aspx">Help Topics</a></li>
+					<li><a href="/Find-Courts.aspx">Find Courts</a></li>
+					<li><a href="/Pay-a-Fine.aspx">Pay Fines</a></li>
+					<li><a href="/GetForms.aspx">Get Forms</a></li>
+					<li><a href="/Access-Case-Records.aspx">Access Case Records</a></li>
+					<li><a href="/File-a-Case.aspx">File a Case</a></li>
+				</ul>
+			</div>
+		</nav>
+		<nav class="secondaryNav">
+			<div class="siteWrapper">
+				<ul>
+					<li><a href="/Attorneys.aspx">Attorneys</a></li>
+					<li><a href="/Jurors.aspx">Jurors</a></li>
+					<li><a href="/GovernmentPartners.aspx">Government Partners</a></li>
+					<li><a href="/Media.aspx">Media</a></li>
+					<li><a href="/Teachers-and-Students.aspx">Teachers and Students</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+    <div id="mainContent">
+      <div class="mjbSitewideNoticeWrapper"><div class="mjbSitewideNotice mjbYellowBG"><br />
+The Minnesota Judicial Branch continues to monitor the most current statements and recommendations regarding COVID-19 (coronavirus) in Minnesota. <a href="/Emergency.aspx">Learn more&nbsp;&raquo;</a><br />
+&nbsp;</div></div>
+
+<div class="siteWrapper group">
+	<section class="mainContent">
+      <!--PAGEWATCH-->
+		<div class="padding">
+			<header class="pageTitle group">
+				<h1>
+                  Access Case Records
+
+
+
+
+                </h1>
+			</header>
+			<section class="leftColumn">
+                <div class="padding">
+                  <hr/>
+                  
+
+<div id="mjbModalNotificationWrapper" class="mjbModalNotification">
+    <div class="mjbModalNotificationContent">
+        <div id="p_lt_ctl01_pageplaceholder_p_lt_ctl01_LeftColumnTopRTE_ucEditableText_widget1_ctl00_pnlModalHeader" class="mjbModalNotificationHeader">
+	
+            <span class="mjbModalNotificationClose" title="Close Notification Window" onclick="closeModal();">×</span>
+            
+        
+</div>
+        <div class="mjbModalNotificationBody">
+            
+            <hr class="mjbSingleLineHR" />
+            <p style="text-align:center;"><a href="javascript:closeModal();">Close Notification Window</a></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+                </div>
+				<div class="padding">
+                    <span class='mjbCollapseHdrTabItem mjbicon-chevron-right' onclick="toggleCollapse(this, 'mjbWidgetSectionDistrict');">
+                      Minnesota District (Trial) Court Case Search
+
+
+
+
+                    </span>
+                    <div id="mjbWidgetSectionDistrict" class="mjbStartClosed">
+                    <section class="widget callout group">
+                        <div class="calloutWrapper">
+                            <aside class="imgWrapper">
+                                <div style="margin:0 0 30px 0;">
+  <div class="mjbGovDelivery"><a href="javascript:window.open('http://service.govdelivery.com/service/subscribe.html?code=MNCOURTS_31','Popup','width=780,height=440,toolbar=no,scrollbars=yes,resizable=yes'); void('');"><img src="/mncourtsgov/media/CIOMediaLibrary/Icons/media_icon-govdelivery-bubble-hi-res-GS-20x20.png" alt="GovDelivery Subscribe" /><span class="mjbGovDeliveryText">Sign up to receive updates</span></a></div>
+</div><div style="margin:10px 0 10px 0;">
+  
+</div><h2>&nbsp;</h2>
+
+<h2><strong>MPA Remote</strong></h2>
+Minnesota Public Access (MPA) Remote offers access to case information via the internet for certain court records in the Minnesota Court Information System (MNCIS). The information is limited as described in the&nbsp;<a href="/SupremeCourt/Court-Rules.aspx">MN Rules of Public Access to Records of the Judicial Branch</a>. Court documents&nbsp;cannot be viewed&nbsp;in MPA Remote at this time.&nbsp;<br />
+&nbsp;
+<ul>
+	<li><a href="/Access-Case-Records/How-to-search-MPA-remote.aspx" target="_blank">How to Search Online Case Records</a></li>
+	<li><span style="line-height: 24px;">For additional information about MPA Remote, view these&nbsp;</span><a href="/Access-Case-Records/MPA-Remote-FAQs.aspx" style="line-height: 24px;">Frequently Asked Questions</a><span style="line-height: 24px;">.&nbsp;</span></li>
+</ul>
+<br />
+<a id="p_lt_ctl01_pageplaceholder_p_lt_ctl03_richtext4_widget1_ctl00_btnElem_hyperLink" class="btn " href="http://www.mncourts.gov/About-The-Courts/NewsAndAnnouncements/ItemDetail.aspx?id=1208"><span id="p_lt_ctl01_pageplaceholder_p_lt_ctl03_richtext4_widget1_ctl00_btnElem_lblText">Read an Important Notice Regarding Searching for Wills</span></a>
+<br />
+&nbsp;<div style="margin:0 0 10px 0;">
+  <strong>Required Acknowledgement for MPA Remote:</strong><br />
+Please read and acknowledge these terms before using MPA Remote to access district court records:
+</div><div style="background: #fff; overflow: auto; height: 200px; border: #666 1px solid; margin-bottom:10px;">
+  <ol>
+	<li><strong>UNOFFICIAL RECORDS.</strong> The information available on MPA Remote is provided as a service and is not considered an official court record. The Minnesota Judicial Branch does not certify MPA Remote records or search results and is not responsible for any errors or omissions in the data found on MPA Remote. Certified civil judgment search results may be obtained from court administration.<br />
+	&nbsp;</li>
+	<li><strong>LIMITED CASE RECORD INFORMATION.</strong> Case records and calendars are displayed for all Minnesota District (Trial) Courts. The information available on MPA Remote is limited to case search results, registers of action, civil judgments, and court calendars for publicly accessible district court case records, as defined by <a href="/SupremeCourt/Court-Rules.aspx" target="_blank">Rule 4 of the Minnesota Rules of Public Access to Records</a> of the Judicial Branch. Electronic copies of public documents are not available at this time through MPA Remote. &nbsp;&nbsp;<br />
+	<br />
+	<em>Remote Access Restrictions:</em> For privacy reasons, the information available on MPA Remote is also limited to <strong>remotely</strong> accessible information under <a href="/SupremeCourt/Court-Rules.aspx" target="_blank">Rule 8, subd. 2 of the Minnesota Rules of Public Access to Records</a> of the Judicial Branch. Under this rule, publicly accessible case records available on the MPA Courthouse service (on court public access computers) <strong>are not all</strong> remotely accessible through MPA Remote on the internet. &nbsp;For example, party street address and name searches on criminal, traffic, and petty misdemeanor pending criminal case records are publicly accessible and available on the MPA Courthouse service, but <strong>not</strong> on MPA Remote. The federal Violence Against Women Act (VAWA) also prevents us from displaying harassment and domestic abuse case types on the internet, but these are available through the MPA Courthouse service. Comment fields for all case types also are not available on MPA Remote but are available through the MPA Courthouse service.<br />
+	<br />
+	You WILL NOT be notified when public data is unavailable for any of these reasons as you are conducting searches in MPA Remote.<br />
+	&nbsp;</li>
+	<li><strong>READ Our New LEVEL OF SENTENCE FACT SHEET to Understand How the Level of Sentence is Calculated and Displayed, EFFECTIVE ON SENTENCES ENTERED ON OR AFTER June 1, 2009.</strong> Level of Sentence is a new automated feature that calculates and displays the level of sentence on a case based on the sentence imposed by the judge and entered into the case management system.&nbsp;The automation is calculated on the sentence elements and the provisions set forth in&nbsp;<a href="https://www.revisor.mn.gov/statutes/?id=609.13" target="_blank" title="609.13">M.S. 609.13</a> and <a href="/SupremeCourt/Court-Rules.aspx">Minn. R. Crim. P. 23.02</a>. For cases sentenced prior to June 1, 2009, the Level of Sentence is not automatically calculated and displayed but should be manually interpreted based on&nbsp;<a href="https://www.revisor.mn.gov/statutes/?id=609.13" target="_blank" title="609.13">M.S. 609.13</a> and&nbsp;<a href="/SupremeCourt/Court-Rules.aspx">Minn. R. Crim. P. 23.02</a> and as further explained in our <a href="/mncourtsgov/media/scao_library/documents/Level_of_Sentence_Fact_Sheet_(ITD_SP_0678).pdf" target="_blank">Level of Sentence Fact Sheet</a>.&nbsp;For sample screen images and a complete discussion of how to read and interpret the Register of Actions and Level of Sentence on a case, see Register of Actions - Level of Sentence (available in the Interpreting Search Results help topic) in <a href="http://pa.courts.state.mn.us/MPAHelp/" target="_blank" title="MPA Remote Online Help">MPA Remote Online Help</a>.<br />
+	&nbsp;</li>
+	<li><strong>MPA SHOULD NOT BE USED FOR BACKGROUND CHECKS.</strong>&nbsp;Background checks should be conducted through the <a href="https://dps.mn.gov/divisions/bca/Pages/default.aspx">Minnesota Bureau of Criminal Apprehension&rsquo;s</a> (BCA) Minnesota Public Criminal History Search (CHS) system, which you can access online at <a href="https://chs.state.mn.us/">https://chs.state.mn.us/</a>, at their office located at 1430 Maryland Avenue East in St. Paul, or by calling (651) 793-2400 for information.&nbsp; The BCA&rsquo;s CHS system links prior criminal history through fingerprints to verify the identification of the individual.&nbsp; MPA cannot provide this level of verification.<br />
+	&nbsp;</li>
+	<li><strong>CAUTION: NAME SEARCHES CAN BE UNRELIABLE.</strong> Use caution in evaluating MPA data, as the person for whom you have searched could have the same name, birth date, or other identifiers as another individual. Even if you believe your search has returned the correct match and the information appears to be about the person for whom you have searched, remember that:
+	<ul>
+		<li><em>two or more people can have the same name and birth date; and</em></li>
+		<li><em>criminal offenders frequently use aliases, including the names of others.</em></li>
+	</ul>
+	</li>
+	<li><strong>YOU ARE RESPONSIBLE</strong> for understanding the meaning of the case record information that you view through MPA Remote and for the appropriate and lawful use of such information. If you have any questions regarding the meaning of case information on MPA Remote, please ask the local court administrator. You are also responsible for determining whether any case record information previously obtained from MPA Remote is still accurate, current, and complete.<br />
+	&nbsp;</li>
+	<li>If you see any <strong>ERRORS</strong> on MPA Remote, please notify the <a href="/Find-Courts.aspx">court clerk of the corresponding district court</a>.<br />
+	&nbsp;</li>
+	<li><strong>PLEASE READ OUR NOTICES &amp; INSTRUCTIONS</strong> for more information before using MPA Remote.&nbsp;It is available through the top of each screen of the MPA Remote inquiry tool.&nbsp;</li>
+</ol>
+
+</div><div style="margin:0 0 40px 0;">
+  <a id="p_lt_ctl01_pageplaceholder_p_lt_ctl03_MJBLinkButton_btnElem_hyperLink" class="btn " href="http://pa.courts.state.mn.us/default.aspx" target="_blank"><span id="p_lt_ctl01_pageplaceholder_p_lt_ctl03_MJBLinkButton_btnElem_lblText">I Accept The Above Terms &amp; Conditions</span></a>
+
+</div><h2><strong>At the Courthouse</strong></h2>
+Each Minnesota <a href="/Find-Courts.aspx">district courthouse</a> offers electronic access to statewide public case records through public access terminals. Each district courthouse also offers in-person counter access to locally-stored, public case records in paper form. Courthouse public access terminals provide the most complete access to electronic district court case records.<div style="margin:10px 0 0 0;">
+  <h2>Contact Us</h2>
+Use the&nbsp;<a href="/TechnicalSupportContact.aspx">Technical Support Form</a>, if you are experiencing issues with MPA Remote or MPA Courthouse.
+</div>
+                            </aside>
+                        </div>
+                    </section>
+                    </div>
+                </div>
+                <div class="padding" style="margin-top:15px;">
+                    <span class='mjbCollapseHdrTabItem mjbicon-chevron-right' onclick="toggleCollapse(this, 'mjbWidgetSectionAppellate');">
+                      Access Court of Appeals or Supreme Court Case Records
+
+
+
+
+                    </span>
+                    <div id="mjbWidgetSectionAppellate" class="mjbStartClosed">
+                    <section class="widget callout group">
+                        <div class="calloutWrapper">
+                            <aside class="imgWrapper">
+                                <div style="margin:0 0 30px 0;">
+  The Minnesota Supreme Court and Court of Appeals offer online access to court opinions and case records through the public view of the Minnesota Appellate Courts Case Management System (P-MACS).&nbsp;
+</div><div style="margin:0 0 30px 0;">
+  
+<div class="mjbEfsPlannedNotice"><span class="mjbicon-circle-info">An outage is scheduled to start on 5/27/2020 at 6:00 PM Central Time (CT)</span><br />The Appellate E-Filing system (E-MACS) and the public access site (P-MACS) will be unavailable from Wednesday, May 27, 2020 at 6:00 PM, to Wednesday, May 27, 2020 at 6:30 PM, for maintenance and the installation of upgrades. This outage will not extend filing deadlines, and filings due on May 27, 2020 must still be served and/or filed before 11:59 PM or before the outage, if it is scheduled to extend beyond 11:59 PM, to be timely. Document links in e-notifications and e-service messages will not work during the maintenance operation, but will be functional after E-MACS and P-MACS are restored.</div> 
+</div><a id="p_lt_ctl01_pageplaceholder_p_lt_ctl05_MJBLinkButton1_btnElem_hyperLink" class="btn " href="http://macsnc.courts.state.mn.us/ctrack/publicLogin.jsp" target="_blank"><span id="p_lt_ctl01_pageplaceholder_p_lt_ctl05_MJBLinkButton1_btnElem_lblText">Search Appellate Court Records</span></a>
+
+                            </aside>
+                        </div>
+                    </section>
+                    </div>
+                </div>
+			</section>
+			<aside class="sideBar">
+				<div class="padding">
+					<span style="font-size:18px;"><strong>Minnesota Appellate Courts Opinions</strong></span><br />
+<em>Supreme Court and Court of Appeals</em>
+
+<ul>
+	<li><a href="/SupremeCourt/RecentOpinions.aspx">Recent Supreme Court Opinions</a></li>
+	<li><a href="/CourtOfAppeals/RecentOpinions.aspx">Recent Court of Appeals Opinions</a></li>
+	<li><a href="http://mn.gov/law-library/search/index.jsp?v:sources=mn-law-library-opinions" target="_blank">Supreme Court and Court of Appeals Opinion Archive</a></li>
+	<li><a href="/Clerk-of-Appellate-Courts/Administrative-File-Archive.aspx">Administrative Decisions</a></li>
+</ul>
+<div style="margin:10px 0 10px 0;">
+  <h2>Technical Support</h2>
+Use the technical support contact form if you are having a technical issue connecting to either the District or Appellate Court Records systems.<br />
+<br />
+<strong><em>Please do not use this form to request records.</em></strong><br />
+<a href="/TechnicalSupportContact.aspx">Technical Support&nbsp;&raquo;</a>
+</div>
+				</div>
+			</aside>
+		</div>
+      <!--/PAGEWATCH-->
+	</section>
+</div>
+    </div> 
+	<footer class="topFooter group">
+		<div class="siteWrapper">
+			<article class="col col1">
+				<div class="padding">
+					<h1>About the Courts</h1>
+					<ul>
+						<!--<li><a href="/Accessibility.aspx">Accessibility</a></li>-->
+                        <li><a href="/About-The-Courts.aspx">About the Courts</a></li>
+                        <li><a href="/ADAAccommodation.aspx">ADA Accommodation</a></li>
+						<li><a href="/Teachers-and-Students.aspx#tab01InformationalBrochures">Brochures</a></li>
+						<li><a href="/State-Court-Administrators-Office/careers.aspx">Careers</a></li>
+                        <li><a href="/Help-Topics/Court-Fees.aspx">Court Fees</a></li>
+						<li><a href="/About-The-Courts/Overview/Holidays.aspx">Court Holidays</a></li>
+						<li><a href="/SupremeCourt/Court-Rules.aspx">Court Rules</a></li>
+					</ul>
+				</div>
+			</article>
+			<article class="col col2">
+				<div class="padding">
+					<ul>
+                        <li><a href="/MinnesotaJudicialCouncil.aspx">Judicial Council</a></li>
+						<li><a href="/About-The-Courts/Overview/JudicialDirectory.aspx">Judicial Officer Directory</a></li>
+						<li><a href="/Help-Topics/Language-Access-Plans.aspx">Language Access Plan</a></li>
+                        <li><a href="/Help-Topics/Law-Libraries.aspx">Law Libraries</a></li>
+                		<li><a href="/About-The-Courts/PublicationsAndReports.aspx">Publications &amp; Reports</a></li>
+                        <li><a href="/Help-Topics/Self-Help-Centers.aspx">Self-Help Centers</a></li>
+                        <li><a href="/State-Court-Administrators-Office.aspx">State Court Administrator's Office</a></li>
+					</ul>
+				</div>
+			</article>
+			<!--<article class="col col3">
+				<div class="padding">
+					<h1>Contact Us</h1>
+					<p><a href="/State-Court-Administrators-Office.aspx">State Court Administrator's Office</a><br />
+						135 Minnesota Judicial Center <br />
+						25 Dr. Martin Luther King, Jr. Blvd. <br />
+						Saint Paul, MN 55155 <br />
+                        <a href="/About-The-Courts/Minnesota-Judicial-Center.aspx">Parking and Directions</a>
+					</p>
+					<p>For General Information:<br />
+						<a href="/About-The-Courts/Contact-Us.aspx">Contact Us</a><br />
+					</p>
+				</div>
+			</article>-->
+            <article class="col col3">
+              <div>&nbsp;</div>
+            </article>
+			<article class="col col4">
+				<div class="padding">
+					<h1>Get Connected</h1>
+					<ul>
+						<li><a href="https://service.govdelivery.com/accounts/MNCOURTS/subscriber/new" target="_blank">Email Updates</a></li>
+						<li><a href="/About-The-Courts/NewsAndAnnouncements.aspx?t=news">News</a></li>
+						<li><a href="/About-The-Courts/NewsAndAnnouncements.aspx?t=notice">Public Notices</a></li>                      
+						<li><a href="/Request-a-Speaker.aspx">Request a Speaker</a></li>
+                        <!--<li>For General Information:</li>
+                        <li><a href="/About-The-Courts/Contact-Us.aspx">Contact Us</a></li>-->
+					</ul><br />
+					<p>For General Information:<br />
+						<a href="/About-The-Courts/Contact-Us.aspx">Contact Us</a><br />
+					</p>
+				</div>
+			</article>
+		</div>
+	</footer>
+	<footer class="bottomFooter group">
+		<div class="siteWrapper">
+			<ul class="utilityLinks">
+                <li><a href="/SpecialPages/Disclaimer.aspx">Disclaimer</a></li>
+				<li><a href="/SpecialPages/Privacy-Policy.aspx">Privacy Policy</a></li>
+				<li><a href="/SpecialPages/Terms-of-Use.aspx">Terms of Use</a></li>
+				<li><a href="/Sitemap.aspx">Sitemap</a></li>
+			</ul>
+			<aside class="socialLinks">
+                <a href="https://www.instagram.com/mncourts/" target="_blank" class="yt"><img src="/mncourtsgov/media/CIOMediaLibrary/Icons/instagram-icon.png" alt="Instagram" title="Instagram" /></a>&nbsp; &nbsp;
+                <a href="https://www.twitter.com/mncourts" target="_blank" class="yt"><img src="/mncourtsgov/media/CIOMediaLibrary/Icons/twitter-icon.png" alt="Twitter" title="Twitter" /></a>&nbsp; &nbsp;
+				<a href="https://www.youtube.com/user/MNJudicialBranch" target="_blank" class="yt"><img src="/mncourtsgov/media/CIOMediaLibrary/Icons/youtube-icon.png" alt="YouTube" title="YouTube" /></a>&nbsp; &nbsp;
+    			<a href="https://service.govdelivery.com/accounts/MNCOURTS/subscriber/new" target="_blank" class="yt"><img src="/mncourtsgov/media/CIOMediaLibrary/Icons/media_icon-govdelivery-bubble-hi-res-GS-33x33.png" alt="GovDelivery" title="GovDelivery" /></a>&nbsp; &nbsp;
+                <a href="https://www.linkedin.com/company/minnesota-judicial-branch" target="_blank" class="yt"><img src="/mncourtsgov/media/CIOMediaLibrary/Icons/linkedin-icon.png" alt="LinkedIn" title="LinkedIn" /></a>
+      	</aside>
+		</div>
+	</footer>
+</div>
+
+<input id="wfsid" type="hidden" name="wfsid" value="2" />
+<!-- Scripts -->
+<script type="text/javascript" src="/CMSScripts/Custom/plugins.js"></script>
+<script type="text/javascript" src="/CMSScripts/Custom/initiate.js?cb=20200218"></script>
+<script type="text/javascript" src="/CMSScripts/Custom/mjbplugins.js"></script>
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-5986473-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+<!-- BoldChat Visitor Monitor HTML v5.00 (Website=4th District Courts - Other,ChatButton=- None -,ChatInvitation=4th District Courts) -->
+<script type="text/javascript">
+window._bcvma = window._bcvma || [];
+_bcvma.push(["setAccountID", "348950445781088366"]);
+_bcvma.push(["setParameter", "WebsiteID", "3314117877258564439"]);
+_bcvma.push(["setParameter", "InvitationID", "346444112120496486"]);
+_bcvma.push(["setParameter", "VisitName", ""]);
+_bcvma.push(["setParameter", "VisitPhone", ""]);
+_bcvma.push(["setParameter", "VisitEmail", ""]);
+_bcvma.push(["setParameter", "VisitRef", ""]);
+_bcvma.push(["setParameter", "VisitInfo", ""]);
+_bcvma.push(["setParameter", "CustomUrl", ""]);
+_bcvma.push(["setParameter", "WindowParameters", ""]);
+_bcvma.push(["pageViewed"]);
+var bcLoad = function(){
+    if(window.bcLoaded) return; window.bcLoaded = true;
+    var vms = document.createElement("script"); vms.type = "text/javascript"; vms.async = true;
+    vms.src = ('https:'==document.location.protocol?'https://':'http://') + "vmss.boldchat.com/aid/348950445781088366/bc.vms4/vms.js";
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vms, s);
+};
+if(window.pageViewer && pageViewer.load) pageViewer.load();
+else if(document.readyState=="complete") bcLoad();
+else if(window.addEventListener) window.addEventListener('load', bcLoad, false);
+else window.attachEvent('onload', bcLoad);
+</script>
+<noscript>
+<a href="http://www.boldchat.com" title="Live Chat" target="_blank"><img alt="Live Chat" src="https://vms.boldchat.com/aid/348950445781088366/bc.vmi?wdid=3314117877258564439&amp;vr=&amp;vn=&amp;vi=&amp;ve=&amp;vp=&amp;curl=" border="0" width="1" height="1" /></a>
+</noscript>
+<!-- /BoldChat Visitor Monitor HTML v5.00 -->
+    
+    
+
+<script type="text/javascript">
+	//<![CDATA[
+WebServiceCall('/cmsapi/webanalytics', 'LogHit', '{"NodeAliasPath":"/Access-Case-Records","DocumentCultureCode":"en-US","UrlReferrer":""}')
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+</html>

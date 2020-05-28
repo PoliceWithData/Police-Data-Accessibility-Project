@@ -1,0 +1,1386 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head><title>
+	UJS Home
+</title>
+
+    <!-- Meta Tags -->
+    <meta name="Referrer‐Policy" value="no‐referrer" /><meta name="referrer" content="no-referrer" />
+
+
+
+
+    <!-- Favicons -->
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicons/apple-touch-icon.png" /><link rel="icon" type="image/png" sizes="32x32" href="Favicons/favicon-32x32.png" /><link rel="icon" type="image/png" sizes="16x16" href="Favicons/favicon-16x16.png" /><link rel="manifest" href="Favicons/manifest.json" /><link rel="mask-icon" href="Favicons/safari-pinned-tab.svg" color="#000000" /><link rel="shortcut icon" href="Favicons/favicon.ico" /><meta name="msapplication-config" content="~/Favicons/browserconfig.xml" /><meta name="theme-color" content="#ffffff" />
+
+    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38455973-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-38455973-1');
+    </script>
+
+    <!-- Google Fonts -->
+    <!-- Change the combination of fonts, remember to use a SRI Hash Generator!!!!, will not work, This has to deal with the fact that Google fonts serves different files depending on the browser. Because of that, it hashes out differently depending on which browser the user is using. -->
+    <link href="https://fonts.googleapis.com/css?family=Tangerine|Raleway|Cookie|Roboto|GFS+Didot" rel="stylesheet" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <!-- lightslider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha256-nHmCK+HOPMPezzS3ky9VKznMWH4sW4keT8HrMaDNbYo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" integrity="sha256-ev+XS9lVA6/6vEe/p9pncQjsHB6g9UtAZYFLNViXxAA=" crossorigin="anonymous" />
+
+    <!-- responsiveslides -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.55/responsiveslides.min.js" integrity="sha256-McjefDAjVI5CBaj2H6nUtceXB9wBcQyDExhFdK+6LuU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.55/responsiveslides.min.css" integrity="sha256-VhZBCePdWGFQiU+zEO5CHUYgxwdLTRiAeICmYy01wvg=" crossorigin="anonymous" />
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY=" crossorigin="anonymous" />
+
+    <!-- jquery-match-height -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js" integrity="sha256-+oeQRyZyY2StGafEsvKyDuEGNzJWAbWqiO2L/ctxF6c=" crossorigin="anonymous"></script>
+
+    <!-- jQuery-Marquee -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js" integrity="sha256-I7mznqYTCAUiVrmSG/HA3maYvPDATj5PKXityGFo/24=" crossorigin="anonymous"></script>
+
+    <!-- jQuery-rwdImageMaps -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js" integrity="sha256-H0jJMH37jcA7SQWWbILbmKZkAQyD6pUqbR46qtwAcDs=" crossorigin="anonymous"></script>
+
+    <!-- Noty Notification -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js" integrity="sha256-ITwLtH5uF4UlWjZ0mdHOhPwDpLoqxzfFCZXn1wE56Ps=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css" integrity="sha256-soW/iAENd5uEBh0+aUIS1m2dK4K6qTcB9MLuOnWEQhw=" crossorigin="anonymous" />
+
+    
+
+    
+
+    
+
+    
+
+    <!-- imageMapWrapper -->
+    <script src="https://cdn.jsdelivr.net/npm/image-map-wrapper@1.0.0/js/imageMapWrapper.min.js" integrity="sha256-mKAbGojtK4glpE1MnQWcPG36A/SlyQsGXZv8BYL6hKs=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap-Select -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.5/css/bootstrap-select.min.css" integrity="sha256-+vXzuS+2WfIRKsWKhx57m2MxXLm1lWxXWMvRYvV8EmI=" crossorigin="anonymous" />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.5/js/bootstrap-select.min.js" integrity="sha256-sPB0bXhTKTOD26cdIyP0IBbjPU55/RfeXgJmbPZmuXc=" crossorigin="anonymous"></script>
+
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.5/js/i18n/defaults-en_US.min.js" integrity="sha256-naAWiDQizQGsDLKGfs3rzCjKH40DlSWCdP3OMrwh9Kg=" crossorigin="anonymous"></script>
+
+    <!-- ReCaptcha V2 -->
+    <script src="https://www.google.com/recaptcha/api.js" type="text/jscript"></script>
+
+    <!-- GIJGO -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.9.10/combined/css/gijgo.min.css" integrity="sha256-+SmN5AjG3w6rAfc/L0ymwbqgVHAwcrlY2BJ+UPrHAu8=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.9.10/combined/js/gijgo.min.js" integrity="sha256-dtXAHG3CPzdqazQbsvSGJnxPyJ04wMLcSXfHB6/r+A4=" crossorigin="anonymous"></script>
+
+    <!-- jQuery mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js" integrity="sha256-PtzTX1ftmEmj8YUiAX0wTIQ+ddTAGVt2MiLMsGsAMxM=" crossorigin="anonymous"></script>
+
+    <!-- UJS custom CSS file - OVERRIDE any above styles -->
+    <link rel="stylesheet" href="Content/Custom.css" /></head>
+<body>
+
+    <!-- Form -->
+    <form method="post" action="./" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZPfgxkwpmMhab0rmAXSK0QMLgpW-puUVlehAlDRiWDTW1QZnuQ2&amp;t=637103130965614113" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=uHIkleVeDJf4xS50Krz-yEkQJuMWGXVkVZ2HpCMj90jqnKEm25-xXWHRELOhPf7b1RoY3N3eQ3ExXeYpNhGDIINEGfNlzpJSJZM14odo50zQLRyzc3JOf_brFUm3TVbpM4Mhyy4u7SRyocHlWoFVU6HlVx81&amp;t=ffffffffecf19baa" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Jw6tUGWnA15YEa3ai3FadIpFSdFAksoFUuGAqxZ-dnK6-uNdiCbk-TGRalGe4nD0C-EM4MGUs3SpzkOf_Yh_4IY1GyYAm_Hl8LSVKikCfC3FrM_UX8gVm4acGdh8k-DB9tIO-3DrTttCNOvnEVhfo9o9JTQ1&amp;t=ffffffffecf19baa" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="EDNga5Zn57v5YWdBVdogA3ctInyj7g/U5ei5xAlh95heeL+3DTNm5EqeIHg1OlwRovtdHvWW5K8JCoTbORlJnmsA37vGRZlCJWai7NmZEubituj9yKU2TyvVwYbR4fME3NXuXi4PlT9MkPuM+MvWWtiiqEWi7HTesE4R+YangTClQUwT4cvpV2U8ouSmGJogRnm3vqlQ5hFlNhZjLpVZ1muqVMKi5VE0LFy7Zfa5ggWSgVqsHnkh0WDVJATRpSjEmwosL9b/B4TmBUbXiDdl4+ilPAz9KY3Xxr76WWVFpfuMu7ytMFWZyB5tdUoL5PevUuDB+f7kaabmm5m8nHzcIsfvbvoymmCew4tmaSzCmgY6+KIhxK1eDfqK2EM5sS1JSh4zqP2GY4aZvST34mjLqPCGHq+gAkV2zWQTiVLCb0S1+nBk64DcLg4MjeQkB9JOPTmpehjCIZOc4Qf2l4lzJCIXdq9b5kucsaM1CrhNnlem/rIQWu1GR2x3ULgan5JnCJv04VqLbnqJPIdfMj+Wtf1eEVCdhzpT1GBMkITY/l03FKR1JgEy/NtjZz4v3nrBdmD8NqA/3Hq2pqqW32xCiguBeFA6VVnkTu/tv5Jeop4C+Cvrx/eQuKM1YDVIDAL5tCuzR6wKqI+NAIbK2/67hb0WHRAKRe9iniEnOxGy74C/MevIfZAoCuBYReZrUMaE8V/bgYTI6CYLI+Wk6C3QT1bv7LKpGGMql6nQULIzGPaby5A6ny9KWDNO2xWGClx4c/xZqkMYd8cS+nmheFUyIyXqK0AKz5We+b9aZYfZ+Ja4zpKvFzISymQYZhS8JO7fU1lF96/4edyf5PCjYX+RvzrvS6vZ7jQ4UwPwIykW1hv1TdDU1fQUAaNGQ8iHfjUIv/2yMYK6vjluCynPygv7/an0kzN8Spkmy3QPNv2qLdtothR3D3hzhkqetud04xsWGd8RMUh14rxL3Y8kffd1N1Hz58TaftNtmhNCRTukkMC0PaC32XvcJbM2w/Tm2oNrGK0dFg0PO0hJRzqajjy3qOO2cx5IX92HA2d4+XDFmHKkb8l8G3+NjyXKDSTuJDtKPHDB8nC9qyZbjnfloV9cG/fTgLN0nB8CT00cZKBBZjAY5KqmU79KTP0q15SlNFiSmXR66qxngVOqLyIk3IkOW2mAcU7fTn6rdHsvBzRkIboXJ13WgevsA8ItUwhqGfRH3t11y94vIvuNK3wpn8Vr2J45LPvXNw8QRtFV7Xt3XsqOHERwXoDKlkg03MZKCgECvgzXDyRkexvsoWiRY8zO7R0T4vKMMCEya/BjHxM9b9+QMkX1kAImIPaMNie9w294tavkxmYEfhGW/n0KT7d/D6ND0M9J87+jblVJwMD0RlJAUqp2jmVuPyNDsoFgSq4QtTFFVMge5P8PjLeEUTVjwxAZUfQ=" />
+</div>
+
+        <!-- Header -->
+        
+
+<div class="container-fluid header-container d-none d-md-block">
+    <div class="container">
+        <div class="header rounded m-0 p-0">
+            <div class="row h-25">
+                <div class="col-md-5">
+                    <a id="WebUserControl_Header_HyperLink_UJSHomeLargeLogo" title="SD Unified Judicial System Home" class="text-white" href="Default.aspx" style="text-decoration: none;"><img id="WebUserControl_Header_Image_UJSLogo" class="float-left m-0 p-0" src="Images/UJSSealGold.png" alt="SD UJS Seal Gold" style="width: 10rem; height: 10rem;" />
+                        <h1 class="text-white in-middle m-0 p-0 SDUJS">South Dakota<br />
+                            Unified Judicial System</h1>
+                    </a>
+                </div>
+                <div class="col-md-7">
+                    <div class="h-100 w-100" style="display: flex;">
+                        <ul class="rslides">
+                            
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Corson.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_0" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl00$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Corson County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Marshall.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_1" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl01$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Marshall County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/FallRiver.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_2" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl02$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Fall River County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/McCook.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_3" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl03$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>McCook County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/McPherson.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_4" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl04$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>McPherson County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Aurora.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_5" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl05$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Aurora County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/BonHomme.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_6" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl06$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Bon Homme County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/CharlesMix.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_7" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl07$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Charles Mix County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Minnehaha.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_8" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl08$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Minnehaha County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Sully.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_9" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl09$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Sully County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Stanley.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_10" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl10$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Stanley County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Dewey.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_11" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl11$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Dewey County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Custer.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_12" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl12$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Custer County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Hamlin.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_13" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl13$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Hamlin County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Clark.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_14" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl14$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Clark County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Lincoln.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_15" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl15$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Lincoln County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Kingsbury.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_16" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl16$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Kingsbury County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Clay.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_17" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl17$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Clay County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Beadle.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_18" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl18$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Beadle County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Brookings.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_19" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl19$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Brookings County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Codington.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_20" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl20$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Codington County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Yankton.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_21" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl21$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Yankton County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Miner.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_22" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl22$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Miner County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Hand.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_23" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl23$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Hand County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Hyde.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_24" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl24$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Hyde County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Jerauld.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_25" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl25$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Jerauld County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Hutchinson.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_26" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl26$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Hutchinson County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Union.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_27" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl27$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Union County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Pennington.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_28" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl28$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Pennington County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Lawrence.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_29" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl29$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Lawrence County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Turner.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_30" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl30$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Turner County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Roberts.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_31" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl31$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Roberts County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Gregory.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_32" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl32$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Gregory County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Sanborn.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_33" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl33$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Sanborn County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Spink.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_34" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl34$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Spink County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Mellette.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_35" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl35$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Mellette County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Hughes.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_36" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl36$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Hughes County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Jones.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_37" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl37$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Jones County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Grant.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_38" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl38$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Grant County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Campbell.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_39" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl39$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Campbell County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Moody.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_40" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl40$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Moody County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Potter.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_41" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl41$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Potter County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Edmunds.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_42" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl42$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Edmunds County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Harding.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_43" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl43$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Harding County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Day.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_44" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl44$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Day County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Davison.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_45" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl45$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Davison County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Douglas.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_46" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl46$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Douglas County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Perkins.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_47" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl47$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Perkins County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Deuel.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_48" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl48$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Deuel County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Haakon.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_49" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl49$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Haakon County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Brown.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_50" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl50$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Brown County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Ziebach.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_51" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl51$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Ziebach County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Walworth.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_52" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl52$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Walworth County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Brule.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_53" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl53$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Brule County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Bennett.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_54" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl54$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Bennett County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Faulk.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_55" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl55$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Faulk County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Tripp.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_56" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl56$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Tripp County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Hanson.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_57" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl57$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Hanson County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Lyman.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_58" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl58$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Lyman County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Butte.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_59" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl59$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Butte County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Meade.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_60" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl60$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Meade County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Lake.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_61" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl61$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Lake County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                                    <li class="h-100 w-100 rounded" style="background-image: url('/Images/Jackson.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                                        <a id="WebUserControl_Header_Repeater_ResponsiveSliderCountyCourthouse_LinkButton_Counties_62" class="link-custom" href="javascript:__doPostBack(&#39;ctl00$WebUserControl_Header$Repeater_ResponsiveSliderCountyCourthouse$ctl62$LinkButton_Counties&#39;,&#39;&#39;)" style="display: block; text-decoration: none; width: 100%; height: 100%;"><div class="caption-courthouse text-left">
+                                                <p>Jackson County Courthouse</p>
+                                            </div></a>
+                                    </li>
+                                
+                        </ul>
+                    </div>
+                    <script>
+                        $(function () {
+                            $(".rslides").responsiveSlides({
+                                auto: true,                             // Boolean: Animate automatically, true or false
+                                speed: 500,                             // Integer: Speed of the transition, in milliseconds
+                                timeout: 10000,                          // Integer: Time between slide transitions, in milliseconds
+                                pager: false,                           // Boolean: Show pager, true or false
+                                nav: false,                              // Boolean: Show navigation, true or false
+                                random: true,                           // Boolean: Randomize the order of the slides, true or false
+                                pause: false,                           // Boolean: Pause on hover, true or false
+                                pauseControls: true,                    // Boolean: Pause when hovering controls, true or false
+                                prevText: "Previous",                   // String: Text for the "previous" button
+                                nextText: "Next",                       // String: Text for the "next" button
+                                maxwidth: "",                           // Integer: Max-width of the slideshow, in pixels
+                                navContainer: "",                       // Selector: Where controls should be appended to, default is after the 'ul'
+                                manualControls: "",                     // Selector: Declare custom pager navigation
+                                namespace: "centered-btns",          // String: Change the default namespace used
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        <!-- Navigation -->
+        
+
+<div class="container-fluid navbar-container">
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-custom m-0 p-0">
+
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarsUJS" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <span class="d-md-none">
+                <a id="WebUserControl_NavBar_HyperLink_UJSBrand" title="South Dakota Unified Judicial System Home" href="Default.aspx"><img id="WebUserControl_NavBar_Image_UJSSeals" class="navbar-brand d-md-none img-fluid" src="Images/UJSSealGoldSmall.png" alt="South Dakota Unified Judicial System Seal" /></a>
+            </span>
+
+            <a id="WebUserControl_NavBar_HyperLink_HomeSmall" title="South Dakota Unified Judicial System Home" class="navbar-brand d-md-none float-left" href="Default.aspx">
+            <span class="text-white SDUJS" style="word-break:normal; font-size: xx-large;">SD Judicial System</span>
+            </a>
+
+            <div class="mt-1 mb-1">
+                <label aria-label="Search" class="m-0 p-0" style="white-space: nowrap;"><span class="visuallyhidden">Search</span><i class="fas fa-search text-white p-1"></i><input type="text" class="addsearch rounded border border-white" disabled="disabled" placeholder="Search..." style="line-height: normal;" /></label>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarsUJS">
+                <ul class="navbar-nav form-inline w-100 text-center">
+                    <li id="navbarhome" class="nav-item p-0 m-0">
+                        <a id="WebUserControl_NavBar_HyperLink_HomeLarge" class="nav-link navlink-custom py-0" href="Default.aspx"><i class="fas fa-home"></i>&nbsp;Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item p-0 m-0 d-none d-md-block">
+                        <span class="text-center d-none d-md-block barseparator">&#124;
+                        </span>
+                    </li>
+                    <li id="navbarsupremecourt" class="nav-item dropdown p-1 m-0">
+                        <a class="nav-link navlink-custom py-0 dropdown-toggle" id="navbardropdownsupremecourt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">Supreme Court</a>
+                        <div class="dropdown-menu m-0" aria-labelledby="navbardropdownsupremecourt" style="right: auto; left: auto;">
+                            <a id="WebUserControl_NavBar_HyperLink_Justice" class="dropdown-item" href="Supreme_Court/Justices.aspx">Justices</a>
+                            <a id="WebUserControl_NavBar_HyperLink_Opinion" class="dropdown-item" href="Supreme_Court/Opinions.aspx">Opinions</a>
+                            <a id="WebUserControl_NavBar_HyperLink_TermCourt" class="dropdown-item" href="Supreme_Court/CurrentTerm.aspx">Term of Court</a>
+                            <a id="WebUserControl_NavBar_HyperLink_JudiciaryMessage" class="dropdown-item" href="Supreme_Court/Messages.aspx">Judiciary Messages</a>
+                            <a id="WebUserControl_NavBar_HyperLink_Rules" class="dropdown-item" href="Supreme_Court/Rules.aspx">Rules</a>
+                            <a id="WebUserControl_NavBar_HyperLink_Hearings" class="dropdown-item" href="Supreme_Court/Hearings.aspx">Hearings</a>
+                            <a id="WebUserControl_NavBar_HyperLink_SummDispo" class="dropdown-item" href="Supreme_Court/SummaryDisp.aspx">Summary Dispositions</a>
+                        </div>
+                    </li>
+                    <li class="nav-item p-0 m-0 d-none d-md-block">
+                        <span class="text-center d-none d-md-block barseparator">&#124;
+                        </span>
+                    </li>
+                    <li id="navbarcourtfinder" class="nav-item dropdown p-0 m-0">
+                        <a class="nav-link navlink-custom py-0 dropdown-toggle" id="navbardropdowncourtfinder" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">Court Finder</a>
+                        <div class="dropdown-menu m-0" aria-labelledby="navbardropdowncourtfinder" style="right: auto; left: auto;">
+                            <a id="WebUserControl_NavBar_HyperLink_Search" class="dropdown-item" href="Circuit_Court/Default.aspx">Search</a>
+                            <a id="WebUserControl_NavBar_HyperLink_1Circuit" class="dropdown-item" href="First_Circuit/Default.aspx">1st Circuit</a>
+                            <a id="WebUserControl_NavBar_HyperLink_2Circuit" class="dropdown-item" href="Second_Circuit/Default.aspx">2nd Circuit</a>
+                            <a id="WebUserControl_NavBar_HyperLink_3Circuit" class="dropdown-item" href="Third_Circuit/Default.aspx">3rd Circuit</a>
+                            <a id="WebUserControl_NavBar_HyperLink_4Circuit" class="dropdown-item" href="Fourth_Circuit/Default.aspx">4th Circuit</a>
+                            <a id="WebUserControl_NavBar_HyperLink_5Circuit" class="dropdown-item" href="Fifth_Circuit/Default.aspx">5th Circuit</a>
+                            <a id="WebUserControl_NavBar_HyperLink_6Circuit" class="dropdown-item" href="Sixth_Circuit/Default.aspx">6th Circuit</a>
+                            <a id="WebUserControl_NavBar_HyperLink_7Circuit" class="dropdown-item" href="Seventh_Circuit/Default.aspx">7th Circuit</a>
+                        </div>
+                    </li>
+                    <li class="nav-item p-0 m-0 d-none d-md-block">
+                        <span class="text-center d-none d-md-block barseparator">&#124;
+                        </span>
+                    </li>
+                    <li id="navbarattorneys" class="nav-item dropdown p-0 m-0">
+                        <a class="nav-link navlink-custom py-0 dropdown-toggle" id="navbardropdownattorneys" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">Attorneys</a>
+                        <div class="dropdown-menu m-0" aria-labelledby="navbardropdownattorneys" style="right: auto; left: auto;">
+                            <a id="WebUserControl_NavBar_HyperLink_AttorneySupremeCourt" class="dropdown-item" href="Attorneys/SupremeCourt.aspx">Supreme Court</a>
+                            <a id="WebUserControl_NavBar_HyperLink_AttorneyFormsDocs" class="dropdown-item" href="Attorneys/FormsDocumentation.aspx">Forms & Documents</a>
+                            <a id="WebUserControl_NavBar_HyperLink_AttorneyRuralRecruitProgram" class="dropdown-item" href="Attorneys/RuralRecruitment.aspx">Rural Recruitment Program</a>
+                            <a id="WebUserControl_NavBar_HyperLink_AttorneyJudgePref" class="dropdown-item" href="Attorneys/JudgePreferences.aspx">Judge Preferences</a>
+                            <a id="WebUserControl_NavBar_HyperLink_AttorneyCertified" class="dropdown-item" href="Attorneys/Certified.aspx">Certified Attorneys</a>
+                            <a id="WebUserControl_NavBar_HyperLink_AttorneyAdditionalResources" class="dropdown-item" href="Attorneys/Resources.aspx">Additional Resources</a>
+                            <a id="WebUserControl_NavBar_HyperLink_AttorneyFileServe" class="dropdown-item" href="https://southdakota.tylerhost.net/OfsWeb" target="_blank" rel="noopener noreferrer">File & Serve</a>
+                        </div>
+                    </li>
+                    <li class="nav-item p-0 m-0 d-none d-md-block">
+                        <span class="text-center d-none d-md-block barseparator">&#124;
+                        </span>
+                    </li>
+                    <li id="navbarjurors" class="nav-item p-0 m-0">
+                        <a id="WebUserControl_NavBar_HyperLink_NavBarJurors" class="nav-link navlink-custom py-0" href="Information/Jurors.aspx">Jurors</a>
+                    </li>
+                    <li class="nav-item p-0 m-0 d-none d-md-block">
+                        <span class="text-center d-none d-md-block barseparator">&#124;
+                        </span>
+                    </li>
+                    <li id="navbarresources" class="nav-item dropdown p-0 m-0">
+                        <a class="nav-link navlink-custom py-0 dropdown-toggle" id="navbardropdownresources" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">Resources</a>
+                        <div class="dropdown-menu m-0" aria-labelledby="navbardropdownresources" style="right: auto; left: auto;">
+                            <a id="WebUserControl_NavBar_HyperLink_ResourcesInterpreter" class="dropdown-item" href="Resources/Interpreter.aspx">Interpreter</a>
+                            <a id="WebUserControl_NavBar_HyperLink_ResourcesProgramsServices" class="dropdown-item" href="Resources/ProgramsServices.aspx">Programs & Services</a>
+                            <a id="WebUserControl_NavBar_HyperLink_ResourcesCIP" class="dropdown-item" href="Resources/CourtImprovement.aspx">Court Improvement (CIP)</a>
+                            <a id="WebUserControl_NavBar_HyperLink_ResourcesPublicInfo" class="dropdown-item" href="Resources/PublicInformation.aspx">Public Information</a>
+                        </div>
+                    </li>
+                    <li class="nav-item p-0 m-0 d-none d-md-block">
+                        <span class="text-center d-none d-md-block barseparator">&#124;
+                        </span>
+                    </li>
+                    <li id="navbareservices" class="nav-item dropdown p-0 m-0">
+                        <a class="nav-link navlink-custom py-0 dropdown-toggle" id="navbardropdowneservices" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">eServices</a>
+                        <div class="dropdown-menu m-0" aria-labelledby="navbardropdowneservices" style="right: auto; left: auto;">
+                            <a id="WebUserControl_NavBar_HyperLink_eServicesPayments" class="dropdown-item" href="https://ujsportal.sd.gov/Portal/" target="_blank" rel="noopener noreferrer">Make Payments</a>
+                            <a id="WebUserControl_NavBar_HyperLink_eServicesLawHelp" class="dropdown-item" href="https://ujslawhelp.sd.gov/" target="_blank" rel="noopener noreferrer">Law Help & Forms</a>
+                            <a id="WebUserControl_NavBar_HyperLink_eServiceseCourts" class="dropdown-item" href="https://ecourts.sd.gov/" target="_blank" rel="noopener noreferrer">eCourts</a>
+                            <a id="WebUserControl_NavBar_HyperLink_eServicesPARS" class="dropdown-item" href="https://ujspars.sd.gov/" target="_blank" rel="noopener noreferrer">PARS</a>
+                            <a id="WebUserControl_NavBar_HyperLink_eServicesCivilMoneyJudgment" class="dropdown-item" href="https://ujsjudgmentquery.sd.gov/login.aspx" target="_blank" rel="noopener noreferrer">Civil Money Judgment</a>
+                            <a id="WebUserControl_NavBar_HyperLink_eServicesSDJurors" class="dropdown-item" href="https://ujsjurors.sd.gov/" target="_blank" rel="noopener noreferrer">SD Jurors</a>
+                            <a id="WebUserControl_NavBar_HyperLink_eServicesUJSNotification" class="dropdown-item" href="https://ujsnotifications.sd.gov/Login.aspx?ReturnUrl=%2f" target="_blank" rel="noopener noreferrer">UJS Notification</a>
+                            <a id="WebUserControl_NavBar_HyperLink_eServicesRecordSearch" class="dropdown-item" href="https://ujslawhelp.sd.gov/recordsearch.aspx" target="_blank" rel="noopener noreferrer">Record Search</a>
+                        </div>
+                    </li>
+                    <li class="nav-item p-0 m-0 d-none d-md-block">
+                        <span class="text-center d-none d-md-block barseparator">&#124;
+                        </span>
+                    </li>
+                    <li id="navbarintranet" class="nav-item p-0 m-0">
+                        <a id="WebUserControl_NavBar_HyperLink_NavBarIntranet" class="nav-link navlink-custom py-0" href="http://intranet.ujs.sd.gov/login.aspx" target="_blank" rel="noopener noreferrer">Intranet</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<script>
+    // With css help, controls mouseover on dropdowns
+    $('body').on('mouseenter mouseleave', '.dropdown', function (e) {
+        var _d = $(e.target).closest('.dropdown'); _d.addClass('show');
+        setTimeout(function () {
+            _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
+        }, 300);
+    });
+</script>
+<!-- AddSearch Settings -->
+<script type="text/javascript">
+
+    // Settings before addsearch key
+    window.addsearch_settings = {
+    };
+
+</script>
+<!-- AddSearch Key -->
+<script type="text/javascript" src="https://addsearch.com/js/?key=d25589a04dc32a101aa7cb4332780a33&categories=0xujs.sd.gov"></script>
+
+
+        <!-- Notice -->
+        
+
+<div class="container">
+    
+    
+    
+    
+</div>
+
+
+         
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        <div class="container">
+            
+    <script>
+        $(document).ready(function () {
+            $(".nav li").removeClass("active"); // remove previously bootstrap active menu item 
+            $('#navbarhome').addClass('active'); // activate new current bootstrap menu item
+        });
+    </script>
+    <div class="row no-gutters">
+        <div class="col-md-5 mt-1">
+            <div class="card card-custom-border card-custom link-custom ml-1 mr-1 h-100">
+                <div class="card-header m-0 pl-2 pr-2 pt-1 pb-0">
+                    <h5 class="font-weight-bold">
+                        <a id="ContentPlaceHolder1_HyperLink_CardHeaderNews" title="More news ..." href="Information/News.aspx"><i class="fas fa-newspaper"></i>&nbsp;News</a></h5>
+                </div>
+                <div class="card-body p-0 m-0">
+                    <ul class="ml-4 p-0" style="list-style-type: disc; list-style-position: outside;">
+                        
+                                <li class="mt-2">
+                                    <a class="p-0 m-0" href="/uploads/news/COVID19UJSProcedures.pdf" target="_blank" rel="noopener noreferrer">&#9888;&nbsp;<font color='red'><b>COVID-19 Response</b></font></a>
+                                </li>
+                            
+                                <li class="mt-2">
+                                    <a class="p-0 m-0" href="/uploads/news/Zoomoralarguments.pdf" target="_blank" rel="noopener noreferrer">Supreme Court Conducts Oral Arguments via Zoom</a>
+                                </li>
+                            
+                                <li class="mt-2">
+                                    <a class="p-0 m-0" href="/Information/newsitem.aspx?C1N9wkdGixw5IVNth5vY6b8krl2u1LLitG0RJvZLcuU%3d" target="_blank" rel="noopener noreferrer">First Circuit James Valley Drug & DUI Court Graduation</a>
+                                </li>
+                            
+                                <li class="mt-2">
+                                    <a class="p-0 m-0" href="/uploads/news/CJGilbertson25yearsPressRelease.pdf" target="_blank" rel="noopener noreferrer">Chief Justice Gilbertson to observe 25th Anniversary on the South Dakota Supreme Court</a>
+                                </li>
+                            
+                    </ul>
+                </div>
+                <div class="card-footer p-2 m-0">
+                    <a id="ContentPlaceHolder1_HyperLink_CardFooterNews" title="News" href="Information/News.aspx">More news ...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7 mt-1">
+            <div class="card ml-1 mr-1 m-0 p-0 border-0 h-100 clearglass">
+                <div class="card-header p-0 m-0 border-0 d-none d-md-block clearglass">
+                    <ul id="tabs" class="nav nav-tabs flex-nowrap" role="tablist">
+                        <li class="nav-item d-flex flex-row text-center">
+                            <a id="tab-A" href="#pane-A" class="nav-link active" data-toggle="tab" role="tab">
+                                <h5 class="font-weight-bold"><i class="fas fa-desktop"></i>&nbsp;eServices</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex flex-row text-center">
+                            <a id="tab-B" href="#pane-B" class="nav-link" data-toggle="tab" role="tab">
+                                <h5 class="font-weight-bold"><i class="fas fa-briefcase"></i>&nbsp;Careers</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body tabaccordion tab-card tab-card-body-border p-0">
+
+                    <div id="content" class="tab-content" role="tablist">
+                        <div id="pane-A" class="card tab-card tab-pane fade show active link-custom" role="tabpanel" aria-labelledby="tab-A">
+                            <div class="card-header m-0 pl-2 pr-2 pt-1 pb-0" role="tab" id="heading-A">
+                                <a id="acc-A" data-toggle="collapse" href="#collapse-A" data-parent="#content" aria-expanded="true" aria-controls="collapse-A">
+                                    <h5 class="font-weight-bold"><i class="fas fa-desktop"></i>&nbsp;eServices</h5>
+                                </a>
+                            </div>
+                            <div id="collapse-A" class="collapse show" role="tabpanel" aria-labelledby="heading-A" style="overflow: hidden; width: 100%; height: 100%;">
+                                <div class="card-body m-1 p-0" style="height: inherit;">
+
+                                    <div class="row in-middle" style="height: inherit;">
+
+                                        <div class="in-middle link-custom-make" style="width: 10%; height: inherit;">
+                                            <div class="leftservices d-none d-sm-block ml-3" style="display: block; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; cursor: pointer;" title="Previous"><i class="fas fa-2x fa-caret-square-left"></i></div>
+                                        </div>
+
+                                        <div style="width: 80%;">
+                                            <div class="servicesslider link-custom">
+                                                <div>
+                                                    <a id="ContentPlaceHolder1_HyperLink_Payments" title="Make Payments" class="p-0 m-0" href="https://ujsportal.sd.gov/Portal/" target="_blank" rel="noopener noreferrer">
+                                                    <div class="card mt-2 mb-2 ml-1 mr-1 border-0" style="height: inherit;"> 
+                                                    <div class="card-body m-1 p-0">
+                                                        <i class="far fa-3x fa-credit-card"></i>
+                                                        <h5>Make Payments</h5>
+                                                        <div class="card-text">Make payments on criminal and traffic tickets.</div>
+                                                    </div> 
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a id="ContentPlaceHolder1_HyperLink_LawHelp" title="Law Help &amp; Forms" class="p-0 m-0" href="http://ujslawhelp.sd.gov/" target="_blank" rel="noopener noreferrer">
+                                                    <div class="card mt-2 mb-2 ml-1 mr-1 border-0" style="height: inherit;">
+                                                    <div class="card-body m-1 p-0">
+                                                        <i class="fas fa-3x fa-book"></i>
+                                                        <h5>Law Help & Forms</h5>
+                                                        <div class="card-text">South Dakota Legal Self-Help.</div>
+                                                    </div>
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a id="ContentPlaceHolder1_HyperLink_eCourts" title="eCourts" class="p-0 m-0" href="https://ecourts.sd.gov/" target="_blank" rel="noopener noreferrer">
+                                                    <div class="card mt-2 mb-2 ml-1 mr-1 border-0" style="height: inherit;">
+                                                    <div class="card-body m-1 p-0">
+                                                        <i class="fas fa-3x fa-laptop"></i>
+                                                        <h5>eCourts</h5>
+                                                        <div class="card-text">eAccess to case data and documents for SD attorneys & abstractors.</div>
+                                                    </div>
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a id="ContentPlaceHolder1_HyperLink_PARS" title="Public Access Record Search" class="p-0 m-0" href="https://ujspars.sd.gov/" target="_blank" rel="noopener noreferrer">
+                                                    <div class="card mt-2 mb-2 ml-1 mr-1 border-0" style="height: inherit;"> 
+                                                    <div class="card-body m-1 p-0">
+                                                        <i class="fas fa-3x fa-clipboard"></i>
+                                                        <h5>PARS</h5>
+                                                        <div class="card-text">Public Access Record Search (PARS) for criminal and protection cases.</div>
+                                                    </div>                                                      
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a id="ContentPlaceHolder1_HyperLink_CivilMoneyJudgment" title="Civil Money Judgment" class="p-0 m-0" href="https://ujsjudgmentquery.sd.gov/login.aspx" target="_blank" rel="noopener noreferrer">
+                                                    <div class="card mt-2 mb-2 ml-1 mr-1 border-0" style="height: inherit;"> 
+                                                    <div class="card-body m-1 p-0">
+                                                        <i class="fas fa-3x fa-balance-scale"></i>
+                                                        <h5>Civil Money Judgment</h5>
+                                                        <div class="card-text">Public access to state civil court judgments.</div>
+                                                    </div>       
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a id="ContentPlaceHolder1_HyperLink_SDJurors" title="SD Jurors" class="p-0 m-0" href="https://ujsjurors.sd.gov/" target="_blank" rel="noopener noreferrer">
+                                                    <div class="card mt-2 mb-2 ml-1 mr-1 border-0" style="height: inherit;">
+                                                    <div class="card-body m-1 p-0">
+                                                        <i class="fas fa-3x fa-users"></i>
+                                                        <h5>SD Jurors</h5>
+                                                        <div class="card-text">Jurors serving in the circuit courts of South Dakota.</div>
+                                                    </div>
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a id="ContentPlaceHolder1_HyperLink_UJSNotifications" title="UJS Notifications" class="p-0 m-0" href="https://ujsnotifications.sd.gov/Login.aspx?ReturnUrl=%2f" target="_blank" rel="noopener noreferrer">
+                                                    <div class="card mt-2 mb-2 ml-1 mr-1 border-0" style="height: inherit;">
+                                                    <div class="card-body m-1 p-0">
+                                                        <i class="far fa-3x fa-comments"></i>
+                                                        <h5>UJS Notifications</h5>
+                                                        <div class="card-text">Ability to sign up for text and/or email notifications.</div>
+                                                    </div>
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="in-middle link-custom-make" style="width: 10%; height: inherit;">
+                                            <div class="rightservices d-none d-sm-block mr-3" style="display: block; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; cursor: pointer;" title="Next"><i class="fas fa-2x fa-caret-square-right"></i></div>
+                                        </div>
+
+                                        <script>
+                                            $(document).ready(function () {
+                                                var serviceslider = $('.servicesslider').slick({
+                                                    dots: false,
+                                                    infinite: true,
+                                                    speed: 1000,
+                                                    slidesToShow: 3,
+                                                    slidesToScroll: 3,
+                                                    arrows: false,
+                                                    responsive: [
+                                                      {
+                                                          breakpoint: 1024,
+                                                          settings: {
+                                                              slidesToShow: 2,
+                                                              slidesToScroll: 2,
+                                                              infinite: true,
+                                                              dots: false
+                                                          }
+                                                      },
+                                                      {
+                                                          breakpoint: 600,
+                                                          settings: {
+                                                              slidesToShow: 1,
+                                                              slidesToScroll: 1,
+                                                              infinite: true,
+                                                              dots: false
+                                                          }
+                                                      },
+                                                      {
+                                                          breakpoint: 480,
+                                                          settings: {
+                                                              slidesToShow: 1,
+                                                              slidesToScroll: 1,
+                                                              infinite: true,
+                                                              dots: false
+                                                          }
+                                                      }
+                                                      // You can unslick at a given breakpoint now by adding:
+                                                      // settings: "unslick"
+                                                      // instead of a settings object
+                                                    ]
+                                                });
+
+                                                $(".rightservices").click(function (e) { // Added a '.'
+                                                    serviceslider.slick('slickNext'); // Switched to '.slick-slider'
+                                                });
+
+                                                $(".leftservices").click(function (e) { // Added a '.'
+                                                    serviceslider.slick('slickPrev'); // Switched to '.slick-slider'
+                                                });
+
+                                                $('#tab-A, #acc-A').on('click', function (e) {
+                                                    // Have to redraw to get proper height/width when toggling everything before slider refresh.
+                                                    $('#pane-B, #collapse-B').hide();
+                                                    $('#pane-A, #collapse-A').show();
+                                                    $('.servicesslider')[0].slick.refresh();
+                                                });
+
+                                            });
+                                        </script>
+
+                                    </div>
+
+                                    <div class="row d-sm-none d-md-none d-lg-none d-xl-none">
+                                        <div class="col text-center link-custom-make mt-1">
+                                            <span class="leftservices" style="cursor: pointer;" title="Previous"><i class="fas fa-2x fa-caret-square-left"></i></span>
+                                            &nbsp; &nbsp;
+                                        <span class="rightservices" style="cursor: pointer;" title="Next"><i class="fas fa-2x fa-caret-square-right"></i></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="pane-B" class="card tab-card tab-pane fade link-custom" role="tabpanel" aria-labelledby="tab-B">
+                            <div class="card-header m-0 pl-2 pr-2 pt-1 pb-0" role="tab" id="heading-B">
+                                <a id="acc-B" class="collapsed" data-toggle="collapse" href="#collapse-B" data-parent="#content" aria-expanded="false" aria-controls="collapse-B">
+                                    <h5 class="font-weight-bold"><i class="fas fa-briefcase"></i>&nbsp;Careers</h5>
+                                </a>
+                            </div>
+                            <div id="collapse-B" class="collapse" role="tabpanel" aria-labelledby="heading-B" style="overflow: hidden; width: 100%; height: 100%;">
+                                <div class="card-body m-1 p-0" style="height: inherit;">
+
+                                    <div class="row in-middle" style="height: inherit;">
+
+                                        <div class="in-middle link-custom-make" style="width: 10%; height: inherit;">
+                                            <div class="leftcareers d-none d-sm-block ml-3" style="display: block; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; cursor: pointer;" title="Previous"><i class="fas fa-2x fa-caret-square-left"></i></div>
+                                        </div>
+
+                                        <div style="width: 80%;">
+                                            <div class="careersslider link-custom">
+                                                <div>
+                                                    <a id="ContentPlaceHolder1_HyperLink_WorkForUs" title="Come Work for Us" class="p-0 m-0" href="Careers/WorkForUs.aspx" target="_self">
+                                                    <div class="card mt-2 mb-2 ml-1 mr-1 border-0" style="height: inherit;">
+                                                    <div class="card-body m-1 p-0">
+                                                        <i class="fas fa-3x fa-id-badge"></i>
+                                                        <h5>Come Work for Us</h5>
+                                                        <div class="card-text text-hide">Need information.</div>
+                                                    </div>
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a id="ContentPlaceHolder1_HyperLink_Classification" title="Classification" class="p-0 m-0" href="Careers/Classification.aspx" target="_self">
+                                                    <div class="card mt-2 mb-2 ml-1 mr-1 border-0" style="height: inherit;">
+                                                     <div class="card-body m-1 p-0">
+                                                         <i class="fas fa-3x fa-book-open"></i>
+                                                        <h5>Classification</h5>
+                                                        <div class="card-text text-hide">Need information.</div>
+                                                    </div>
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a id="ContentPlaceHolder1_HyperLink_Compensation" title="Compensation" class="p-0 m-0" href="Careers/Compensation.aspx" target="_self">
+                                                    <div class="card mt-2 mb-2 ml-1 mr-1 border-0" style="height: inherit;"> 
+                                                    <div class="card-body m-1 p-0">
+                                                        <i class="fas fa-3x fa-money-bill-wave"></i>
+                                                        <h5>Compensation</h5>
+                                                        <div class="card-text text-hide">Need information</div>
+                                                    </div>
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a id="ContentPlaceHolder1_HyperLink_ClassificationCompentencies" title="Classification Competencies" class="p-0 m-0" href="Careers/ClassificationCompetencies.aspx" target="_self">
+                                                    <div class="card mt-2 mb-2 ml-1 mr-1 border-0" style="height: inherit;"> 
+                                                    <div class="card-body m-1 p-0">
+                                                        <i class="fas fa-3x fa-clipboard-list"></i>
+                                                        <h5>Classification Competencies</h5>
+                                                        <div class="card-text text-hide">Need information.</div>
+                                                    </div>
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <div class="card mt-2 mb-2 ml-1 mr-1 border-0" style="height: inherit;">
+                                                        <a id="ContentPlaceHolder1_HyperLink_OurEmployees" title="Our Employees" class="p-0 m-0" href="Careers/OurEmployees.aspx" target="_self">
+                                                    <div class="card-body m-1 p-0">
+                                                        <i class="fas fa-3x fa-user-circle"></i>
+                                                        <h5>Our Employees</h5>
+                                                        <div class="card-text text-hide">Need information.</div>
+                                                    </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="in-middle link-custom-make" style="width: 10%; height: inherit;">
+                                            <div class="rightcareers d-none d-sm-block mr-3" style="display: block; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; cursor: pointer;" title="Next"><i class="fas fa-2x fa-caret-square-right"></i></div>
+                                        </div>
+
+                                        <script>
+                                            $(document).ready(function () {
+                                                var careersslider = $('.careersslider').slick({
+                                                    dots: false,
+                                                    infinite: true,
+                                                    speed: 1000,
+                                                    slidesToShow: 3,
+                                                    slidesToScroll: 3,
+                                                    arrows: false,
+                                                    responsive: [
+                                                      {
+                                                          breakpoint: 1024,
+                                                          settings: {
+                                                              slidesToShow: 2,
+                                                              slidesToScroll: 2,
+                                                              infinite: true,
+                                                              dots: false
+                                                          }
+                                                      },
+                                                      {
+                                                          breakpoint: 600,
+                                                          settings: {
+                                                              slidesToShow: 1,
+                                                              slidesToScroll: 1,
+                                                              infinite: true,
+                                                              dots: false
+                                                          }
+                                                      },
+                                                      {
+                                                          breakpoint: 480,
+                                                          settings: {
+                                                              slidesToShow: 1,
+                                                              slidesToScroll: 1,
+                                                              infinite: true,
+                                                              dots: false
+                                                          }
+                                                      }
+                                                      // You can unslick at a given breakpoint now by adding:
+                                                      // settings: "unslick"
+                                                      // instead of a settings object
+                                                    ]
+                                                });
+
+                                                $(".rightcareers").click(function (e) { // Added a '.'
+                                                    careersslider.slick('slickNext'); // Switched to '.slick-slider'
+                                                });
+
+                                                $(".leftcareers").click(function (e) { // Added a '.'
+                                                    careersslider.slick('slickPrev'); // Switched to '.slick-slider'
+                                                });
+
+                                                $('#tab-B, #acc-B').on('click', function (e) {
+                                                    // Have to redraw to get proper height/width when toggling everything before slider refresh.
+                                                    $('#pane-A, #collapse-A').hide();
+                                                    $('#pane-B, #collapse-B').show();
+                                                    $('.careersslider')[0].slick.refresh();
+                                                });
+
+                                            });
+                                        </script>
+
+                                    </div>
+
+                                    <div class="row d-sm-none d-md-none d-lg-none d-xl-none">
+                                        <div class="col text-center link-custom-make mt-1">
+                                            <span class="leftcareers" style="cursor: pointer;" title="Previous"><i class="fas fa-2x fa-caret-square-left"></i></span>
+                                            &nbsp; &nbsp;
+                                        <span class="rightcareers" style="cursor: pointer;" title="Next"><i class="fas fa-2x fa-caret-square-right"></i></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+
+                        // Full height look on tab content to side card but not in accordion
+                        jQuery(document).ready(function ($) {
+                            var alterClass = function () {
+                                var ww = document.body.clientWidth;
+                                if (ww < 750) {
+                                    $('.tabaccordion').removeClass('tab-card-body-border');
+                                } else if (ww >= 751) {
+                                    $('.tabaccordion').addClass('tab-card-body-border');
+                                };
+                            };
+                            $(window).resize(function () {
+                                alterClass();
+                            });
+                            //Fire it when the page first loads:
+                            alterClass();
+                        });
+
+                    </script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col-sm-6 col-md mt-1 makelink-custom">
+            <a id="ContentPlaceHolder1_HyperLink_SupremeCourt" title="Supreme Court" href="Supreme_Court/Default.aspx">
+            <div class="card card-custom-border card-custom ml-1 mr-1">
+                <img class="img-fluid card-img image" src="Images/SupremeCourt.jpg" alt="Supreme Court Image" style="height: 200px;">
+                <div class="card-img-overlay">
+                <div class="card-footer text-center caption-card"><h5 class="font-weight-bold">Supreme Court</h5></div>
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md mt-1 makelink-custom">
+            <a id="ContentPlaceHolder1_HyperLink_CircuitCourts" title="Circuit Courts" href="Circuit_Court/Default.aspx">
+            <div class="card card-custom-border card-custom ml-1 mr-1">
+                <img class="img-fluid card-img image" src="Images/CircuitCourts.jpeg" alt="Circuit Courts Image" style="height: 200px;">
+                <div class="card-img-overlay">
+                    <div class="card-footer text-center caption-card"><h5 class="font-weight-bold">Circuit Courts</h5></div>
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md mt-1 makelink-custom">
+            <a id="ContentPlaceHolder1_HyperLink_Attorneys" title="Attorneys" href="Attorneys/Default.aspx">
+            <div class="card card-custom-border card-custom ml-1 mr-1">
+                <img class="img-fluid card-img image" src="Images/Attorneys.jpeg" alt="Attorneys Image" style="height: 200px;">
+                <div class="card-img-overlay">
+                    <div class="card-footer text-center caption-card"><h5 class="font-weight-bold">Attorneys</h5></div>
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md mt-1 makelink-custom">
+            <a id="ContentPlaceHolder1_HyperLink_Jurors" title="Jurors" href="Information/Jurors.aspx">
+            <div class="card card-custom-border card-custom ml-1 mr-1">
+                <img class="img-fluid card-img image" src="Images/Jurors.jpg" alt="Jurors Image" style="height: 200px;">
+                <div class="card-img-overlay">
+                    <div class="card-footer text-center caption-card"><h5 class="font-weight-bold">Jurors</h5></div>
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md mt-1 makelink-custom">
+            <a id="ContentPlaceHolder1_HyperLink_Resources" title="Resources" href="Resources/Default.aspx">
+            <div class="card card-custom-border card-custom ml-1 mr-1">
+                <img class="img-fluid card-img image" src="Images/Resources.jpg" alt="Resources Image" style="height: 200px;">
+                <div class="card-img-overlay">
+                    <div class="card-footer text-center caption-card"><h5 class="font-weight-bold">Resources</h5></div>
+                </div>
+            </div>
+            </a>
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col-md-6 no-gutters link-custom">
+            <a id="ContentPlaceHolder1_HyperLink_ProblemSolvingCourts" title="Problem-Solving Courts" class="m-0 p-0" href="Circuit_Court/Problem_Solving_Courts/Default.aspx">              
+            <div class="card border-0 m-0 p-0 clearglass">
+                <div class="card-body">     
+                    <div class="float-left h-100 d-none d-sm-block">
+                        <div class="card mr-1" style="background-color: #baab5f;">
+                            <div class="card-body text-white makelink-custom"><span><i class="fas fa-3x fa-university"></i></span></div>
+                        </div>
+                    </div>
+                    <div style="overflow: hidden;">
+                        <h5 class="font-weight-bold"><span class="d-sm-none d-md-none d-lg-none d-xl-none makelink-custom"><span><i class="fas fa-university" style="color: #baab5f;"></i></span>&nbsp;</span>Problem-Solving Courts</h5>
+                        <p class="drugcourtsmallclaims">Drug Courts, DUI Courts, Veterans Treatment Courts and Mental Health Courts are specially designed criminal dockets which share core components but address a specific problem.</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="col-md-6 no-gutters link-custom">
+            <a id="ContentPlaceHolder1_HyperLink_SmallClaims" title="Small Claims" class="m-0 p-0" href="Small_Claims/Default.aspx">
+            <div class="card border-0 m-0 p-0 clearglass">
+                <div class="card-body"> 
+                    <div class="float-left h-100 d-none d-sm-block">
+                        <div class="card mr-1" style="background-color: #baab5f;">
+                            <div class="card-body text-white makelink-custom"><span><i class="fas fa-3x fa-gavel"></i></span></div>
+                        </div>
+                    </div>
+                    <div style="overflow: hidden;">
+                        <h5 class="font-weight-bold"><span class="d-sm-none d-md-none d-lg-none d-xl-none makelink-custom"><span><i class="fas fa-gavel" style="color: #baab5f;"></i></span>&nbsp;</span>Small Claims</h5>       
+                        <p class="drugcourtsmallclaims">Small claims court is an informal court which allows people to sue for small losses of money or property. The procedures are simple enough that an individual can file and handle his or her own claim in court.</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+    </div>
+
+        </div>
+        
+
+        <!-- Footer -->
+        
+
+<div class="container-fluid footer-container">
+    <div class="container">
+        <footer class="footer rounded mt-1">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="card border-0 clearglass" style="word-wrap: normal;">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Welcome</h5>
+                            <ul class="list-group p-0 m-0 text-left">
+                                <li class="list-group-item border-0 p-1 clearglass">
+                                    <a id="WebUserControl_Footer_HyperLink_FooterUJSHome" href="Default.aspx">Home</a>
+                                </li>
+                                <li class="list-group-item border-0 p-1 clearglass">
+                                    <a id="WebUserControl_Footer_HyperLink_FooterContactUs" href="Contact/Default.aspx">Contact Us</a>
+                                </li>
+                                <li class="list-group-item border-0 p-1 clearglass">
+                                    <a id="WebUserControl_Footer_HyperLink_FooterIntranet" href="http://intranet.ujs.sd.gov/login.aspx" target="_blank" rel="noopener noreferrer">Intranet</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="card border-0 clearglass" style="word-wrap: normal;">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Helpful Links</h5>
+                            <div class="row no-gutters">
+                                <div class="col-md-6">
+                                    <ul class="list-group p-0 m-0 text-left">
+                                        <li class="list-group-item border-0 p-1 clearglass">
+                                            <a id="WebUserControl_Footer_HyperLink_FooterBOBE" href="uploads/barexaminers/BoardofBarExaminers.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-edit"></i>&nbsp;
+Board of Bar Examiners</a>
+                                        </li>
+                                        <li class="list-group-item border-0 p-1 clearglass">
+                                            <a id="WebUserControl_Footer_HyperLink_FooterWorkForUs" href="Careers/WorkForUs.aspx" target="_self"><i class="fas fa-id-badge"></i>&nbsp;Come Work For Us</a>
+                                        </li>
+                                        <li class="list-group-item border-0 p-1 clearglass">
+                                            <a id="WebUserControl_Footer_HyperLink_FAQ" href="uploads/docs/FAQ.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-question-circle"></i>&nbsp;Frequently Asked Questions</a>
+                                        </li>
+                                        <li class="list-group-item border-0 p-1 clearglass">
+                                            <a id="WebUserControl_Footer_HyperLink_JudicialElection" href="uploads/JudicialElectionsCommittee.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-puzzle-piece"></i>&nbsp;Judicial Elections Committee</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-group p-0 m-0 text-left">
+                                        <li class="list-group-item border-0 p-1 clearglass">
+                                            <a id="WebUserControl_Footer_HyperLink_FooterJQC" href="uploads/jqc/JudicialQualificationsCommission.pdf" target="_blank" rel="noopener noreferrer"><i class="far fa-check-square"></i>
+Judicial Qualifications Commission</a>
+                                        </li>
+                                        <li class="list-group-item border-0 p-1 clearglass">
+                                            <a id="WebUserControl_Footer_HyperLink_ProbationServices" href="uploads/AboutProbationServices.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-handshake"></i>&nbsp;Probation Services</a>
+                                        </li>
+                                        <li class="list-group-item border-0 p-1 clearglass">
+                                            <a id="WebUserControl_Footer_HyperLink_StateBar" href="http://statebarofsouthdakota.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-users"></i>&nbsp;State Bar of South Dakota</a>
+                                        </li>
+                                        <li class="list-group-item border-0 p-1 clearglass">
+                                            <a id="WebUserControl_Footer_HyperLink_TribalCourts" href="media/TribalContactInfo.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-balance-scale"></i>&nbsp;Tribal Courts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 clearglass" style="word-wrap: normal;">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Social Media</h5>
+                            <a id="WebUserControl_Footer_HyperLink_FooterFacebook" title="Facebook" aria-label="Facebook" href="https://www.facebook.com/SouthDakotaUnifiedJudicialSystem" target="_blank" rel="noopener noreferrer"><i class="fab fa-2x fa-facebook-square"></i></a>
+                            <a id="WebUserControl_Footer_HyperLink_FooterRSS" title="UJS RRS Feeds" aria-label="UJS RRS Feeds" href="RSS/Default.aspx" target="_blank" rel="noopener noreferrer"><i class="fas fa-2x fa-rss-square"></i></a>
+                            <a id="WebUserControl_Footer_HyperLink_FooterYoutube" title="UJS YouTube" aria-label="UJS YouTube" href="https://www.youtube.com/user/SDUJS" target="_blank" rel="noopener noreferrer"><i class="fab fa-2x fa-youtube"></i></a>
+                            <a id="WebUserControl_Footer_HyperLink_FooterTwitter" title="UJS Twitter" aria-label="UJS Twitter" href="https://twitter.com/SDUJS" target="_blank" rel="noopener noreferrer"><i class="fab fa-2x fa-twitter-square"></i></a>
+                            <a id="WebUserControl_Footer_HyperLink_FooterGooglePlus" title="UJS Google +" aria-label="UJS Google +" href="https://plus.google.com/111957796601186690738" target="_blank" rel="noopener noreferrer"><i class="fab fa-2x fa-google-plus-square"></i></a>
+                            <div id="google_translate_element"></div>
+                            <script type="text/javascript">
+                                function googleTranslateElementInit() {
+                                    new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+                                }
+                            </script>
+                            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="text-muted">
+                        <i class="fas fa-copyright"></i>
+                        UJS
+                        <span id="WebUserControl_Footer_Label_CopyRight">2020</span>
+                    </div>
+                </div>
+                <div class="col-md text-center">
+                    <ul class="list-inline m-0 p-0">
+                        <li class="list-inline-item px-1 clearglass" style="white-space: nowrap">
+                            <a id="WebUserControl_Footer_HyperLink_StateHome" href="http://sd.gov" target="_blank" rel="noopener noreferrer">SD Government Website</a></li>
+                        <li class="list-inline-item px-1 clearglass" style="white-space: nowrap">
+                            <a id="WebUserControl_Footer_HyperLink_PrivacyPolicy" href="http://sd.gov/privacy.aspx" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                        <li class="list-inline-item px-1 clearglass" style="white-space: nowrap">
+                            <a id="WebUserControl_Footer_HyperLink_Disclaimer" href="http://sd.gov/disclaim.aspx" target="_blank" rel="noopener noreferrer">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-muted" style="white-space: nowrap;">
+                        <span id="WebUserControl_Footer_Label_Version">05152020043449</span>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+</div>
+
+
+    </form>
+
+    <!-- Optional JavaScript -->
+    <!-- Tether -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js" integrity="sha256-m2ByX2d6bw2LPNGOjjELQGPrn6XyouMV9RuVzKhJ5hA=" crossorigin="anonymous"></script>
+
+    <!-- Slick Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
+
+    <script>
+        // Will not show webform page until all loading objects until ready, toggling the visibility (sliders most noticeable)
+        $(document).ready(function () {
+            document.getElementsByTagName("html")[0].style.visibility = "visible";
+            document.getElementsByTagName("body")[0].style.visibility = "visible";
+        });
+    </script>
+
+</body>
+</html>
+

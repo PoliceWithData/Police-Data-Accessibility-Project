@@ -1,0 +1,77 @@
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="refresh" content="0; url=;jsessionid=98482A6F065A9566BB56E16D8C8249BC?x=mdWJzxs*aXlZX3pinJvRX3myC85PuyCsP62sLZ7jI1Ntrj-e*kvsHyPiIZ4*5I3wisVnw0H8nVF0o880AyxPcaDeM5s87pGG">
+	
+		<script language="JavaScript" id="org-apache-wicket-markup-html-pages-BrowserInfoPage-1-0">
+		function submitform() {
+		  document.postback.navigatorAppName.value = window.navigator.appName;
+		  document.postback.navigatorAppVersion.value = window.navigator.appVersion;
+		  document.postback.navigatorAppCodeName.value = window.navigator.appCodeName;
+		  var cookieEnabled = (window.navigator.cookieEnabled)? true : false;
+		  if (typeof window.navigator.cookieEnabled == "undefined" && !cookieEnabled) { 
+		    document.cookie = "wickettestcookie";
+		    cookieEnabled = (document.cookie.indexOf("wickettestcookie")!=-1)? true : false;
+		  }
+		  document.postback.navigatorCookieEnabled.value = cookieEnabled;
+		  document.postback.navigatorJavaEnabled.value =  window.navigator.javaEnabled();
+		  document.postback.navigatorLanguage.value = window.navigator.language ? window.navigator.language : window.navigator.userLanguage;
+		  document.postback.navigatorPlatform.value = window.navigator.platform;
+		  document.postback.navigatorUserAgent.value = window.navigator.userAgent;
+		  if (window.screen) {
+			  document.postback.screenWidth.value = window.screen.width;
+			  document.postback.screenHeight.value = window.screen.height;
+			  document.postback.screenColorDepth.value = window.screen.colorDepth;
+		  }
+		  document.postback.utcOffset.value = (new Date(new Date().getFullYear(), 0, 1, 0, 0, 0, 0).getTimezoneOffset() / -60);
+		  document.postback.utcDSTOffset.value = (new Date(new Date().getFullYear(), 6, 1, 0, 0, 0, 0).getTimezoneOffset() / -60);
+          document.postback.browserWidth.value =  window.innerWidth || document.body.offsetWidth;
+          document.postback.browserHeight.value =  window.innerHeight || document.body.offsetHeight;
+          document.postback.hostname.value =  window.location.hostname;
+
+ 		  document.postback.submit();
+		}
+		</script>
+	</head>
+	<body onload="javascript:submitform();">
+		If you see this, it means that both javascript and meta-refresh are not support by
+		your browser configuration. Please click <a href=";jsessionid=98482A6F065A9566BB56E16D8C8249BC?x=mdWJzxs*aXlZX3pinJvRX3myC85PuyCsP62sLZ7jI1Ntrj-e*kvsHyPiIZ4*5I3wisVnw0H8nVF0o880AyxPcaDeM5s87pGG">this link</a> to
+		continue to the original destination.
+		<div>
+		<form name="postback" style="position:absolute; left: -10000px;" id="id1" method="post" action=";jsessionid=98482A6F065A9566BB56E16D8C8249BC?x=uWrru9OxQBmCMaJb3dvMxC35wP4lATU-V7KzrvFnks-pwfuIRa6bQLeGMeckSgMs"><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden"><input type="hidden" name="id1_hf_0" id="id1_hf_0" /></div>
+			<input type="text" value="" name="navigatorAppName"/>
+			<input type="text" value="" name="navigatorAppVersion"/>
+			<input type="text" value="" name="navigatorAppCodeName"/>
+			<input type="text" value="false" name="navigatorCookieEnabled"/>
+			<input type="text" value="false" name="navigatorJavaEnabled"/>
+			<input type="text" value="" name="navigatorLanguage"/>
+			<input type="text" value="" name="navigatorPlatform"/>
+			<input type="text" value="" name="navigatorUserAgent"/>
+			<input type="text" value="" name="screenWidth"/>
+			<input type="text" value="" name="screenHeight"/>
+			<input type="text" value="" name="screenColorDepth"/>
+			<input type="text" value="" name="utcOffset"/>
+			<input type="text" value="" name="utcDSTOffset"/>
+			<input type="text" value="" name="browserWidth"/>
+			<input type="text" value="" name="browserHeight"/>
+			<input type="text" value="" name="hostname"/>
+		</form>
+	</div>
+	</body>
+</html>

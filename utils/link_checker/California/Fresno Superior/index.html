@@ -1,0 +1,342 @@
+
+<!doctype html>
+<!--[if IEMobile 7 ]> <html dir="ltr" lang="en-US" class="no-js iem7"> <![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if (gte IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!-->
+<html class="no-js" dir="ltr" lang="en-US" >
+<!--<![endif]-->
+
+<head>
+  <meta charset="UTF-8" />
+  
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+
+
+    <title>Superior Court of California, County of Fresno</title>
+
+  <!-- mobile optimized -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- allow pinned sites -->
+  <meta name="application-name" content="Odyssey Portal" />
+
+  <!-- Favicon -->
+  <link href="/FRESNOPORTAL/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/FRESNOPORTAL/Content/tylerui/images/apple-touch-icon-144x144-precomposed.png">
+  
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/FRESNOPORTAL/Content/tylerui/images/apple-touch-icon-114x114-precomposed.png">
+  
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/FRESNOPORTAL/Content/tylerui/images/apple-touch-icon-72x72-precomposed.png">
+  
+  <link rel="apple-touch-icon-precomposed" href="/FRESNOPORTAL/Content/tylerui/images/apple-touch-icon-precomposed.png">
+
+  <!-- Plugin Styles -->
+  
+
+  
+  <link href="/FRESNOPORTAL/Content/PortalReset.css?v=HD3euui7n1lxavx56-Rd62SNCgtVTbp1sCISDUiiG1Y1" rel="stylesheet"/>
+
+
+  
+  <link rel="stylesheet" href="/FRESNOPORTAL/Content/tylerui/tylerui-browser-requirements.css">
+
+  <!-- Bundled Content -->
+  <script src="/FRESNOPORTAL/bundles/ModernizrDefunctr?v=0L7pKboQuDOVraBoI-l6cOkOd8BWT-W6u4Ryw57TDJY1"></script>
+
+  <link href="/FRESNOPORTAL/bundles/TylerUiCss?v=AAz81NwYG9tj9klBZ87-UoEfgQAyac6qxONw1G_leko1" rel="stylesheet"/>
+
+  <link href="/FRESNOPORTAL/Content/external/telerik/kendo/kendo.css?v=bzDcF29RRoChnTfBlWURSAWwZYCnKtnPd1nO9Jfp5ec1" rel="stylesheet"/>
+
+  <link href="/FRESNOPORTAL/Content/main.css?v=9J5UZMHi43-rnX0jwJrKcPzKUQgeitGEoHP3SmbXfVE1" rel="stylesheet"/>
+
+  
+  
+  <script src="/FRESNOPORTAL/bundles/TylerUiJs?v=AANx__CHihmCz2UtGA3qac-Tm66KL1OVmPM3fipq_q01"></script>
+
+  
+  <link rel="stylesheet" href="/FRESNOPORTAL/Content/print.css" type="text/css" media="print" />
+  <script src="/FRESNOPORTAL/Scripts/ePortal/main.js?v=YJqewErHPxYYPlCizQquCWLbTbUJcc_IYBkVy8bWAkY1"></script>
+
+  <script src="/FRESNOPORTAL/Scripts/ePortal/ePortal.js?v=PQTdT1hnLfarl-FqANuSeesegwPgfsVGUd-2l-JluBQ1"></script>
+
+</head>
+  <script type="text/javascript">
+    var virtualDirectory = '/FRESNOPORTAL';
+
+    var RefreshSession = function () {
+      var now = new Date();
+      $.ajax({
+        cache: false,
+        url: $("#timeoutContinueBtn").data('url') + "/" + now.getTime(),
+        type: 'POST'
+      });
+    }
+  </script>
+
+
+<body data-spy="scroll" data-target="#mysidebar" >
+  <!-- center for IE9 since it ignores bootstrap 3 -->
+<center>
+
+    <!-- use noscript and also keep outside of controller to avoid flash in Safari and IE (can't use ng-cloak because there is no js it won't uncloak-->
+    <noscript>
+        <span class="nojs-content">
+            <h2>JavaScript must be enabled in order for you to use this application.</h2>
+            <p>However, it seems JavaScript is either disabled or not supported by your browser.</p>
+            <p>To use this application, enable JavaScript by changing your browser options, then try again.</p>
+        </span>
+    </noscript>
+
+    <span class="nocookies-content">
+        <h2>Cookies must be allowed.</h2>
+        <p>Your browser is currently set to block cookies. Your browser must allow cookies before you can use this application.</p>
+        <p>Cookies are small text files stored on your computer that tell this application when you're signed in. To learn how to allow cookies, see online help in your web browser.</p>
+    </span>
+
+    <div class="unsupported-browser center-block">
+        <p />
+        <h2>You are using a web browser which this application no longer supports.</h2>
+
+        <p>
+            We support the current and previous major releases of Google Chrome, Firefox, Internet Explorer, and Safari on a rolling basis.
+            Each time a new version is released, we begin supporting that version and stop supporting the third most recent version.
+        </p>
+
+        <h2>Supported Browsers</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 text-center">
+                <div>
+                    <label>Chrome for Business</label>
+                </div>
+                <div>
+                    <a href="http://www.google.com/intl/en/chrome/business/browser/">
+                        <img src="/FRESNOPORTAL/Content/tylerui/images/browsers/chrome_64x64.png" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <div>
+                    <label>Firefox</label>
+                </div>
+                <div>
+                    <a href="http://www.getfirefox.com/">
+                        <img src="/FRESNOPORTAL/Content/tylerui/images/browsers/firefox_64x64.png" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <div>
+                    <label>Internet Explorer</label>
+                </div>
+                <div>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <img src="/FRESNOPORTAL/Content/tylerui/images/browsers/internet-explorer_64x64.png" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <div>
+                    <label>Apple Safari</label>
+                </div>
+                <div>
+                    <a href="http://www.apple.com/safari/">
+                        <img src="/FRESNOPORTAL/Content/tylerui/images/browsers/safari_64x64.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <h4> Internet Explorer 9 Users </h4>
+            Internet Explorer 11 launched on October 17, 2013, and as a result, we've discontinued support for Internet Explorer 9.
+
+        <p>
+            Organizations that depend on old versions of Internet Explorer may want to consider a dual browser strategy.
+    </div>
+
+
+</center>
+
+  <omnibar id="omnibar" class="">
+    
+
+      <div class="row" style="background-color: transparent;
+          height: 0px;
+          
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: left;
+          width: 1920px;">
+        <div class="col-md-12">
+        </div>
+      </div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          
+          <brand class="navbar-brand">
+            <a href="/FRESNOPORTAL/" tabindex="1">
+                    <img src="/FRESNOPORTAL/Theme/images/logo.png?v=637036438828281466" alt="site logo" class="pull-left" style="height: 36px; width:36px;" />
+              <div style="width: 100%; padding-left: 4.5rem; margin-top: 7px;">
+                <div class="product">Superior Court of California, County of Fresno</div>
+              </div>
+            </a>
+          </brand>
+        </div>
+        <div id="navbar" class="hidden-xs pull-right">
+  <div class="dropdown" style="margin-top:15px;">
+    <button class="dropdown-toggle btn btn-default login-btn" data-toggle="dropdown" aria-expandable="false" id="dropdownMenu1" style="cursor: pointer;">
+      Register / Sign In
+      <span class="fa fa-user fa-fw"></span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a href="/FRESNOPORTAL/Account/Register" >Register</a></li>
+      <li role="presentation">
+        <a href="/FRESNOPORTAL/Account/Login" >Sign In</a>
+      </li>
+      </ul>
+    </div>
+
+          
+        </div><!--/.nav-collapse -->
+        <div id="navbar" class="hidden-lg hidden-md hidden-sm">
+  <div class="dropdown" style="margin-top:15px;">
+    <button class="dropdown-toggle btn btn-default login-btn" data-toggle="dropdown" aria-expandable="false" id="dropdownMenu1" style="cursor: pointer;">
+      Register / Sign In
+      <span class="fa fa-user fa-fw"></span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a href="/FRESNOPORTAL/Account/Register" >Register</a></li>
+      <li role="presentation">
+        <a href="/FRESNOPORTAL/Account/Login" >Sign In</a>
+      </li>
+      </ul>
+    </div>
+
+        </div>
+      </div><!--/.container-fluid -->
+    </nav>
+    <div class="row" style="
+    background-color: #40528F;
+    height: 30px;
+    margin-top:  -20px;
+    margin-bottom: 20px;">
+      <div class="col-md-12">
+      </div>
+    </div>
+  </omnibar>
+
+
+
+  <div id="main" class="container page" style="min-height: 850px; margin-top: 60px;">
+    <div class="hidden-lg hidden-md hidden-sm" style="height:55px;"></div>
+    
+
+<div class="row">
+  <div class="panel panel-default center-block">
+    <div class="panel-body">
+      <h1>Notifications</h1>
+      
+<div class="notification-portlet">
+    <p class="notifications">
+      *** SYSTEM OUTAGE NOTICE *** Please note that the Odyssey Portal site will be down for maintenance on Thursday, May 28, 2020 between 01:00 AM PST - 02:00 AM PST.  During this time, the site will be unusable.
+    </p>
+    <p class="notifications">
+      If you encounter any technical issues or need assistance with the Odyssey portal, please send an e-mail to the Portal Help Desk at portal@fresno.courts.ca.gov. Please note that the Portal Help Desk cannot assist you with questions concerning your case.
+    </p>
+    <p class="notifications">
+      The Odyssey portal currently does not allow for users to sign up (or pay) for traffic school online for their traffic citations. Once this functionality becomes available, the Court will provide notification on the portal homepage.
+    </p>
+    <p class="notifications">
+      ***PLEASE NOTE*** If you are searching for traffic cases, please select &quot;criminal&quot; as the location in your search.
+    </p>
+    <p class="notifications">
+      ***IMPORTANT NOTICE FOR ODYSSEY PORTAL REGISTRATION*** Please note that the registration system on the portal is for justice partner use only. Justice partners include, but are not limited to, the District Attorney&#39;s Office, Law Enforcement, Department of Social Services, and other authorized agencies. If you are not an authorized agency, please do not register -- registration from unauthorized sources will be promptly denied.
+    </p>
+    <p class="notifications">
+      <a style="color:#40528f;" href="http://www.fresno.courts.ca.gov/_pdfs/Portal_Instructions.pdf" target="_blank">NOTICE: The registration guide for justice partners may be accessed by clicking here.</a>
+    </p>
+    <p class="notifications">
+      <a style="color:#40528f;" href="http://www.fresno.courts.ca.gov/_pdfs/PGN-59 Odyssey Access.pdf" target="_blank">NOTICE: The Odyssey access request form for justice partners may be obtained by clicking here.</a>
+    </p>
+    <p class="notifications">
+      <a style="color:#40528f;" href="http://www.fresno.courts.ca.gov/case_info" target="_blank">Justice partners may pay their annual Odyssey access fees by clicking here (please scroll to the bottom of the landing page).</a>
+    </p>
+</div>
+
+    </div>
+  </div>
+</div>
+    <div class="row row-space">
+      <div class="center-block">
+            <div style="padding-bottom:15px;" class="col-md-3 col-sm-4 col-xs-12 text-center" id="portlet-29" data-portlet-id="0">
+              <a tabindex="50" class="btn btn-lg btn-default portlet-buttons" href="/FRESNOPORTAL/Home/Dashboard/29" >
+                  <img style="max-height:96px; max-width:96px;" src="/FRESNOPORTAL/Content/images/dashboard/Icon_SmartSearch.svg" />
+                <br /><br />Smart Search
+                <p class="btn-description">
+                  Search for court records.
+                </p>
+              </a>
+            </div>
+            <div style="padding-bottom:15px;" class="col-md-3 col-sm-4 col-xs-12 text-center" id="portlet-26" data-portlet-id="0">
+              <a tabindex="51" class="btn btn-lg btn-default portlet-buttons" href="/FRESNOPORTAL/Home/Dashboard/26" >
+                  <img style="max-height:96px; max-width:96px;" src="/FRESNOPORTAL/Content/images/dashboard/Icon_SearchHearing.svg" />
+                <br /><br />Search Hearings
+                <p class="btn-description">
+                  Search for court hearings for a specified date range.
+                </p>
+              </a>
+            </div>
+            <div style="padding-bottom:15px;" class="col-md-3 col-sm-4 col-xs-12 text-center" id="portlet-17" data-portlet-id="0">
+              <a tabindex="52" class="btn btn-lg btn-default portlet-buttons" href="/FRESNOPORTAL/Home/Dashboard/17" >
+                  <img style="max-height:96px; max-width:96px;" src="/FRESNOPORTAL/Content/images/dashboard/Icon_MakePayments.svg" />
+                <br /><br />Make Payments
+                <p class="btn-description">
+                  Make a payment or select payment alternatives for criminal and traffic cases.
+                </p>
+              </a>
+            </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer role="contentinfo" class="margin-top center-block" style="width: 95%;">
+  <div class="row visible-xs">
+    <div class="col-xs-12" style="margin:0 0 0.5rem -0.5rem;">
+      <img class="pull-left noprint" src="/FRESNOPORTAL/Content/tylerui/images/empowered.png" />
+    </div>
+    <div class="col-xs-12">
+      <small class="pull-left noprint">&copy; 2020 Tyler Technologies, Inc. | All Rights Reserved</small>
+      <br />
+      <small class="pull-left noprint">Version: 3.3.40.1</small>
+    </div>
+  </div>
+  <div class="row hidden-xs">
+    <div class="col-xs-6 col-md-6">
+      <small class="pull-left noprint">&copy; 2020 Tyler Technologies, Inc. | All Rights Reserved</small>
+      <br />
+      <small class="pull-left noprint">Version: 3.3.40.1</small>
+    </div>
+    <div class="col-xs-6 col-md-6">
+        <img alt="Empowered By Tyler Technologies" title="Empowered By Tyler Technologies" class="pull-right noprint" src="/FRESNOPORTAL/Content/tylerui/images/empowered.png" />
+    </div>
+  </div>
+</footer>
+
+    <div style="display:none">Machine: FRSCRTCMSPUB2</div>
+
+
+</body>
+<script type="text/javascript">var _0xcaad=["indexOf","; path=/","cookie","=","x-bni-ja","stack","phantomjs","plugins","length","onmousemove"];var err;function indexOfString(_0x1ce0x3,_0x1ce0x4){return _0x1ce0x3[_0xcaad[0]](_0x1ce0x4)}try{null[0]()}catch(e){err=e};function setCookie(_0x1ce0x6){var _0x1ce0x7=1681948951;var _0x1ce0x8=1784440313;var _0x1ce0x9=_0x1ce0x7+_0x1ce0x8+_0xcaad[1];document[_0xcaad[2]]=_0x1ce0x6+_0xcaad[3]+_0x1ce0x9}function set_answer_cookie(){setCookie(_0xcaad[4])}function set_answer_cookie_1(){set_answer_cookie()}if((indexOfString(err[_0xcaad[5]],_0xcaad[6])> -1)||(!(navigator[_0xcaad[7]] instanceof PluginArray)||navigator[_0xcaad[7]][_0xcaad[8]]==0)){}else {document[_0xcaad[9]]=set_answer_cookie_1()}</script></html>

@@ -1,0 +1,796 @@
+
+
+		
+		
+	
+
+
+
+        
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+    <head><script type="text/javascript" src="/CFIDE/scriptsdir/cfform.js"></script>
+<script type="text/javascript" src="/CFIDE/scriptsdir/masks.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+
+    
+    	
+        <title>Colorado Judicial Branch - Court Docket Search</title>
+
+        <link rel="stylesheet" type="text/css" href="https://www.courts.state.co.us/assets/css/main-small.css" media="only screen and (max-width:640px)" />
+        <link rel="stylesheet" type="text/css" href="https://www.courts.state.co.us/assets/css/header-small.css" media="only screen and (max-width:640px)"  />
+        <link rel="stylesheet" type="text/css" href="https://www.courts.state.co.us/assets/css/navigation-small.css" media="only screen and (max-width:640px)"  />
+        <link rel="stylesheet" type="text/css" href="https://www.courts.state.co.us/assets/css/main-medium.css" media="only screen and (min-width:641px) and (max-width:1019px)" />
+        <link rel="stylesheet" type="text/css" href="https://www.courts.state.co.us/assets/css/header-medium.css" media="only screen and (min-width:641px) and (max-width:1019px)"  />
+        <link rel="stylesheet" type="text/css" href="https://www.courts.state.co.us/assets/css/navigation-medium.css" media="only screen and (min-width:641px) and (max-width:1019px)"  />
+        <link rel="stylesheet" type="text/css" href="https://www.courts.state.co.us/assets/css/main-large.css" media="only screen and (min-width:1020px)"  />
+        <link rel="stylesheet" type="text/css" href="https://www.courts.state.co.us/assets/css/header-large.css" media="only screen and (min-width:1020px)"  />
+        <link rel="stylesheet" type="text/css" href="https://www.courts.state.co.us/assets/css/navigation-large.css" media="only screen and (min-width:1020px)"  />
+        <!--[if lte IE 8]>
+        <script type="text/javascript" src="/assets/scripts/respond.min.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="https://www.courts.state.co.us/assets/css/global.css" />
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" type="text/css" href="https://www.courts.state.co.us/css/Print.css" media="print" />
+        <link rel="shortcut icon" href="https://www.courts.state.co.us/images/icons/favicon_public.ico" />
+        <link rel="apple-touch-icon-precomposed" href="https://www.courts.state.co.us/images/apple-touch-icon-precomposed.png"/>
+
+        <script type="text/javascript" src="https://www.courts.state.co.us/assets/scripts/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://www.courts.state.co.us/assets/scripts/global-scripts.js"></script>
+
+		<!-- PNotify -->
+  		<script type="text/javascript" src="https://www.courts.state.co.us/assets/scripts/PNotify.js"></script>
+  		<link href="https://www.courts.state.co.us/assets/css/PNotifyBrightTheme.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="https://www.courts.state.co.us/assets/scripts/PNotifyButtons.js"></script>
+
+    
+    
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-23986541-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+    
+
+    
+        
+            
+
+	
+        <link rel="stylesheet" type="text/css" href="https://www.courts.state.co.us/css/smoothness/jquery-ui-1.10.3.custom.min.css"/>
+        <script src="https://www.courts.state.co.us/Scripts/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>  
+    
+	
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$( "#specificdate" ).datepicker({ minDate: 0 });
+		});
+    </script>
+    
+
+        
+    
+<script type="text/javascript">
+<!--
+    _CF_checkDocketSearch = function(_CF_this)
+    {
+        //reset on submit
+        _CF_error_exists = false;
+        _CF_error_messages = new Array();
+        _CF_error_fields = new Object();
+        _CF_FirstErrorField = null;
+
+
+        //display error messages and return success
+        if( _CF_error_exists )
+        {
+            if( _CF_error_messages.length > 0 )
+            {
+                // show alert() message
+                _CF_onErrorAlert(_CF_error_messages);
+                // set focus to first form error, if the field supports js focus().
+                if( _CF_this[_CF_FirstErrorField].type == "text" )
+                { _CF_this[_CF_FirstErrorField].focus(); }
+
+            }
+            return false;
+        }else {
+            return true;
+        }
+    }
+//-->
+</script>
+</head>
+	
+	<body>
+    	<a href="#main-content" class="skip-content">Skip to main content</a>
+    	
+            
+            
+	<div class="header-top">
+    	<div class="header-mobile-left"></div>
+        <a href="https://www.courts.state.co.us" class="header-mobile-right"></a>
+        <div class="inner-header">
+        	<a href="https://www.courts.state.co.us" class="home-link"></a>
+            <div class="searchbar">
+                <form name="frm_Search" id="frm_Search" action="https://www.courts.state.co.us/search/index.cfm" style="margin:0;" method="get" class="MainSearch">
+                	<input type="submit" name="name" value="" style="float:right" />
+                    <input name="q" type="text" id="q" value="Search" onclick="if(this.value == 'Search'){this.value = '';}" onblur="if(this.value == ''){this.value = 'Search';}" style="float:right" /> 
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div id="headerDisplay">
+	
+        <div id="headercontainer">
+            <div id="header">
+                <ul>
+                    <li class="noscreen"><a href="https://www.courts.state.co.us">Home</a></li>
+                    <li class="noscreen"><a href="https://www.courts.state.co.us/search.cfm">Search</a></li>
+                    <li><a href="https://www.courts.state.co.us/Courts/Index.cfm" class="tab">Courts</a>
+                    <ul>
+                    	<li><a href="https://www.courts.state.co.us/Courts/County/Choose.cfm">Trial Courts by County</a></li>
+                        <li><a href="https://www.courts.state.co.us/Courts/District/Choose.cfm">Trial Courts by District</a></li>
+                        <li><a href="https://www.courts.state.co.us/Courts/Supreme_Court/Index.cfm">Supreme Court</a></li>
+                        <li><a href="https://www.courts.state.co.us/Courts/Court_Of_Appeals/Index.cfm">Court of Appeals</a></li>
+                        <li><a href="https://www.courts.state.co.us/Courts/Water/Index.cfm">Water Courts</a></li>
+                        <li><a href="https://www.courts.state.co.us/Courts/Denver_Juvenile/Index.cfm">Denver Juvenile Court</a></li>
+                        <li><a href="https://www.courts.state.co.us/Courts/Denver_Probate/Index.cfm">Denver Probate Court</a></li>
+                        <li><a href="https://www.courts.state.co.us/Courts/Education/Index.cfm">Educational Resources</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="https://www.courts.state.co.us/Probation/Index.cfm" class="tab">Probation</a>
+                    <ul>
+                        <li><a href="https://www.courts.state.co.us/Probation/County/Choose.cfm">By County</a></li>
+                        <li><a href="https://www.courts.state.co.us/Probation/Denver_Juvenile/Index.cfm">Denver Juvenile Probation</a></li>
+                         <li><a href="https://www.courts.state.co.us/Probation/Resources.cfm">Resources</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="https://www.courts.state.co.us/Jury/Index.cfm" class="tab">Jury</a>
+                    <ul>
+                        <li><a href="https://www.courts.state.co.us/Jury/County/Choose.cfm">By County</a></li>
+                        <li><a href="https://www.courts.state.co.us/Jury/District/Choose.cfm">By District</a></li>
+                        <li><a href="https://www.courts.state.co.us/Jury/Jury_Commissioners.cfm">List of Jury Commissioners</a></li>
+                        <li><a href="https://www.courts.state.co.us/Jury/Employer.cfm">Information for Employers</a></li>
+                        <li><a href="https://www.courts.state.co.us/Jury/FAQs.cfm">Jury FAQs</a></li>
+                        <li><a href="https://www.courts.state.co.us/userfiles/file/jury/video/ColoradoJuror.mp4">Colorado Jury Service Video</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="https://www.courts.state.co.us/Self_Help/Index.cfm" class="tab">Self&nbsp;Help&nbsp;&frasl;&nbsp;Forms</a>
+                    <ul>
+                    	<li><a href="https://www.courts.state.co.us/Forms/Index.cfm">All Court Forms and Instructions</a></li>
+                        <li><a href="https://www.courts.state.co.us/Forms/Espanol/Index.cfm">Formularios e instrucciones judiciales en espa&ntilde;ol</a></li>
+                        <li><a href="https://www.courts.state.co.us/Self_Help/adoption/">Adoption</a></li>
+                        <li><a href="https://www.courts.state.co.us/Self_Help/appeals/">Appeals</a></li>
+                        <li><a href="https://www.courts.state.co.us/Self_Help/bonds/">Bonds</a></li>
+                    	<li><a href="https://www.courts.state.co.us/Self_Help/conservatorship/">Conservatorship</a></li>
+                        <li><a href="https://www.courts.state.co.us/Self_Help/criminalcases/">Criminal Cases</a></li>
+                        <li><a href="https://www.courts.state.co.us/Self_Help/estate/">Estate Cases</a></li>
+                        <li><a href="https://www.courts.state.co.us/Self_Help/extremeriskprotectionorders/">Extreme Risk Protection Orders</a></li>
+                    	<li><a href="https://www.courts.state.co.us/Self_Help/family/">Family Cases</a></li>
+                        <li><a href="https://www.courts.state.co.us/Self_Help/garnishments/">Garnishments</a></li>
+                        <li><a href="https://www.courts.state.co.us/Self_Help/guardianship/">Guardianship</a></li>
+                        <li><a href="https://www.courts.state.co.us/Self_Help/housing/">Housing Cases</a></li>
+                        <li><a href="https://www.courts.state.co.us/Self_Help/judgments/">Judgments</a></li>
+                        <li><a href="https://www.courts.state.co.us/Self_Help/money/">Money Cases</a></li>
+                        <li><a href="https://www.courts.state.co.us/Self_Help/namechange/">Name Changes</a></li>
+                        <li><a href="https://www.courts.state.co.us/Self_Help/protectionorders/">Protection Orders</a></li>
+                        <li><a href="https://www.courts.state.co.us/Self_Help/sealingrecords/">Sealing Records</a></li>
+                        <li><a href="https://www.courts.state.co.us/Self_Help/smallclaims/">Small Claims Cases</a></li>
+                        <li><a href="https://www.courts.state.co.us/Self_Help/watercases/">Water Cases</a></li>
+                        <li><a href="https://www.courts.state.co.us/Administration/Section.cfm?Section=jp3dnad">Dependency &amp; Neglect Advisement</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="https://www.courts.state.co.us/Careers/Index.cfm" class="tab">Careers</a>
+                    <ul>
+                        <li><a href="https://www.courts.state.co.us/Careers/Opportunities.cfm">Career Opportunities</a></li>
+                        <li><a href="https://www.courts.state.co.us/Careers/Internship.cfm">Internship Opportunities</a></li>
+                        <li><a href="https://www.courts.state.co.us/Careers/Judge.cfm">Judge Opportunities</a></li>
+                        <li><a href="https://www.courts.state.co.us/Administration/Unit.cfm?Unit=interp">Interpreter Opportunities</a></li>
+                        <li><a href="https://www.courts.state.co.us/Careers/Volunteer.cfm">Volunteer Opportunities</a></li>
+                        <li><a href="https://www.courts.state.co.us/Careers/Benefits.cfm">Benefits</a></li>
+                        <li><a href="https://www.courts.state.co.us/Careers/Descriptions.cfm">Job Descriptions</a></li>
+                        <li><a href="https://www.courts.state.co.us/Careers/FAQs.cfm">Career FAQs</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="https://www.courts.state.co.us/Media/Index.cfm" class="tab">Media</a>
+                    <ul>
+                        <li><a href="https://www.courts.state.co.us/Media/Press_Releases.cfm">Press Releases</a></li>
+                        <li><a href="https://www.courts.state.co.us/Media/Opinions.cfm">Recent Orders &amp; Opinions of Interest</a></li>
+                        <li><a href="https://www.courts.state.co.us/Media/Alerts.cfm">Media Alerts</a></li>
+                        <li><a href="https://www.courts.state.co.us/Media/Appointments.cfm">Judge Appointments</a></li>
+                        <li><a href="https://www.courts.state.co.us/Media/Law_School.cfm">Law School for Journalists</a></li>
+                        <li><a href="https://www.courts.state.co.us/Administration/Section.cfm?Section=pubacag">Access Guide to Public Records</a></li>
+                        <li><a href="https://www.courts.state.co.us/Media/Link_Request.cfm">Web Link Request</a></li>
+                    </ul>
+                    </li>
+                    <li ><a href="https://www.courts.state.co.us/Administration/Index.cfm" class="tab">Administration</a>
+                    <ul>
+                        <li><a href="https://www.courts.state.co.us/Administration/Division.cfm?Division=pa">Court Services</a></li>
+                        <li><a href="https://www.courts.state.co.us/Administration/Division.cfm?Division=exec">Executive Division</a></li>
+                        <li><a href="https://www.courts.state.co.us/Administration/Division.cfm?Division=finan">Financial Services</a></li>
+                        <li><a href="https://www.courts.state.co.us/Administration/Division.cfm?Division=hr">Human Resources</a></li>
+                        <li><a href="https://www.courts.state.co.us/Administration/Division.cfm?Division=jbits">Information Technology Services</a></li>
+                        <li><a href="https://www.courts.state.co.us/Administration/Division.cfm?Division=prob">Probation Services</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+	
+    </div>
+    
+	
+	
+    
+
+    
+            <div id="main-wrapper">
+                <div id="main-content">
+                	
+    <span class="BreadcrumbsMobile">
+    	
+            <a href="https://www.courts.state.co.us" class="Breadcrumbs" style="padding-left:0px;">Home</a>
+            
+            
+		<span class="Breadcrumbs_Selected">Dockets</span>
+	
+        
+    </span>
+    <div style="clear:both"></div>
+
+                    <div class="content-full">
+                    	
+    <span class="BreadcrumbsLarge">
+    	
+        	
+            	<a href="https://www.courts.state.co.us" class="Breadcrumbs" style="padding-left:0px;">Home</a>
+            
+           	
+            
+		<span class="Breadcrumbs_Selected">Dockets</span>
+	
+        
+    </span>
+    <div style="clear:both"></div>
+
+                        	
+
+
+	
+<script type="text/javascript">	
+	function checkLocation(){
+		if( document.getElementById("County_ID").value == 0){
+			document.getElementById("County_ID").focus();
+			alert("Please choose a county from the list in the drop down box");
+			return false;
+		}
+		
+		if( document.getElementById("Location_ID").value == 0){
+			document.getElementById("Location_ID").focus();
+			alert("Please choose a court from the list in the drop down box");
+			return false;
+		}
+		return true;
+	}
+	
+	function UpdateLocations_Docket(_county_id){
+	
+		switch(_county_id.value){
+		
+			
+				case "1":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Gilpin Combined Court", "2");break;		
+			
+				case "2":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Jefferson Combined Court", "3");break;		
+			
+				case "3":
+						
+						document.getElementById("Location_ID").options.length = (4 + 1); document.getElementById("Location_ID").options[0] = new Option("", "0");document.getElementById("Location_ID").options[1] = new Option("Denver City & County Bldg (Civil Matters)", "4");document.getElementById("Location_ID").options[2] = new Option("Denver Juvenile Court", "5");document.getElementById("Location_ID").options[3] = new Option("Lindsey-Flanigan Courthouse (Criminal Matters)", "82");document.getElementById("Location_ID").options[4] = new Option("Denver Probate Court", "84");break;		
+			
+				case "4":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Huerfano County Courthouse", "7");break;		
+			
+				case "5":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Las Animas County Courthouse", "8");break;		
+			
+				case "6":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("El Paso County Judicial Building", "9");break;		
+			
+				case "7":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Teller County Courthouse", "10");break;		
+			
+				case "8":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Clear Creek County Courthouse", "11");break;		
+			
+				case "9":
+						
+						document.getElementById("Location_ID").options.length = (2 + 1); document.getElementById("Location_ID").options[0] = new Option("", "0");document.getElementById("Location_ID").options[1] = new Option("Eagle County Justice Center", "12");document.getElementById("Location_ID").options[2] = new Option("Eagle County Court at El Jebel", "13");break;		
+			
+				case "10":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Lake County Justice Center", "14");break;		
+			
+				case "11":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Summit County Justice Center", "15");break;		
+			
+				case "12":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Archuleta County Courthouse", "16");break;		
+			
+				case "13":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("La Plata County Courthouse", "17");break;		
+			
+				case "14":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("San Juan County Courthouse", "18");break;		
+			
+				case "15":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Delta County Combined Court", "19");break;		
+			
+				case "16":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Gunnison County Combined Court Offices", "20");break;		
+			
+				case "17":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Hinsdale County Courthouse", "21");break;		
+			
+				case "18":
+						
+						document.getElementById("Location_ID").options.length = (2 + 1); document.getElementById("Location_ID").options[0] = new Option("", "0");document.getElementById("Location_ID").options[1] = new Option("Montrose County Justice Center", "22");document.getElementById("Location_ID").options[2] = new Option("Nucla Montrose Associate Court", "23");break;		
+			
+				case "19":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Ouray County Courthouse", "24");break;		
+			
+				case "20":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("San Miguel County Courthouse", "25");break;		
+			
+				case "21":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Jackson County Combined Court", "26");break;		
+			
+				case "22":
+						
+						document.getElementById("Location_ID").options.length = (2 + 1); document.getElementById("Location_ID").options[0] = new Option("", "0");document.getElementById("Location_ID").options[1] = new Option("Larimer County Justice Center ", "27");document.getElementById("Location_ID").options[2] = new Option("Loveland County Court ", "28");break;		
+			
+				case "24":
+						
+						document.getElementById("Location_ID").options.length = (2 + 1); document.getElementById("Location_ID").options[0] = new Option("", "0");document.getElementById("Location_ID").options[1] = new Option("Garfield County Courthouse", "29");document.getElementById("Location_ID").options[2] = new Option("Garfield County Associate Court - Rifle", "30");break;		
+			
+				case "25":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Pitkin County Courthouse", "31");break;		
+			
+				case "26":
+						
+						document.getElementById("Location_ID").options.length = (2 + 1); document.getElementById("Location_ID").options[0] = new Option("", "0");document.getElementById("Location_ID").options[1] = new Option("Rio Blanco Combined Court", "32");document.getElementById("Location_ID").options[2] = new Option("Rio Blanco County Associate Court", "33");break;		
+			
+				case "27":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Pueblo Combined Court", "34");break;		
+			
+				case "28":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Chaffee Combined Court ", "35");break;		
+			
+				case "29":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Custer Combined Court ", "36");break;		
+			
+				case "30":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Fremont Combined Court ", "37");break;		
+			
+				case "31":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Park Combined Court", "38");break;		
+			
+				case "32":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Alamosa Combined Court", "39");break;		
+			
+				case "33":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Conejos Combined Court", "40");break;		
+			
+				case "34":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Costilla Combined Court", "41");break;		
+			
+				case "35":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Mineral Combined Court", "42");break;		
+			
+				case "36":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Rio Grande Combined Court", "43");break;		
+			
+				case "37":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Saguache Combined Court", "44");break;		
+			
+				case "38":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Kit Carson County Combined Court", "45");break;		
+			
+				case "39":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Logan County Combined Courts", "46");break;		
+			
+				case "40":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Morgan District Court", "48");break;		
+			
+				case "41":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Phillips Combined Court", "49");break;		
+			
+				case "42":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Sedgwick Combined Court", "50");break;		
+			
+				case "43":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Washington Combined Court", "51");break;		
+			
+				case "44":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Yuma County Courthouse", "52");break;		
+			
+				case "45":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Grand County Judicial Center", "53");break;		
+			
+				case "46":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Moffat Combined Court", "54");break;		
+			
+				case "47":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Routt Combined Court", "55");break;		
+			
+				case "48":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Baca County Court", "56");break;		
+			
+				case "49":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Cheyenne County Courthouse", "57");break;		
+			
+				case "50":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Kiowa County Combined Court", "58");break;		
+			
+				case "51":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Prowers County Combined Court", "59");break;		
+			
+				case "52":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Bent Combined Court", "60");break;		
+			
+				case "53":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Crowley Combined Court", "61");break;		
+			
+				case "54":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Otero Combined Court", "62");break;		
+			
+				case "55":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Adams County Justice Center", "63");break;		
+			
+				case "56":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Broomfield Combined Courts", "64");break;		
+			
+				case "57":
+						
+						document.getElementById("Location_ID").options.length = (3 + 1); document.getElementById("Location_ID").options[0] = new Option("", "0");document.getElementById("Location_ID").options[1] = new Option("Arapahoe County Justice Center", "66");document.getElementById("Location_ID").options[2] = new Option("Arapahoe County Courthouse - Aurora", "67");document.getElementById("Location_ID").options[3] = new Option("Arapahoe County Courthouse - Littleton", "68");break;		
+			
+				case "58":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Douglas County Courthouse", "69");break;		
+			
+				case "59":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Elbert County Courthouse", "70");break;		
+			
+				case "60":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Lincoln County Courthouse", "71");break;		
+			
+				case "61":document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Weld County Court House", "81");break;		
+			
+				case "62":
+						
+						document.getElementById("Location_ID").options.length = (2 + 1); document.getElementById("Location_ID").options[0] = new Option("", "0");document.getElementById("Location_ID").options[1] = new Option("Boulder County Combined Court", "73");document.getElementById("Location_ID").options[2] = new Option("Boulder County Combined Court - Longmont", "74");break;		
+			
+				case "64":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Mesa County Justice Center", "75");break;		
+			
+				case "65":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Dolores Combined Court", "76");break;		
+			
+				case "66":
+						
+						document.getElementById("Location_ID").options.length = (1); document.getElementById("Location_ID").options[0] = new Option("Montezuma Combined Courts", "83");break;		
+			
+			
+			default:
+				document.getElementById("Location_ID").options.length = 1;
+				document.getElementById("Location_ID").options[0] = new Option("Choose County First", "0");
+				break;
+		}
+	}
+			
+	function AddToSort(_column){
+		document.getElementById("Sort"+document.getElementById("SortIndex").value).value = _column;
+		if(document.getElementById("SortIndex").value == 3)
+			document.getElementById("SortIndex").value = 1;
+		else
+			document.getElementById("SortIndex").value = parseInt(document.getElementById("SortIndex").value)+1;
+	}
+
+		
+		function printVersion_Active(){
+			document.getElementById("DocketSearch").action = "https://www.courts.state.co.us/Courts/Docket_Print.cfm";
+			document.getElementById("DocketSearch").target = "_blank";
+			document.getElementById('DocketSearch').submit();
+			document.getElementById("DocketSearch").action = "https://www.courts.state.co.us/Courts/Docket.cfm";
+			document.getElementById("DocketSearch").target = "_self";
+		}
+		
+		function printVersion_All(){
+			var tempRPP = document.getElementById("Records_Per_Page").value;
+			
+			document.getElementById("DocketSearch").action = "https://www.courts.state.co.us/Courts/Docket_Print.cfm";
+			document.getElementById("DocketSearch").target = "_blank";
+			document.getElementById("Records_Per_Page").value = 0;
+			document.getElementById('DocketSearch').submit();
+			document.getElementById("DocketSearch").action = "https://www.courts.state.co.us/Courts/Docket.cfm";
+			document.getElementById("DocketSearch").target = "_self";
+			document.getElementById("Records_Per_Page").value = tempRPP;
+		}
+		function PreviousButton(){
+			document.getElementById("Page").value = parseInt(document.getElementById("Page").value) - 1;
+			document.getElementById("DocketSearch").submit();
+		}
+		function NextButton(){
+			document.getElementById("Page").value = parseInt(document.getElementById("Page").value) + 1;
+			document.getElementById('DocketSearch').submit();
+		}
+	</script>
+
+
+		
+        <span class="Title">Court Docket Search</span>
+        <br />
+        
+        <form name="DocketSearch" id="DocketSearch" action="https://www.courts.state.co.us/dockets/index.cfm#results" method="post" style="margin:0;" class="WebForm" onsubmit="return _CF_checkDocketSearch(this)">
+        
+        
+
+        <br />
+        
+        <div class="page-content-left">
+            
+            <script type="text/javascript">
+				function updatedaterange( v ){
+					if( v == 'specific' ){
+						document.getElementById( 'specificdatebox' ).style.display = '';
+					} else{
+						document.getElementById( 'specificdatebox' ).style.display = 'none';
+						document.getElementById( 'specificdate' ).value = '';
+					}
+				}
+			</script>
+            
+            <label>County</label><br />
+            <select name="County_ID" id="County_ID"  onchange="UpdateLocations_Docket(this);" >
+
+                <option value="0"></option>
+                <option value="55">Adams County</option><option value="32">Alamosa County</option><option value="57">Arapahoe County</option><option value="12">Archuleta County</option><option value="48">Baca County</option><option value="52">Bent County</option><option value="62">Boulder County</option><option value="56">Broomfield County</option><option value="28">Chaffee County</option><option value="49">Cheyenne County</option><option value="8">Clear Creek County</option><option value="33">Conejos County</option><option value="34">Costilla County</option><option value="53">Crowley County</option><option value="29">Custer County</option><option value="15">Delta County</option><option value="3">Denver County</option><option value="65">Dolores County</option><option value="58">Douglas County</option><option value="9">Eagle County</option><option value="6">El Paso County</option><option value="59">Elbert County</option><option value="30">Fremont County</option><option value="24">Garfield County</option><option value="1">Gilpin County</option><option value="45">Grand County</option><option value="16">Gunnison County</option><option value="17">Hinsdale County</option><option value="4">Huerfano County</option><option value="21">Jackson County</option><option value="2">Jefferson County</option><option value="50">Kiowa County</option><option value="38">Kit Carson County</option><option value="13">La Plata County</option><option value="10">Lake County</option><option value="22">Larimer County</option><option value="5">Las Animas County</option><option value="60">Lincoln County</option><option value="39">Logan County</option><option value="64">Mesa County</option><option value="35">Mineral County</option><option value="46">Moffat County</option><option value="66">Montezuma County</option><option value="18">Montrose County</option><option value="40">Morgan County</option><option value="54">Otero County</option><option value="19">Ouray County</option><option value="31">Park County</option><option value="41">Phillips County</option><option value="25">Pitkin County</option><option value="51">Prowers County</option><option value="27">Pueblo County</option><option value="26">Rio Blanco County</option><option value="36">Rio Grande County</option><option value="47">Routt County</option><option value="37">Saguache County</option><option value="14">San Juan County</option><option value="20">San Miguel County</option><option value="42">Sedgwick County</option><option value="11">Summit County</option><option value="7">Teller County</option><option value="43">Washington County</option><option value="61">Weld County</option><option value="44">Yuma County</option>
+            </select>
+            <br /><br />
+            
+            <label>Location <span class="required">(required only if county is selected)</span></label><br />
+            <select name="Location_ID" id="Location_ID" >
+
+                <option value="0">Choose County First</option>
+            </select>
+            <br /><br />
+            
+            <label>Court</label><br />
+            <select name="Court" id="Court" >
+
+                <option value="Both">Both</option>
+                <option value="County" >County Court</option>
+                <option value="District" >District Court</option>
+            </select>
+            <br /><br />
+            
+            <label>Division</label><br />
+            <input name="Division" type="text" id="Division"  />	
+            <br /><br />
+            
+            <label>Date Range</label><br />
+            <select name="datesearchtype" style="width:150px;"  id="datesearchtype"  onchange="updatedaterange( this.value );" >
+
+            	<option value="all" >6 Months</option>
+                <option value="threemonths" selected="selected">3 Months</option>
+                <option value="month" >1 Month</option>
+                <option value="week" >1 Week</option>
+                <option value="today" >Today</option>
+                <option value="specific" >Specific Date</option>
+            </select>
+            <br /><br />
+            
+            <span id="specificdatebox" style="display:none">
+            	<label>Date</label><br />
+                <input name="specificdate" type="text" style="width:150px;"  id="specificdate"  />
+                <br /><br />
+            </span>
+            
+        </div>
+            
+        <div class="page-content-right">
+            
+            <label>Case Number</label><br />
+            <input name="caseyear" type="text" maxlength="4"  style="width:75px"  id="caseyear"  />
+            <select name="caseclass" style="width:75px"  id="caseclass" >
+
+            	<option value=""></option>
+            	<option value="c" >C</option>
+                <option value="cr" >CR</option>
+                <option value="cv" >CV</option>
+                <option value="cw" >CW</option>
+                <option value="dr" >DR</option>
+                <option value="jd" >JD</option>
+                <option value="jv" >JV</option>
+                <option value="m" >M</option>
+                <option value="pr" >PR</option>
+                <option value="r" >R</option>
+                <option value="s" >S</option>
+                <option value="t" >T</option>
+            </select>
+            <input name="caseseq" type="text" maxlength="6"  style="width:75px"  id="caseseq"  />
+            <br />
+            <span style="font-size:11px;">4-digit year &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Case class &nbsp; &nbsp; &nbsp; &nbsp; Case sequence</span>
+            <br /><br />
+            
+            <label>Party Last Name or Company Name</label><br />
+            <input name="Lastname" type="text" id="Lastname"  class="font8"  />
+            <br /><br />
+            
+            <label>Party First Name</label><br />
+            <input name="Firstname" type="text" id="Firstname"  />
+            <br /><br />
+            
+            <label>Attorney Bar Number</label><br />
+            <input name="Bar_Number" type="text" maxlength="6"  id="Bar_Number"  />
+            <br /><br />
+            
+            
+                <input type="submit" name="submitform" id="submitform" value="Show Docket">
+            
+			
+        </div>
+        <div style="clear:both;"></div>
+
+		
+                
+		</form>
+
+	
+<script language="javascript">
+	UpdateLocations_Docket(document.getElementById("County_ID"));
+</script>
+
+
+                        <div style="clear:both"></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+	<div style="clear:both"></div>
+    <div class="footer-spacer"></div>
+    
+        <span class="fixed-footer-announce nomobile">
+        	<a href="https://www.courts.state.co.us/announcements/index.cfm">important announcement</a>
+        </span>
+    
+	
+	<span class="fixed-footer">
+        <a href="https://www.courts.state.co.us/Contact/Index.cfm">contact us</a> 
+        &nbsp; &bull; &nbsp; 
+        <a href="https://www.courts.state.co.us/Administration/Unit.cfm?Unit=interp">interpreters</a> 
+        &nbsp; &bull; &nbsp; 
+        <a href="https://www.courts.state.co.us/FAQs/Index.cfm">faq</a> 
+        &nbsp; &bull; &nbsp; 
+        <a href="https://www.courts.state.co.us/gallery/">photos</a>
+        &nbsp; &bull; &nbsp; 
+        <a href="https://www.courts.state.co.us/holiday.cfm">holidays</a>
+    </span>
+	
+    <span class="mobile-footer">
+    	<span class="mobile-footer-title">Menu</span>
+        
+        	<a href="https://www.courts.state.co.us/announcements/index.cfm" style="color:#FFF; background-color:#C30">Important Announcement</a>
+        
+        <a href="https://www.courts.state.co.us/Index.cfm">Home</a>
+        <a href="https://www.courts.state.co.us/search.cfm">Search</a>
+        <a href="https://www.courts.state.co.us/Courts/Index.cfm">Courts</a>     
+        <a href="https://www.courts.state.co.us/Probation/Index.cfm">Probation</a>        
+        <a href="https://www.courts.state.co.us/Jury/Index.cfm">Jury</a>             
+        <a href="https://www.courts.state.co.us/Self_Help/Index.cfm">Self&nbsp;Help &frasl; Forms</a>  
+        <a href="https://www.courts.state.co.us/Careers/Index.cfm">Careers</a>
+        <a href="https://www.courts.state.co.us/Media/Index.cfm">Media</a> 
+        <a href="https://www.courts.state.co.us/Administration/Index.cfm">Administration</a>
+        <a href="https://www.courts.state.co.us/Contact/Index.cfm">Contact us</a>
+        <a href="https://www.courts.state.co.us/Administration/Unit.cfm?Unit=interp">Interpreters</a>
+        <a href="https://www.courts.state.co.us/FAQs/Index.cfm">FAQ</a> 
+        <a href="https://www.courts.state.co.us/gallery/">Photo Gallery</a>  
+        <a href="https://www.courts.state.co.us/holiday.cfm">Holiday Schedule</a> 
+    </span>
+    <div style="display:none">2a</div>
+
+
+            
+    	 
+	</body>
+</html>

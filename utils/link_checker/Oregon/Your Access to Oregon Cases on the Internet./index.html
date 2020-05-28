@@ -1,0 +1,317 @@
+
+<!doctype html>
+<!--[if IEMobile 7 ]> <html dir="ltr" lang="en-US" class="no-js iem7"> <![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if (gte IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!-->
+<html class="no-js" dir="ltr" lang="en-US" >
+<!--<![endif]-->
+
+<head>
+  <meta charset="UTF-8" />
+  
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+
+
+    <title>OREGON JUDICIAL DEPARTMENT - Online Records Search</title>
+
+  <!-- mobile optimized -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- allow pinned sites -->
+  <meta name="application-name" content="Odyssey Portal" />
+
+  <!-- Favicon -->
+  <link href="/portal/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/portal/Content/tylerui/images/apple-touch-icon-144x144-precomposed.png">
+  
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/portal/Content/tylerui/images/apple-touch-icon-114x114-precomposed.png">
+  
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/portal/Content/tylerui/images/apple-touch-icon-72x72-precomposed.png">
+  
+  <link rel="apple-touch-icon-precomposed" href="/portal/Content/tylerui/images/apple-touch-icon-precomposed.png">
+
+  <!-- Plugin Styles -->
+  
+
+  
+  <link href="/portal/Content/PortalReset.css?v=HD3euui7n1lxavx56-Rd62SNCgtVTbp1sCISDUiiG1Y1" rel="stylesheet"/>
+
+
+  
+  <link rel="stylesheet" href="/portal/Content/tylerui/tylerui-browser-requirements.css">
+
+  <!-- Bundled Content -->
+  <script src="/portal/bundles/ModernizrDefunctr?v=0L7pKboQuDOVraBoI-l6cOkOd8BWT-W6u4Ryw57TDJY1"></script>
+
+  <link href="/portal/bundles/TylerUiCss?v=E7vYFvdX1_QfsNb-0mnZWF2rU5oyKRYO9UQGCr7U_v01" rel="stylesheet"/>
+
+  <link href="/portal/Content/external/telerik/kendo/kendo.css?v=bzDcF29RRoChnTfBlWURSAWwZYCnKtnPd1nO9Jfp5ec1" rel="stylesheet"/>
+
+  <link href="/portal/Content/main.css?v=nUTYfcHMm0IJc1ynli4DCqSZd8TWm_m84RSejpdmLiU1" rel="stylesheet"/>
+
+  
+  
+  <script src="/portal/bundles/TylerUiJs?v=dp-EY53N3mvYJSqWSLIWCeg0vfLkDBEW0GZvkrtUXHo1"></script>
+
+  
+  <link rel="stylesheet" href="/portal/Content/print.css" type="text/css" media="print" />
+  <script src="/portal/Scripts/ePortal/main.js?v=0wa1wo-ruYhH7tzGejyujjZQNMQVLvO75NjgjZ-y06c1"></script>
+
+  <script src="/portal/Scripts/ePortal/ePortal.js?v=OFl6by9jQCtTgIelcfZpdYhRcXJ1U0aWMwEyYOxj4Ig1"></script>
+
+</head>
+  <script type="text/javascript">
+    var virtualDirectory = '/portal';
+
+    var RefreshSession = function () {
+      var now = new Date();
+      $.ajax({
+        cache: false,
+        url: $("#timeoutContinueBtn").data('url') + "/" + now.getTime(),
+        type: 'POST'
+      });
+    }
+  </script>
+
+
+<body data-spy="scroll" data-target="#mysidebar" >
+  <!-- center for IE9 since it ignores bootstrap 3 -->
+<center>
+
+    <!-- use noscript and also keep outside of controller to avoid flash in Safari and IE (can't use ng-cloak because there is no js it won't uncloak-->
+    <noscript>
+        <span class="nojs-content">
+            <h2>JavaScript must be enabled in order for you to use this application.</h2>
+            <p>However, it seems JavaScript is either disabled or not supported by your browser.</p>
+            <p>To use this application, enable JavaScript by changing your browser options, then try again.</p>
+        </span>
+    </noscript>
+
+    <span class="nocookies-content">
+        <h2>Cookies must be allowed.</h2>
+        <p>Your browser is currently set to block cookies. Your browser must allow cookies before you can use this application.</p>
+        <p>Cookies are small text files stored on your computer that tell this application when you're signed in. To learn how to allow cookies, see online help in your web browser.</p>
+    </span>
+
+    <div class="unsupported-browser center-block">
+        <p />
+        <h2>You are using a web browser which this application no longer supports.</h2>
+
+        <p>
+            We support the current and previous major releases of Google Chrome, Firefox, Internet Explorer, and Safari on a rolling basis.
+            Each time a new version is released, we begin supporting that version and stop supporting the third most recent version.
+        </p>
+
+        <h2>Supported Browsers</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 text-center">
+                <div>
+                    <label>Chrome for Business</label>
+                </div>
+                <div>
+                    <a href="http://www.google.com/intl/en/chrome/business/browser/">
+                        <img src="/portal/Content/tylerui/images/browsers/chrome_64x64.png" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <div>
+                    <label>Firefox</label>
+                </div>
+                <div>
+                    <a href="http://www.getfirefox.com/">
+                        <img src="/portal/Content/tylerui/images/browsers/firefox_64x64.png" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <div>
+                    <label>Internet Explorer</label>
+                </div>
+                <div>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <img src="/portal/Content/tylerui/images/browsers/internet-explorer_64x64.png" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <div>
+                    <label>Apple Safari</label>
+                </div>
+                <div>
+                    <a href="http://www.apple.com/safari/">
+                        <img src="/portal/Content/tylerui/images/browsers/safari_64x64.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <h4> Internet Explorer 9 Users </h4>
+            Internet Explorer 11 launched on October 17, 2013, and as a result, we've discontinued support for Internet Explorer 9.
+
+        <p>
+            Organizations that depend on old versions of Internet Explorer may want to consider a dual browser strategy.
+    </div>
+
+
+</center>
+
+  <omnibar id="omnibar" class="">
+    
+
+      <div class="row" style="background-color: transparent;
+          height: 0px;
+          
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: left;
+          width: 1920px;">
+        <div class="col-md-12">
+        </div>
+      </div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          
+          <brand class="navbar-brand">
+            <a href="/portal/" tabindex="1">
+              <div style="width: 100%; padding-left: 4.5rem; margin-top: 7px;">
+                <div class="product">OREGON JUDICIAL DEPARTMENT - Online Records Search</div>
+              </div>
+            </a>
+          </brand>
+        </div>
+        <div id="navbar" class="hidden-xs pull-right">
+  <div class="dropdown" style="margin-top:15px;">
+    <button class="dropdown-toggle btn btn-default login-btn" data-toggle="dropdown" aria-expandable="false" id="dropdownMenu1" style="cursor: pointer;">
+      Register / Sign In
+      <span class="fa fa-user fa-fw"></span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a href="/portal/Account/Register" >Register</a></li>
+      <li role="presentation">
+        <a href="/portal/Account/Login" >Sign In</a>
+      </li>
+      </ul>
+    </div>
+
+          
+        </div><!--/.nav-collapse -->
+        <div id="navbar" class="hidden-lg hidden-md hidden-sm">
+  <div class="dropdown" style="margin-top:15px;">
+    <button class="dropdown-toggle btn btn-default login-btn" data-toggle="dropdown" aria-expandable="false" id="dropdownMenu1" style="cursor: pointer;">
+      Register / Sign In
+      <span class="fa fa-user fa-fw"></span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a href="/portal/Account/Register" >Register</a></li>
+      <li role="presentation">
+        <a href="/portal/Account/Login" >Sign In</a>
+      </li>
+      </ul>
+    </div>
+
+        </div>
+      </div><!--/.container-fluid -->
+    </nav>
+    <div class="row" style="
+    background-color: #40528F;
+    height: 30px;
+    margin-top:  -20px;
+    margin-bottom: 20px;">
+      <div class="col-md-12">
+      </div>
+    </div>
+  </omnibar>
+
+
+
+  <div id="main" class="container page" style="min-height: 850px; margin-top: 60px;">
+    <div class="hidden-lg hidden-md hidden-sm" style="height:55px;"></div>
+    
+
+<div class="row">
+  <div class="panel panel-default center-block">
+    <div class="panel-body">
+      <h1>Welcome to the Oregon Judicial Department Online Records Search</h1>
+      
+<div class="notification-portlet">
+    <p class="notifications">
+      The Oregon Judicial Department is pleased to provide free online access to limited case information in the circuit courts and Tax Court of this state.  The displayed information is not the official ORS 7.020 register record, and, therefore, should not be relied upon as an official record of the court.   Specifically, individuals should not use this system for background checks or other purposes that require more complete identity or case information. The full official register for non-confidential case types can be accessed at the courthouse public terminals or, for certain business entities, through a subscription to OJCIN Online.
+    </p>
+    <p class="notifications">
+      <a style="color:#40528f;" href="http://www.courts.oregon.gov/services/online/Documents/Calendars-Records/recordSearchQRG.pdf" target="_blank">Click here to view our user guide</a>
+    </p>
+    <p class="notifications">
+      <a style="color:#40528f;" href="http://www.courts.oregon.gov/services/online/Documents/Calendars-Records/recordSearchFAQs.pdf" target="_blank">Click here to access Frequently Asked Questions</a>
+    </p>
+    <p class="notifications">
+      <a style="color:#40528f;" href="http://www.courts.oregon.gov/OJD/OnlineServices/OJIN/Pages/index.aspx" target="_blank">Click here to access the Oregon eCourt Case Information (OECI) system</a>
+    </p>
+    <p class="notifications">
+      Courts may change their schedules at any time. Please check the calendar on the day of your scheduled event to confirm the information for your event.
+    </p>
+    <p class="notifications">
+      Sign-in and/or registration is not required to perform a search on this site. To specify which court records you want to search, along with other options, click on the Advanced Search Options link in the Smart Search section below.  
+    </p>
+</div>
+
+    </div>
+  </div>
+</div>
+    <div class="row row-space">
+      <div class="center-block">
+            <div style="padding-bottom:15px;" class="col-md-3 col-sm-4 col-xs-12 text-center" id="portlet-29" data-portlet-id="0">
+              <a tabindex="50" class="btn btn-lg btn-default portlet-buttons" href="/portal/Home/Dashboard/29" >
+                  <img style="max-height:96px; max-width:96px;" src="/portal/Content/images/dashboard/Icon_SmartSearch.svg" />
+                <br /><br />Smart Search
+                <p class="btn-description">
+                  Search for court records.
+                </p>
+              </a>
+            </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer role="contentinfo" class="margin-top center-block" style="width: 95%;">
+  <div class="row visible-xs">
+    <div class="col-xs-12" style="margin:0 0 0.5rem -0.5rem;">
+      <img class="pull-left noprint" src="/portal/Content/tylerui/images/empowered.png" />
+    </div>
+    <div class="col-xs-12">
+      <small class="pull-left noprint">&copy; 2020 Tyler Technologies, Inc. | All Rights Reserved</small>
+      <br />
+      <small class="pull-left noprint">Version: 3.3.37.0</small>
+    </div>
+  </div>
+  <div class="row hidden-xs">
+    <div class="col-xs-6 col-md-6">
+      <small class="pull-left noprint">&copy; 2020 Tyler Technologies, Inc. | All Rights Reserved</small>
+      <br />
+      <small class="pull-left noprint">Version: 3.3.37.0</small>
+    </div>
+    <div class="col-xs-6 col-md-6">
+        <img alt="Empowered By Tyler Technologies" title="Empowered By Tyler Technologies" class="pull-right noprint" src="/portal/Content/tylerui/images/empowered.png" />
+    </div>
+  </div>
+</footer>
+
+    <div style="display:none">Machine: DMZSRV14</div>
+
+
+</body>
+</html>

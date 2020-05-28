@@ -1,0 +1,1120 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head id="Head1"><meta charset="UTF-8" /><link href="/DefaultContent/Default/bootstrap.v3.4.1.min.css" rel="stylesheet"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" /><title>
+	
+     Court Case Records | Lee County Clerk of Court, FL
+
+</title>
+    <meta name="viewport" content="width=device-width" />
+    
+    <link href="/DefaultContent/Default/StyleBundleDesignTheme.cssbnd?v=ioinOC033D9ASRJPXUIzdsDMlIoz6Jcys2ud3eut2IE1" rel="stylesheet"/>
+<link href="/Project/Contents/Main/StyleBundleDesignTheme.cssbnd?v=mZPX6SzNlJI9xDMGO-A_CVx3mvP6cmmtDENM-HdvZQ01" rel="stylesheet"/>
+<link href="/Areas/Admin/Content/StyleBundleFrontendExtra.cssbnd?v=TXLLavBbQdlTrg6sukdO1rojFtp3vRD061rBA3Rt7YM1" rel="stylesheet"/>
+<link href="/DefaultContent/Default/Print.cssbnd?v=47rmsGcOk4CIHfb2HDg7t9s31eiFEWHej5QI1ytFlII1" rel="stylesheet" media="print" />
+<link href="/Project/Contents/Main/Print.cssbnd?v=jfhfKsMmxQr_xKAfv9Fj6qRlRX7gMoxJTHKVE6DLWuo1" rel="stylesheet" media="print" />
+<script src="/Scripts/ScriptBundleFAllInOne.jsbnd?v=_0E6bVtQd-O5YSZzK-1e0W7B2rzrQsdunuea-jisyIg1"></script>
+
+    <script>
+        function handleExternalURL() {
+            $("a[target='_blank'][href*='____isexternal']").each(function (index, item) {                
+                var href = $(item).attr("href");
+                href = href.replace("&____isexternal=true", "");
+                href = href.replace("?____isexternal=true", "");
+                $(item).attr("href", href);
+                if ($(item).closest(".no_external_url_indication,.footer_copyright").length <= 0) {
+                    $(item).removeClass("external_link_url").addClass("external_link_url");
+                }
+            });
+
+            $("a[target='_blank']:not([href*='____isexternal'])").each(function (index, item) {
+                var linkUrl = $(item).attr("href");
+                if ($.isUrl(linkUrl) && $(item).closest(".no_external_url_indication,.footer_copyright").length<=0) {
+                    $(item).removeClass("external_link_url").addClass("external_link_url");
+                }
+            });
+        }
+
+        ; (function ($) {
+            $.ajaxSetup({
+                complete: function (XMLHttpRequest, textStatus) {                    
+                    handleExternalURL();
+                }
+            });
+        })(jQuery);
+    </script>
+    <script>window.visionOptions = {virtualApplicationPath:'/',logOnPath:'Admin/LogOn',logOffPath:'Admin/LogOff',enableSessionTimeout:false,sessionTimeoutInMinutes:30,timeToAlertBeforeSessionTimeoutInMinutes:5,extendSessionTimeoutPath:'Admin/Account/ExtendSessionTimeout',mainFolderPath:'/Project/Contents/Main/',centerLocation:'Lee County Clerk of Court, FL', siteID:1, navigationID:213, isHomePage:false, emergencyNoticeChanged:true, loggedIn:false, showTopTips:true, currentDesignFolderPath:'/Project/Contents/Main/', useDesignThemFontSizeCss:false , clientResponsiveTableEnabled:true, imageUrl:'/Home/ShowPublishedImage/', engagementAdminEndPoint:'/Admin/Engagement/', visionLiveAdminEndPoint:'/Admin/Components/', cmsAdminEndPoint:'/Admin/', enableSplashUrl:true, eSignatureView: '/Shared/SignatureView', socialMediaInfo :{ twitter : { maxLength : 280  } }, baseImageUrl:'/Home/ShowPublishedImage' };;window.visionApps={"cms_core":{"DateFormat":"MM/dd/yyyy","TimeFormat":"h:mm TT","PhoneFormat":"(999) 999-9999","OrganizationName":"Lee County Clerk of Court, FL","TimeAMFormat":"AM","TimePMFormat":"PM","GoogleReCaptchaPublicKey":"6LfD_hgUAAAAAHPhLzmYTQReOp5mspjlIxKQ1y-H"}};;window.visionApps.token="eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwiayI6ImhXMkx4K0dXSFIrT1lQNmRXQzlDdUE9PSJ9.-yD52ssJumhqJJQNeechZmJAnVzMN8AZy3hwXeGVobaPZTiYKRksehtaO1U6nja_zQmKqgn5P5P7XxcQaahzu5yEqRKW_ABp.NuszTokgCwQh-BkDxUGahQ.-MkA4kUExBkYWbXfwVviMtGYTOSt_G9NMFiMla1JIzmgNdomNwp5Dkm0NFE_eu89HSwDfKG3PdTA3Y01SXTT4SRBcfyXxOFpPlLPZwCeMCI1GcPXGPO4nn-RPrtVd3L9b606I2TLd6VNiptTa1cit0-MIj8bS5I_Qgnrsgdr_u6BDloBUOku1X86EcTNEGS4W14lz7Rhac3YlbQFRKOb8XW-dtl6rXZZ8K_Wh1VQZpE.2mOhtADHA-2XyYO48YmS-nKheHesYn3GhnzneqsHT_k";(function(window){window.cmsCoreConfig={}; (function(config){ (function(window){window.coreComponentFormConfig={"apiEndPoint":"https://form.visioninternet.com/"};})(window);; })(window.cmsCoreConfig); })(window);(function(window){window.visionLiveConfig={}; (function(config){ config.flexibleComponent={"serverURL":"https://flex.visioninternet.com/"};; })(window.visionLiveConfig); })(window);</script>
+
+    <script type="text/javascript">
+        // added the htmlEncode and htmlDecode method to fixed the js load order issue.
+        $.extend($, {
+            htmlEncode: function (html) {
+                var temp = document.createElement("div");
+                (temp.textContent != undefined) ? (temp.textContent = html) : (temp.innerText = html);
+                var output = temp.innerHTML;
+                temp = null;
+                return output;
+            },
+            htmlDecode: function (text) {
+                var temp = document.createElement("div");
+                temp.innerHTML = text;
+                var output = temp.innerText || temp.textContent;
+                temp = null;
+                return output;
+            }
+        });
+        $(function () {
+            //script for view full site button, placed here to keep firefox for mobile devices happy
+            var viewFullElement = document.getElementById("view-full");
+            var isResponsive = "yes";
+            if (viewFullElement) {
+                if (isResponsive == "yes") {
+                    viewFullElement.className = 'mobile_only fullsite';
+                }
+                else {
+                    viewFullElement.innerHTML = 'View Mobile Optimized';
+                    viewFullElement.className = '';
+                }
+            }
+        });
+    </script>
+    
+<script>
+    $(function () {
+        handleExternalURL();
+    });
+</script>
+
+
+    <!--[if lt IE 9]>
+        <script src="/Scripts/ScriptBundleOthers.jsbnd?v=3Q7FhTQfRrKx8h7Kvdbh9bBluzlNlXKsFAERd4g8_TY1"></script>
+
+	<![endif]-->
+
+    
+    <link id="active_font" rel="stylesheet" type="text/css" href="/Project/Contents/Main/x-small.css">
+    
+    <link rel="Shortcut Icon" href="/favicon.ico" />
+
+    
+    
+
+<!-- Google Universal Analytics -->
+<script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-20703027-1', 'auto');
+    ga('require', 'displayfeatures');
+    //TFS 21771, Enhanced Link Attribution, https://developers.google.com/analytics/devguides/collection/analyticsjs/enhanced-link-attribution
+    ga('require', 'linkid'); 
+    ga('set', 'dimension1', ' Court Case Records, ID:213');
+    ga('set', 'dimension2', '2020');
+    ga('send', 'pageview');
+</script>
+<!-- End Google Universal Analytics -->
+
+      
+    
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    
+
+    <script>
+        $(function () {
+            $.frontendSessionManager({
+                virtualApplicationPath:"/",
+                backendUserLogin: false,
+                frontendUserLogin: false,
+                sessionTimeoutInMinutes:30,
+                timeToAlertBeforeSessionTimeoutInMinutes:5,
+                extendSessionTimeoutPath:"Home/FrontEndExtendSessionTimeout"
+            }).setTimerForSessionExpiration();
+        });
+    </script>
+    
+
+    </head>
+
+<body class="front_end_body site_standardsitetemplate ">    
+    <link href="/DefaultContent/Default/StyleBundleAngularLib.cssbnd?v=sED2Qjf38ysQJYZW_ZvZj-7IGXKm4NOJhdA51oOtG5A1" rel="stylesheet"/>
+
+
+
+<script>
+    window.frontendCommonConfig = {
+        loginPage: 'https://www.leeclerk.org/sys/sso/login',
+        popupLoginPage: '/sys/sso/popuplogin',
+        photoBaseUrlForPeople: 'https://www.leeclerk.org/sys/sso/ShowProfilePhoto?id=',
+        photoBaseUrl: 'https://www.leeclerk.org/Home/ShowPublishedImage/',
+        token: window.visionApps ? window.visionApps.token : '',
+        cmsUserLogged: false,
+        anonymousAvatar: 'https://www.leeclerk.org/DefaultContent/Default/_gfx/anonymous.png',
+        loginUser: {
+            name: '',
+            avatar: '',
+            userID: null,
+            firstName: '',
+            lastName: '',
+            imageID: null,
+            email: '',
+        }
+    };
+</script>
+
+
+<script>
+    //It's before the AngularJSLib Loading, which might be update in the AngularJSLib bundle.
+    window.viPredefinedModules = [];
+</script>
+<script src="/Scripts/ScriptBundleAngularLib.jsbnd?v=c2kPXnVVZddEbtrCCG5jLodQ82oMGHvEOXWx1ZVwAEY1"></script>
+
+
+<script>
+    (function (window, angular) {
+
+        $("body").attr("ng-app", "vi.cms");
+        
+        window.viCurrentModule = angular.module("vi.cms", window.viPredefinedModules || []);
+    })(window, angular);
+</script>
+    
+    <script src="/Scripts/frontendCoreBundle.jsbnd?v=cv1BVDUSy9PyW-doXclHgvb1I5giBnDl7_LSWBvBb7Q1"></script>
+
+
+    
+    <!--stopindex-->
+    <noscript>
+        <div class="noscript_alert"><span>Please enable JavaScript in your browser for a better user experience.</span></div>
+    </noscript>
+    <!--startindex-->
+    <div class="vi-temp-message-container" style="display:none;"></div>
+        
+    
+    
+<!--stopindex-->
+<div class="alert_container">
+    <a class="hide" id="alert_controls" data-action="/Home/SetTopTipCookie">Show/Hide</a>
+    <div class="important_alert_wrapper ">
+        <div class="alert_right">
+            <div class="important_alert"><h2 style="text-align: center;">For the latest in limited services and closures due to COVID-19, click <a href="/about-us/spotlight">here</a>.&nbsp;</h2></div>
+        </div>
+    </div>
+</div>
+<!--startindex-->
+
+
+<div class="sitewrapper  site_template mainSpan_wrapper">
+    <div class="mainSpan" id="mainSpan_wrapper_Screen">
+        <!--stopindex-->
+        <div id="skipnav">
+            <a href="#sitebody">
+                <img alt="Skip to page body" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="Home" href="/home">
+                <img alt="Home" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="About Us" href="/about-us">
+                <img alt="About Us" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="Services" href="/services">
+                <img alt="Services" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="Departments" href="/departments">
+                <img alt="Departments" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="Courts" href="/courts">
+                <img alt="Courts" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="Records" href="/records">
+                <img alt="Records" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="I Want To..." href="/i-want-to">
+                <img alt="I Want To..." src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+        </div>
+        <!--startindex-->
+
+        <header id="siteheader" class="">
+            <!--stopindex-->
+			<h1 class="wcag_only">Lee County Clerk of Court, FL</h1>
+            <a id="home_link" href="/home">Home</a>
+            
+            <a class="menu_trigger mobile_only" href="javascript:void(0);">Menu</a>
+            
+            <!--startindex-->
+            
+<div id="headercolumn" class="site_template_column  header_column   " >
+
+                <!--stopindex-->
+                
+<div id="top_nav">
+		<a href="/home" target="_self">Home</a>
+		<a href="/i-want-to/ask/frequently-asked-questions" target="_self">FAQ</a>
+		<a href="/services/public-records-request" target="_self">Records Request</a>
+		<a href="/departments/new-hr-main-page" target="_self">Employment</a>
+		<a href="/about-us/fee-schedule" target="_self">Fees/Costs</a>
+</div>
+<div class="translatebox desktop_only">
+	<div id="google_translate_element"></div>
+</div>
+<script type="text/javascript">
+function googleTranslateElementInit() 
+{
+	new google.translate.TranslateElement({pageLanguage: 'en'}, "google_translate_element");
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<style>
+#google_translate_element a
+{
+	text-decoration:none;
+}
+</style>
+<script type="text/javascript">
+    function changeLanguageText() {
+        if ($('.goog-te-combo option:first-child').text() == "Select Language") {
+            $('.goog-te-combo option:first-child').html('Translate');
+            $('.translatebox').fadeTo("slow", "1");
+        } else {
+            setTimeout(changeLanguageText, 50);
+        }
+    }
+    $(document).ready(function () {
+        changeLanguageText();
+    });
+</script>
+<a href="/inspector-general-hotline" class="hotline hidden-xs">
+    <span>Inspector General Hotline</span>
+</a>
+                <!--startindex-->
+            
+
+                <!--stopindex-->
+                
+<a href="javascript:void(0);" class="search-trigger hidden-xs">Search</a>
+<div class="top_search">
+    <a class="close_search" href="javascript:void(0);">CLOSE</a>
+    <div class="search_block">
+		<div id="searchbox" class="clearfix">
+			<label style="display: none;" for="search_text">Search</label>
+			<input type="text" title="Search..."  id="search_text" placeholder="Search..."/>		
+			<a href="javascript:void(0);">Go</a>
+		</div>
+		<div class="top_links">
+			<h2>Popular Content</h2>
+			<ul>
+					<li><a href="/services/search-court-case-records">Search Court Cases</a></li>
+					<li><a href="/records/official-records-search">Official Records</a></li>
+					<li><a href="/courts">Courts</a></li>
+					<li><a href="/?navid=236">Reporting Information</a></li>
+					<li><a href="/courts/property-sales/tax-deed-sales">Tax Deed Sales</a></li>
+					<li><a href="/services/pay-ordinance-or-traffic-fine">Traffic Citations</a></li>
+					<li><a href="/services/apply-for-a-job">Employment Opportunities</a></li>
+					<li><a href="/courts/family-law-divorce">Dissolution of Marriage</a></li>
+					<li><a href="/services/pay-child-support-or-alimony">Child Alimony</a></li>
+					<li><a href="/departments/recording-official-records/marriage-licenses">Marriage License</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(function () {
+	$("#searchbox input").keydown(function(e) {
+	    if(e.keyCode == 13) {
+		     $("#searchbox a").click();
+	    }
+    });
+    $("#searchbox a").click(function () {
+        var keyWord = $("#searchbox input#search_text").val();
+        if (keyWord.length<=0) { return false; }
+        keyWord  = encodeURIComponent(keyWord.replace("<"," ").replace(">"," ") );
+        var link = '/about-us/search';
+        if (link.indexOf("?") >= 0 )
+    	    link = link + "&q=" + keyWord;
+         else
+     	    link = link + "?q=" + keyWord;
+            window.location.href = link;
+        });
+    });
+</script>
+                <!--startindex-->
+            
+
+</div>
+
+        </header>
+
+        
+<div class="standardthreecolumnlayout clearfix" id="sitebody">
+    
+<div id="ColumnUserControl1" class="column   top_col clearfix  "  >
+    <!--!!WidgetStart, vi-orderdata="0"  vi-hideonmobile="false" vi-widgetinstancedata="595"WidgetStart!!-->    
+
+                <!--stopindex-->
+                <div class=" main_menu_widget"><link href="/DefaultContent/Default/StyleBundleMegaMenuDropDown.cssbnd?v=CD_eN-fYJU8KKPigt6x-Ey-z8_WTsoZ7bqx2pLTZtXU1" rel="stylesheet"/>
+<link href="/Project/Contents/Main/StyleBundleMegaMenuDropDown.cssbnd?v=0GhYCKRwBMXQV_MxCPnk0ZUaqac58lo0dIyX1WT0PIg1" rel="stylesheet"/>
+<nav class="regularmegamenu mainnav" id="menuContainer_595_0_428"><ul class="dropdownmenu clearfix"><li class="megamenu_first" id="dropdownrootitem1"><a class="dropdownrootitem1" href="/home" title="Home" data-navid="1" target="_self">Home</a></li><li class="megamenu_first" id="dropdownrootitem2"><a class="dropdownrootitem2" title="About Us" data-navid="2">About Us</a><div class="megamenu_container widthcontainer4col"><div class="inner_container"><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/about-linda-doggett-clerk-comptroller" title="About Linda Doggett, Clerk &amp; Comptroller" data-navid="65" target="_self">About Linda Doggett, Clerk &amp; Comptroller</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/ada-disclaimer" title="ADA Disclaimer" data-navid="1486" target="_self">ADA Disclaimer</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/ada-information" title="ADA Information" data-navid="88" target="_self">ADA Information</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/announcements" title="Announcements" data-navid="69" target="_self">Announcements</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/clerks-in-the-sunshine" title="Clerks in the Sunshine" data-navid="91" target="_self">Clerks in the Sunshine</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/contact-us" title="Contact Us" data-navid="457" target="_self">Contact Us</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/about-us/contact-us-copy" title="Office Locations" data-navid="1485" target="_self">Downtown Office Locations</a><ul class="megamenu_level2"><li class="megamenu_level3"><a class="megamenu_level3" href="/about-us/contact-us/bonita-springs-branch" title="Bonita Springs Branch" data-navid="1517" target="_self">Bonita Springs Branch</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/about-us/contact-us/cape-coral-branch" title="Cape Coral Branch" data-navid="80" target="_self">Cape Coral Branch</a></li></ul></li><li class="megamenu_level2"><a class="megamenu_level2" href="/about-us/contact-us/driving-directions-parking-information" title="Driving Directions &amp; Parking Information" data-navid="79" target="_self">Driving Directions &amp; Parking Information</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/about-us/contact-us/feedback" title="Feedback" data-navid="395" target="_self">Feedback</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/about-us/contact-us/hours-of-operation" title="Hours of Operation" data-navid="77" target="_self">Hours of Operation</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/about-us/contact-us/mailing-addresses" title="Mailing Addresses" data-navid="76" target="_self">Mailing Addresses</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/about-us/contact-us/observed-holidays" title="Observed Holidays" data-navid="78" target="_self">Observed Holidays</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/about-us/contact-us/requests-questions" title="Requests/Questions" data-navid="82" target="_self">Requests/Questions</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/about-us/contact-us/technology-help" title="Technology Help" data-navid="81" target="_self">Technology Help</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/disclaimer" title="Disclaimer" data-navid="93" target="_self">Disclaimer</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/fee-schedule" title="Fee Schedule" data-navid="70" target="_self">Fee Schedule</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/frequently-asked-questions" title="Frequently Asked Questions" data-navid="394" target="_self">Frequently Asked Questions</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/government-resources" title="Government Resources" data-navid="83" target="_self">Government Resources</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/about-us/government-resources/local-agencies" title="Local Agencies" data-navid="84" target="_self">Local Agencies</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/about-us/government-resources/florida-agencies" title="Florida Agencies" data-navid="85" target="_self">Florida Agencies</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/about-us/government-resources/federal-agencies" title="Federal Agencies" data-navid="86" target="_self">Federal Agencies</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/about-us/government-resources/other-sites-of-interest" title="Other Sites of Interest" data-navid="87" target="_self">Other Sites of Interest</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/the-history-of-the-lee-county-clerk-of-court" title="History of the Lee County Clerk of Court" data-navid="66" target="_self">History of the Lee County Clerk of Court</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/about-us/the-history-of-the-lee-county-clerk-of-court/clerk-of-court-historical-photos" title="Clerk of Court Historical Photos" data-navid="67" target="_self">Clerk of Court Historical Photos</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/about-us/the-history-of-the-lee-county-clerk-of-court/historical-document-library" title="Historical Document Library" data-navid="1476" target="_self">Historical Document Library</a></li></ul></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/media-center" title="Media Center" data-navid="456" target="_self">Media Center</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/about-us/media-center/enewsletters" title="eNewsletters" data-navid="72" target="_self">eNewsletters</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/about-us/media-center/in-the-news" title="In the News" data-navid="73" target="_self">In the News</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/about-us/media-center/community-workshops" title="Community Workshops" data-navid="74" target="_self">Community Workshops</a><ul class="megamenu_level2"><li class="megamenu_level3"><a class="megamenu_level3" href="/about-us/media-center/community-workshops/calendar-month-view" title="Calendar Month View" data-navid="20" target="_self">Calendar Month View</a></li></ul></li><li class="megamenu_level2"><a class="megamenu_level2" href="/about-us/media-center/news-releases" title="News Releases" data-navid="75" target="_self">News Releases</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/about-us/media-center/request-for-proposal" title="Request for Proposals" data-navid="1500" target="_self">Request for Proposals</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/online-services-available" title="Online Services Available" data-navid="1515" target="_self">Online Services Available</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/organizational-chart" title="Organizational Chart" data-navid="68" target="_self">Organizational Chart</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/protecting-your-information" title="Protecting Your Information" data-navid="90" target="_self">Protecting Your Information</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/role-of-the-clerk" title="Role of the Clerk" data-navid="400" target="_self">Role of the Clerk</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/scam-alert" title="Scam Alert" data-navid="89" target="_self">Scam Alert</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/statistics" title="Statistics" data-navid="92" target="_self">Statistics</a></li></ul></div></div></li><li class="megamenu_first" id="dropdownrootitem3"><a class="dropdownrootitem3" title="Services" data-navid="3">Services</a><div class="megamenu_container widthcontainer4col"><div class="inner_container"><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/services/apply-for-a-job" title="Apply for a Job" data-navid="94" target="_self">Apply for a Job</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/efile-a-court-document" title="eFile a Court Document" data-navid="95" target="_blank">eFile a Court Document</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/electronic-recording-erecording" title="Electronic Recording (eRecording)" data-navid="261" target="_self">Electronic Recording (eRecording)</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/file-a-value-adjustment-board-petition" title="File a Value Adjustment Board Petition" data-navid="97" target="_self">File a Value Adjustment Board Petition</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/forms-library" title="Forms Library" data-navid="98" target="_self">Forms Library</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/judicial-automated-calendaring-system-jacs" title="Judicial Automated Calendaring System (JACS)" data-navid="99" target="_self">Judicial Automated Calendaring System (JACS)</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/services/marriage-licenses" title="Virtual Marriage Licenses" data-navid="1532" target="_self">Virtual Marriage Licenses</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/virtual-marriage-licenses/virual-wedding-ceremony" title="Virtual Wedding Ceremony" data-navid="1538" target="_self">Virtual Wedding Ceremony</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/passports" title="Passport" data-navid="101" target="_self">Passports</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/pay-child-support-or-alimony" title="Pay Child Support or Alimony" data-navid="102" target="_blank">Pay Child Support or Alimony</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/pay-ordinance-or-traffic-fine" title="Pay Ordinance or Traffic Fine" data-navid="103" target="_blank">Pay Ordinance or Traffic Fine</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/pay-tourist-tax" title="Pay Tourist Tax" data-navid="104" target="_blank">Pay Tourist Tax</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/services/property-fraud-alert-services" title="Property Fraud Alert" data-navid="1510" target="_self">Property Fraud Alert</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/property-records" title="Property Records" data-navid="476" target="_self">Property Records</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/protecting-your-information" title="Protecting Your Information" data-navid="461" target="_self">Protecting Your Information</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/public-records-request" title="Public Records Request" data-navid="105" target="_self">Public Records Request</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/record-a-document" title="Record A Document" data-navid="392" target="_self">Record A Document</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/search-board-meeting-minutes" title="Search Board Meeting Minutes" data-navid="106" target="_blank">Search Board Meeting Minutes</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/services/search-court-case-records" title="Search Court Case Records" data-navid="107" target="_self">Search Court Case Records</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/self-help-center" title="Self-Help Center" data-navid="379" target="_self">Self-Help Center</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/self-help-center/subscription-service" title="Subscriber Service" data-navid="1529" target="_self">Subscriber Service</a></li></ul></div></div></li><li class="megamenu_first" id="dropdownrootitem4"><a class="dropdownrootitem4" title="Departments" data-navid="4">Departments</a><div class="megamenu_container widthcontainer4col"><div class="inner_container"><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/departments/courts" title="Courts" data-navid="399" target="_self">Courts</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/departments/finance" title="Finance " data-navid="109" target="_self">Finance </a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/finance/adopted-budget" title="Adopted Budget" data-navid="110" target="_self">Adopted Budget</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/finance/financial-reports" title="Financial Reports" data-navid="111" target="_self">Financial Reports</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/finance/investment-policy" title="Investment Policy" data-navid="123" target="_self">Investment Policy</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/finance/unclaimed-monies" title="Unclaimed Monies" data-navid="124" target="_self">Unclaimed Monies</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/departments/new-hr-main-page" title="Human Resources" data-navid="1478" target="_self">Human Resources</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/new-hr-main-page/applicants" title="Clerk Careers" data-navid="1479" target="_self">Applicants</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/human-resources/current-career-opportunities" title="Current Career Opportunities" data-navid="126" target="_blank">Current Career Opportunities</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/human-resources/employment-application" title="Employment Application" data-navid="127" target="_blank">Employment Application</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/human-resources/career-faq" title="Career FAQ" data-navid="128" target="_self">Career FAQ</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/human-resources/overview-of-benefits" title="Overview of Benefits" data-navid="129" target="_self">Overview of Benefits</a></li></ul></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/departments/inspector-general" title="Inspector General" data-navid="130" target="_self">Inspector General</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/inspector-general/enhanced-guardianship-audit" title="Enhanced Guardianship Audit" data-navid="131" target="_self">Enhanced Guardianship Audit</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/inspector-general/internal-audit-investigation" title="Internal Audit &amp; Investigation" data-navid="137" target="_self">Internal Audit &amp; Investigation</a><ul class="megamenu_level2"><li class="megamenu_level3"><a class="megamenu_level3" href="/departments/inspector-general/internal-audit-investigation/audit-plans-and-reports" title="Audit Plans and Reports" data-navid="138" target="_self">Audit Plans and Reports</a></li></ul></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/inspector-general/tourist-development-tax" title="Tourist Development Tax" data-navid="147" target="_self">Tourist Development Tax</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/departments/minutes" title="Minutes" data-navid="162" target="_self">Minutes</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/minutes/search-minutes" title="Minutes Search" data-navid="164" target="_blank">Minutes Search</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/minutes/board-of-county-commissioners-meeting-videos" title="Board Of County Commissioners- Meeting Videos" data-navid="163" target="_blank">Board of County Commissioners- Meeting Videos</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/minutes/lobbyist-information" title="Lobbyist Information" data-navid="165" target="_self">Lobbyist Information</a></li></ul></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/departments/recording-official-records" title="Recording/Official Records" data-navid="167" target="_self">Recording/Official Records</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/recording-official-records/official-records-search" title="Official Records Search" data-navid="174" target="_self">Official Records Search</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/recording-official-records/record-a-document" title="Record A Document" data-navid="390" target="_self">Record A Document</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/recording-official-records/electronic-recording-erecording" title="Electronic Recording (eRecording)" data-navid="168" target="_self">Electronic Recording (eRecording)</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/recording-official-records/marriage-licenses-2" title="Virtual Marriage Licenses" data-navid="1531" target="_self">Virtual Marriage Licenses</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/recording-official-records/virual-wedding-ceremony" title="Virtual Wedding Ceremony" data-navid="1537" target="_self">Virtual Wedding Ceremony</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/recording-official-records/passports" title="Passports" data-navid="196" target="_self">Passports</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/recording-official-records/or-subscription" title="Subscriber Service" data-navid="1528" target="_self">Subscriber Service</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/recording-official-records/copies-of-documents" title="Copies of Documents" data-navid="182" target="_self">Copies of Documents</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/recording-official-records/notary-services" title="Notary Services" data-navid="195" target="_self">Notary Services</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/recording-official-records/property-fraud-alert" title="Property Fraud Alert" data-navid="1520" target="_self">Property Fraud Alert</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/recording-official-records/property-records" title="Property Records" data-navid="474" target="_self">Property Records</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/recording-official-records/historical-document-library" title="Historical Document Library" data-navid="1527" target="_self">Historical Document Library</a></li></ul></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/departments/value-adjustment-board-vab" title="Value Adjustment Board (VAB) " data-navid="207" target="_self">Value Adjustment Board (VAB) </a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/value-adjustment-board-vab/access-filed-petitions" title="Access Filed Petitions" data-navid="381" target="_self">Access Filed Petitions</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/value-adjustment-board-vab/agendas-minutes-and-public-notices" title="Agendas, Minutes and Public Notices" data-navid="212" target="_self">Agendas, Minutes and Public Notices</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/value-adjustment-board-vab/dates-and-deadlines" title="Dates and Deadlines" data-navid="402" target="_self">Dates and Deadlines</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/value-adjustment-board-vab/filing-a-petition" title="Filing a Petition" data-navid="209" target="_self">Filing a Petition</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/value-adjustment-board-vab/forms" title="Forms" data-navid="403" target="_self">Forms</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/departments/value-adjustment-board-vab/helpful-links" title="Helpful Links" data-navid="404" target="_self">Helpful Links</a></li></ul></li></ul></div></div></li><li class="megamenu_first" id="dropdownrootitem5"><a class="dropdownrootitem5" title="Courts" data-navid="5">Courts</a><div class="megamenu_container widthcontainer4col"><div class="inner_container"><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/courts/appeals" title="Appeals" data-navid="373" target="_self">Appeals</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/courts/questions-about-a-court-related-matter" title="Questions About a Court Related Matter" data-navid="1490" target="_self">Questions About a Court Related Matter</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/courts/court-case-records" title=" Court Case Records" data-navid="213" target="_self">Court Case Records</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/courts/court-case-records/court-records-search" title="Court Records Search" data-navid="408" target="_self">Court Records Search</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/courts/court-case-records/attorney-access-tools" title="Attorney Access &amp; Tools" data-navid="409" target="_self">Attorney Access &amp; Tools</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/courts/court-case-records/case-orders-to-seal-unseal" title="Case Orders to Seal/Unseal" data-navid="217" target="_self">Case Orders to Seal/Unseal</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/courts/domestic-violence-restraining-orders" title="Domestic Violence &amp; Restraining Orders" data-navid="375" target="_self">Domestic Violence &amp; Restraining Orders</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/courts/domestic-violence-restraining-orders/file-a-restraining-order" title="File a Restraining Order" data-navid="427" target="_self">File a Restraining Order</a></li></ul></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/courts/evictions" title="Evictions" data-navid="364" target="_self">Evictions</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/courts/family-law-divorce" title="Family Law &amp; Divorce" data-navid="367" target="_self">Family Law &amp; Divorce</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/courts/forms-library" title="Forms Library" data-navid="263" target="_self">Forms Library</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/courts/guardianship-mental-health" title="Guardianship &amp; Mental Health" data-navid="440" target="_self">Guardianship &amp; Mental Health</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/courts/judicial-calendaring" title="Judicial Calendaring" data-navid="218" target="_self">Judicial Calendaring</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/courts/jury-duty" title="Jury Duty " data-navid="234" target="_self">Jury Duty </a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/courts/frequently-asked-questions" title="Frequently Asked Questions" data-navid="1492" target="_self">Frequently Asked Questions</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/courts/jury-duty/parking-directions" title="Parking &amp; Directions" data-navid="237" target="_self">Parking &amp; Directions</a></li></ul></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/courts/juvenile" title="Juvenile" data-navid="435" target="_self">Juvenile</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/courts/make-a-payment" title="Pay Tickets &amp; Misdemeanors" data-navid="227" target="_self">Make a Payment</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/courts/make-a-payment/traffic-ordinance-violations" title="Traffic &amp; Ordinance Violations" data-navid="417" target="_self">Traffic &amp; Ordinance Violations</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/courts/make-a-payment/pay-court-case-1522" title="Court Case" data-navid="1522" target="_self">Court Case</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/courts/make-a-payment/child-support-or-alimony" title="Pay Child Support or Alimony" data-navid="410" target="_self">Child Support or Alimony</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/courts/probate-wills" title="Probate" data-navid="439" target="_self">Probate</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/courts/property-sales" title="Property Sales" data-navid="240" target="_self">Property Sales</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/courts/property-sales/tax-deed-files" title="Tax Deed Files" data-navid="1484" target="_blank">Tax Deed Files</a></li></ul></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/courts/records-request-system" title="Records Request System" data-navid="232" target="_self">Records Request System</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/courts/self-help-center" title="Self-Help Center" data-navid="223" target="_self">Self-Help Center</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/courts/small-claims" title="Small Claims" data-navid="363" target="_self">Small Claims</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/courts/traffic" title="Traffic" data-navid="377" target="_self">Traffic</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/courts/traffic/driver-improvement-school-option" title="Driver Improvement School Option" data-navid="432" target="_self">Driver Improvement School Option</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/courts/today-s-court-schedule" title="Today's Court Schedule" data-navid="222" target="_self">Today's Court Schedule</a></li></ul></div></div></li><li class="megamenu_first" id="dropdownrootitem6"><a class="dropdownrootitem6" title="Records" data-navid="6">Records</a><div class="megamenu_container widthcontainer4col"><div class="inner_container"><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/records/adopted-budget" title="Adopted Budget" data-navid="425" target="_self">Adopted Budget</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/records/audit-plans-and-reports" title="Audit Plans and Reports" data-navid="1499" target="_self">Audit Plans and Reports</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/records/bulk-data-services" title="Bulk Data Services" data-navid="1516" target="_self">Bulk Data Services</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/records/court-case-records" title=" Court Case Records" data-navid="473" target="_self">Court Case Records</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/records/financial-reports" title="Financial Reports" data-navid="426" target="_self">Financial Reports</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/records/lobbyist-information" title="Lobbyist Information" data-navid="422" target="_self">Lobbyist Information</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/records/search-minutes" title="Minutes Search" data-navid="418" target="_blank">Minutes Search</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/records/official-records-search" title="Official Records Search" data-navid="419" target="_self">Official Records Search</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/records/property-records" title="Property Records" data-navid="477" target="_self">Property Records</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/records/public-records-request" title="Public Records Request" data-navid="420" target="_self">Public Records Request</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/records/statistics" title="Statistics" data-navid="464" target="_self">Statistics</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/records/unclaimed-monies" title="Unclaimed Monies" data-navid="424" target="_self">Unclaimed Monies</a></li></ul></div></div></li><li class="megamenu_first" id="dropdownrootitem7"><a class="dropdownrootitem7" title="I Want To..." data-navid="7">I Want To...</a><div class="megamenu_container widthcontainer4col"><div class="inner_container"><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/i-want-to/apply-for" title="Apply for" data-navid="264" target="_self">Apply for</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/apply-for/job" title="Job" data-navid="265" target="_self">Job</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/apply-for/passport" title="Passport" data-navid="267" target="_self">Passport</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/apply-for/passport/virtual-marriage-licenses" title="Virtual Marriage Licenses" data-navid="1536" target="_self">Virtual Marriage Licenses</a></li></ul></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/i-want-to/ask" title="Ask" data-navid="393" target="_self">Ask</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/ask/frequently-asked-questions" title="Frequently Asked Questions" data-navid="307" target="_self">Frequently Asked Questions</a><ul class="megamenu_level2"><li class="megamenu_level3"><a class="megamenu_level3" href="/i-want-to/ask/frequently-asked-questions/civil-family" title="Civil/Family" data-navid="309" target="_self">Civil/Family</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/i-want-to/ask/frequently-asked-questions/collection-agency-information" title="Collection Agency Information" data-navid="310" target="_self">Collection Agency Information</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/i-want-to/ask/frequently-asked-questions/documents-search" title="Public Records" data-navid="311" target="_self">Documents Search</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/i-want-to/ask/frequently-asked-questions/employment" title="Employment " data-navid="312" target="_self">Employment </a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/i-want-to/ask/frequently-asked-questions/general-information" title="General Information" data-navid="308" target="_self">General Information</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/i-want-to/ask/frequently-asked-questions/guardianship-mental-health" title="Guardianship &amp; Mental Health" data-navid="455" target="_self">Guardianship &amp; Mental Health</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/i-want-to/ask/frequently-asked-questions/jury-duty" title="Jury Duty" data-navid="239" target="_self">Jury Duty</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/i-want-to/ask/frequently-asked-questions/marriage-licenses" title="Marriage Licenses" data-navid="313" target="_self">Marriage Licenses</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/i-want-to/ask/frequently-asked-questions/obtaining-copies" title="Obtaining Copies" data-navid="314" target="_self">Obtaining Copies</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/i-want-to/ask/frequently-asked-questions/official-records" title="Official Records" data-navid="317" target="_self">Official Records</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/i-want-to/ask/frequently-asked-questions/passport" title="Passport" data-navid="315" target="_self">Passport</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/i-want-to/ask/frequently-asked-questions/probate" title="Probate" data-navid="316" target="_self">Probate</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/i-want-to/ask/frequently-asked-questions/property-fraud-alert-faqs" title="Property Fraud Alert FAQs" data-navid="1513" target="_self">Property Fraud Alert FAQs</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/i-want-to/ask/frequently-asked-questions/questions-about-a-court-related-matter" title="Questions About a Court Related Matter" data-navid="1491" target="_self">Questions About a Court Related Matter</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/i-want-to/ask/frequently-asked-questions/self-help-center" title="Self-Help Center" data-navid="458" target="_self">Self-Help Center</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/i-want-to/ask/frequently-asked-questions/tax-deed-sales" title="Tax Deed Sales" data-navid="318" target="_self">Tax Deed Sales</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/i-want-to/ask/frequently-asked-questions/traffic" title="Traffic" data-navid="319" target="_self">Traffic</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/i-want-to/ask/frequently-asked-questions/tourist-development-tax" title="Tourist Development Tax" data-navid="320" target="_self">Tourist Development Tax</a></li></ul></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/i-want-to/bid-on" title="Bid on" data-navid="268" target="_self">Bid on</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/bid-on/foreclosures" title="Foreclosures" data-navid="269" target="_self">Foreclosures</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/bid-on/tax-deeds" title="Tax Deeds" data-navid="270" target="_self">Tax Deeds</a></li></ul></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/i-want-to/contact" title="Contact" data-navid="271" target="_self">Contact</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/contact/clerk-s-office-by-department" title="Clerk's Office by Department" data-navid="272" target="_self">Clerk's Office by Department</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/contact/related-agencies" title="Related Agencies" data-navid="273" target="_self">Related Agencies</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/i-want-to/file" title="File" data-navid="274" target="_self">File</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/file/court-case-electronically" title="Court Case Electronically" data-navid="275" target="_self">Court Case Electronically</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/file/value-adjustment-board-vab-petition" title="Value Adjustment Board (VAB) Petition " data-navid="276" target="_blank">Value Adjustment Board (VAB) Petition </a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/i-want-to/get" title="Get" data-navid="277" target="_self">Get</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/get/forms" title="Forms" data-navid="278" target="_self">Forms</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/i-want-to/go-to-home-page" title="Go to home page" data-navid="279" target="_self">Go to home page</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/i-want-to/look-up" title="Look Up" data-navid="280" target="_self">Look Up</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/look-up/americans-with-disabilities-information" title="Americans with Disabilities Information" data-navid="285" target="_self">Americans with Disabilities Information</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/look-up/court-case-records" title="Court Case Records" data-navid="286" target="_self">Court Case Records</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/look-up/driving-directions-parking-information" title="Driving Directions &amp; Parking Information" data-navid="283" target="_self">Driving Directions &amp; Parking Information</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/look-up/fee-schedule" title="Fee Schedule" data-navid="459" target="_self">Fee Schedule</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/look-up/holiday-schedule" title="Holiday Schedule" data-navid="284" target="_self">Holiday Schedule</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/look-up/hours-of-operation" title="Hours of Operation" data-navid="282" target="_self">Hours of Operation</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/i-want-to/pay" title="Pay" data-navid="1524" target="_self">Pay</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/pay/pay-tickets-misedemeanors" title="Pay Tickets &amp; Misdemeanors" data-navid="1523" target="_self">Pay Tickets &amp; Misdemeanors</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/court-case" title="Court Case" data-navid="1525" target="_self">Court Case</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/pay/child-support-or-alimony" title="Child Support or Alimony" data-navid="288" target="_blank">Child Support or Alimony</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/pay/records-request-copies" title="Records Request Copies" data-navid="357" target="_self">Records Request Copies</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/pay/tourist-tax" title="Tourist Tax" data-navid="289" target="_blank">Tourist Tax</a></li></ul></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/i-want-to/report" title="Report" data-navid="291" target="_self">Report</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/report/customer-feedback" title="Customer Feedback" data-navid="292" target="_self">Customer Feedback</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/report/technology-website-issue-or-broken-link" title="Website Issue or Broken Link" data-navid="293" target="_self">Technology/Website Issue or Broken Link</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/i-want-to/request" title="Request" data-navid="294" target="_self">Request</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/request/copies-of-records" title="Copies of Records" data-navid="295" target="_self">Copies of Records</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/request/postponement-excusal-from-jury-duty" title="Postponement/Excusal from Jury Duty" data-navid="297" target="_blank">Postponement/Excusal from Jury Duty</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/request/property-fraud-alert" title="Property Fraud Alert" data-navid="1512" target="_self">Property Fraud Alert</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/request/protecting-your-information" title="Protecting Your Information" data-navid="463" target="_self">Protecting Your Information</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/request/public-records" title="Public Records" data-navid="296" target="_self">Public Records</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/i-want-to/search" title="Search" data-navid="298" target="_self">Search</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/search/board-minutes-documents" title="Board Minutes &amp; Documents" data-navid="299" target="_self">Board Minutes &amp; Documents</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/search/court-cases-records" title="Court Cases Records" data-navid="300" target="_self">Court Cases Records</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/search/official-records" title="Official Records" data-navid="301" target="_self">Official Records</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/search/official-records/property-records" title="Property Records" data-navid="1487" target="_self">Property Records</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/search/tax-deed-files" title="Tax Deed Files" data-navid="302" target="_blank">Tax Deed Files</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/search/current-employment-opportunities" title="Current Employment Opportunities" data-navid="303" target="_blank">Current Employment Opportunities</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/i-want-to/view" title="View" data-navid="304" target="_self">View</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/view/community-outreach-calendar" title="Community Outreach Calendar" data-navid="305" target="_self">Community Outreach Calendar</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/view/court-schedule" title="Court Schedule" data-navid="306" target="_blank">Court Schedule</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/view/fee-schedule" title="Fee Schedule" data-navid="460" target="_self">Fee Schedule</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/i-want-to/view/financial-reports" title="Financial Reports" data-navid="470" target="_self">Financial Reports</a></li></ul></li></ul></div></div></li></ul><script>
+$(function () {
+ var menuContainer = $('#menuContainer_595_0_428');
+ menuContainer.find('.dropdownmenu>li>a[data-navid="5"]').closest('li').addClass('active');
+});
+</script></nav></div>
+
+
+<script>
+    /**********************************************************
+    Dropdown Menu delay disappearance on mouse out
+    *********************************************************/
+    /*javascript to delay the disappearance of the menu when the user mouses out.  Uses jquery library.*/
+    $(function () {
+        
+
+        var timer = null;
+        var delay = 800; //change this number for shorter or longer delay
+
+        
+        //using megamenu
+        var dropdowncontainer = '>.megamenu_container';
+        var activePage = $(".mainnav .dropdownmenu > li.active");
+        $(".mainnav > .dropdownmenu > li").hoverIntent(
+
+            //what happens on hover over
+            function () {
+                 //end timer and stop hiding if they are mousing back in.
+                 if (timer != null) {
+                     clearTimeout(timer);
+                     timer = null;
+                 }
+                 // Find the hovered menu's sub-menu
+                 var $menu = $(this);
+                 var $submenu = $(this).find(dropdowncontainer);
+
+                 // hide any other submenus that are open
+                 $('.mainnav > .dropdownmenu>li' + dropdowncontainer).not($submenu).css('display', 'none');
+                 $('.mainnav > .dropdownmenu li.active').not($menu).not(activePage).removeClass('active');
+
+                 // show current menu
+                 $submenu.css('display', 'block');
+                 $menu.addClass('active');
+             },
+
+            //what happens on mouse out
+            function () {
+                var $submenu = $(this).find(dropdowncontainer);
+                var $menu = $(this);
+                // delay disappearance
+                var mouseDelay = $(this).data("mouseDelay") || delay;
+                clearTimeout(timer);
+                timer = setTimeout(function () {
+                    $submenu.css('display', 'none'); $menu.not(activePage).removeClass('active');
+                    clearTimeout(timer); timer = null;
+                }, mouseDelay);
+            }
+        );
+
+
+        $('body').bind('keyup', function (event) {
+            if (event.keyCode == 9) {
+                // Find the hovered menu's sub-menu
+                var $menu = $(event.target).closest('li');
+                if ($menu.hasClass('megamenu_first')) {
+                    var $submenu = $menu.find(dropdowncontainer);
+
+                    // hide any other submenus that are open
+                    $('.mainnav > .dropdownmenu>li' + dropdowncontainer).not($submenu).css('display', 'none');
+                    $('.mainnav > .dropdownmenu li.active').not($menu).not(activePage).removeClass('active');
+
+                    // show current menu
+                    $submenu.css('display', 'block');
+                    $menu.addClass('active');
+                }
+            }
+        });
+
+        
+    });
+</script>
+
+<script>
+    //$(function () 
+    {
+        var menuContainerID = "menuContainer_595_0_428";
+        var menuContainer = $("#" + menuContainerID);
+        
+        function isIE(userAgent) {
+            userAgent = userAgent || navigator.userAgent;
+            return userAgent.indexOf("MSIE ") > -1 || userAgent.indexOf("Trident/") > -1;
+        }
+
+        function isIE9(userAgent) {
+            userAgent = userAgent || navigator.userAgent;
+            return userAgent.indexOf("MSIE 9") > -1;
+        }
+
+        function isTouchScreenEvent(event) {
+            var _isTouchScreen = false;
+            if ("ontouchstart" in window) {
+                _isTouchScreen = true;
+            } else if ("onpointerdown" in window) {
+                _isTouchScreen = event.originalEvent.pointerType == "touch";
+            } else if (window.MSPointerEvent) {
+                _isTouchScreen = event.originalEvent.pointerType == event.originalEvent.MSPOINTER_TYPE_TOUCH; // 2 ; http://blogs.msdn.com/b/ie/archive/2011/09/20/touch-input-for-ie10-and-metro-style-apps.aspx
+            } else {
+            }
+            return _isTouchScreen;
+        }
+
+        var _isIE = isIE();
+        var _isIE9 = isIE9();
+        var isMegaMenu = $('.megamenu_first', menuContainer).length > 0;
+        var currentMenu = $('> ul.dropdownmenu > li.active', menuContainer);
+
+        $(function () {
+            if (currentMenu.length == 0)
+                currentMenu = $('> ul.dropdownmenu > li.active', menuContainer);
+        });
+
+        if (("ontouchstart" in window   // Chrome & Safari (IOS) && Firefox
+         || "onpointerdown" in window   // IE 11 
+         || window.MSPointerEvent       // IE 10
+         ) && ($(window).width() > 648)) {
+            var eventName = "ontouchstart" in window ? "touchstart"
+                          : "onpointerdown" in window ? "pointerdown"
+                          : window.MSPointerEvent ? "MSPointerDown"
+                          : "";
+            if (eventName.length > 0) {
+                $('> ul.dropdownmenu  li>a[data-navid]', menuContainer).bind(eventName, function (event) {
+
+                    if (isTouchScreenEvent(event) == false) {
+                        return true;
+                    }
+
+                    var currentLevelAnchor = $(this);
+                    var currentLeveLi = currentLevelAnchor.closest("li");
+                    var firstLevelLi = currentLevelAnchor.closest("li[id^='dropdownrootitem']");
+                    var firstLevelAnchor = firstLevelLi.find(">a[data-navid]");
+                    var inFirstLevel = currentLevelAnchor[0] == firstLevelAnchor[0];
+
+                    var hasSubMenu = currentLevelAnchor.next("ul,div").length > 0;
+                    if (hasSubMenu) {
+                        $(this).closest("li").data("mouseDelay", 1);
+
+                        // Menu is not selected
+                        if (!firstLevelLi.hasClass('touch-active')) {
+                            if ($(this).attr("href")) {
+                                $(this).attr("data-href", $(this).attr("href"));
+                                $(this).attr("href", "javascript:void(0);");
+                            }
+                            $(menuContainer).find('.touch-active').removeClass('touch-active').not(currentMenu).removeClass('active');
+
+                            firstLevelLi.addClass('touch-active active');
+                            currentLevelAnchor.addClass('touch-active active');
+                            currentMenu.addClass("active");
+
+                            $(' li:not(.touch-active)', menuContainer).not(firstLevelLi).removeClass('_current');
+                            $(' li:not(.touch-active) li', menuContainer).not(currentLeveLi).removeClass('_current');
+
+                            $('> ul.dropdownmenu > li:not(.touch-active) > a[data-navid]', menuContainer).next().css('display', 'none');
+                            $('> ul.dropdownmenu > li.touch-active > a[data-navid]', menuContainer).next().css('display', 'block');
+
+                            event.preventDefault();
+                        }
+                            // Menu is selected
+                        else {
+                            if (inFirstLevel) {
+                                // non clickable
+                                if (currentLevelAnchor.attr('href') == undefined) {
+                                    //has class touch-active and no link
+                                    removeClassAndHideMenu();
+                                    event.preventDefault();
+                                } else if ($(this).attr("data-href")) { //clickable, but href have been moved to data.
+                                    $(this).attr("href", $(this).attr("data-href"));
+                                }
+                            }
+                            else {
+                                if (isMegaMenu)
+                                    return true;
+
+                                if (!currentLeveLi.hasClass('touch-active')) {
+                                    if ($(this).attr("href")) {
+                                        $(this).attr("data-href", $(this).attr("href"));
+                                        $(this).attr("href", "javascript:void(0);");
+                                    }
+                                    $(firstLevelLi).find('.touch-active').removeClass('touch-active').not(currentMenu).removeClass('active');
+                                    currentLeveLi.parent().children("li._current").removeClass("_current");
+                                    currentLeveLi.addClass('touch-active active _current');
+
+                                    currentLevelAnchor.addClass('touch-active active');
+
+                                    //$(' li:not(.touch-active)', menuContainer).not(firstLevelLi).removeClass('_current');    
+                                    //$(' li:not(.touch-active) li', menuContainer).not(currentLeveLi).removeClass('_current');
+
+                                    $(' li:not(.touch-active) > a[data-navid]', currentLeveLi.parent()).next().css('display', 'none');
+                                    $('> li.touch-active > a[data-navid]', currentLeveLi.parent()).next().css('display', 'block');
+
+                                    event.preventDefault();
+                                } else {
+                                    if (currentLevelAnchor.attr('href') == undefined) {
+                                        //has class touch-active and no link
+                                        removeClassAndHideMenu();
+                                        event.preventDefault();
+                                    } else if ($(this).attr("data-href")) {
+                                        $(this).attr("href", $(this).attr("data-href"));
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                });
+            }
+        }
+
+
+
+        function removeClassAndHideMenu() {
+            $(menuContainer).find('a.touch-active, li.touch-active').removeClass('touch-active active');
+            $('> ul.dropdownmenu > li > a[data-navid]', menuContainer).next().css('display', 'none');
+            // If we don't change the menu item, we should keep the old one.
+            if ($('> ul.dropdownmenu > li.active', menuContainer).length == 0) {
+                currentMenu.addClass("active");
+            }
+        }
+
+        $('body').bind(eventName, function (event) {
+            if (isTouchScreenEvent(event) == false) {
+                return true;
+            }
+            if (!$(event.target).closest('li.touch-active').length) {
+                removeClassAndHideMenu();
+            }
+        });
+    }
+    //);
+</script>
+
+                
+                <!--startindex-->
+                <!--!!WidgetEnd-->
+
+    
+</div>
+
+    
+<div id="ColumnUserControl2" class="column   left_col  "  >
+    <!--!!WidgetStart, vi-orderdata="0"  vi-hideonmobile="false" vi-widgetinstancedata="598"WidgetStart!!-->    
+
+                <!--stopindex-->
+                
+
+<nav id='leftNav_598_0_428' class='nocontent sidenav mobile_list vi-sidenav-desktop   '>
+    <h2 class="mobile_only mobile_header">Jump to subpage...</h2>
+    <ul><li><a href='https://www.leeclerk.org/courts/appeals' target='_self'>Appeals</a></li><li class="sidenav_expanded sidenav_haschildren sidenav_current"><a href='https://www.leeclerk.org/courts/court-case-records' target='_self'>Court Case Records</a><a href="javascript:void(0)" title="Expand/Collapse subpages under Sidenav Item with Children" class="vi-sidenav-toggle">-</a><ul><li><a href='https://www.leeclerk.org/courts/court-case-records/court-records-search' target='_self'>Court Records Search</a></li><li><a href='https://www.leeclerk.org/courts/court-case-records/attorney-access-tools' target='_self'>Attorney Access &amp; Tools</a></li><li><a href='https://www.leeclerk.org/courts/court-case-records/case-orders-to-seal-unseal' target='_self'>Case Orders to Seal/Unseal</a></li></ul></li><li class="sidenav_haschildren"><a href='https://www.leeclerk.org/courts/domestic-violence-restraining-orders' target='_self'>Domestic Violence &amp; Restraining Orders</a><a href="javascript:void(0)" title="Expand/Collapse subpages under Sidenav Item with Children" class="vi-sidenav-toggle">+</a><ul><li><a href='https://www.leeclerk.org/courts/domestic-violence-restraining-orders/file-a-restraining-order' target='_self'>File a Restraining Order</a></li></ul></li><li><a href='https://www.leeclerk.org/courts/evictions' target='_self'>Evictions</a></li><li><a href='https://www.leeclerk.org/courts/family-law-divorce' target='_self'>Family Law &amp; Divorce</a></li><li><a href='https://www.leeclerk.org/courts/forms-library' target='_self'>Forms Library</a></li><li><a href='https://www.leeclerk.org/courts/guardianship-mental-health' target='_self'>Guardianship &amp; Mental Health</a></li><li><a href='https://www.leeclerk.org/courts/judicial-calendaring' target='_self'>Judicial Calendaring</a></li><li class="sidenav_haschildren"><a href='https://www.leeclerk.org/courts/jury-duty' target='_self'>Jury Duty </a><a href="javascript:void(0)" title="Expand/Collapse subpages under Sidenav Item with Children" class="vi-sidenav-toggle">+</a><ul><li><a href='https://www.leeclerk.org/courts/frequently-asked-questions' target='_self'>Frequently Asked Questions</a></li><li><a href='https://www.leeclerk.org/courts/jury-duty/parking-directions' target='_self'>Parking &amp; Directions</a></li></ul></li><li><a href='https://www.leeclerk.org/courts/juvenile' target='_self'>Juvenile</a></li><li class="sidenav_haschildren"><a href='https://www.leeclerk.org/courts/make-a-payment' target='_self'>Make a Payment</a><a href="javascript:void(0)" title="Expand/Collapse subpages under Sidenav Item with Children" class="vi-sidenav-toggle">+</a><ul><li><a href='https://www.leeclerk.org/courts/make-a-payment/traffic-ordinance-violations' target='_self'>Traffic &amp; Ordinance Violations</a></li><li><a href='https://www.leeclerk.org/courts/make-a-payment/pay-court-case-1522' target='_self'>Court Case</a></li><li><a href='https://www.leeclerk.org/courts/make-a-payment/child-support-or-alimony' target='_self'>Child Support or Alimony</a></li></ul></li><li><a href='https://www.leeclerk.org/courts/probate-wills' target='_self'>Probate</a></li><li class="sidenav_haschildren"><a href='https://www.leeclerk.org/courts/property-sales' target='_self'>Property Sales</a><a href="javascript:void(0)" title="Expand/Collapse subpages under Sidenav Item with Children" class="vi-sidenav-toggle">+</a><ul><li><a href='https://www.leeclerk.org/courts/property-sales/tax-deed-files' target='_blank'>Tax Deed Files</a></li></ul></li><li><a href='https://www.leeclerk.org/courts/records-request-system' target='_self'>Records Request System</a></li><li><a href='https://www.leeclerk.org/courts/self-help-center' target='_self'>Self-Help Center</a></li><li><a href='https://www.leeclerk.org/courts/small-claims' target='_self'>Small Claims</a></li><li class="sidenav_haschildren"><a href='https://www.leeclerk.org/courts/traffic' target='_self'>Traffic</a><a href="javascript:void(0)" title="Expand/Collapse subpages under Sidenav Item with Children" class="vi-sidenav-toggle">+</a><ul><li><a href='https://www.leeclerk.org/courts/traffic/driver-improvement-school-option' target='_self'>Driver Improvement School Option</a></li></ul></li><li><a href='https://www.leeclerk.org/courts/today-s-court-schedule' target='_self'>Today&#39;s Court Schedule</a></li></ul>
+</nav>
+<script>
+    $(function () {
+        //test if it is mobile view or not and add classes accordingly. Needed because different sites use different breakpoints for mobile
+        if ($('.sidenav .mobile_only').is(':visible')) {
+            $('.sidenav').addClass('vi-sidenav-mobile');
+        } else {
+            $('.sidenav').addClass('vi-sidenav-desktop');
+        }
+        //need to also check for mobile view on resize and change classes if needed
+        var sidenavResizeTimer;
+
+        $(window).on('resize', function (e) {
+
+            clearTimeout(sidenavResizeTimer);
+            sidenavResizeTimer = setTimeout(function () {
+
+                if ($('.sidenav .mobile_only').is(':visible')) {
+                    $('.vi-sidenav-desktop').addClass('vi-sidenav-mobile').removeClass('vi-sidenav-desktop');
+                } else {
+                    $('.vi-sidenav-mobile').addClass('vi-sidenav-desktop').removeClass('vi-sidenav-mobile');
+                }
+            }, 250);
+
+        });
+
+        //expand/collapse function
+        $("#leftNav_598_0_428 .vi-sidenav-toggle").click(function () {
+            var item = $(this),
+                parent = item.parent("li");
+
+            if (parent.length) {
+                if (parent.hasClass("sidenav_expanded")) {
+                    parent.removeClass("sidenav_expanded");
+                } else {
+                    parent.addClass("sidenav_expanded");
+                }
+            }
+
+            if (item.html() === "+") {
+                item.html('-');
+            } else {
+                item.html('+');
+            }
+        });
+    });
+</script>
+                
+                <!--startindex-->
+                <!--!!WidgetEnd-->
+
+    
+</div>
+
+    <div class="column right_col">
+        
+<div id="ColumnUserControl3" class="column   banner_col clearfix  "  >
+    <!--!!WidgetStart, vi-orderdata="0"  vi-hideonmobile="false" vi-widgetinstancedata="597"WidgetStart!!-->    
+
+<a id="pagebody"></a>
+<header id="widget_597_0_428" class="title_widget clearfix  " >
+    
+    <!--stopindex-->
+    <p class="breadcrumb">
+        <a href="/courts">Courts</a> 
+    </p>
+    <!--startindex-->
+    
+    <h1 class="titlewidget-title"><span> Court Case Records</span></h1>
+    
+    <!--stopindex-->
+    <div class="title_right">
+        
+        <a class="printer_friendly" href="javascript:window.print();" title="Click to print this page">Print</a>
+        
+        <a class="thickbox feedback_link" title="Click to submit an email to feedback" href="javascript:void(0);">Feedback</a>
+        
+        <script type="text/javascript">
+            function shareLink(shareType) {
+                var shareUrl = "";
+                var shareTitle = document.itemTitle ? encodeURIComponent(document.itemTitle.trim()).replace(/[!'()*]/g, escape) : "+Court+Case+Records";
+                switch (shareType) {
+                    case "facebook":
+                        shareUrl = "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.leeclerk.org%2fcourts%2fcourt-case-records&t=" + shareTitle;
+                        break;
+                    case "linkedin":
+                        shareUrl = "http://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fwww.leeclerk.org%2fcourts%2fcourt-case-records&title=" + shareTitle;
+                        break;
+                    case "twitter":
+                        //Below link works in iOS and other OS
+                        shareUrl = "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.leeclerk.org%2fcourts%2fcourt-case-records&text=+Court+Case+Records+%7c+";
+                        break;
+                    case "delicious":
+                        shareUrl = "https://secure.delicious.com/login?noui=yes&v=4&jump=https%3a%2f%2fwww.leeclerk.org%2fcourts%2fcourt-case-records%26title%3D" + shareTitle + "%26notes%3D%26tags%3D%26v%3D4%26noui%3D%26share%3Dyes%26jump%3Dclose%26time%3D1239993443";
+                        break;
+                    case "myspace":
+                        shareUrl = "http://www.myspace.com/Modules/PostTo/Pages/?u=https%3a%2f%2fwww.leeclerk.org%2fcourts%2fcourt-case-records&t=" + shareTitle + "&c=";
+                        break;
+                    case "googlebookmark":
+                        shareUrl = "http://www.google.com/bookmarks/mark?op=add&bkmk=https%3a%2f%2fwww.leeclerk.org%2fcourts%2fcourt-case-records&title=" + shareTitle;
+                        break;
+                    case "stumbleupon":
+                        shareUrl = "http://www.stumbleupon.com/submit?url=https%3a%2f%2fwww.leeclerk.org%2fcourts%2fcourt-case-records&title=" + shareTitle;
+                        break;
+                    case "digg":
+                        shareUrl = "http://digg.com/submit/?url=https%3a%2f%2fwww.leeclerk.org%2fcourts%2fcourt-case-records";
+                        break;
+                    case "tumblr":
+                        shareUrl = "https://www.tumblr.com/share/link?url=https%3a%2f%2fwww.leeclerk.org%2fcourts%2fcourt-case-records&name=" + shareTitle;
+                        break;
+                    case "reddit":
+                        shareUrl = "http://www.reddit.com/submit?url=https%3a%2f%2fwww.leeclerk.org%2fcourts%2fcourt-case-records&title=" + shareTitle;
+                        break;
+                }
+                if (shareUrl.length > 0) window.open(shareUrl, "_blank");
+            }
+        </script>
+        <div id="share">
+            <a class="sharelink" href="javascript:void(0);" title="Click to expand Share & Bookmark options" aria-haspopup="true" aria-expanded="false" aria-labelledby="share-desciption">Share & Bookmark</a>
+            <span id="share-desciption" class="wcag_only" >Press Enter to show all options, press Tab go to next option</span>
+            <ul class="no_external_url_indication">
+                <li>
+                    
+                    <a title="Click to submit an email online" href="javascript:void(0);" class="shareemail send_share_email">Email</a>
+                    
+                </li>
+                <li><a title="Click to share with Facebook" href="javascript:shareLink('facebook')" class="sharefacebook">Facebook</a></li>
+                
+                <li><a title="Click to share with LinkedIn" href="javascript:shareLink('linkedin')" class="sharelinkedin">LinkedIn</a></li>
+                <li><a title="Click to share with Twitter" href="javascript:shareLink('twitter')" class="sharetwitter">Twitter</a></li>
+                
+                
+                
+                
+                
+                
+                <li><a title="Click to share with Reddit" href="javascript:shareLink('reddit')" class="sharereddit">Reddit</a></li>
+            </ul>
+        </div>
+        
+        <div class="font_size">
+            <a href="javascript:void(0);" title="default font size" class="text_size">Font Size:</a>
+            <a href="javascript:void(0);" title="larger font size" class="font_larger">+</a>
+            <a href="javascript:void(0);" title="smaller font size" class="font_smaller">-</a>
+        </div>
+        
+    </div>
+    <!--startindex-->
+
+    
+</header>
+<script type="text/javascript">
+    $(function () {
+        var widgetContext = "widget_597_0_428";
+
+        $("#" + widgetContext + " #share").click(function () {
+            if (!$("#" + widgetContext + " div#share").hasClass("click-active"))
+                $("#" + widgetContext + " div#share").find("ul").show();
+            else
+                $("#" + widgetContext + " div#share").find("ul").hide();
+        });
+
+        $("div").click(function () {
+            if ($("#" + widgetContext + " div#share").hasClass("click-active")) {
+                $("#" + widgetContext + " div#share").find("ul").hide();
+            }
+        });
+
+        $(document).click(function (e) {
+            if (!$(e.target).closest("#share").length > 0) {
+                $("#" + widgetContext + " div#share").removeClass("click-active");
+                $("#" + widgetContext + " div#share").find("ul").hide();
+            }
+        });
+
+        var shareContainerTimeout = null;
+        $("#" + widgetContext + " #share").bind('mouseover', function () {
+            //If not relate to click event
+            if (shareContainerTimeout) {
+                clearTimeout(shareContainerTimeout);
+                shareContainerTimeout = null;
+            }
+            shareContainerTimeout = setTimeout(function () {
+                if (!$("#" + widgetContext + " div#share").hasClass("click-active"))
+                    $("#" + widgetContext + " div#share").find("ul").show();
+            }, 100);
+        });
+
+        $("#" + widgetContext + " #share").bind('mouseleave', function () {            
+            //If not relate to click event     
+            if (shareContainerTimeout) {
+                clearTimeout(shareContainerTimeout);
+                shareContainerTimeout = null;
+            }
+            shareContainerTimeout = setTimeout(function () {
+                if (!$("#" + widgetContext + " div#share").hasClass("click-active"))
+                    $("#" + widgetContext + " div#share").find("ul").hide();
+            }, 200);
+        });
+
+        $("header#" + widgetContext + " a.feedback_link").click(function () {
+            var windowHeight = 485;
+            if (window.innerWidth <= 648) {
+                windowHeight = 545;
+            }
+            var opts = {
+                title: "Feedback",
+                url: "/Template/GetFeedbackPartial?feedbackUrl=https%3a%2f%2fwww.leeclerk.org%2fcourts%2fcourt-case-records",
+                useFrame: true,
+                height: windowHeight,
+                onClosed: function (result) {
+                    if (result != undefined && result.IsOk == true) {
+                        $.refreshTempMessage(result.Message);
+                    }
+                },
+                skin: 'viClientDialog feedback_lightbox',
+                fixed: false
+            };
+            $.viClientDialog(opts).open();
+        });
+
+        //Safari iOS: No click event
+        $("header#" + widgetContext + " a.send_share_email").bind("click touchstart", function () {
+            var shareEmailTitle = document.itemTitle ? encodeURIComponent(document.itemTitle.trim()).replace(/[!'()*]/g, escape) : "+Court+Case+Records";
+            var opts = {
+                title: "Click to submit an email online",
+                url: "/Template/GetShareEmailPartial?shareUrl=https%3a%2f%2fwww.leeclerk.org%2fcourts%2fcourt-case-records" + "&shareTitle=" + shareEmailTitle,
+                useFrame: true,
+                height: 485,
+                onClosed: function (result) {
+                    if (result != undefined && result.IsOk == true) {
+                        $.refreshTempMessage(result.Message);
+                    }
+                },
+                skin: 'viClientDialog send_share_email_lightbox',
+                fixed: false
+            };
+            $.viClientDialog(opts).open();
+        });
+
+        
+
+    });
+</script>
+
+            <!--!!WidgetEnd-->
+
+    
+</div>
+    
+        
+<div id="ColumnUserControl4" class="column   has_small_col  "  >
+    <!--!!WidgetStart, vi-orderdata="0"  vi-hideonmobile="false" vi-widgetinstancedata="596"WidgetStart!!-->    
+<div id='widget_596_371_428' class='content_area normal_content_area clearfix  '><h3>Welcome to the  Court Records Inquiry Site</h3>
+<p>The Clerk’s office provides convenient online access to court documents. To ensure confidentiality of private information, the Clerk’s Office follows&nbsp;the <a href="/home/showdocument?id=5673" target="_blank">Access Security Matrix</a> designed by the Florida Supreme Court. The matrix outlines 13 levels of access to view online court records and documents in accordance with Florida’s public records laws.</p>
+<p>Not all court records maintained by the Lee County Clerk of Court are available through this online viewing system. Many cases opened prior to 2004 may only be available through our <a href="/services/public-records-request" target="_self">Records Request System</a>&nbsp;service.</p>
+<h3 style="text-align: left;"><a tabindex="-1" href="/courts/court-case-records/court-records-search">Court Records Search</a></h3>
+<p style="text-align: left;">Search Public Records,&nbsp;Account Creation Tutorial</p>
+<h3 style="text-align: left;"><a tabindex="-1" href="/services/public-records-request" target="_blank">Records &amp; Case Information Request System</a></h3>
+<p style="text-align: left;">For questions on your case or to, request for Support Pay Histories, Certified Copies of Court Pleadings, Case Statistical and Court Registry Balance Reports</p>
+<h3 style="text-align: left;"><font color="#0b0115">Judicial Automated Calendaring System</font></h3>
+<p style="text-align: left;"><font color="#0b0115"></font>The Lee County Judiciary provides attorneys access to the Judicial Automated Calendaring System to schedule civil hearings. </p>
+<p style="text-align: left;"><a class="external_link_url" href="https://www.ca.cjis20.org/home/main/jacs.asp" target="_blank">Additional Calendaring Information</a></p>
+<p style="text-align: left;"><em>The Clerk’s Office makes every effort to ensure you are able to access the information you need. Our website is designed to be compatible with all current versions of major browsers, operating systems and hardware. However, due to the many brands of personal computers and combinations of software available, it is possible that some users will have difficulty accessing some of the data. <em>To report your technology related issue, please email us at </em><a><em>DoITServiceDesk@LeeClerk.org</em></a></em></p>
+<div class="downloadmessage no_external_url_indication">
+	<p>
+		Free viewers are required for some of the attached documents.<br />They can be downloaded by clicking on the icons below.
+	</p>
+    <a href="/?splash=http%3a%2f%2fget.adobe.com%2freader%2f&____isexternal=true" target="_blank" class="acrobat_reader_downloadmessage" title="Download Acrobat Reader">
+        <span>Acrobat Reader</span>
+        <img src="/DefaultContent/Default/_gfx/downloadmessage/acrobat.jpg" alt ="Download Acrobat Reader" />
+    </a>
+    <a href="/?splash=https%3a%2f%2fget.adobe.com%2fflashplayer%2f&____isexternal=true" target="_blank" class="flashplayer_downloadmessage" title="Download Flash Player">
+        <span>Flash Player</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/flash.jpg" alt="Download Flash Player"/>
+    </a>
+    
+    <a href="/?splash=http%3a%2f%2fwindows.microsoft.com%2fen-us%2fwindows%2fwindows-media-player&____isexternal=true" target="_blank" class="windows_media_player_downloadmessage" title="Download Windows Media Player">
+        <span>Windows Media Player</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/wmp.jpg" alt="Download Windows Media Player"/>
+    </a>
+    <span class="line-breaker" style="display:none;"></span>
+    <a href="/?splash=http%3a%2f%2fwww.microsoft.com%2fgetsilverlight%2fget-started%2finstall%2fdefault.aspx&____isexternal=true" target="_blank" class="silverlight_downloadmessage" title="Download Microsoft Silverlight">
+        <span>Microsoft Silverlight</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/silverlight.jpg" alt="Download Microsoft Silverlight"/>
+    </a>
+    <a href="/?splash=https%3a%2f%2fproducts.office.com%2fen-US%2foffice-online%2fdocuments-spreadsheets-presentations-office-online&____isexternal=true" target="_blank" class="word_downloadmessage" title="Download Word Viewer">
+        <span>Word Viewer</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/word.jpg" alt="Download Word Viewer"/>
+    </a>
+    <a href="/?splash=https%3a%2f%2fproducts.office.com%2fen-US%2foffice-online%2fdocuments-spreadsheets-presentations-office-online&____isexternal=true" target="_blank" class="excel_downloadmessage" title="Download Excel Viewer">
+        <span>Excel Viewer</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/excel.jpg" alt="Download Excel Viewer"/>
+    </a>
+    <a href="/?splash=https%3a%2f%2fproducts.office.com%2fen-US%2foffice-online%2fdocuments-spreadsheets-presentations-office-online&____isexternal=true" target="_blank" class="powerpoint_downloadmessage" title="Download PowerPoint Viewer">
+        <span>PowerPoint Viewer</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/powerpoint.jpg" alt="Download PowerPoint Viewer"/>
+    </a>
+</div>
+
+
+
+
+
+</div>
+            <!--!!WidgetEnd-->
+
+    
+</div>
+
+        
+<aside id="ColumnUserControl5" class="column   small_col  "  >
+    <!--!!WidgetStart, vi-orderdata="0"  vi-hideonmobile="false" vi-widgetinstancedata="599"WidgetStart!!-->    
+<div id='widget_599_372_428' class='content_area normal_content_area clearfix  '><p><strong>Related Links</strong></p>
+<ul>
+    <li><a tabindex="-1" href="/about-us/contact-us/mailing-addresses">Contact us</a></li>
+    <li><a tabindex="-1" href="/home/showdocument?id=5673" target="_blank">Access Security Matrix</a></li>
+    <li><a href="/home/showdocument?id=8252" target="_blank">Viewing&nbsp;Civil Traffic and Parking Infraction Cases</a><strong><br>
+    </strong></li>
+</ul></div>
+            <!--!!WidgetEnd-->
+
+    <!--!!WidgetStart, vi-orderdata="0"  vi-hideonmobile="false" vi-widgetinstancedata="1937"WidgetStart!!-->    
+
+
+<section class="small_box document_folder_box mobile_list">
+    <a name="docan1937_2148_428"></a>
+    <h2 class="box_title mobile_header">Documents</h2>
+    <div class="box_content clearfix" data-name="docan1937_2148_428">
+        <ul><li><span class="doc_folder_img default"></span><a class="content_link" title="Probate New Estate Listing archived" href="/courts/court-case-records/-folder-243">Probate New Estate Listing archived</a></li><li><span class="doc_folder_img default"></span><a class="content_link" title="Eviction Filings archived" href="/courts/court-case-records/-folder-270">Eviction Filings archived</a></li><li><img class='thumb_img' alt='application/pdf' src='/DefaultContent/Default/_gfx/document_icons/pdf.png'/><a  class='content_link' target='_blank' href="/Home/ShowDocument?id=9125">Civil Closed Cases Report - April 2020</a></li><li><img class='thumb_img' alt='application/pdf' src='/DefaultContent/Default/_gfx/document_icons/pdf.png'/><a  class='content_link' target='_blank' href="/Home/ShowDocument?id=8240">Data Extract Agreement Form</a></li><li><img class='thumb_img' alt='application/pdf' src='/DefaultContent/Default/_gfx/document_icons/pdf.png'/><a  class='content_link' target='_blank' href="/Home/ShowDocument?id=8234">Foreclosure Registry Balance Report as of May 5th</a></li><li><img class='thumb_img' alt='application/pdf' src='/DefaultContent/Default/_gfx/document_icons/pdf.png'/><a  class='content_link' target='_blank' href="/Home/ShowDocument?id=9123">Probate New Estate Listing Report - April 2020</a></li><li><img class='thumb_img' alt='application/pdf' src='/DefaultContent/Default/_gfx/document_icons/pdf.png'/><a  class='content_link' target='_blank' href="/Home/ShowDocument?id=9127">Residential Tenant Eviction Cases for April 2020</a></li></ul>
+<div class="downloadmessage no_external_url_indication">
+	<p>
+		Free viewers are required for some of the attached documents.<br />They can be downloaded by clicking on the icons below.
+	</p>
+    <a href="/?splash=http%3a%2f%2fget.adobe.com%2freader%2f&____isexternal=true" target="_blank" class="acrobat_reader_downloadmessage" title="Download Acrobat Reader">
+        <span>Acrobat Reader</span>
+        <img src="/DefaultContent/Default/_gfx/downloadmessage/acrobat.jpg" alt ="Download Acrobat Reader" />
+    </a>
+    <a href="/?splash=https%3a%2f%2fget.adobe.com%2fflashplayer%2f&____isexternal=true" target="_blank" class="flashplayer_downloadmessage" title="Download Flash Player">
+        <span>Flash Player</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/flash.jpg" alt="Download Flash Player"/>
+    </a>
+    
+    <a href="/?splash=http%3a%2f%2fwindows.microsoft.com%2fen-us%2fwindows%2fwindows-media-player&____isexternal=true" target="_blank" class="windows_media_player_downloadmessage" title="Download Windows Media Player">
+        <span>Windows Media Player</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/wmp.jpg" alt="Download Windows Media Player"/>
+    </a>
+    <span class="line-breaker" style="display:none;"></span>
+    <a href="/?splash=http%3a%2f%2fwww.microsoft.com%2fgetsilverlight%2fget-started%2finstall%2fdefault.aspx&____isexternal=true" target="_blank" class="silverlight_downloadmessage" title="Download Microsoft Silverlight">
+        <span>Microsoft Silverlight</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/silverlight.jpg" alt="Download Microsoft Silverlight"/>
+    </a>
+    <a href="/?splash=https%3a%2f%2fproducts.office.com%2fen-US%2foffice-online%2fdocuments-spreadsheets-presentations-office-online&____isexternal=true" target="_blank" class="word_downloadmessage" title="Download Word Viewer">
+        <span>Word Viewer</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/word.jpg" alt="Download Word Viewer"/>
+    </a>
+    <a href="/?splash=https%3a%2f%2fproducts.office.com%2fen-US%2foffice-online%2fdocuments-spreadsheets-presentations-office-online&____isexternal=true" target="_blank" class="excel_downloadmessage" title="Download Excel Viewer">
+        <span>Excel Viewer</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/excel.jpg" alt="Download Excel Viewer"/>
+    </a>
+    <a href="/?splash=https%3a%2f%2fproducts.office.com%2fen-US%2foffice-online%2fdocuments-spreadsheets-presentations-office-online&____isexternal=true" target="_blank" class="powerpoint_downloadmessage" title="Download PowerPoint Viewer">
+        <span>PowerPoint Viewer</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/powerpoint.jpg" alt="Download PowerPoint Viewer"/>
+    </a>
+</div>
+
+
+
+
+
+
+    </div>
+</section>
+<script>
+    $(function () {
+        $(".document_folder_box .box_content[data-name='docan1937_2148_428'] .doc_folder_img + a, .document_folder_box .box_content[data-name='docan1937_2148_428'] .document_breadcrumb a")
+            .each(function (i, n) { $(n).attr("href", $(n).attr("href") + "#docan1937_2148_428"); });
+    });
+</script>
+
+
+            <!--!!WidgetEnd-->
+
+    <!--!!WidgetStart, vi-orderdata="0"  vi-hideonmobile="false" vi-widgetinstancedata="1935"WidgetStart!!-->    
+<div id='widget_1935_0_428' class='content_area normal_content_area clearfix  '></div>
+            <!--!!WidgetEnd-->
+
+    
+</aside>
+
+    </div>
+</div>
+
+
+        <footer id="page_footer" class="">
+            <a class="scroll_up" href="#">Back to Top</a>
+            <!--stopindex-->
+            
+<div id="footercolumn" class="site_template_column  footer_column   " >
+
+                <!--stopindex-->
+                <div class="footer_address">
+	<p><strong>General Mailing Address:</strong><br>
+P.O. Box 2469 Ft. Myers, FL 33902&nbsp;</p>
+<a href="/about-us/ada-disclaimer"><img src="/Home/ShowPublishedImage/1924/636864592984470000" alt="Accessibility Policy" style="margin:15px;"></a>
+<style>
+    .footer_address {
+    position: relative;
+    }
+    .footer_address > a {
+    position: absolute;
+    right: -230px;
+    top: -4px;
+    }
+    .footer_address > a img {
+    margin: 15px;
+    width: 151px;
+    }
+</style>
+</div>
+                <!--startindex-->
+            
+
+                <!--stopindex-->
+                
+<div class="footer_nav">
+		<a href="/about-us/ada-information" target="_self" >ADA Court Accommodation Request</a>
+		<a href="/about-us/disclaimer" target="_self" >Disclaimer</a>
+		<a href="/about-us/site-map" target="_self" >Sitemap</a>
+		<a href="/about-us/contact-us/mailing-addresses" target="_self" >Contact Us</a>
+</div>
+<p class="footer_copyright"><a href="https://granicus.com/government-website-design?utm_source=customer&utm_medium=footer&utm_campaign=govAccesswebsite">Website Design by Granicus</a> - Connecting People and Government</p>
+                <!--startindex-->
+            
+
+                <!--stopindex-->
+                
+<div class="social_icons">
+		<a href="https://www.facebook.com/leecountyclerk/" target="_blank" title="Facebook"> 
+			<img src="/Home/ShowPublishedImage/300/636574142205770000" alt="" /> 
+		</a>
+		<a href="https://twitter.com/lee_clerk" target="_blank" title="Twitter"> 
+			<img src="/Home/ShowPublishedImage/1886/636794489993070000" alt="" /> 
+		</a>
+		<a href="/about-us/contact-us/mailing-addresses" target="_self" title="Email"> 
+			<img src="/Home/ShowPublishedImage/302/636574148155470000" alt="" /> 
+		</a>
+</div>
+                <!--startindex-->
+            
+
+</div>
+
+            <!--startindex-->
+        </footer>
+        <div id="view-options"><a href="javascript:void(0);" id="view-full" onclick="viewfullsite()" class="mobile_only">View Full Site</a></div>
+    </div>
+</div>
+
+<script src="/Project/Contents/Main/mobile_nav_scripts.js" type="text/javascript"></script>
+
+<script src="/Project/Contents/Main/sitelayout_scripts.js" type="text/javascript"></script>
+    
+    <script>
+        $(function () {
+            $(".reComment[comment]").removeClass("reComment")
+                                    .removeAttr("comment")
+                                    .removeAttr("author")
+                                    .removeAttr("title")
+                                    .removeAttr("timestamp");
+        })
+    </script>
+    
+
+    
+
+    <script src="/Scripts/ScriptBundleVisionFrontend.jsbnd?v=HJSpzzso87UZtSEiRwap4uKVJvO1kSJn-JRPKVzmbHg1"></script>
+
+
+    
+    
+    <script>
+        try { manualRenderMobile(); } catch (err) {}
+    </script>
+    
+    
+    <script src="/Scripts/Components/ScriptsFEBundle.jsbnd?v=DfCheCkfQMyVRQ54roqWjDiD8YP5vK1eHdrpyN5Pqmo1"></script>
+
+    <script>
+        $(function() {
+            var sitewrapper = $(".sitewrapper");
+            if(sitewrapper.length && !sitewrapper.hasClass("")) {
+                sitewrapper.addClass("");
+            }          
+        });
+    </script>      
+    
+
+    
+</body>
+</html>

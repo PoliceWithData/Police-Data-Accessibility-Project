@@ -1,0 +1,746 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Keywords here"/>
+<meta name="description" content="Description here"/>
+<meta http-equiv="Expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/> 
+<meta http-equiv="Pragma" content="no-cache"/> 
+
+<script type="text/javascript" src="./common/js/expandable.js"></script>
+<meta name="save" content="history" />
+
+<noscript>
+<style type="text/javascript">
+.dspcont{display:block; }
+</style>
+</noscript>
+
+<link rel="stylesheet" type="text/css" href="./common/css_sage/styles.css" />
+<link rel="shortcut icon" href="/favicon.ico"/>
+<script src="common/js/tabs.js" type="text/javascript"></script>
+
+<title>The Superior Court of California</title>
+
+</head>
+
+<body class="divisions">
+  <div id="mainContainer">
+   
+<div id="headerWrap">
+    <div class="contact"><a href="gi-contactUs.aspx" id="Contact_Us">Contact Us</a></div>
+    <div class="toolbar"><a href="MAILTO:webmaster@amadorcourt.org" class="feedback">Feedback</a> 
+        <!-- Start of editing for customer compliment form-->
+        <a href="os-employeeFeedbackForm.aspx" class="feedback" target="blank">Employee Feedback Form</a>
+        <!--End of editing for customer compliment form-->
+    </div>
+
+    <div class="logo">
+        <a href="default.aspx">
+            <img style="height:41px; width:335px;" src="images/logo.gif" alt="Amador Superior Court"/>
+         </a>
+    </div>
+
+    <div class="date">
+        <script type="text/javascript">
+          var CRTopenTime = "", CRTcloseTime = "", OFCopenTime = "", OFCcloseTime = "";
+
+          var curHour = "";
+          var curTime = "";
+          var dtStr = "";
+          var mydtString;
+
+          // default is open, then check for holidays.
+          var courtStatus = "OPEN";
+          var clerkStatus = "OPEN";
+          
+          var fmtDateBold = "<span style=\'color:#717552;font-weight:bold;'>";
+          var fmtCourtNormal = "<span style=\'color:#717552;font-weight:normal;font-family:verdana,geneva,sans-serif;'>COURT HOUSE is: </span>"
+          var fmtClerkNormal = "<span style=\'color:#717552;font-weight:normal;font-family:verdana,geneva,sans-serif;'>CLERKS OFFICE is: </span>";
+          var fmtCLOSED = "<span style=\'color:red; font-weight:bold;font-family:verdana,geneva,sans-serif;'>";
+          var fmtOPEN = "<span style=\'color:#2D7DF4; font-weight:bold;font-family:verdana,geneva,sans-serif;'>";
+          var fmtSPAN = "</span>";
+
+          var time = new Date();
+          var hour = time.getHours();
+          var minutes = time.getMinutes();
+          var seconds = time.getSeconds();
+          var year = time.getFullYear();
+          var day = time.getDay();
+          var month = time.getMonth();
+          var daym = time.getDate();
+
+          //prefix with "0" to display 2-digits
+          if (minutes < 10) { minutes = "0" + minutes }
+          if (hour < 10) { hour = "0" + hour }
+          if (daym < 10) { daym = "0" + daym; }
+
+          var dayarray = new Array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
+          var montharray = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+          mydtString = (montharray[month] + " " + daym + ", " + year);
+
+          // build string
+          curHour = hour + ":" + minutes + ":" + seconds;
+          curTime = curHour.substring(0, 5);
+          dtStr = dayarray[day] + " " + mydtString + " " + curHour;
+
+          // clerk closed dates
+          switch (mydtString) {
+              case "Jan 01, 2020":
+                  clerkStatus = "CLOSED";
+                  break;
+              case "Jan 20, 2020":
+                  clerkStatus = "CLOSED";
+                  break;
+              case "Feb 12, 2020":
+                  clerkStatus = "CLOSED";
+                  break;
+              case "Feb 17, 2020":
+                  clerkStatus = "CLOSED";
+                  break;
+              case "Mar 31, 2020":
+                  clerkStatus = "CLOSED";
+                  break;
+              case "May 25, 2020":
+                  clerkStatus = "CLOSED";
+                  break;
+              case "Jul 03, 2020":
+                  clerkStatus = "CLOSED";
+                  break;
+              case "Sep 07, 2020":
+                  clerkStatus = "CLOSED";
+                  break;
+              case "Oct 12, 2020":
+                  clerkStatus = "CLOSED";
+                  break;
+              case "Nov 11, 2020":
+                  clerkStatus = "CLOSED";
+                  break;
+              case "Nov 26, 2020":
+                  clerkStatus = "CLOSED";
+                  break;
+              case "Nov 27, 2020":
+                  clerkStatus = "CLOSED";
+                  break;
+              case "Dec 25, 2020":
+                  clerkStatus = "CLOSED";
+                  break;
+            case "May 1, 2020":
+                clerkStatus = "CLOSED";
+                break;
+            case "May 4, 2020":
+                clerkStatus = "CLOSED";
+                break;
+            case "May 5, 2020":
+                clerkStatus = "CLOSED";
+                break;
+            case "May 6, 2020":
+                clerkStatus = "CLOSED";
+                break;
+            case "May 7, 2020":
+                clerkStatus = "CLOSED";
+                break;
+            case "May 8, 2020":
+                clerkStatus = "CLOSED";
+                break;
+            case "May 11, 2020":
+                clerkStatus = "CLOSED";
+                break;
+            case "May 12, 2020":
+                clerkStatus = "CLOSED";
+                break;
+            case "May 13, 2020":
+                clerkStatus = "CLOSED";
+                break;
+            case "May 14, 2020":
+                clerkStatus = "CLOSED";
+                break;
+            case "May 15, 2020":
+                clerkStatus = "CLOSED";
+                  break;
+            case "May 26, 2020":
+                clerkStatus = "CLOSED";
+                break;
+            case "May 27, 2020":
+                clerkStatus = "CLOSED";
+                break;
+            case "May 28, 2020":
+                clerkStatus = "CLOSED";
+                break;
+            case "May 29, 2020":
+               clerkStatus = "CLOSED";
+                break;
+              default:
+                  break;
+          }
+          
+          // court holiday dates
+          switch (mydtString) {
+              case "Jan 01, 2020":
+                  courtStatus = "CLOSED";
+                  break;
+              case "Jan 20, 2020":
+                  courtStatus = "CLOSED";
+                  break;
+              case "Feb 12, 2020":
+                  courtStatus = "CLOSED";
+                  break;
+              case "Feb 17, 2020":
+                  courtStatus = "CLOSED";
+                  break;
+              case "Mar 31, 2020":
+                  courtStatus = "CLOSED";
+                  break;
+              case "May 25, 2020":
+                  courtStatus = "CLOSED";
+                  break;
+              case "Jul 03, 2020":
+                  courtStatus = "CLOSED";
+                  break;
+              case "Sep 07, 2020":
+                  courtStatus = "CLOSED";
+                  break;
+              case "Oct 12, 2020":
+                  courtStatus = "CLOSED";
+                  break;
+              case "Nov 11, 2020":
+                  courtStatus = "CLOSED";
+                  break;
+              case "Nov 26, 2020":
+                  courtStatus = "CLOSED";
+                  break;
+              case "Nov 27, 2020":
+                  courtStatus = "CLOSED";
+                  break;
+              case "Dec 25, 2020":
+                  courtStatus = "CLOSED";
+                  break;
+              case "Apr 06, 2020":
+                  courtStatus= "CLOSED";
+                  break;
+              case "Apr 07, 2020":
+                  courtStatus= "CLOSED";
+                  break;
+              case "Apr 08, 2020":
+                  courtStatus= "CLOSED";
+                  break;
+              default:
+                  break;
+          }
+          
+          switch (dayarray[day]) {
+              case "Mon":
+                  CRTopenTime = "09:00:00";
+                  CRTcloseTime = "15:00:00";
+                  OFCopenTime = "09:00:00";
+                  OFCcloseTime = "15:00:00";
+              case "Tue":
+                  CRTopenTime = "09:00:00";
+                  CRTcloseTime = "15:00:00";
+                  OFCopenTime = "09:00:00";
+                  OFCcloseTime = "15:00:00";
+              case "Wed":
+                  CRTopenTime = "09:00:00";
+                  CRTcloseTime = "15:00:00";
+                  OFCopenTime = "09:00:00";
+                  OFCcloseTime = "15:00:00";
+              case "Thu":
+                  CRTopenTime = "09:00:00";
+                  CRTcloseTime = "15:00:00";
+                  OFCopenTime = "09:00:00";
+                  OFCcloseTime = "15:00:00";
+                  break;
+              case "Fri":
+                  CRTopenTime = "09:00:00";
+                  CRTcloseTime = "15:00:00";
+                  OFCopenTime = "09:00:00";
+                  OFCcloseTime = "15:00:00";
+                  break;
+              case "Sat":
+                  clerkStatus = "CLOSED";
+                  courtStatus = "CLOSED";
+                  break;
+              case "Sun":
+                  clerkStatus = "CLOSED";
+                  courtStatus = "CLOSED";
+                  break;
+              default:
+                  break;
+          }
+
+          // nocourt is not holiday, now check office hour open/close
+          if (courtStatus == "OPEN") {
+              if (clerkStatus == "OPEN") {
+                  if (CRTopenTime <= curHour && curHour < CRTcloseTime) {
+                      if (OFCopenTime <= curHour && curHour < OFCcloseTime) {
+                          clerkStatus = "OPEN";
+                      }
+                      else {
+                          clerkStatus = "CLOSED"; 
+                      }
+                  }
+                  else {
+                      courtStatus = "CLOSED";
+                      clerkStatus = "CLOSED";
+                  }
+              }
+              if (CRTopenTime <= curHour && curHour < CRTcloseTime) {
+                  courtStatus = "OPEN";
+              } else
+              {
+                  courtStatus = "CLOSED";
+              }
+             
+          }
+
+          if (courtStatus == "CLOSED") {
+            document.writeln(fmtDateBold + dtStr + "<br/>");
+            document.writeln(fmtCourtNormal + fmtCLOSED + courtStatus + fmtSPAN + "<br/>");
+            document.writeln(fmtClerkNormal + fmtCLOSED + clerkStatus + fmtSPAN + "<br/>");
+          }
+          else 
+          {
+              if (clerkStatus == "OPEN") 
+              {
+                document.writeln(fmtDateBold + dtStr + "<br/>");
+                document.writeln(fmtCourtNormal + fmtOPEN + courtStatus + fmtSPAN + "<br/>");
+                document.writeln(fmtClerkNormal + fmtOPEN + clerkStatus + fmtSPAN + "<br/>");
+              }
+              else 
+              {
+                document.writeln(fmtDateBold + dtStr + "<br/>");
+                document.writeln(fmtCourtNormal + fmtOPEN + courtStatus + fmtSPAN + "<br/>");
+                document.writeln(fmtClerkNormal + fmtCLOSED + clerkStatus + fmtSPAN + "<br/>");
+              }
+          }
+          
+          document.writeln("(See Hours of Operation)" + "<br/>");
+          document.writeln("(Refresh Page for Status Update)");
+          
+      </script>
+   </div>
+
+<div class="cleaner"></div>    
+</div>
+
+<ul id="menu">
+	<li><a id="home" href="default.aspx" name="Home">Home</a></li>
+	<li><a id="online" name="Online_Services">Online Services<!--[if gte IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<ul>
+						<li><a href="dv-SearchNow.aspx">Online Case Search</a></li>
+						<li><a href="dv-PayNow.aspx">Online Traffic Payments</a></li>
+                        <li><a href="os-casefiling.aspx">Online Fax Filing</a></li>    
+						<li><a href="os-courtCalendars.aspx">Court Calendars</a></li>
+						<li><a href="os-courtReporterTranscripts.aspx">Court Reporter Transcripts</a></li>
+						<li><a href="os-tentativeRulings.aspx" class="last">Tentative Rulings</a></li>
+		</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+	<li><a id="forms" name="Forms_and_Filing">Forms & Local Rules<!--[if gte IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<ul>
+						 <li><a href="ff-appointedServicesClaims.aspx">Appointed Services & Claims</a></li>
+						 <li><a href="os-caseFiling.aspx">Fax Filing</a></li>
+						 <li><a href="ff-feeSchedule.aspx">Fee/Bail Schedule</a></li>
+						 <li><a href="ff-forms.aspx">Forms By Division</a></li>
+      		           	 <li><a href="ff-forms-name.aspx">Forms By Name</a></li>
+      			         <li><a href="ff-forms-number.aspx">Forms By Number</a></li>
+                         <li><a href="ff-forms-packet.aspx">Forms By Packet</a></li>
+                         <li><a href="ff-forms-review.aspx">Forms New/Open</a></li>
+						 <li><a href="ff-forms.aspx#tab9" >Form FAQS</a></li>
+					     <li><a href="ff-localRules.aspx"class="last">Local Rules</a></li>  
+		</ul>
+
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+	<li><a id="selfhelp" name="Self_Help">Self-Help<!--[if gte IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<ul>                           
+						<li><a href="sh-lawLibrary.aspx">Law Library</a></li>
+						<li><a href="http://www.courts.ca.gov/selfhelp-glossary.htm" target="_blank">Glossary of Legal Terms</a></li>
+						<li><a href="sh-localResources.aspx">Local Self-Help Resources Available</a></li>
+						<li><a href="sh-onlineResources.aspx">Online Self-Help Resources</a></li>
+						<li><a href="sh-preparingForCourt.aspx" class="last">Preparing for Court</a></li>
+										
+		</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+	<li><a id="divisions" name="Divisions">Divisions<!--[if gte IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<ul>
+				<li><a href="dv-appeals.aspx">Appeals</a></li>
+						<li><a href="dv-civil.aspx">Civil</a></li>
+						<li><a href="dv-collections.aspx">Court Collections</a></li>            
+						<li><a href="dv-criminal.aspx">Criminal</a></li>
+						<li><a href="dv-family.aspx" >Family</a></li>   
+						<li><a href="dv-juvenile.aspx">Juvenile</a></li>   
+						<li><a href="dv-probate.aspx">Probate</a></li>  
+						<li><a href="dv-restrainingOrders.aspx">Restraining Orders</a></li>                             
+						<li><a href="dv-smallClaims.aspx">Small Claims</a></li>
+						<li><a href="dv-traffic.aspx" class="last">Traffic / Infractions</a></li>        
+		</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+	<li><a id="info" name="General_Info">General Info<!--[if gte IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<ul>
+					<li><a href="gi-accessCourtFiles.aspx">Access Court Files/Records</a></li>
+					<li><a href="gi-ada.aspx">ADA</a></li>  
+					<li><a href="gi-adr.aspx">ADR (Arbitrators,Mediators)</a></li>   
+					<li><a href="gi-contactUS.aspx">Contact Information</a></li>
+					<li><a href="gi-courtSecurity.aspx">Court Security</a></li>                  	 
+					<li><a href="gi-employment.aspx">Employment</a></li>
+					<li><a href="gi-civil-grandJury.aspx">Civil Grand Jury</a></li>
+                    <li><a href="gi-adr-FamilyLawMediators.aspx">Family Law Mediators</a></li>
+					<li><a href="gi-historyOfTheCourt.aspx">History of the Court</a></li>
+					<li><a href="gi-interpreterInfo.aspx">Interpreter Information</a></li>
+					<li><a href="gi-judicialOfficers.aspx">Judicial Officers</a></li>          
+					<li><a href="gi-juryServices.aspx">Jury Services</a></li>
+					<li><a href="gi-juvenileJustice.aspx">Juvenile Justice Commission</a></li>                                                                                   
+					<li><a href="gi-media.aspx" class="last">Media Requests</a></li>              
+		</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+</ul>
+
+
+   <div id="containerLanding">
+    <div class="subMenu">
+     <p>
+       <a href="default.aspx">Home</a> &raquo; <a>Divisions</a> &raquo; 
+       <span class="selected">Traffic</span></p>
+    </div>
+
+     <div id="mainContentWrap" class="bgTwoColumn">
+        <div class="contentColumn">
+          <div id="leftNav">
+            <ul>
+              <li><a>DIVISIONS</a>
+                <ul>
+                  <li><a href="./dv-appeals.aspx">Appeals</a></li>
+                  <li><a href="dv-civil.aspx">Civil</a></li>
+                  <li><a href="dv-collections.aspx">Court Collections</a></li>
+                  <li><a href="dv-criminal.aspx">Criminal</a></li>
+                  <li><a href="dv-family.aspx">Family</a></li>
+                  <li><a href="dv-juvenile.aspx">Juvenile</a> </li>
+                  <li><a href="dv-probate.aspx">Probate</a></li>
+                  <li><a href="dv-restrainingOrders.aspx">Restraining Orders</a></li>
+                  <li><a href="dv-smallClaims.aspx">Small Claims</a></li>
+                  <li><a href="dv-traffic.aspx" class="selected">Traffic / Infractions</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>   
+           <div class="simpleModule">
+   <span class="related">Related Links</span>
+     <a href="http://www.amadorattorneys.com">
+       <span class="iconArrowLeft">Amador County Bar Association</span></a><br />
+     <a href="gi-adr-CourtArbitrators.aspx">
+       <span class="iconLinkLeftSpace">Court Arbitrators List</span></a><br />
+     <a href="gi-adr-CivilMediators.aspx">
+       <span class="iconLinkLeftSpace">Civil Mediators Panel</span></a><br />	
+     <a href="http://www.ctsi-courtnetwork.org">
+       <span class="iconArrowLeft">CTSI-CA Traffic Safety Institute</span></a><br />	
+     <a href="http://www.courts.ca.gov/immigration.htm?rdeLocaleAttr=en" target="_blank">
+          <span class="iconArrowLeft">Immigration Resources-English</span></a><br />
+     <a href="http://www.courts.ca.gov/immigration.htm?rdeLocaleAttr=es" target="_blank">
+          <span class="iconArrowLeft">Inmigracion Resources-Spanish</span></a><br />       
+	 <a href="http://www.courts.ca.gov/forms.htm" target="_blank">
+       <span class="iconArrowLeft">Judicial Council-Forms</span></a><br />
+    <a href="http://www.courts.ca.gov/selfhelp-start.htm" target="_blank">
+       <span class="iconArrowLeft">Judicial Council-Self Help</span></a><br />
+    <a href="gi-localRules.aspx">
+       <span class="iconLinkLeftSpace">Local Rules</span></a> <br />  
+    <a href="http://www.nolo.com" target="_blank">
+       <span class="iconArrowLeft">NOLO Press</span></a><br />
+    <a href="https://www.officialpayments.com/index.jsp" target="_blank">
+       <span class="iconArrowLeft">Official Payments (Payments)</span></a><br />
+	 <a href="gi-accessCourtFiles.aspx">
+       <span class="iconLinkLeftSpace">Request for Admin Records</span></a> <br /> 
+     <a href="gi-accessCourtFiles.aspx">
+       <span class="iconLinkLeftSpace">Request for Court Records</span></a> <br /> 
+	 <a href="os-tentativeRulings.aspx" >
+	   <span class="iconLinkLeftSpace">Tentative Rulings</span></a><br />
+	 <a href="http://www.courts.ca.gov/veterans.htm" >
+	   <span class="iconArrowLeft">Military Families in CA Courts</span></a><br />
+    <br />
+</div>
+
+        </div>
+
+       <div class="contentCenterWide">
+          <div class="hero">
+            <div class="title">ONLINE PUBLIC ACCESS TO COURT CASE INFORMATION</div>
+          </div>
+        
+          <div class="function">
+            <a href="javascript:window.print();" class="print">Print</a> | 
+              <a id="HyperLink5" class="email" href="MAILTO:civil@amadorcourt.org?subject=Website: Online Search Request">E-mail
+            </a><br />             
+          </div>
+ 
+          <div class="simpleModule">
+             <div class="indent1space1"></div>
+             <h4>
+                Welcome to the  
+                Online Case Search page.
+             </h4>
+
+             <div class="indent1">
+               <div class="TABfaqHeader">
+                   You can obtain the following case information online:           
+             </div> 
+             </div>
+             <div class="indent1space0"></div>  
+             
+             <div class="indent2">Cases starting from the year 2002.</div>
+             <div class="indent2">Party and Attorney Information</div>
+             <div class="indent2b">Court Docket - A record of documents filed, hearings held and scheduled,etc.</div>
+             <div class="indent2">Financial Information - a record of court fees and fines owed and paid.</div>
+             
+             <div class="indent1space1"></div>              
+             <div class="indent1">
+               <div class="TABfaqHeader">FOR BEST SEARCH RESULTS:</div>
+             </div>
+              <div class="indent2">Enter both fields: LASTNAME & FIRSTNAME  then click search.</div>
+              <div class="indent2">Often entering too much information does not return case information.</div>
+
+
+             <div class="indent1space1"></div>
+             <div class="indent1">
+               <div class="TABfaqHeader">You can search by:</div>
+             </div>
+             <div class="indent1space0"></div>             
+             <div class="indent2">Party name</div>
+             <div class="indent2">Case Number&nbsp;&nbsp;( 
+                <a href="dv-SearchNow.aspx#CASECODES">
+               see the explantion of case type code variations</a> )</div>
+             <div class="indent2">Citation (Ticket) Number</div>
+             <div class="indent2">Date of Birth</div>
+             <div class="indent2">Driver’s License Number</div>
+             
+          
+            <div class="indent1space1"></div>
+           <div class="indent1">
+               <div class="TABfaqHeader">Finding Case and charge Dispositions</div>
+             </div>
+           <div class="indent1space0"></div> 
+           <div class="indent2">The Case Disposition Tab is currently under maintanence. </div>
+           <div class="indent2">To find the Disposition of charges, from the case summary screen, </div>
+           <div class="indent2-nobullet">go into the Parties tab, Click the Primary Parties Name,</div>
+           <div class="indent2-nobullet">and then the Charges tab on the second row of tabs.</div>
+           <div class="indent2">This will give you the most accurate and complete information </div>
+           <div class="indent2-nobullet">about the Charges for the case, and the Disposition Code of each charge. </div>
+      
+<div>
+    <div class="TABfaqHeader">
+            <div class="tabDivLine"></div>
+               <h3>
+                 <span class="red">
+                 PLEASE NOTE: DO NOT PAY YOUR TRAFFIC TICKET ONLINE IF THE FOLLOWING IS TRUE.
+                </span>
+            </h3>
+    </div>
+            
+          <div class="indent2b">
+             &nbsp;If you want to attend Traffic School 
+          </div> 
+          <div class="indent2b">
+             &nbsp;If you were cited for a fix-it violation(s)
+          </div> 
+          <div class="indent2b">
+              &nbsp;If you received a citation for not having proof of insurance.
+          </div>
+
+          <div class="indent2b"> 
+             &nbsp;If you are requesting a Traffic Court Trial 
+          </div> 
+          
+          <div class="indent2b"> 
+             &nbsp;If you are requesting a Trial By Declaration 
+          </div> 
+          <div class="indent1space0"></div>
+          <div class="tabDivLine"></div>
+          
+          <br />
+          <div class="TABfaqHeader indent0-text">You must pay the entire amount due. 
+              Partial payments are not allowed online.</div>
+          <div class="indent1space1"></div>
+          <div class="tabDivLine"></div>
+            
+            <div class="indent1space1"></div>
+           <div class="indent0-text"> 
+             If ANY of these apply to you, <br />
+               YOU MUST contact the Clerk's Office at 209-257-2605 
+             for further information or to make arrangements before proceeding.
+             The Clerk’s Office accepts many forms of payment: Cash, Credit 
+             Card, Check, Cashier’s Check, or Money Order. In some cases, the clerks can accept 
+               credit card payments over the phone.
+          </div> 
+    </div>
+           <div class="tabDivLine"></div>
+           
+            <div class="desc">     
+               <div class="box">
+                <a href="https://eservices.amadorcourt.org/eservices"
+                  title="Continue to Search Online" target="_blank"
+                  class="btnContinuePay" id="Continue"></a>
+              </div>  
+           </div>  
+       
+            <div class="tabDivLine"></div>
+            <div class="indent1space2"></div>
+            
+             <h4>Access to Confidential Information</h4>
+             <div class="indent0-text">
+                There is no online access to information in cases that are classified as 
+                confidential.  Examples of confidential cases include most cases filed with 
+                the Juvenile Court and cases in which a judicial determination of paternity 
+                is sought.  Only those persons as authorized by state law or order of the 
+                court may review court records or case information in confidential cases. 
+             </div>
+             <div class="indent1space1"></div>
+             
+             <h4>Information Updates</h4>             
+             <div class="indent0-text">
+                Information appears online as soon as it is entered into the case management system. 
+                Every attempt is made to keep the case information up to date.  However, some information 
+                may not be entered until several days after the event occurred.
+             </div>
+             <div class="indent1space1"></div>  
+             
+             <h4>Identity Accuracy</h4>                           
+             <div class="indent0-text">
+                Do not assume that a person listed in this database is the person you are looking for.
+                 <br />
+                 <span class="TABfaqHeader">The Court cautions employers, 
+                credit agencies, and others to verify identity before taking any adverse action against a 
+                person whose name appears in this database.</span> Additional identifying information may be 
+                 available in the case file. To request a copy of documents from the case file, see 
+                 <a id="HyperLink1" href="gi-accessCourtFiles.aspx">Access Court Files/Records</a>
+             </div>
+             <div class="indent1space1"></div>             
+             <div class="indent0-text">
+                Do not assume a person listed as a defendant in a criminal or traffic case was 
+                convicted of the charges listed in the complaint or on the citation.   The defendant 
+                could have been found not guilty, charges reduced or the case dismissed. 
+             </div>
+             
+                                      
+             <a id="CASECODES"></a>
+             <div class="indent1space1"></div> 
+
+             <h4>CASE CODE VARIATIONS AND SEARCH TIPS</h4>
+                       
+             <div class="indent0-text">
+                Case information entered into the court's Case Management system may include
+                additional code identifying letters beyond what might appear on documents
+                obtained from the court. </div>
+             <div class="indent1space1"></div> 
+             <div class="indent0-text">             
+                For example: The case number 11-FC-99999 entered onto a 
+                hardcopy document may be entered into the system as 11-FCD-99999. 
+                While using the online search feature, the "FCD" added into the case
+                number <br />11-FCD-99999 would locate the case. Please note that the
+                hypen ("-") character is NOT required in the case number.</div>
+             <div class="indent1space1"></div> 
+             <div class="indent0-text">    
+                Knowing the category type ( FC for FAMILY ) and the ( D for DISSOLUTION ) 
+                 would assist you in more easily applying
+                a successful search and locating your case information.
+             </div>
+
+             <div class="indent1space2"></div>
+              <div class="columntable"> 
+                <table>
+                   <tr><td class="descSrch" colspan="2">PUBLICLY AVAILABLE - "CASE-TYPE CODES"</td></tr>
+                   <tr><td class="hdr">Case Codes</td><td class="hdr">Description</td></tr>
+                   <tr><td class="desc5">AP</td><td class="info5">APPEALS</td></tr>
+                   <tr><td class="desc5">CVCL</td><td class="info5">CIVIL – LIMITED</td></tr>
+                   <tr><td class="desc5">CVCU</td><td class="info5">CIVIL – UNLIMITED</td></tr>
+                   <tr><td class="desc5">CVH</td><td class="info5">CIVIL  - HARASSMENT</td></tr>
+                   <tr><td class="desc5">CR</td><td class="info5">CRIMINAL</td></tr>       
+                   <tr><td class="desc5">CVN</td><td class="info5">CIVIL – NAME CHANGE</td></tr>
+                   <tr><td class="desc5">FCD</td><td class="info5">FAMILY – DISSOLUTION</td></tr>
+                   <tr><td class="desc5">FCO</td><td class="info5">FAMILY – OTHER FAMILY LAW</td></tr>
+                   <tr><td class="desc5">FCV</td><td class="info5">FAMILY – DOMESTIC VIOLENCE</td></tr>
+                   <tr><td class="desc5">HC</td><td class="info5">HABEAS CORPUS</td></tr>
+                   <tr><td class="desc5">IW</td><td class="info5">INSPECTION WARRANT</td></tr>
+                   <tr><td class="desc5">MHL</td><td class="info5">LPS CONSERVATORSHIP</td></tr>
+                   <tr><td class="desc5">PRC</td><td class="info5">PROBATE – CONSERVATORSHIP</td></tr>
+                   <tr><td class="desc5">PRG</td><td class="info5">PROBATE – GUARDIANSHIPS</td></tr>
+                   <tr><td class="desc5">PRE</td><td class="info5">PROBATE – ESTATE</td></tr>
+                   <tr><td class="desc5">PRM</td><td class="info5">PROBATE – MINORS COMPROMISE</td></tr>
+                   <tr><td class="desc5">PRO</td><td class="info5">PROBATE – OTHER PROBATE</td></tr>
+                   <tr><td class="desc5">PRS</td><td class="info5">PROBATE – SPOUSAL PROPERTY PETITION</td></tr>
+                   <tr><td class="desc5">PRT</td><td class="info5">PROBATE – TRUST</td></tr>
+                   <tr><td class="desc5">SC</td><td class="info5">SMALL CLAIMS</td></tr>
+                   <tr><td class="desc5">SW</td><td class="info5">SEARCH WARRANT</td></tr>
+                   <tr><td class="desc5">TR</td><td class="info5">TRAFFIC</td></tr>
+                </table> 
+              </div>
+              
+             <div class="indent1space2"></div>
+              
+               <div class="columntable"> 
+                 <table>
+                   <tr><td class="descSrch" colspan="2">PUBLICLY UN-AVAILABLE - "CASE-TYPE CODES"</td></tr>                   
+                   <tr><td class="hdr">Case Codes</td><td class="hdr">Description</td></tr>
+                   <tr><td class="desc5">CVCLSLD</td><td class="info5">CIVIL – LIMITED SEALED</td></tr>
+                   <tr><td class="desc5">CVCUSLD</td><td class="info5">CIVIL – UNLIMITED SEALED</td></tr>
+                   <tr><td class="desc5">CRSLD</td><td class="info5">CRIMINAL SEALED</td></tr>
+                   <tr><td class="desc5">DCS</td><td class="info5">DEPARTMENT OF CHILD SUPPORT</td></tr>
+                   <tr><td class="desc5">DL</td><td class="info5">JUVENILE – DELINQUENT</td></tr>
+                   <tr><td class="desc5">DLSLD</td><td class="info5">DELINQUENT SEALED</td></tr>
+                   <tr><td class="desc5">DP</td><td class="info5">JUVENILE – DEPENDENCY</td></tr>
+                   <tr><td class="desc5">FCA</td><td class="info5">FAMILY – ADOPTION</td></tr>
+                   <tr><td class="desc5">FCP</td><td class="info5">FAMILY – PATERNITY</td></tr>
+                   <tr><td class="desc5">MH</td><td class="info5">MENTAL HEALTH</td></tr>
+                   <tr><td class="desc5">TRSLD</td><td class="info5">TRAFFIC SEALED</td></tr>
+                   <tr><td class="desc5">UD</td><td class="info5">UNLAWFUL DETAINER</td></tr>
+                   <tr><td class="desc5">WD</td><td class="info5">WILL ON DEPOSIT</td></tr>
+                </table>
+             </div>
+    
+             <div class="cleaner"></div>
+        </div>
+          <!-- simple Module -->
+       </div>
+       <!-- contentCenterWide -->
+    </div>
+    <!-- mainContentWrap -->
+
+   </div>
+       <div id="footerWrap">
+    <div class="footerRight">
+    <a href="https://webmail.amadorcourt.org/owa" target="_blank">
+    © 2017 Superior Court of AMADOR County</a>
+    </div>
+
+    <div class="footerLeft">
+    	<a href="gi-ada.aspx">ADA</a> | <a href="gi-contactUs.aspx">Contact Information</a>&nbsp;|&nbsp;
+    	<a href="gi-privacyPolicy.aspx">Privacy Policy</a>&nbsp;|&nbsp;
+    	<a href="gi-sitemap.aspx">Site Map</a>&nbsp;|&nbsp;
+    	<a href="gi-troubleshooting.aspx">Trouble Shooting</a>&nbsp;|&nbsp;
+    	<a href="gi-webaccessibility.aspx">Web Accessibility</a>&nbsp;|&nbsp;
+        <a href="mailto:webmaster@amadorcourt.org">Web Master</a>
+    </div>
+
+</div>
+  </div>
+    <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try{ 
+var pageTracker = _gat._getTracker("UA-10418280-1");
+pageTracker._trackPageview();
+} catch(err) {} 
+</script>
+
+</body>
+</html>
+

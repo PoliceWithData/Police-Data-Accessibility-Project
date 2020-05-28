@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <!--========================================
+    =              Head Elements               =
+    =========================================-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="application-name" content="One-Time Case Search">
+    <meta name="description" content="Official Nebraska.gov Online Application">
+    <link rel="canonical" href="/">
+    <base href="">
+    <title>JUSTICE Search - One-Time Case Search | Nebraska Judicial Branch</title>
+
+    <!--========================================
+    =                Stylesheets               =
+    =========================================-->
+    <link href="/base/foldex/assets/css/bootstrap/bootstrap.4.latest.min.css" rel="stylesheet" />
+    <link href="/base/foldex/assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/base/foldex/assets/css/foldex.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/print.css" rel="stylesheet" media="print" />
+
+    <style>
+        /* DESKTOP */
+        @media (min-width: 992px) {
+            #header { background-image: url('/base/images/backgrounds/courts-lg.jpg'); }
+        }
+
+        /* TABLET */
+        @media (max-width: 991px) and (min-width: 768px) {
+            #header { background-image: url('/base/images/backgrounds/courts-md.jpg'); }
+        }
+
+        /* ALL PHONE VIEWS */
+        @media (max-width: 767px) {
+            #header { background-image: url('/base/images/backgrounds/courts-sm.jpg'); }
+        }
+        #header { background-position: center 55%; }
+    </style>
+    <!--========================================
+=                  Scripts                 =
+=========================================-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+<script src="/base/js/jquery-3.1.0.min.js"></script>
+<script src="/base/js/jquery.tablesorter.min.js"></script>
+<script src="/base/foldex/assets/js/bootstrap/bootstrap.4.latest.bundle.min.js"></script>
+<script src="/base/foldex/assets/js/lib/chosen.jquery.min.js"></script>
+<script src="/base/foldex/assets/js/lib/jquery-ui-datepicker.min.js"></script>
+<script src="/base/foldex/assets/js/lib/stickyfill.min.js"></script>
+<script src="/base/foldex/assets/js/foldex.min.js"></script>
+<script src="js/application.js"></script>
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2042643335774645');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2042643335774645&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+</head>
+
+   <body>
+      <!-- Old IE Browser Alert -->
+<!--[if lte IE 8]>
+<div class="bg-danger old-ie-browser">
+    <div class="container text-center pvm">
+        <span class="glyphicon glyphicon-exclamation-sign block mbm" style="font-size:44px"></span>
+        <strong class="h3 block mtn mbs">Your Browser Version is Not Supported</strong>
+        Please upgrade your Internet Explorer browser, to the most recent supported version.
+    </div>
+</div>
+<![endif]-->
+
+      <nav class="navbar navbar-light navbar-expand-md">
+    <div class="container">
+        <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <i class="fa fa-bars"></i>
+      </button> -->
+        <a class="navbar-brand d-md-none" href="#">One-Time Case Search</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="navbar-brand nav-link d-md-inline" href="ccname.cgi">
+                        <span class="fa fa-home"></span>&nbsp;One-Time Case Search
+                    </a>
+                </li>
+                <!-- <li class="nav-item">
+               <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="http://example.com" id="responsiveNavbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+               <div class="dropdown-menu" aria-labelledby="responsiveNavbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li> -->
+            </ul>
+
+          
+            <ul class="nav navbar-nav float-lg-right">
+
+                <li class="nav-item">
+                    <form id="logoutForm" method="POST" action="ccname.cgi">
+                        <input type="hidden" name="logout" value="logout">
+                        <a class="nav-link" href="#" data-logout-form>
+                            <span class="fa fa-power-off"></span>&nbsp;Log Out
+                        </a>
+                        <script>
+                            $("[data-logout-form]").on('click', function(e) {
+                                e.preventDefault();
+                                $("#logoutForm").submit();
+                            });
+                        </script>
+                    </form>
+
+
+                </li>
+
+                <!-- <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarUserMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="fa fa-user-circle"></span>&nbsp;Hello, Mark Hamill
+               </a>
+               <div class="dropdown-menu dropdown-menu-inverse" aria-labelledby="navbarUserMenu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li> -->
+            </ul>
+          
+
+        </div>
+    </div>
+</nav>
+
+
+<header id="header">
+    <div class="container">
+        <div class="row agency-row">
+            <!-- Agency Logo -->
+            <div class="col-md-12 col-lg-4 order-lg-2 d-none d-md-flex text-lg-right agency-col agency-col-logo">
+                <a class="agency-logo" href="http://www.supremecourt.ne.gov/" target="_blank">
+                    <img class="img-fluid" src="/base/images/logos/courts.png" alt="Nebraska Judicial Branch" style="max-width:180px" />
+                </a>
+            </div>
+            <!-- /Agency Logo -->
+            <!-- Agency Name -->
+            <div class="col-md-12 col-lg-8 order-lg-1 agency-col agency-col-name">
+                <a class="agency-name" href="http://www.supremecourt.ne.gov/" target="_blank">
+                    Nebraska Judicial Branch
+                </a>
+            </div>
+            <!-- /Agency Name -->
+        </div>
+    </div>
+</header>
+
+<noscript>
+    <div class="bg-danger">
+        <div class="container">
+            <h5>Your browser's Javascript setting is currently DISABLED!</h5>
+            <p>JavaScript <span class="underline">MUST</span> be enabled to use this system.<br>
+                Errors will occur in processing if JavaScript is not enabled in your browser's 'Internet Options' or 'Preferences' settings.
+            </p>
+        </div><!-- /.container -->
+    </div><!-- /.bg-danger -->
+</noscript>
+
+<a href="#content" class="sr-only">Skip to content&hellip;</a>
+
+
+<form action="ccname.cgi" method="post">
+    <div id="content">
+        <div class="container">
+
+            <!-- Global Messaging goes here -->
+            <!-- <div class="alert alert-info">
+                <i class="fa fa-info-circle">&nbsp;</i>Global messaging pluging goes here.
+            </div> -->
+
+<!-- Messages -->
+
+
+
+
+
+
+            <h1 class="page-header"><span>JUSTICE Search</span></h1>
+
+						
+
+            <!-- App Alerts go here -->
+            <!-- <div class="alert alert-danger">
+                <i class="fa fa-exclamation-circle">&nbsp;</i>App errors and notices go here.
+            </div> -->
+
+            <div class="row">
+                <div class="d-none d-sm-block col-sm-3 col-lg-4">
+                    <img src="images/courthouse.svg" alt="Courthouse image" style="width:100%;filter:drop-shadow(0 2px 2px rgba(255, 255, 255, 0.5))">
+                </div>
+                <div class="col-sm-9 col-lg-8">
+                    <p class="lead mt-0">The JUSTICE court case search system provides access to criminal, civil, traffic, juvenile, and probate cases filed in all 93 of Nebraska's county and district&nbsp;courts.</p>
+                    <p>There is a 24 hour lag-time between when a new case is entered into the system, and when it appears on the search. Juvenile adjudication under the Nebraska Juvenile Code is not a conviction and does not disqualify the juvenile from future
+                        civil or military service. <a class="small" href="https://nebraskalegislature.gov/laws/statutes.php?statute=s4302080000" target="_blank"><i class="fa fa-info-circle"></i> See 43-280 Neb. Rev. Stat.</a></p>
+                    <hr>
+                    <p class="form-text">The JUSTICE system can provide you with all of the public information on up to 30 cases, as it's been entered by the court. This information includes:</p>
+                    <ul class="form-text styled">
+                        <li><strong>Case Detail</strong>, such as the date and outcome of the trial, what the case was about, and who the judge was.</li>
+                        <li><strong>Party Listing</strong>, including the plaintiff and defendant, and often times their associated attorneys as well.</li>
+                        <li><strong>Court Cost Information,</strong> including all fees associated with the case.</li>
+                        <li><strong>Payments</strong> by and to the Court.</li>
+                        <li><strong>Register of Actions</strong>, so you can follow everything that's been done with the case up to, during, and after the case, should it have been recorded.</li>
+                    </ul>
+
+                    <p class="form-text">
+                        <strong>Important</strong>: Refer to the <a href="http://www.nebraska.gov/faqs/justice/backlist.html" target="_blank">Installation Dates</a> for each court to ensure the case information you are looking for will be&nbsp;available.
+                    </p>
+
+                    <p class="form-text">You will not be able to view court documents using this service. To view documents online you must be a <a href="http://www.nebraska.gov/subscriber/howtosubscribe.html" target="_blank">Nebraska.gov subscriber</a>.</p>
+                    <hr>
+                    <p class="small form-text">Searches are performed using the name of a party involved in the case (who is not a witness). Other criteria can be selected to narrow your search. It is NOT recommended to narrow your search with other criteria, unless when searching
+                        by name only you receive a message that more than 30 matching cases were found. You will not be charged if more than 30 cases are found, but you will be required to perform your search again. Once your search has been completed you
+                        will have access to all the case details resulting from the search for a period of three (3) calendar days.
+                    </p>
+
+                        <div class="card mb-4">
+                            <div class="card-body">
+
+                                
+
+
+                                <p class="mb-0">
+                                    <i class="fa fa-info-circle text-info">&nbsp;</i>This service is <strong>$15 per search</strong>. <span class="text-muted">Searches with no results still require payment.</span>
+                                </p>
+                                <hr>
+                                <div class="form-group required mb-0">
+                                    <div class="form-check form-check-inline mb-0">
+                                        <input type="checkbox" id="tandc" class="form-check-input" name="tandc" value="I agree" />
+                                        <label for="tandc" class="form-check-label has-white-bg mb-0">
+                                            I have read and agree to the <a href="terms_and_conditions.html" target="_blank">Terms and Conditions</a> of this service.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+        <div class="form-actions">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 order-2 text-right">
+                        <button type="submit" class="btn btn-primary btn-lg" id="cc_access" name="cc_access" value="Begin a New Search">
+                            <i class="fa fa-search">&nbsp;</i>Begin Search
+                        </button>
+                    </div>
+                    <div class="col-6 order-1">
+                        <a href="cclogin.cgi" class="btn btn-secondary btn-lg">
+                            <i class="fa fa-arrow-left">&nbsp;</i>Back
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.content -->
+</form>
+
+<div id="analyticsPageName" style="display:none;">Index</div>
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col col-sm-6 col-lg-4">
+                <h5>Agency</h5>
+                <a target="_blank" href="http://www.supremecourt.ne.gov/">
+               Nebraska Judicial Branch
+            </a>
+                <!-- <p class="agency-contant">
+                    301 South 13th Street<br>
+                    Suite 301<br>
+                    Lincoln, NE 68506
+                </p> -->
+            </div>
+            <div class="footer-col col-sm-6 col-lg-3 text-sm-right text-md-right text-lg-left">
+                <h5>Resources</h5>
+                <ul class="resource-links">
+                    <li>
+                        <a href="http://www.nebraska.gov/" target="_blank" rel="noopener noreferrer">Nebraska.gov</a>
+                    </li>
+                    <li>
+                        <a href="http://www.nebraska.gov/agencies" target="_blank" rel="noopener noreferrer">All State Agencies</a>
+                    </li>
+                    <li>
+                        <a href="http://www.nebraska.gov/services" target="_blank" rel="noopener noreferrer">All State Services</a>
+                    </li>
+                    <li>
+                        <a href="http://www.nebraska.gov/policies" target="_blank" rel="noopener noreferrer">Policies</a>
+                    </li>
+                    <li>
+                        <a href="http://www.nebraska.gov/contact-us" target="_blank" rel="noopener noreferrer">Support</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col col-lg-5 text-lg-right text-md-center text-sm-center text-center">
+                <a class="brand-seal" href="http://www.nebraska.gov/" target="_blank" rel="noopener noreferrer">
+                    <svg width="32px" height="15px" viewBox="116 -1 157 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path d="M117.147997,14.4256088 C116.980749,18.8382442 116.671629,26.8565079 116.429263,32.1853704 C115.80266,46.4487236 115.814772,48.3292497 116.781368,48.4029783 C117.642855,48.5341187 138.127215,49.2698069 146.383649,49.5188999 L151.637061,49.6578951 L151.486683,54.5536141 C151.419929,57.2430153 151.227306,62.4626579 151.033817,66.1238301 C150.840327,69.7850023 150.897426,72.9537511 151.172381,73.1591151 C151.393844,73.366347 164.141689,73.4048551 179.451503,73.192673 C194.761317,72.980491 215.748726,72.7850085 226.028465,72.6947392 C236.361695,72.6026018 250.977994,72.4683792 258.581283,72.4178321 L272.339844,72.259821 L272.283612,70.6495426 C272.246123,69.5760237 271.61648,68.4157004 270.28395,67.064957 C269.00866,65.8196974 268.321776,64.5538903 268.288037,63.5877232 C268.252423,62.5678802 267.515797,61.4112929 266.019043,59.9588014 C263.913264,57.9364221 262.631485,54.9716643 263.337254,53.710966 C263.539974,53.3814385 263.177788,52.2117754 262.548145,51.0514522 C261.521568,49.2600934 261.454956,48.8862297 262.131601,48.3251867 C263.221183,47.3197924 263.086084,46.5183891 261.428856,45.0715015 C260.101949,43.8817859 259.985594,43.6171421 260.19033,40.2780256 C260.442934,36.7760133 260.442934,36.7760133 258.457259,35.1256297 C256.910763,33.7823581 256.567321,33.1494545 256.799165,32.1202717 C256.981266,31.2003087 256.683818,30.3508334 255.901198,29.4108179 C255.231184,28.6280942 254.708523,27.4640351 254.684156,26.7662477 C254.661663,26.1221364 254.030145,24.9081372 253.304765,24.0736056 C252.357922,23.031842 252.064223,22.2897186 252.419919,21.7398834 C252.672381,21.301136 252.852608,20.3274971 252.826366,19.5760338 C252.788878,18.5025149 252.452934,18.0843151 251.480715,17.8495587 C250.455005,17.6166703 250.117186,17.1447946 249.911726,15.8621757 C249.696894,14.3111772 249.087869,13.7412893 243.996947,10.5871013 C239.400569,7.7918332 237.714217,7.04460088 235.727534,6.89901177 C233.689234,6.80896656 232.892485,6.99801386 231.747537,7.95160017 C230.862548,8.68114287 229.593748,9.15538159 228.256461,9.20208069 C226.491241,9.26372351 226.109303,9.06209547 225.584768,7.84436036 C224.413721,4.98321851 223.487496,4.53189038 220.291127,5.01969985 C217.467324,5.44075763 217.358467,5.39081761 215.634626,3.57006636 L213.908911,1.69563915 L202.120164,1.51615584 C195.638322,1.47379977 186.472532,1.25646216 181.755909,1.15246327 C177.037411,0.994788427 166.211511,0.781681762 157.637876,0.651148444 C149.117734,0.518747163 138.236468,0.253832515 133.519844,0.149833622 C128.801346,-0.0078412175 123.337716,-0.0320126656 121.412023,0.0352340426 L117.881584,0.158519674 L117.667476,3.22925644 C117.513491,4.9543586 117.31337,9.95929742 117.147997,14.4256088 Z M232.709605,57.0889568 L223.673689,61.839419 L225.399395,51.7777785 L218.089186,44.6520851 L228.191647,43.1841115 L232.709605,34.0297285 L237.227563,43.1841115 L247.330025,44.6520851 L240.019815,51.7777785 L241.745521,61.839419 L232.709605,57.0889568 Z" id="NE-with-star" stroke="none" fill-rule="evenodd"></path>
+                    </svg>
+                    Official Nebraska Government Application
+                </a>
+                <div class="ni-mention">Built and Maintained by <a href="http://www.nebraska-interactive.com/" target="_blank" rel="noopener noreferrer">Nebraska Interactive</a></div>
+                <div class="copyright">&copy;&nbsp;<span id="cr-current-year">2016</span> State of Nebraska</div>
+                <div id="google_translate_element"></div>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({
+                            pageLanguage: 'en',
+                            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                        }, 'google_translate_element');
+                    }
+                </script>
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- GOOGLE ANALYTICS CODE HERE -->
+<script type="text/javascript">
+    elem = document.getElementById('analyticsPageName');
+var analyticsPageName = elem.innerHTML;
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-35904338-8']);
+    _gaq.push(['_setLocalRemoteServerMode']);
+_gaq.push(['_trackPageview', analyticsPageName]);
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<!-- /GOOGLE ANALYTICS CODE -->
+
+   </body>
+</html>
+

@@ -1,0 +1,655 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	AlacourtACCESS
+</title><link href="styles.css" rel="stylesheet" type="text/css" /><meta name="description" content="AlacourtAccess.com provides access to all state trial court records in the State of Alabama. This includes Civil,Domestic , Criminal , and Traffic. You can use our name or case number searches to determine if the person or case you are looking for exists within the system. To start using the system; sign up for an account and receive your report instantly." /><meta name="keywords" content="AlacourtAccess, Alacourt, Alacourt Access, Access, Law, Alabama, State, Trial, Court, Records, Civil, Criminal, Domestic, Divorce, Traffic, public records, public record, Alabama-Records, Alabama Records, E-File, Electronic notification, Email, Alabama criminal record, Alabama civil court records, Alabama Marriage records, Alabama Divorce records" />      
+   
+    
+    <script  type ="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type ="text/javascript"  src="Javascript/jscript.js"></script> 
+<style type="text/css">
+	.ctl00_Menu1_0 { background-color:white;visibility:hidden;display:none;position:absolute;left:0px;top:0px; }
+	.ctl00_Menu1_1 { color:White;text-decoration:none; }
+	.ctl00_Menu1_2 { color:White; }
+	.ctl00_Menu1_3 { border-style:none; }
+	.ctl00_Menu1_4 { padding:1px 3px 1px 3px; }
+	.ctl00_Menu1_5 { border-style:none; }
+	.ctl00_Menu1_6 { padding:2px 0px 2px 0px; }
+	.ctl00_Menu1_7 {  }
+	.ctl00_Menu1_8 { border-style:none; }
+	.ctl00_Menu1_9 {  }
+	.ctl00_Menu1_10 { border-style:none; }
+	.ctl00_Menu1_11 {  }
+
+</style><script type="text/javascript">var appInsights=window.appInsights||function(config){function t(config){i[config]=function(){var t=arguments;i.queue.push(function(){i[config].apply(i,t)})}}var i={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",r,f;setTimeout(function(){var t=u.createElement(o);t.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(t)});try{i.cookie=u.cookie}catch(y){}for(i.queue=[],r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)t("track"+r.pop());return t("set"+s),t("clear"+s),t(h+a),t(c+a),t(h+v),t(c+v),t("flush"),config.disableExceptionTracking||(r="onerror",t("_"+r),f=e[r],e[r]=function(config,t,u,e,o){var s=f&&f(config,t,u,e,o);return s!==!0&&i["_"+r](config,t,u,e,o),s}),i}({instrumentationKey:"ad13fea3-727d-403e-8d6d-789f735126a9",sdkExtension:"a"});window.appInsights=appInsights;appInsights.queue&&appInsights.queue.length===0&&appInsights.trackPageView();</script></head>
+<body>
+    <form name="aspnetForm" method="post" action="./" id="aspnetForm">
+<div>
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="zr3ewpvUxPPwkPNyfkms5PkZMDKCVzVXZ24tDY+p/YgTYGvr0M/iSw18tqh6hJTFAjTvf4/3VvA045IRDhVk2nVeJP1mhqXMPEICrJ2xuvcA/7N8kO0Ri9sBlNKBZsPq362UuFx7PEQ7DU1e8bhkinyVVW/+kWW94S0uUqLb3Uezjp18BTkgpgf0MoCmclIAbEk2sc78XgrF9rKgfLSry6gmG+4YQglL80CUsOusZB4IkOeaHk13qUuZgmNZw43gp4rhNbcnJWxnCtp6GCtfXpaSzHXpbR5Lqb9Ydj0gtrgnN6eQ5flp724R+Q6bSeqQ2YBbrauOT+TCfV1s+t2/tTD3er/Gsa+TOch5FyQylgtKyxA0CPWagnmUwYQJgenJqbrUwGUkN3TbLp2A3V2yD0fQDfFp6Qq+iGIwX6huDtxTFrj5JC5B1TsbVYo+V59zvJS4yEDZzpntzExMwPsdXb31FwNYMoZ0rXNcxHxCm8hTgNR+NliBraXsFE0Y2DbXPeM6WzVhvvbSXO28GCT3KrzD57p3aqhfq1pSMbNSlhjVagANovDzJUlwXjNYHvPk++n7h6DLnV7Ekb4NJcq0fqhqnbyt/3kXnGB3f/zh2z8dcOqBHJDtlHsdnLMN7mx4IXnNOla6ag3FMYPEp/xsoQJr7n4TGMCNVIS1zaxRu4rK92iAyB94bttcfY0prWy5z+Q6niFEhah+GvGhMTqo//i9FOd3rZMZFGvKi9MAl+a+mr9kcZbf/oHJZfB2d9uc/xg/ZEMm9RDPFxm+8uDHnUGyo9OB1enTieqojlB1ts2IRv9zOW+m6KSOdQAN6482NuS7PNfzLtaOfcx+26hw9MFS9IuMZ1YUqCZbaCxrVedHzdQGK0L3dZzar9v9PxMJBF49YeKNbuq27sfA1ukgIljcE5wVmyzvW1pq2Up6CMXLBIO06nguzxm3eafG+NEIOONrnEpzazwFk0lA/v93AueoHIKpDR7ImMibe2IhZ3MT3YaK1X6Wu6OBc7WpKRBOn/42SzRDRFbDETBTZ3PjjBjkiiUtslFFGIVotnF6NHJMyeK/KiY9B4MDnk8vwfmo8rB3JZQTj4C1aXVoGyvlE5aqzixiO/KMa9/3EtgA8PVegIUzlAp6Mol0t+wVLieJVcyjx9y3aw0hl+WzYOStvFvS/IPyUPUYSlt/IUmOeFpKo2rY61XV3f2sNEdCe003c12IjV6FO4C9K+lh89g6Q9tSyhHFD4X2QXsblNp20PqhdXZ+uiQUU4nJ2vB3h1tNy//ZVY8m15LkNYVAp/FkLk7pS1R1ikgyOxpqcTw7UM3goNRH52SwMK2OKjwYOP7RDxkKNe6ltZlFLRs/sPKWiiabFZ3G6O4uptrA+KkGhivvu2WhzB1OBmn67FrgaC+l+Y2Om9QOfW1xjWcrSxCIndE9G91q5WQe7ghcHkxhbYeFqzlV" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZNcalzaNG5pnVEOd7t8kEk6XXh5l7adf-_08dOUa0A5zTtwiqw2&amp;t=637192064225708388" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=6qyDOaOZyslxHkxXsb2KVYITYYYk3fK8I2B8KyhJyyZAKuCE3IihLkBnXxMtmf_8mEOTqpiHaFAcTO8v3FlQsDvsjkChhohSkhJURaflgOoO6kEk0&amp;t=5f65bdf4" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=uHIkleVeDJf4xS50Krz-yHgziRcpoHk6bb3myMQFdYzDVqfdcmvTvd_ufVAqBIh-GcXx6rCCaBYQULhQ1Qr-IKeBywbFjC-ULN9qr2TNkD8znDTgG9qwVtHU2AWEMTO5gTcGbw7fykqT5_2ekkpzIyQNVL01&amp;t=ffffffffecf19baa" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Jw6tUGWnA15YEa3ai3FadPVveNw8t60qK-DKyXpPERB3LfVQOjsPrxrjdcN_ldNl480yzpS82-QgJZzpFIazik4Ja_f1RJaQiWV_DK_KczMyVUhD74jgPhq_cKSRrVwVZe9HNWLrsXvCDtfulcdqnH-4lZY1&amp;t=ffffffffecf19baa" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=5h0NtxUlQa8Df2oWXPhULzEXfA3reekmCHNnsW5XQse8jMih1DuaUNcc58L47otJbvbxRroIxrbJQeyc8x0VlY-kHeWUzF_05Y0uyeIiobCP-UwAqi2QCGxL78VXvV4aHg6imA2&amp;t=ffffffff87636c38" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=I5r_uwF_kmHq3vRnqwJ1AUEoyNLUC_FDQ90NjhY4NyzHUaPNAnHDfDy5qeh40VBKz86-KBQYPrMby8LcK2BCcZkbK4bFrzE4tDznC6scsRezn3O_sY2Mwd_emAwwkMoCr9S8EHTFMPZ77M5AWklon87l-SA1&amp;t=ffffffff87636c38" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=YA4am0-Wx5D6Al2solBrp8WXyXCZPaUXGXQuASswSYJ2NgqCEL1TA3lgTl2iZH4IxzjIcVW2mMEhPCz6PdxeoZAwnkv2_Q8Y6zyixUivDN2t9h49KIioe11Vv2UfrTSZJVbV-MdL0xxlIREXby_j1ZHNRO01&amp;t=ffffffff87636c38" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=rlicvrbMGEB1GFbgiKVbMPMUgzHja68CX3okzuTjSfVJ-STrJjZhcA1YA88xyP9bDwmVKZ_xN2LWR9rjcLeRPjAYBkMnkSmpKRnJ2IXj6YwS-a0L__ozmuuCXCzlmW61TQOuPw2&amp;t=ffffffff87636c38" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=CqwIbZAUnW7FSFSzLAcomy36Mao6dZBB2VJj1KUCAHVtmtjFboNbGIHU1vej2Cfi5CMJR3XiJfjNuGQyJGRH3gsfEO0hUI05-wdIjJSsNSeNZQ81MuaY8qnNhAkKbJTSg1X0jA2&amp;t=ffffffff87636c38" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=5Q_hoBh-rKu0GLFmViEi5hZF4sL5MSYUd_XZJy-UJ4tL5QBAz1LZQAQglrPmsQtBMARaNFhiZgJLb1oF9m7rnoGOuerDB8QFRfXqqAOk-dj0Scm8TCHIXUi37lkWMyjs9oSe11TQtIivsC0yUmkNms9gSR01&amp;t=ffffffff87636c38" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=EWjdl4CewJxCRxDQlcrNfGWn8ujXoY8tOzA0nYB0OkfQtlzUpYr5TyMS4cZyQl3RXOwdjLF7wPOBRxpLcF0kjjhOM483Yoxb63lgIkYQ121AkvnSAVlVpnw_zTKBEsn773B652pNAQs0h0wyoS6ZvZwVRyM1&amp;t=ffffffff87636c38" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=a8-5fblyF_ztGy9t8kO_wGOig_NY4o6heDr1nMskC4SK9NHFq6cxKvLeKYUJjY9M3xCOu6QDkul9Mm-ILLzWzisrv318qPzZUBq2HJX6o3VyXOcpdulT5mCurwhE4QWrPMjTTBlsGPdpQ0qMSnN77Y4WDL2IuEqe-8w23KtCDFBInVB30&amp;t=ffffffff87636c38" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=xAeyHohLykseClGRqhTsxdzARnT2nWyhnTZKN4TMx3iINHtWAyff29FGJEpJ3hvwqw-bwdk9VgliQhZQnj4oJwmlSgVc93NjEFE3Gt8Bi9qB0tsRBkcR7IIslYxUt3Nnddb-1hqhO9hvosKmYNNQFpzTZPI1&amp;t=ffffffff87636c38" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var PageMethods = function() {
+PageMethods.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+PageMethods.prototype = {
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return PageMethods._staticInstance.get_path();},
+cmdLogOff_Click:function(succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'cmdLogOff_Click',false,{},succeededCallback,failedCallback,userContext); },
+getPDF:function(County,SettingDate,LastName,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'getPDF',false,{County:County,SettingDate:SettingDate,LastName:LastName},succeededCallback,failedCallback,userContext); }}
+PageMethods.registerClass('PageMethods',Sys.Net.WebServiceProxy);
+PageMethods._staticInstance = new PageMethods();
+PageMethods.set_path = function(value) { PageMethods._staticInstance.set_path(value); }
+PageMethods.get_path = function() { return PageMethods._staticInstance.get_path(); }
+PageMethods.set_timeout = function(value) { PageMethods._staticInstance.set_timeout(value); }
+PageMethods.get_timeout = function() { return PageMethods._staticInstance.get_timeout(); }
+PageMethods.set_defaultUserContext = function(value) { PageMethods._staticInstance.set_defaultUserContext(value); }
+PageMethods.get_defaultUserContext = function() { return PageMethods._staticInstance.get_defaultUserContext(); }
+PageMethods.set_defaultSucceededCallback = function(value) { PageMethods._staticInstance.set_defaultSucceededCallback(value); }
+PageMethods.get_defaultSucceededCallback = function() { return PageMethods._staticInstance.get_defaultSucceededCallback(); }
+PageMethods.set_defaultFailedCallback = function(value) { PageMethods._staticInstance.set_defaultFailedCallback(value); }
+PageMethods.get_defaultFailedCallback = function() { return PageMethods._staticInstance.get_defaultFailedCallback(); }
+PageMethods.set_enableJsonp = function(value) { PageMethods._staticInstance.set_enableJsonp(value); }
+PageMethods.get_enableJsonp = function() { return PageMethods._staticInstance.get_enableJsonp(); }
+PageMethods.set_jsonpCallbackParameter = function(value) { PageMethods._staticInstance.set_jsonpCallbackParameter(value); }
+PageMethods.get_jsonpCallbackParameter = function() { return PageMethods._staticInstance.get_jsonpCallbackParameter(); }
+PageMethods.set_path("default.aspx");
+PageMethods.cmdLogOff_Click= function(onSuccess,onFailed,userContext) {PageMethods._staticInstance.cmdLogOff_Click(onSuccess,onFailed,userContext); }
+PageMethods.getPDF= function(County,SettingDate,LastName,onSuccess,onFailed,userContext) {PageMethods._staticInstance.getPDF(County,SettingDate,LastName,onSuccess,onFailed,userContext); }
+//]]>
+</script>
+
+<script src="/WebResource.axd?d=JoBkLzP19aTuxbWOhHobYg6CLFF13X05WL1JELY3EW514WkXQdCwfFqpMFA0EacyCMSGWA2&amp;t=637192064225708388" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="AxD4a6jjrIbyPVQ8T6nJehUFI30eo5Rnx59FgFl1jIkEeeycPwFZbD5MIKSHwt/KqL71RXJQYF/M6f94ZJ6SaLQxF2XyxV9qiGLYYmkZsUDX64yO8SXXtUUt34dBDQYjTLtgVerH35Mt5phryajfvmbGohUMODNbmHoDqU1GGB+ZkvSN" />
+</div>
+     <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$scriptManager', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div>
+        <table align="center" bgcolor="#cccccc" border="0" cellpadding="0" cellspacing="0"
+            style="width: 750px">
+            <tr>
+                <td>
+                      
+                               
+ <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td  background="Images/backgrTop.gif"          width="10"><img src="Images/spacer.gif" width="10" height="55"></td>
+    <td background="Images/backgrTop.gif"    valign="bottom"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" background="" align="right">
+        <tr> 
+          <td valign="middle" align="left" width="100%" style="height: 55px"> 
+            <img src="Images/JusOneLooklogoNew.png" /></td>
+          <td align="right" width="100%" valign="bottom" style="height: 55px"> 
+            <table width="400" border="0" cellspacing="0" cellpadding="0" align="right">
+              <tr> 
+                <td  valign="bottom" style="width: 25px" align="right">
+                    <img src="Images/largeMenuDiag1.gif" width="25" height="38"></td>
+                <td width="100%" align="right" height="33" valign="bottom"> 
+                <table style ="width:100%; height:100%;"  border="0" cellspacing="0" cellpadding="0">
+                <tr><td style ="color:White; font-weight:bold; height:10px;"  valign ="middle"  > 
+                    Email:<input name="ctl00$txtEmail" type="text" id="ctl00_txtEmail" class="txt" OnChange="setLoginFocus(&#39;0&#39;)" style="width:120px;" />
+                    Pass:<input name="ctl00$txtPassword" type="password" id="ctl00_txtPassword" class="txt" OnChange="setLoginFocus(&#39;0&#39;)" style="width:100px;" />
+                   <input type="image" name="ctl00$btnLogin" id="ctl00_btnLogin" src="Images/login.gif" style="border-width:0px;" />
+                 </td></tr>
+                 <tr><td valign="bottom">
+                 <table border="0" cellspacing="0" cellpadding="0" background="" height="23" 
+                         style="width: 100%; border-top: white 1px solid; background-color: #666666;">
+                    <tr> 
+                       
+                        <td height="23" style="font-size: 6pt; color: whitesmoke"> GET YOUR OWN ACCOUNT</td>
+                        <td style="font-size: xx-small; color: #ffffff" width="15"><img src="Images/spacer.gif" width="10" height="23"></td>
+                        <td width="60">
+                            <a id="ctl00_lnkSignUp" href="frmSignUp.aspx"><img src='Images/signUp.gif' border ='0'/></a>
+                          </td>
+                        <td width="10"><img src="Images/spacer.gif" width="10" height="23"></td>
+                       
+                    </tr>
+                  </table>
+                </td></tr>
+                </table>
+                  
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr> 
+          <td align="right" colspan="2" width="100%"> 
+         <table border="0" cellpadding="0" cellspacing="0" style="height: 17px" align="right">
+             <tr>
+                 <td valign="top" align="right">
+                     <img src="Images/menuDiag1.gif" /></td>
+                 <td align="right" style="border-top: #ffffff 1px solid; background-color: #000000" valign="top">
+         <a href="#ctl00_Menu1_SkipLink"><img alt="Skip Navigation Links" src="/WebResource.axd?d=rKN1opQVoh180LaGjXZZkJFmAlLoR-QmwWjSMuFOvji0M3cHagIB9a0gN5wUH-qEIIYqLA2&amp;t=637192064225708388" width="0" height="0" style="border-width:0px;" /></a><table id="ctl00_Menu1" class="TopMenu ctl00_Menu1_2" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n0"><table class="TopMenuItems ctl00_Menu1_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="ctl00_Menu1_1 TopMenuItems ctl00_Menu1_3" href="Default.aspx" style="border-style:none;font-size:1em;">HOME</a></td>
+			</tr>
+		</table></td><td style="width:5px;"></td><td><img src="Images/menuSpacer.gif" alt="" /></td><td style="width:5px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n1"><table class="TopMenuItems ctl00_Menu1_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="ctl00_Menu1_1 TopMenuItems ctl00_Menu1_3" href="frmLogin.aspx" style="border-style:none;font-size:1em;">LOGIN</a></td>
+			</tr>
+		</table></td><td style="width:5px;"></td><td><img src="Images/menuSpacer.gif" alt="" /></td><td style="width:5px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n2"><table class="TopMenuItems ctl00_Menu1_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="ctl00_Menu1_1 TopMenuItems ctl00_Menu1_3" href="frmTermsOfUse.aspx" style="border-style:none;font-size:1em;">Terms & Conditions</a></td>
+			</tr>
+		</table></td><td style="width:5px;"></td><td><img src="Images/menuSpacer.gif" alt="" /></td><td style="width:5px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n3"><table class="TopMenuItems ctl00_Menu1_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="ctl00_Menu1_1 TopMenuItems ctl00_Menu1_3" href="frmPrivacy.aspx" style="border-style:none;font-size:1em;">Privacy</a></td>
+			</tr>
+		</table></td><td style="width:5px;"></td><td><img src="Images/menuSpacer.gif" alt="" /></td><td style="width:5px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n4"><table class="TopMenuItems ctl00_Menu1_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="ctl00_Menu1_1 TopMenuItems ctl00_Menu1_3" href="frmContactUs.aspx" style="border-style:none;font-size:1em;">Contact Us</a></td>
+			</tr>
+		</table></td><td style="width:5px;"></td>
+	</tr>
+</table><a id="ctl00_Menu1_SkipLink"></a>
+                 </td>
+             </tr>
+         </table>
+        
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td bgcolor="#000000" width="1"><img src="Images/spacer.gif" width="1" height="55"></td>
+  </tr>
+</table>
+
+  
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-right: #000000 1px solid; border-top: #000000 1px solid; border-left: #000000 1px solid; border-bottom: #000000 1px solid">
+  <tr bgcolor="#FFFFFF"> 
+      
+    <td width="10"><img src="Images/spacer.gif" width="10" height="23"></td>
+    <td>
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tr>
+		   
+            <td width="1"></td>
+            <td width="684" height="23" align="center"> 
+            <div id ="title"  > <span class="totherL" >ON-DEMAND Access To Alabama State Trial Court Records... One Case At a Time</span></div> 
+              
+           </td>
+		 
+          </tr>
+        </table>
+		</td>
+    </tr>
+    <tr> 
+      
+    <td width="10"><img src="Images/blackBorder.gif" width="10" height="4"></td>
+      
+    <td  ><img src="Images/blackBorder.gif" width="100%" height="4"></td>
+    </tr>
+  </table>
+                    
+                    
+                    </td>
+            </tr>
+            <tr>
+                <td>
+         
+    
+        
+   <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td>
+            </td>
+            <td height="10" width="610">
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td width="15">
+            </td>
+            <td valign="middle">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-right: black 1px solid;
+                    border-top: black 1px solid; border-left: black 1px solid; width: 700px; border-bottom: black 1px solid;
+                    height: 400px; background-color: #ffffff">
+                    <tr>
+                        <td width="10">
+                        </td>
+                        <td height="10">
+                        </td>
+                        <td width="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="10">
+                            &nbsp;</td>
+                        <td  style="height:150px;">
+                            <table cellpadding="0" cellspacing="0" style="width: 100%; height:100%;">
+                                <tr>
+                                    <td align="center" valign="top"  >
+                                        <table border="0" cellpadding="0" cellspacing="0"   >
+                                            <tr>
+                                                <td background="images/top_left_bg.gif" style="height: 28px" width="8">
+                                                </td>
+                                                <td background="images/top_center_bg.gif" style="font-weight: bold; font-size: 8pt;
+                                                    vertical-align: middle; text-align: left" valign="top"> &nbsp;<img src="Images/bullet.gif" />
+                                                    Type of Searches</td>
+                                                <td align="right" style="height: 28px" width="8">
+                                                    <img height="28" src="images/top_right_bg.gif" width="11" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td background="images/left_bg.gif" height="100%" width="8">
+                                                </td>
+                                                <td align="left" bgcolor="white" valign="top" style="width: 200px; height:150px;">
+                                                    <table cellpadding="0" cellspacing="0" style="width: 100%; height:150px;">
+                                                        <tr>
+                                                            <td>
+                                                               
+                                                   <ul>
+                                                   <li>Name searches</li><li>Case Number</li>
+                                                  </ul>
+                                                  </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="right"  valign ="bottom" >
+                                                             <br />
+                                                            
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                   
+                                                  
+                                                  
+                                                </td>
+                                                <td background="images/right_bg.gif" height="100%" width="11">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="9" valign="top">
+                                                    <img alt="" border="0" height="9" src="images/c1.gif" width="8" /></td>
+                                                <td background="images/bottom_bg.gif" height="9" valign="top">
+                                                </td>
+                                                <td height="9" valign="top" width="11">
+                                                    <img alt="" border="0" height="9" src="images/c2.gif" width="11" /></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="10">
+                                        &nbsp;</td>
+                                    <td align="center" valign="top"  >
+                                    <table border="0" cellpadding="0" cellspacing="0"     align="center"  >
+                                    <tr>
+                                    <td background="images/top_left_bg.gif" style="height: 28px" width="8">
+                                    </td>
+                                    <td background="images/top_center_bg.gif" style="font-weight: bold; font-size: x-small;
+                                        vertical-align: middle; text-align: left" valign="top">
+                                        &nbsp;<img src="Images/bullet.gif" />
+                                        Alabama Court Records Available</td>
+                                    <td align="right" style="height: 28px" width="8">
+                                        <img height="28" src="images/top_right_bg.gif" width="11" /></td>
+                                </tr>
+                                <tr>
+                                    <td background="images/left_bg.gif" height="100%" width="8">
+                                    </td>
+                                    <td align="left" bgcolor="white"   valign="top"  style ="width:235px; height:150px;">
+                                        <table cellpadding="0" cellspacing="0" style="width: 100%; height:150px;">
+                                            <tr>
+                                                <td>
+                                                    <ul>
+                                                    <li>Criminal Records</li><li>Civil Records</li><li>Small Claims Records</li><li>State Traffic Records</li>
+                                                    <li>Domestic Relations</li>
+                                                    <li>Child Support<br />
+                                                    </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="right" valign ="bottom" >
+                                                    
+                                                </td>
+                                            </tr>
+                                        </table>                                
+                                    </td>
+                                    <td background="images/right_bg.gif" height="100%" width="11">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="9" valign="top">
+                                        <img alt="" border="0" height="9" src="images/c1.gif" width="8" /></td>
+                                    <td background="images/bottom_bg.gif" height="9" valign="top">
+                                    </td>
+                                    <td height="9" valign="top" width="11">
+                                        <img alt="" border="0" height="9" src="images/c2.gif" width="11" /></td>
+                                </tr>
+                            </table>
+                                    </td>
+                                    <td width="10">
+                                        &nbsp;</td>
+                                    <td  align="center" valign="top"  >
+                                    <table border="0" cellpadding="0" cellspacing="0"     >
+                                            <tr>
+                                                <td background="images/top_left_bg.gif" style="height: 28px" width="8">
+                                                </td>
+                                                <td background="images/top_center_bg.gif" style="font-weight: bold; font-size: 8pt;
+                                                    vertical-align: middle; text-align: left" valign="top"> &nbsp;<img src="Images/bullet.gif" />
+                                                    </td>
+                                                <td align="right" style="height: 28px" width="8">
+                                                    <img height="28" src="images/top_right_bg.gif" width="11" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td background="images/left_bg.gif" height="100%" width="8">
+                                                </td>
+                                                <td align="left" bgcolor="white" valign="top" style="width: 200px; height:150px;" >
+                                                <img id="ctl00_ContentPlaceHolder1_Image1" src="Images/Gavel.jpg" style="height:150px;width:200px;border-width:0px;" />
+                                      
+                                         </td>
+                                                <td background="images/right_bg.gif" height="100%" width="11">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="9" valign="top">
+                                                    <img alt="" border="0" height="9" src="images/c1.gif" width="8" /></td>
+                                                <td background="images/bottom_bg.gif" height="9" valign="top">
+                                                </td>
+                                                <td height="9" valign="top" width="11">
+                                                    <img alt="" border="0" height="9" src="images/c2.gif" width="11" /></td>
+                                            </tr>
+                                        </table>
+                                     </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="10">  &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td width="10">  </td>
+                        <td>  &nbsp;</td>
+                        <td width="10">  </td>
+                    </tr>
+                    <tr>
+                        <td width="10">  &nbsp;</td>
+                        <td> &nbsp;</td>
+                        <td width="10"> &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="left" width="10"> </td>
+                        <td align="left"  >
+                            <table cellpadding="0" cellspacing="0" style="width: 100%">
+                                <tr>
+                                    <td valign="top">
+                                        <table border="0" cellpadding="0" cellspacing="0"      >
+                                            <tr>
+                                                <td background="images/top_left_bg.gif" style="height: 28px" width="8">
+                                                </td>
+                                                <td background="images/top_center_bg.gif" style="font-weight: bold; font-size: 8pt;
+                                                    vertical-align: middle; text-align: left" valign="top">
+                                                    &nbsp;<img src="Images/bullet.gif" /> Prices</td>
+                                                <td align="right" style="height: 28px" width="8">
+                                                    <img height="28" src="images/top_right_bg.gif" width="11" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td background="images/left_bg.gif" height="100%" width="8">
+                                                </td>
+                                                <td align="left" bgcolor="white" valign="top" style="height: 150px; width: 100%;" >
+                                                       <br />
+                                                    <ul>
+                                                        <li>Name Search:&nbsp;<span id="ctl00_ContentPlaceHolder1_lblReportPrice" class="lblPrices">$9.99</span>
+                                                            <img src="Images/help.gif" id="ctl00_ContentPlaceHolder1_helpCaseDetail_btnInfo" />
+           
+         <div id="ctl00_ContentPlaceHolder1_helpCaseDetail_divHelpText" style="padding-right: 5px; overflow-y: scroll; padding-left: 5px; font-size: 10pt; padding-bottom: 5px; width: 200px; color: #ffffff; line-height: normal; padding-top: 5px; height: 200px; background-color: #f90">Case Detail report includes basic case information, court action, case status, setting dates, party information, financial history, and a detailed case action summary.<br/><br/><b>A search result indicating 'No Matching Records on File' is a search.</b></div>
+        
+
+
+                                                            (One case detail included. <span id="ctl00_ContentPlaceHolder1_lblReportPrice2" class="lblPrices">$9.99</span> per case thereafter). &nbsp;</li>
+                                                        <li>Case Number search:&nbsp;<span id="ctl00_ContentPlaceHolder1_lblReportPrice3" class="lblPrices">$9.99</span>
+                                                            <img src="Images/help.gif" id="ctl00_ContentPlaceHolder1_UcHelp1_btnInfo" />
+           
+         <div id="ctl00_ContentPlaceHolder1_UcHelp1_divHelpText" style="padding-right: 5px; overflow-y: scroll; padding-left: 5px; font-size: 10pt; padding-bottom: 5px; width: 200px; color: #ffffff; line-height: normal; padding-top: 5px; height: 200px; background-color: #f90">Case Detail report includes basic case information, court action, case status, setting dates, party information, financial history, and a detailed case action summary.</div>
+        
+
+
+                                                            (One case detail included). &nbsp;</li>
+                                                        <li>Images:
+                                                            <span id="ctl00_ContentPlaceHolder1_lblImagePriceConst" class="lblPrices">$5.00</span>
+                                                            for the first 20 pages;
+                                                            <span id="ctl00_ContentPlaceHolder1_lblImagePriceVar" class="lblPrices">$0.50</span>
+                                                            per page thereafter</li>
+                                                        <li>Case Monitoring<img src="Images/help.gif" id="ctl00_ContentPlaceHolder1_helpCaseMonitoring_btnInfo" />
+           
+         <div id="ctl00_ContentPlaceHolder1_helpCaseMonitoring_divHelpText" style="padding-right: 5px; overflow-y: scroll; padding-left: 5px; font-size: 10pt; padding-bottom: 5px; width: 200px; color: #ffffff; line-height: normal; padding-top: 5px; height: 200px; background-color: #f90">Allows a subscriber to monitor future changes in a case record.  The subscriber receives an email notification anytime a change is entered into the state system.  The notification email shows the old information, along with the change .</div>
+        
+
+
+                                                            for the lifetime of the Case. District Case
+                                                            <span id="ctl00_ContentPlaceHolder1_lblDCaseMonitoringPrice" class="lblPrices">$19.99</span>. Circuit Case<span id="ctl00_ContentPlaceHolder1_lblCCaseMonitoringPrice" class="lblPrices">$29.99</span>.&nbsp;<br />
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td background="images/right_bg.gif" height="100%" width="11">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="9" valign="top">
+                                                    <img alt="" border="0" height="9" src="images/c1.gif" width="8" /></td>
+                                                <td background="images/bottom_bg.gif" height="9" valign="top">
+                                                </td>
+                                                <td height="9" valign="top" width="11">
+                                                    <img alt="" border="0" height="9" src="images/c2.gif" width="11" /></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="10"> &nbsp;</td>
+                                    <td valign="top">
+                                        <table border="0" cellpadding="0" cellspacing="0"  >
+                                            <tr>
+                                                <td background="images/top_left_bg.gif" style="height: 28px" width="8">
+                                                </td>
+                                                <td background="images/top_center_bg.gif" style="font-weight: bold; font-size: 8pt;
+                                                    vertical-align: middle; text-align: left" valign="top">
+                                                    &nbsp;<img src="Images/bullet.gif" /> Report Info</td>
+                                                <td align="right" style="height: 28px" width="8">
+                                                    <img height="28" src="images/top_right_bg.gif" width="11" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td background="images/left_bg.gif" height="100%" width="8">
+                                                </td>
+                                                <td align="left" bgcolor="white" valign="top" style="height: 150px; width: 200px;" >
+                                                    <br />
+                                                    <ul>
+                                                        <li>Setting Dates</li>
+                                                        <li>Court Action</li>
+                                                        <li>Party(ies) &nbsp;info</li>
+                                                        <li>Case Action Summary</li>
+                                                        <li>Financial info</li>
+                                                        <li>Images</li>
+                                                    </ul>
+                                                </td>
+                                                <td background="images/right_bg.gif" height="100%" width="11">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="9" valign="top">
+                                                    <img alt="" border="0" height="9" src="images/c1.gif" width="8" /></td>
+                                                <td background="images/bottom_bg.gif" height="9" valign="top">
+                                                </td>
+                                                <td height="9" valign="top" width="11">
+                                                    <img alt="" border="0" height="9" src="images/c2.gif" width="11" /></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td align="left">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td align="left">
+                        </td>
+                        <td align="left" height="10">
+                        </td>
+                        <td align="left">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td width="15">
+            </td>
+        </tr>
+        <tr>
+            <td style="height: 10px" width="15">
+            </td>
+            <td style="height: 10px" width="610">
+            </td>
+            <td style="height: 10px" width="15">
+            </td>
+        </tr>
+    </table>
+
+                </td>
+            </tr>
+            <tr>
+                <td valign="bottom">
+                    
+                    
+ <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td colspan="3"><img src="Images/spacer.gif" width="640" height="4"></td>
+  </tr>
+  <tr> 
+    <td width="11"><img src="Images/bottom_left.gif" width="11" height="31"></td>
+    <td background="Images/bottom_center.gif" width="100%"> 
+      <table border="0" cellspacing="0" cellpadding="0" background="">
+        <tr> 
+          <td><img src="Images/spacer.gif" width="718" height="5"></td>
+        </tr>
+        <tr> 
+          <td align="center">
+          
+     <span id="ctl00_llbFooter" style="display:inline-block;color:White;font-size:7pt;width:246px;">Copyright (C)2020 by ALACOURT.COM </span>
+       <input name="ctl00$hdLoginFocus" type="hidden" id="ctl00_hdLoginFocus" value="0" /> 
+     </td>
+        </tr>
+      </table>
+    </td>
+    <td width="11"><img src="Images/bottom_right.gif" width="11" height="31"></td>
+  </tr>
+</table>
+                    
+                    
+                    
+                    
+                    </td>
+            </tr>
+        </table>
+                 
+             
+    </div>
+  
+         <script type ="text/javascript">
+             
+             function setLoginFocus(btnID) {
+                 document.getElementById("ctl00_hdLoginFocus").value = btnID;
+                 return false;
+             }
+             
+             $(document).keypress(function (e) {
+                 if (e.which == 13) {
+                     if (document.getElementById('ctl00_hdLoginFocus').value == 0) {
+                         var Useremail = $('#ctl00_txtEmail').val();
+                         var UserPass = $('#ctl00_txtPassword').val();
+                         if (Useremail == '') { alert('Enter your email.'); $('#ctl00_txtEmail').focus(); return false; }
+                         if (UserPass == '') { alert('Enter your password.'); $('#ctl00_txtPassword').focus(); return false; }
+                         $('#ctl00_btnLogin').click();
+                     } else if (document.getElementById('ctl00_hdLoginFocus').value == 1) {
+                         $('#ctl00_ContentPlaceHolder1_cmdLogin').click();
+                     } else if (document.getElementById("ctl00_hdLoginFocus").value == 2) {
+                         $('#ctl00_ContentPlaceHolder1_cmdCreateAccount').click();
+                         $('#ctl00_btnLogin').click(function (event) {
+
+                             event.stopImmediatePropagation();
+
+                         });
+
+
+                     }
+                 }
+             });
+
+    </script>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_Menu1_Data = new Object();
+ctl00_Menu1_Data.disappearAfter = 500;
+ctl00_Menu1_Data.horizontalOffset = 0;
+ctl00_Menu1_Data.verticalOffset = 0;
+ctl00_Menu1_Data.hoverClass = 'ctl00_Menu1_11 TopMenuItemsHover';
+ctl00_Menu1_Data.hoverHyperLinkClass = 'ctl00_Menu1_10 TopMenuItemsHover';
+ctl00_Menu1_Data.staticHoverClass = 'ctl00_Menu1_9 TopMenuItemsHover';
+ctl00_Menu1_Data.staticHoverHyperLinkClass = 'ctl00_Menu1_8 TopMenuItemsHover';
+ctl00_Menu1_Data.iframeUrl = '/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdcI4igKCn11RhVNA6WYVUQSxNOxq6SZr2XCo0XgUE1j8vud_yA2&t=637192064225708388';
+WebForm_AutoFocus('ctl00_txtEmail');Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.HoverMenuBehavior, {"PopupPosition":1,"dynamicServicePath":"/default.aspx","id":"ctl00_ContentPlaceHolder1_helpCaseDetail_hm1","popupElement":$get("ctl00_ContentPlaceHolder1_helpCaseDetail_divHelpText")}, null, null, $get("ctl00_ContentPlaceHolder1_helpCaseDetail_btnInfo"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.HoverMenuBehavior, {"PopupPosition":1,"dynamicServicePath":"/default.aspx","id":"ctl00_ContentPlaceHolder1_UcHelp1_hm1","popupElement":$get("ctl00_ContentPlaceHolder1_UcHelp1_divHelpText")}, null, null, $get("ctl00_ContentPlaceHolder1_UcHelp1_btnInfo"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.HoverMenuBehavior, {"PopupPosition":1,"dynamicServicePath":"/default.aspx","id":"ctl00_ContentPlaceHolder1_helpCaseMonitoring_hm1","popupElement":$get("ctl00_ContentPlaceHolder1_helpCaseMonitoring_divHelpText")}, null, null, $get("ctl00_ContentPlaceHolder1_helpCaseMonitoring_btnInfo"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>

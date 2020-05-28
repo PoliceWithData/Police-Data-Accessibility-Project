@@ -1,0 +1,1496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Gwinnett County Courts</title>
+<link href="/css/oneColFixCtrHdr.css" rel="stylesheet" type="text/css" />
+<link href="/css/menuTemplate2.css" rel="stylesheet" type="text/css" />
+<link href="/css/tabcontent.css" rel="stylesheet" type="text/css" />
+<script src="/js/tabcontent.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/example2/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/example2/css/jquery.jscrollpane.css" media="all" />
+<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+<link href='https://fonts.googleapis.com/css?family=Coustard:900' rel='stylesheet' type='text/css' />
+<link href='https://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css' />
+<!--<link rel="shortcut icon" href="http://www.gwinnettcourts.com/favicon.ico?v=2" type="image/x-icon">-->
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+<!--   calendar date picker-->
+<link rel="stylesheet" type="text/css" media="all" href="/datepick/jsDatePick_ltr.min.css" />
+<script type="text/javascript" src="/datepick/jsDatePick.min.1.3.js"></script>
+
+<script type="text/javascript">
+	window.onload = function(){
+		new JsDatePick({
+			useMode:2,
+			target:"beginDate",
+			dateFormat:"%m/%d/%Y",
+        	limitToToday:false
+		});
+		
+		new JsDatePick({
+			useMode:2,
+			target:"endDate",
+			dateFormat:"%m/%d/%Y",
+        	limitToToday:false
+		});
+	};
+</script>
+
+
+
+
+    <style>
+        #overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background: #999;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+            z-index: 100;
+        }
+        #popup {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            background: #fff;
+            width: 500px;
+            height: 600px;
+			padding: 10px;
+            margin-left: -250px; /*Half the value of width to center div*/
+            margin-top: -250px; /*Half the value of height to center div*/
+            z-index: 200;
+        }
+        #popupclose {
+            float: right;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+    
+    
+    
+
+</head>
+
+<body>
+
+
+
+<div class="container" id="#printarea">
+
+<!-- notice only needed in the home page -->
+	  <!--<br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" /><b>Order Declaring Weather-Related Judicial Emergency by The chief judge of the Gwinnett superior court, acting under authority of O.C.G.A. Sections 38-3-60 <I>et. seq.</I></b> <b><a href="/about/pressreleases/order20180119.pdf" target="_blank">Read All</a></b><br></div><br><br>-->
+      
+	  <!--<br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" />The last few days the clerk's office has been experiencing computerized telephone disruption and technical problems.  We are working diligently to correct this problem with our county IT Department and will keep all court users informed of our progress on the clerk's web page.</div><br><br>-->
+      
+<!--<br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" />Effective November 1, 2017 all new notary applicants must complete <a href="http://training.gsccca.org" target="_blank">the online notary training</a>. There is a $10 fee associated with completion of the class and final exam. You need a 90% or higher to receive the completion certificate. This certificate will need to be presented with your completed application. Exemption for attorneys only - a current Georgia Bar card will need to be presented in lieu of testing. More information about <a href="/superior/notary-public">Notary Public</a>.</div><br><br>-->
+
+<!--  <br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" />Today, September 24, 2018 the clerk's office is experiencing computerized telephone disruption and technical problems.  We are working diligently to correct this problem with our county IT Department and will keep all court users informed of our progress on the clerk's web page.</div><br><br> -->
+
+<!--	<br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" />The case search database has not been updated since February 22nd. We are working to resolve the issues. We apologize for any inconvenience.</div><br><br> -->
+
+<!-- <br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" />On Friday, May 3, 2019, parties wishing to file new actions in State and Superior Court are strongly encouraged to e-file new cases as the Clerk's Office prepares for the implementation of our new case management system.  Thank you for your patience during this time.</div><br><br> -->
+
+<!--<br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" />eFile is down. We are working to resolve the issues. We apologize for any inconvenience.<br><br> </div> -->
+    
+<!-- <br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" />On Sunday, July 21, 2019, The Court Technical Services is planning to perform a number of systems maintenance activities.  As a result, Tyler Odyssey Portal will be unavailable from 9:00 AM Sunday July 21, until further notice.</div></br></br> -->
+<!-- <br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" />On Thursday, July 25, 2019, The Clerk Technical Services is planning to perform a number of database maintenance activities.  As a result, all online registrations such as wedding, Pro Bono, Parenting Seminar, as well as Tax Appeal Status,  will be unavailable from 6:00 PM Thursday, until 6:00 AM Friday</div> -->
+
+<!-- <br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" />On July 27 & 28, 2019, The Clerk Technology Services is planning to perform a number of required systems maintenances. As a result, all online registrations such as wedding, Pro Bono, Parenting Seminar, as well as Tax Appeal Status, will be unavailable for Saturday. Odyssey and Portal will be unavailable for the weekend. They will be back up starting Monday morning.</div></br></br> -->
+
+<!--<br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" />Recorder's Court recently lost some data and while no data was compromised, we are experiencing a high volume of calls.  As we work diligently to enter this lost data, we ask that you call us at 770-619-6100 for additional help.  Your case may not be re entered into our system more than 3 days before your court date, so please check the website for your citation when your court date is a few days out.</div></br></br> -->
+
+<!--<br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" />On Wednesday, February 26, 2020, The Court Technical Services is planning to perform a system upgrade on Tyler Odyssey Portal.  As a result, the Portal will be unavailable from 6:00 PM until 8:00 PM.</div> -->
+
+<!--<br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" />On Friday, February 28, 2020, the public access to Sustain Justice System will be closed permanently. Please use public access to Tyler Odyssey Portal for court cases.</div></br></br> -->
+
+
+      
+	  <!--<br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" />Today, September 24, 2018 the clerk's office is experiencing computerized telephone disruption and technical problems.  We are working diligently to correct this problem with our county IT Department and will keep all court users informed of our progress on the clerk's web page.</div><br><br>-->
+
+ 
+ 	 
+	 <!-- <br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" /><br>Winter weather update: Friday, January 19, 2018, Gwinnett County trials and hearings are delayed until 10:00 a.m.<br><br></div><br><br>-->
+	 
+	<!-- <br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" /><br>Due to anticipated inclement weather, Gwinnett County trials and hearings for Tuesday, December 11 are delayed until 10:00am. <br><br></div><br><br> -->
+ 
+
+	<!-- <br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" />We are experiencing problems with our case update, and working to resolve those issues as soon as possible. We apologize for any inconvenience.</div><br><br> -->
+
+ 	<!-- <br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" />On Monday May 6, 2019 the Gwinnett County Clerk's offices of Superior, State and Magistrate Courts, including Probate Court, initiated an upgrade of our case management system.  We have no set date for completion of this implementation and are working diligently to complete the process.  <a href="/Documents/disclaimer.aspx" target="_blank">Read Disclaimer</a></div><br><br>	 -->
+
+ <!--	<br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" />On Tuesday, Sep 03, 2019, The Clerk Technical Services is planning to perform a number of required systems maintenance activities.  As a result, The website will be unavailable from 6:00 PM until 7:00 PM. </div><br><br> -->
+	
+
+	  <br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" /><b>Order Declaring Coronavirus/COVID-19 related Judicial Emergency by The chief justice HAROLD D. MELTON of THE SUPREME COURT OF GEORGIA, acting under authority of O.C.G.A. Sections 38-3-60 <I>et. seq.</I> Read All: </b> <b><a href="/about/pressreleases/CJ Melton (amended) Statewide Jud Emergency order.pdf" target="_blank">Original</a> | <a href="/about/pressreleases/CJ_Melton_Extension_Order_signed_entered.pdf" target="_blank">1<sup>st</sup> Extension</a> | <a href="/about/pressreleases/Second-Order-Extending-Declaration-of-Statewide-Judicial-Emergency_as-issued.pdf" target="_blank">2<sup>nd</sup> Extension</a></b><br></div>
+	  
+	  <br><br> <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" /><b>Order Declaring Coronavirus/COVID-19 related Judicial Emergency by The chief judge George F. Hutchinson, III of the Gwinnett superior court, acting under authority of O.C.G.A. Sections 38-3-60 <I>et. seq.</I> Read All: </b> <b><a href="/about/pressreleases/03132020%20Order%20Declaring%20Judicial%20Emergency.pdf" target="_blank">Original</a> | <a href="/about/pressreleases/20200330105129247.pdf" target="_blank">1<sup>st</sup> Extension</a></b><br></div><br><br>	
+	 
+	  <div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" /><b>Gwinnett County Chairman Charlotte J. Nash Local Emergency Orders: Individuals to Stay at Home; Businesses to Close; Public Gatherings Prohibited; Cease Non-essential Travel.</b> <b><a href="/about/pressreleases/Local Emergency Order 1-4 3 27 20_2.pdf" target="_blank">Read All</a></b><br></div><br><br>
+	  
+	
+  <div class="header">
+    <div class="headerTab"><div class="headerTabText"><a href="/superior/">SUPERIOR</a> | <a href="/state-court/">STATE</a> | <a href="/magistrate/">MAGISTRATE</a> | <a href="/probate/">PROBATE</a> | <a href="/juvenile/">JUVENILE</a> | <a href="/recorders/">RECORDER'S</a> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<script language="JavaScript" src="/js/dateScript.js"></script></div></div>
+    <div class="headerlogo">
+      <div class="headerlogoBox"><a href="https://www.gwinnettcourts.com"><img src="/images/logo2a.png" width="397" height="105" /></a></div>
+      <div class="headericons">
+	  <table width="280" border="0" align="right">
+	 	 <!--<table width="120" border="0" align="right">-->
+  <tr>
+<td>
+  <div id="google_translate_element"></div><script type="text/javascript">function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  
+  </td>
+     <td><a href="/about/parking"><img src="/images/GJACParking.png" width="25" height="25"  alt="GJAC Parking"/></a></td> 
+    <td><a href="/about/map-directions"><img src="/images/mapsNnavigation3.png" width="25" height="25"  alt="Get Directions"/></a></td>
+    <td>
+	
+	<!-- <a href="mailto:courts.web@gwinnettcounty.com?body=We're happy to help you with any questions or concerns you may have, however,%0Dthis email is only provided to help resolve technical issues with the website. %0DIf you have questions about any court or case matter, please call the appropriate %0Dphone number or come to the courthouse. We do not answer questions about cases %0Dvia email." class="tooltip3"><img src="/images/email2.gif" width="25" height="25"  alt="Send Email"/><span><p>We're happy to help you with any questions or concerns you may have, however, this email is only provided to help resolve technical issues with the website. If you have questions about any court or case matter, please call the appropriate phone number or come to the courthouse. We do not answer questions about cases via email.</p></span></a> -->
+	<a href="/about/contactUs"><img src="/images/email2.gif" width="25" height="25"  alt="Send Email"/></a>	
+
+	
+	</td>
+    <td><img src="/images/printer2.gif" onclick="PrintElem('#printarea')" style="cursor:pointer;" alt="Print Content"/></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</div>
+      <div class="searchbox">
+<table><tr>
+<form action="/about/search.asp" method="GET">
+<td><input type="text" size="30" name="zoom_query" Style="font-style: italic; color: #00458A" value="I'm looking for..." onfocus="if(this.value==this.defaultValue) this.value='';" onblur="if (this.value=='') this.value = this.defaultValue"/></td>
+<td><input type="image" src="/images/go.jpg" value="" /></td>
+</form>
+</tr></table>  
+     </div>
+    </div> 
+  
+    <div class="headerMenu" style="z-index: 30">
+      <div class="headermenubox">
+      
+  <ul class="menuTemplate2 decor2_1" license="2c5g9">
+
+ <li><a href="#" class="arrow">Courts & Judges</a>
+  <div class="drop decor2_2" style="width: 700px;">
+  	 <div class='left'>
+     	 <a href="/superior/"><b>Superior Court</b> </a>
+         <div> 
+		 	<a href="/superior/#judges">Judges</a><br />
+		    <a href="/superior/forms-and-documents">Forms</a><br />
+         	<a href="/superior/fees">Fees</a><br />
+            <a href="/superior/standing-orders">Standing Orders</a><br /> 
+            <a href="/superior/notary-public">Notary Public</a>  
+          </div> 
+         <a href="/state-court/"><b>State Court</b></a> 
+         <div> 
+		 	<a href="/state-court/#judges">Judges</a><br />
+		    <a href="/state-court/forms-and-documents">Forms</a><br />
+         	<a href="/state-court/fees">Fees</a><br />
+            <a href="/state-court/standing-orders">Standing Orders</a>
+          </div> 
+      </div> 
+      <div class='left'> 
+      	<a href="/magistrate/"><b>Magistrate Court</b></a> 
+        	<div>
+				<a href="/magistrate/#judges">Judges</a><br />			 
+				<a href="/magistrate/case-types">Types of Cases / Forms</a><br />                
+				<a href="/magistrate/fees">Fees</a><br /> 
+                <a href="/magistrate/hours-and-location">Hours and Location</a><br /> 
+				<a href="/magistrate/trial-calendars">Civil & Criminal Calendars</a><br />				
+				<a href="/magistrate/civil-case-presentation">Civil Case Presentation</a><br /> 
+                <a href="/magistrate/dispossessory-action">Dispossessory Actions</a><br />
+                <a href="/magistrate/family-violence">Family Violence</a><br />
+                <a href="/magistrate/garnishment-faqs">Garnishment</a><br />
+				<a href="/magistrate/wedding-ceremony">Wedding Ceremony</a>
+             </div> 
+       </div> 
+       <div class='left'> 
+       	<a href="/probate/"><b>Probate Court</b></a> 
+       	  <div> 
+            <a href="/probate/#judges">Judges</a><br />		  
+            <a href="/probate/birth-certificates">Birth Certificates</a><br /> 
+			<a href="/probate/marriage-licenses-and-certificates">Marriage Licenses/Certificates</a><br />		  
+            <a href="/probate/death-certificates">Death Certificates</a><br />
+			<a href="/probate/decedents-estate">Decedent's Estate</a><br />    
+			<a href="/probate/guardianship-conservatorship">Guardian/Conservatorship</a><br />			     
+            <a href="/probate/georgia-weapons-carry-license">Weapons Carry Licenses</a><br />             
+          </div> 
+         <a href="/juvenile/"><b>Juvenile Court</b></a> 
+       	  <div> 
+		    <a href="/juvenile/#judges">Judges</a><br />
+            <a href="/juvenile/faqs">FAQs</a><br /> 
+            <a href="/juvenile/guardian-ad-litem-unit">Guardian Ad Litem Unit</a><br /> 
+            <a href="/juvenile/intake-division">Intake Division</a>
+          </div> 
+        </div> 
+        <div class='left'> 
+          <a href="/recorders/"><b>Recorder's Court</b></a> 
+       	  <div> 
+		  	<a href="/recorders/#judges">Judges</a><br />
+			<a href="https://www.gwinnettcourts.com/casesearch/recorderscourt.aspx">Case Search</a><br /> 		  
+		    <a href="/recorders/faqs">FAQs</a><br />  
+            <a href="/recorders/traffic-court-procedures">Traffic Court Procedures</a>
+          </div> 
+        <a href="/about/courthouse-directory"><img src="/images/hd6.jpg" style="width:128px; height:128px;" /></a><br /> <a href="/about/courthouse-directory"><b>Gwinnett Courthouse Directory</b></a>  
+        </div> 
+        <div style='clear: both;'></div> 
+      </div> 
+   </li> 
+   
+   <li class="separator"></li> 
+   
+   <li><a href="#">Case Search</a> 
+     <div class="drop decor2_2" style="width: 380px; height:120px; background-image: url(/images/case-search-bk.jpg);">
+  	 <div class='left'>
+     	 <a href="/casesearch/"><b>Case Search</b> </a>
+         <div> 
+         <div> 
+           <a href="https://odyssey.gwinnettcourts.com/Portal/" target="_blank">Tyler Odyssey Portal</a><br /> 
+			<a href="https://www.gwinnettcourts.com/casesearch/recorderscourt.aspx">Recorder's Court Cases</a>
+          </div> 
+          </div> 
+      </div>
+ <!--       <div class='left' style="text-align:right; width:160px;"> 
+               		<br /><img src="/images/case-search.jpg" style="width:223px; height:140px;" />
+                    
+       </div> -->
+    </div>
+    </li>
+	
+   <li class="separator"></li> 
+   
+      <li><a href="#">Court Programs</a> 
+     <div class="drop decor2_2" style="width: 380px; background-image: url(/images/crt-programs-bk.jpg);">
+  	 <div class='left'>
+     	 <a href="/court-programs/"><b>Court Programs</b> </a>
+         <div>
+           <a href="/court-programs/adr-processes">ADR Processes</a><br />
+           <a href="/court-programs/advanced-co-parenting-workshop.aspx">Advanced Co-Parenting</a><br />
+           <a href="/court-programs/alternative-dispute-resolution">Alternative Dispute Resolution</a><br />
+           <a href="http://events.r20.constantcontact.com/register/event?oeidk=a07ebnqyr1821fe749e&llr=vitu7ycab" target="_blank">Family Law Information Class</a><br />           
+           <a href="/court-programs/parenting-seminar.aspx">Navigating Family Change Parenting Seminar</a><br />
+           <a href="/court-programs/treatment-court">Treatment Court</a><br />
+           <a href="/court-programs/work-alternative">Work Alternative</a><br /> 
+           <a href="/court-programs/work-release">Work Release</a>
+          </div> 
+      </div>
+<!--      <div class='left' style="text-align:right; width:160px;"> 
+               		<br /><img src="/images/crt-programs.jpg" style="width:128px; height:128px;" />
+                    
+       </div> -->
+    </div>
+    </li>
+	
+   <li class="separator"></li> 
+   
+   <li><a href="#">Jury Services</a>
+        <div class="drop decor2_2" style="width: 380px; background-image: url(/images/crt-jury-bk.jpg);">
+  	 <div class='left'>
+     	 <a href="/jury-services/"><b>Jury Services</b> </a>
+         <div> 
+         	<a href="/jury-services/your-role-as-a-juror">Your Role as a Juror</a><br />
+            <a href="/jury-services/employer-information">Employer Information</a><br />
+            <a href="/jury-services/selection-of-a-jury">Selection of a Jury</a><br /> 
+            <a href="/jury-services/the-trial">The Trial</a><br /> 
+            <a href="/jury-services/judges-instruction-on-the-law">Judge's Instruction on the Law</a><br /> 
+            <a href="/jury-services/deliberation-on-the-law">Deliberation on the Law</a><br />
+            <a href="/jury-services/the-verdict">The Verdict</a><br />
+            <a href="https://ejury.gwinnettcounty.com/ejuror/" target="_blank">The Ejuror Website</a>
+          </div> 
+      </div>
+<!--      <div class='left' style="text-align:right; width:160px;"> 
+               		<br /><img src="/images/crt-jury.gif" style="width:233px; height:140px;" />
+                    
+       </div> -->
+    </div>
+    </li> 
+   <li class="separator"></li> 
+   <li><a href="#" class="arrow">Deeds | Land Records</a> 
+   		<div class="drop decor2_2 dropToLeft2" style="width: 390px;"> 
+        	<div class='left'> 
+            	<a href="/deeds-and-land-records/"><b>Deeds and Land Records</b></a>
+                <div> 
+				    <a href="/deeds-and-land-records/faqs">FAQs</a><br />
+                	<a href="/deeds-and-land-records/fees">Recording Fees</a><br /> 
+					<a href="/legals/" target="_blank">Legals</a><br />
+                    <a href="/deeds-and-land-records/georgia-hazardous-site-inventory">Georgia Hazardous Site Inventory</a>
+                 </div> 
+              </div> 
+               <div class='left' style="text-align:right; width:160px;"> 
+               		<img src="/images/crt-deed.jpg" style="width:130px; height:130px;" />
+ 
+                </div> 
+              </div> 
+      </li> 
+      <li class="separator"></li> 
+      <li><a href="#" class="arrow">About</a> 
+      		<div class="drop decor2_2 dropToLeft" style="width: 420px;"> 
+      <!--      	<a href="#"><img src="images/contactus.gif" style="float:left; width:130px; height:87px;margin:10px 50px 20px 20px;" /></a> -->
+ 				<div style="float:left; width:170px; height:130px; margin-top: 30px;"> 
+                <a href="/about/courthouse-phonebook"><img src="/images/phoneDirectory.png" /><br />
+                <a href="/about/courthouse-phonebook"><b>Gwinnett Courts Phonebook</b></a><br />
+                </div>
+                <div style="float:right; width:250px; height:130px;"> 
+                	<a href="/about/"><b>About</b></a>
+                    <div> 
+                    	<a href="/about/clerk-of-courts">Clerk of Courts</a><br /> 
+                        <a href="/about/board-of-equalization">Board of Equalization</a><br /> 
+                        <a href="/about/administrative-office-of-the-courts">Administrative Office of the Courts</a><br />                        
+        <a href="http://library.municode.com/index.aspx?clientId=10878&stateId=10&stateName=Georgia" target="_blank">Gwinnett County Code of Ordinances</a><br />
+                        <a href="/about/court-house-history">Courthouse History</a><br />
+						<a href="/about/press">Press Releases</a><br />	
+                     </div> 
+                 </div>
+            </div> 
+        </li> 
+ </ul> 
+    
+      
+      </div>
+    </div>
+  </div>
+
+  <!-- end .header -->
+  <div class="content">
+<div class="topTabs">
+
+<div style="width: 280px; margin: 0 0; padding: 0px 0 0px; font: 0.85em arial; float: left;">
+        <ul class="tabs" persist="true">
+            <li><a href="#" rel="view2">Case Search</a></li>
+        </ul>
+        <div class="tabcontents">
+
+            <div id="view2" class="tabcontent">
+              <div class="tabcasesearchbox">   
+
+        <br /><br />
+<div class="attention03" style="width: 217px; margin-left:0px;"><div class="attentionCaption1" style="width: 140px;">Tyler Odyssey Portal</div>  
+<br />
+                For Superior Court, State Court, Magistrate Court, and Probate Court Estate cases, click the link below:<br />
+                <br />
+               <a href="https://odyssey.gwinnettcourts.com/Portal/" target="_blank"><strong>Tyler Odyssey Portal</strong></a><br />
+               <!--<a href="/about/notice"><strong>Tyler Odyssey Portal</strong></a><br /> -->
+                
+</div>              
+  
+  
+ <br />  <br /> 
+                
+<div class="attention03" style="width: 217px; margin-left:0px;"><div class="attentionCaption1" style="width: 120px;">Recorder's Court</div>  
+<br />
+                For Recorder's Court case search, click the link below:<br />
+                <br />
+                <a href="https://www.gwinnettcourts.com/casesearch/recorderscourt.aspx"><strong>Recorder's Court Cases</strong></a><br />
+                
+</div>                
+                
+              </div>
+            </div>            
+
+
+
+        </div>
+        <br /><br />
+	</div> <!--end of case search box-->
+ 
+
+    
+    <!--Richard's picture-->
+    <div class="cocPicture">
+    <div class="cocname"><a href="/about/clerk-of-courts">Richard T. Alexander, Jr.</a></div>
+    <div class="cocPress"><a href="/about/press" class="cocPress"></a></div>
+    <div class="nacm2015"><a href="https://www.nacmnet.org/" class="nacm2015" target="_blank"></a></div>
+    </div>
+    <!--end of Richard's picture-->
+    
+</div><!--end of toptabs-->
+
+<!-- notice only needed in the home page -->
+ 
+      <!-- <br><br><div class="attention" style="width: 938px; margin-left: 0px;"><img src="/images/attention3.png" class="attentionpic1" />Effective November 1, 2017 all new notary applicants must complete the online notary training available at <a href="http://training.gsccca.org" target="_blank">http://training.gsccca.org</a>. There is a $10 fee associated with completion of the class and final exam. You need a 90% or higher to receive the completion certificate. This certificate will need to be presented with your completed application. Exemption for attorneys only - a current Georgia Bar card will need to be presented in lieu of testing.</div><br><br>-->
+
+      
+      <!--<div class="attention" style="width: 938px; margin-left: 0px;margin-top: 335px;"><img src="/images/attention3.png" class="attentionpic1" />Effective January 1, 2018, all filing fees for maps and plats shall be paid through the <a href="https://efile.gsccca.org/" target="_blank">Georgia Superior Court Clerks' Cooperative Authority (GSCCCA) efiling portal</a> at the time of submission. All maps and plats reviewed by and/or approved by the Gwinnett County Department of Planning and Development shall not be exempt from this filing fee requirement, and filing fees for all filers will be required at time of submission for recording through GSCCCA.org.  For a list of recording fees for maps and plats, <a href="/deeds-and-land-records/fees">please click here</a>. </div>     --> 
+      
+      
+     <!--<div class="attention" style="width: 938px; margin-left: 0px;margin-top: 335px;"><img src="/images/attention3.png" class="attentionpic1" />On December 31, 2017, all state tax liens issued by the Georgia Department of Revenue which have been filed and recorded in any county in Georgia will become invalid, subject to renewal as follows. Any active state tax liens which were recorded or rerecorded within seven (7) years before January 1, 2018 are eligible to be renewed by the Department. All renewed state tax liens will be valid for a single ten (10) year period from the date of renewal. Renewed liens will maintain priority as of the original date of filing.  (<a href="/about/pressreleases/Public%20Notice_HB337_Lien%20Cancellation%20and%20Revival_12.11.17.pdf" target="_new">Read more</a>) </div>-->
+     
+     
+    <!--<div class="attention" style="width: 938px; margin-left: 0px;margin-top: 335px;"><img src="/images/attention3.png" class="attentionpic1" />Effective January 1, 2018 Senate  Bill 132 amended Georgia law for all civil case initiation and disposition  forms for superior and state courts, which are available on the clerk's website.  (<a href="/about/sb132">Read more</a>) </div>-->
+    
+  <!--<div class="attention" style="width: 938px; margin-left: 0px;margin-top: 335px;"><img src="/images/attention3.png" class="attentionpic1" />The Gwinnett County Magistrate Court is now accepting applications for Part Time Magistrates. Applications must be submitted before 5:00 p.m. on July 13, 2018. (<a href="/magistrate/documents/Part Time Magistrate Applications 2018.pdf" target="_blank">Read more</a>) </div>-->
+    
+   <!--    <div class="attention" style="width: 938px; margin-left: 0px; margin-top: 335px;"><img src="/images/attention3.png" class="attentionpic1" />Effective January 1, 2019, E-filing will become mandatory for all state and superior civil cases via Tyler's Odyssey eFileGA&trade; (<a href="/about/pressreleases/E-File Information.pdf" target="_blank">Read more</a>)</div> -->
+   
+   <!-- <div class="attention" style="width: 938px; margin-left: 0px; margin-top: 335px;"><img src="/images/attention3.png" class="attentionpic1" />Effective February 1, 2019, certain filing fees will increase. Please refer to <a href="/superior/fees">Superior Court</a>, <a href="/state-court/fees">State Court</a>, and <a href="/magistrate/fees">Magistrate Court</a> for the new fee schedules.</div> -->
+
+
+   <!--	<div class="attention" style="width: 938px; margin-left: 0px; margin-top: 335px;"><img src="/images/attention3.png" class="attentionpic1" />On Friday, May 3, 2019, parties wishing to file new actions in State and Superior Court are strongly encouraged to e-file new cases as the Clerk's Office prepares for the implementation of our new case management system.  Thank you for your patience during this time.</div> -->
+
+
+   <!--	 <div class="attention" style="width: 938px; margin-left: 0px;margin-top: 335px;"><img src="/images/attention3.png" class="attentionpic1" />Free Notary Public Training.  Sponsored by the
+Gwinnett County Clerk of Superior Court & the Georgia Superior Court Clerks’ Cooperative Authority on Wednesday, July 31, 2019. (<a href="/about/pressreleases/Free Notary Training 2019.pdf" target="_blank">Read more</a>) 
+</div>-->
+
+<div class="contentslidebox">
+
+			<div id="ca-container" class="ca-container">
+				<div class="ca-wrapper">   
+                
+
+                
+                <!-- 
+                    <div class="ca-item ca-item-FreeNotaryTraining">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Free Notary Training</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>Sponsored by the Gwinnett County Clerk of Superior Court and the Georgia Superior Court Clerks' Cooperative Authority ...</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<h6>Free Notary Public Training</h6>
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">                           
+                                    <p align="center">Sponsored by <br />the Gwinnett County Clerk of Superior Court<br /> & <br />the Georgia Superior Court Clerks' Cooperative Authority  <br /><br />
+                                    <b>Wednesday, July 31, 2019</b><br />
+                                    Session One: 10:00 AM – 11:30 PM  <br />
+                                    Session Two: 1:30 PM – 3:00 PM<br />
+                                    <br /><b>Gwinnett County Justice & Administration Center Auditorium</b><br />75 Langley Drive, Lawrenceville, GA 30046<br /><br /></p>
+                                     <li><a href="/about/pressreleases/Free Notary Training 2019.pdf" target="_blank">Registration Form</a></li>
+
+								</div>
+							</div>
+						</div>
+					</div>   				-->              
+
+
+
+
+
+
+<!--
+
+
+                      <div class="ca-item ca-item-romefinance">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Judge Opening</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+                                <span>FULL TIME MAGISTRATE APPLICATIONS NOW BEING ACCEPTED ...</span>
+                                
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">   
+                                <br />                    
+  <p><b>From the Office of the Chief Magistrate - Full Time Magistrate Judge Opening</b></p>
+  
+<p>Chief Magistrate Kristina Hammer Blum is pleased to announce the opening of one full time Magistrate Judge position; this position was created by the recent appointment of Judge Angela D. Duncan to the Gwinnett County Superior Court.</p>
+<p>The position will become open as early as January 1, 2020. To meet the minimum legal qualifications (O.C.G.A. § 15-10-22 and § 15-6-4), each Applicant must:</p>
+<p>
+ (a) Be at least 30 years of age;</br>
+ (b) Have been a citizen of the State of Georgia for at least three (3) years;</br>
+ (c) Be a citizen of the United States; </br>
+ (d) Have been a member, in good standing, of the State Bar of Georgia for at least seven (7) years; </br>
+ (e) Be a registered voter; and </br>
+ (f) Have been a resident of Gwinnett County for at least two (2) years.
+ </p>
+
+<p>Click the link to apply or read more (<a href="/magistrate/">Read more</a> ...)</p> 
+
+								</div>
+							</div>
+						</div>
+					</div>
+     -->      
+     
+     
+
+
+                   	<div class="ca-item ca-item-romefinance">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Magistrate<br />e-Filing</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>Effective January 15, 2020, it is the standing order of the Gwinnett County Magistrate Court to accept electronic filings ...</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+<!--								<h6>Veterans to Register</h6>-->
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">  
+                                <br />
+<p style="font-size: 18px; line-height: 150%;">Effective January 15, 2020, it is the standing order of the Gwinnett County Magistrate Court to accept electronic filings through the Gwinnett County Clerk of Court's  <a href="http://www.efilega.com/" target="_blank">Electronic Filing Portal</a>.  Electronic filing in Magistrate Court is permitted, but not mandatory. All electronic filings shall be filed, signed and served in the form and manner set forth in <a href="/about/pressreleases/20191217110714378.pdf" target="_blank">O.C.G.A. 15-10-53</a>.</p>
+
+<p style="font-size: 18px; line-height: 150%;"><a href="/about/pressreleases/20191217110714378.pdf" target="_blank">Read more</a></p> 
+
+								</div>
+							</div>
+						</div>
+					</div>      
+                    
+                    
+                    
+                    
+                    
+                    
+                    <div class="ca-item ca-item-adr_fee">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Tradename Fee Change</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>EFFECTIVE JANUARY 1, 2020, Tradename registration fee change ...</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<!--<h6>Civil Filing Fee Increase </h6>-->
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">   
+                                <p>&nbsp;</p>                        
+<p align="center" style="font-size: 16px; line-height: 150%;"><b>EFFECTIVE JANUARY 1, 2020</b>
+<br /><br />
+<b>TRADENAME REGISTRATION FEE CHANGE <BR><BR> $166.00</b></p>
+
+<p align="center">AS PER O.C.G.A. 15-6-77.3(C)(5)
+<br /> <br />
+*Separate check of $40 for publication fee to Gwinnett Daily Post is still required.   <br />
+<br /> 
+<a href="/superior/trade-name">Trade Name Registration</a> &nbsp; &nbsp; <a href="/superior/fees">Fees</a>
+</p>
+
+
+								</div>
+							</div>
+						</div>
+					</div>  
+                    
+                    
+                    
+                    
+ 					<div class="ca-item ca-item-8">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Notary Public</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>Renewal Applications are valid only for those holding a current unexpired appointment from Gwinnett County.</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<!--<h6>Instructions for Renewal</h6>-->
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">		
+                                    
+  <ol><li><a href="/superior/notary-public">Mail In RENEWAL Notary applications will be accepted for commissions expired / expiring March through June 2020</a></li>
+  <li>Application must be completed on the Clerks' Authority web site at <a href="http://www.gsccca.org/Projects/npapp.asp" target="_blank">http://www.gsccca.org/Projects/npapp.asp</a></li>
+  <li>You <strong>must</strong> appear in person to the Clerk of Superior Court office located on the   1st floor, east wing of Gwinnett Justice and Administration Center   between Monday - Friday 8:00am - 5:00pm.  Effective January 1, 2020 fee changes to $46.</li><li>Effective November 1, 2017 all new notary applicants must complete <a href="https://eLearn.gsccca.org" target="_blank">the online notary training</a>.  You need a 90% or higher to receive the completion certificate. This certificate will need to be presented with your completed application. Exemption for attorneys only - a current Georgia Bar card will need to be presented in lieu of testing.</li><li>More information about <a href="/superior/notary-public">Notary Public</a></li></ol>
+
+
+								</div>
+
+							</div>
+						</div>
+					</div>   
+                    
+               
+                 
+                    
+                    
+                   	<div class="ca-item ca-item-veterans">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>DD-214 for Veterans</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>CLERK OF GWINNETT SUPERIOR COURT NEEDS VETERANS TO REGISTER, ...</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+<!--								<h6>Veterans to Register</h6>-->
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">                           
+<p><strong>Veterans Day</strong> is an official United States Federal holiday that honors people who have served in the U.S. Armed Forces, also known as veterans. </p>
+<p>The Gwinnett County Clerk of Superior Court Richard T. Alexander, Jr., is asking all veterans of all military branches of service to make sure their DD-214 is recorded at the courthouse. To record your DD Form 214 you will need one of the following: </p>
+<ol>
+<li>Copy 4 of DD Form 214; or</li>
+<li>Any copy of DD 214 with a raised seal issued by the United States National Personnel Records Center; or</li>
+<li>United States National Archives Form 13038.</li>
+</ol>
+
+<p>Alexander stated, "I have discovered that many veterans do not know about this service and did not have their DD-214 recorded. Although veterans may have recorded their DD-214 in their home town or in a county or another state far away from Gwinnett, you are encouraged to record them here as well. If your DD-214 has been recorded somewhere else and you are now living in Gwinnett County, simply bring your DD-214 conforming to <b><u>one</u></b> of the above three (3) requirements to the Clerk of Superior Court’s Office Deed Room (<a href="/about/veteransday">Read more</a> ...)</p> 
+
+								</div>
+							</div>
+						</div>
+					</div>    
+
+
+
+
+
+                   	<div class="ca-item ca-item-efile">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Mandatory<br />UCC eFiling</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+                                <span>Effective August 01, 2019, the Gwinnett County Clerk of Superior Court will only accept Central Filing Uniform Commercial Code (UCC) ...</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+<!--								<h6>Veterans to Register</h6>-->
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">  
+                                <br />
+<p style="font-size: 12.5px; line-height: 150%;">Effective August 01, 2019, the Gwinnett County Clerk of Superior Court will only accept Central Filing Uniform Commercial Code (UCC) by electronic filing through The
+Georgia Superior Court Clerks Cooperative Authority portal. We will no longer be accepting paper filings by mail and/or from walk in over the counter customers.</p>
+<p style="font-size: 12.5px; line-height: 150%;">For first time filers- electronic filing requires registration which can be accessed at <a href="https://efile.gsccca.org/home.aspx" target="_blank">https://efile.gsccca.org/home.aspx</a>.  A Support Tab is available with step by step instructions for easy registration and filing process. Once registered, you may begin efiling immediately.</p>
+<p style="font-size: 12.5px; line-height: 150%;"><b>Richard T. Alexander, Jr., Clerk of Court</b></p> 
+
+<p style="font-size: 12.5px; line-height: 150%;"><a href="/about/pressreleases/eFilingUCC.pdf" target="_blank">Read more</a></p> 
+
+								</div>
+							</div>
+						</div>
+					</div> 
+
+
+
+                
+                
+                
+                   	<div class="ca-item ca-item-eFileGA">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>MANDATORY<br />E-FILING</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>Beginning on January 1, 2019, attorneys shall be required to electronically file all pleadings and any other documents ...</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+<!--								<h6>Veterans to Register</h6>-->
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">  
+
+<p align="center" style="font-size: 18px; line-height: 150%;"><b>MANDATORY E-FILING BEGINS JANUARY 1, 2019</b></p>
+<p style="font-size: 14px; line-height: 150%;">In accordance with the provisions of O.C.G.A. §15-6-11 and O.C.G.A § 15-7-5, the Clerk of Courts of Gwinnett County began permissive E-filing on November 26, 2018, and E-filing will become mandatory for all state and superior civil cases via <a href="https://georgia.tylerhost.net/ofsweb/" target="_blank">Tyler’s Odyssey eFileGA&trade;</a> on January 1, 2019.  Beginning on January 1, 2019, attorneys shall be required to electronically file all pleadings and any other documents to initiate a civil action or in a civil case in superior or state court.  The following cases are exempt from the E-filing requirement: documents in connection with a pauper’s affidavit, any validation of bonds, pleadings or documents filed under seal or presented to the court in camera or ex parte, adoptions, and family violence protective temporary protective orders.  (<a href="/about/pressreleases/E-File Information.pdf" target="_blank">Read more</a>)
+</p>
+ 
+
+								</div>
+							</div>
+						</div>
+					</div>                 
+                
+                
+                
+               
+      
+
+                
+   
+  
+  
+                   	<div class="ca-item ca-item-efile">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Real Estate<br />e-Filing</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>Effective October 8, 2018, Gwinnett County Clerk of Court will accept all electronic filings in the Real Estate Division ...</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+<!--								<h6>Veterans to Register</h6>-->
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">  
+                                <br />
+<p style="font-size: 12.5px; line-height: 150%;">Effective October 8, 2018, Gwinnett County Clerk of Court will accept all electronic filings in the Real Estate Division.  All electronic filings can be made through the Superior Court Clerks' Cooperative Authority (GSCCCA) eFile portal.  You may register at:  <a href="https://efile.gsccca.org/home.aspx" target="_blank">https://efile.gsccca.org/home.aspx</a>  Assistance may be found on the Authority's web page under the Support tab.</p>
+<p style="font-size: 12.5px; line-height: 150%;">All statutory filing requirements mandated by law are still required.  If you have any questions, please call 770-822-8100 and ask to speak with the Real Estate Division."</p>
+<p style="font-size: 12.5px; line-height: 150%;"><b>Richard T. Alexander, Jr., Clerk of Court</b></p> 
+
+<p style="font-size: 12.5px; line-height: 150%;"><a href="/about/pressreleases/noticeOfEfileRealEstate.pdf" target="_blank">Read more</a></p> 
+
+								</div>
+							</div>
+						</div>
+					</div> 
+  
+  
+                
+                
+                        <div class="ca-item ca-item-TVinterview">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Clerk's TV Interview</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+                                <span>We're proud to feature Richard Alexander, Superior Court Clerk of Gwinnett County. Mr. Alexander speaks about the diversity of Gwinnett county ...</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text"> 
+ <iframe src="https://www.youtube.com/embed/cNI2yrmI8G8?rel=0" width="590"  height="315" frameborder="0" allowfullscreen=""></iframe>
+								</div>
+							</div>
+						</div>
+					</div>          
+ 
+                
+                
+                     <div class="ca-item ca-item-sunshinelaws">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Open Records and Meetings</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>Georgia has a long and proud tradition of encouraging openness in governmental meetings and records.</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<h6>Georgia's Sunshine Laws</h6>
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">  <br />                         
+<li><a href="https://law.georgia.gov/press-releases/2018-01-31/office-attorney-general-chris-carr-champions-open-government-georgia" target="_blank">Office of Attorney General Chris Carr Champions Open Government in Georgia</a></li><br />
+<li><a href="https://law.georgia.gov/open-government" target="_blank">Open Government</a></li><br />
+  <li><a href="\about\documents\GeorgiasSunshineLaws2014WebEdition.pdf" target="_blank">Georgia's Sunshine Laws - A Citizen's Guide to Open Government</a></li><br />
+  <li><a href="\about\documents\Open Meetings Law.pdf" target="_blank">The Open Meetings Act</a></li>
+
+
+								</div>
+							</div>
+						</div>
+					</div>                
+                
+  
+        
+
+                    
+                    
+                    
+                      <div class="ca-item ca-item-romefinance">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Civil Filing Forms</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+                                <span>Effective January 1, 2018 Senate Bill 132 amended Georgia law for all civil case initiation and disposition forms for superior and state courts ...</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">                           
+  <p>Effective January 1, 2018 Senate  Bill 132 amended Georgia law for all civil case initiation and disposition  forms for superior and state courts, which are available on the clerk's website.</p>
+<p>Title 9 of the Official Code of Georgia Annotated, relating to civil practice, is amended by revising Code Section 9-11-133, relating to forms meeting requirements for civil case filing and disposition, as follows:
+ </p>
+<p>"9-11-133.<br />
+The Judicial Council of Georgia, with the approval of the Supreme Court, shall promulgate forms to be used for civil case filing and disposition forms information; provided, however, that the general civil case filing information form and domestic relations case filing information form shall be required to contain an acknowledgment by the filer that the complaint and any exhibits or other attachments satisfy the redaction requirements of Code Section 9-11-7.1."  
+</p>
+<p>"19-9-1.2.
+Pursuant to Code Section 9-11-3, and in addition to the filing requirements contained in Code Section 19-6-15, in all proceedings under this article the plaintiff shall file a domestic relations case filing information form prescribed by the Judicial Council of Georgia." (<a href="/about/sb132">Read more</a> ...)</p> 
+
+								</div>
+							</div>
+						</div>
+					</div>
+                                                      
+                
+                
+                
+                       <div class="ca-item ca-item-superiorprobation">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Lien Cancellation</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>Georgia Department of Revenue Public Notice Invalid and Renewed Liens under the State Tax Execution Modernization Act ...</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text"> 
+                                <br />                   
+                                 <p align="center"><b>Georgia Department of Revenue</b></p>                        
+                        <p align="center"><b>PUBLIC NOTICE</b></p>
+                        <p align="center"><b>Invalid and Renewed Liens under the State Tax Execution Modernization Act</b></p>
+<p style="font-size: 13.5px; line-height: 150%;">On December 31, 2017, all state tax liens issued by the Georgia Department of Revenue which have been filed and recorded in any county in Georgia will become invalid, subject to renewal as follows. Any active state tax liens which were recorded or rerecorded within seven (7) years before January 1, 2018 are eligible to be renewed by the Department. All renewed state tax liens will be valid for a single ten (10) year period from the date of renewal. Renewed liens will maintain priority as of the original date of filing.  (<a href="/about/pressreleases/Public%20Notice_HB337_Lien%20Cancellation%20and%20Revival_12.11.17.pdf" target="_new">Read more</a> ...) </p>
+								</div>
+							</div>
+						</div>
+					</div>               
+                
+                  
+                
+ 
+ 
+ 
+                 	<div class="ca-item ca-item-efile">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Map & Plat <br />e-Filing</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>Effective January 1, 2018, all filing fees for maps and plats shall be paid ...</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+<!--								<h6>Veterans to Register</h6>-->
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">  
+                                <br />                 
+<p style="font-size: 12.5px; line-height: 150%;">Official Code of Georgia Annotated Section 15-6-67(b), effective January 1, 2017, requires that all plats and condominium plans submitted for filing with the clerk of superior court shall be submitted electronically. The clerk of superior court shall file and record plats and condominium plans relating to real estate in the county when submitted for filing as provided in this Code section and accompanied with any required filing fees or costs set forth in Official Code of Georgia Annotated Section 15-6-77.</p>
+<p style="font-size: 12.5px; line-height: 150%;"><b>Effective January 1, 2018</b>, all filing fees for maps and plats shall be paid through the <a href="https://efile.gsccca.org/" target="_blank">Georgia Superior Court Clerks’ Cooperative Authority (GSCCCA) efiling portal</a> at the time of submission. All maps and plats reviewed by and/or approved by the Gwinnett County Department of Planning and Development shall not be exempt from this filing fee requirement, and filing fees for all filers will be required at time of submission for recording through GSCCCA.org.  For a list of recording fees for maps and plats, <a href="/deeds-and-land-records/fees">please click here</a>.</p> 
+
+								</div>
+							</div>
+						</div>
+					</div> 
+                    
+                    
+                    
+            
+      
+                
+       
+                
+                
+                
+
+                
+                     <div class="ca-item ca-item-romefinance">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Warrant App Fee Change</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+                                <span>THIS NEW FILING FEE SHALL BECOME EFFECTIVE AS OF APRIL 1, 2017 ...</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text"> 
+                                <br />                   
+                                 <p align="center"><b>STANDING ORDER</b></p>                        
+                        <p align="center"><b>ORDER SETTING WARRANT APPLICATION FEE</b></p>
+<p style="font-size: 12.5px; line-height: 150%;">Pursuant to authority granted the undersigned by O.C.G.A. 15-10-82, the filing fee for a criminal warrant application is hereby set at $15.00. This amount does not include the Law Library fee, which the Clerk of Court is required to collect pursuant to local act of the General Assembly and in accordance with the order of the Chief Judge of the Superior Court of Gwinnett County dated December 9, 2008 (08-AA-0443). The Law Library add on fee is $5.00. Therefore, the total filing fee (inclusive of the Law Library fee) for criminal warrant applications, unless waived by statue or the Court, shall be $20.00. This new filing fee shall become effective as of April 1, 2017.  (<a href="/about/pressreleases/17-mm-0007.pdf" target="_new">Read more</a> ...) </p>
+								</div>
+							</div>
+						</div>
+					</div>
+                
+                
+                
+                
+                
+                  <div class="ca-item ca-item-probono">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Gwinnett <br />Pro Bono</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>EVERY MONTH GWINNETT PRO BONO PROJECT OFFERING FREE LEGAL HELP IN CONSUMER LAW AND PROBATE ....</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<!--<h6>Civil Filing Fee Increase </h6>-->
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">   <br />
+                                                      
+                        <p align="center"><b>FREE HELP AVAILABLE</b></p>
+                        
+                        <p align="center"><b>EVERY MONTH WE OFFER FREE LEGAL HELP IN CONSUMER LAW AND PROBATE. OPEN TO EVERYONE!</b></p>
+                        
+                        <table width="100%" border="0" cellspacing="10" cellpadding="0">
+                          <tr>
+                            <td width="10">&nbsp;</td>
+                            <td><b>CONSUMER LAW CLINIC</b></td>
+                            <td width="1">&nbsp;</td>
+                                <td width="10">&nbsp;</td>
+                            <td><b>PROBATE CLINIC</b></td>
+                          </tr>
+                          <tr>
+                            <td width="10">&nbsp;</td>
+                            <td>2nd Thursday of each month<br />
+                            1:00 - 4:00 p.m.<br />
+                            GJAC Breezeway</td>
+                            <td width="1" bgcolor="#000000">&nbsp;</td>
+                                <td width="10">&nbsp;</td>
+                            <td>1st and 3rd Thursday of each month<br />
+                            1:30 - 4:00 p.m.<br />
+                            GJAC Breezeway <br />
+                            (<a href="/pro-bono/calendar4T.aspx" target="_new">Reservations required </a>)
+                            </td>
+                          </tr>
+                        </table>
+                        <br /><br />
+                        
+                        <p align="center"></p>
+
+
+								</div>
+							</div>
+						</div>
+					</div>         
+                    
+ 
+ 
+                
+                    
+                     <div class="ca-item ca-item-businesscourt">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Business Court</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+                                <span>The Supreme Court of Georgia recently approved a revision to the Business Court Division Rule ...</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text"> 
+                                <br />                   
+<p style="font-size: 13px; line-height: 150%;">The Supreme Court of Georgia recently approved a revision to the <a href="/superior/businessCourt/Business Court Rule 1004_ JULY 2016_FINAL.pdf" style="color:blue" target="_blank">Business Court Division Rule</a> to allow Superior and State Court systems to join <a href="https://www.fultoncourt.org/business/" style="color:blue" target="_blank">Fulton County’s current Business Court Division</a>. The State Bar of Georgia’s Business Court Committee explored numerous options to expand the Business Court Division’s model in the State of Georgia. After consideration of various models, the Committee agreed to a regional expansion approach which allows counties in the Metro Atlanta area to join. Gwinnett State and Superior Court system sought to be the first County to join the newly expanded Metro Atlanta Business Court. This newly developed expansion continues the Business Court Committee vision that businesses throughout the state would have access to a specialized business court to consistently and efficiently resolve complex commercial litigation issues. </p>
+								</div>
+							</div>
+						</div>
+					</div>
+ 
+                    
+                    
+                     <div class="ca-item ca-item-romefinance">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Garnishment Disbursement</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+                                <span>Mandatory Garnishment Law Changes on Disbursements Pursuant to O.C.G.A. 18-4-20 ...</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text"> 
+                                <br />                   
+<p style="font-size: 12.5px; line-height: 150%;">Pursuant to the new statute controlling garnishments, O.C.G.A. 18-4-20, the plaintiff or plaintiff’s attorney <b>must make application for funds paid to the clerk</b>.  Therefore, the clerk will require an <b>original application with original signatures from the plaintiff or plaintiff’s attorney before funds will be paid to the plaintiff</b>.  This applies in all courts.<br /><br />
+In addition, the clerk requires a Certificate of Service with original signatures or other proof of service upon all defendants along with the application for funds.  In other words, both the application <b>and</b> proof of service must be in the clerk’s file to proceed with funds disbursement with no exceptions.<br /><br />
+The application for funds is available on our website in the forms packets in both <a href="/magistrate/garnishment-forms" style="color:blue">Magistrate Court</a> and <a href="/state-court/forms-and-documents" style="color:blue">State Court</a>.  The service certificate is available as an individual document under garnishment forms. </p>
+								</div>
+							</div>
+						</div>
+					</div>
+                    
+ 
+ 
+ 
+                     <div class="ca-item ca-item-superiorprobation">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Garnishment Exemptions</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>In Senate Bill 255, the General Assembly has substantially rewritten Georgia's Garnishment Code. ...</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<h6>Senate Bill 255</h6>
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">                           
+<br />
+<p>In Senate Bill 255, the General Assembly has substantially rewritten Georgia's Garnishment Code. The revised Garnishment Code includes O.C.G.A. 18-4-6(b) which requires the Attorney General to develop a list of exemptions from garnishment and maintain the list on the Department of Law's website. The list has been developed and is available at  <a href="http://www.law.ga.gov/garnishment-exemption" target="_blank" style="color:blue">www.law.ga.gov/garnishment-exemption</a>. <a href="/about/pressreleases/AG Notification.pdf" target="_blank" style="color:blue">A copy of the list</a> also has to be transmitted to each clerk of court who issues summonses of garnishment. </p>
+								</div>
+							</div>
+						</div>
+					</div>               
+                 
+                    
+                    
+                    
+   					<div class="ca-item ca-item-googleTranslate">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Language Translator</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>In looking for ways to break down language barriers, the Gwinnett Judicial Circuit and Clerk of Court have added the Google Translate ...</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<h6>Google Translate Application</h6>
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">                           
+<p>In looking for ways to break down language barriers, the Gwinnett Judicial Circuit and Clerk of Court have added the Google Translate application to the Clerk of Court website.  The Google Translate icon is located in the top right hand corner of every page.  By clicking on the drop down list, litigants can select the appropriate language and Google Translate will convert the entire webpage into that language.</p>
+<p>The goal is to provide basic court information and foster a better understanding of the judicial process through language access before litigants get to court.  However, the Gwinnett Judicial Circuit and Clerk of Court cannot guarantee the accuracy of the translations; therefore, litigants should still consult with an attorney for any legal advice and assistance.</p> 
+
+								</div>
+							</div>
+						</div>
+					</div>   
+                
+
+                   
+                    
+                     <div class="ca-item ca-item-romefinance">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Rome Finance</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>Upon consideration of the application to vacate judgments entered in favor of Rome Finance Co Inc et al ...</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<h6>The Application Granted</h6>
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">                           
+<li>Upon consideration of the application to vacate judgments entered in favor of Rome Finance Co Inc et al filed by Petitioner Paul J Mansdorf, Trustee of the Bankruptcy Estate of Colfax Captital Corporation f/d/b/a Rome Finance Co, it is ordered, adjudged and decreed that said application be and is granted.</li><br />
+  <li><a href="\about\documents\00267469.TIF.pdf" target="_blank">Application to vacate judgments in favor of Rome Finance Inc</a></li>
+  <li><a href="\about\documents\00267483.TIF.pdf" target="_blank">Final order granting application to vacate judgments</a></li>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+                    
+                    
+
+                    
+                    
+					<div class="ca-item ca-item-garnishmentaffidavit">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Garnishment Filings</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>PROOF OF ASSIGNMENT OF JUDGMENT REQUIRED FOR ALL GARNISHMENT AFFIDAVITS NOT FILED BY ...</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<h6>Proof of Assignment Judgment Required</h6>
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">
+                                <p>PROOF OF ASSIGNMENT OF JUDGMENT REQUIRED FOR ALL GARNISHMENT AFFIDAVITS NOT FILED BY ORIGINAL JUDGMENT CREDITOR</p>
+
+									<p>Effective December 15, 2014, it is the standing order of the Gwinnett County Magistrate Court that a party filing a garnishment action who is not the original judgment creditor (i.e. judgment plaintiff) must, in addition to filing proof of an active judgment, file proof that the judgment has been assigned to the filing party along with the garnishment affidavit. </p>
+								</div>
+							</div>
+						</div>
+					</div>             
+                    
+
+					<div class="ca-item ca-item-2">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Jury Scam</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>The public should be aware of a scam that is occurring across the nation.</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<!--<h6>Don't fall for it!</h6>-->
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text"><br /><br />
+									<p>The public should be aware of a scam that is occurring across the nation. </p><p>You may receive a telephone call or text message notifying you that you have missed jury duty and that you should immediately call the telephone number provided. The text further directs the recipient to call the number to pay a fine. <u>THIS COMMUNICATION IS A BOGUS NOTICE</u>. <p>No one affiliated with the Gwinnett Judicial Circuit Clerk of Superior Court’s office nor the Gwinnett County Sheriff's Office staffs send text or email messages to jurors of this nature. We would contact jurors via telephone but, when we do, the respective staff member will identify themselves. Our automatic telephonic messaging system provides notices to jurors concerning status of cases and appearances. If you are asked to call the office, the telephone number provided will be the main Gwinnett County switchboard number 770-822-8000. </p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+
+<!--					<div class="ca-item ca-item-4">-->
+					<div class="ca-item ca-item-boePositions">                    
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Parenting Seminar</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>A Parent Seminar is a four-hour educational seminar required of specific domestic actions involving a child or children...</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<!--<h6>Make a difference</h6>-->
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text"><br /><br />
+									<p>A Parent Seminar is a four-hour educational seminar required of specific domestic actions involving a child or children under 18 years of age where the parties are involved in a divorce, separate maintenance, paternity, change of custody, visitation, legitimation, and any other domestic action, excluding contempt, and generally, domestic violence. </p><p>The program shall be successfully completed within 31 days of service of the original complaint upon the original defendant. Appropriate action, including but not limited to contempt, may be taken upon a party's failure to successfully complete the workshop. Parties do not have to attend the seminar with their spouses or ex-spouses. Children are not allowed in the workshop. Pre-registration is required.</p><p>Parent Workshop Registration in <a href="/court-programs/parentingseminar_registration.aspx">English</a> / <a href="/court-programs/parentingseminar_matricularse.aspx">En espanol</a></p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="ca-item ca-item-5">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Family Violence</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>Domestic Violence Under Georgia Law, "family violence" is the occurrence of any felony, battery, simple battery, simple assault, assault, stalking</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<h6>Family Violence Act</h6>
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">
+									<p>Domestic Violence Under Georgia Law, "family violence" is the occurrence of any felony, battery, simple battery, simple assault, assault, stalking, criminal damage to property, unlawful restraint, or criminal trespass between past or present spouses, persons who are parents of the same child, parents and children, stepparents and stepchildren, foster parents and foster children, or other persons living or formerly living in the same household, and does not include reasonable discipline administered by a parent to a child in the form of corporal punishment, restraint, or detention. </p><p>Family Violence at <a href="/magistrate/family-violence">Magistrate Court</a> / <a href="/superior/family-violence">Superior Court</a></p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="ca-item ca-item-6">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Pay Tickets</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>Recorder's Court handles traffic citations that are written by the Gwinnett County Police Department, Gwinnett County Sheriff's Department</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<h6>Citation information</h6>
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">
+									<p><a href="/recorders/">Recorder's Court</a> handles traffic citations that are written by the Gwinnett County Police Department, Gwinnett County Sheriff's Department, Georgia Department of Driver Services, and the Georgia Department of Transportation. </p><p>Pay your citation online at <a href="http://www.gwinnettrecorderscourtpmts.com/" target="_blank">www.gwinnettrecorderscourtpmts.com</a></p>
+<p>Pay your citation by phone at 1-877-794-0988</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="ca-item ca-item-7">
+						<div class="ca-item-main">
+							<div class="ca-icon"></div>
+							<h3>Child Support</h3>
+							<h4>
+								<span class="ca-quote">&ldquo;</span>
+								<span>You or your attorney will be required to file financial information on an approved "Child Support Worksheet" before the court</span>
+							</h4>
+								<a href="#" class="ca-more">more...</a>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<h6>Child Support Guidelines</h6>
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text">
+									<p>
+You or your attorney will be required to file financial information on an approved "Child Support Worksheet" before the court can consider any calculation of child support. Both parties are required to file a worksheet.</p><p>This worksheet and instructions are available at the Superior Court Clerk's Office or may be found on-line in an electronic format at the Office of Child Support Services web site:<a href="https://services.georgia.gov/dhr/cspp/do/public/SupportCalc"> https://services.georgia.gov/dhr/cspp/do/public/SupportCalc</a></p><p>This worksheet must be filed timely in accordance with the requirements of the statute and local court orders. You will not get a hearing without your information being accurately supplied on a worksheet filed with the clerk's office.</p><p>Documents and forms at <a href="/superior/forms-and-documents">Superior Court</a></p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+                    
+                    
+                    
+
+                    
+                    
+				</div>
+			</div>
+
+</div><!--end of newsslider-->
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript" src="example2/js/jquery.easing.1.3.js"></script>
+		<!-- the jScrollPane script -->
+		<script type="text/javascript" src="example2/js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="example2/js/jquery.contentcarousel.js"></script>
+		<script type="text/javascript">
+			$('#ca-container').contentcarousel();
+		</script>
+        
+        
+        
+    <!--<div class="attention" style="width: 938px; margin-left: 0px;margin-top: 400px;"><img src="/images/attention3.png" class="attentionpic1" />Effective November 1, 2017 all new notary applicants must complete <a href="http://training.gsccca.org" target="_blank">the online notary training</a>.  You need a 90% or higher to receive the completion certificate. This certificate will need to be presented with your completed application. Exemption for attorneys only - a current Georgia Bar card will need to be presented in lieu of testing. Read more about <a href="/superior/notary-public">Notary Public</a>. </div><br /><br />   -->  
+    
+    
+      <!--<div class="attention" style="width: 938px; margin-left: 0px;margin-top: 400px;"><img src="/images/attention3.png" class="attentionpic1" />Effective January 1, 2018, all filing fees for maps and plats shall be paid through the <a href="https://efile.gsccca.org/" target="_blank">Georgia Superior Court Clerks' Cooperative Authority (GSCCCA) efiling portal</a> at the time of submission. All maps and plats reviewed by and/or approved by the Gwinnett County Department of Planning and Development shall not be exempt from this filing fee requirement, and filing fees for all filers will be required at time of submission for recording through GSCCCA.org.  For a list of recording fees for maps and plats, <a href="/deeds-and-land-records/fees">please click here</a>. </div> <br /><br />   -->
+      
+      
+    <!--  <div class="attention" style="width: 938px; margin-left: 0px;margin-top: 400px;"><img src="/images/attention3.png" class="attentionpic1" />On December 31, 2017, all state tax liens issued by the Georgia Department of Revenue which have been filed and recorded in any county in Georgia will become invalid, subject to renewal as follows. Any active state tax liens which were recorded or rerecorded within seven (7) years before January 1, 2018 are eligible to be renewed by the Department. All renewed state tax liens will be valid for a single ten (10) year period from the date of renewal. Renewed liens will maintain priority as of the original date of filing.  (<a href="/about/pressreleases/Public%20Notice_HB337_Lien%20Cancellation%20and%20Revival_12.11.17.pdf" target="_new">Read more</a>) </div>   <br /><br /> -->
+    
+  
+
+        
+        
+        
+
+
+    <div class="content-toplinks">
+      <div class="toplink-Abox">
+        <div class="toplink-Abox-content">
+        <a href="recorders/faqs" class="tooltip">Can I pay  my ticket without <br />coming to court? <span> <img class="callout" src="images/callout.gif" /><p><strong>Can I pay my ticket without coming to court? (REC 25-625)</strong></p><p>If your citation does <strong>NOT</strong> require a mandatory court appearance you may pay your ticket by:</p><ul><li><strong><em>Mail</em></strong> - Money orders or cashier's check only. </li><li><strong><em>In Person</em></strong> - Fines may be paid in person by money order, cashier's check, cash, debit or credit card during the hours of <strong>8:00 a.m. through 5:00 p.m. Monday through Friday</strong>.</li><li><strong><em>Drop Box</em></strong> - A drop box is located outside of the Court Annex building and available after normal working hours.</li><li><strong><em>Online</em></strong> - Online payments are accepted at www.gwinnettrecorderscourtpmts.com</li></ul><p>For information concerning credit card payments, please refer to Credit   Card Procedures in the menu to the left. Please note that Recorder's Court Clerk's Office does not accept personal or company checks.</p></span></a>
+        <br /><br />
+        <a href="recorders/faqs" class="tooltip">Fee Schedule<span><img class="callout" src="images/callout.gif" /><p><strong>Fee Schedule (REC 25-100)</strong></p><p>There   are no court fees assessed in Recorder's Court. However, every fine   assessed is subject to the appropriate surcharges in accordance with <strong>O.C.G.A. 15-21-70 through 15-21-77</strong>.</p></span></a>
+        <br /><br />
+        <a href="magistrate/dispossessory-action" class="tooltip">What are the requirements for a landlord filing a dispossessory action?<span><img class="callout" src="images/callout.gif" /><p><strong>What are the requirements for a landlord filing a dispossessory action? (MAG 30)</strong></p><p>The   relationship between the parties must be landlord and tenant.The tenant   must be either a tenant holding over, a tenant at will, a tenant at   sufferance, or not paying rent as it becomes due.The landlord must have   made a demand for possession of the premises prior to commencement of   the proceedings.</p></span></a> 
+        <br /><br />
+        <a href="magistrate/dispossessory-action" class="tooltip">Where do I file a dispossessory action to evict my tenants?<span><img class="callout" src="images/callout.gif" /><p><strong>Where do I file a dispossessory action to evict my tenants? (MAG 30)</strong></p><p>A dispossessory action should be filed in the county where the property is located.</p></span></a> 
+        <br /><br />
+<br />
+        </div>
+      </div>
+      <div class="toplink-Bbox">
+        <div class="toplinkBox-content">
+        <a href="/documents/Filing/d0000228.pdf" target="_blank">Report of Divorce, Annulment or Dissolution of Marriage</a><br />
+          <br />
+        <a href="/documents/Filing/cfile.pdf" target="_blank">Domestic Relations Case Filing Information Form</a> <br />
+        <br />
+        <a href="/documents/Filing/cfile.pdf" target="_blank">General Civil Case Filing Information Form (non-domestic)</a><br />
+        <br />
+        <a href="/documents/Filing/Standing Order Child Support and Perm Parenting Plans.pdf" target="_blank">Standing Order Child Support Computation Procedures</a> </div>
+      </div>
+      <div class="toplink-Cbox">
+        <div class="toplinkCox-content">
+        <span><a href="https://gbi.georgia.gov/documents/human-trafficking-notice" target="_blank">Human Trafficking Notice</a></span><br />
+          <br />
+        <span><a href="http://www.gwinnettcountysheriff.com/" target="_blank">Jail Information</a></span><br />
+          <br />
+        <span><a href="http://www.gwinnettbar.com/" target="_blank">Need an Attorney?</a></span> <br />
+        <br />
+        <span><a href="http://cscalc.gaaoc.us/" target="_blank">Child Support Worksheet</a></span> <br />
+        <br />
+        <span><a href="http://www.sheriffalerts.com/cap_main.php?office=54503" target="_blank">Sex Offender Registry</a></span> <br />
+        <br />
+        <span><a href="http://www.gwinnettcounty.com/portal/gwinnett/Departments/DistrictAttorney" target="_blank">Gwinnett County District Attorney</a></span> </div>
+      </div>
+    </div>
+    <div class="findoutmore">
+
+      <table width="960" border="0">
+        <tr>
+          <td width="50">&nbsp;</td>
+          <td width="295"><a href="about/top-faqs"><img src="images/readmore.jpg" width="100" height="36" /></a></td>
+          <td width="300"><a href="about/top-forms"><img src="images/readmore.jpg" alt="" width="100" height="36" /></a></td>
+          <td width="297"><a href="about/top-links"><img src="images/readmore.jpg" alt="" width="100" height="36" /></a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="casesearch">
+      <div class="casesearchboxA">
+        <div class="casesearchboxAtitle"></div>
+        <div class="currentissueb">
+          <div class="currentissuepic1"><img src="images/officialrecords01.png" width="187" height="120" /></div>
+Official court records are maintained by the Clerk of Court for Superior, State and Magistrate’s Courts and are available only from the office Monday thru Friday 8:00AM to 5:00PM.  <br /><br />Information on this website is provided as a public service.  Court calendars may change or may not be accurate.  NO CALENDAR DATE ON THIS WEBSITE IS OFFICIAL.  <br /><br /><u>PLEASE NOTE:  CALENDAR DATES ARE NOT OFFICIAL UNTIL THE COURT CALENDAR IS TRANSMITTED TO THE PARTIES.</u></div>
+      </div>
+<div class="casesearchboxB">
+        <div class="casesearchboxBtitle"></div>
+        <div class="casesearchboxb">
+        <div class="hoursofoperationpic"><img src="images/oldbuilding.jpg" width="146" height="120" /></div>
+        Monday through Friday - 8:00 AM to 5:00 PM. Closed on legal <b><a href="https://www.gwinnettcounty.com/portal/gwinnett/Calendar/CountyHolidaySchedule" target="_blank">holidays</a></b>. Counter closes for new filings at 4:30 PM for Superior, State and Magistrate Court. Deeds and Land Records, Notary Applications, and Probate Court close at 4:30 PM.  Courts and divisions may apply different hours and locations for activities and services. Please check their hours and locations accordingly.<br /><br />
+        If you have a summons or notice of hearing it should give you the location of the building where you should appear. If you are looking for a specific service then you may want to telephone to ask which building houses the court or department you are looking for at 770-822-8000. </div>
+</div>
+      
+      <p>&nbsp;</p>
+    </div>
+  <!-- end .content --></div>
+  <!--<div class="note">&nbsp;</div>-->
+  <div class="footer">
+<div class="footerseal"></div>
+<div class="footertop">
+  <div class="footerboxA">
+    <div class="footerboxAcontent">
+      <a href="/about/clerk-of-courts">Clerk of Courts</a><br />
+      <a href="/about/board-of-equalization">Board of Equalization</a><br />
+      <a href="/court-programs/">Court Programs</a><br />
+      <a href="/superior/">Superior Court</a><br />
+      <a href="/state-court/">State Court</a><br />
+      <a href="/magistrate/">Magistrate Court</a><br />
+      <a href="/probate/">Probate Court</a><br />
+      <a href="/juvenile/">Juvenile Court</a><br />
+      <a href="/recorders/">Recorder's Court</a><br />
+      <a href="http://library.municode.com/index.aspx?clientId=10878&stateId=10&stateName=Georgia" target="_blank">Gwinnett County Code of Ordinances</a><br />
+      <a href="/about/court-house-history">Courthouse History</a></div>
+  </div>
+  <div class="footboxB">
+    <div class="footerboxBcontent">     
+      <a href="/about/map-directions">Map &amp; Directions</a><br />
+      <a href="/about/parking">Parking</a><br />
+      <a href="/about/courthouse-directory">Inside GJAC</a><br />
+      <a href="/about/courthouse-phonebook">Phone Directory</a><br />
+      <a href="/about/security">Security</a><br />
+      <a href="/about/sitemap.xml">Site Map</a><br />
+      <a href="/documents/disclaimer.aspx">Terms of Use</a><br />
+      <a href="/about/privacy">Privacy Notice</a><br />
+	  <a href="/legals/" target="_blank">Gwinnett Daily Post Legals</a><br />
+	</div>
+  </div>
+  <div class="footboxC">
+    <div class="footerboxCcontent">
+      <table width="0" border="0" cellspacing="5">
+        <tr>
+          <td align="right" valign="middle">email:</td>
+          <td valign="top">
+		  
+		 <!-- <a href="mailto:courts.web@gwinnettcounty.com?body=We're happy to help you with any questions or concerns you may have, however,%0Dthis email is only provided to help resolve technical issues with the website. %0DIf you have questions about any court or case matter, please call the appropriate %0Dphone number or come to the courthouse. We do not answer questions about cases %0Dvia email." class="tooltip3">Web Administrator<span><p>We're happy to help you with any questions or concerns you may have, however, this email is only provided to help resolve technical issues with the website. If you have questions about any court or case matter, please call the appropriate phone number or come to the courthouse. We do not answer questions about cases via email.</p></span></a> -->
+		 	<a href="/about/contactUs">Web Administrator</a>	
+		  
+
+		  
+		  
+		  
+		  </td>
+        </tr>
+        <tr>
+          <td align="right" valign="top">phone:</td>
+          <td valign="top">770.822.8100</td>
+        </tr>
+        <tr>
+          <td align="right" valign="top">address:</td>
+          <td valign="top">75 Langley Drive</br>
+            Lawrenceville, GA 30046</td>
+        </tr>
+        <tr>
+          <td align="right" valign="top">&nbsp;</td>
+          <td valign="top">&nbsp;</td>
+        </tr>
+        </table>
+      <div class="footerlogobox"><a href="https://www.gwinnettcourts.com"><img src="/images/logo2a.png" width="397" height="105" /></a></div>
+    </div>
+  </div>
+</div>
+<div class="footercopyright">
+  <div class="footercopyrighttext">Copyright &copy; 2015-<script language="JavaScript" src="/js/copyrightYear.js"></script>   Gwinnett County Courts. All Rights Reserved.</div>
+</div>
+
+<!-- end .footer --></div>
+<!-- end .container --></div>
+
+
+
+
+<div id="overlay"></div>
+<div id="popup">
+    <div class="popupcontrols">
+    <button id="popupclose">Close</button>
+        
+    </div>
+    <div class="popupcontent">
+	<br><br><br><br>
+<p></p>
+<p></p>
+
+
+<p>FOR IMMEDIATE RELEASE MARCH 22, 2020</p>
+
+<p><b>Gwinnett County Clerk of Superior Court’s Office to Offer Socially Distant Services</b></p>  
+
+<p>Office to be closed until Friday, June 12, 2020 at 11:59 p.m. Lawrenceville, GA – Effective Tuesday, March 24, 2020 the Gwinnett County Clerk of Superior, State and Magistrate’s Courts offices will initiate socially distant service delivery until end of June 12, 2020.</p>
+
+<p>The office will fulfill its constitutional mandates in a primarily virtual environment in line with the Supreme Court’s Emergency Order. Clerk of Superior Court Richard T. Alexander, Jr. made the decision to offer socially distant services to protect his staff and to be responsible to the greater Gwinnett community. “We want to be part of flattening the curve of COVID-19,” Alexander said. </p>
+
+<p>Customers can electronically file civil and real estate documents 24 hours a day. The main office at 75 Langley Drive, Lawrenceville, GA 30046 will have one window open for <strong><u>filing criminal pleadings only</u></strong>.  Admission to the clerk’s office for criminal filings will be by coming to the fourth door on the left.  The clerk’s office is located on the court side of the Justice Center.  After passing security and going through the glass doors on your left, as you enter the security check point, the clerk’s office is on the left.  Knock on the door and a staff member will let you in the clerk’s lobby.</p>   
+
+<p><a href="/superior/notary-public" target="_blank">Mail In RENEWAL Notary applications will be accepted for commissions expired / expiring March through June 2020</a></p>
+
+<p><b><a href="/about/pressreleases/Gwinnett Superior Court Clerk's Notice March 22 2020.pdf" target="_blank">Click here to read full release</a></b></p>
+
+
+<p></p>
+<p></p>
+
+
+
+    </div>
+</div>
+<script type="text/javascript">
+        // Initialize Variables
+    var closePopup = document.getElementById("popupclose");
+    var overlay = document.getElementById("overlay");
+    var popup = document.getElementById("popup");
+        // Close Popup Event
+    closePopup.onclick = function() {
+        overlay.style.display = 'none';
+        popup.style.display = 'none';
+    };
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

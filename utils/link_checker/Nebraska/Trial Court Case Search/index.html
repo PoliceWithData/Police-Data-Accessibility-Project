@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js">
+<!--<![endif]-->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Nebraska.gov Subscriber</title>
+        <meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.css">
+        <link rel="stylesheet" href="css/sidemenu.css">
+        <link rel="stylesheet" href="css/header-update.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"></script>')</script>
+
+		<script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="js/tabs.js"></script>
+        <script src="js/jquery-1.3.2"></script>
+         <script src="js/tab-mover.js"></script>
+         <script type="text/javascript" src="js/scroller.js"></script>
+        <style>
+            <!-- TemplateBeginEditable name="EditRegion1" -->EditRegion1<!-- TemplateEndEditable -->
+			#branding {*background-color: #000;}
+			.footer {background-color:#000; color:#fff; padding:10px 20px }
+			.right {text-align:right; }
+			a#bottomlinks {color:#fff; }
+			a.btn-warning:hover { color: white; }
+			.embed-responsive {
+				position: relative;
+				padding-bottom: 56.25%; /* 16:9 */
+				padding-top: 25px;
+				height: 0;
+				box-shadow: 0 0 11px 2px rgba(57, 57, 57, .9);
+			}
+			.embed-responsive iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border: none;
+			}
+			.close {
+			  position: fixed;
+			  top: 0;
+			  color:  #f4bc33;
+			  right: 15px;
+			  font-size: 87px;
+			  opacity:  1;
+			  text-shadow:  none;
+			  font-weight:  bold;
+			  top: 15px;
+			  -webkit-transition: .25s ease-in all;
+			  -moz-transition: .25s ease-in all;
+			  -ms-transition: .25s ease-in all;
+			  -o-transition: .25s ease-in all;
+			  transition: .25s ease-in all;
+			}
+			.close:hover {
+			  color:  #f5ae00;
+			  opacity: 1;
+			}
+	</style>
+
+    </head>
+<body>
+
+<div class="scroll"></div>
+    <ul id="navigation">
+        <li class="home"><a href="https://www.nebraska.gov/apps-subscriber-form/" title="Home" target="_blank"><img style="float:right;" src="images/subscriber3.png"></a></li>
+
+    </ul>
+    <script type="text/javascript">
+            $(function() {
+                $('#navigation a').stop().animate({'marginLeft':'-190px'},1000);
+
+                $('#navigation > li').hover(
+                    function () {
+                        $('a',$(this)).stop().animate({'marginLeft':'-20px'},200);
+                    },
+                    function () {
+                        $('a',$(this)).stop().animate({'marginLeft':'-190px'},200);
+                    }
+                );
+            });
+		
+			$(document).ready(function () { //Modal Overlay Autoplay
+				autoPlayYouTubeModal();
+			});
+
+			function autoPlayYouTubeModal() {
+					var trigger = $('.videoModalTriger');
+				trigger.click(function () {
+					var theModal = $(this).data("target");
+					var videoSRC = $(this).attr("data-videoModal");
+					var videoSRCauto = videoSRC + "?autoplay=1";
+					$(theModal + ' iframe').attr('src', videoSRCauto);
+					$(theModal).on('hidden.bs.modal', function (e) {
+						$(theModal + ' iframe').attr('src', '');
+					});
+				});
+			};		
+        </script>
+
+
+<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+
+        <![endif]-->
+
+        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+
+		<section id="page">
+        	<div id="branding">
+               <a href="http://www.nebraska.gov/" onclick='recordOutboundLink(this, "Header Brand", "Official Nebraska Government Website"); return false;'><img src="images/branding-header.png" alt="Nebraska.gov" height="25" width="345" class="left" /></a><div class="clear"></div>
+               <a href="http://www.nebraska.gov/" onclick='recordOutboundLink(this, "Header Brand", "Nebraska.gov Logo"); return false;'><img src="images/nebraska-logo.png" alt="Nebraska.gov" class="logo left" border="0" height="39" width="225" style="margin-left: .5em;" /></a>
+
+                    <div class="right" style="padding-top: 1.75em; margin-right: .75em;">
+                        <a href="http://www.nebraska.gov/allagencies.html" onclick='recordOutboundLink(this, "Header Brand", "All State Agencies"); return false;'>All State Agencies</a> | <a href="http://www.nebraska.gov/allservice.html" onclick='recordOutboundLink(this, "Header Brand", "All State Services"); return false;'>All State Services</a>
+                    </div>
+        	</div><!-- end branding -->
+
+            <section id="design">
+            <header>
+              <h1 class="italic textleft"><img src="images/subscriber.png" alt="Gold Key" width="40" height="40" />Subscriber Portal</h1></header>
+            <div class="clearfix"></div>
+            <div id="main">
+              <div class="navbar">
+                  <div class="navbar-inner">
+
+                    <div class="container">
+
+                      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </a>
+
+                      <!-- Be sure to leave the brand out there if you want it shown -->
+                      <a class="brand" href="index.html">Nebraska.gov Subscription Services</a>
+
+                      <!-- Everything you want hidden at 940px or less, place within here -->
+                      <div class="nav-collapse collapse">
+                        <ul class="nav"><!--
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">DEMO</a></li>
+                                            <li><a href="#">Grid</a></li>
+                                            <li><a href="#">Content</a></li>
+                                            -->
+                        </ul>
+                      </div>
+
+                    </div><!-- end container -->
+                  </div><!-- end navbar-inner -->
+                </div><!-- end navbar -->
+
+                <div class="container-fluid">
+                    <div class="row-fluid">
+                        <div class="span3">
+<div class="well sidebar-nav">
+              <ul class="nav nav-list">
+                <li class="nav-header">New to subscriber portal?</li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="subscriberbenefits.html">Subscriber Benefits</a></li>
+                <li><a href="https://www.nebraska.gov/apps-subscriber-form/" target="_blank">Subscribe Now</a></li>
+                <li class="nav-header indent-left">Current Subscribers</li>
+                <li><a href="https://nebraska.gov/apps-subscriber-form/user/index" target="_blank" data-toggle="modal">My  Services Login (Basic)</a></li>
+               	  <ul>
+                   	  <li><a href="https://www.nebraska.gov/cdb-forgot-password/index.cgi" target="_blank">Forgot / Reset Password</a></li>
+                  </ul>
+                <li><a href="https://cmbs-admin-ne.cdc.nicusa.com/ne/cust-admin/login.html" target="_blank">Account Management Login</a></li>
+               	  <ul>
+                   	  <li><a href="Howtoguide.html">How to guide</a></li>
+                  </ul>
+                  <div style="margin-right:-18px; text-decoration:none;">
+                    <ul>
+                    	<li><a href="cdb.html">Customer Database Demo</a></li>
+					</ul>
+				  </div>
+              </ul>
+              </div>
+                        <!--/.well -->
+                        </div><!--/span-->
+                        <div class="span9">
+<div class="row-fluid">
+              <div class="span12">
+               	<div class="span3 well" style="text-align:right; float:right; margin:10px; line-height:2em;">
+
+                  <span style="font-size:22px;"><a href="https://www.nebraska.gov/apps-subscriber-form/" target="_blank"><img src="images/subscriber2.png" alt="Subscriber Logo" style=" vertical-align:baseline">
+                   Become a<br>
+                    Nebraska.gov<br>
+                   Subscriber
+                  </a></span>
+                </div>
+
+                <h2><strong>Subscription Services </strong></h2>
+                <p>Nebraska.gov provides services that simplify how you conduct business and interact with the State of Nebraska. As a subscriber, you will have access to a wide range of online eGovernment services offered by the State. These services allow you to take full advantage of the power and convenience of the Internet to connect with Nebraska State government 24 hours a day, 365 days a year. </p>
+                <p>Prices listed below are on a per  record basis unless otherwise noted. </p>
+                <div class="well well-small">
+
+                    <div id="myScroller">
+                        <!--This is the Scroller, this default text will disappear when page loads.-->
+                    </div>
+                </div>
+
+              </div>
+
+
+
+              </div>
+                          <div class="row-fluid">
+                           <div class="span12">
+
+
+                            <ul class="nav nav-tabs">
+                              <li class="active"><a href="#courts" data-toggle="tab"><strong>Courts</strong></a></li>
+		    <li><a href="#DMV" data-toggle="tab"><strong>Department of Motor Vehicles</strong></a></li>
+		    <li><a href="#SOS" data-toggle="tab"><strong>Secretary of State</strong></a></li>
+            <li><a href="#OTH" data-toggle="tab"><strong>Other</strong></a></li>
+	    </ul>
+
+		<div class="tab-content" style="margin:1em;">
+
+		<div class="tab-pane active" id="courts">
+            <h2><strong>Courts</strong></h2>
+
+
+
+			<p><strong><a id="AppellateCourtCaseSearch"></a><a href="https://www.nebraska.gov/courts/sccales/index.cgi" target="_blank">Appellate Court Case Search (full access)</a></strong><strong><a href="https://www.nebraska.gov/courts/sccales/index.cgi" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></strong></p>
+            <p>The SCCALES (Appellate Court) case search system provides access to cases filed in Nebraska's Supreme Court and Court of Appeals. Appellate Case number search will display the full case details including status, documents filed, etc. Filed document images are available to view or download in PDF format. Cost is $1 for each case detail view.</p>
+            <p><a href="http://www.nebraska.gov/demo/courts-appellate/one.html" target="_blank">View Demo</a> <i class="glyphicon icon-film icon-black"></i></p>
+            <p>&nbsp;</p>
+
+            <p><strong><a id="AppellateCourtDocumenteFiling"></a><a href="https://www.nebraska.gov/apps-courts-appellate-efile/" target="_blank">Appellate Court Document eFiling Go</a> <a href="https://www.nebraska.gov/apps-courts-appellate-efile/" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></strong></p>
+            <p>eFiling is the method of electronically sending filings on existing cases to the court in which you choose to file. There are no additional fees to file a case electronically, other than the normal court-assessed fees for filing. Customer accounts for eFilers must be set up on ACH billing in order to accomplish the transfer of funds due to the Courts.</p>
+            <p>Already a <a href="subscriberbenefits.html">Subscriber?</a> Complete the <a href="pdf/E-filing_signup_form%20.pdf" target="_blank">Court e-Filing Request Form</a></p>
+            <p><a href="pdf/courts%20efiling%20handout%20final.pdf" target="_blank">View FAQs <span class="glyphicon icon-question-sign"></span></a> | <a href="http://www.nebraska.gov/courts/efile/efiledemo2.0/Justice%20E-File%20System.html" target="_blank">View Demo</a> <i class="glyphicon icon-film icon-black"></i></p>
+            <p>&nbsp;</p>
+
+			<p><strong><a id="JudgeIndexSearch"></a><a href="https://www.nebraska.gov/courts/jcs/index.cgi" target="_blank">Trial Court Case Search by Judgment Date</a></strong><strong><a href="https://www.nebraska.gov/courts/jcs/index.cgi" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></strong></p>
+            <p>The Trial Court Case Search by Judgment Date provides access to cases filed in all of Nebraska's county courts and district courts.
+            Trial Court Case Search by Judgment Date allows you to enter general case information criteria and generate a list of cases where judgments were entered. These general search results are free of charge. If you choose to view the details of a case including status, financial activity, documents filed, etc. a $1.00 charge will be placed on your Nebraska.gov account.</p>
+            <p><a href="http://www.nebraska.gov/demo/courts-judgment/one.html" target="_blank">View Demo</a> <i class="glyphicon icon-film icon-black"></i></p>
+            <p>&nbsp;</p>
+
+			<p><a id="CourtCaseSearchFull"></a><a href="https://www.nebraska.gov/justice/" target="_blank"><strong>Trial Court Case Searches (full access)</strong></a> <a href="https://www.nebraska.gov/justice/" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></p>
+            <p>Court Case Search allows you to view  case details, including status, financial activity and filed documents, on both  county and district court cases. Court Case search results will include the  following case types; civil, criminal, juvenile, probate, small claims and  traffic cases.  Cost is $1 for each case detail view. </p>
+            <p><a href="http://www.nebraska.gov/faqs/justice/" target="_blank">View FAQs <i class="icon-question-sign icon-black"></i></a> | <a href="http://www.nebraska.gov/demo/justice/" target="_blank">View Demo <i class="glyphicon icon-film icon-black"></i></a></p>
+            <p>&nbsp;</p>
+
+			<p><strong><a id="JusticeBulkSub"></a><span class="linkcolor">Trial Court Case Searches Bulk Subscription (full access)</span></strong></p>
+            <p>Court Case Searches Bulk Subscription is ideal for those who view more than 500  court cases each month. Purchasing the subscription service allows for unlimited  viewing of case details (full access). This service is offered to Nebraska.gov  subscribers for a $500 monthly fee. This service includes Trial court and Appellate Court Case Searches.</p>
+            <p>Already a <a href="subscriberbenefits.html">Subscriber?</a> Complete the <a href="pdf/JUSTICE_Addendum_One.pdf" target="_blank"> Court Case Searches Bulk Subscription Agreement</a></p>
+            <p>Contact Nebraska.gov 402-471-7810 or 1-800-747-8177</p>
+            <p>&nbsp;</p>
+
+			<!--NEW-->
+
+			<p id="TrialCourtRecordIndex"><span class="linkcolor"><strong>Trial Court Court Record Index</strong></span></p>
+
+            <p>The Court Record Index service offers 3 separate files, to be delivered daily, that provide case information. You may choose to receive any of the following:</p>
+            
+			<ul>
+				<li>Case Numbers that have become sealed, offered at no cost</li>
+				<li>New Cases, Monthly cost of $1,000</li>
+				<li>Statewide Case Index, Monthly cost of $1,500</li>
+			</ul>
+			
+			<p>Already a <a href="subscriberbenefits.html">Subscriber</a>? Or interested in more information including file format, case specifications, etc?</p>
+			
+			<p>Contact Nebraska.gov at <a href="mailto:ne-support@egov.com">ne-support@egov.com</a> or call 402-471-7810 or 1-800-747-8177</p>	
+			
+            <p>&nbsp;</p
+
+            <p><strong><a id="CourtBatchFilings"></a><span class="linkcolor">Trial Court Document Batch eFiling</span></strong></p>
+            <p>Batch filing of existing and new  Contract-Unspecified Civil cases is available to attorneys in good standing  with the Nebraska Bar Association. A Nebraska.gov subscription is required.  There is no additional cost for this service. Nebraska.gov will provide  technical instructions (including a DTD and XML file layout). Files are  transferred using FTP and filings are initiated  once daily. </p>
+            <p>Contact Nebraska.gov 402-471-7810 or 1-800-747-8177		</p>
+            <p>&nbsp;</p>
+			
+            <p><strong><a id="CourtDocEfile"></a><a href="https://www.nebraska.gov/apps-EFILE/login/index" target="_blank">Trial Court Document eFiling</a> <a href="https://www.nebraska.gov/apps-EFILE/login/index" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></strong></p>
+            <p>eFiling is the method of electronically  sending filings on new cases and existing cases to the appropriate court in  which you choose to file. New cases can be e-filed in the civil and criminal case types. Filings in existing cases can be e-filed in civil, criminal, probate, and juvenile cases.</p>
+            <p>There are no additional fees to  file a case electronically, other than the normal court-assessed fees for  filing. Customer accounts for eFilers must be set up on ACH billing in order to  accomplish the transfer of funds due to the Courts. </p>
+            <p>Already a <a href="subscriberbenefits.html">Subscriber?</a> Complete the <a href="pdf/E-filing_signup_form%20.pdf" target="_blank">Court e-Filing Request Form</a></p>
+            <p><a href="pdf/courts%20efiling%20handout%20final.pdf" target="_blank">View FAQs <span class="glyphicon icon-question-sign"></span></a> | <a href="https://www.youtube.com/playlist?list=PL02yPaO81qEcQcgEI_Jf8I0empfGmrRaJ" target="_blank">View Demos</a> <i class="glyphicon icon-film icon-black"></i></p>
+			
+			<ol> 
+				<li>
+					<a href="#" class="videoModalTriger" type="button" data-toggle="modal" data-target="#videoModal" data-videoModal="https://www.youtube.com/embed/OHPxUW-AGeQ">Subscription Sign Up</a> <i class="glyphicon icon-film icon-black"></i>
+				</li>
+				<li>
+					<a href="#" class="videoModalTriger" type="button" data-toggle="modal" data-target="#videoModal" data-videoModal="https://www.youtube.com/embed/N8dDkMDIqTk">Forgot User Password</a> <i class="glyphicon icon-film icon-black"></i><br>
+				</li>
+				
+				<li>
+					<a href="#" class="videoModalTriger" type="button" data-toggle="modal" data-target="#videoModal" data-videoModal="https://www.youtube.com/embed/LFaiU38UhHc">Court eFiling Dashboard</a> <i class="glyphicon icon-film icon-black"></i><br>
+				</li>
+				
+				<li>
+					<a href="#" class="videoModalTriger" type="button" data-toggle="modal" data-target="#videoModal" data-videoModal="https://www.youtube.com/embed/YjXDtfWlTCw">Start a New Case</a> <i class="glyphicon icon-film icon-black"></i><br>
+				</li>
+				
+				<li>
+					<a href="#" class="videoModalTriger" type="button" data-toggle="modal" data-target="#videoModal" data-videoModal="https://www.youtube.com/embed/YmnFIVTVtQU">Pre Sentence Investigations</a> <i class="glyphicon icon-film icon-black"></i><br>
+				</li>
+				
+				<li>
+					<a href="#" class="videoModalTriger" type="button" data-toggle="modal" data-target="#videoModal" data-videoModal="https://www.youtube.com/embed/G-rQnpU_wII">File on an Existing Case</a> <i class="glyphicon icon-film icon-black"></i><br>
+				</li>
+			</ol>
+			
+            <p>&nbsp;</p>
+
+
+           <!--NEW-->
+			<p><span class="linkcolor"><strong>Trial Court Payment Disbursements </strong></span></p>
+            <p>This service allows those that are owed money on a court case to receive money electronically, within just a few days and is offered to Nebraska.gov subscribers at no cost. Those registered for this service will also receive email notification that payment was made, including the case number, party making payment, amount and description of the judgment paid.</p>
+            <p>Already a <a href="subscriberbenefits.html">Subscriber?</a> Complete the <a href="pdf/disbursement-of-court-payment-funds-agreement.pdf" target="_blank">Court Disbursement of Funds Agreement</a><br>
+<span style="color: red;"><strong>Please provide a voided check or a Bank DDA letter to your Agreement submission</strong></span></p>
+            
+            
+            <p>Contact Nebraska.gov 402-471-7810 or 1-800-747-8177</p>
+            <p>&nbsp;</p>
+			<!--/NEW-->
+            
+            <!--NEW-->
+			<p><strong><a id="AppellateCourtCaseSearch"></a><a href="https://www.nebraska.gov/courts/return/index.cgi" target="_blank">Trial Court Return Document eFiling</a></strong><strong><a href="https://www.nebraska.gov/courts/return/index.cgi" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></strong></p>
+            <p>Return eFiling is the method of electronically sending return documents on existing cases to the appropriate court in which you choose to file. Only available for Sheriff Offices and Process Servers, court approval required.</p>
+            
+            <p>There are no additional fees to file electronically, other than the normal court-assessed fees for filing. Customer accounts for eFilers must be set up on ACH billing in order to accomplish the transfer of funds due to the Courts.</p>
+
+			<p>Contact Nebraska.gov 402-471-7810 or 1-800-747-8177</p>
+            
+            <p>&nbsp;</p>
+
+            <p><a id="WCCeFile"></a><a href="https://www.nebraska.gov/apps-WCC-EFILE/" target="_blank"><strong>Workers' Compensation Court Document eFiling </strong></a> <a href="https://www.nebraska.gov/apps-WCC-EFILE/" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></p>
+            <p>eFiling is the method of electronically sending filings on new dockets and existing dockets to the Workers' Compensation Court. There are no additional fees to file a case electronically, other than the normal court-assessed fees for filing. Customer accounts for eFilers must be set up on ACH billing in order to accomplish the transfer of funds due to the Court.</p>
+            <p>Already a <a href="subscriberbenefits.html">Subscriber?</a> Complete the <a href="pdf/E-filing_signup_form%20.pdf" target="_blank">Court e-Filing Request Form</a></p>
+            <p><a href="http://www.nebraska.gov/faqs/wcc/" target="_blank"> View FAQs <i class="icon-question-sign icon-black"></i></a></p>
+            <p>&nbsp;</p>
+
+
+
+
+
+
+
+		</div>
+
+		<div class="tab-pane" id="DMV">
+            <h2><strong>Department of Motor Vehicles <span style="font-size:17px;">(DMV)</span></strong></h2>
+            <h3><strong>Online Services</strong></h3>
+            <p><a id="DrvLicRecAdmn"></a><a href="https://www.nebraska.gov/dmv/dlr-admin/index.cgi" target="_blank"><strong>Driver License Record Administration &amp; Monitoring System</strong></a> <a href="https://www.nebraska.gov/dmv/dlr-admin/index.cgi" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></p>
+            <p>This service allows Nebraska.gov subscribers to maintain a listing of individuals/employees online that require frequent review of driver license records.  Once the driver information is entered into the system, it can be purchased and reviewed immediately with a click of a button.  The entries are retained by subscription customer account and there is no additional charge to use the service.  The statutory $3.00 per record fee is charged to the subscription account for each matching record.</p>
+            <p>New! Records set up in the Administration system are able to be set up to monitor changes to accidents, withdrawals, or convictions from the prior month.  View Account Settings from the system for more information</p>
+            <p>Already a <a href="subscriberbenefits.html">Subscriber?</a> Complete the <a href="pdf/DriverRecordSearchAgreement.pdf" target="_blank">Driver Record Search Agreement - Attachment A</a>.  </p>
+         <!--   <p><a href="https://www.nebraska.gov/apps-cdr/public/faq">View FAQs <span class="glyphicon icon-question-sign"></span></a></p> -->
+            <p>&nbsp;</p>
+            <p><strong><a id="DrivRecSearch"></a><a href="https://www.nebraska.gov/dmv/mvr/index.shtml" target="_blank">Driver Record Searches</a></strong> <a href="https://www.nebraska.gov/dmv/mvr/index.shtml" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></p>
+            <p>This service allows qualified business professional Nebraska.gov subscribers to access Nebraska Driver License Records online. A $3.00 fee is charged for each successful  Nebraska Driver License Record search. View driver record information including  status, convictions, accidents, withdrawals and permits online.</p>
+            <p>Already a <a href="subscriberbenefits.html">Subscriber?</a> Complete the <a href="pdf/subscriberaggreementfordmv.pdf" target="_blank">Driver Record Search Agreement - Attachment A</a></p>
+       <!--     <p><a href="http://www.nebraska.gov/demo/mvr/" target="_blank">View Demo <span class="glyphicon icon-film"></span></a></p> -->
+            <p>&nbsp;</p>
+            <p><strong><a id="TLRsearch"></a><a href="https://www.nebraska.gov/dmv/tlr/" target="_blank">Vehicle Title, Lien, Registration Searches</a></strong> <a href="https://www.nebraska.gov/dmv/tlr/" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></p>
+            <p>This service allows qualified business Nebraska.gov subscribers to access Nebraska Title, Lien and Registration Records online.  A $1.00 fee  is charged for each successful Nebraska Title, Lien and Registration Record  Search. </p>
+            <p>Already a <a href="subscriberbenefits.html">Subscriber?</a> Complete the <a href="pdf/subscriberaggreementfordmv.pdf" target="_blank">Driver Record Search Agreement - Attachment A</a></p>
+            <p><a href="http://www.nebraska.gov/demo/tlr/tlr.html" target="_blank">View Demo <span class="glyphicon icon-film"></span></a></p>
+            <p>&nbsp;</p>
+            
+            <p><a id="CertDrivRec"></a><a href="https://www.nebraska.gov/apps-cdr/public/search" target="_blank"><strong>Transcript &amp; Certified Driver Records for City &amp; County Attorneys</strong></a> <a href="https://www.nebraska.gov/apps-cdr/public/search" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></p>
+            <p>This service allows County and City Attorney Nebraska.gov subscribers to order certified or transcript driver records. The fees are  $3.00 for a Certified Record and $4.00 for Transcript record. </p>
+            <p>Already a <a href="subscriberbenefits.html">Subscriber?</a> Complete the <a href="pdf/CDR-Signup-Sheet.pdf" target="_blank">Certified Driver Record Request Form</a>.  </p>
+            <p><a href="https://www.nebraska.gov/apps-cdr/public/faq">View FAQs <span class="glyphicon icon-question-sign"></span></a></p>
+            <p>&nbsp;</p>
+            
+<p><a href="https://www.nebraska.gov/apps-dmv-cfr/auth/login" target="_blank"><strong>Driver Certificate of Financial Responsibility Filing – Single Submit</strong></a> 
+<a href="https://www.nebraska.gov/apps-dmv-cfr/auth/login" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></p>
+<p>This service allows Department of Motor Vehicle approved Insurance Companies that are Nebraska.gov subscribers to submit real-time certificate of financial responsibility filings (SR22 / SR26) to the Nebraska Department of Motor Vehicles. A $.50 per single-submit record is charged to the insurance company’s subscription account.</p>
+<p>Already a <a href="subscriberbenefits.html">Subscriber?</a> Send a request to <a href="mailto:ne-support@egov.com">ne-support@egov.com</a> to add this service.</p>
+<p>&nbsp;</p>
+   
+<p><strong class="linkcolor">Driver Certificate of Financial Responsibility Filing – Bulk Submit</strong></p>
+<p>This service allows Department of Motor Vehicle approved Insurance Companies that are Nebraska.gov subscribers to bulk submit real-time certificate of financial responsibility filings (SR22 / SR26) to the Nebraska Department of Motor Vehicles via web services. This service is offered to Nebraska.gov subscribers for a $250 monthly fee, and a $.15 per record is charged to the insurance company’s subscription account.</p>
+<p>Already a <a href="subscriberbenefits.html">Subscriber?</a> Send a request to <a href="mailto:ne-support@egov.com">ne-support@egov.com</a> for technical documentation and any other on-boarding requirements.</p>
+<p>&nbsp;</p>
+ 
+            
+            <h3><strong>Other</strong></h3>
+            <p><strong class="linkcolor"><a id="DrivLicRecPoint"></a>Driver License Record Point-to-Point</strong></p>
+            <p> This service allows Nebraska.gov subscribers to receive a driver record in ASCII or fixed width text file of driver record information including status, convictions, accidents, withdrawals and permits based on search criteria.  This is used for companies that want to automate a single driver record search that will remain in the same format.  The statutory $3.00 per record fee is charged to the subscription account for each matching record. </p>
+            <p>Complete the <a href="pdf/subscriberaggreementfordmv.pdf" target="_blank">Driver Record Search Agreement - Attachment A</a></p>
+            <p>Contact Nebraska.gov 402-471-7810 or 1-800-747-8177</p>
+        <!--    <p><a href="http://www.nebraska.gov/demo/mvr/lnum.shtml" target="_blank">View Demo <span class="glyphicon icon-film"></span></a></p> -->
+            <p>&nbsp;</p>
+            <p><strong class="linkcolor"><a name="DrivLicRecBatch" id="DrivLicRecBatch"></a>Driver License Record Data-to-Data</strong></p>
+            <p> This service allows Nebraska.gov subscribers to submit a listing  of driver license numbers and receive a file containing driver license records  in return.  Files are transferred via FTP.  The statutory $3.00 per record fee is charged  to the subscription account for each matching record.  Files can be processed up to once  daily. </p>
+            <p>Already a <a href="subscriberbenefits.html">Subscriber?</a> Complete the <a href="pdf/DMV-Batch-DLR-Agreement.pdf" target="_blank">DMV Batch DLR Agreement</a>.</p>
+            <p>Complete the <a href="pdf/subscriberaggreementfordmv.pdf" target="_blank">Driver Record Search Agreement - Attachment A</a></p>
+            <p>Contact Nebraska.gov 402-471-7810 or 1-800-747-8177</p>
+            <p>&nbsp;</p>
+            <p><strong class="linkcolor"><a id="DrivLicRecMonitor"></a>Driver License Record Monitoring</strong></p>
+            <p>This service allows Nebraska.gov subscribers to monitor Nebraska  driver license records (DLR) for changes.   A listing of records are submitted by the subscriber via FTP for  monitoring.  A $.06 fee is charged per  record.  If changes have been made to the  driver record in the monitoring period, the full record is returned and the  statutory $3.00 driver record fee is charged to the subscription account.</p>
+            <p>Already a <a href="subscriberbenefits.html">Subscriber?</a> Complete the <a href="pdf/DLRmonitoringcon.pdf" target="_blank">DLR Monitoring Agreement</a>. </p>
+            <p>Complete the <a href="pdf/subscriberaggreementfordmv.pdf" target="_blank">Driver Record Search Agreement - Attachment A</a></p>
+            <p>Contact Nebraska.gov 402-471-7810 or 1-800-747-8177</p>
+            <p>&nbsp;</p>
+            <p><strong class="linkcolor"><a id="VehDataBatch"></a>Vehicle Data-to-Data</strong></p>
+            <p>This service allows  Nebraska.gov subscribers to submit a listing of license plates and receive a  file containing title and registration information in return.  Files are transferred via FTP.  A $1.00 fee charged to the subscription  account for each matching record. Refer to the <a href="pdf/Batch-VTR-Process-Overview.pdf" title="Batch VTR Process Overview" target="_blank">Batch  VTR Process Overview</a> document for more information. </p>
+            <p>Already a <a href="https://www.nebraska.gov/apps-subscriber-form/" target="_blank">Subscriber?</a> Complete the <a href="pdf/DMV-Batch-VTR-Agreement.pdf" target="_blank">DMV Batch VTR Agreement</a>.</p>
+            <p>Complete the <a href="pdf/subscriberaggreementfordmv.pdf" target="_blank">Driver Record Search Agreement - Attachment A</a></p>
+            <p>Contact Nebraska.gov 402-471-7810 or 1-800-747-8177</p>
+            <p>&nbsp;</p>
+            <p><strong class="linkcolor"><a id="TLRspecReq"></a>Vehicle Title, Lien  &amp; Registration Special Request </strong></p>
+            <p> Request title, lien and  registration data for a specific group of records based on search criteria you  provide. Files will be delivered to the e-mail address provided.</p>
+            <p> Submit the <a href="pdf/special-request-form.pdf" target="_blank">Special Request form</a> to Nebraska.gov to submit your order. <br>
+              Cost: $50 run fee for 1st  2000 records, then $18 for each additional 1000 records.</p>
+            <p>Complete the <a href="pdf/subscriberaggreementfordmv.pdf" target="_blank">Driver Record Search Agreement - Attachment A</a></p>
+            <p>Contact Nebraska.gov 402-471-7810 or 1-800-747-8177</p>
+            <p>&nbsp;</p>
+
+
+		</div>
+
+        <div class="tab-pane" id="SOS">
+            <h2> <strong>Secretary of State  <span style="font-size:17px;">(SOS)</span></strong></h2>
+            <p><a id="CorpDocEdeliv"></a><a href="https://www.nebraska.gov/apps-sos-edocs/" target="_blank"><strong>Corporate Document eDelivery</strong></a>  <a href="https://www.nebraska.gov/apps-sos-edocs/" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a><br>
+            This  service allows you to electronically submit document(s) for filing with the  Secretary of State. Customer accounts must be set up on ACH billing in order to complete the transfer of funds due to the Secretary of State. </p>
+            <p><a href="pdf/FAQCorpeDelivery.pdf" target="_blank">View FAQ <span class="glyphicon icon-question-sign"></span></a></p>
+            <p>&nbsp;</p>
+            <p><a id="LttrGoodStand"></a><a href="https://www.nebraska.gov/sos/ccorp/corpsearch.cgi?nav=search" target="_blank"><strong>Corporate Certificates of Good  Standing</strong></a> <a href="https://www.nebraska.gov/sos/ccorp/corpsearch.cgi?nav=search" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></p>
+            <p>This service allows users to request an electronic certificate of good standing for business entities registered with the Secretary of State. These certificates include a verification ID number for electronic validation. These documents are instant-access and can be viewed in a web browser or printed. $6.50</p>
+            <p>&nbsp;</p>
+            <p><strong><a id="CorpFilingSpecReq"></a><a href="https://www.nebraska.gov/SpecialRequestSearches/index.cgi" target="_blank">Corporate Record Searches - Special Requests</a></strong> <a href="https://www.nebraska.gov/SpecialRequestSearches/index.cgi" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></p>
+            <p> Specify criteria for a  search of the Nebraska Secretary of State Corporate Database and receive a file  of all matching records. Information includes: Entity type (nonprofit, LLC,  etc.), company name, officer name and principle office address (no phone numbers).  <em>Note:  The total number of matches and cost is provided prior to submitting order.</em></p>
+            <p>&nbsp;</p>
+            <p><strong class="linkcolor"><a name="CorpRecBatch" id="CorpRecBatch"></a>Corporate  Records Batch</strong></p>
+            <p> Subscribers can sign up  to receive official corporation record data from the Secretary of State  Business office on a weekly, bi-weekly, or monthly basis.  This is a full set of data in a fixed record  length format containing multiple files that would be used in external  databases.  File delivery is accomplished  via FTP.  $800 monthly, $500 bi-monthly,  $300 weekly</p>
+            <p>Already a <a href="subscriberbenefits.html">Subscriber?</a> Complete the <a href="pdf/corp-data-bulk-contract.pdf" target="_blank">Corporate Records Batch Agreement</a></p>
+            <p>Contact Nebraska.gov 402-471-7810 or 1-800-747-8177</p>
+            <p>&nbsp;</p>
+            <p><a id="CorpSearch"></a><a href="https://www.nebraska.gov/sos/ccorp/corpsearch.cgi?nav=search" target="_blank"><strong>Corporate  Searches and Document Images</strong></a> <a href="https://www.nebraska.gov/sos/ccorp/corpsearch.cgi?nav=search" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></p>
+            <p> Images of filed business documents  are available through the online Corporate Image searches.  Examples of documents available include: tax  reports, name changes, annual filings, etc.   These documents are instant-access and can be viewed in the web browser,  or printed. $0.45/page</p>
+            <p><a href="https://www.nebraska.gov/SpecialRequestSearches/index.cgi" target="_blank">Special request searches</a> by secured  party or debtor location are also available. </p>
+            <p><a href="https://www.nebraska.gov/sos/ccorp/images.html" target="_blank">View FAQs <span class="glyphicon icon-question-sign"></span></a></p>
+            <p>&nbsp;</p>
+            <p><strong class="linkcolor"><a name="UCCimageBatch" id="UCCimageBatch"></a>UCC Image  Batch</strong></p>
+            <p> Subscribers can sign up  to receive PDF images of UCC documents filed with the Nebraska Secretary of  State on a monthly basis.  File delivery  is accomplished via FTP.  $800 monthly</p>
+            <p>Already a <a href="subscriberbenefits.html">Subscriber?</a> Complete the <a href="pdf/UCC-BATCH-IMAGE-AGREEMENT.pdf" target="_blank">UCC Image Batch Agreement</a>.</p>
+            <p>Contact Nebraska.gov 402-471-7810 or 1-800-747-8177</p>
+            <p>&nbsp;</p>
+            <p><strong class="linkcolor"><a name="UCCrecBatch" id="UCCrecBatch"></a>UCC Records  Batch</strong></p>
+            <p> Subscribers can sign up  to receive official UCC record data from the Secretary of State Business office  on a weekly, bi-weekly, or monthly basis.   This is a full set of data in a fixed record length format containing  multiple files that would be used in external databases.  File delivery is accomplished via FTP.  $800 monthly, $500 bi-monthly, $300 weekly</p>
+            <p>Already a <a href="subscriberbenefits.html">Subscriber?</a> Complete the <a href="pdf/ucc-data-bulk-agreement.pdf" target="_blank">UCC Records Batch Agreement</a></p>
+            <p>Contact Nebraska.gov 402-471-7810 or 1-800-747-8177</p>
+            <p>&nbsp;</p>
+            <p><a id="UCC-EFSfilings"></a><a href="http://www.sos.ne.gov/business/ucc/UCC-EFS_SearchFiling.html" target="_blank"><strong>UCC/EFS Filings</strong></a> <a href="http://www.sos.ne.gov/business/ucc/UCC-EFS_SearchFiling.html" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></p>
+            <p> This service allows you to  electronically file UCC and EFS Originals, Assignments, Amendments,  Continuations and Terminations with the Secretary of State. Subscribers must complete the <a href="http://www.sos.ne.gov/business/ucc/pdf/agreement_3.pdf" target="_blank">UCC Electronic Filing Agreement</a> with the Secretary of State to access this service. Filing Costs vary</p>
+            <p><a href="http://www.sos.ne.gov/business/ucc/UCC-EFS_SearchFiling.html" target="_blank">View FAQs <span class="glyphicon icon-question-sign"></span></a> | <a href="http://www.sos.ne.gov/business/ucc/demo-ucc-financing-statement-original-filing-service/index.html" target="_blank">View UCC Originals &amp; Statutory Liens Demo</a> <i class="glyphicon icon-film icon-black"></i> | <a href="http://www.sos.ne.gov/efstutorial/liensearch.html" target="_blank">View EFS Continuations &amp; Terminations Demo</a> <i class="glyphicon icon-film icon-black"></i></p>
+            <p>&nbsp;</p>
+            <p><a name="UCCimage" id="UCC-EFS_imgdoc-Search"></a><a href="http://www.sos.ne.gov/business/ucc/UCC-EFS_SearchFiling.html" target="_blank"><strong>UCC/EFS Searches and Document Images</strong></a> <a href="http://www.sos.ne.gov/business/ucc/UCC-EFS_SearchFiling.html" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></p>
+            <p>This service provides online access to the Nebraska Secretary of State Uniform Commercial Code and Effective Financing Statement records.  Subscribers can search by original document number or debtor name only. $0.00 - $4.50  </p>
+            <p><a href="http://www.sos.ne.gov/business/ucc/UCC-EFS_SearchFiling.html" target="_blank">Special request searches</a> by secured party or debtor location are also available.</p>
+            <p>&nbsp;</p>
+            <p><strong><a name="UCC-EFSspecReq" id="UCC-EFSspecReq"></a><a href="https://www.nebraska.gov/uccsr/" target="_blank">UCC/EFS  Special Requests</a></strong> <a href="https://www.nebraska.gov/uccsr/" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></p>
+            <p>Specify criteria for a  search by Secured Party, or location, of the Nebraska Secretary of State UCC  Database and receive a file of all matching records. Information includes: Lien  number, date of filing, debtor name, and address. $2.00 per record (up to 1000  records) then a flat rate of $2000 (1,001 + records). UCC searches by Debtor  Location are $15 per 1,000 records.</p>
+            
+            
+            
+            
+             <p>&nbsp;</p>
+            <p><strong class="linkcolor"><!--<a name="UCC XML Filing" id="UCC-XML-Filing"></a><a href="" target="_blank">-->UCC XML Filing<!--</a>--></strong><!-- <a href="" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a>--></p>
+            <p>The UCC XML Filing Service is a SOAP-based web service, which allows filers to automate the filing process using IACA standard XML and web-based technologies. This service accepts UCC originations, continuations, terminations, financing statements, and any amendment actions permitted using XML. A Nebraska.gov subscription is required. Subscribers must complete the <a href="http://www.sos.ne.gov/business/ucc/pdf/agreement_3.pdf">UCC Electronic Filing Agreement</a> with the Secretary of State to access service. Nebraska.gov will provide technical instructions. Filing costs vary.</p>
+
+<p>Contact Nebraska.gov 402-471-7810 or 1-800-747-8177</p>
+            
+            
+		</div>
+
+        <div class="tab-pane" id="OTH">
+        	<h2><strong>Brand Committee</strong></h2>
+			<p><span class="linkcolor"><strong>Brand Inspection Fees</strong></span></p>
+			<p>This service allows producers to be invoiced for the monies due for brand inspections. There is no additional cost for this service.</p>
+			<p>&nbsp;</p>
+
+			<h2><strong>Department of Health &amp;  Human Services</strong></h2>
+            <p><a name="HealthProLicMon" id="HealthProLicMon"></a><a href="https://ecmp.nebraska.gov/DHHS-CR/" target="_blank"><strong>Central Registry Requests</strong></a> <a href="https://ecmp.nebraska.gov/DHHS-CR/" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></p>
+            <p> This service allows users to request central registry checks and pay any associated fees.  $2.50 Central Registry Check Fee (pending regulations); $1.00 Online Identity verification (optional service); and $1.50 processing fee</p>
+           <!-- <p><a href="http://www.nebraska.gov/demo/hlm/" target="_blank">View Demo <span class="glyphicon icon-film"></span></a></p>-->
+            <p>&nbsp;</p>
+
+			<p><a name="HealthProLicMon" id="HealthProLicMon"></a><a href="https://www.nebraska.gov/hlm/" target="_blank"><strong>Health Professional License Monitoring</strong></a> <a href="https://www.nebraska.gov/hlm/" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></p>
+            <p> This service allows users to sign up  to be notified of changes in the status of specific health licenses managed by  the Department of Health and Human Services. Upcoming license expiration as  well as disciplinary action email notifications are a part of the tracking  system.  $.01 per license/day ($15  monthly minimum)</p>
+            <p><a href="http://www.nebraska.gov/demo/hlm/" target="_blank">View Demo <span class="glyphicon icon-film"></span></a></p>
+            <p>&nbsp;</p>
+
+        	<h2><strong>Department of Revenue</strong></h2>
+            <p><a name="SaleTaxPerm" id="SaleTaxPerm"></a><a href="https://www.nebraska.gov/revenue/sales/sales.cgi" target="_blank"><strong>Sales Tax Permits</strong></a> <a href="https://www.nebraska.gov/revenue/sales/sales.cgi" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></p>
+            <p> This service allows users to download  a list of all new sales tax permits issued by the Nebraska Department of  Revenue.  The information becomes  available each month and includes business name and address and is available in  an online report listing or a tab delimited format.  $5.50/download
+            </p>
+            <p>&nbsp;</p>
+            <h2 id="PSCRemittance"><strong>Public Service Commission</strong></h2>
+            <p><a href="https://www.nebraska.gov/apps-psc-remittance/" target="_blank"><strong>Remittance System</strong></a> <a href="https://www.nebraska.gov/apps-psc-remittance/" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></p>
+            <p>The service allows for telecommunications carriers to submit worksheets and online payments for the Nebraska Universal Service Fund (NUSF), 911 Service System Fund (911), and the Nebraska Telecommunications Relay System Fund (TRS).</p>
+            <p>&nbsp;</p>
+            <h2><strong>State Patrol</strong></h2>
+            <p><a name="CrimeHistoryRecords" id="CrimeHistoryRecords"></a><a href="https://www.nebraska.gov/apps-nsp-limited-criminal/" target="_blank"><strong>Criminal History Reports</strong></a> <a href="https://www.nebraska.gov/apps-nsp-limited-criminal/" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></p>
+            <p>Nebraska Records of Arrest and Prosecution (RAP) are available for individuals that have a finger print based arrest and resulting dispositions.  This service allows users to submit requests to the Nebraska State Patrol and obtain online reports.  $15.50/person of interest request</p>
+            <p>&nbsp;</p>
+            <h2><strong>State Agencies</strong></h2>
+            <p>Qualified state agencies can apply for free access to some online services.<br>
+              <a href="pdf/bill_tracker_premium.pdf" target="_blank">Application for Premium Access to Bill Tracker</a><br />
+              <a href="pdf/DMV-DLR-Premium-Access.pdf" target="_blank">Application for Premium Access to DMV DLRs</a><br />
+              <a href="pdf/State_and_Local_Government_Agency_Request_for_Free_Access.pdf" target="_blank">Application for State and Local Government Agency Request for Free Access</a><br />
+              <a href="http://www.staterecordsboard.ne.gov/pdf/premium-access.pdf" target="_blank">Application for Premium Access to UCC &amp; EFS Records, Corporation Information, DoR and Sales Tax Permits</a><br />
+              <!--<a href="pdf/nsp-portal-fee-free-agency-app.pdf" target="_blank">Application for Criminal History Records Portal Fee Waived</a>--></p>
+            <p>&nbsp;</p>
+
+            <h2><strong>Other Services</strong></h2>
+            <p><strong><a id="BillTracker"></a><a href="http://www.nebraska.gov/billtracker/about.html" target="_blank">Bill Tracker</a></strong> <a href="http://www.nebraska.gov/billtracker/about.html" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a><br>
+            This service allows Nebraska.gov  subscribers to track legislative bills, amendments, and actions by providing  specific keywords or selected senators or committees to monitor.  Whenever there is a legislative activity on  any of the bills, the user will receive an e-mail notification.  </p>
+            <p>Already a <a href="subscriberbenefits.html">Subscriber?</a> Complete the <a href="http://www.nebraska.gov/billtracker/agreement.pdf" target="_blank">BillTracker Subscription Agreement</a>.</p>
+            <p>Contact Nebraska.gov 402-471-7810 or 1-800-747-8177 </p>
+            <p>&nbsp;</p>
+            <p><strong><a name="WaterWellReg" id="WaterWellReg"></a><a href="https://www.nebraska.gov/dnr/" target="_blank">Water Well Registration</a></strong> <a href="https://www.nebraska.gov/dnr/" target="_blank" class="bold text-success btn btn-warning btn-mini" style="margin-left: 2em;">Go <i class="icon-chevron-right icon-white"></i></a></p>
+            <p> This service allows contractors who  are Nebraska.gov subscribers to register groundwater wells with the Department  of Natural Resources online.   Fees are  variable.                            </p>
+            <p>Submit the <a href="pdf/WW_Service_Agreement1.pdf" target="_blank">Water Well Service Agreement</a> to request setup for this service.
+			<p>&nbsp;</p>
+
+        	<h2>Subscriber Documents</h2>
+            <p><a href="pdf/2015-04-10-srv_agr.pdf" target="_blank">Subscriber Agreement</a></p>
+        </div>
+        </div>
+
+        </div></div>
+
+        <!-- BEGIN MODAL -->
+                        </div><!--/span-->
+                    </div><!--/row-fluid-->
+                    <div class="clear">&nbsp;</div>
+                </div><!-- end container-fluid -->
+
+            </div><!-- end main -->
+            <div class="footer">
+
+        <div class="row-fluid">
+
+
+          <div class="span12 right">
+            <a href="http://www.nebraska.gov" target="_blank">Nebraska.gov</a><br />
+            1135 M St., Suite 220<br />
+            Lincoln, NE 68508<br />
+            Contact Us: <a href="http://www.nebraska.gov/contact-us.html">Support</a>
+          </div>
+        </div>
+		</div>
+        <!-- privacy policies -->
+        <div class="row-fluid">
+          <div class="span12 center">
+
+          <div class="clear">&nbsp;</div>
+			<p style="font-size:18px; text-align:center; "><a id="bottomlinks" href="http://www.nebraska.gov" onclick='recordOutboundLink(this, "Footer Links", "Nebraska.gov");return false;'>Nebraska.gov</a> | <a id="bottomlinks" href="http://www.nebraska.gov/policies.html" onclick='recordOutboundLink(this, "Footer Links", "Policies");return false;'>Security, Privacy, Acceptable Use, &amp; Accessibility Policies</a></p>
+
+
+          </div>
+        </div>
+
+            </section><!-- end design -->
+    </section><!-- end page -->
+		<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<a class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</a>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+
+
+
+    </body>
+</html>

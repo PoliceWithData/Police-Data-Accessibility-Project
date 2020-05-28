@@ -1,0 +1,605 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head id="ctl00_Head1"><title>
+	
+    Search
+
+</title><meta name="ROBOTS" content="NONE" /><meta name="GOOGLEBOT" content="NOARCHIVE" /><link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" /><script type="text/javascript">var site = encodeURI("/benchmarkweb2/");</script><script src="/benchmarkweb2/Scripts/../Content/pace/pace.js?version=2.7.4.67" type="text/javascript"></script><link href="/benchmarkweb2/Content/bundles/master?v=lmwvEjieRhaQtqT7gake4brVRII8WHUnQ8iLMSfnOaE1" rel="stylesheet"/>
+
+    
+    <style type="text/css">
+        .page {
+            width: 100%;
+            height: 100%;
+            padding-bottom: 0px !important;
+        }
+    </style>
+    
+    <link href="/benchmarkweb2/Content/home/search.css?version=2.7.4.67" rel="stylesheet" type="text/css" />
+</head>
+<body style="background-color: #e6e6e6; min-width: 990px">
+    <script src="/benchmarkweb2/Scripts/jquery-1.10.2.min.js?version=2.7.4.67" type="text/javascript"></script>
+    
+    <div id="actionConfirm" class="action-confirm"></div>
+    <div class="wrapper">
+        <table style="width: 100%">
+            <tr>
+                <td style="vertical-align: top; ">
+                    
+                    <div class="well" id="recentActivityWell" style="background-color: white; ">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div id="recentActivity" style="max-width: 220px; ">
+                                        
+<table id="recentActivityTable">
+    <tr>
+        <td colspan="2">
+            <div style="text-align: center">
+                <img style="width: 160px" alt="Pioneer Technology Group" title="Pioneer Technology Group" src="/benchmarkweb2/Content/Counties/Okaloosa/countyLogo.png" />
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <div style="text-align: center; margin-bottom: 5px">
+                
+<div id="logonProcessing" style="display: none;">
+    <img alt="logging in" id="img_img_loading" src="/benchmarkweb2/Content/Images/flash_progress.gif" />
+    Processing...
+</div>
+<div id="logonErr" style="display: none; color: red;">
+    Invalid Username/Password
+</div>
+<div id="logonErrDeny" style="display: none; color: red;">
+</div>
+
+<div id="logonForm">
+    <div style="margin-top: 10px;">
+        <div class="input-prepend">
+            <span class="add-on"><i class="icon-user"></i></span>
+            <input class="span2" type="text" id="txtUsername" placeholder="Username" tabindex="1" style="height: 20px; width: 120px" />
+        </div>
+        
+        <div class="input-prepend">
+            <span class="add-on"><i class="icon-key"></i></span>
+            <input class="span2" type="password" id="txtPassword" tabindex="2" placeholder="Password" style="height: 20px; width: 120px" />
+        </div>
+        
+    </div>
+
+    <a href="#" class="btn btn-primary" id="btnLogin" style="margin-top: 3px"><i class="icon-fixed-width icon-signin"></i>Login</a>
+
+    
+    <span style="float: right; text-align: center">
+        <label>
+            <input type="checkbox" id="cbxRememberMe" style="vertical-align: middle" />&#160;Remember
+        <br />
+            Me</label></span>
+    
+</div>
+
+            </div>
+            
+            <div style="text-align: center; padding: 5px">
+                <p>Need an Account?  Complete a <a href= "https://www.okaloosaclerk.com/index.php/attorney-forms/198-okaloosa-county-access-agreement/file">Registration Agreement</a></p>
+            </div>
+            
+            <div class=" toolbox">
+                <div class="btn-group">
+
+                    <a href="/benchmarkweb2/Home.aspx/About" class="btn btn-warning" title="Help"><i class="icon-large icon-fixed-width icon-question-sign"></i></a>
+                    <a href="#" class="btn btn-info"><i class="icon-large icon-fixed-width icon-edit" id="Feedback" title="Leave Feed Back"></i></a>
+                    
+                </div>
+                
+                <br />
+                
+            </div>
+            
+            <br />
+            
+            <ul class="nav nav-tabs nav-stacked nav-pills sidemenu activitymenu">
+                
+                <li id="Home.aspx/Search">
+                    <a href="/benchmarkweb2/Home.aspx/Search"><i class="icon-large icon-fixed-width icon-search"></i>&#160;Search</a>
+                </li>
+                
+                <li id="CourtDocket.aspx/Index">
+                    <a href="/benchmarkweb2/CourtDocket.aspx"><i class="icon-large icon-fixed-width icon-calendar"></i>&#160;<span>Court Docket</span></a>
+                </li>
+                
+            </ul>
+            <div>
+                
+            </div>
+            <div id="resetPasswordPopup" class="jqmWindow">
+                <div class="jqmWindowTitle jqDnR jqDrag">
+                    <h1>Reset Password</h1>
+                </div>
+                <div id="resetPasswordContent" class="jqmWindowContent">
+                </div>
+            </div>
+            
+        </td>
+    </tr>
+    <tr id="recentActivityContent">
+        <td colspan="2">
+            <table style="padding-left: 7px">
+            </table>
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+        
+
+    $(document).ready(function () {
+        $("#clearImageViewer").click(function () {
+            $.post(site + 'RecentActivity.aspx/ClearImageViewer', { time: util.getTime() },
+                function (result) {
+                    $('#clearImageViewer').hide('fast');
+                });
+        });
+    });
+</script>
+
+
+                                    </div>
+                                </td>
+                                
+                                <td>
+                                    <a href="#" id="ShowHideRecentActivityWrap" 
+                                        class="recentActivityOpen" >
+                                        <i id="ShowHideRecentActivity" class="icon-large icon-chevron-left"></i>
+                                    </a>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </td>
+                
+                <td style="width: 100%; vertical-align: top;">
+                    <div id="main">
+                        <table cellspacing="0" cellpadding="0" id="mainTableContent">
+                            <tr>
+                                <td class="contentMain" valign="top" align="center">
+                                    
+    
+    <table cellpadding="0" cellspacing="0" style="border: none; width: 100%; height: 100%;">
+        <tr>
+            <td id="page_header" colspan="3">
+                <div id="title">
+                    Case Search
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="content_left">&#160;
+            </td>
+            <td align="left" class="content_main" valign="top">
+                <div class="searchTableWrapper">
+                    
+                    <div class="searchBanner alert alert-info">
+                        <a href="http://www.okaloosaclerk.com/index.php/e-certify-documents-info" class="btn btn-warning" style="margin-top: 3px"><i class="icon-fixed-width icon-certificate"></i>Get eCertified Copies</a>
+                    </div>
+                    
+                    <div class="searchTable">
+                        <div class="searchTableTd firstColumn">
+                            <div class="btn-group" data-toggle="buttons-radio">
+                                
+                                <div class="searchInputWrapper btn">
+                                    <label>
+                                        <input type="radio" class="radioButton" name="searchRadioGroup" searchoption="Name" searchtype="Name" />
+                                    </label>
+                                    <label for="name" class="searchLabel">Name</label>
+                                    <input id="name" data-content="Enter Name (Last, First)" title="Party Name Search" class="popoverElement searchInput" type="text" />
+                                </div>
+                                
+                                <div class="searchInputWrapper btn">
+                                    <label>
+                                        <input type="radio" class="radioButton" name="searchRadioGroup" searchoption="Case Number" searchtype="CaseNumber" />
+                                    </label>
+                                    <label for="caseNumber" class="searchLabel">Case Number</label>
+                                    <input id="caseNumber" data-content="Case Number must be in format Year Case Type Six digit number like (2004 TR 000123)" title="Case Number Search" class="popoverElement searchInput" type="text" />
+                                </div>
+                                
+                                <div class="searchInputWrapper btn">
+                                    <label>
+                                        <input type="radio" class="radioButton" name="searchRadioGroup" searchoption="Citation Number" searchtype="CitationNumber" />
+                                    </label>
+                                    <label for="citationNumber" class="searchLabel">Citation Number</label>
+                                    <input id="citationNumber" data-content="Enter the Citation Number" title="Citation Number Search" class="popoverElement searchInput" type="text" />
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="searchTableTd secondColumn">
+                            
+                            <div class="searchDescription">
+                                <div class="searchDescriptionLabel">
+                                    <label for="openedFrom">
+                                        Date Opened
+                                    </label>
+                                </div>
+                                <div class="searchDescriptionText">
+                                    <input type="text" id="openedFrom" data-content="Date from when the case was opened." title="Date Range Opened From" class="datePicker popoverElementTop" />
+                                    <label for="openedTo">
+                                        To
+                                            <input type="text" id="openedTo" data-content="Date to when the case was opened." title="Date Range Opened To" class="datePicker popoverElementTop" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="searchDescription">
+                                <div class="searchDescriptionLabel">
+                                    <label for="closedFrom">
+                                        Date Closed
+                                    </label>
+                                </div>
+                                <div class="searchDescriptionText">
+                                    <input type="text" data-content="Date from when the case was closed." title="Date Range Closed From" id="closedFrom" class="popoverElementTop datePicker" />
+                                    <label for="closedTo">
+                                        To
+                                        <input type="text" data-content="Date to when the case was closed." title="Date Range Closed To" id="closedTo" class="popoverElementTop datePicker" />
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="searchDescription">
+                                <div class="firstDiv searchDescriptionLabel">
+                                    <label for="courTypesButton">
+                                        Court Types
+                                    </label>
+                                </div>
+                                <div class="secondDiv searchDescriptionText">
+                                    <div class="dropDownFilter" style="display: none">
+                                        <select id="courTypes" class="popoverElement multiselect multiselect-search multiselect-all" multiple="multiple">
+                                            
+                                            <option value="18">Animal Control</option>
+                                            
+                                            <option value="9">Appeal from County Court</option>
+                                            
+                                            <option value="3">Circuit Civil</option>
+                                            
+                                            <option value="23">Civil Miscellaneous</option>
+                                            
+                                            <option value="22">Civil Traffic</option>
+                                            
+                                            <option value="19">Code Enforcement</option>
+                                            
+                                            <option value="13">County Civil</option>
+                                            
+                                            <option value="12">County Ordinance</option>
+                                            
+                                            <option value="1">Criminal Felony</option>
+                                            
+                                            <option value="15">Criminal Traffic</option>
+                                            
+                                            <option value="2">Domestic Relations/Family</option>
+                                            
+                                            <option value="6">Guardianship</option>
+                                            
+                                            <option value="10">Misdemeanor</option>
+                                            
+                                            <option value="11">Municipal Ordinance</option>
+                                            
+                                            <option value="16">Non-Criminal Infraction</option>
+                                            
+                                            <option value="20">Parking</option>
+                                            
+                                            <option value="4">Probate/Guardianship</option>
+                                            
+                                            <option value="14">Small Claims</option>
+                                            
+                                            <option value="21">Wills of Safe Keeping</option>
+                                            
+                                        </select>
+                                        <input id="courTypesButton" class="removeAfterMulti" type="hidden" />
+                                    </div>
+                                </div>
+                                <div style="clear: both"></div>
+                            </div>
+                            
+                            </div>
+                            
+                        </div>
+                        <div style="clear: both"></div>
+                        
+                        <div class="searchButton">
+                            <form class="searchform" method="post">
+                                <input name="__RequestVerificationToken" type="hidden" value="DfN5zfmwtDklzkdMWpiipvhcItrg67XjVTwxI3c6AYtV7Ck0QUtjKcgvgIOg11zIwJC6MURR0wkDQo5AgtzTB-2ycAFrC7Uth30nJWSQWpw1" />
+                                
+                                <button type="submit" class="btn btn-primary btn-large" id="searchButton"><i class="icon-large icon-fixed-width icon-search"></i>Search</button>
+                                
+                                <div class="g-recaptcha" style="margin-top: 10px" data-sitekey="6Ldkd3YUAAAAALv4q-GiOmyRvxC_WDxiqBKSIiBc"></div>
+                                
+                                <input type="hidden" name="type" />
+                                <input type="hidden" name="search" />
+                                <input type="hidden" name="openedFrom" />
+                                <input type="hidden" name="openedTo" />
+                                <input type="hidden" name="closedFrom" />
+                                <input type="hidden" name="closedTo" />
+                                <input type="hidden" name="courtTypes"
+                                    value="18,9,3,23,22,19,13,12,1,15,2,6,10,11,16,20,4,14,21" />
+                                <input type="hidden" name="caseTypes"
+                                    value="1,167,7,233,120,121,36,35,123,294,37,225,234,38,78,139,9,10,50,52,206,205,207,291,181,183,182,40,198,236,235,229,270,41,124,295,244,292,122,301,127,79,11,271,12,43,24,237,80,14,13,130,296,15,17,16,158,46,45,226,18,49,134,131,133,132,159,161,263,265,299,125,297,248,141,300,142,160,81,96,100,99,101,51,212,211,213,288,214,240,53,54,135,239,56,58,57,55,224,75,169,2,60,64,62,63,269,4,170,171,174,172,175,176,177,218,178,179,173,187,189,188,216,215,217,290,163,22,83,223,219,220,166,67,164,136,26,165,203,65,126,298,289,70,25,210,76,231,232,85,84,77,68,137,69,193,194,195,71,29,138,148,149,303,151,287,150,302,39,184,186,185,66,147,241,31,258,30,153,143,144,146,286,145,152,261,87,88,227,128,129,242,221,255,89,168,209,3,59" />
+                                <input type="hidden" name="partyTypes" value="1,2,3,4,5" />
+                                <input type="hidden" name="divisions"
+                                    value="1,2,3,79,65,64,4,5,6,80,50,83,82,54,100,51,101,102,103" />
+                                <input type="hidden" name="statutes" />
+                                <input type="hidden" name="partyBirthYear" />
+                                <input type="hidden" name="partyDOB" />
+                                <input type="hidden" name="caseStatus" />
+                                <input type="hidden" name="propertyAddress" />
+                                <input type="hidden" name="propertyCity" />
+                                <input type="hidden" name="propertyZip" />
+                                <input type="hidden" name="propertySubDivision" />
+                                <input type="hidden" name="lawFirm" />
+                                <input type="hidden" name="unpaidPrincipleBalanceFrom" />
+                                <input type="hidden" name="unpaidPrincipleBalanceTo" />
+                                <input type="hidden" name="electionDemandFrom" />
+                                <input type="hidden" name="electionDemandTo" />
+                                <input type="hidden" name="attorneyFileNumber" />
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <input type="hidden" value="" id="defaultSearchOption" />
+            </td>
+            <td class="content_right">&#160;</td>
+        </tr>
+        <tr>
+            <td class="content_bottom_left" valign="top" align="left"></td>
+            <td class="content_bottom_middle"></td>
+            <td class="content_bottom_right" valign="top" align="left"></td>
+        </tr>
+    </table>
+    <div id="searchingDocumentModal" class="modal hide fade" style="display: none;">
+        <div class="modal-header">
+            <h3>Searching...</h3>
+        </div>
+        <div class="modal-body">
+            <div class="progress progress-striped active" id="documentTemplateUploadProgress">
+                <div class="bar" style="width: 100%;"></div>
+            </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+    </div>
+<script type="text/javascript">
+var _userway_config = {
+/* uncomment the following line to override default position*/
+position: '2', 
+/* uncomment the following line to override default size (values: small, large)*/
+/* size: 'large', */
+/* uncomment the following line to override default language (e.g., fr, de, es, he, nl, etc.)*/
+/* language: 'en-US', */
+/* uncomment the following line to override color set via widget (e.g., #053f67)*/
+/* color: '#053f67', */
+/* uncomment the following line to override type set via widget(1=person, 2=chair, 3=eye)*/
+/* type: '2', */
+/* uncomment the following line to override support on mobile devices*/
+/* mobile: true, */
+account: 'zQ4VKSkga7'
+};
+</script>
+<script type="text/javascript" src="https://cdn.userway.org/widget.js"></script>
+    
+                                    <iframe name="_docLoader" width="1" height="1" seamless="true" style="display: none" title="Document Loader"></iframe>
+                                </td>
+                            </tr>
+                        </table>
+                        
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="/benchmarkweb2/Scripts/autoNumeric/autoNumeric.js?version=2.7.4.67" type="text/javascript"></script>
+
+    <script src="/benchmarkweb2/Scripts/home/search.js?version=2.7.4.67" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.inputMask').autoNumeric('init');
+
+            if (localStorage)
+                localStorage.removeItem('DataTables_gridSearchResults_' + site + 'CourtCase.aspx/CaseSearch');
+
+            
+            $(".searchInput").keyup(function (event) {
+                if (event.keyCode == 13) {
+                    $("#searchButton").click();
+                }
+            });
+
+            ;
+
+            // Feature 3115
+            // Auto-login user if usercode query string is provided.
+        
+        });
+
+        $(document).ready(function () {
+            var show = ('speechSynthesis' in window);
+            if (!show) {
+                $("#btnPlayCaptcha").hide();
+            }
+        });
+    </script>
+    
+                        <div class="push"></div>
+                    </div>
+                </td>
+                
+            </tr>
+        </table>
+    </div>
+    <div id="processingModal" class="modal hide fade" data-backdrop="static" style="display: none;">
+        <div class="modal-header">
+            <h3>Processing...</h3>
+        </div>
+        <div class="modal-body">
+            <div class="progress progress-striped active">
+                <div class="bar" style="width: 100%;"></div>
+            </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+    </div>
+    <div id="footer">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td style="width: 10%">&#160;
+                </td>
+                <td style="text-align: center">Best viewed in 1366x768 or higher resolution. Copyright 2008 - 2016 Pioneer Technology Group All Rights Reserved.
+                    <br />
+                    <div id="version">
+                        2.7.4.67
+                    </div>
+                </td>
+                <td style="width: 10%">
+                    <div style="float: right;">
+                        <img src="../Content/Images/footer_benchmark.png" id="ctl00_Img1" title="Powered by Benchmark" alt="Powered by Benchmark" border="0" />
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="/benchmarkweb2/Scripts/bundles/master?v=R2HqeCvRdEA6mtViU6qABjbJMF7ALunDbs_wn43WyGg1"></script>
+
+    <script type="text/javascript">
+                            
+        function replaceText() {
+            
+        }
+        
+
+        replaceText();
+
+        function showProcessModal() {
+            $('#processingModal').modal(
+                {
+                    backdrop: 'static',
+                    keyboard: false,
+                    show: true
+                });
+        }
+
+        function hideProcessModal() {
+            $('#processingModal').modal('hide');
+        }
+
+            
+
+        $(document).ready(function () {
+            $("#advanced_options").click(
+                function () {
+
+                    var is = $("#tadvanced tr[class='advanced']").css("display");
+
+                    if (is == "none") {
+                        var upimg = $("img[id$='adv_options']");
+                        var upsrc = upimg.attr("src").replace("nav2_down.png", "nav2_up.png");
+                        upimg.attr("src", upsrc);
+                        //$("#tadvanced tr[class='advanced']").css("display", "block");
+                    } else {
+                        var downimg = $("img[id$='adv_options']");
+                        var downsrc = downimg.attr("src").replace("nav2_up.png", "nav2_down.png");
+                        downimg.attr("src", downsrc);
+                        //$("#tadvanced tr[class='advanced']").css("display", "none");
+                    }
+                });
+
+            $("#ShowHideRecentActivity").click(
+                function () {
+                    ShowOrHideRecentActivity(true);
+                    if ($('#calendar').length > 0) {
+                        setTimeout(function () {
+                            $('#calendar').fullCalendar('render');
+                        }, 210);
+                    }
+                });
+
+            function ShowOrHideRecentActivity() {
+                var res = $('#recentActivity').is(':visible');
+                var after = function () {
+                    try {
+                        ResizeSilverlightObjectDocketViewer();
+                    }
+                    catch (ex)
+                    { }
+
+                    try {
+                        ResizeSilverlightObjectDocumentViewer();
+                    }
+                    catch (ex)
+                    { }
+                };
+
+                if (!res) {
+                    $("#ShowHideRecentActivity").removeClass("icon-chevron-right");
+                    $("#ShowHideRecentActivity").addClass("icon-chevron-left");
+                    $("#ShowHideRecentActivityWrap").addClass("recentActivityOpen");
+
+                    $("#recentActivity").show(200, 'swing', after);
+                }
+                else {
+                    $("#ShowHideRecentActivityWrap").removeClass("recentActivityOpen");
+                    $("#ShowHideRecentActivity").removeClass("icon-chevron-left");
+                    $("#ShowHideRecentActivity").addClass("icon-chevron-right");
+
+                    $("#recentActivity").hide(200, 'swing', after);
+                }
+
+                $.post(site + 'RecentActivity.aspx/UpdateIsRecentActivityHidden', { update: res });
+            }
+
+            $('.recentSearchPopOver').each(function () {
+                var item = $(this);
+                item.popover(
+                    {
+                        title: function () {
+                            return $(this).attr('data-original-title');
+                        },
+                        animation: true,
+                        trigger: 'hover',
+                        html: true,
+                        content: function () {
+                            return $(this).children('.recentSearchPopOverContent').html();
+                        }
+                    });
+            });
+        });
+
+        $(document).ready(function () {
+            var root = null;
+            var skips = 0;
+                
+            skips = 0;
+            
+        });
+    </script>
+    <noscript>This site requires javascript to run correctly.</noscript>
+    <script type="text/javascript">
+        var isL = 'false';
+        var about = '/benchmarkweb2/Content/Counties/Pioneer/about.htm';
+        var ef = 'false';
+        var results = '0';
+        var dbFilterEnabled = isL ? 'false' : false;
+
+        toastr.options = {
+            "debug": false,
+            "positionClass": "toast-bottom-right",
+            "onclick": null,
+            "fadeIn": 300,
+            "fadeOut": 1000,
+            "timeOut": 5000,
+            "extendedTimeOut": 1000
+        };
+    </script>
+    <div id="theEnd">
+    </div>
+</body>
+</html>

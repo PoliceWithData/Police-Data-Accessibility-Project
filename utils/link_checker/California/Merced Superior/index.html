@@ -1,0 +1,361 @@
+<!doctype html>
+<html class="no-js asp-no-fluid-layout" dir="ltr" lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+
+
+    <title>Merced Superior Court</title>
+
+  <!-- mobile optimized -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- allow pinned sites -->
+  <meta name="application-name" content="Odyssey Portal" />
+
+  <!-- Favicon -->
+  <link href="/MERCEDPROD/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/MERCEDPROD/Content/tylerui/images/apple-touch-icon-144x144-precomposed.png">
+  
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/MERCEDPROD/Content/tylerui/images/apple-touch-icon-114x114-precomposed.png">
+  
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/MERCEDPROD/Content/tylerui/images/apple-touch-icon-72x72-precomposed.png">
+  
+  <link rel="apple-touch-icon-precomposed" href="/MERCEDPROD/Content/tylerui/images/apple-touch-icon-precomposed.png">
+
+  <script>
+    window.odyPortal = window.odyPortal || {};
+    window.odyPortal.sessionInfo = {
+      pageLoadTime: (new Date()).getTime() 
+    };
+    var usePersonaCaseSummary = "False" == "True" ? true : false;
+  </script>
+
+  <!-- Plugin Styles -->
+  
+
+  
+  <link href="/MERCEDPROD/Content/PortalReset.css?v=HD3euui7n1lxavx56-Rd62SNCgtVTbp1sCISDUiiG1Y1" rel="stylesheet"/>
+
+
+  
+  <link rel="stylesheet" href="/MERCEDPROD/Content/tylerui/tylerui-browser-requirements.css">
+  <!-- Bundled Content -->
+
+  <!-- ModernizrDefunctr JS -->
+  <script src="/MERCEDPROD/bundles/ModernizrDefunctr?v=3BC6zM2_o9Xw5CKmkDTIn-sTFHSO-9JROdFmqORHGbg1"></script>
+
+
+  <!-- TylerUI CSS -->
+  <link href="/MERCEDPROD/bundles/TylerUiCss?v=UQOJrQr69GUHs3WlAF_EzaS_0xgYlPpVCFsAs63nopI1" rel="stylesheet"/>
+
+  <!-- Kendo CSS -->
+  <link href="/MERCEDPROD/Content/external/telerik/kendo/kendo.css?v=bzDcF29RRoChnTfBlWURSAWwZYCnKtnPd1nO9Jfp5ec1" rel="stylesheet"/>
+
+  <!-- Main CSS -->
+  <link href="/MERCEDPROD/Content/main.css?v=hJ74S6XSKsCE4VWp0mplmNbvn8a8SBG1OaPxeU9NvUo1" rel="stylesheet"/>
+
+  <!-- Print CSS -->
+  <link href="/MERCEDPROD/Content/print.css?v=ePGEe2URLr5SzCY3_hRCcUwsHxLxDezDOfQ8d_rSrlo1" rel="stylesheet" type="text/css" media="print" />
+
+
+  
+
+  <script src="/MERCEDPROD/bundles/TylerUiJs?v=INAW8YK3Ll-gwPl67-zOt0LcCuahWQUMOGE0j8o03Es1"></script>
+
+
+  
+
+  <script src="/MERCEDPROD/Scripts/ePortal/main.js?v=uk2Rp1YQuK0J7JTgMOJB5HTGmn4bIjYweOAA8GYMzdM1"></script>
+
+  <script src="/MERCEDPROD/Scripts/ePortal/ePortal.js?v=NVWkfvyy5YDmkK3HuwzEsRYmt3A5sRIKIfZPeR66Mq81"></script>
+
+
+    <script type="text/javascript">
+    //The base URL of Portal
+    window.applicationBaseUrl = "https://jpportal.mercedcourt.org/MERCEDPROD/";
+    window.userIsAuthenticated = 'False' === 'True' ? true : false;
+    window.virtualDirectory = '/MERCEDPROD';
+    window.resolveWebIntentDirectoryURI = '/MERCEDPROD/ResolveWebIntent/GetIntentList';
+  </script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#mysidebar" >
+  <!-- center for IE9 since it ignores bootstrap 3 -->
+<center>
+
+    <!-- use noscript and also keep outside of controller to avoid flash in Safari and IE (can't use ng-cloak because there is no js it won't uncloak-->
+    <noscript>
+        <div class="nojs-content">
+            <h2>JavaScript must be enabled in order for you to use this application.</h2>
+            <p>However, it seems JavaScript is either disabled or not supported by your browser.</p>
+            <p>To use this application, enable JavaScript by changing your browser options, then try again.</p>
+        </div>
+    </noscript>
+
+    <div class="nocookies-content">
+        <h2>Cookies must be allowed.</h2>
+        <p>Your browser is currently set to block cookies. Your browser must allow cookies before you can use this application.</p>
+        <p>Cookies are small text files stored on your computer that tell this application when you're signed in. To learn how to allow cookies, see online help in your web browser.</p>
+    </div>
+
+    <div class="unsupported-browser center-block">
+        
+        <h2>You are using a web browser which this application no longer supports.</h2>
+
+        <p>
+            We support the current and previous major releases of Google Chrome, Firefox, Internet Explorer, and Safari on a rolling basis.
+            Each time a new version is released, we begin supporting that version and stop supporting the third most recent version.
+        </p>
+
+        <h2>Supported Browsers</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 text-center">
+                <div>
+                    Chrome for Business
+                </div>
+                <div>
+                    <a href="http://www.google.com/intl/en/chrome/business/browser/">
+                        <img src="/MERCEDPROD/Content/tylerui/images/browsers/chrome_64x64.png" alt="Google Chrome"/>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <div>
+                    Firefox
+                </div>
+                <div>
+                    <a href="http://www.getfirefox.com/">
+                        <img src="/MERCEDPROD/Content/tylerui/images/browsers/firefox_64x64.png" alt="Mozilla Firefox" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <div>
+                    Internet Explorer
+                </div>
+                <div>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <img src="/MERCEDPROD/Content/tylerui/images/browsers/internet-explorer_64x64.png" alt="Microsoft Internet Explorer"/>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <div>
+                    Apple Safari
+                </div>
+                <div>
+                    <a href="http://www.apple.com/safari/">
+                        <img src="/MERCEDPROD/Content/tylerui/images/browsers/safari_64x64.png" alt="Apple Safari"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <b> Internet Explorer 9 Users </b>
+            Internet Explorer 11 launched on October 17, 2013, and as a result, we've discontinued support for Internet Explorer 9.
+
+        <p>
+            Organizations that depend on old versions of Internet Explorer may want to consider a dual browser strategy.
+    </div>
+
+
+</center>
+
+  <omnibar id="omnibar" class="">
+    
+
+    <div class="row" style="background-color: transparent;
+          height: 0px;
+         
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: left;
+          width: 1920px;">
+      <div class="col-md-12">
+      </div>
+    </div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          
+          <brand class="navbar-brand">
+            <a href="/MERCEDPROD/">
+              <div style="width: 100%; padding-left: 4.5rem; margin-top: 7px;">
+                <div class="product">Merced Superior Court</div>
+              </div>
+            </a>
+          </brand>
+        </div>
+        <div id="navbar" class="hidden-xs pull-right">
+  <div class="dropdown" style="margin-top:15px;">
+    <button class="dropdown-toggle btn btn-default login-btn" data-toggle="dropdown" aria-expandable="false" id="dropdownMenu1" style="cursor: pointer;">
+      Register / Sign In
+      <span class="fa fa-user fa-fw"></span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a href="/MERCEDPROD/Account/Register" >Register</a></li>
+      <li role="presentation">
+        <a href="/MERCEDPROD/Account/Login" >Sign In</a>
+      </li>
+      </ul>
+    </div>
+
+          
+        </div><!--/.nav-collapse -->
+        <div id="navbar" class="hidden-lg hidden-md hidden-sm">
+  <div class="dropdown" style="margin-top:15px;">
+    <button class="dropdown-toggle btn btn-default login-btn" data-toggle="dropdown" aria-expandable="false" id="dropdownMenu1" style="cursor: pointer;">
+      Register / Sign In
+      <span class="fa fa-user fa-fw"></span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a href="/MERCEDPROD/Account/Register" >Register</a></li>
+      <li role="presentation">
+        <a href="/MERCEDPROD/Account/Login" >Sign In</a>
+      </li>
+      </ul>
+    </div>
+
+        </div>
+      </div><!--/.container-fluid -->
+    </nav>
+    <div class="row" style="
+    background-color: #40528F;
+    height: 30px;
+    margin-top:  -20px;
+    margin-bottom: 20px;">
+      <div class="col-md-12">
+      </div>
+    </div>
+  </omnibar>
+
+
+  <div id="main" class="container page" style="min-height: 850px; margin-top: 60px;">
+    <div class="hidden-lg hidden-md hidden-sm" style="height:55px;"></div>
+    
+
+<div class="row">
+  <div class="panel panel-default center-block">
+    <div class="panel-body">
+      <h1>Notifications</h1>
+      
+<div class="notification-portlet">
+    <p class="notifications">
+      This website is compatible with the following browsers: Internet Explorer 10 and higher, Chrome, Firefox &amp; Safari.
+    </p>
+    <p class="notifications">
+      NOTE: If purchasing documents, you will need to be a registered user. A minimum transaction fee of $1 applies to each document purchase.
+    </p>
+    <p class="notifications">
+      <a style="color:#40528f;" href="https://jpportal.mercedcourt.org/MERCEDPROD/Account/Register/" target="_blank">If you don&#39;t have an existing account, please click here to register.</a>
+    </p>
+</div>
+
+    </div>
+  </div>
+</div>
+    <div class="row row-space">
+      <div class="center-block">
+            <div style="padding-bottom:15px;" class="col-md-3 col-sm-4 col-xs-12 text-center" id="portlet-17" data-portlet-id="0">
+              <a tabindex="50" class="btn btn-lg btn-default portlet-buttons" href="/MERCEDPROD/Home/Dashboard/17" >
+                  <img style="max-height:96px; max-width:96px;" src="/MERCEDPROD/Content/images/dashboard/Icon_MakePayments.svg" />
+                <br /><br />Make Payments
+                <p stlye="word-wrap: break-word" class="btn-description">
+Make a payment or select payment alternatives for criminal and traffic cases.                </p>
+              </a>
+            </div>
+            <div style="padding-bottom:15px;" class="col-md-3 col-sm-4 col-xs-12 text-center" id="portlet-29" data-portlet-id="0">
+              <a tabindex="51" class="btn btn-lg btn-default portlet-buttons" href="/MERCEDPROD/Home/Dashboard/29" >
+                  <img style="max-height:96px; max-width:96px;" src="/MERCEDPROD/Content/images/dashboard/Icon_SmartSearch.svg" />
+                <br /><br />Smart Search
+                <p stlye="word-wrap: break-word" class="btn-description">
+Search for court records.                </p>
+              </a>
+            </div>
+            <div style="padding-bottom:15px;" class="col-md-3 col-sm-4 col-xs-12 text-center" id="portlet-26" data-portlet-id="0">
+              <a tabindex="52" class="btn btn-lg btn-default portlet-buttons" href="/MERCEDPROD/Home/Dashboard/26" >
+                  <img style="max-height:96px; max-width:96px;" src="/MERCEDPROD/Content/images/dashboard/Icon_SearchHearing.svg" />
+                <br /><br />Search Hearings
+                <p stlye="word-wrap: break-word" class="btn-description">
+Search for court hearings for a specified date range.                </p>
+              </a>
+            </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer role="contentinfo" class="margin-top center-block" style="width: 95%;">
+  <div class="row visible-xs">
+    <div class="col-xs-12" style="margin:0 0 0.5rem -0.5rem;">
+      <img class="pull-left noprint" src="/MERCEDPROD/Content/tylerui/images/empowered.png" alt="Empowered By Tyler Technologies" />
+    </div>
+    <div class="col-xs-12">
+      <small class="pull-left noprint">&copy; 2020 Tyler Technologies, Inc. | All Rights Reserved</small>
+      <br />
+      <small class="pull-left noprint">Version: 2017.1.16.5</small>
+    </div>
+  </div>
+  <div class="row hidden-xs">
+    <div class="col-xs-6 col-md-6">
+      <small class="pull-left noprint">&copy; 2020 Tyler Technologies, Inc. | All Rights Reserved</small>
+      <br />
+      <small class="pull-left noprint">Version: 2017.1.16.5</small>
+    </div>
+    <div class="col-xs-6 col-md-6">
+        <img alt="Empowered By Tyler Technologies" class="pull-right noprint" src="/MERCEDPROD/Content/tylerui/images/empowered.png" />
+    </div>
+  </div>
+</footer>
+
+    <div style="display: none">Machine: M-TYLERPAP2</div>
+
+  <script>
+    (function(config) {
+      Object.keys(config).forEach(function(k) {
+        window.odyPortal.sessionInfo[k] = config[k];
+      });
+    })({"sessionTimeout":20,"isAuthenticated":false,"isKioskMode":false,"isRouteHomeOrIndex":true,"homeUrl":"/MERCEDPROD/?clearSession=True","logOffUrl":"/MERCEDPROD/Account/LogOff?showLandingPage=True","refreshUrl":"/MERCEDPROD/Home/RefreshSession"});
+  </script>
+  <div id="timeout-wrapper" class="lockoutScreen" style="display:none">
+    <div class="hidden-lg hidden-md hidden-sm" style="height:55px;"></div>
+    <div id="page-timeout" class="timeout-container" style="border: 2px solid rgba(100,100,100,0.3); padding: 30px; border-radius: 0; height: 220px;">
+      <h2 style="margin-top:0;">Are you still here?</h2>
+      <hr />
+      <p>
+        Your session will expire in <b><span class="text-primary" id="timeOutTimer">60</span></b> seconds due to inactivity.
+      </p>
+      <p>
+        <input type="button"
+               id="timeoutContinueBtn"
+               class="btn btn-primary pull-right"
+               value="I'm still here."
+               />
+      </p>
+    </div>
+  </div>
+  <div id="sessionTimeoutOverlay"
+       style="display: none; position: fixed; top: 0; left: 0; bottom: 0; right: 0; z-index: 2147483646; background-color: #000; opacity: 0.7;">
+  </div>
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,1089 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head id="ctl00_Head1"><title>
+	
+    Search
+
+</title><meta name="ROBOTS" content="NONE" /><meta name="GOOGLEBOT" content="NOARCHIVE" /><script type="text/javascript">var site = encodeURI("/BenchmarkWeb/");</script><link href="/BenchmarkWeb/Content/bundles/master?v=oKgKTTWrtbwtdXENl7MYXa8PoAdiSz1fY9FLu3au_oY1" rel="stylesheet"/>
+
+
+    <style type="text/css">
+        .page
+        {
+            width: 100%;
+            height: 100%;
+            padding-bottom: 0px !important;
+        }
+    </style>
+    
+    <link href="/BenchmarkWeb/Content/home/search.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background-color: #e6e6e6; min-width: 990px">
+    <script src="/BenchmarkWeb/Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+    
+    <div id="actionConfirm" class="action-confirm"></div>
+    <div class="wrapper">
+        <table style="width: 100%">
+            <tr>
+                <td style="vertical-align: top; ">
+                    
+                    <div class="well" id="recentActivityWell" style="background-color: white; ">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div id="recentActivity" style="max-width: 220px; ">
+                                        
+<table id="recentActivityTable">
+    <tr>
+        <td colspan="2">
+            <img style="width: 160px" alt="Pioneer Technology Group" title="Pioneer Technology Group" src="/BenchmarkWeb/Content/Counties/Pioneer/countyLogo.png" />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <div style="text-align: center; margin-bottom: 5px">
+                
+<div id="logonProcessing" style="display: none;">
+    <img alt="logging in" id="img_img_loading" src="/BenchmarkWeb/Content/Images/flash_progress.gif" />
+    Processing...
+</div>
+<div id="logonErr" style="display: none; color: red;">
+    Invalid Username/Password
+</div>
+
+<div id="logonForm">
+    <div style="margin-top: 10px">
+        <div class="input-prepend">
+            <span class="add-on"><i class="icon-user"></i></span>
+            <input class="span2" type="text" id="txtUsername" placeholder="Username" style="height: 20px; width: 120px" />
+        </div>
+        <div class="input-prepend">
+            <span class="add-on"><i class="icon-key"></i></span>
+            <input class="span2" type="password" id="txtPassword" placeholder="Password" style="height: 20px; width: 120px" />
+        </div>
+    </div>
+    <a href="#" class="btn btn-primary" id="btnLogin" style="margin-top: 3px"><i class="icon-fixed-width icon-signin"></i>Login</a>
+    
+    
+    <span style="float: right; text-align: center">
+        <label>
+            <input type="checkbox" id="cbxRememberMe" style="vertical-align: middle" />&#160;Remember
+        <br />
+            Me</label></span>
+    
+</div>
+
+            </div>
+            
+            <div style="text-align: center; padding: 5px">
+                <h4 style="font-weight:bold;">Register to view documents. Click <a href="http://www.clerk.indian-river.org/Assets/images/pdf/User%20Agreement_searchable.pdf">here</a></h4><br/><h4 style="color:red;font-weight:normal;">Chrome is untested at this time.</h4><br/>
+            </div>
+            
+            <div class=" toolbox">
+                <div class="btn-group">
+
+                    <a href="/BenchmarkWeb/Home.aspx/About" class="btn btn-warning" title="Help"><i class="icon-large icon-fixed-width icon-question-sign"></i></a>
+                    <a href="#" class="btn btn-info"><i class="icon-large icon-fixed-width icon-edit" id="Feedback" title="Leave Feed Back"></i></a>
+                    
+                </div>
+                
+                <br />
+                
+            </div>
+            <br />
+            <ul class="nav nav-tabs nav-stacked nav-pills sidemenu">
+                
+                <li id="Home.aspx/Search">
+                    <a href="/BenchmarkWeb/Home.aspx/Search"><i class="icon-large icon-fixed-width icon-search"></i>&#160;Search</a>
+                </li>
+                
+                <li id="WebLink.aspx/Index">
+                    <a href="/BenchmarkWeb/WebLink.aspx"><i class="icon-large icon-fixed-width icon-cloud"></i>&#160;Links</a>
+                </li>
+                
+            </ul>
+            <div id="resetPasswordPopup" class="jqmWindow">
+                <div class="jqmWindowTitle jqDnR jqDrag">
+                    <h1>Reset Password</h1>
+                </div>
+                <div id="resetPasswordContent" class="jqmWindowContent">
+                </div>
+            </div>
+            
+        </td>
+    </tr>
+    <tr id="recentActivityContent">
+        <td colspan="2">
+            <table style="padding-left: 7px">
+            </table>
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        
+
+        $("#clearImageViewer").click(function () {
+            $.post(site + 'RecentActivity.aspx/ClearImageViewer', { time: util.getTime() },
+                function (result) {
+                    $('#clearImageViewer').hide('fast');
+                });
+        });
+    });
+</script>
+
+
+                                    </div>
+                                </td>
+                                
+                                <td>
+                                    <a href="#" id="ShowHideRecentActivityWrap" 
+                                        class="recentActivityOpen" >
+                                        <i id="ShowHideRecentActivity" class="icon-large icon-chevron-left"></i>
+                                    </a>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </td>
+                
+                <td style="width: 100%; vertical-align: top;">
+                    <div id="main">
+                        <table cellspacing="0" cellpadding="0" id="mainTableContent">
+                            <tr>
+                                <td class="contentMain" valign="top" align="center">
+                                    
+    
+
+    
+    <table cellpadding="0" cellspacing="0" style="border: none; width: 100%; height: 100%;">
+        <tr>
+            <td id="page_header" colspan="3">
+                <div id="title">
+                    Case Search
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="content_left">&#160;
+            </td>
+            <td align="left" class="content_main" valign="top">
+                <div class="searchTableWrapper">
+                    <table class="searchTable">
+                        <tr>
+                            <td class="searchTableTd">
+                                <table style="width: 400px;">
+                                    
+                                    <tr>
+                                        <td>
+                                            <div class="searchInputWrapper">
+                                                <input type="radio" checked="checked" class="radioButton" name="searchRadioGroup" id="allCheck" searchtype="All" />
+                                                <label class="searchLabel" for="allCheck">
+                                                    All</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            <div class="searchInputWrapper">
+                                                <label>
+                                                    <input type="radio" class="radioButton" name="searchRadioGroup" searchoption="Name" searchtype="Name" />
+                                                </label>
+                                                <label for="name" class="searchLabel">Name</label>
+                                                <input id="name" data-content="Enter Name (Last, First)" title="Party Name Search" class="popoverElement searchInput" type="text" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            <div class="searchInputWrapper">
+                                                <label>
+                                                    <input type="radio" class="radioButton" name="searchRadioGroup" searchoption="Case Number" searchtype="CaseNumber" />
+                                                </label>
+                                                <label for="caseNumber" class="searchLabel">Case Number</label>
+                                                <input id="caseNumber" data-content="Case Number must be in format Year Case Type Six digit number like (2004 TR 000123)" title="Case Number Search" class="popoverElement searchInput" type="text" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            <div class="searchInputWrapper">
+                                                <label>
+                                                    <input type="radio" class="radioButton" name="searchRadioGroup" searchoption="Citation Number" searchtype="CitationNumber" />
+                                                </label>
+                                                <label for="citationNumber" class="searchLabel">Citation Number</label>
+                                                <input id="citationNumber" data-content="Enter the Citation Number" title="Citation Number Search" class="popoverElement searchInput" type="text" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                </table>
+
+                            </td>
+                            <td></td>
+                            <td class="searchTableTd">
+                                <table style="width: 500px">
+                                    
+                                    <tr>
+                                        <td class="searchDescription">Date Opened
+                                        </td>
+                                        <td>
+                                            <input type="text" id="openedFrom" data-content="Date from when the case was opened." title="Date Range Opened From" class="datePicker popoverElementTop" />
+                                            <label for="openedTo"><b>To</b></label>
+                                            <input type="text" id="openedTo" data-content="Date to when the case was opened." title="Date Range Opened To" class="datePicker popoverElementTop" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="searchDescription">
+                                            <label for="closedFrom">Date Closed</label></td>
+                                        <td>
+                                            <input type="text" data-content="Date from when the case was closed." title="Date Range Closed From" id="closedFrom" class="popoverElementTop datePicker" />
+                                            <label for="closedTo"><b>To</b></label>
+                                            <input type="text" data-content="Date to when the case was closed." title="Date Range Closed To" id="closedTo" class="popoverElementTop datePicker" />
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="searchDescription">
+                                            <label for="courTypesButton">Court Types</label>
+                                        </td>
+                                        <td class="dropDownFilter" style="display: none">
+                                            <select id="courTypes" class="popoverElement multiselect multiselect-search multiselect-all" multiple="multiple">
+                                                
+                                                <option value="21">ANIMAL CONTROL</option>
+                                                
+                                                <option value="2">APPEALS</option>
+                                                
+                                                <option value="4">CIRCUIT CIVIL</option>
+                                                
+                                                <option value="20">CIVIL TRAFFIC</option>
+                                                
+                                                <option value="5">COUNTY CIVIL</option>
+                                                
+                                                <option value="13">COUNTY ORDINANCE</option>
+                                                
+                                                <option value="11">CRIMINAL FELONY</option>
+                                                
+                                                <option value="14">CRIMINAL TRAFFIC</option>
+                                                
+                                                <option value="7">DOMESTIC RELATIONS</option>
+                                                
+                                                <option value="8">GUARDIANSHIP</option>
+                                                
+                                                <option value="16">INFRACTIONS</option>
+                                                
+                                                <option value="17">LOCAL CASE</option>
+                                                
+                                                <option value="18">MISDEMEANOR</option>
+                                                
+                                                <option value="19">MUNICIPAL ORDINANCE</option>
+                                                
+                                                <option value="6">PROBATE</option>
+                                                
+                                                <option value="10">SMALL CLAIMS</option>
+                                                
+                                            </select>
+                                            <input id="courTypesButton" class="removeAfterMulti" type="hidden" />
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr id="caseTypeRow">
+                                        <td class="searchDescription">
+                                            <label for="caseTypesButton">
+                                                Causes of Action / Case Types
+                                            </label>
+                                        </td>
+                                        <td class="dropDownFilter" style="display: none">
+                                            <select id="caseTypes" style="width: 400px" class="popoverElement multiselect multiselect-search multiselect-all" multiple="multiple" title="Causes of Action / Case Types" data-content="Causes of Action or Case types to include in the search.">
+                                                
+                                                <option value="109">ADVANCED DIRECTIVE&#160;</option>
+                                                
+                                                <option value="118">AMEND DEATH CERTIFICATE&#160;</option>
+                                                
+                                                <option value="159">ANNULMENT&#160;</option>
+                                                
+                                                <option value="50">ANTITRUST-TRADE REGULATION&#160;</option>
+                                                
+                                                <option value="70">APPEAL FROM COUNTY COURT&#160;</option>
+                                                
+                                                <option value="110">APPOINT INDIVIDUAL TRUSTE&#160;</option>
+                                                
+                                                <option value="31">AUTO NEGLIGENCE&#160;</option>
+                                                
+                                                <option value="282">AUTO NEGLIGENCE $100 BUT LESS THAN $500&#160;</option>
+                                                
+                                                <option value="284">AUTO NEGLIGENCE $2500 TO $5000&#160;</option>
+                                                
+                                                <option value="283">AUTO NEGLIGENCE $500 BUT LESS THAN $2500&#160;</option>
+                                                
+                                                <option value="73">AUTO NEGLIGENCE OVER $5000.00&#160;</option>
+                                                
+                                                <option value="281">AUTO NEGLIGENCE UNDER $100.00&#160;</option>
+                                                
+                                                <option value="232">AUTO NEGLIGENCE UNDER $5000.00&#160;</option>
+                                                
+                                                <option value="112">Caveat&#160;</option>
+                                                
+                                                <option value="156">Child Suport IV-D&#160;</option>
+                                                
+                                                <option value="184">Child Support IV-D (DOR ENF SUPT ORDER FROM ANOTHER CTY)&#160;</option>
+                                                
+                                                <option value="263">CIRCUIT CIVIL&#160;</option>
+                                                
+                                                <option value="329">CIRCUIT CRIMINAL&#160;</option>
+                                                
+                                                <option value="359">CIVIL CONTRABAND FORFEITURE&#160;</option>
+                                                
+                                                <option value="330">CIVIL TRAFFIC&#160;</option>
+                                                
+                                                <option value="307">Claims $1001 but not more than $2500  filed with a Replevin&#160;</option>
+                                                
+                                                <option value="308">Claims $2501 but not more than $5000  filed with a Replevin&#160;</option>
+                                                
+                                                <option value="804">Claims $5001 but not more than $8000  filed with a Replevin&#160;</option>
+                                                
+                                                <option value="306">Claims not more than $1000 filed with a Replevin&#160;</option>
+                                                
+                                                <option value="805">COMM FORECLOSURE $0-$50000&#160;</option>
+                                                
+                                                <option value="19">COMM FORECLOSURE $0-$50000&#160;</option>
+                                                
+                                                <option value="21">COMM FORECLOSURE $250000 OR MORE&#160;</option>
+                                                
+                                                <option value="807">COMM FORECLOSURE $250000 OR MORE&#160;</option>
+                                                
+                                                <option value="806">COMM FORECLOSURE $50001-$249999&#160;</option>
+                                                
+                                                <option value="20">COMM FORECLOSURE $50001-$249999&#160;</option>
+                                                
+                                                <option value="338">Complaint for Interpleader&#160;</option>
+                                                
+                                                <option value="44">CONDOMINIUM&#160;</option>
+                                                
+                                                <option value="113">CONSERVATORSHIP&#160;</option>
+                                                
+                                                <option value="53">CONSTITUTIONAL CHALLENGE-PROPOSED AMENDMENT&#160;</option>
+                                                
+                                                <option value="114">CONSTRUE VALIDITY OF POST&#160;</option>
+                                                
+                                                <option value="12">CONTRACT &amp; INDEBTEDNESS&#160;</option>
+                                                
+                                                <option value="345">Control of Animals&#160;</option>
+                                                
+                                                <option value="54">CORPORATE TRUST&#160;</option>
+                                                
+                                                <option value="266">COUNTY CIVIL&#160;</option>
+                                                
+                                                <option value="795">County Civil $15,0001 - $30,000&#160;</option>
+                                                
+                                                <option value="115">CURATOR&#160;</option>
+                                                
+                                                <option value="294">DAMAGES $100 BUT LESS THAN $500&#160;</option>
+                                                
+                                                <option value="296">DAMAGES $2500 TO $5000&#160;</option>
+                                                
+                                                <option value="295">DAMAGES $500 BUT LESS THAN $2500&#160;</option>
+                                                
+                                                <option value="77">DAMAGES OVER $2500.00&#160;</option>
+                                                
+                                                <option value="293">DAMAGES UNDER $100&#160;</option>
+                                                
+                                                <option value="235">DAMAGES UNDER $5000.00&#160;</option>
+                                                
+                                                <option value="133">DATING VIOLENCE&#160;</option>
+                                                
+                                                <option value="116">DECLARATION OF DEATH&#160;</option>
+                                                
+                                                <option value="348">Declaratory Judgment&#160;</option>
+                                                
+                                                <option value="286">DELINQUENT ACCT $100 BUT LESS THAN $500&#160;</option>
+                                                
+                                                <option value="288">DELINQUENT ACCT $2500 TO $5000&#160;</option>
+                                                
+                                                <option value="287">DELINQUENT ACCT $500 BUT LESS THAN $2500&#160;</option>
+                                                
+                                                <option value="285">DELINQUENT ACCT LESS THAN $100&#160;</option>
+                                                
+                                                <option value="233">DELINQUENT ACCT. UNDER $5000.00&#160;</option>
+                                                
+                                                <option value="75">DELIQUENT ACCT. OVER $5000.00&#160;</option>
+                                                
+                                                <option value="55">DISCRIMINATION-EMPLOYMENT OR OTHER&#160;</option>
+                                                
+                                                <option value="318">DISESTABLISHMENT OF PATERNITY&#160;</option>
+                                                
+                                                <option value="246">Disposition of Personal Property without Administration&#160;</option>
+                                                
+                                                <option value="153">DISSOLUTION OF MARRIAGE&#160;</option>
+                                                
+                                                <option value="192">DISSOLUTION OF MARRIAGE WITH CHILD&#160;</option>
+                                                
+                                                <option value="264">DOMESTIC RELATIONS&#160;</option>
+                                                
+                                                <option value="132">DOMESTIC VIOLENCE&#160;</option>
+                                                
+                                                <option value="190">DOR Administrative Support/Paternity
+&#160;</option>
+                                                
+                                                <option value="188">DOR CHANGE PAYEE/PATERNITY&#160;</option>
+                                                
+                                                <option value="180">DOR CHANGE PAYY/SUPPORT&#160;</option>
+                                                
+                                                <option value="177">DOR ENF SUPT ORDER FROM ANOTHER CTY&#160;</option>
+                                                
+                                                <option value="175">DOR ESTAB FOREIGN DECREE - NON-IV-D&#160;</option>
+                                                
+                                                <option value="174">DOR PATERNITY &amp; SUPPORT - NON-IV-D&#160;</option>
+                                                
+                                                <option value="171">DOR Paternity/Disestablishment of Paternity
+&#160;</option>
+                                                
+                                                <option value="186">DOR REGISTRATION ENFORCE/MODIFY&#160;</option>
+                                                
+                                                <option value="185">DOR REGISTRATION ONLY&#160;</option>
+                                                
+                                                <option value="173">DOR SUPPORT &amp; REIMBURSE - NON-IV-D&#160;</option>
+                                                
+                                                <option value="178">DOR UIFSA (AFDC) RSPT OUT OF STATE&#160;</option>
+                                                
+                                                <option value="179">DOR UIFSA (NON-IV-D) RSPT OUT STATE&#160;</option>
+                                                
+                                                <option value="157">DOR URESA-UIFSA (NON-IV-D) IN STATE&#160;</option>
+                                                
+                                                <option value="14">EMINENT DOMAIN&#160;</option>
+                                                
+                                                <option value="183">ENF SUPT ORDER FROM ANOTHER COUNTY&#160;</option>
+                                                
+                                                <option value="342">Equity Matter - Monetary&#160;</option>
+                                                
+                                                <option value="344">Equity Matter - Non-Monetary&#160;</option>
+                                                
+                                                <option value="136">ESTATE - ADMIN. AD LITEM&#160;</option>
+                                                
+                                                <option value="84">ESTATE - ADMIT TRANSCRIPT&#160;</option>
+                                                
+                                                <option value="85">ESTATE - ADMIT WILL&#160;</option>
+                                                
+                                                <option value="87">ESTATE - ANCILLARY SUMMARY&#160;</option>
+                                                
+                                                <option value="86">ESTATE - ANCILLIARY&#160;</option>
+                                                
+                                                <option value="88">ESTATE - AUTH TO CREMATE&#160;</option>
+                                                
+                                                <option value="89">ESTATE - CONVERTED TO SUMMARY&#160;</option>
+                                                
+                                                <option value="90">ESTATE - CURATORSHIP/FORM&#160;</option>
+                                                
+                                                <option value="129">ESTATE - DETERMINATION/HOMESTEAD&#160;</option>
+                                                
+                                                <option value="130">ESTATE - DETERMINE BENEFICIARIES&#160;</option>
+                                                
+                                                <option value="247">ESTATE - DOPP/SUMMARY&#160;</option>
+                                                
+                                                <option value="152">ESTATE - FOREIGN WILL&#160;</option>
+                                                
+                                                <option value="97">ESTATE - FOREIGN WILL/FRM&#160;</option>
+                                                
+                                                <option value="98">ESTATE - FOREIGN WILL/SUM&#160;</option>
+                                                
+                                                <option value="137">ESTATE - FORMAL/DOPP&#160;</option>
+                                                
+                                                <option value="138">ESTATE - FORMAL/FAMILY&#160;</option>
+                                                
+                                                <option value="139">ESTATE - FORMAL/OPEN SAFE&#160;</option>
+                                                
+                                                <option value="106">ESTATE - FORMAL/SUMMARY&#160;</option>
+                                                
+                                                <option value="93">ESTATE - HOMESTEAD SUMMARY&#160;</option>
+                                                
+                                                <option value="100">ESTATE - OPEN SAFE DEPOSIT BOX&#160;</option>
+                                                
+                                                <option value="101">ESTATE - OPEN SAFE/FORMAL&#160;</option>
+                                                
+                                                <option value="102">ESTATE - PET TO APPT FRML&#160;</option>
+                                                
+                                                <option value="103">ESTATE - SAFE DEP/SUMMARY&#160;</option>
+                                                
+                                                <option value="104">ESTATE - SUBSEQUENT&#160;</option>
+                                                
+                                                <option value="99">ESTATE - SUMMARY/FORMAL&#160;</option>
+                                                
+                                                <option value="107">ESTATE - SUMMARY/OPEN SAFE&#160;</option>
+                                                
+                                                <option value="151">Eviciton Non-Monetary (Count I)&#160;</option>
+                                                
+                                                <option value="802">Eviction $15,001 - $30,000 (Count I and II)&#160;</option>
+                                                
+                                                <option value="801">Eviction $2501 - $15,000 (Count I and II )&#160;</option>
+                                                
+                                                <option value="792">Eviction Not exceeding $2500 (Count I and II)&#160;</option>
+                                                
+                                                <option value="16">EVICTIONS&#160;</option>
+                                                
+                                                <option value="17">FORECLOSURE OF MECHANICS LIEN&#160;</option>
+                                                
+                                                <option value="68">FOREIGN JUDGMENTS AND ARBITRATION&#160;</option>
+                                                
+                                                <option value="355">FOREIGN JUDGMENTS AND ARBITRATION&#160;</option>
+                                                
+                                                <option value="131">Formal Administration, including Ancillary, Curatorship and Conservatorship&#160;</option>
+                                                
+                                                <option value="108">GUARDIAN AD LITEM&#160;</option>
+                                                
+                                                <option value="248">GUARDIAN AD LITEM&#160;</option>
+                                                
+                                                <option value="194">GUARDIAN AD LITEM&#160;</option>
+                                                
+                                                <option value="269">GUARDIANSHIP&#160;</option>
+                                                
+                                                <option value="196">GUARDIANSHIP - FOREIGN&#160;</option>
+                                                
+                                                <option value="250">GUARDIANSHIP - FOREIGN&#160;</option>
+                                                
+                                                <option value="199">GUARDIANSHIP - PERSON&#160;</option>
+                                                
+                                                <option value="201">GUARDIANSHIP - PROPERTY&#160;</option>
+                                                
+                                                <option value="333">GUARDIANSHIP - SINGLE PETITION&#160;</option>
+                                                
+                                                <option value="203">GUARDIANSHIP - VOLUNTARY&#160;</option>
+                                                
+                                                <option value="320">GUARDIANSHIP – ADVOCATE (Person and Property) &#160;</option>
+                                                
+                                                <option value="195">Guardianship or Guardian Advocacy of Person only&#160;</option>
+                                                
+                                                <option value="200">Guardianship or Guardian Advocacy with Property&#160;</option>
+                                                
+                                                <option value="350">Guardianship Other (Not Preneed Declarations)&#160;</option>
+                                                
+                                                <option value="810">HOMEST RES FORECL $250000 OR MORE&#160;</option>
+                                                
+                                                <option value="24">HOMEST RES FORECL $250000 OR MORE&#160;</option>
+                                                
+                                                <option value="23">HOMEST RES FORECL $50001-$249999&#160;</option>
+                                                
+                                                <option value="809">HOMEST RES FORECL $50001-$249999&#160;</option>
+                                                
+                                                <option value="808">HOMEST RES FORECLOSURE $0-$50000&#160;</option>
+                                                
+                                                <option value="22">HOMEST RES FORECLOSURE $0-$50000&#160;</option>
+                                                
+                                                <option value="298">INDEBTEDNESS $100 BUT LESS THAN $500&#160;</option>
+                                                
+                                                <option value="300">INDEBTEDNESS $2500 TO $5000&#160;</option>
+                                                
+                                                <option value="299">INDEBTEDNESS $500 BUT LESS THAN $2500&#160;</option>
+                                                
+                                                <option value="78">INDEBTEDNESS OVER $5000.00&#160;</option>
+                                                
+                                                <option value="297">INDEBTEDNESS UNDER $100&#160;</option>
+                                                
+                                                <option value="236">INDEBTEDNESS UNDER $5000.00&#160;</option>
+                                                
+                                                <option value="172">INJUNC - REPEAT VIOL&#160;</option>
+                                                
+                                                <option value="134">INJUNCTION - REPEAT VIOLENCE&#160;</option>
+                                                
+                                                <option value="167">INJUNCTION AND HABEAUS CORPUS&#160;</option>
+                                                
+                                                <option value="163">INJUNCTION/PROTECTION&#160;</option>
+                                                
+                                                <option value="347">Injunctive Relief&#160;</option>
+                                                
+                                                <option value="56">INSURANCE CLAIMS&#160;</option>
+                                                
+                                                <option value="57">INTELLECTUAL PROPERTY&#160;</option>
+                                                
+                                                <option value="346">Interred Bodies&#160;</option>
+                                                
+                                                <option value="182">INTERSTATE INCOME DEDUCTION (AFDC)&#160;</option>
+                                                
+                                                <option value="176">INTERSTATE INCOME DEDUCTION NON-IVD&#160;</option>
+                                                
+                                                <option value="166">LEGAL SEPARATION&#160;</option>
+                                                
+                                                <option value="58">LIBEL/SLANDER&#160;</option>
+                                                
+                                                <option value="7">MALPRACTICE&#160;</option>
+                                                
+                                                <option value="10">MALPRACTICE - OTHER PROFESSIONAL&#160;</option>
+                                                
+                                                <option value="8">MALPRACTICE-BUSINESS&#160;</option>
+                                                
+                                                <option value="343">Matter Involving Claims more than $8000 but less than $15,000&#160;</option>
+                                                
+                                                <option value="312">MISDEMEANOR&#160;</option>
+                                                
+                                                <option value="800">Mortgage Foreclosure  $15,001 - $30,000&#160;</option>
+                                                
+                                                <option value="82">Mortgage Foreclosure - less than $15,001&#160;</option>
+                                                
+                                                <option value="18">MTG FORECLOSURE&#160;</option>
+                                                
+                                                <option value="155">Name Change Adult, Minor, and Family
+&#160;</option>
+                                                
+                                                <option value="33">NEGL-BUSINESS GOVERNANCE&#160;</option>
+                                                
+                                                <option value="34">NEGL-BUSINESS TORTS&#160;</option>
+                                                
+                                                <option value="37">NEGL-CONSTRUCTION DEFECT&#160;</option>
+                                                
+                                                <option value="35">NEGL-ENVIRONMENTAL-TOXIC TORT&#160;</option>
+                                                
+                                                <option value="38">NEGL-MASS TORT&#160;</option>
+                                                
+                                                <option value="40">NEGL-NURSING HOME NEGLIGENCE&#160;</option>
+                                                
+                                                <option value="41">NEGL-PREMISES LIABILITY-COMMERCIAL&#160;</option>
+                                                
+                                                <option value="42">NEGL-PREMISES LIABILITY-RESIDENTIAL&#160;</option>
+                                                
+                                                <option value="36">NEGL-THIRD PARTY INDEMNIFICATION&#160;</option>
+                                                
+                                                <option value="32">NEGLIGENCE&#160;</option>
+                                                
+                                                <option value="39">NEGLIGENCE SECURITY&#160;</option>
+                                                
+                                                <option value="43">NEGLIGENCE-OTHER&#160;</option>
+                                                
+                                                <option value="237">NON MONETARY CASE&#160;</option>
+                                                
+                                                <option value="302">NON MONETARY CASE $100 BUT LESS THAN $500&#160;</option>
+                                                
+                                                <option value="304">NON MONETARY CASE $2500 TO $5000&#160;</option>
+                                                
+                                                <option value="303">NON MONETARY CASE $500 BUT LESS THAN $2500&#160;</option>
+                                                
+                                                <option value="305">NON MONETARY CASE LESS THAN $100&#160;</option>
+                                                
+                                                <option value="79">NON-MONETARY CASE&#160;</option>
+                                                
+                                                <option value="25">NONHOMSTD RES FORECL $0-$50000&#160;</option>
+                                                
+                                                <option value="811">NONHOMSTD RES FORECL $0-$50000&#160;</option>
+                                                
+                                                <option value="813">NONHOMSTD RES FORECL $250000 MORE&#160;</option>
+                                                
+                                                <option value="27">NONHOMSTD RES FORECL $250000 MORE&#160;</option>
+                                                
+                                                <option value="26">NONHOMSTD RES FORECL $50000-$249000&#160;</option>
+                                                
+                                                <option value="812">NONHOMSTD RES FORECL $50000-$249000&#160;</option>
+                                                
+                                                <option value="117">Notice of Trust&#160;</option>
+                                                
+                                                <option value="169">OTHER&#160;</option>
+                                                
+                                                <option value="81">OTHER&#160;</option>
+                                                
+                                                <option value="49">OTHER&#160;</option>
+                                                
+                                                <option value="63">OTHER&#160;</option>
+                                                
+                                                <option value="64">OTHER&#160;</option>
+                                                
+                                                <option value="66">OTHER (ADMINISTRA. AGENCY APPEAL)&#160;</option>
+                                                
+                                                <option value="67">OTHER (DAMAGES)&#160;</option>
+                                                
+                                                <option value="65">OTHER (DECLARATORY JUDGMENT)&#160;</option>
+                                                
+                                                <option value="15">OTHER (HABEAS CORPUS)&#160;</option>
+                                                
+                                                <option value="48">OTHER (INJUNCTON)&#160;</option>
+                                                
+                                                <option value="46">OTHER (REPLEVIN)&#160;</option>
+                                                
+                                                <option value="47">OTHER (TRUSTS)&#160;</option>
+                                                
+                                                <option value="353">Other Estate Proceedings&#160;</option>
+                                                
+                                                <option value="816">OTHER REAL PROP ACT $250000 OR MORE&#160;</option>
+                                                
+                                                <option value="30">OTHER REAL PROP ACT $250000 OR MORE&#160;</option>
+                                                
+                                                <option value="29">OTHER REAL PROP ACT $50000-$249999&#160;</option>
+                                                
+                                                <option value="815">OTHER REAL PROP ACT $50000-$249999&#160;</option>
+                                                
+                                                <option value="814">OTHER REAL PROP ACTIONS $0-$50000&#160;</option>
+                                                
+                                                <option value="28">OTHER REAL PROP ACTIONS $0-$50000&#160;</option>
+                                                
+                                                <option value="11">OTHER-(BOND VALIDATION)&#160;</option>
+                                                
+                                                <option value="51">OTHER-BUSINESS TRANSACTIONS&#160;</option>
+                                                
+                                                <option value="52">OTHER-CONSTITUTIONAL CHALLENGE&#160;</option>
+                                                
+                                                <option value="193">PARENTAL RESPONSIBILITY OR TIME SHR&#160;</option>
+                                                
+                                                <option value="120">PET CORRECTION DC/TRUST&#160;</option>
+                                                
+                                                <option value="122">PET PRESUMPTION/SUMMARY&#160;</option>
+                                                
+                                                <option value="123">PET TO DETERMINE HOMESTEA&#160;</option>
+                                                
+                                                <option value="125">PET TO ESTABLISH DEATH&#160;</option>
+                                                
+                                                <option value="126">PETITION DETERMINE CLAIMS&#160;</option>
+                                                
+                                                <option value="164">PETITION FOR CUSTODY&#160;</option>
+                                                
+                                                <option value="124">PETITION TO DECLARE DEATH&#160;</option>
+                                                
+                                                <option value="165">PETITION TO DET. VISIT RIGHTS&#160;</option>
+                                                
+                                                <option value="121">PETITION/EQUITABLE RELIEF&#160;</option>
+                                                
+                                                <option value="160">Private Paternity/Disestablishment of Paternity
+&#160;</option>
+                                                
+                                                <option value="268">PROBATE&#160;</option>
+                                                
+                                                <option value="13">PRODUCTS LIABILITY&#160;</option>
+                                                
+                                                <option value="9">PROF MALPRACTICE- MEDICAL&#160;</option>
+                                                
+                                                <option value="279">PROMISSORY NOTE $100 BUT LESS THAN $500&#160;</option>
+                                                
+                                                <option value="280">PROMISSORY NOTE $2500 TO $5000&#160;</option>
+                                                
+                                                <option value="278">PROMISSORY NOTE $500 BUT LESS THAN $2500&#160;</option>
+                                                
+                                                <option value="72">PROMISSORY NOTE OVER $5000.00&#160;</option>
+                                                
+                                                <option value="277">PROMISSORY NOTE UNDER $100.00&#160;</option>
+                                                
+                                                <option value="231">PROMISSORY NOTE UNDER $5000.00&#160;</option>
+                                                
+                                                <option value="45">REAL PROPERTY (QUIET TITLE, ETC)&#160;</option>
+                                                
+                                                <option value="119">REFORM/CONSTRUCTION WILL&#160;</option>
+                                                
+                                                <option value="162">Register Foreign Custody (ESTABLISH FOREIGN DECREE)&#160;</option>
+                                                
+                                                <option value="181">Register Foreign Support Order - DOR ESTABLISH FOREIGN DECREE (AFDC)&#160;</option>
+                                                
+                                                <option value="80">Replevin - County Civil $8,001 - $15,000&#160;</option>
+                                                
+                                                <option value="238">REPLEVIN UNDER $5000.00&#160;</option>
+                                                
+                                                <option value="799">Replevins $15,001 - $30,000&#160;</option>
+                                                
+                                                <option value="60">SECURITIES LITIGATION&#160;</option>
+                                                
+                                                <option value="290">SERVICES RENDERED $100 BUT LESS THAN $500&#160;</option>
+                                                
+                                                <option value="292">SERVICES RENDERED $2500 TO $5000&#160;</option>
+                                                
+                                                <option value="291">SERVICES RENDERED $500 BUT LESS THAN $2500&#160;</option>
+                                                
+                                                <option value="289">SERVICES RENDERED LESS THAN $100&#160;</option>
+                                                
+                                                <option value="76">SERVICES RENDERED OVER $2500.00&#160;</option>
+                                                
+                                                <option value="234">SERVICES RENDERED UNDER $5000.00&#160;</option>
+                                                
+                                                <option value="135">SEXUAL VIOLENCE&#160;</option>
+                                                
+                                                <option value="59">SHARED HOLDER DERIVATIVE ACTION&#160;</option>
+                                                
+                                                <option value="170">Simplified Dissolution&#160;</option>
+                                                
+                                                <option value="270">SINGLE PETITION&#160;</option>
+                                                
+                                                <option value="265">SMALL CLAIMS&#160;</option>
+                                                
+                                                <option value="334">Small Claims $0 - $100&#160;</option>
+                                                
+                                                <option value="335">Small Claims $101 - $500&#160;</option>
+                                                
+                                                <option value="337">Small Claims $2501 - $5000&#160;</option>
+                                                
+                                                <option value="803">Small Claims $5,001 - $8000&#160;</option>
+                                                
+                                                <option value="336">Small Claims $501 - $2500&#160;</option>
+                                                
+                                                <option value="317">STALKING&#160;</option>
+                                                
+                                                <option value="249">SUCCESSOR CUSTODIAN&#160;</option>
+                                                
+                                                <option value="127">SUCCESSOR CUSTODIAN&#160;</option>
+                                                
+                                                <option value="105">Summary Administration, estate $1000 or more&#160;</option>
+                                                
+                                                <option value="271">Summary Administration, estate less than $1000&#160;</option>
+                                                
+                                                <option value="161">Support Non IV-D&#160;</option>
+                                                
+                                                <option value="61">TRADE SECRETS&#160;</option>
+                                                
+                                                <option value="62">TRUST LITIGATION&#160;</option>
+                                                
+                                                <option value="128">Trust Proceeding pursuant to Chapter 736, Fla Statutes&#160;</option>
+                                                
+                                                <option value="158">UIFSA IV-D - (Uniform Interstate Family Support Act)
+&#160;</option>
+                                                
+                                                <option value="202">Veteran&#39;s Guardianship&#160;</option>
+                                                
+                                                <option value="275">WORTHLESS CHECKS $100 BUT LESS THAN $500&#160;</option>
+                                                
+                                                <option value="276">WORTHLESS CHECKS $2500 TO $5000&#160;</option>
+                                                
+                                                <option value="274">WORTHLESS CHECKS LESS THAN $100&#160;</option>
+                                                
+                                                <option value="71">WORTHLESS CHECKS OVER $5000.00&#160;</option>
+                                                
+                                                <option value="230">WORTHLESS CHECKS UNDER $5000.00&#160;</option>
+                                                
+                                                <option value="273">WOTHLESS CHECKS $500 BUT LESS THAN $2500&#160;</option>
+                                                
+                                            </select>
+                                            <input id="caseTypesButton" class="removeAfterMulti" type="hidden" />
+                                        </td>
+                                    </tr>
+                                    
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <div class="searchButton">
+                        <form class="searchform" method="post">
+                            <button type="submit" class="btn btn-primary btn-large" id="searchButton"><i class="icon-large icon-fixed-width icon-search"></i>Search</button>
+                            
+                            <img alt="Captcha" src="/BenchmarkWeb/CourtCase.aspx/CaptchaImage" />
+                            <span>
+                                <img title="Listen to Captcha" alt="Listen to Captcha" src="../Content/Images/volume_32.png" id="btnPlayCaptcha" /></span> 
+                            <input type="text" name="captcha" value='' />
+                            <span>Enter Answer Here </span>
+                            
+                            <input type="hidden" name="type" />
+                            <input type="hidden" name="search" />
+                            <input type="hidden" name="openedFrom" />
+                            <input type="hidden" name="openedTo" />
+                            <input type="hidden" name="closedFrom" />
+                            <input type="hidden" name="closedTo" />
+                            <input type="hidden" name="courtTypes"
+                                value="21,2,4,20,5,13,11,14,7,8,16,17,18,19,6,10" />
+                            <input type="hidden" name="caseTypes"
+                                value="109,118,159,50,70,110,31,282,284,283,73,281,232,112,156,184,263,329,359,330,307,308,804,306,805,19,21,807,806,20,338,44,113,53,114,12,345,54,266,795,115,294,296,295,77,293,235,133,116,348,286,288,287,285,233,75,55,318,246,153,192,264,132,190,188,180,177,175,174,171,186,185,173,178,179,157,14,183,342,344,136,84,85,87,86,88,89,90,129,130,247,152,97,98,137,138,139,106,93,100,101,102,103,104,99,107,151,802,801,792,16,17,68,355,131,108,248,194,269,196,250,199,201,333,203,320,195,200,350,810,24,23,809,808,22,298,300,299,78,297,236,172,134,167,163,347,56,57,346,182,176,166,58,7,10,8,343,312,800,82,18,155,33,34,37,35,38,40,41,42,36,32,39,43,237,302,304,303,305,79,25,811,813,27,26,812,117,169,81,49,63,64,66,67,65,15,48,46,47,353,816,30,29,815,814,28,11,51,52,193,120,122,123,125,126,164,124,165,121,160,268,13,9,279,280,278,72,277,231,45,119,162,181,80,238,799,60,290,292,291,289,76,234,135,59,170,270,265,334,335,337,803,336,317,249,127,105,271,161,61,62,128,158,202,275,276,274,71,230,273" />
+                            <input type="hidden" name="partyTypes" value="1,2,3,4,5" />
+                            <input type="hidden" name="divisions"
+                                value="20,18,9,12,3,2,15,5,17,13,6,16,7,19,14,4,8" />
+                            <input type="hidden" name="statutes" />
+                            <input type="hidden" name="partyBirthYear" />
+                            <input type="hidden" name="partyDOB" />
+                            <input name="__RequestVerificationToken" type="hidden" value="yi0hgBrf38antJqiMTrfuCsdJN1zhNnyGfJFhCaVjl/i8HqwnN2dwB0rmZ+oPVoLicNzaJSa7DT6My1SleG+ZKG7gBdCg2FWXTaSAIq5IM6ozkqNSEHqONlvB0w/2OaVbIz+i71cR0T/vuBi7ZjGSG9YaWmTMPEeqe4FPO0pyk4=" />
+                        </form>
+                    </div>
+                    
+                </div>
+                <input type="hidden" value="" id="defaultSearchOption" />
+            </td>
+            <td class="content_right">&#160;</td>
+        </tr>
+        <tr>
+            <td class="content_bottom_left" valign="top" align="left"></td>
+            <td class="content_bottom_middle"></td>
+            <td class="content_bottom_right" valign="top" align="left"></td>
+        </tr>
+    </table>
+    <div id="searchingDocumentModal" class="modal hide fade" style="display: none;">
+        <div class="modal-header">
+            <h3>Searching...</h3>
+        </div>
+        <div class="modal-body">
+            <div class="progress progress-striped active" id="documentTemplateUploadProgress">
+                <div class="bar" style="width: 100%;"></div>
+            </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+    </div>
+    
+                                    <iframe name="_docLoader" width="1" height="1" seamless="true" style="display: none" title="Document Loader"></iframe>
+                                </td>
+                            </tr>
+                        </table>
+                        
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="/BenchmarkWeb/Scripts/home/search.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            
+            $(".searchInput").keyup(function (event) {
+                if (event.keyCode == 13) {
+                    $("#searchButton").click();
+                }
+            });
+
+            // Feature 3115
+            // Auto-login user if usercode query string is provided.
+        
+        });
+
+        $(document).ready(function () {
+            var show = ('speechSynthesis' in window);
+            if (!show) {
+                $("#btnPlayCaptcha").hide();
+            }
+        });
+    </script>
+    
+                        <div class="push"></div>
+                    </div>
+                </td>
+                
+            </tr>
+        </table>
+    </div>
+    <div id="footer">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td style="width: 10%">&#160;
+                </td>
+                <td style="text-align: center">Best viewed in 1366x768 or higher resolution. Copyright 2008 - 2017 Pioneer Technology Group All Rights Reserved.
+                    <br />
+                    <div id="version">
+                        2.6.3.18
+                    </div>
+                </td>
+                <td style="width: 10%">
+                    <div style="float: right;">
+                        <img src="../Content/Images/footer_benchmark.png" id="ctl00_Img1" title="Powered by Benchmark" alt="Powered by Benchmark" border="0" />
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="/BenchmarkWeb/Scripts/bundles/master?v=NX6XxapcvKemuL-rRlE8WD5MQvwDS2d3Qp1uiiUMp_g1"></script>
+
+    <script type="text/javascript">
+
+            
+
+        $(document).ready(function () {
+            $("#advanced_options").click(
+                function () {
+
+                    var is = $("#tadvanced tr[class='advanced']").css("display");
+
+                    if (is == "none") {
+                        var upimg = $("img[id$='adv_options']");
+                        var upsrc = upimg.attr("src").replace("nav2_down.png", "nav2_up.png");
+                        upimg.attr("src", upsrc);
+                        //$("#tadvanced tr[class='advanced']").css("display", "block");
+                    } else {
+                        var downimg = $("img[id$='adv_options']");
+                        var downsrc = downimg.attr("src").replace("nav2_up.png", "nav2_down.png");
+                        downimg.attr("src", downsrc);
+                        //$("#tadvanced tr[class='advanced']").css("display", "none");
+                    }
+                });
+
+            $("#ShowHideRecentActivity").click(
+                function () {
+                    ShowOrHideRecentActivity(true);
+                    if ($('#calendar').length > 0) {
+                        setTimeout(function () {
+                            $('#calendar').fullCalendar('render');
+                        }, 210);
+                    }
+                });
+
+            function ShowOrHideRecentActivity() {
+                var res = $('#recentActivity').is(':visible');
+                var after = function () {
+                    try {
+                        ResizeSilverlightObjectDocketViewer();
+                    }
+                    catch (ex)
+                    { }
+
+                    try {
+                        ResizeSilverlightObjectDocumentViewer();
+                    }
+                    catch (ex)
+                    { }
+                };
+
+                if (!res) {
+                    $("#ShowHideRecentActivity").removeClass("icon-chevron-right");
+                    $("#ShowHideRecentActivity").addClass("icon-chevron-left");
+                    $("#ShowHideRecentActivityWrap").addClass("recentActivityOpen");
+
+                    $("#recentActivity").show(200, 'swing', after);
+                }
+                else {
+                    $("#ShowHideRecentActivityWrap").removeClass("recentActivityOpen");
+                    $("#ShowHideRecentActivity").removeClass("icon-chevron-left");
+                    $("#ShowHideRecentActivity").addClass("icon-chevron-right");
+
+                    $("#recentActivity").hide(200, 'swing', after);
+                }
+
+                $.post(site + 'RecentActivity.aspx/UpdateIsRecentActivityHidden', { update: res });
+            }
+
+            $('.recentSearchPopOver').each(function () {
+                var item = $(this);
+                item.popover(
+                {
+                    title: function () {
+                        return $(this).attr('data-original-title');
+                    },
+                    animation: true,
+                    trigger: 'hover',
+                    html: true,
+                    content: function () {
+                        return $(this).children('.recentSearchPopOverContent').html();
+                    }
+                });
+            });
+        });
+
+        $(document).ready(function () {
+            var root = null;
+            var skips = 0;
+                
+            skips = 0;
+            
+        });
+    </script>
+    <noscript>This site requires javascript to run correctly.</noscript>
+
+    <script type="text/javascript">
+        var isL = 'false';
+        var about = '/BenchmarkWeb/Content/Counties/Pioneer/about.htm';
+        var ef = 'false';
+        var results = 'false';
+        var dbFilterEnabled = isL ? 'false' : false;
+        var dummySvcUrl = 'https://court.indian-river.org/BenchmarkWeb/SilverlightServices/BenchmarkWebSilverlightService.svc';
+
+        toastr.options = {
+            "debug": false,
+            "positionClass": "toast-bottom-right",
+            "onclick": null,
+            "fadeIn": 300,
+            "fadeOut": 1000,
+            "timeOut": 5000,
+            "extendedTimeOut": 1000
+        };
+    </script>
+    <div id="theEnd">
+    </div>
+</body>
+</html>

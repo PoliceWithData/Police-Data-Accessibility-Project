@@ -1,0 +1,1568 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" __expr-val-dir="ltr" lang="en-us" dir="ltr">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+<!-- robots -->
+
+<!-- favicon -->
+<link href="/Style%20Library/_images/favicon.ico" rel="Shortcut Icon" type="image/x-icon" /><link rel="shortcut icon" href="/Style%20Library/_images/favicon.ico" type="image/vnd.microsoft.icon" />
+<!-- all OOTB css -->
+<link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/Menu.css?rev=j46FAsDJga%2BaixwEf8A%2Fgg%3D%3D"/>
+<link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/search.css?rev=T%2Bhraxktc1A8EnaG5gGMHQ%3D%3D"/>
+<link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/corev4.css?rev=cubXjmzpjBGT%2FzzR9ULbAw%3D%3D"/>
+
+<!-- page manager interacts with script and the sharepoint object model -->
+
+<!-- unified logging service -->
+
+<!-- identifies to scripting elements that this is a v4 master page. required for scrolling? -->
+<script type="text/javascript">
+		var _fV4UI = true;
+	</script>
+	
+<!-- link to our custom css  -->
+<link rel="stylesheet" href="/Style%20Library/_css/v5.css" type="text/css" /><link rel="stylesheet" href="/Style%20Library/css/edit.css" type="text/css" />
+<!-- Include Print CSS -->
+<link rel="stylesheet" href="/Style%20Library/css/print.css" type="text/css" media="print" />
+
+<!-- datatables.net styles references
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/t/dt/dt-1.10.11,fh-3.1.1,r-2.0.2/datatables.min.css" /> -->
+
+<!-- jquery theme css -->
+<link rel="stylesheet" href="/Style%20Library/custom-theme/jquery.ui.all.css" />
+<!-- custom style sheets -->
+<link href="/Style%20Library/_css/graphite.css" rel="stylesheet" type="text/css" /><link href="/Style%20Library/_css/blue-menu.css" rel="stylesheet" type="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- IOS+ IPAD Styles -->
+<link rel="stylesheet" media="only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)" type="text/css" href="/Style%20Library/_css/ios.css" /><link rel="stylesheet" media="all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" href="/Style%20Library/_css/ios.css" /><link rel="stylesheet" media="all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" href="/Style%20Library/_css/ios.css" />
+<!-- default styles  -->
+
+
+<script type="text/javascript" src="/Style%20Library/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/Style%20Library/js/jquery.SPServices-2014.02.min.js"></script>
+<script type="text/javascript" src="/Style Library/_js/jquery.browser.min.js"></script>
+<!-- datatables.net references 
+<script async type="text/javascript" src="https://cdn.datatables.net/t/dt/dt-1.10.11,fh-3.1.1,r-2.0.2/datatables.min.js"></script> -->
+
+<!--Jquery PDF opener-->
+<script type="text/javascript" src="/Style%20Library/js/pdf_opener.js" ></script>
+<!-- Apple retina display fix -->
+<script type="text/javascript" src="/Style%20Library/js/retina.js" ></script>
+<!-- load SharePoint javascript -->
+<script type="text/javascript">
+// <![CDATA[
+document.write('<script type="text/javascript" src="/_layouts/1033/init.js?rev=mdjxRHK1V7KZ%2BuOTcNNcmQ%3D%3D"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=1F9Ku8daeoQY4jOy5B-fnCdU-RCFidfpTTnQJvqEIoUOrY1ErOC92QrKEIKZL1TNqAlD2PF5zwv2h41YkgFROh0VbV3uygVPqmm5ZtY8bXNnqjqjJv1ihl9zxrg14EAkMk1iqJyvA9kcy2hctYwCBvP_93s1&amp;t=3f4a792d"></' + 'script>');
+document.write('<script type="text/javascript" src="/_layouts/blank.js?rev=QGOYAJlouiWgFRlhHVlMKA%3D%3D"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=qZKQiYzsgwJh6Sr8l5J1SKG9RQ6B5X4EJ3ffXc5yIdfIT-nwTjUM1BoY2L0DkhqkyaFgCl6jNh4xcbNAVQyqe-9qabdBo4y6T69vL1bsSUaFV3VlN4lHvWGGxA0qPZxwalpqkEiPvFsC0VgXMeoiFGb2GJKoJ5TbCb8zSAMaBHLS6WfH0&amp;t=3f4a792d"></' + 'script>');
+// ]]>
+</script>
+
+<!-- page title - overridden by asp:content on pages or page layouts -->
+<title>
+	
+	Case Search
+
+</title><link rel="shortcut icon" type="image/x-icon" href="/Style%20Library/_images/favicon.ico" />
+
+<!-- Ribbon functions -->
+<script type="text/javascript" src="/Style%20Library/js/sp_fns.js"></script>
+
+<!-- Alert System -->
+<script type="text/javascript" src="/Style%20Library/jump_menus/alerts.js" ></script>
+<script type="text/javascript" src="/Style%20Library/ui/minified/jquery.ui.core.min.js" ></script>
+<script type="text/javascript" src="/Style%20Library/ui/minified/jquery.ui.widget.min.js" ></script>
+<script type="text/javascript" src="/Style%20Library/ui/minified/jquery.ui.tabs.min.js" ></script>
+<script type="text/javascript" src="/Style%20Library/ui//minified/jquery.ui.datepicker.min.js" ></script>
+<script type="text/javascript" src="/Style%20Library/js/jquery.cookie.js" ></script>
+<script type="text/javascript" src="/Style%20Library/ui/minified/jquery.ui.accordion.min.js" ></script>
+
+<!-- mobile navigation includes -->
+<!-- Mobile JS -->
+<script type="text/javascript" src="/Style%20Library/_js/jquery.dcjqaccordion.2.7.min.js" ></script>
+<script type="text/javascript" src="/Style%20Library/_js/jquery.hoverIntent.minified.js" ></script>
+<!-- JS Trigger - jRespond 
+-->
+<script type="text/javascript" src="/Style%20Library/_js/_respondjs/jRespond.min.js" ></script>
+<script type="text/javascript"> 
+	    $(document).ready(function($){
+	    
+				$('#accordion-2').dcAccordion({
+						eventType: 'click',
+						autoClose: true,
+						saveState: true,
+						disableLink: true,
+						speed: 'slow',
+						showCount: false,
+						autoExpand: true,
+						cookie: 'dcjq-accordion-1',
+						classExpand: 'dcjq-current-parent'
+				});
+					
+				$('#accordion-1').dcAccordion({
+						eventType: 'click',
+						autoClose: true,
+						saveState: false,
+						disableLink: false,
+						speed: 'slow',
+						showCount: false,
+						autoExpand: false,
+						cookie: 'dcjq-accordion-1',
+						classExpand: 'dcjq-current-parent'
+				});
+		
+				$('#accordion').accordion({
+    				collapsible: true,
+    				active: false
+				});
+		});
+</script>
+<script type="text/javascript">
+$(function() {
+	$( "#tabs" ).tabs({
+		cookie: {
+			// store cookie for a day, without, it would be a session cookie
+			expires: 30
+		}
+	});
+});
+</script>
+<script type="text/javascript">
+		function ProcessImn(){}
+		function ProcessImnMarkers(){}	
+	</script>
+
+	<!-- additional header delegate control -->
+	
+
+	
+	
+	<!-- logic to remove scrolling  -->
+	
+<link rel="stylesheet" href="/Style%20Library/inc/ribbon.css" type="text/css" media="screen" />
+
+	<script type="text/javascript">
+	$(function() {
+		$("#tabs").tabs();
+	});
+		</script>
+	<style type="text/css">
+.style1 {
+	font-size: xx-small;
+}
+.style2 {
+	float: left;
+	position: relative;
+	width: 95%;
+	text-align: center;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 10px;
+	margin-bottom: 8px;
+	padding: 0px;
+}
+</style>
+	<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+    </script>
+	<!-- START Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-34608563-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<!-- End Google Analytics -->
+	<!-- Start PDF Tracking -->
+	<script type="text/javascript">
+$(document).ready(function(){
+
+ $('a').click(function(){
+
+  href = ($(this).attr('href') == undefined) ? ('') : ($(this).attr('href'));
+  href_lower = href.toLowerCase();
+  
+//set the extensions here
+        if (href_lower.substr(-3) == "pdf" || href_lower.substr(-3) == "xls"      
+            || href_lower.substr(-3) == "doc" || href_lower.substr(-3) == "mp3"
+            || href_lower.substr(-3) == "mp4" || href_lower.substr(-4) == "epub"
+            || href_lower.substr(-4) == "docx" || href_lower.substr(-3) == "xlsx"
+            ) {
+            ga('send', 'pageview', href_lower);
+        }
+ 
+  if(href_lower.substr(0, 4).toLowerCase() == "http") {
+   //ga('send', 'event', 'external_link', href_lower);
+   ga('send', 'pageview', href_lower);
+}
+  
+  if ($(this).attr('target') != undefined && $(this).attr('target').toLowerCase() != 
+     '_blank' && href_lower.substr(0,10) != "javascript") {
+   setTimeout(function() { location.href = href; }, 200);
+   return false;
+  }
+
+ });
+
+});
+</script>
+	<!-- End PDF Tracking -->
+	<!-- Additional page head - SEO feature writes HTML title here. -->
+	
+
+			<div id="ctl00_PlaceHolderAdditionalPageHead_GetDisplay">
+	
+							
+</div>
+			
+
+<!-- Search Specific Styles -->
+<link rel="stylesheet" href="/Style%20Library/_css.old/SearchCaseInquiry.css" />
+
+<!-- Alt Search Specific Styles -->
+<!--[if lt IE 9 ]>
+<link rel="stylesheet" href="/style%20library/_css/SearchCaseInquiry-ie9.css" />
+<![endif]-->
+
+
+<style type="text/css">
+	.s4-skipribbonshortcut { display:none; }
+	.ctl00_PlaceHolderMain_g_AE35296EC748429ABA685DEF1175DC97_0 { border-color:Black;border-width:1px;border-style:Solid; }
+	.ctl00_wpz_0 { border-color:Black;border-width:1px;border-style:Solid; }
+
+</style></head>
+
+<body class="v4master" onload="if (typeof(_spBodyOnLoadWrapper) != 'undefined') _spBodyOnLoadWrapper();">
+
+<form name="aspnetForm" method="post" action="default.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="MSOWebPartPage_PostbackSource" id="MSOWebPartPage_PostbackSource" value="" />
+<input type="hidden" name="MSOTlPn_SelectedWpId" id="MSOTlPn_SelectedWpId" value="" />
+<input type="hidden" name="MSOTlPn_View" id="MSOTlPn_View" value="0" />
+<input type="hidden" name="MSOTlPn_ShowSettings" id="MSOTlPn_ShowSettings" value="False" />
+<input type="hidden" name="MSOGallery_SelectedLibrary" id="MSOGallery_SelectedLibrary" value="" />
+<input type="hidden" name="MSOGallery_FilterString" id="MSOGallery_FilterString" value="" />
+<input type="hidden" name="MSOTlPn_Button" id="MSOTlPn_Button" value="none" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__REQUESTDIGEST" id="__REQUESTDIGEST" value="noDigest" />
+<input type="hidden" name="MSOSPWebPartManager_DisplayModeName" id="MSOSPWebPartManager_DisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_ExitingDesignMode" id="MSOSPWebPartManager_ExitingDesignMode" value="false" />
+<input type="hidden" name="MSOWebPartPage_Shared" id="MSOWebPartPage_Shared" value="" />
+<input type="hidden" name="MSOLayout_LayoutChanges" id="MSOLayout_LayoutChanges" value="" />
+<input type="hidden" name="MSOLayout_InDesignMode" id="MSOLayout_InDesignMode" value="" />
+<input type="hidden" name="_wpSelected" id="_wpSelected" value="" />
+<input type="hidden" name="_wzSelected" id="_wzSelected" value="" />
+<input type="hidden" name="MSOSPWebPartManager_OldDisplayModeName" id="MSOSPWebPartManager_OldDisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_StartWebPartEditingName" id="MSOSPWebPartManager_StartWebPartEditingName" value="false" />
+<input type="hidden" name="MSOSPWebPartManager_EndWebPartEditing" id="MSOSPWebPartManager_EndWebPartEditing" value="false" />
+<input type="hidden" name="_maintainWorkspaceScrollPosition" id="_maintainWorkspaceScrollPosition" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUBMA9kFgJmD2QWAgIBD2QWBAIBD2QWAgIiD2QWAmYPZBYCAgEPFgIeE1ByZXZpb3VzQ29udHJvbE1vZGULKYgBTWljcm9zb2Z0LlNoYXJlUG9pbnQuV2ViQ29udHJvbHMuU1BDb250cm9sTW9kZSwgTWljcm9zb2Z0LlNoYXJlUG9pbnQsIFZlcnNpb249MTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NzFlOWJjZTExMWU5NDI5YwFkAgMPZBYGAgcPZBYEZg9kFgQCAQ8WAh4HVmlzaWJsZWgWAmYPZBYEAgIPZBYGAgEPFgIfAWhkAgMPFggeE0NsaWVudE9uQ2xpY2tTY3JpcHQFlQFqYXZhU2NyaXB0OkNvcmVJbnZva2UoJ1Rha2VPZmZsaW5lVG9DbGllbnRSZWFsJywxLCAzOSwgJ2h0dHBzOlx1MDAyZlx1MDAyZmNvdXJ0cy5taWNoaWdhbi5nb3ZcdTAwMmZvcGluaW9uc19vcmRlcnNcdTAwMmZjYXNlX3NlYXJjaCcsIC0xLCAtMSwgJycsICcnKR4YQ2xpZW50T25DbGlja05hdmlnYXRlVXJsZB4oQ2xpZW50T25DbGlja1NjcmlwdENvbnRhaW5pbmdQcmVmaXhlZFVybGQeDEhpZGRlblNjcmlwdAUiVGFrZU9mZmxpbmVEaXNhYmxlZCgxLCAzOSwgLTEsIC0xKWQCBQ8WAh8BaGQCAw8PFgoeCUFjY2Vzc0tleQUBLx4PQXJyb3dJbWFnZVdpZHRoAgUeEEFycm93SW1hZ2VIZWlnaHQCAx4RQXJyb3dJbWFnZU9mZnNldFhmHhFBcnJvd0ltYWdlT2Zmc2V0WQLrA2RkAgMPZBYCZg9kFgICAw9kFgJmDzwrAAUBAA8WAh4PU2l0ZU1hcFByb3ZpZGVyBRFTUFNpdGVNYXBQcm92aWRlcmRkAgEPZBYGAgMPZBYCAgEPEBYCHwFoZBQrAQBkAgUPZBYCZg9kFgJmDxQrAANkZGRkAgcPDxYCHwFoZGQCEQ9kFgICAg9kFgJmDw9kFgYeBWNsYXNzBSJtcy1zYnRhYmxlIG1zLXNidGFibGUtZXggczQtc2VhcmNoHgtjZWxscGFkZGluZwUBMB4LY2VsbHNwYWNpbmcFATBkAhMPZBYEAhEPZBYCAgcPZBYCAgEPDxYCHwFoZBYCAgMPZBYCZg9kFgICAw9kFgICBQ8PFgQeBkhlaWdodBsAAAAAAAB5QAEAAAAeBF8hU0ICgAFkFgICAQ88KwAJAQAPFgQeDVBhdGhTZXBhcmF0b3IECB4NTmV2ZXJFeHBhbmRlZGdkZAItD2QWAmYPZBYCAgEPD2QWBh8MBSJtcy1zYnRhYmxlIG1zLXNidGFibGUtZXggczQtc2VhcmNoHw0FATAfDgUBMGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgIFPGN0bDAwJFBsYWNlSG9sZGVyTWFpbiRTZWFyY2hDYXNlSW5xdWlyeSRDb250cm9sUGFydHlPcGVuT25seQU7Y3RsMDAkUGxhY2VIb2xkZXJNYWluJFNlYXJjaENhc2VJbnF1aXJ5JENvbnRyb2xBdHR5T3Blbk9ubHnqYR69jmKufwHzfimpysh1Zl6n0Q==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=bXqUFxF2BDUyoN_4CXEwBd4UGneRE0M3DGzRcdPEJEYP2_h8jzGj1r0bMnapc3o5w6yb_kc6Oqz3pdpd6HCUyFRs-N01&amp;t=636284489271971599" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var MSOWebPartPageFormName = 'aspnetForm';
+//]]>
+</script>
+
+<script src="/_controltemplates/SPRibbonVisibility/RibbonVisibility_collapsed.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var g_presenceEnabled = true;
+var g_wsaEnabled = false;
+var g_wsaLCID = 1033;
+var g_wsaSiteTemplateId = 'CMSPUBLISHING#0';
+var g_wsaListTemplateId = 850;
+var _fV4UI=true;var _spPageContextInfo = {webServerRelativeUrl: "\u002fopinions_orders\u002fcase_search", webLanguage: 1033, currentLanguage: 1033, webUIVersion:4,pageListId:"{40b1f0cc-fbad-4ecc-bcbb-5e3378c770a3}",pageItemId:1, alertsEnabled:true, siteServerRelativeUrl: "\u002f", allowSilverlightPrompt:'True'};//]]>
+</script>
+<script type="text/javascript">
+<!--
+var L_Menu_BaseUrl="/opinions_orders/case_search";
+var L_Menu_LCID="1033";
+var L_Menu_SiteTheme="";
+//-->
+</script>
+<script type="text/javascript">
+//<![CDATA[
+document.onreadystatechange=fnRemoveAllStatus; function fnRemoveAllStatus(){removeAllStatus(true)};var dlc_fvsi = {"DefaultViews":[],"ViewUrls":[],"WebUrl":"\/opinions_orders\/case_search"};//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+function _spNavigateHierarchy(nodeDiv, dataSourceId, dataPath, url, listInContext, type) {
+    CoreInvoke('ProcessDefaultNavigateHierarchy', nodeDiv, dataSourceId, dataPath, url, listInContext, type, document.forms.aspnetForm, "", "\u002fopinions_orders\u002fcase_search\u002fpages\u002fdefault.aspx");
+
+}
+//]]>
+</script><script type="text/javascript" >
+<!--
+//-->
+</script>
+<script src="/ScriptResource.axd?d=nPQ77GNn6Txi_0DtosFyVnRJktd4Vb6mSHzqNzExJhG2sMq12qLIoMAPg2vnEiu2746uDb_hf5nDHg9bTIrkMG2kery8YyF4D5NkCy6VtdD01RRexT_gl3zpCdNwwdQA1A3oSFfyI4URktX0zX6v844Sj7E1&amp;t=4eaab336" type="text/javascript"></script>
+<script src="/_layouts/blank.js?rev=QGOYAJlouiWgFRlhHVlMKA%3D%3D" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();function WebForm_OnSubmit() {
+UpdateFormDigest('\u002fopinions_orders\u002fcase_search', 1440000);
+                    var workspaceElem = GetCachedElement("s4-workspace");
+                    if (workspaceElem != null)
+                    {
+                        var scrollElem = GetCachedElement("_maintainWorkspaceScrollPosition");
+                        if (scrollElem != null)
+                        {
+                            scrollElem.value = workspaceElem.scrollTop;
+                        }
+                    };
+                if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;};
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BAB98CB3" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWFwLM8rP0AQLnpNnQDAK9n8/QAwKKl8vFDQKysfmLCQKkxsDpDwKlxsDpDwKrqeqHAwLCjK3oBQLfqbn5BQKWieOADwKZicP9BwL/7t+UDgKT4b2RCgKame/fDgKty/oMAv3A2JoPAvyZ3akJArKdxfoLApz19JEDAoKfn8wKAqGO8fcNApDP5+gDT9Zd/l4pLZ05SZw83e2T5AjpSdg=" />
+</div>
+	<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls(['fctl00$WebPartAdderUpdatePanel','tctl00$panelZone'], [], ['ctl00$WebPartAdder'], 90);
+//]]>
+</script>
+
+	
+	<noscript><div class='noindex'>You may be trying to access this site from a secured browser on the server. Please enable scripts and reload this page.</div></noscript>
+	<!-- ribbon -->
+	<div id="s4-ribbonrow" class="s4-pr s4-ribbonrowhidetitle">
+		<div id="s4-ribboncont">
+			<div class='ms-cui-ribbonTopBars'><div class='ms-cui-topBar1'></div><div class='ms-cui-topBar2'><div id='RibbonContainer-TabRowLeft' class='ms-cui-TabRowLeft ms-siteactionscontainer s4-notdlg'><!-- site actions --><span class="ms-siteactionsmenu" id="siteactiontd"></span><!-- pop-out breadcrumb --><span class="s4-breadcrumb-anchor"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><a id="GlobalBreadCrumbNavPopout-anchor" onclick="CoreInvoke('callOpenBreadcrumbMenu', event, 'GlobalBreadCrumbNavPopout-anchor', 'GlobalBreadCrumbNavPopout-menu', 'GlobalBreadCrumbNavPopout-img', 's4-breadcrumb-anchor-open', 'ltr', '', false); return false;" onmouseover="" onmouseout="" title="Navigate Up" href="javascript:;" style="display:inline-block;height:16px;width:16px;"><img src="/_layouts/images/fgimg.png" alt="Navigate Up" style="border:0;position:absolute;left:-0px !important;top:-112px !important;" /></a></span></span><div class="ms-popoutMenu s4-breadcrumb-menu" id="GlobalBreadCrumbNavPopout-menu" style="display:none;"><div class="s4-breadcrumb-top">
+							<span class="s4-breadcrumb-header">This page location is:</span></div><ul class="s4-breadcrumb">
+	<li class="s4-breadcrumbRootNode"><span class="s4-breadcrumb-arrowcont"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust s4-breadcrumb"><img src="/_layouts/images/fgimg.png" alt="" style="border-width:0px;position:absolute;left:-0px !important;top:-353px !important;" /></span></span><a class="s4-breadcrumbRootNode" href="/">Home</a><ul class="s4-breadcrumbRootNode"><li class="s4-breadcrumbNode"><span class="s4-breadcrumb-arrowcont"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust s4-breadcrumb"><img src="/_layouts/images/fgimg.png" alt="" style="border-width:0px;position:absolute;left:-0px !important;top:-353px !important;" /></span></span><a class="s4-breadcrumbNode" href="/opinions_orders/case_search">Case Search</a><ul class="s4-breadcrumbNode"><li class="s4-breadcrumbNode"><span class="s4-breadcrumb-arrowcont"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust s4-breadcrumb"><img src="/_layouts/images/fgimg.png" alt="" style="border-width:0px;position:absolute;left:-0px !important;top:-353px !important;" /></span></span><a class="s4-breadcrumbNode" href="https://courts.michigan.gov/opinions_orders/case_search/_layouts/listform.aspx?ListId=%7B40B1F0CC%2DFBAD%2D4ECC%2DBCBB%2D5E3378C770A3%7D&amp;PageType=0&amp;RootFolder=%2Fopinions%5Forders%2Fcase%5Fsearch%2Fpages">pages</a><ul class="s4-breadcrumbNode"><li class="s4-breadcrumbCurrentNode"><span class="s4-breadcrumb-arrowcont"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust s4-breadcrumb"><img src="/_layouts/images/fgimg.png" alt="" style="border-width:0px;position:absolute;left:-0px !important;top:-353px !important;" /></span></span><span class="s4-breadcrumbCurrentNode">default</span></li></ul></li></ul></li></ul></li>
+</ul></div><div class="s4-die"></div><!-- page action button --></div><div id='RibbonContainer-TabRowRight' class='ms-cui-TabRowRight s4-trc-container s4-notdlg'>
+<a href="#" tabindex="-1" style="display:none"></a><a href="#" tabindex="-1" style="display:none"></a><div class="s4-trc-container-menu"><div>
+<a id="ctl00_IdWelcome_ExplicitLogin" class="s4-signInLink" href="https://courts.michigan.gov/opinions_orders/case_search/_layouts/Authenticate.aspx?Source=%2Fopinions%5Forders%2Fcase%5Fsearch%2Fpages%2Fdefault%2Easpx" style="display:inline;">Sign In</a>
+
+<script type ="text/javascript">
+// <![CDATA[
+function OnSelectionChange(value)
+{
+	var today = new Date();
+	var oneYear = new Date(today.getTime() + 365 * 24 * 60 * 60 * 1000);
+	var url = window.location.href;
+	document.cookie = "lcid=" + value + ";path=/;expires=" + oneYear.toGMTString();
+	window.location.href = url;
+}
+// ]]>
+</script>
+
+</div></div><span><span class="s4-devdashboard"></span></span></div></div></div>
+<script type="text/javascript">
+//<![CDATA[
+var g_commandUIHandlers = {"name":"CommandHandlers","attrs":{},"children":[]};
+//]]>
+</script>
+		</div>
+		<!-- notification area -->
+		<div id="notificationArea" class="s4-noti">
+		</div>
+		<!-- publishing console -->
+		
+		
+<span id="ctl00_SPNavigation_ctl00_publishingConsoleV4_publishingRibbon"></span>
+
+
+
+	
+		<!-- browse web parts (when adding new web parts) -->
+		<div id="WebPartAdderUpdatePanelContainer">
+			<div id="ctl00_WebPartAdderUpdatePanel">
+	
+				<span id="ctl00_WebPartAdder"></span>
+			
+</div>
+		</div>
+		</div>
+	<!-- /ribbon -->
+	<!-- Ribbon toggle default state code 
+	-->
+	<!-- page status -->
+	<div id="s4-statusbarcontainer">
+		<div id="pageStatusBar" class="s4-status-s1">
+		</div>
+	</div>
+	<!-- scrolling body area -->
+	<div id="s4-workspace" class="s4-nosetwidth" style="left: 0px; top: 0px">
+		<div id="s4-bodyContainer">
+			<div id="ctl00_MSO_ContentDiv">
+				<div class="wrapper">
+					<a class="anchor_hidden" name="tabs-2"></a>
+					<a class="anchor_hidden" name="tabs-4"></a>
+					<a class="anchor_hidden" name="tabs-1"></a>
+					<a class="anchor_hidden" name="tabs-3"></a>
+					<!-- header -->
+					<div class="header" style="left: 0px; top: 0px">
+						<div class="logo">
+							<a href="/">
+							<img src="/Style%20Library/_images/mast_logo.jpg" width="369" height="106" alt="masthead"/></a></div>
+						<div class="utilities">
+							
+								<div class="audience_nav" ><!--<a href="https://www.youtube.com/watch?v=sb-9vCvDqNs"><img src="/PublishingImages/button.png"/></a>-->
+									<h5>Information for...</h5>
+									<div>
+										<a class="audience_links" onclick=" window.location.href = 'https://' + window.location.host + '/Pages/default.aspx#tabs-1'; if(window.location.pathname == '/Pages/default.aspx'){window.location.reload()};">
+										General Public</a></div>
+									<div>
+										<a class="audience_links" onclick=" window.location.href = 'https://' + window.location.host + '/Pages/default.aspx#tabs-3'; if(window.location.pathname == '/Pages/default.aspx'){window.location.reload()};">
+										Media &amp; News</a></div>
+									<div>
+										<a class="audience_links" onclick=" window.location.href = 'https://' + window.location.host + '/Pages/default.aspx#tabs-2'; if(window.location.pathname == '/Pages/default.aspx'){window.location.reload()};">
+										Legal Community</a></div>
+									<div>
+										<a class="audience_links" onclick=" window.location.href = 'https://' + window.location.host + '/Pages/default.aspx#tabs-4'; if(window.location.pathname == '/Pages/default.aspx'){window.location.reload()};">
+										Judges &amp; Court Staff</a></div>
+								</div> 
+							
+							 <div class="utility-right-group">										
+							 	<div class="social-group" style="">
+							 <a href="https://www.facebook.com/misupremecourt/"><img src="/Style%20Library/_images/FB-f-Logo__blue_29.png"  alt="Facebook icon"/></a>
+							 <a href="http://twitter.com/misupremecourt/"> <img src="/Style%20Library/_images/twitter.png"  alt="Twitter icon"/></a>
+							 <a href="https://get.adobe.com/reader/"><img src="/PublishingImages/acrobat-reader-icon.png" alt="Adobe Acrobat Reader icon" title="Get Adobe Acrobat Reader for PDF files"/></a>
+							 </div>
+
+							<div id="search_input" >
+						
+								<table class="s4-wpTopTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td valign="top"><div WebPartID="00000000-0000-0000-0000-000000000000" HasPers="true" id="WebPartWPQ1" width="100%" OnlyForMePart="true" allowDelete="false" style="" ><div id="SRSB"> <div id="ctl00_g_8b1c1df4_f95b_42df_a51e_3a33776735c6">
+			<table class="ms-sbtable ms-sbtable-ex s4-search" cellpadding="0" cellspacing="0" border="0">
+				<tr class="ms-sbrow">
+					<td class="ms-sbcell"><input name="ctl00$g_8b1c1df4_f95b_42df_a51e_3a33776735c6$S4377E58A_InputKeywords" type="text" maxlength="200" id="ctl00_g_8b1c1df4_f95b_42df_a51e_3a33776735c6_S4377E58A_InputKeywords" accesskey="S" title="Search..." class="ms-sbplain" alt="Search..." onkeypress="javascript: return S4377E58A_OSBEK(event);" style="width:150px;" /></td><td class="ms-sbgo ms-sbcell"><a id="ctl00_g_8b1c1df4_f95b_42df_a51e_3a33776735c6_S4377E58A_go" title="Search" href="javascript:S4377E58A_Submit()"><img title="Search" onmouseover="this.src='\u002fStyle Library\u002f_images\u002fsearch_btn.jpg'" onmouseout="this.src='\u002fStyle Library\u002f_images\u002fsearch_btn.jpg'" class="srch-gosearchimg" alt="Search" src="/Style%20Library/_images/search_btn.jpg" style="border-width:0px;" /></a></td><td class="ms-sbLastcell"></td>
+				</tr>
+			</table>
+		</div></div></div></td>
+	</tr>
+</table></div>
+							</div>		
+						</div>
+						
+						<!-- NAVIGATION -->
+						<div class="oe_wrapper">
+							<div id="oe_overlay" class="oe_overlay">
+							</div>
+							<div class="noindex">
+								<ul id="oe_menu" class="oe_menu">
+						            <li><a href="/Courts/Pages/default.aspx"><span>Courts</span></a>
+						                <div class="practices">
+						                    <ul>
+						                        <ul>
+						                            <li class="roll-item"><a href="/courts/ocj/pages/default.aspx">One Court of Justice</a></li>
+						                            <li class="roll-item"><a href="/courts/michigansupremecourt/pages/default.aspx">Michigan Supreme Court</a></li>
+						                        </ul>
+						                        <ul>
+						                            <li class="roll-item"><a href="/courts/coa/pages/default.aspx">Michigan Court of Appeals</a></li>
+						                            <li class="roll-item"><a href="/courts/trialcourts/pages/default.aspx">Michigan Trial Courts</a></li>
+						                        </ul>
+						                        <ul>
+						                            <li class="roll-item"><a href="/courts/coc/pages/default.aspx">Michigan Court of Claims</a></li>
+						                            <li class="roll-item"><a href="/courts/tribalcourts/pages/default.aspx">Native American Tribal Courts</a></li>
+						                        </ul>
+						                        <ul>
+						                            <li class="roll-item"><a href="/Courts/Federal/Pages/defaultx.aspx">Federal Courts</a></li>
+						                        </ul>
+						                    </ul>
+						                </div>
+						            </li>
+						            <li><a href="/opinions_orders/Pages/default.aspx"><span>Cases, Opinions &amp; Orders</span></a>
+						                <div class="firm">
+						                    <ul>
+						                        <ul>
+						                            <li class="roll-item"><a href="/opinions_orders/case_search/pages/default.aspx">Case Search</a></li>
+						                            <li class="roll-item"><a href="/opinions_orders/opinions_orders/pages/default.aspx">Opinion &amp; Order Search</a></li>
+						                        </ul>
+						                        <ul>
+						                            <li class="roll-item"><a href="/opinions_orders/subscribe-to-opinions-and-orders/pages/default.aspx">Opinion &amp; Order Subscription</a></li>
+						                            <li class="roll-item"><a href="/opinions_orders/businesscourtssearch/pages/default.aspx">Business Courts Opinion Search</a></li>
+						                        </ul>
+						                    </ul>
+						                </div>
+						            </li>
+						            <li><a href="/administration/pages/default.aspx"><span>Administration</span></a>
+						                <div class="mycases">
+						                    <ul>
+						                        <ul>
+						                            <li class="roll-item"><a href="/administration/ocj/pages/default.aspx">One Court of Justice</a></li>
+						                            <li class="roll-item"><a href="/administration/scao/pages/default.aspx">State Court Administrative Office</a></li>
+						                        </ul>
+						                        <ul>
+						                            <li class="roll-item"><a href="/administration/jis/pages/default.aspx">Judicial Information Services</a></li>
+						                            <li class="roll-item"><a href="/administration/admin/pages/default.aspx">Trial Court Administration</a></li>
+						                        </ul>
+						                        <ul>
+						                            <li class="roll-item"><a href="/administration/jobs/pages/default.aspx">Employment Opportunities</a></li>
+						                        </ul>
+						                    </ul>
+						                </div>
+						            </li>
+						            <li><a href="/education/pages/default.aspx"><span>Education &amp; References</span></a>
+						                <div class="departments">
+						                    <ul>
+						                        <ul>
+						                            <li class="roll-item"><a href="/education/ocj/pages/default.aspx">One Court of Justice</a></li>
+						                            <li class="roll-item"><a href="/education/learning-center/pages/default.aspx">The Learning Center</a></li>
+						                        </ul>
+						                        <ul>
+						                            <li class="roll-item"><a href="/education/mji/pages/default.aspx">Michigan Judicial Institute</a></li>
+						                            <li class="roll-item"><a href="/education/pubs/pages/default.aspx">Reports and Publications</a></li>
+						                        </ul>
+						                        <ul>
+						                            <li class="roll-item"><a href="/education/stats/pages/default.aspx">Statistics</a></li>
+						                        </ul>
+						                    </ul>
+						                </div>
+						            </li>
+						            <li><a href="/news-events/pages/default.aspx"><span>News &amp; Events</span></a>
+						                <div class="resources">
+						                    <ul>
+						                        <ul>
+						                            <li class="roll-item"><a href="/news-events/ocj/pages/default.aspx">One Court of Justice</a></li>
+						                            <li class="roll-item"><a href="/news-events/events/pages/default.aspx">Events Calendar</a></li>
+						                        </ul>
+						                        <ul>
+						                            <li class="roll-item"><a href="/news-events/press_releases/pages/default.aspx">News Releases</a></li>
+						                        </ul>
+						                    </ul>
+						                </div>
+						            </li>
+						            <li><a href="/self-help/pages/default.aspx"><span>Self Help</span></a>
+						                <div class="resources">
+						                    <ul>
+						                        <ul>
+						                            <li class="roll-item"><a href="/self-help/ocj/pages/default.aspx">One Court of Justice</a></li>
+						                            <li class="roll-item"><a href="/self-help/center/pages/default.aspx">Self Help Center</a></li>
+						                        </ul>
+						                        <ul>
+						                            <li class="roll-item"><a href="/self-help/directories/pages/default.aspx">Directories</a></li>
+						                            <li class="roll-item"><a href="/self-help/complaints/pages/default.aspx">Complaints</a></li>
+						                        </ul>
+						                        <ul>
+						                            <li class="roll-item"><a href="/self-help/mahs/pages/default.aspx">Administrative Hearing System</a></li>
+						                            <li class="roll-item"><a href="/self-help/interpreter/pages/default.aspx">Request a Court Interpreter</a></li>
+						                        </ul>
+						                    </ul>
+						                </div>
+						            </li>
+								</ul>
+							</div>
+							<div></div>
+						</div>
+						<!-- secondary navigtion  -->
+						<div id="mobile-menu" class="graphite">
+							<ul id="accordion-1" class="accordion">
+								<li class="dcjq-parent-li">
+								<span id="dcjq-main-menu"></span>
+								<a class="top-level-item dcjq-parent" href="#">Main 
+								Menu <span class="dcjq-icon"></span></a>
+								<ul style="display: none;">
+									<li>
+									<a href="/courts/pages/default.aspx" class="second-level-item">
+									Courts</a></li>
+									<li>
+									<a href="/opinions_orders/pages/default.aspx" class="second-level-item">
+									Cases, Opinions &amp; Orders</a></li>
+									<li>
+									<a href="/administration/pages/default.aspx" class="second-level-item">
+									Administration</a></li>
+									<li>
+									<a href="/education/pages/default.aspx" class="second-level-item">
+									Education &amp; References</a></li>
+									<li>
+									<a href="/news-events/pages/default.aspx" class="second-level-item">
+									News &amp; Events</a></li>
+									<li>
+									<a href="/self-help/pages/default.aspx" class="second-level-item">
+									Self Help</a></li>
+								</ul>
+								</li>
+							</ul>
+						</div>
+						<!-- END secondaary navigation -->
+						<!-- END NAVIGATION --></div>
+					<!-- header -->
+					<div class="message">
+					</div>
+					<div class="body_wrapper">
+						<div id="sub_content" style="left: 0px; top: 0px">
+							<!-- page content loads from the pages and pages layout -->
+							
+		<!--SEO WEB PART FIELDS TO READ VALUES FROM HTML BOXES ON PAGE LAYOUTS-->
+<!--END SEO WEB PART FIELDS-->
+
+		<div class="title_masthead_search">
+  <div class="left"></div>
+  <div class="mid">
+    <div id="breadcrumb"><a href="/pages/default.aspx">Home</a><img src="/style%20library/_images/breadcrumb_ind.png" alt="" width="11" height="9"><a href="/opinions_orders/pages/default.aspx">Cases, Opinions & Orders</a><img src="/style%20library/_images/breadcrumb_ind.png" alt="" width="11" height="9"><div class="page_title">
+        <h1>Case Search</h1>
+      </div>
+    </div>
+  </div>
+  <div class="right"></div>
+</div>
+
+    <div id="one_column">
+      <div id="full_column">
+      
+		<div id="ctl00_PlaceHolderMain_GetDisplay2">
+	
+		
+	<div id="smedia">
+		<script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#username=xa-4b9e32c80f28d8d9"></script>
+		<div class="print_icon">
+		<a href="javascript:return addthis_sendto('print');" onclick="return addthis_sendto('print');"><img src="/Style%20Library/_images/print_icon.png" width="16px" height="13px" border="0"/><span class=""> 
+		Print</span></a>
+		</div>
+	</div>
+
+
+
+</div>
+        <!-- #central column -->
+        
+
+
+ <div>
+ <div class="body_copy">
+	 <a name="query-results"></a>
+	 
+
+
+<script type="text/javascript">
+<!--
+    function control(id) {
+        return jQuery(controlSelector(id));
+    }
+
+    function controlSelector(id) {
+        return "*[id$='" + id + "']";
+    }
+
+    function CustomValidatorAttorney_ClientValidate(source, args) {
+        //var isSubmit = (typeof args != 'undefined');
+
+        var validator = control('CustomValidatorAttorney');
+        var isValid = true;
+
+        var ControlBarNumberValue = control('ControlBarNumber').val() + '';
+        var ControlAttorneyNameValue = control('ControlAttorneyName').val() + '';
+
+        var AttorneyNameCheckbox = $('#SearchType_AttorneyName')[0].checked; 
+        var BarNumberCheckbox = $('#SearchType_BarNumber')[0].checked; 
+
+        if (AttorneyNameCheckbox == true &&
+             (ControlAttorneyNameValue == 'undefined' || ControlAttorneyNameValue.length == 0)) {
+            isValid = false;
+        }
+        if (BarNumberCheckbox == true &&
+            (ControlBarNumberValue == 'undefined' || ControlBarNumberValue.length == 0)) {
+            isValid = false;
+        }
+
+        if (isValid) {
+            validator.hide();
+        }
+        else
+            validator.show();
+
+        if (typeof args != 'undefined')
+            args.IsValid = isValid;
+    }
+
+    // Create a mapping between SearchType parameter and the jQueryUI tab IDs
+    var searchTypeMap = new Object();
+    searchTypeMap['1'] = 'CaseNumber';
+    searchTypeMap['2'] = 'PartyName';
+    searchTypeMap['3'] = 'Attorney';
+    searchTypeMap['4'] = 'Attorney';
+
+    // Create a mapping between SearchType parameter and the TextBox to be selected/focused
+    var searchTypeTextBoxMap = new Object();
+    searchTypeTextBoxMap['1'] = 'ControlCaseNumber';
+    searchTypeTextBoxMap['2'] = 'ControlPartyName';
+    searchTypeTextBoxMap['3'] = 'ControlBarNumber';
+    searchTypeTextBoxMap['4'] = 'ControlAttorneyName';
+
+    jQuery(document).ready(function () {
+        control('ControlBarNumber').change(CustomValidatorAttorney_ClientValidate);
+        control('ControlAttorneyName').change(CustomValidatorAttorney_ClientValidate);
+
+        jQuery('#SearchType_AttorneyName, ' + controlSelector('LabelAttorneyName')).click(function () {
+            jQuery('#SearchType_AttorneyName').prop('checked', true);
+            control('ControlAttorneyName').prop('readonly', '').removeClass('read-only').focus();
+            control('ControlBarNumber').prop({ value: '', readonly: 'readonly' }).addClass('read-only');
+        });
+        jQuery('#SearchType_BarNumber, ' + controlSelector('LabelBarNumber')).click(function () {
+            jQuery('#SearchType_BarNumber').attr('checked', true);
+            control('ControlBarNumber').prop('readonly', '').removeClass('read-only').focus();
+            control('ControlAttorneyName').prop({ value: '', readonly: 'readonly' }).addClass('read-only');
+        });
+
+        var ControlBarNumberValue = control('ControlBarNumber').attr('value') + '';
+        var ControlAttorneyNameValue = control('ControlAttorneyName').attr('value') + '';
+
+        // Set enabled/disabled textboxes on page load with a query string
+        if (ControlBarNumberValue != 'undefined' && ControlBarNumberValue.length > 0)
+            control('LabelBarNumber').click();
+        if (ControlAttorneyNameValue != 'undefined' && ControlAttorneyNameValue.length > 0)
+            control('LabelAttorneyName').click();
+
+        //control('ButtonByAttorney').click(ValidateAndEnableControls_Attorney);
+
+        // jQueryUI Tabs
+        jQuery('#CaseInquiryTabs').tabs();
+
+        // Get the current SearchType
+        var searchType = control('ControlSearchType').attr('value');
+
+        // Select the tab based on the SearchType and mappings
+        jQuery('#CaseInquiryTabs').tabs('select', '#' + searchTypeMap[searchType]);
+
+        // Select the textbox control that corresponds to the searchType
+        var controlToSelect = (typeof searchTypeTextBoxMap[searchType] != 'undefined') ? searchTypeTextBoxMap[searchType] : 'ControlPartyName';
+        control(controlToSelect).focus();
+
+        // Select the first textbox or radio button when a tab is selected.
+        jQuery("#CaseInquiryTabs").bind('tabsshow', function (event, ui) {
+            // If we are on the Attorney tab, select the textbox for whatever was previously searched on. 
+            if (ui.index == 2 && (searchType == '3' || searchType == '4')) {
+                control(controlToSelect).focus();
+            } else {
+                jQuery(ui.panel).find("input[type='text'], input[type='radio']").first().focus();
+            }
+        });
+
+        jQuery('#ToggleRemainingParties').click(function () {
+            $RemainingParties = jQuery('#RemainingParties');
+
+            // If #RemainingParties is currently hidden (and about to be shown), capture where the scrollbar is currently.
+            // Then when it's currently shown (and about to be hidden), use the captured scrollbar positiion to reset the scrollbar.
+            if ($RemainingParties.css('display') == 'none') {
+                var remainingScrollTop = jQuery(document).scrollTop();
+                //alert(remainingScrollTop);
+                $RemainingParties.attr('RemainingPartiesScrollTop', remainingScrollTop);
+            }
+            else {
+                var remainingScrollTop = $RemainingParties.attr('RemainingPartiesScrollTop');
+                jQuery(document).scrollTop(remainingScrollTop);
+            }
+
+            // Toggle the "button" <div> tag and message <span/> tags.
+            jQuery('#RemainingParties').toggle();
+            jQuery('#RemainingPartiesShown').toggle();
+            jQuery('#RemainingPartiesHidden').toggle();
+        });
+
+        // Hide/show default text
+        /*
+        jQuery(".defaultText").focus(function () {
+        if (jQuery(this).val() == jQuery(this)[0].title) {
+        jQuery(this).removeClass("defaultTextActive");
+        jQuery(this).val("");
+        }
+        });
+
+        jQuery(".defaultText").blur(function () {
+        if (jQuery(this).val() == '') {
+        jQuery(this).addClass("defaultTextActive");
+        jQuery(this).val(jQuery(this)[0].title);
+        }
+        });
+
+        jQuery(".defaultText").blur();
+        */
+    });
+    //-->
+</script>
+
+<input type="hidden" name="ctl00$PlaceHolderMain$SearchCaseInquiry$ControlSearchType" id="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlSearchType" />
+
+
+
+
+
+<div id="CaseInquiryTabs">
+    <ul>
+        <li><a href="#CaseNumber">By Docket Number</a></li>
+        <li><a href="#PartyName">By Party Name</a></li>
+        <li><a href="#Attorney">Case List By Attorney</a></li>
+    </ul>
+
+        
+    <div id="CaseNumber" class="jqueryui-tab">
+        <input type="hidden" name="ctl00$PlaceHolderMain$SearchCaseInquiry$jQueryUITab_CaseNumber" id="ctl00_PlaceHolderMain_SearchCaseInquiry_jQueryUITab_CaseNumber" value="CaseNumber" />
+        <div id="ctl00_PlaceHolderMain_SearchCaseInquiry_PanelCaseNumber" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_PlaceHolderMain_SearchCaseInquiry_ButtonByCaseNumber')">
+	
+            <div id="casenumber-form" class="mappis-form">
+                <div class="form-help">
+                    Use the <i>By Docket Number</i> search to locate the Court docket sheet for a specific docket number.  The docket number is also known as the case number.
+					<a class="SearchTips" href="CaseSearchTips.aspx" target="_blank">Case Search Tips</a>
+                </div>
+                <div class="form_items_group">
+                    <div class="form-field">
+                        <label for="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlCaseNumber" id="ctl00_PlaceHolderMain_SearchCaseInquiry_LabelCaseNumber">Case Docket Number:</label>
+                        <input name="ctl00$PlaceHolderMain$SearchCaseInquiry$ControlCaseNumber" type="text" maxlength="6" id="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlCaseNumber" /><br />
+                        <span id="ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorCaseNumber" style="color:Red;display:none;">Case Docket Number must be greater than 82362</span>
+                        <span id="ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCaseNumber" style="color:Red;display:none;">Case Docket Number is required</span>
+                    </div>
+                    <div class="form-field">
+                        <label for="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlCourtType_CaseNumber" id="ctl00_PlaceHolderMain_SearchCaseInquiry_LabelCourtType_CaseNumber">Select Court:</label>
+                        <table id="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlCourtType_CaseNumber" border="0">
+		<tr>
+			<td><input id="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlCourtType_CaseNumber_0" type="radio" name="ctl00$PlaceHolderMain$SearchCaseInquiry$ControlCourtType_CaseNumber" value="1" /><label for="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlCourtType_CaseNumber_0">Supreme Court</label></td>
+		</tr><tr>
+			<td><input id="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlCourtType_CaseNumber_1" type="radio" name="ctl00$PlaceHolderMain$SearchCaseInquiry$ControlCourtType_CaseNumber" value="2" /><label for="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlCourtType_CaseNumber_1">Court of Appeals</label></td>
+		</tr>
+	</table><br />
+                        <span id="ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCourtType_CaseNumber" style="color:Red;display:none;">Please select a court</span>
+                    </div>
+
+                </div>
+                <div class="form-button">
+                    <input type="submit" name="ctl00$PlaceHolderMain$SearchCaseInquiry$ButtonByCaseNumber" value="Search" onclick="return doValidate('CaseNumber');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$PlaceHolderMain$SearchCaseInquiry$ButtonByCaseNumber&quot;, &quot;&quot;, true, &quot;CaseNumber&quot;, &quot;&quot;, false, false))" id="ctl00_PlaceHolderMain_SearchCaseInquiry_ButtonByCaseNumber" class="loadingButton" />
+                </div>
+
+            </div>
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            <div id="casenumber-results" class="mappis-results">
+                
+            </div>
+
+        
+</div>
+    </div>
+
+    
+    <div id="PartyName" class="jqueryui-tab">
+        <input type="hidden" name="ctl00$PlaceHolderMain$SearchCaseInquiry$jQueryUITab_PartyName" id="ctl00_PlaceHolderMain_SearchCaseInquiry_jQueryUITab_PartyName" value="PartyName" />
+
+        <div id="ctl00_PlaceHolderMain_SearchCaseInquiry_PanelPartyName" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_PlaceHolderMain_SearchCaseInquiry_ButtonByPartyName')">
+	
+            <input type="hidden" name="ctl00$PlaceHolderMain$SearchCaseInquiry$ControlPageIndex" id="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlPageIndex" value="0" />
+            <input type="hidden" name="ctl00$PlaceHolderMain$SearchCaseInquiry$ControlPageSize" id="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlPageSize" value="25" />
+            <input type="hidden" name="ctl00$PlaceHolderMain$SearchCaseInquiry$ControlMaxPageIndex" id="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlMaxPageIndex" />
+
+            <div id="partyname-form" class="mappis-form">
+                <div class="form-help">
+                    Use the <i>By Party Name</i> search to locate the Court docket sheet for a specific party name. The party name can be the name of an individual or organization.
+					<a class="SearchTips" href="CaseSearchTips.aspx" target="_blank">Case Search Tips</a>
+                </div>
+                <div class="form_items_group">
+                    <div class="form-field">
+                        <label for="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlPartyName" id="ctl00_PlaceHolderMain_SearchCaseInquiry_LabelPartyName">Party Name:</label>
+                        <input name="ctl00$PlaceHolderMain$SearchCaseInquiry$ControlPartyName" type="text" maxlength="100" id="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlPartyName" class="ControlPartyName defaultText" title="Lastname Firstname Middle Initial OR Company Name" />
+                        <span id="ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorPartyName" style="color:Red;display:none;">Party Name is required</span>
+                        <div class="InputHelp">(Lastname Firstname Middle Initial OR Company Name)</div>
+                        <div style="padding-bottom: 10px;">
+                            <span style="padding-left: 4px;">
+                                <input id="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlPartyOpenOnly" type="checkbox" name="ctl00$PlaceHolderMain$SearchCaseInquiry$ControlPartyOpenOnly" />
+                            </span>
+                            <label for="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlPartyOpenOnly" id="ctl00_PlaceHolderMain_SearchCaseInquiry_LabelPartyOpenOnly">Show Open Cases Only</label>
+                        </div>
+                    </div>
+                    <input type="hidden" name="ctl00$PlaceHolderMain$SearchCaseInquiry$ControlCourtType_PartyName" id="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlCourtType_PartyName" value="3" />
+                    
+                </div>
+                <div class="form-button">
+                    <input type="submit" name="ctl00$PlaceHolderMain$SearchCaseInquiry$ButtonByPartyName" value="Search" onclick="return doValidate('PartyName');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$PlaceHolderMain$SearchCaseInquiry$ButtonByPartyName&quot;, &quot;&quot;, true, &quot;PartyName&quot;, &quot;&quot;, false, false))" id="ctl00_PlaceHolderMain_SearchCaseInquiry_ButtonByPartyName" class="loadingButton" />
+                </div>
+
+            </div>
+           
+            
+
+            
+
+            
+
+            <div id="partyname-results" class="mappis-results">
+                
+
+                
+                
+            </div>
+        
+</div>
+    </div>
+
+
+
+    
+    <div id="Attorney" class="jqueryui-tab">
+        <input type="hidden" name="ctl00$PlaceHolderMain$SearchCaseInquiry$jQueryUITab_Attorney" id="ctl00_PlaceHolderMain_SearchCaseInquiry_jQueryUITab_Attorney" value="Attorney" />
+        <div id="ctl00_PlaceHolderMain_SearchCaseInquiry_PanelAttorney" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_PlaceHolderMain_SearchCaseInquiry_ButtonByAttorney')">
+	
+            <div id="attorney-form" class="mappis-form">
+                <div class="form-help">
+                    Use the <i>Case List by Attorney</i> search to locate all Court docket sheets for a specific attorney. You can search by either attorney bar number or attorney name.  
+					<a class="SearchTips" href="CaseSearchTips.aspx" target="_blank">Case Search Tips</a>
+                </div>
+                <div class="form_items_group">
+                    <div class="form-field">
+                        <input type="hidden" name="ctl00$PlaceHolderMain$SearchCaseInquiry$ControlCourtType_Attorney" id="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlCourtType_Attorney" value="3" />
+                        
+                    </div>
+                    <div class="form-field">
+                        <div class="select_button">
+                            <div class="attorney_label">
+                                <input type="radio" name="SearchType" id="SearchType_BarNumber" />
+                                <label for="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlBarNumber" id="ctl00_PlaceHolderMain_SearchCaseInquiry_LabelBarNumber" class="LabelBarNumber">Bar Number:</label>
+                            </div>
+                            <div class="attorney_bar" id="ControlBarNumberWrapper">P
+                                <input name="ctl00$PlaceHolderMain$SearchCaseInquiry$ControlBarNumber" type="text" maxlength="6" readonly="readonly" id="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlBarNumber" class="ControlBarNumber read-only" /></div>
+                        </div>
+                        <div class="select_button">
+                            <div class="attorney_label">
+                                <input type="radio" name="SearchType" id="SearchType_AttorneyName" />
+                                <label for="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlAttorneyName" id="ctl00_PlaceHolderMain_SearchCaseInquiry_LabelAttorneyName" class="LabelAttorneyName">Attorney Name:</label>
+                            </div>
+                            <input name="ctl00$PlaceHolderMain$SearchCaseInquiry$ControlAttorneyName" type="text" maxlength="50" readonly="readonly" id="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlAttorneyName" class="ControlAttorneyName read-only" /></div>
+                        <div class="select_button">
+                            <div class="attorney_label">
+                                <input id="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlAttyOpenOnly" type="checkbox" name="ctl00$PlaceHolderMain$SearchCaseInquiry$ControlAttyOpenOnly" />
+                                <label for="ctl00_PlaceHolderMain_SearchCaseInquiry_ControlAttyOpenOnly" id="ctl00_PlaceHolderMain_SearchCaseInquiry_LabelAttyOpenOnly">Show Open Cases Only</label>
+                            </div>
+                        </div>
+                        <span id="ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorAttorneyName" style="color:Red;display:none;">Bar Number must be a numeric value</span>
+                        <span id="ctl00_PlaceHolderMain_SearchCaseInquiry_CustomValidatorAttorney" style="color:Red;display:none;">Please specify a Bar Number or Attorney Name</span>
+                        
+                    </div>
+
+                </div>
+                <div class="form-button">
+                    <input type="submit" name="ctl00$PlaceHolderMain$SearchCaseInquiry$ButtonByAttorney" value="Search" onclick="return doValidate('Attorney');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$PlaceHolderMain$SearchCaseInquiry$ButtonByAttorney&quot;, &quot;&quot;, true, &quot;Attorney&quot;, &quot;&quot;, false, false))" id="ctl00_PlaceHolderMain_SearchCaseInquiry_ButtonByAttorney" class="loadingButton" />
+                </div>
+
+            </div>
+
+            
+
+            
+
+            
+
+            
+
+            
+
+        
+</div>
+    </div>
+
+    
+        <div id="centeredBox" style="position:fixed;z-index:5001;top:0px;left:0px;bottom:0px;width:0px;height:0px;background:rgba(175, 175, 175, 0.56);"></div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('#centeredBox').hide();
+                });
+
+                function doValidate(inGroup) {
+                    var isValid = Page_ClientValidate(inGroup);
+                    if (isValid) {
+                            var windowWidth = $(window).width();
+                            var windowHeight = $(window).height();
+                            var target = $('#centeredBox');
+                            $(target).css('width', windowWidth + 'px');
+                            $(target).css('height', windowHeight + 'px');
+                            var spinner = new Spinner().spin();
+                            target.append(spinner.el);
+                            $(target).show();
+                            return true;
+                    }
+                    return false;
+                }
+
+            </script>
+</div>
+
+
+ </div>
+<div class="one_col_content body_copy">
+
+ <div class="one_col_content">
+<menu class="ms-SrvMenuUI">
+	<ie:menuitem id="MSOMenu_Help" iconsrc="/_layouts/images/HelpIcon.gif" onmenuclick="MSOWebPartPage_SetNewWindowLocation(MenuWebPart.getAttribute('helpLink'), MenuWebPart.getAttribute('helpMode'))" text="Help" type="option" style="display:none">
+
+	</ie:menuitem>
+</menu>
+</div>
+</div>
+	</div>
+           </div>
+      
+        <!-- #right column -->
+      <div class="clearer"></div>
+    </div>
+    <!-- #central column -->
+    <div class="clearer"></div>
+
+
+
+						</div>
+						<!-- Sub content -->
+						<div class="clearer">
+						</div>
+						<!-- #content -->
+						<div class="clearer">
+						</div>
+					</div>
+					<div class="noindex">
+						<div id="footer_wrapper">
+							<div id="footer" style="left: 0px; top: 0px">
+								<div class="footer_column" style="left: 0px; top: 0px; margin-right: 23px;">
+									<h4>Courts</h4>
+									<ul>
+										<li>
+										<a href="/courts/michigansupremecourt/pages/default.aspx">
+										Supreme Court</a></li>
+										<li>
+										<a href="/courts/coa/pages/default.aspx">
+										Court of Appeals</a></li><li><a href="/courts/coc/pages/default.aspx">Court of Claims</a></li>
+										<li>
+										<a href="/courts/trialcourts/pages/default.aspx">
+										Trial Courts</a></li>
+										
+									</ul>
+								</div>
+								<div class="footer_column" style="left: 0px; top: 0px">
+									<h4>Information for...</h4>
+									<ul>
+										<li>
+										<a class="audience_footer" onclick=" window.location.href = 'https://' + window.location.host + '/Pages/default.aspx#tabs-1'; if(window.location.pathname == '/Pages/default.aspx'){window.location.reload()};">
+										General Public</a> </li>
+										<li>
+										<a class="audience_footer" onclick=" window.location.href = 'https://' + window.location.host + '/Pages/default.aspx#tabs-2'; if(window.location.pathname == '/Pages/default.aspx'){window.location.reload()}; ">
+										Legal Community</a></li>
+										<li>
+										<a class="audience_footer" onclick=" window.location.href = 'https://' + window.location.host + '/Pages/default.aspx#tabs-4'; if(window.location.pathname == '/Pages/default.aspx'){window.location.reload()};">
+										Judges &amp; Court Staff</a></li>
+										<li>
+										<a class="audience_footer" onclick=" window.location.href = 'https://' + window.location.host + '/Pages/default.aspx#tabs-3'; if(window.location.pathname == '/Pages/default.aspx'){window.location.reload()};">
+										Media &amp; News</a></li>
+									</ul>
+								</div>
+								<div class="footer_column" style="left: 0px; top: 0px">
+									<h4>Resources</h4>
+									<ul>
+										<li>
+										<a href="/education/learning-center/pages/default.aspx">
+										Learning Center</a></li>
+										<li>
+										<a href="/self-help/center/pages/default.aspx">
+										Self-Help Center</a></li>
+										<li>
+										<a href="/Administration/jobs/Pages/default.aspx">
+										Employment Opportunities</a></li>
+										<li><span lang="en-us">
+										<a href="/self-help/directories/pages/trial-court-directory.aspx">
+										Trial Court Directory</a></span></li><li><span lang="en-us">
+										<a href="/self-help/pages/selfserv.aspx">
+										Employee Self-Service Site<br/>(for Judicial employees only)</a>
+										<li>
+										<a href="/Administration/jobs/Documents/EEOP-Utilization-Report.pdf">
+										Equal Employment Opportunity <br/>Utilization Report</a></li></span></li>
+
+
+									</ul>
+								</div>
+								<div class="footer_column" style="left: 0px; top: 0px">
+									<h4>Connect</h4>
+									<ul>
+										<li>
+										<a href="http://www.youtube.com/user/MichiganCourts?feature=plcp" target="_blank">
+										Courts Youtube Channel</a></li>
+										<li><span lang="en-us">
+										<a href="/Courts/MichiganSupremeCourt/oral-arguments/live-streaming/Pages/live-streaming.aspx">
+										Supreme Court Live</a></span></li>
+									
+
+									</ul>
+								</div>
+								<div class="footer_column" style="left: 0px; top: 0px">
+									<h4>Assistance</h4>
+									<ul>
+										<li>
+										<a href="mailto:sitefeedback@courts.mi.gov">
+										Site Feedback</a></li>
+										<li>
+										<a href="/self-help/pages/default.aspx">
+										Help</a></li>
+										<li>
+										<a href="/sitemap/Pages/default.aspx">Site 
+										Map</a></li>
+										<li>
+										<a href="https://get.adobe.com/reader/">
+										Get Acrobat Reader</a></li>										
+									</ul>
+								</div>
+								<div class="style2" style="left: 0px; top: 0px; width: 98%">
+									<span class="style1">The Michigan Supreme Court is providing the information on this site as a public service. The information is updated frequently based upon the needs of our users. Although every effort is made to maintain accurate information on this site, the Michigan Supreme Court does not guarantee the accuracy of the information. No warranty of any kind, implied, express or statutory, including but not limited to the warranties of noninfringement of third-party rights, title, merchantability, fitness for a particular purpose and freedom from computer virus, is given with respect to the contents of this site or links to other external resources. Use of this site is at your own risk, and the Michigan Supreme Court will not be liable for any damages whatsoever resulting from the use of the information available on the site. If you find any errors or omissions, we encourage you to report them to the web master via e-mail</span>. 
+									<br />
+									Copyrigh<span lang="en-us">t 
+										<script type="text/javascript">
+  											document.write(new Date().getFullYear());
+										</script>
+									</span><a href="javascript:toggle('s4-ribbonrow')">
+									©</a> Michigan Judiciary</div>
+							</div>
+							<!-- /#footer --></div>
+					</div>
+				</div>
+				</div>
+		</div>
+	</div>
+	<!-- hidden placeholders -->
+	
+	<input type="text" name="__spText1" title="text" style="display: none;" />
+	<input type="text" name="__spText2" title="text" style="display: none;" />
+	<!-- <div class="county_text"><p id="desc"></p></div> --->
+	<div id="ctl00_panelZone">
+	<div style='display:none' id='hidZone'></div>
+</div><input type='hidden' id='_wpcmWpid' name='_wpcmWpid' value='' /><input type='hidden' id='wpcmVal' name='wpcmVal' value=''/>
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorCaseNumber"), document.getElementById("ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCaseNumber"), document.getElementById("ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCourtType_CaseNumber"), document.getElementById("ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorPartyName"), document.getElementById("ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorAttorneyName"), document.getElementById("ctl00_PlaceHolderMain_SearchCaseInquiry_CustomValidatorAttorney"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorCaseNumber = document.all ? document.all["ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorCaseNumber"] : document.getElementById("ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorCaseNumber");
+ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorCaseNumber.controltovalidate = "ctl00_PlaceHolderMain_SearchCaseInquiry_ControlCaseNumber";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorCaseNumber.errormessage = "Case Docket Number must be greater than 82362";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorCaseNumber.display = "Dynamic";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorCaseNumber.validationGroup = "CaseNumber";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorCaseNumber.type = "Integer";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorCaseNumber.evaluationfunction = "RangeValidatorEvaluateIsValid";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorCaseNumber.maximumvalue = "999999";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorCaseNumber.minimumvalue = "82363";
+var ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCaseNumber = document.all ? document.all["ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCaseNumber"] : document.getElementById("ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCaseNumber");
+ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCaseNumber.controltovalidate = "ctl00_PlaceHolderMain_SearchCaseInquiry_ControlCaseNumber";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCaseNumber.errormessage = "Case Docket Number is required";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCaseNumber.display = "Dynamic";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCaseNumber.validationGroup = "CaseNumber";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCaseNumber.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCaseNumber.initialvalue = "";
+var ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCourtType_CaseNumber = document.all ? document.all["ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCourtType_CaseNumber"] : document.getElementById("ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCourtType_CaseNumber");
+ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCourtType_CaseNumber.controltovalidate = "ctl00_PlaceHolderMain_SearchCaseInquiry_ControlCourtType_CaseNumber";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCourtType_CaseNumber.errormessage = "Please select a court";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCourtType_CaseNumber.display = "Dynamic";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCourtType_CaseNumber.validationGroup = "CaseNumber";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCourtType_CaseNumber.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCourtType_CaseNumber.initialvalue = "";
+var ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorPartyName = document.all ? document.all["ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorPartyName"] : document.getElementById("ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorPartyName");
+ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorPartyName.controltovalidate = "ctl00_PlaceHolderMain_SearchCaseInquiry_ControlPartyName";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorPartyName.errormessage = "Party Name is required";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorPartyName.display = "Dynamic";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorPartyName.validationGroup = "PartyName";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorPartyName.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorPartyName.initialvalue = "";
+var ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorAttorneyName = document.all ? document.all["ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorAttorneyName"] : document.getElementById("ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorAttorneyName");
+ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorAttorneyName.controltovalidate = "ctl00_PlaceHolderMain_SearchCaseInquiry_ControlBarNumber";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorAttorneyName.errormessage = "Bar Number must be a numeric value";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorAttorneyName.display = "Dynamic";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorAttorneyName.validationGroup = "Attorney";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorAttorneyName.type = "Integer";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorAttorneyName.evaluationfunction = "RangeValidatorEvaluateIsValid";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorAttorneyName.maximumvalue = "100000000";
+ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorAttorneyName.minimumvalue = "1";
+var ctl00_PlaceHolderMain_SearchCaseInquiry_CustomValidatorAttorney = document.all ? document.all["ctl00_PlaceHolderMain_SearchCaseInquiry_CustomValidatorAttorney"] : document.getElementById("ctl00_PlaceHolderMain_SearchCaseInquiry_CustomValidatorAttorney");
+ctl00_PlaceHolderMain_SearchCaseInquiry_CustomValidatorAttorney.errormessage = "Please specify a Bar Number or Attorney Name";
+ctl00_PlaceHolderMain_SearchCaseInquiry_CustomValidatorAttorney.display = "Dynamic";
+ctl00_PlaceHolderMain_SearchCaseInquiry_CustomValidatorAttorney.validationGroup = "Attorney";
+ctl00_PlaceHolderMain_SearchCaseInquiry_CustomValidatorAttorney.evaluationfunction = "CustomValidatorEvaluateIsValid";
+ctl00_PlaceHolderMain_SearchCaseInquiry_CustomValidatorAttorney.clientvalidationfunction = "CustomValidatorAttorney_ClientValidate";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var _spFormDigestRefreshInterval = 1440000;window.g_updateFormDigestPageLoaded = new Date(); window.g_updateFormDigestPageLoaded.setDate(window.g_updateFormDigestPageLoaded.getDate() -5);function loadMDN2() { EnsureScript('MDN.js', typeof(loadFilterFn), null); }
+function loadMDN1() { ExecuteOrDelayUntilScriptLoaded(loadMDN2, 'sp.ribbon.js'); }
+_spBodyOnLoadFunctionNames.push('loadMDN1');
+function _spNavigateHierarchyEx(nodeDiv, dataSourceId, dataPath, url, listInContext, type, additionalQString) {
+    SetAdditionalNavigateHierarchyQString(additionalQString);
+    g_originalSPNavigateFunc(nodeDiv, dataSourceId, dataPath, url, listInContext, type);
+}
+
+g_originalSPNavigateFunc = _spNavigateHierarchy;
+_spNavigateHierarchy = _spNavigateHierarchyEx;
+
+function EnsureScripts(scriptInfoList, finalFunction)
+{
+if (scriptInfoList.length == 0)
+{
+finalFunction();
+}
+else
+{
+var scriptInfo = scriptInfoList.shift();
+var rest = function () { EnsureScripts(scriptInfoList, finalFunction); };
+var defd;
+try
+{
+eval('defd = typeof(' + scriptInfo[1] + ');');
+}
+catch (e)
+{
+defd = 'undefined';
+}
+if (scriptInfo[2])
+{
+EnsureScript(scriptInfo[0], defd, null);
+ExecuteOrDelayUntilScriptLoaded(rest, scriptInfo[0]);
+}
+else
+{
+EnsureScript(scriptInfo[0], defd, rest);
+}
+}
+}
+function PublishingRibbonUpdateRibbon()
+{
+var pageManager = SP.Ribbon.PageManager.get_instance();
+if (pageManager)
+{
+pageManager.get_commandDispatcher().executeCommand('appstatechanged', null);
+}
+}var _fV4UI = true;
+function _RegisterWebPartPageCUI()
+{
+    var initInfo = {editable: false,isEditMode: false,allowWebPartAdder: false,listId: "{40b1f0cc-fbad-4ecc-bcbb-5e3378c770a3}",itemId: 1,recycleBinEnabled: true,enableMinorVersioning: true,enableModeration: false,forceCheckout: true,rootFolderUrl: "\u002fopinions_orders\u002fcase_search\u002fPages",itemPermissions:{High:16,Low:196673}};
+    SP.Ribbon.WebPartComponent.registerWithPageManager(initInfo);
+    var wpcomp = SP.Ribbon.WebPartComponent.get_instance();
+    var hid;
+    hid = document.getElementById("_wpSelected");
+    if (hid != null)
+    {
+        var wpid = hid.value;
+        if (wpid.length > 0)
+        {
+            var zc = document.getElementById(wpid);
+            if (zc != null)
+                wpcomp.selectWebPart(zc, false);
+        }
+    }
+    hid = document.getElementById("_wzSelected");
+    if (hid != null)
+    {
+        var wzid = hid.value;
+        if (wzid.length > 0)
+        {
+            wpcomp.selectWebPartZone(null, wzid);
+        }
+    }
+}
+ExecuteOrDelayUntilScriptLoaded(_RegisterWebPartPageCUI, "sp.ribbon.js"); var __wpmExportWarning='This Web Part Page has been personalized. As a result, one or more Web Part properties may contain confidential information. Make sure the properties contain information that is safe for others to read. After exporting this Web Part, view properties in the Web Part description file (.WebPart) by using a text editor such as Microsoft Notepad.';var __wpmCloseProviderWarning='You are about to close this Web Part.  It is currently providing data to other Web Parts, and these connections will be deleted if this Web Part is closed.  To close this Web Part, click OK.  To keep this Web Part, click Cancel.';var __wpmDeleteWarning='You are about to permanently delete this Web Part.  Are you sure you want to do this?  To delete this Web Part, click OK.  To keep this Web Part, click Cancel.';
+ExecuteOrDelayUntilScriptLoaded(
+function()
+{
+var initInfo = 
+{
+itemPermMasks: {High:16,Low:196673},
+listPermMasks: {High:16,Low:196673},
+listId: "40b1f0cc-fbad-4ecc-bcbb-5e3378c770a3",
+itemId: 1,
+workflowsAssociated: false,
+editable: false,
+doNotShowProperties: false,
+enableVersioning: true
+};
+SP.Ribbon.DocLibAspxPageComponent.registerWithPageManager(initInfo);
+},
+"sp.ribbon.js");
+var g_disableCheckoutInEditMode = false;
+var _spWebPermMasks = {High:16,Low:196673};//]]>
+</script>
+<script type="text/javascript" language="JavaScript" defer="defer">
+<!--
+function SearchEnsureSOD() { EnsureScript('search.js',typeof(GoSearch)); } _spBodyOnLoadFunctionNames.push('SearchEnsureSOD');function S4377E58A_Submit() {SearchEnsureSOD();GoSearch(null,'ctl00_g_8b1c1df4_f95b_42df_a51e_3a33776735c6_S4377E58A_InputKeywords',null,true,false,null,null,null,null,null,'\u002fsearch\u002fpages\u002fresults.aspx', 'This Site','This List', 'This Folder', 'Related Sites', '\u002fsearch\u002fpages\u002fresults.aspx', '', 'Please enter one or more search words.');}
+// -->
+</script><script type="text/javascript" language="JavaScript" >
+// append an onload event handler
+$addHandler(window, 'load', function() {
+  document.getElementById('ctl00_g_8b1c1df4_f95b_42df_a51e_3a33776735c6_S4377E58A_InputKeywords').name = 'InputKeywords';
+});
+function S4377E58A_OSBEK(event1) { 
+if((event1.which == 10) || (event1.which == 13))
+{   
+S4377E58A_Submit();return false;
+}
+}
+// -->
+</script>
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+<script type="text/javascript">
+// <![CDATA[
+document.write('<script type="text/javascript" src="/_layouts/tamtam.sp2010.batchedit/tamtam.sp2010.batchedit.js"></' + 'script>');
+// ]]>
+</script>
+<script type="text/javascript">RegisterSod("sp.core.js", "\u002f_layouts\u002fsp.core.js?rev=7ByNlH\u00252BvcgRJg\u00252BRCctdC0w\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.res.resx", "\u002f_layouts\u002fScriptResx.ashx?culture=en\u00252Dus\u0026name=SP\u00252ERes\u0026rev=b6\u00252FcRx1a6orhAQ\u00252FcF\u00252B0ytQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.runtime.js", "\u002f_layouts\u002fsp.runtime.js?rev=IGffcZfunndj0247nOxKVg\u00253D\u00253D");RegisterSodDep("sp.runtime.js", "sp.core.js");RegisterSodDep("sp.runtime.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.ui.dialog.js", "\u002f_layouts\u002fsp.ui.dialog.js?rev=Tpcmo1\u00252FSu6R0yewHowDl5g\u00253D\u00253D");RegisterSodDep("sp.ui.dialog.js", "sp.core.js");RegisterSodDep("sp.ui.dialog.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.js", "\u002f_layouts\u002fsp.js?rev=\u00252B4ZEyA892P3T0504qi0paw\u00253D\u00253D");RegisterSodDep("sp.js", "sp.core.js");RegisterSodDep("sp.js", "sp.runtime.js");RegisterSodDep("sp.js", "sp.ui.dialog.js");RegisterSodDep("sp.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("cui.js", "\u002f_layouts\u002fcui.js?rev=OOyJv78CADNBeet\u00252FvTvniQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("core.js", "\u002f_layouts\u002f1033\u002fcore.js?rev=RiGU6\u00252FvAzNgOjxKFQLw9pw\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("inplview", "\u002f_layouts\u002finplview.js?rev=WB6Gy8a027aeNCq7koVCUg\u00253D\u00253D");RegisterSodDep("inplview", "core.js");RegisterSodDep("inplview", "sp.js");</script>
+<script type="text/javascript">RegisterSod("ribbon", "\u002f_layouts\u002fsp.ribbon.js?rev=F\u00252BUEJ66rbXzSvpf7nN69wQ\u00253D\u00253D");RegisterSodDep("ribbon", "core.js");RegisterSodDep("ribbon", "sp.core.js");RegisterSodDep("ribbon", "sp.js");RegisterSodDep("ribbon", "cui.js");RegisterSodDep("ribbon", "sp.res.resx");RegisterSodDep("ribbon", "sp.runtime.js");RegisterSodDep("ribbon", "inplview");</script>
+<script type="text/javascript">RegisterSod("sp.ui.policy.resources.resx", "\u002f_layouts\u002fScriptResx.ashx?culture=en\u00252Dus\u0026name=SP\u00252EUI\u00252EPolicy\u00252EResources\u0026rev=YhBHGmUAGyJ3lAgSdE4V\u00252Fw\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("mdn.js", "\u002f_layouts\u002fmdn.js?rev=gwmFFJ2\u00252FfFacqXWAqG\u00252FqKg\u00253D\u00253D");RegisterSodDep("mdn.js", "sp.core.js");RegisterSodDep("mdn.js", "sp.runtime.js");RegisterSodDep("mdn.js", "sp.js");RegisterSodDep("mdn.js", "cui.js");RegisterSodDep("mdn.js", "ribbon");RegisterSodDep("mdn.js", "sp.ui.policy.resources.resx");</script>
+<script type="text/javascript">RegisterSod("sp.publishing.resources.resx", "\u002f_layouts\u002fScriptResx.ashx?culture=en\u00252Dus\u0026name=SP\u00252EPublishing\u00252EResources\u0026rev=q6nxzZIVVXE5X1SPZIMD3A\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.ui.pub.ribbon.js", "\u002f_layouts\u002fsp.ui.pub.ribbon.js?rev=epwnP\u00252FbdljnctbCVld1nnA\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("msstring.js", "\u002f_layouts\u002f1033\u002fmsstring.js?rev=QtiIcPH3HV7LgVSO7vONFg\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("browserScript", "\u002f_layouts\u002f1033\u002fie55up.js?rev=UgTcwUTI6YcRzTMBxD93Xg\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("WPAdderClass", "\u002f_layouts\u002fwpadder.js?rev=rmznE9UTHIeAZF\u00252FGRiGNVA\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("search.js", "\u002f_layouts\u002fsearch.js?rev=KH4kEGeuu3Mv6BpWoFYd\u00252FA\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSodDep("browserScript", "msstring.js");</script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+
+document.getElementById('ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorCaseNumber').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorCaseNumber'));
+}
+
+document.getElementById('ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCaseNumber').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCaseNumber'));
+}
+
+document.getElementById('ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCourtType_CaseNumber').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorCourtType_CaseNumber'));
+}
+
+document.getElementById('ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorPartyName').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_PlaceHolderMain_SearchCaseInquiry_RequiredFieldValidatorPartyName'));
+}
+
+document.getElementById('ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorAttorneyName').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_PlaceHolderMain_SearchCaseInquiry_RangeValidatorAttorneyName'));
+}
+
+document.getElementById('ctl00_PlaceHolderMain_SearchCaseInquiry_CustomValidatorAttorney').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_PlaceHolderMain_SearchCaseInquiry_CustomValidatorAttorney'));
+}
+//]]>
+</script>
+</form>
+	
+
+<!-- removed this line so all browsers are allowed 
+	 -->
+	<!-- The JavaScript -->
+	<script type="text/javascript">
+            $(function() {
+				var $oe_menu		= $('#oe_menu');
+				var $oe_menu_items	= $oe_menu.children('li');
+				
+
+                $oe_menu_items.bind('mouseenter',function(){
+					var $this = $(this);
+					$this.addClass('slided selected');
+					$this.children('div').css('z-index','9999').stop(true,true).slideDown(200,function(){
+						$oe_menu_items.not('.slided').children('div').hide();
+						$this.removeClass('slided');
+					});
+				}).bind('mouseleave',function(){
+					var $this = $(this);
+					$this.removeClass('selected').children('div').css('z-index','1');
+				});
+
+				$oe_menu.bind('mouseenter',function(){
+					var $this = $(this);
+				
+					$this.addClass('hovered');
+				}).bind('mouseleave',function(){
+					var $this = $(this);
+					
+					$this.removeClass('hovered');
+					$oe_menu_items.children('div').hide();
+				})
+            });
+        </script>
+	<script type="text/javascript">
+
+<!--
+    var url
+
+    //Start External Link Area
+    var num_external_links = 4;
+
+    var external_links = new Array(num_external_links);
+	//Exception List
+    external_links[1] = "new.courts.mi.gov";
+    external_links[2] = "courts.michigan.gov";
+    external_links[3] = "courts.mi.gov";
+    external_links[4] = "coa.courts.mi.gov";
+    external_links[5] = "coa.courts.michigan.gov";
+
+    function ChangePage(formObject) {
+        url = formObject.options[formObject.options.selectedIndex].value;
+
+        if (url != "empty") {
+            window.location = url;
+            url = "";
+        }
+    }
+
+    function differentDomain(href) {
+
+        if ((href.indexOf('http:') > -1) || (href.indexOf('https:') > -1)) {
+            // absolute url, potential external link
+            if (href.indexOf(currentDomain()) > -1) {
+                return false;
+            }
+            else {
+                for (i = 1; i <= num_external_links; i++) {
+                    if (href.indexOf(external_links[i]) > -1) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+        } else {
+            // relative url  
+            return false;
+        }
+    }
+
+    function currentDomain() {
+        var domain = location.href;
+        if (domain.indexOf('http:') > -1) {
+            domain = domain.substring(7, domain.length);
+        } else if (domain.indexOf('https:') > -1) {
+            domain = domain.substring(8, domain.length);
+        }
+        var i;
+        if ((i = domain.indexOf('/')) > -1) {
+            domain = domain.substring(0, i);
+        }
+        return domain;
+    }
+
+
+    function captureExternalLinks(onclickFunction) {
+        var i;
+        for (i = 0; i < document.links.length; i++) {
+            var link = document.links[i];
+
+            if (differentDomain(link.href)) {
+                link.target = "_blank";
+                link.onclick = new Function("return warnLeaving()");
+            }
+        }
+    }
+
+    function warnLeaving() {
+
+        return confirm('You are now leaving the Michigan One Court of Justice website.\n\nThe Michigan Supreme Court and Michigan Court of Appeals are not responsible for the content or the privacy practices employed by other sites. \n\nPlease confirm you would like to leave.\n');
+
+    }
+
+    captureExternalLinks();
+//-->
+
+
+</script>
+
+</body>
+
+</html>
+<!-- 5 Output cache not used.  Reason: Cache profile "Disabled" disables caching for "Anonymous" users. -->

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="j_idt3">
+            <title>Public Access</title>
+            
+            <link rel="shortcut icon" href="/publicAccess/resources/images/favicon.ico" type="image/x-icon" />
+            <link rel="icon" href="/publicAccess/resources/images/favicon.ico" type="image/x-icon" /><script type="text/javascript" src="/publicAccess/javax.faces.resource/js/common.js.xhtml;jsessionid=2613EC84A854493210FB557D223E9A0D"></script><script type="text/javascript" src="/publicAccess/javax.faces.resource/js/smallClaims.js.xhtml;jsessionid=2613EC84A854493210FB557D223E9A0D"></script><script type="text/javascript" src="/publicAccess/javax.faces.resource/js/eFiling_registration.js.xhtml;jsessionid=2613EC84A854493210FB557D223E9A0D"></script><script type="text/javascript" src="/publicAccess/javax.faces.resource/js/jquery-1.6.4.min.js.xhtml;jsessionid=2613EC84A854493210FB557D223E9A0D"></script><script type="text/javascript" src="/publicAccess/javax.faces.resource/js/jquery_maskedinput.js.xhtml;jsessionid=2613EC84A854493210FB557D223E9A0D"></script>
+
+
+            <script type="text/javascript">
+                jQuery(document).ready(function($){
+                    //Explicitly set these bindings in this order, otherwise the mask messes the hint text up because of binding event order.
+                    //$("[id='searchPanel:dobInput']").mask("99/99/9999");
+                    //$("[id='searchPanel:dobInput']").blur(function() {onBlurHintText(this)});
+                   
+                    switchTypes();
+                    populateHintTextOnLoad();
+                    setFocus('');
+                    setHighlight('');
+                });
+            </script> 
+            <script src="https://www.google.com/recaptcha/api.js"></script>
+            <style type="text/css">               
+                input[type="text"] {
+                    padding-left: 5px;
+                }
+
+                .highlight {
+                    border-color:red !important;
+                }
+
+                input.rf-sel-inp {
+                    width: 134px!important;
+                    margin: 0 0 0 0 !important;
+                    padding-left: 5px !important;
+                    border-right: none !important;
+                    font-size: 15px !important;
+                    vertical-align: middle !important;
+                }
+
+                .rf-sel-btn-arrow {
+                    height: 20px!important;
+                    width: 15px!important;
+                }
+
+                .rf-sel-opt {
+                    font-size: 15px !important;
+                }                   
+
+                table.complaint { margin: 3px 0 5px 0 }
+                .complaint-boxLabel { color: #111111 !important; font-weight: bold !important; font-size: 11px; }
+                .nowrap { white-space: nowrap }
+                .note-text { padding-right: 10px; font-family: Arial, Helvetica, sans-serif; float: left; color: #333; margin-left: 10px; font-size: 13px; }
+                .searchLabels {width: 150px; text-align: right;}
+                .searchLabels2 {vertical-align: top;}
+                .searchLabels3 {width:170px;}
+            </style><link type="text/css" rel="stylesheet" href="/publicAccess/org.richfaces.resources/javax.faces.resource/org.richfaces.staticResource/4.3.6.Final/PackedCompressed/blueSky/skinning_both.css;jsessionid=2613EC84A854493210FB557D223E9A0D" /><link type="text/css" rel="stylesheet" href="/publicAccess/javax.faces.resource/css/esubmit-styles.css.xhtml;jsessionid=2613EC84A854493210FB557D223E9A0D" /><link type="text/css" rel="stylesheet" href="/publicAccess/javax.faces.resource/css/tooltip-generic.css.xhtml;jsessionid=2613EC84A854493210FB557D223E9A0D" /><script type="text/javascript" src="/publicAccess/javax.faces.resource/jsf.js.xhtml;jsessionid=2613EC84A854493210FB557D223E9A0D?ln=javax.faces"></script><script type="text/javascript" src="/publicAccess/org.richfaces.resources/javax.faces.resource/org.richfaces.staticResource/4.3.6.Final/PackedCompressed/jquery.js;jsessionid=2613EC84A854493210FB557D223E9A0D"></script><script type="text/javascript" src="/publicAccess/org.richfaces.resources/javax.faces.resource/org.richfaces.staticResource/4.3.6.Final/PackedCompressed/packed/packed.js;jsessionid=2613EC84A854493210FB557D223E9A0D"></script><link type="text/css" rel="stylesheet" href="/publicAccess/org.richfaces.resources/javax.faces.resource/org.richfaces.staticResource/4.3.6.Final/PackedCompressed/blueSky/packed/packed.css;jsessionid=2613EC84A854493210FB557D223E9A0D" /></head><body class="body-app yui-skin-sam"><head id="formHeader:j_idt14">
+            <style type="text/css">
+            *.rf-tb-itm {
+                padding: 0px;                
+                border: 0px;
+            }
+            </style><script type="text/javascript" src="/publicAccess/javax.faces.resource/js/formTop.js.xhtml;jsessionid=2613EC84A854493210FB557D223E9A0D"></script></head><body>
+<form id="formHeader:sessionTimerForm" name="formHeader:sessionTimerForm" method="post" action="/publicAccess/html/common/index.xhtml;jsessionid=2613EC84A854493210FB557D223E9A0D" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="formHeader:sessionTimerForm" value="formHeader:sessionTimerForm" />
+<div id="formHeader:sessionTimerForm:sessionTimerPanel" class="rf-tgp" style="display: none; width: 100%; z-index: 99; position: absolute; top: 0; left: 0;"><input id="formHeader:sessionTimerForm:sessionTimerPanel-value" name="formHeader:sessionTimerForm:sessionTimerPanel-value" type="hidden" /></div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="-6226072875392239893:-8269321589184107454" autocomplete="off" />
+</form><img src="/publicAccess/javax.faces.resource/images/icon-blank.png.xhtml;jsessionid=2613EC84A854493210FB557D223E9A0D" alt="Home Page" style="position:absolute; top:0px; left:0px; border: 0; height: 99px; width: 500px;" usemap="#clickableHeader" />
+        <map id="clickableHeader"><area href="../../" shape="rect" coords="0,0,500,99" alt="Home Page" /></map>
+<form id="formHeader:topPanel" name="formHeader:topPanel" method="post" action="/publicAccess/html/common/index.xhtml;jsessionid=2613EC84A854493210FB557D223E9A0D" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="formHeader:topPanel" value="formHeader:topPanel" />
+<table id="formHeader:topPanel:headerPG" class="header-pa header-style">
+<tbody>
+<tr>
+<td class="header-col1"></td>
+<td class=" header-col2"><span class="header-name3">Clerk of the Circuit Court Public Access System<br /></span></td>
+</tr>
+</tbody>
+</table>
+<input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="-6226072875392239893:-8269321589184107454" autocomplete="off" />
+</form>
+<form id="formHeader:mainMenu" name="formHeader:mainMenu" method="post" action="/publicAccess/html/common/index.xhtml;jsessionid=2613EC84A854493210FB557D223E9A0D" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="formHeader:mainMenu" value="formHeader:mainMenu" />
+<table class="rf-tb mainMenu" id="formHeader:mainMenu:j_idt27" style="width : 100%; height: ; "><col style="width : 1px" /><col style="width : 1px" /><col style="width : 100%" /><tr class="rf-tb-cntr"><td id="formHeader:mainMenu:homeButton_itm" class="rf-tb-itm"><a id="formHeader:mainMenu:homeButton" href="#" onclick="mojarra.jsfcljs(document.getElementById('formHeader:mainMenu'),{'formHeader:mainMenu:homeButton':'formHeader:mainMenu:homeButton'},'');return false">Search</a></td><td id="formHeader:mainMenu:j_idt28_itm" class="rf-tb-itm"><a href="../common/contactUs.xhtml;jsessionid=2613EC84A854493210FB557D223E9A0D" style="width: 100px;">Contact Us</a></td><td class="rf-tb-emp"> </td></tr></table><script type="text/javascript">toolbarHandlers({"id":"formHeader:mainMenu:j_idt27","events":{} ,"groups":[] } );</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="-6226072875392239893:-8269321589184107454" autocomplete="off" />
+</form><script type="text/javascript">new RichFaces.ui.TogglePanel("formHeader:sessionTimerForm:sessionTimerPanel",{"ajax":{"incId":"1"} ,"activeItem":null,"cycledSwitching":false} )
+</script></body>
+<form id="searchPanel" name="searchPanel" method="post" action="/publicAccess/html/common/index.xhtml;jsessionid=2613EC84A854493210FB557D223E9A0D" class="form-content" enctype="application/x-www-form-urlencoded" onsubmit="onSubmitHintTextClear()">
+<input type="hidden" name="searchPanel" value="searchPanel" />
+<div id="searchPanel:formContentPG" class="form-content"><table class="welcome-message" border="0" style="width:90%;">
+<tbody>
+<tr>
+<td>
+                        <br />
+                        <h2 class="lead-text">Welcome to the Lake County, Illinois, Clerk of the Circuit Court's Public Access System</h2>
+                        <p></td>
+</tr>
+<tr>
+<td>This site provides access to certain civil, criminal, and traffic public records of the 19th Judicial Circuit Court of Lake County, Illinois.  The information displayed is an exact copy of the case information entered into the circuit court's case management system.  The court record summaries viewed here are all public records under Illinois open records law.</td>
+</tr>
+<tr>
+<td></p></td>
+</tr>
+</tbody>
+</table>
+
+                    <br /><table class="highlighted-container" style="width:90%;">
+<tbody>
+<tr>
+<td><table style="width:700px;">
+<tbody>
+<tr>
+<td>
+                            <h2>Search Criteria</h2></td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td><table>
+<tbody>
+<tr>
+<td class="searchLabels"><label id="searchPanel:searchTypeLabel" class="outPutLabel">Search by: </label></td>
+<td class=" searchLabels2"> </td>
+<td class=" searchLabels2"><div class="rf-sel" id="searchPanel:searchTypeSelector"><span class="rf-sel-cntr"><input id="searchPanel:searchTypeSelectorselValue" name="searchPanel:searchTypeSelector" type="hidden" /><input autocomplete="off" class="rf-sel-inp rf-sel-dflt-lbl" id="searchPanel:searchTypeSelectorInput" name="searchPanel:searchTypeSelectorInput" readonly="readonly" type="text" value="Select a Search" /><span class="rf-sel-btn" id="searchPanel:searchTypeSelectorButton"><span class="rf-sel-btn-arrow"></span></span></span><div class="rf-sel-lst-cord" id="searchPanel:searchTypeSelectorList"><div class="rf-sel-shdw"><div class="rf-sel-shdw-t"></div><div class="rf-sel-shdw-l"></div><div class="rf-sel-shdw-r"></div><div class="rf-sel-shdw-b"></div><div class="rf-sel-lst-dcrtn"><div class="rf-sel-lst-scrl" style="min-height: 20px;max-height: 100px;width: 150px"><div id="searchPanel:searchTypeSelectorItems"><div id="searchPanel:searchTypeSelectorItem0" class="rf-sel-opt">Person</div><div id="searchPanel:searchTypeSelectorItem1" class="rf-sel-opt">Business</div><div id="searchPanel:searchTypeSelectorItem2" class="rf-sel-opt">Case Number</div></div></div></div></div></div><script type="text/javascript">new RichFaces.ui.Select("searchPanel:searchTypeSelector", {"clientSelectItems":[{ 'id' : "searchPanel:searchTypeSelectorItem0" , 'label' : "Person", 'value' : "P"},{ 'id' : "searchPanel:searchTypeSelectorItem1" , 'label' : "Business", 'value' : "B"},{ 'id' : "searchPanel:searchTypeSelectorItem2" , 'label' : "Case Number", 'value' : "C"}] ,"itemCss":"rf\u002Dsel\u002Dopt","selectItemCss":"rf\u002Dsel\u002Dsel","onselectitem":function(event){javascript:switchTypes();},"defaultLabel":"Select a Search"} );</script></div></td>
+</tr>
+<tr>
+<td class="searchLabels"> </td>
+<td class=" searchLabels2"> </td>
+<td class=" searchLabels2"><span class="rf-msg error-message searchTypeError" id="searchPanel:searchTypeError" style="white-space: normal"></span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span id="searchPanel:personFiller" style="display:none;"> </span></td>
+<td><table id="searchPanel:personPanel" style="display:none;">
+<tbody>
+<tr>
+<td class="searchLabels"><label id="searchPanel:firstName" for="searchPanel:firstNameInput" class="outPutLabel">Name: </label></td>
+<td class=" searchLabels2"><label for="searchPanel:firstNameInput" class="hintTextStorage">First (required)</label></td>
+<td class=" searchLabels2"><input id="searchPanel:firstNameInput" type="text" name="searchPanel:firstNameInput" value="" class=" hintTextField" maxlength="15" onblur="onBlurHintText(this)" onfocus="onFocusHintText(this)" onkeypress="return onKeyPressBlockNumbers(event);" style="font-size:15px;width:150px;" title="Please enter your first name." onchange="capitalizeWord(this)" /></td>
+<td class=" searchLabels2"><label for="searchPanel:lastNameInput" class="hintTextStorage">Last (required)</label></td>
+<td class=" searchLabels2"><input id="searchPanel:lastNameInput" type="text" name="searchPanel:lastNameInput" value="" class=" hintTextField" maxlength="40" onblur="onBlurHintText(this)" onfocus="onFocusHintText(this)" onkeypress="return onKeyPressBlockNumbers(event);" style="font-size:15px;padding-left:5px;width:150px;" title="Please enter your last name." onchange="capitalizeWord(this)" /></td>
+</tr>
+<tr>
+<td class="searchLabels"> </td>
+<td class=" searchLabels2"> </td>
+<td class=" searchLabels2"><span class="rf-msg error-message firstNameError" id="searchPanel:firstNameError" style="white-space: normal"></span></td>
+<td class=" searchLabels2"> </td>
+<td class=" searchLabels2"><span class="rf-msg error-message lastNameError" id="searchPanel:lastNameError" style="white-space: normal"></span></td>
+</tr>
+<tr>
+<td class="searchLabels"> </td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span id="searchPanel:businessFiller" style="display:none;"> </span></td>
+<td><table id="searchPanel:businessPanel" style="display:none;">
+<tbody>
+<tr>
+<td class="searchLabels"><label id="searchPanel:businessName" for="searchPanel:businessNameInput" class="outPutLabel">Business Name:</label></td>
+<td class=" searchLabels2"><label for="searchPanel:businessNameInput" class="hintTextStorage"> Required</label></td>
+<td class=" searchLabels2"><input id="searchPanel:businessNameInput" type="text" name="searchPanel:businessNameInput" value="" class=" hintTextField" maxlength="40" onblur="onBlurHintText(this)" onfocus="onFocusHintText(this)" style="font-size:15px;width:150px;" title="Please enter business name." onchange="capitalizeWord(this)" /></td>
+</tr>
+<tr>
+<td class="searchLabels"> </td>
+<td class=" searchLabels2"> </td>
+<td class=" searchLabels2"><span class="rf-msg error-message businessNameError" id="searchPanel:businessNameError" style="white-space: normal"></span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span id="searchPanel:dobFiller" style="display:none;"> </span></td>
+<td><table id="searchPanel:dobPanel">
+<tbody>
+<tr>
+<td class="searchLabels"><label id="searchPanel:dobLabel" for="searchPanel:dobInput1" class="outPutLabel">Date of Birth (MM/DD/YYYY): </label></td>
+<td class=" searchLabels2"><input id="searchPanel:dobInput1" type="text" name="searchPanel:dobInput1" value="" maxlength="10" style="font-size:15px;width:150px;" title="Please enter date of birth" /></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span id="searchPanel:caseNumberFiller" style="display:none;"> </span></td>
+<td><table id="searchPanel:caseNumberPanel" style="display:none;">
+<tbody>
+<tr>
+<td class="searchLabels"><label id="searchPanel:caseNumber" for="searchPanel:caseNumberInput" class="outPutLabel">Case Number: </label></td>
+<td class=" searchLabels2"><label for="searchPanel:caseNumberInput" class="hintTextStorage">Case Number (no spaces)</label></td>
+<td class=" searchLabels2"><input id="searchPanel:caseNumberInput" type="text" name="searchPanel:caseNumberInput" value="" class=" hintTextField" maxlength="12" onfocus="onFocusHintText(this)" style="font-size:15px;padding-left:5px;width:220px;" title="Please enter case number" /></td>
+</tr>
+<tr>
+<td class="searchLabels"> </td>
+<td class=" searchLabels2"> </td>
+<td class=" searchLabels2"><span class="rf-msg error-message caseNumberError" id="searchPanel:caseNumberError" style="white-space: normal"></span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span id="searchPanel:caseGroupFiller" style="display:none;"> </span></td>
+<td><table id="searchPanel:caseGroupPanel" style="display:none;">
+<tbody>
+<tr>
+<td class="searchLabels"><label id="searchPanel:caseGroupLabel" for="searchPanel:caseGroupSelector" class="outPutLabel">Case Group: </label></td>
+<td class=" searchLabels2"> </td>
+<td><div class="rf-sel" id="searchPanel:caseGroupSelector"><span class="rf-sel-cntr"><input id="searchPanel:caseGroupSelectorselValue" name="searchPanel:caseGroupSelector" type="hidden" value="D" /><input autocomplete="off" class="rf-sel-inp" id="searchPanel:caseGroupSelectorInput" name="searchPanel:caseGroupSelectorInput" readonly="readonly" type="text" value="All" /><span class="rf-sel-btn" id="searchPanel:caseGroupSelectorButton"><span class="rf-sel-btn-arrow"></span></span></span><div class="rf-sel-lst-cord" id="searchPanel:caseGroupSelectorList"><div class="rf-sel-shdw"><div class="rf-sel-shdw-t"></div><div class="rf-sel-shdw-l"></div><div class="rf-sel-shdw-r"></div><div class="rf-sel-shdw-b"></div><div class="rf-sel-lst-dcrtn"><div class="rf-sel-lst-scrl" style="min-height: 20px;max-height: 100px;width: 150px"><div id="searchPanel:caseGroupSelectorItems"><div id="searchPanel:caseGroupSelectorItem0" class="rf-sel-opt">All</div><div id="searchPanel:caseGroupSelectorItem1" class="rf-sel-opt">Criminal</div><div id="searchPanel:caseGroupSelectorItem2" class="rf-sel-opt">Traffic</div><div id="searchPanel:caseGroupSelectorItem3" class="rf-sel-opt">Civil</div></div></div></div></div></div><script type="text/javascript">new RichFaces.ui.Select("searchPanel:caseGroupSelector", {"clientSelectItems":[{ 'id' : "searchPanel:caseGroupSelectorItem0" , 'label' : "All", 'value' : "D"},{ 'id' : "searchPanel:caseGroupSelectorItem1" , 'label' : "Criminal", 'value' : "C"},{ 'id' : "searchPanel:caseGroupSelectorItem2" , 'label' : "Traffic", 'value' : "T"},{ 'id' : "searchPanel:caseGroupSelectorItem3" , 'label' : "Civil", 'value' : "V"}] ,"itemCss":"rf\u002Dsel\u002Dopt","selectItemCss":"rf\u002Dsel\u002Dsel","onselectitem":function(event){javascript:switchTypes();}} );</script></div></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span id="searchPanel:caseStatusFiller" style="display:none;"> </span></td>
+<td><table id="searchPanel:caseStatusPanel" style="display:none;">
+<tbody>
+<tr>
+<td class="searchLabels"><label id="searchPanel:caseStatusLabel" for="searchPanel:caseStatusSelector" class="outPutLabel">Case Status: </label></td>
+<td class=" searchLabels2"> </td>
+<td><div class="rf-sel" id="searchPanel:caseStatusSelector"><span class="rf-sel-cntr"><input id="searchPanel:caseStatusSelectorselValue" name="searchPanel:caseStatusSelector" type="hidden" value="D" /><input autocomplete="off" class="rf-sel-inp" id="searchPanel:caseStatusSelectorInput" name="searchPanel:caseStatusSelectorInput" readonly="readonly" type="text" value="All" /><span class="rf-sel-btn" id="searchPanel:caseStatusSelectorButton"><span class="rf-sel-btn-arrow"></span></span></span><div class="rf-sel-lst-cord" id="searchPanel:caseStatusSelectorList"><div class="rf-sel-shdw"><div class="rf-sel-shdw-t"></div><div class="rf-sel-shdw-l"></div><div class="rf-sel-shdw-r"></div><div class="rf-sel-shdw-b"></div><div class="rf-sel-lst-dcrtn"><div class="rf-sel-lst-scrl" style="min-height: 20px;max-height: 100px;width: 150px"><div id="searchPanel:caseStatusSelectorItems"><div id="searchPanel:caseStatusSelectorItem0" class="rf-sel-opt">All</div><div id="searchPanel:caseStatusSelectorItem1" class="rf-sel-opt">Active</div></div></div></div></div></div><script type="text/javascript">new RichFaces.ui.Select("searchPanel:caseStatusSelector", {"clientSelectItems":[{ 'id' : "searchPanel:caseStatusSelectorItem0" , 'label' : "All", 'value' : "D"},{ 'id' : "searchPanel:caseStatusSelectorItem1" , 'label' : "Active", 'value' : "A"}] ,"itemCss":"rf\u002Dsel\u002Dopt","selectItemCss":"rf\u002Dsel\u002Dsel"} );</script></div></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span id="searchPanel:dateFiledFiller" style="display:none;"> </span></td>
+<td><table id="searchPanel:dateFiledPanel" style="display:none;">
+<tbody>
+<tr>
+<td class="searchLabels"><label id="searchPanel:dateFiledLabel" class="outPutLabel">Date Filed: </label></td>
+<td class=" searchLabels2"><label id="searchPanel:fromDateInputInputDateHint" for="searchPanel:fromDateInputInputDate" class="hintTextStorage">From (MM/DD/YYYY)</label></td>
+<td class=" searchLabels3"><div class="rf-cal hint field-date" id="searchPanel:fromDateInput"><span id="searchPanel:fromDateInputPopup" style="white-space: nowrap;"><input class="rf-cal-inp hintTextField" id="searchPanel:fromDateInputInputDate" name="searchPanel:fromDateInputInputDate" style="vertical-align: middle; width:151px;" type="text" onblur="onBlurHintText(this)" onfocus="onFocusHintText(this)" /><img alt="" class="rf-cal-btn " id="searchPanel:fromDateInputPopupButton" src="/publicAccess/org.richfaces.resources/javax.faces.resource/org.richfaces.staticResource/4.3.6.Final/PackedCompressed/blueSky/org.richfaces.images/calendarIcon.png" style="vertical-align: middle" /><input autocomplete="off" id="searchPanel:fromDateInputInputCurrentDate" name="searchPanel:fromDateInputInputCurrentDate" style="display:none" type="hidden" value="05/2020" /></span><span id="searchPanel:fromDateInputContent" style="display: none;"></span><span id="searchPanel:fromDateInputScript" style="display: none;"><script type="text/javascript">RichFaces.ui.Calendar.addLocale("locale.us",
+                    {"monthLabels":["January","February","March","April","May","June","July","August","September","October","November","December"] ,"minDaysInFirstWeek":1,"monthLabelsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"] ,"firstWeekDay":0,"weekDayLabels":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"] ,"weekDayLabelsShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"] } );
+                    new RichFaces.ui.Calendar("searchPanel:fromDateInput",
+                    "locale.us",
+                    {"datePattern":"MM\/d\/yyyy","enableManualInput":true,"showWeeksBar":false,"ondateselect":function(event){calendarHintTextClear(this)},"currentDate":new Date(2020,4,27),"dayStyleClass":function(){$(this).attr('class', 'disabledClassesProv')},"style":"z\u002Dindex: 3"} ).load();</script></span></div></td>
+<td class=" searchLabels2"><label id="searchPanel:toDateInputInputDateHint" for="searchPanel:toDateInputInputDate" class="hintTextStorage">To (MM/DD/YYYY)</label></td>
+<td class=" searchLabels3"><div class="rf-cal hint field-date" id="searchPanel:toDateInput"><span id="searchPanel:toDateInputPopup" style="white-space: nowrap;"><input class="rf-cal-inp hintTextField" id="searchPanel:toDateInputInputDate" name="searchPanel:toDateInputInputDate" style="vertical-align: middle; width:151px;" type="text" onblur="onBlurHintText(this)" onfocus="onFocusHintText(this)" /><img alt="" class="rf-cal-btn " id="searchPanel:toDateInputPopupButton" src="/publicAccess/org.richfaces.resources/javax.faces.resource/org.richfaces.staticResource/4.3.6.Final/PackedCompressed/blueSky/org.richfaces.images/calendarIcon.png" style="vertical-align: middle" /><input autocomplete="off" id="searchPanel:toDateInputInputCurrentDate" name="searchPanel:toDateInputInputCurrentDate" style="display:none" type="hidden" value="05/2020" /></span><span id="searchPanel:toDateInputContent" style="display: none;"></span><span id="searchPanel:toDateInputScript" style="display: none;"><script type="text/javascript">RichFaces.ui.Calendar.addLocale("locale.us",
+                    {"monthLabels":["January","February","March","April","May","June","July","August","September","October","November","December"] ,"minDaysInFirstWeek":1,"monthLabelsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"] ,"firstWeekDay":0,"weekDayLabels":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"] ,"weekDayLabelsShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"] } );
+                    new RichFaces.ui.Calendar("searchPanel:toDateInput",
+                    "locale.us",
+                    {"datePattern":"MM\/d\/yyyy","enableManualInput":true,"showWeeksBar":false,"ondateselect":function(event){calendarHintTextClear(this)},"currentDate":new Date(2020,4,27),"dayStyleClass":function(){$(this).attr('class', 'disabledClassesProv')},"style":"z\u002Dindex: 3"} ).load();</script></span></div></td>
+</tr>
+<tr>
+<td class="searchLabels"> </td>
+<td class=" searchLabels2"> </td>
+<td class=" searchLabels3"><span class="rf-msg error-message fromDateInputDateError" id="searchPanel:fromDateInputDateError" style="white-space: normal"></span></td>
+<td class=" searchLabels2"> </td>
+<td class=" searchLabels3"><span class="rf-msg error-message toDateInputDateError" id="searchPanel:toDateInputDateError" style="white-space: normal"></span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><table id="searchPanel:note1" class="note-text" border="0" style="display:none;">
+<tbody>
+<tr>
+<td>
+                            <center><h4 class="lead-text">NOTE: Please complete required fields. The allowed maximum number of results is 500. Providing additional criteria will refine your search and narrow search results.</h4></center></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="welcome-message" border="0" style="width:90%;">
+<tbody>
+<tr>
+<td>
+                        <h2 class="lead-text"></h2></td>
+</tr>
+</tbody>
+</table>
+<table class="highlighted-container" style="padding: 20px 20px 0px 20px;width:90%;">
+<tbody>
+<tr>
+<td><table style="background-color: white;border: 1px solid black;height:200px">
+<tbody>
+<tr>
+<td><div style="overflow-y:scroll;width:420px;height:180px" style="overflow-y:scroll;width:420px;height:180px">Terms of Agreement <p/> Electronic information is extracted and collated 1 business day in advance of the current date.  Therefore, changes or additions made during that period to court schedules are not reflected in the on-line data. <p/> Please note that cases that are impounded or expunged, including, but not limited to Adoption and Juvenile will not be displayed. <p/> This website is provided by the Clerk of the Circuit Court of Lake County as a public service.  This website is intended to be used as a resource to determine the general status of past and current court cases.  The User understands that this information is not the official record of the court and that it should only be used to gain a general understanding of a case's history and disposition.  The Clerk of the Circuit Court of Lake County and its officers and employees are not responsible or liable for any loss, consequence, or damage resulting directly or indirectly from use of the information.  If you need more information about a case, or feel that any of the information posted is in error and should be corrected, please contact the Clerk of the Circuit Court of Lake County, Illinois. <p/>This service is currently offered without charge to the user.  The Clerk of the Circuit Court of Lake County reserves the right to charge reasonable fees in the future. <p/>This site is intended for the private use of the public.  The User is expressly prohibited from reproducing, publishing on-line, selling, reselling or otherwise disseminating data or information accessed pursuant to this Agreement.  The information accessed is not intended or permitted to be used for commercial resale.  Unauthorized attempts to upload or change information on this service are strictly prohibited and may be punishable under the Computer Fraud and Abuse Act of 1986.<p/>Availability of Data<br/>Dissemination of the data provided pursuant to this Agreement is subject to and controlled by statute, court rule and court order including but not limited to the Illinois Supreme Court's Electronic Access Policy for Circuit Court Records of the Illinois Courts (April 1, 2004), the Illinois Compiled Statutes, the Illinois Code of Civil Procedure, the Illinois Code of Criminal Procedure, the Illinois Supreme Court rules, and all local rules of the Circuit Court of Lake County.<p/>Limitation of Liability<br/>By using this service, User agrees and understands that the Clerk of the Circuit Court of Lake County shall not be liable for any demand or claim, regardless of form of action, arising out of or incident to the posting of information on this website and/or the acts or omissions of any person or entity accessing information through this service.  This includes, but is not limited to, claims arising out of, or incident to, incorrect or incomplete data or information accessed pursuant to this Agreement.  In no event shall the Clerk of the Circuit Court be liable for damages of any nature, including any loss of profits, lost savings or other incidental or consequential damages arising out of the use, or inability to use, this Internet service. <p/>The electronic information available through this service is not the official record of the court.  The official court records are held and maintained in the hard copy paper files in the courthouse or other official Clerk's repositories.  Any and all information contained within the on-line database is recorded as a brief summary from the paper documents. <p/>All Users are advised to independently verify any information or data obtained pursuant to this Agreement with official court information from the court files (i.e., pleadings, orders, half sheets, file jackets and the contents thereof, etc.).<p/>DISCLAIMER OF WARRANTIES<br/>LAKE COUNTY MAKES NO REPRESENTATIONS OR WARRANTIES WITH REGARD TO ANY COMPUTER PROGRAMS, MATERIALS OR SERVICES IN CONNECTION WITH THIS WEBSITE INCLUDING WITHOUT LIMITATION THE SUITABILITY OF THE CONTENT AND OTHER INFORMATION CONTAINED ON THIS WEBSITE FOR ANY PURPOSE.  YOUR ACCESS TO AND USE OF THE WEBSITE, CONTENT AND OTHER INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  THE COUNTY HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE WEBSITE, THE CONTENT AND OTHER INFORMATION, INCLUDING WITHOUT LIMITATION ALL IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NONINFRINGEMENT, AND AVAILABILITY.  THE COUNTY DOES NOT WARRANT THE ACCURACY OF ANY CONTENT OR OTHER INFORMATION CONTAINED ON THE WEBSITE.<p/>The Clerk of the Circuit Court of Lake County diligently strives to maintain accurate, complete and timely data in the on-line databases but shall not be liable for any consequential, exemplary, incidental or special damages arising from or in connection with data or information accessed via this site.<p/>The Clerk of the Circuit Court of Lake County retains the right to change, suspend or discontinue any aspect of the electronic information available through this service at any time. <p/>The databases are refreshed nightly around 10:45 PM and on Sunday around 6:00 PM. This process takes 10 to 15 minutes, at which time, the system may be unavailable.</div></td>
+</tr>
+<tr>
+<td><table>
+<tbody>
+<tr>
+<td><input id="searchPanel:acceptTerms" type="checkbox" name="searchPanel:acceptTerms" /></td>
+<td><label for="searchPanel:acceptTerms" style="color:black;">I accept the Terms of Agreement.</label></td>
+</tr>
+<tr>
+<td> </td>
+<td><span class="rf-msg error-message acceptTermsError" id="searchPanel:acceptTermsError" style="white-space: normal"></span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table style="background-color: white;border: 1px solid black;width:420px;height:220px; ">
+<tbody>
+<tr>
+<td>If you are already logged into your Google Chrome account,                                            you do not need to do anything other than select the &quot;I'm not a robot&quot; check box.                                             If you are not logged into a Google Chrome account,                                            you must select all images as indicated to proceed and view case information.</td>
+</tr>
+<tr>
+<td>
+                            <div class="g-recaptcha" style="align:center" data-sitekey="6LdldyEUAAAAAAgLvVHlVvTec2ZSlkbMfbi0Arc6"></div></td>
+</tr>
+<tr>
+<td><input id="searchPanel:secureText" type="hidden" name="searchPanel:secureText" value="true" /></td>
+</tr>
+<tr>
+<td><span class="rf-msg error-message secureTextError" id="searchPanel:recaptcha" style="white-space: normal"></span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td></td>
+<td><div id="searchPanel:buttonPG" class="next-bar" style="width:100%;clear: left; background-color: #f5ecdb; border-bottom: #f5ecdb 4px solid; border-left: #f5ecdb 4px solid; border-top: #f5ecdb 4px solid; border-right: #f5ecdb 4px solid; float: left; margin-left: 10px; font-size: 13px;font-family: Arial, Helvetica, sans-serif;" style="width:100%;clear: left; background-color: #f5ecdb; border-bottom: #f5ecdb 4px solid; border-left: #f5ecdb 4px solid; border-top: #f5ecdb 4px solid; border-right: #f5ecdb 4px solid; float: left; margin-left: 10px; font-size: 13px;font-family: Arial, Helvetica, sans-serif;"><input id="searchPanel:submitButton" type="submit" name="searchPanel:submitButton" value="SUBMIT" style="float: right" class="next-button-long" onclick="onSubmitHintTextClear()" /><input id="searchPanel:resetButton" type="submit" name="searchPanel:resetButton" value="CLEAR FORM" class="standard-button" onclick="switchTypes();onSubmitHintTextClear();" /></div></td>
+</tr>
+</tbody>
+</table>
+</div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="-6226072875392239893:-8269321589184107454" autocomplete="off" />
+</form><script type="text/javascript">new RichFaces.ui.TogglePanel("formHeader:sessionTimerForm:sessionTimerPanel",{"ajax":{"incId":"1"} ,"activeItem":null,"cycledSwitching":false} )
+if (RichFaces.csv && RichFaces.csv.addMessage) { RichFaces.csv.addMessage({ 'UISELECTONE_INVALID': {detail:'{0}: Validation Error: Value is not valid',summary:'{0}: Validation Error: Value is not valid',severity:2} }); }
+$(document).ready(function() {
+new RichFaces.ui.Message("searchPanel:searchTypeError",{"forComponentId":"searchPanel:searchTypeSelector","showSummary":false,"showDetail":true} )
+new RichFaces.ui.Message("searchPanel:firstNameError",{"forComponentId":"searchPanel:firstNameInput","showSummary":false,"showDetail":true} )
+new RichFaces.ui.Message("searchPanel:lastNameError",{"forComponentId":"searchPanel:lastNameInput","showSummary":false,"showDetail":true} )
+new RichFaces.ui.Message("searchPanel:businessNameError",{"forComponentId":"searchPanel:businessNameInput","showSummary":false,"showDetail":true} )
+new RichFaces.ui.Message("searchPanel:caseNumberError",{"forComponentId":"searchPanel:caseNumberInput","showSummary":false,"showDetail":true} )
+new RichFaces.ui.Message("searchPanel:fromDateInputDateError",{"forComponentId":"searchPanel:fromDateInput","showSummary":false,"showDetail":true} )
+new RichFaces.ui.Message("searchPanel:toDateInputDateError",{"forComponentId":"searchPanel:toDateInput","showSummary":false,"showDetail":true} )
+new RichFaces.ui.Message("searchPanel:acceptTermsError",{"forComponentId":"searchPanel:acceptTerms","showSummary":false,"showDetail":true} )
+new RichFaces.ui.Message("searchPanel:recaptcha",{"forComponentId":"searchPanel:secureText","showSummary":false,"showDetail":true} )
+});
+</script></body>
+
+</html>

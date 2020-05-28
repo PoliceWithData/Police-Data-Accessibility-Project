@@ -1,0 +1,610 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Orange County Clerk of Courts Records Search</title>
+
+    <script src="/bundles/modernizr?v=FkGM2ahQT_s1_lJWOAK4Kuc4JMorI4buRSjs3adTwYk1"></script>
+
+    <script src="/bundles/jquery?v=TkDlqp_s0d2tiAP9icV8sgV1IZvimFAK0y7qS5SA8qo1"></script>
+
+    <link href="/Content/css?v=0tCyP_g5rUMYia03sgpJh2zcodEgbgY4mtb1Dyv9nCM1" rel="stylesheet"/>
+
+
+    <script type="text/javascript">
+       
+        var RootUrl = '/';
+       
+    </script>
+    <style>
+.footer{
+    margin-top:25px;
+    padding-top:20px;
+    padding-bottom:20px;
+    /*background-color:#b8cbdb;*/
+    background-color:#3175af;
+    border-top:solid 4px #3175af;
+    color:white;
+}
+
+.footer .panel-title{
+    border-bottom:dotted;
+    border-bottom-color:white;
+    border-bottom-width: 1px;
+    margin-bottom:10px;
+}
+
+.footer a, .footer a:visited{
+    color:white;
+}
+ div.skipLink A{
+    position:absolute;
+    width:0px;
+    height:0px;
+    overflow:hidden;
+ }
+
+ div.skipLink A:focus{
+    transition: width 2s, height 2s;
+    width:auto;
+    height:auto;
+ }
+
+ #dropMenu > li.active > a{
+    color:white;
+}
+  h1 image{
+      margin-top:-11px;
+  }
+.in.navbar-collapse{
+      overflow:visible;
+  }
+.nav-pills > form > li{
+      float:left;
+}
+
+    .logo-box{
+        margin-top:8px;
+        margin-bottom:5px;
+        padding:5px;
+    }
+    .nav > form > li{
+        position:relative;
+        display:block;
+    }
+    .nav > form > li > a{
+        position:relative;
+        display:block;
+        padding: 10px 15px;
+    }
+
+.nav > form > li > a:hover {
+    text-decoration:none;
+}
+
+.bottom-aligned-text{
+        margin-bottom:0px;
+        vertical-align:bottom;
+    }
+
+    div.c-wrapper{
+        width: 60%; 
+        margin: auto;
+}
+    .text-banner{
+        font-family:Georgia;
+        color:#e47000;
+    }
+
+    h1.text-banner{
+        font-family:Georgia;
+        color:#e47000;
+    }
+
+    .color-orange{
+        color:#e47000;
+        background-color:#e47000;
+        border-color:#e47000;
+    }
+
+    body{
+        background: rgb(255,255,255);
+    }
+.body-content{
+    min-height:580px;
+
+}
+
+ .carousel-caption > p{
+     color:white;
+     font-size:17px;
+     text-shadow: 1px 1px 2px black;
+ }
+
+ div.carousel-caption{
+     text-shadow: 2px 2px 4px #333;
+ }
+.v-center div[class*='col-'] {
+	display: table-cell!important;
+    vertical-align:middle;
+    float:none;
+}
+ul.nav li a, ul.nav li a:visited, ul.nav form li a, li a:visited, li a{
+    color:#1c5a8f;
+}
+
+ul.nav li a{
+    background-color:none;
+    border-top:solid;
+    border-top-color:transparent;
+    border-top-width:medium;
+    border-radius:0px;
+    font-size:large;
+    font-weight:normal;
+}
+
+ul.nav li a:hover{
+    background-color:transparent;
+    border-top:solid;
+    border-top-color: #db5114;
+    border-top-width:medium;
+}
+
+ul.dropdown-menu li a{
+    font-weight:normal;
+    font-size:14px;
+}
+
+.nav .open>a, nav .open>a:focus{
+    border-top-color: #db5114;
+}
+
+.pad-left-0{
+    padding-left:0px;
+}
+.pad-right-zero{
+    padding-right:0px;
+}
+.carouselimage{
+    max-height:800px;
+}
+
+.carousel.fade {
+  opacity: 1;
+}
+.carousel.fade .item {
+  -moz-transition: opacity ease-in-out .7s;
+  -o-transition: opacity ease-in-out .7s;
+  -webkit-transition: opacity ease-in-out .7s;
+  transition: opacity ease-in-out .7s;
+  left: 0 !important;
+  opacity: 0;
+  top:0;
+  position:absolute;
+  width: 100%;
+  display:block !important;
+  z-index:1;
+}
+.carousel.fade .item:first-child {
+  top:auto;
+  position:relative;
+}
+.carousel.fade .item.active {
+  opacity: 1;
+  -moz-transition: opacity ease-in-out .7s;
+  -o-transition: opacity ease-in-out .7s;
+  -webkit-transition: opacity ease-in-out .7s;
+  transition: opacity ease-in-out .7s;
+  z-index:2;
+}
+.img-carousel{
+    width:auto;
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.page-header{
+    background-color:white;
+    margin-bottom:0px;
+    border-bottom: none;
+}
+.carousel-text{
+   
+    color:black;
+    text-shadow:none;
+    font-size:18px;
+}
+
+.trans-back{
+     background-image:url(../../Images/pillBr_02.png);
+    border-radius: 20px;
+}
+
+  </style>
+   
+</head>
+
+<body >
+    <div class="container " id="header">
+        <div class="page-header row ">
+            <div class="col-md-5 v-center pad-right-zero ">
+                <div class="no-padding">
+                    <a href="https://myorangeclerk.com">  <img class="img-responsive noprint" src="/Images/BannerLogo.png" alt="Tiffany Moore Russel Orange County Clerk Records Search - Logo" /> </a>
+                </div>
+            </div>
+
+            <div class="col-md-7 pad-left-zero bottom-aligned-text nav-background">
+                <div class="hidden-sm hidden-xs">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="skipLink" tabindex="1">
+                                <a href="#main">Skip to content...</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-7 text-right">
+                            <a href="/home/index"> <img class="logo-box" src="/Images/MyEclerkLogo2.jpg" alt="my eclerk logo" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar hidden-xs ">
+                    <div class="collapse navbar-collapse text-center">
+                        <ul class="nav nav-pills" id="navbar">
+                            <li><a href="/home/index">Home</a></li>
+                            <li><a href="https://myorangeclerk.com/Misc-Pages/ADA">Accessibility</a></li>
+                            <li role="presentation"><a href="/Cases/Search">Records Search</a></li>
+
+
+                                <li><a href="/account/Register">Register </a></li>
+                                <li><a href="/Account/Login">Log in</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="navbar navbar-default hidden-lg hidden-md hidden-sm navbar-static-top" role="navigation">
+                    <div class="">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse text-center">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="/home/index">Home</a></li>
+                            <li><a href="https://myorangeclerk.com/Misc-Pages/ADA">Accessibility</a></li>
+
+                            <li><a href="/Cases/Search">Records Search</a></li>
+                                <li><a href="/account/Register">Register </a></li>
+                                <li><a href="/Account/Login">Log in</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden-xs noprint">
+        <div id="my-carousel" class="carousel fade carousel-background" data-ride="carousel" data-interval="15000" data-pause="" data-wrap="true">
+            <ol class="carousel-indicators">
+                <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#my-carousel" data-slide-to="1"></li>
+                <li data-target="#my-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner header-container ">
+
+                <div class="item active">
+                    <img class="img-carousel" src="/Images/occc1tm.jpg" alt="Case Records in Courtroom" />
+                    <div class="carousel-caption ">
+                        <h1 class="text-shadow">
+                            Welcome to the Orange County <br /> Clerk of Courts <img src="/Images/MyEclerkLogoShadow.png" alt="My E Clerk" />
+                        </h1>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class=" img-carousel" src="/Images/JudgeLawton1440.jpg" alt="Case Records in Courtroom" />
+                    <div class="carousel-caption">
+                        <h1 class="text-shadow">
+                            Welcome to the Orange County <br /> Clerk of Courts <img src="/Images/MyEclerkLogoShadow.png" alt="My E Clerk" />
+                        </h1>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-carousel" src="/Images/Carousel2.jpg" alt="Clerk Records Management" />
+                    <div class="carousel-caption">
+                        <h1>
+                            Welcome to the Orange County <br /> Clerk of Courts <img src="/Images/MyEclerkLogoShadow.png" alt="My E Clerk" />
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+    </div>
+        
+    <div class="container body-content ">
+        <section>
+            <main id="main">
+                
+
+<style>
+   button.btn-primary{
+       margin-top:-2px;
+       margin-bottom:-2px;
+   }
+ li a:link{
+    color:#1c5a8f;
+}
+
+ label a{
+     color:#1c5a8f;
+ }
+ .panel-body-np .img-thumbnail{
+     border:none;
+     border-radius: 0;
+ }
+ .block-alert .alert {
+  background-color: #0f2345;
+  text-align: left;
+  color: white;
+  height:50px;
+ }
+
+ .panel-index-body-b{
+    min-height:187px;
+}
+ 
+</style>
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-primary panel-index">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    Court Records Search <span class="glyphicon glyphicon-search"></span>
+                </h3>
+            </div>
+            <div class="panel-body-np">
+                <img class="panelimage img-responsive img-thumbnail no-padding" src="/Images/LPPanelCourtRecordsSearch.jpg" alt="Records Search" />
+            </div>
+            <div class="panel-body">
+                <div class="panel-index-body" style="margin-top:-6px;">
+                    <span>
+                        <img src="/Images/myEClerkLogoSm2.png" alt="My E Clerk" style="margin-top:-18px; margin-bottom:-12px; margin-left:-5px" />allows users to search court records using various criteria. To get started, select a case type using the links below or click <b>Search All...</b> if you are unsure of the case type.
+                    </span>
+                    <ul>
+                        <li><a href="/Cases/Search?caseType=TR&amp;caseTypeDesc=Traffic%20Case%20Records">Traffic Case Records</a>
+                        </li>
+                        <li><a href="/Cases/Search?caseType=CV&amp;caseTypeDesc=Civil%20Case%20Records">Civil Case Records</a></li>
+                        <li><a href="/Cases/Search?caseType=CR&amp;caseTypeDesc=Criminal%20Case%20Records">Criminal Case Records</a></li>
+                        <li><a href="/Cases/Search?caseType=FAM&amp;caseTypeDesc=Family%20Case%20Records">Family Case Records</a></li>
+                        <li><a href="/Cases/Search?caseType=PR&amp;caseTypeDesc=Probate%20Case%20Records">Probate Case Records</a></li>
+                    </ul>
+                </div>
+
+                <div class="pull-right">
+                    <a class="btn  btn-primary bottom-right" href="/Cases/search">Search All... &raquo;</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-primary panel-index">
+            <div class="panel-heading">
+                <h3 class="panel-title">Pay My Ticket or Criminal Case Fees<span class="glyphicon glyphicon-usd"></span></h3>
+            </div>
+            <div class="panel-body-np ">
+                    <img class="panelimage img-responsive img-thumbnail no-padding" src="/Images/TrafficCitationsm.jpg" alt="Traffic Citation" />
+            </div>
+<form action="/Cases/FindMyCase" method="post">            <div class="panel-body">
+                <div class="panel-index-body-b">
+                        Getting a traffic ticket or arrested is never fun, but at least paying it online is easy and convenient with <img src="/Images/myEClerkLogoSm2.png" alt="My E Clerk" style="margin-top:-8px; margin-bottom:-3px; margin-right:-3px;margin-left:-5px;" />. To pay online, simply click the correct case <b>Pay Now</b> and follow the on screen instructions.
+                </div>
+                <div class="pull-left">
+                    
+                    <a href="/CaseDetails/MakePaymentDisclaimer?caseId=0" class="btn  btn-primary">Pay Now <br />Traffic Ticket</a><br />
+                </div>
+                <div class="pull-right">
+                    <a href="/CaseDetails/MakePaymentDisclaimer?caseId=0&amp;criminal=True" class = "btn  btn-primary">Pay Now <br /> Criminal Case</a><br />
+                    
+                </div>
+
+            </div>
+</form>        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-primary panel-index">
+            <div class="panel-heading">
+                <h3 class="panel-title">Registered Users <span class="glyphicon glyphicon-user"></span></h3>
+            </div>
+            <div class="panel-body-np">
+    
+                    <img class="panelimage img-responsive img-responsive img-thumbnail no-padding" src="/Images/LPPanelregisteredusers.jpg" alt="Registered Users" />
+
+            </div>
+            <div class="panel-body">
+                <div class="panel-index-body">
+                        <img src="/Images/myEClerkLogoSm2.png" alt="My E Clerk" style="margin-top:-12px; margin-bottom:-7px; margin-right:-3px; margin-left:-5px;" /> provides remote public access to many of the court records managed by our office. Agencies or individuals, such as law enforcement, State Attorney’s Office, attorneys of record, or case parties, who require unique access to confidential or non-public information, are required to register for login credentials through the Orange County Clerk of Courts.
+                </div>
+                <div class="pull-right">
+                    <a class="btn btn-primary" href="/account/login">Login &raquo;</a>
+                    <a class="btn btn-primary" href="/account/Register">Register &raquo;</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-primary panel-index">
+            <div class="panel-heading">
+                <h3 class="panel-title">Attorneys <span class="glyphicon glyphicon-align-right glyphicon-briefcase"></span></h3>
+            </div>
+            <div class="panel-body-np">
+                
+                        <img class="panelimage img-responsive img-thumbnail no-padding" src="/Images/Attorney3.jpg" alt="Attorneys" />
+                </div>
+            <div class="panel-body">
+                <div class="panel-index-body">
+                        Attorneys have the option of searching <img src="/Images/myEClerkLogoSm.png" alt="My E Clerk" style="margin-top:-12px; margin-bottom:-5px; margin-right:-4px; margin-left:-5px;" /> as an anonymous user or they can login as a registered user to take advantage of features like <i>My Cases</i>, which automatically displays cases to which they are the attorney of record.
+                </div>
+                <div class="pull-right">
+                    <a class="btn btn-primary bottom-right" href="/home/attorneys" title="Click to see more infomation for attorneys">More For Attorneys &raquo;</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+   
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-primary panel-index">
+            <div class="panel-heading">
+                <h3 class="panel-title" style="margin-left:-5px; margin-right:-5px;">
+                    Florida Supreme Court Order AOSC16-14 <span class="glyphicons glyphicons-book"></span>
+                </h3>
+            </div>
+            
+            <div class="panel-body-np">
+                <img class="panelimage img-responsive img-thumbnail no-padding" src="/Images/SupremeCourt2.jpg" alt="Supreme Court" />
+            </div>
+            <div class="panel-body">
+                <div class="panel-index-body">
+                    <p>
+                        The Florida Supreme Court has authorized the Orange County Clerk of Courts to provide the public with electronic access to many court records as well as non-confidential documents, pursuant to Administrative Order AOSC16-14.                    </p>
+                    </div>
+                <div class="pull-right">
+                    <a class="btn  btn-primary bottom-right" href="/Home/FSCO_AOS_C16_14" title="Click to see more information about Florida Supreme Court Order AOSC16-14" >Learn More About AOSC16-14 &raquo;</a>
+                </div>
+             </div>
+       </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-primary panel-index">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    FAQs and Contacts <span class="glyphicons glyphicons-circle-question-mark"></span>
+                </h3>
+            </div>
+
+            <div class="panel-body-np">
+                <img class="panelimage img-responsive img-thumbnail no-padding" src="/Images/HelpCenterPanel.jpg" alt="FAQs" />
+            </div>
+            <div class="panel-body">
+                <div class="panel-index-body">
+                    <p>
+                        Need help? Find useful information about the site here.                    </p>
+                    <ul>
+                        <li><a href="/Home/GlossaryOfTerms">Glossary of Terms</a></li>
+                        <li><a href="/Home/FAQ">FAQS</a></li>
+                </ul>
+                    <b>Contact Us</b>
+                    <p>
+                        To learn more about the Orange County Clerk of Courts, including branch locations and hours of operations, click the "Contact Us" button.
+                    </p>
+                </div>
+               
+                <div class="pull-right">
+                    <a class="btn  btn-primary bottom-right" href="https://www.myorangeclerk.com/Misc-Pages/Branch-Locations-Page" title="Contact Us">Contact Us &raquo;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="/Scripts/jquery.marquee.min.js"></script>
+<script>
+    //$('.marquee').marquee({
+    //    duration: 12000,
+    //    pauseOnHover: true
+    //});
+</script>
+            </main>
+        </section>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="panel-title">
+                         Help & Support
+                    </div>
+                    <a href="/Home/FAQ">FAQ</a><br />
+                    <a href="/Home/GlossaryOfTerms">Glossary of Terms</a><br />
+                    <a href="https://www.myorangeclerk.com/Misc-Pages/Contact-Us">Contact Support<br /></a>
+                    <a href="https://myorangeclerk.com/Misc-Pages/Privacy-Statement?pagesection=Privacy Statement">View Our Privacy Statement<br /></a>
+
+                </div>
+                <div class="col-md-4 text-center" style="margin-top:-20px;">
+
+                    <a href="/home/index"> <img class="logo-box" src="/Images/MyEclerkLogoShadow.png" alt="my eclerk logo" /></a><br />
+                    <small>
+                        © Copyright 2020 Orange County Clerk of Courts <br />
+                        All rights reserved <br/>
+                        Build V. 2.6.0.4   <br />
+                        
+                    </small>
+
+                </div>
+                <div class="col-md-2 col-md-offset-1 ">
+                    <div class="panel-title">
+                            Follow Us...
+                     </div>
+                    <a href="http://twitter.com/orangeclerk"> <span class="social social-twitter"></span> Twitter</a> <br/>
+                    <a href="http://facebook.com/pages/orlando-Florida/Orange-County-Clerk-Of-Courts/186708240483?ref=ts"><span class="social social-facebook"></span> Facebook</a> <br/>
+                    <a href="https://app.e2ma.net/app2/audience/signup/71567/40188/?v=a"><span class="glyphicons glyphicons-envelope"></span> Newsletter Email</a> <br/>
+                 </div>
+            </div>
+        </div>
+        <script>
+    $(document).ready(function () {
+       
+        var TimeOutValue = 0 * 60000;
+        if(TimeOutValue > 0)
+        {
+            var mainTimeOut;
+            StartCountdown();
+            $(document).click(function () {
+                clearTimeout(mainTimeOut);
+                StartCountdown();
+            })
+            $(document).keydown(function () {
+                clearTimeout(mainTimeOut);
+                StartCountdown();
+            })
+            function StartCountdown(){
+                mainTimeOut = setTimeout(function () {
+                    window.location = 'https://myeclerk.myorangeclerk.com/Session/HandleTimeOut';
+                }, TimeOutValue);
+            }
+        }
+        //if ($(window).width() < 768)
+        //{
+        //    setTimeout(function () {
+        //        $('.translateHost').appendTo('.translateHost-mobile');
+        //    }, 3000);
+        //}
+    });
+</script>
+
+    </footer>
+<script src="/bundles/jqueryval?v=tbCA1UoE62X7WPrB5lldRIGebkQepUuA4izLhZGKxR41"></script>
+
+<script src="/bundles/bootstrap?v=NzP9D5jO6GVMzY8_4Kfk811W0VrrhYdC5doOJzjbWJc1"></script>
+
+<script src="/bundles/customjs?v=OezqSEQA_anUgicPYRrsmNGji4G11dtNAOQCk62aGmE1"></script>
+
+<script src="/Scripts/mvcfoolproof.unobtrusive.min.js"></script>
+<script src="/Scripts/site.js"></script>
+<script src="/Scripts/bootstrap-multiselect.js"></script>
+
+    
+</body>
+</html>

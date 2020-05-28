@@ -1,0 +1,564 @@
+         	
+
+<html>
+<head>
+<title>Pennsylvania Access To Criminal History - Home</title>
+<script type = "text/javascript" language = "javascript" src = "base64.js"></script>
+<script type = "text/javascript">
+
+	history.pushState(null, document.title, location.href);
+	window.addEventListener('popstate', function (event)
+	{
+		history.pushState(null, document.title, location.href);
+	});
+
+String.prototype.trim = function() {
+	return this.replace(/^\s+|\s+$/g,"");
+}
+	function volunteerClicked(){
+		document.forms[0].action = '/TandCVolunteerAction.do';
+		document.forms[0].submit();
+	}
+    function newRecordCheck(){
+        document.forms[0].action = '/NewRecordCheckAction.do?action=new';
+        document.forms[0].submit();
+    }
+    function checkStatus(){
+        document.forms[0].action = '/recordCheckSearchForm.do';
+        document.forms[0].submit();
+    }
+    function loginR(){
+        document.forms[0].action = '/RegisteredUserLogin.jsp';
+        document.forms[0].submit();
+    }
+	function changeCursor(el, cursor, backgroundColor){
+		el.style.cursor = cursor;
+		el.style.backgroundColor = backgroundColor;
+	}
+    function safaribrowser(){
+        window.location = "/help/Overview.jsp";
+    }
+</script>
+</head>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="patch.css">
+<Link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/></Link>
+<BODY TOPMARGIN="0" LEFTMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0">
+
+
+<script type='text/javascript'>
+	function Go() {
+		return
+	}
+
+
+	function isNumeric() {
+		if (navigator.appName.indexOf("Netscape") < 0) {
+			get = event.keyCode;
+
+			if ((get > 47 && get < 58) || (get == 8) || (get == 9)) {
+				return true;
+			}
+			else {
+				event.returnValue = false;
+			}
+		}
+	}
+	function isChar() {
+		if (navigator.appName.indexOf("Netscape") < 0) {
+			get = event.keyCode;
+
+			if ((get > 64 && get < 91) || (get > 96 && get < 123) || (get == 8) || (get == 9)) {
+				return true;
+			}
+			else {
+				event.returnValue = false;
+			}
+		}
+	}
+
+	var isNN = (navigator.appName.indexOf("Netscape") != -1);
+	function autoTab(input, len, e) {
+		var keyCode = (isNN) ? e.which : e.keyCode;
+		var filter = (isNN) ? [0,8,9] : [0,8,9,16,17,18,37,38,39,40,46];
+		if (keyCode != 9 && keyCode != 16 && keyCode != 224 && keyCode != 17 && keyCode != 80 && keyCode != 83
+				&& keyCode != 88 && keyCode != 66 && keyCode != 68) {
+			if (input.value.length >= len && !containsElement(filter, keyCode)) {
+				input.value = input.value.slice(0, len);
+				input.form[(getIndex(input) + 1) % input.form.length].focus();
+				if (input.form[(getIndex(input) + 1) % input.form.length].select) {
+					input.form[(getIndex(input) + 1) % input.form.length].select();
+				}
+			}
+		}
+		function containsElement(arr, ele) {
+			var found = false, index = 0;
+			while (!found && index < arr.length)
+				if (arr[index] == ele)
+					found = true;
+				else
+					index++;
+			return found;
+		}
+
+		function getIndex(input) {
+			var index = -1, i = 0, found = false;
+			while (i < input.form.length && index == -1)
+				if (input.form[i] == input)index = i;
+				else i++;
+			return index;
+		}
+
+		return true;
+	}
+
+	function currencyFormat(fld, milSep, decSep, e) {
+		var sep = 0;
+		var key = '';
+		var i = j = 0;
+		var len = len2 = 0;
+		var strCheck = '0123456789';
+		var aux = aux2 = '';
+		var whichCode = (window.Event) ? e.which : e.keyCode;
+		if (whichCode == 13) return true;  // Enter
+		key = String.fromCharCode(whichCode);  // Get key value from key code
+		if (strCheck.indexOf(key) == -1) return false;  // Not a valid key
+		len = fld.value.length;
+		for (i = 0; i < len; i++)
+			if ((fld.value.charAt(i) != '0') && (fld.value.charAt(i) != decSep)) break;
+		aux = '';
+		for (; i < len; i++)
+			if (strCheck.indexOf(fld.value.charAt(i)) != -1) aux += fld.value.charAt(i);
+		aux += key;
+		len = aux.length;
+		if (len == 0) fld.value = '';
+		if (len == 1) fld.value = '0' + decSep + '0' + aux;
+		if (len == 2) fld.value = '0' + decSep + aux;
+		if (len > 2) {
+			aux2 = '';
+			for (j = 0,i = len - 3; i >= 0; i--) {
+				if (j == 3) {
+					aux2 += milSep;
+					j = 0;
+				}
+				aux2 += aux.charAt(i);
+				j++;
+			}
+			fld.value = '';
+			len2 = aux2.length;
+			for (i = len2 - 1; i >= 0; i--)
+				fld.value += aux2.charAt(i);
+			fld.value += decSep + aux.substr(len - 2, len);
+		}
+		return false;
+	}
+</script>
+<script type='text/javascript'>
+
+var NoOffFirstLineMenus =3;    // Number of first level items
+var LowBgColor = '#f1f1f1';            // Background color when mouse is not over
+var LowSubBgColor = '#f1f1f1';            // Background color when mouse is not over on subs
+var HighBgColor = '#cecece';            // Background color when mouse is over
+var HighSubBgColor = '#cecece';            // Background color when mouse is over on subs
+var FontLowColor = 'black';            // Font color when mouse is not over
+var FontSubLowColor = 'black';            // Font color subs when mouse is not over
+var FontHighColor = 'black';            // Font color when mouse is over
+var FontSubHighColor = 'black';            // Font color subs when mouse is over
+var BorderColor = 'black';            // Border color
+var BorderSubColor = 'black';            // Border color for subs
+var BorderWidth = 1;                // Border width
+var BorderBtwnElmnts = 1;            // Border between elements 1 or 0
+var FontFamily = "arial,comic sans ms,technical"    // Font family menu items
+var FontSize = 9;                // Font size menu items
+var FontBold = 0;                // Bold menu items 1 or 0
+var FontItalic = 0;                // Italic menu items 1 or 0
+var MenuTextCentered = 'center';            // Item text position 'left', 'center' or 'right'
+var MenuCentered = 'left';            // Menu horizontal position 'left', 'center' or 'right'
+var MenuVerticalCentered = 'top';        // Menu vertical position 'top', 'middle','bottom' or static
+var ChildOverlap = .2;                // horizontal overlap child/ parent
+var ChildVerticalOverlap = .2;            // vertical overlap child/ parent
+var StartTop = 87;                // Menu offset x coordinate
+//var StartTop=97;
+var StartLeft = 0;                // Menu offset y coordinate
+var VerCorrect = 0;                // Multiple frames y correction
+var HorCorrect = 0;                // Multiple frames x correction
+var LeftPaddng = 3;                // Left padding
+var TopPaddng = 0;                // Top padding
+var FirstLineHorizontal = 1;            // SET TO 1 FOR HORIZONTAL MENU, 0 FOR VERTICAL
+var MenuFramesVertical = 0;            // Frames in cols or rows 1 or 0
+var DissapearDelay = 500;            // delay before menu folds in
+var TakeOverBgColor = 1;            // Menu frame takes over background color subitem frame
+var FirstLineFrame = 'navig';            // Frame where first level appears
+var SecLineFrame = 'space';            // Frame where sub levels appear
+var DocTargetFrame = 'space';            // Frame where target documents appear
+var TargetLoc = '';                // span id for relative positioning
+var HideTop = 0;                // Hide first level when loading new document 1 or 0
+var MenuWrap = 1;                // enables/ disables menu wrap 1 or 0
+var RightToLeft = 0;                // enables/ disables right to left unfold 1 or 0
+var UnfoldsOnClick = 0;            // Level 1 unfolds onclick/ onmouseover
+var WebMasterCheck = 0;            // menu tree checking on or off 1 or 0
+var ShowArrow = 1;                // Uses arrow gifs when 1
+var KeepHilite = 1;                // Keep selected path highligthed
+var Arrws = ['images/tri.gif',5,10,'images/tridown.gif',10,5,'images/trileft.gif',5,10];    // Arrow source, width and height
+
+// Menu tree
+//	MenuX=new Array(Text to show, Link, background image (optional), number of sub elements, height, width);
+//	For rollover images set "Text to show" to:  "rollover:Image1.jpg:Image2.jpg"
+
+// Menu Item arrays
+var homeMainMenu = new Array("Home", "/Home.jsp", "", 0, 15, 225);
+
+
+var helpMainMenu = new Array("Help", "/help/HelpHome.jsp", "", 10,
+		15, 247);
+var siteStandardsMenu = new Array("Site Standards", "/help/SiteStandards.jsp", "", 0,
+		15, 247);
+var overviewMenu = new Array("Overview", "/help/Overview.jsp", "", 0,
+		15, 247);
+var tandcMenu = new Array("Terms and Conditions", "/TandC.jsp?action=read", "", 0);
+var instrMenu = new Array("Instructions", "/help/Instructions.jsp", "", 0);
+var glossaryMenu = new Array("Glossary", "/help/Glossary.jsp", "", 0);
+var rapSheetMenu = new Array("RAP Sheet Explanation", "/help/RAPSheet.jsp", "", 0);
+var sp4164Menu = new Array("SP4-164 Form", "/help/SP4-164.doc", "", 0);
+var sp4164AMenu =  new Array("SP4-164A Form", "/help/SP4-164A.doc", "", 0);
+var sp4170Menu = new Array("SP4-170 Form", "/help/SP4-170_A&R.doc", "", 0);
+
+
+
+Menu1 = homeMainMenu;
+
+	Menu2_1 = new Array("New Record Check", "/NewRecordCheckAction.do",
+			"", 0, 15, 325);
+
+
+
+Menu2_2 = new Array("Check Status", "/recordCheckSearchForm.do", "", 0);
+
+
+Menu2 = new Array("Record Check", "/RecordCheckHome.jsp", "", 2,
+		15, 325);
+
+Menu3 = helpMainMenu;
+var recCheckReqMenu = new Array("Record Check Request", "/help/RecCheckReq.jsp", "",
+		0, 15, 247);
+var checkReqStatusMenu = new Array("Checking Request Status", "/help/RecCheckReqStat.jsp",
+		"", 0, 15, 247);
+
+Menu3_1 = overviewMenu;
+Menu3_2 = siteStandardsMenu;
+Menu3_3 = recCheckReqMenu;
+Menu3_4 = checkReqStatusMenu;
+Menu3_5 = tandcMenu;
+Menu3_6 = glossaryMenu;
+Menu3_7 = rapSheetMenu;
+Menu3_8 = sp4164Menu;
+Menu3_9 = sp4164AMenu;
+Menu3_10 = sp4170Menu;
+
+</script>
+<script language="JavaScript" src="menu_script.js"></script>
+<noscript>Your browser does not support script</noscript>
+<table background="images/header.jpg" width="801" height="100" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td align="right" valign="bottom">
+			<table background="" border="0" width="725">
+				<tr>
+					<td align="right" colspan="3">
+						
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<font style="color:white" size="-1">Commissioner Robert Evanchick
+						</font>
+					</td>
+					<td align="right">
+						<font style="color:white" size="-1"><font color=yellow size=+2><b>&nbsp;&nbsp;&nbsp;</b></font> Gov. Thomas W Wolf&nbsp;&nbsp;</font>
+					</td>
+				</tr>
+			</table>
+			<BR>
+		</td>
+	</tr>
+</table>
+
+
+<DIV id=tip name=tip
+	 style="font:bold 11px Arial;BACKGROUND-COLOR:yellow;COLOR:white;LEFT:191px;POSITION:absolute;TOP:150px;VISIBILITY:hidden;WIDTH:180px;Z-INDEX:900"></DIV>
+
+<script language="JavaScript" type="text/javascript">
+	<!--
+	var DotJ_agt = navigator.userAgent.toLowerCase();
+	var DotJ_is_major = parseInt(navigator.appVersion, 10);
+	var DotJ_is_minor = parseFloat(navigator.appVersion);
+	var DotJ_is_nav = ((DotJ_agt.indexOf('mozilla') != -1) && (DotJ_agt.indexOf('spoofer') == -1) && (DotJ_agt.indexOf('compatible') == -1) &&
+			(DotJ_agt.indexOf('opera') == -1) && (DotJ_agt.indexOf('webtv') == -1) && (DotJ_agt.indexOf('hotjava') == -1));
+	var DotJ_is_nav2 = (DotJ_is_nav && (DotJ_is_major == 2));
+	var DotJ_is_nav3 = (DotJ_is_nav && (DotJ_is_major == 3));
+	var DotJ_is_nav4 = (DotJ_is_nav && (DotJ_is_major == 4));
+	var DotJ_is_nav4up = (DotJ_is_nav && (DotJ_is_major >= 4));
+	var DotJ_is_navonly = (DotJ_is_nav && ((DotJ_agt.indexOf(";nav") != -1) || (DotJ_agt.indexOf("; nav") != -1)) );
+	var DotJ_is_nav6 = (DotJ_is_nav && (DotJ_is_major == 5));
+	var DotJ_is_nav6up = (DotJ_is_nav && (DotJ_is_major >= 5));
+	var DotJ_is_gecko = (DotJ_agt.indexOf('gecko') != -1);
+	var DotJ_is_ie = ((DotJ_agt.indexOf("msie") != -1) && (DotJ_agt.indexOf("opera") == -1));
+	var DotJ_is_ie3 = (DotJ_is_ie && (DotJ_is_major < 4));
+	var DotJ_is_ie4 = (DotJ_is_ie && (DotJ_is_major == 4) && (DotJ_agt.indexOf("msie 5") == -1) );
+	var DotJ_is_ie4up = (DotJ_is_ie && (DotJ_is_major >= 4));
+	var DotJ_is_ie5 = (DotJ_is_ie && (DotJ_is_major == 4) && (DotJ_agt.indexOf("msie 5.0") != -1) );
+	var DotJ_is_ie5_5 = (DotJ_is_ie && (DotJ_is_major == 4) && (DotJ_agt.indexOf("msie 5.5") != -1));
+	var DotJ_is_ie5up = (DotJ_is_ie && !DotJ_is_ie3 && !DotJ_is_ie4);
+	var DotJ_is_ie5_5up = (DotJ_is_ie && !DotJ_is_ie3 && !DotJ_is_ie4 && !DotJ_is_ie5);
+	var DotJ_is_opera = (DotJ_agt.indexOf("opera") != -1);
+	var DotJ_is_opera2 = (DotJ_agt.indexOf("opera 2") != -1 || DotJ_agt.indexOf("opera/2") != -1);
+	var DotJ_is_opera3 = (DotJ_agt.indexOf("opera 3") != -1 || DotJ_agt.indexOf("opera/3") != -1);
+	var DotJ_is_opera4 = (DotJ_agt.indexOf("opera 4") != -1 || DotJ_agt.indexOf("opera/4") != -1);
+	var DotJ_is_opera5 = (DotJ_agt.indexOf("opera 5") != -1 || DotJ_agt.indexOf("opera/5") != -1);
+	var DotJ_is_opera5up = (DotJ_is_opera && !DotJ_is_opera2 && !DotJ_is_opera3 && !DotJ_is_opera4);
+	var tipDiv;
+	if (DotJ_is_nav4) tipDiv = document.tip;
+	if (DotJ_is_ie4up) tipDiv = tip.style;
+	if (DotJ_is_nav6up) tipDiv = document.getElementById("tip");
+	function DotJ_Onfocus(field, msg, tipalignment, tipfg, tipbg) {
+		if (DotJ_is_ie4up || DotJ_is_nav6up) {
+			if (field.type != 'radio' && field.type != 'checkbox')
+				if (DotJ_is_nav4) field.bgColor = "#ffffcc";
+				else field.style.background = "#ffffcc";
+		}
+	}
+	function DotJ_Onblur(field) {
+		if (DotJ_is_ie4up || DotJ_is_nav6up) {
+			if (field.type != 'radio' && field.type != 'checkbox')
+				if (DotJ_is_nav4) field.bgColor = "#ffffee";
+				else field.style.background = "#ffffee";
+		}
+	}
+	//-->
+</script>
+<style id="antiClickjack">body{display:none !important;}</style>
+<script type="text/javascript">
+   if (self === top) {
+	   var antiClickjack = document.getElementById("antiClickjack");
+	   antiClickjack.parentNode.removeChild(antiClickjack);
+   } else {
+	   top.location = self.location;
+   }
+</script>
+<body>
+<table width="800" border="0" cellpadding="5">
+<!------------------------------ Please do NOT edit content above this line ------------------------------>
+    
+    <!-- Added for PAT_Hyperlink - Start-->
+    
+
+    <div class="census">
+    <center><a href="https://www.pa.gov/census/" target="_blank"><p class="text"><b>Participate in the 2020 U.S. Census to shape your future in PA</b></p></a></center>
+    </div>
+    
+    <!-- Added for PAT_Hyperlink - End-->
+	<tr>
+		<td colspan="2" valign="center">
+			
+			<H3><p align="center">Welcome to Pennsylvania Access To Criminal History</H3>
+            <h2>
+                <!-- <font color="red">On December 1, 2017, the fee for a Criminal History Record Check will increase to $22.00. The fee for an Access and Review will increase to $20.00. The fee for a Notarized Criminal History Record Check will increase to $27.00.</font> -->
+            </h2>
+            <p><font color="#1F497D"> The PATCH unit will no longer mail out any PATCH check that is requested on the EPATCH web site. It will be the responsibility of the requestor to print out the No Record or Record response.</font></p>
+			<H5><p align="center"><font color="black">PATCH Helpdesk 1-888-QUERY-PA (1-888-783-7972)</br></font></H5></font>
+			<H4>All requests for Notarized copies of a Criminal Record Check MUST BE submitted by mail.</H4>
+		</td>
+	</tr>
+	
+		<tr>
+			<td colspan="2">
+				<hr>
+			</td>
+		</tr>
+		<tr height = "26" align="center">
+			<td colspan="2">
+				<input onmouseover="changeCursor(this,'pointer','greenyellow');" onmouseout="changeCursor(this,'default','gold');" type = "submit" class = "header"
+						style="background-color: gold" value = "New Record Check" name = "btnVolunteer"  id="volunteer"
+						onclick="volunteerClicked();">&nbsp;<font size="3" color="red"><b>(Volunteers only)</b></font>
+			</td>
+		</tr>
+	
+	<tr>
+		<td colspan="2">
+			<hr>
+		</td>
+	</tr>
+
+
+    
+    <tr align="center">
+        <td colspan="2" style="color:#ff0000; font-size:12">
+            <b>PATCH was recently updated to support the new SameSite attribute. Safari and embedded browsers on MacOS 10.14 and all browsers on iOS 12 are not compatible with PATCH  and your request will not be processed. This bug has been fixed on newer versions of iOS and MacOS.
+                Please see the full list of incompatible SameSite clients <a href="https://www.chromium.org/updates/same-site/incompatible-clients" target="_blank">here</a>.</b>
+        </td>
+    </tr>
+    <tr align="center">
+        <td colspan="2">
+            <IMG src="images/disable.png" alt="disable" width="80" height="60">
+        </td>
+    </tr>
+    <tr align="center">
+        <td colspan="2" style="color:#ff0000; font-size:12">
+            <b>Do not use the Safari web browser when requesting a PATCH check. The Safari web browser is not supported by PATCH and the request will not be completed.</b>
+        </td>
+    </tr>
+
+    
+
+	<tr align="center">
+		
+		<td width="100%" align="center" valign="top" colspan="2">
+
+				<table border="0" align="center">
+						
+							
+								<tr height="26" align="center">
+									<td colspan="2">&nbsp;&nbsp;
+                                        <input onmouseover="changeCursor(this,'pointer','coral');" onmouseout="changeCursor(this,'default','gray');" type = "submit" class = "header"
+                                        style="background-color: gray" value = "Submit a New Record Check" name = "btnNewRC"  id="newRC"
+                                        onclick="newRecordCheck();"><br>
+									</td>
+								</tr>
+							 
+							 
+								<tr height="26" align="center">
+                                    <td colspan="2">&nbsp;&nbsp;
+                                        <input onmouseover="changeCursor(this,'pointer','aqua');" onmouseout="changeCursor(this,'default','teal');" type = "submit" class = "header"
+                                               style="background-color: teal" value = "Check the status of a Record Check" name = "btnCheckStatus"  id="checkStatus"
+                                               onclick="checkStatus();"><br>
+                                    </td>
+								</tr>
+							
+						
+
+					</table>
+		</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<hr>
+			</td>
+		</tr>
+		
+		<tr align="center">
+		<td align="" colspan="2" width="100%">
+		<form name="frmLogin" id="frmLogin" autocomplete="off">	
+			<table border = "0" width = "300" align="center">
+				
+					<tr height = "25" align="center">
+                        <td colspan="2">&nbsp;&nbsp;
+                            <input onmouseover="changeCursor(this,'pointer','lightgreen');" onmouseout="changeCursor(this,'default','green');" type = "submit" class = "header"
+                                   style="background-color: green" value = "Registered PATCH Accounts" name="btnRLogin" id="login"
+                                   onclick="loginR();"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            (Only used by pre-approved organizations)<br>&nbsp;
+                        </td>
+                    </tr>
+				
+			</table>
+		</form>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<hr>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="1" valign="top">
+			<H3>Why does PATCH exist?</H3>
+			Its purpose is to better enable the public
+			to obtain criminal history record checks. The repository was created and is maintained in accordance with Pennsylvania's
+			Criminal History Information Act contained in Chapter 91 of Title 18, Crimes Code. This Act also directs the Pennsylvania
+			State Police (PSP) to disseminate criminal history data to criminal justice agencies, non-criminal justice agencies and
+			individuals on request. Criminal justice agencies can access all of an individual's criminal history record information
+			(CHRI). Requests made by noncriminal justice agencies and individuals are subject to edit criteria contained in the law.
+		</td>
+		<td colspan="1" align="left">
+			<IMG src="images/patch_Logo.jpg" alt="Patch Logo" width="332" height="262">
+		</td>
+	</tr>
+<tr>
+		<td colspan="2">
+			<H3>Dispositions</H3>
+			Dispositions on most criminal cases can be accessed by reviewing court docket sheets located at the Pennsylvania Judiciary web portal site:  <A href="http://ujsportal.pacourts.us/DocketSheets.aspx">http://ujsportal.pacourts.us/DocketSheets.aspx</a>
+			Clicking the &quot;HELP&quot; link on this page will provide information as to how to access the public docket sheets.  However, public docket sheet information should not be used in place of a criminal history background check, which can only be provided by the Pennsylvania State Police.
+		</td>
+</tr>
+	<tr>
+		<td colspan="2">
+			<H3>Browser Requirements</H3>
+			The recommended web browsers for this site are <A href="http://windows.microsoft.com/en-us/internet-explorer/download-ie"><u>Microsoft Internet Explorer</u></a> 9.x-11.x,
+			<a href="https://support.microsoft.com/en-us/products/microsoft-edge"><u>Microsoft Edge</u></a>, Firefox version 60 or newer, or Chrome version 66 or newer
+            using a 32 bit or 64 bit browser. <b>All other web browsers or versions (such as Safari and Opera) are not supported</b>.
+			Web browsers need to accept cookies and have scripting enabled. Ensure that pop-up blockers are disabled.
+			<H3><font color="black">PATCH Helpdesk 1-888-QUERY-PA (1-888-783-7972)</font></H3>
+			<H4><p align="center">Pennsylvania State Police<BR>
+			Terrorism/Fugitive Tip Line<BR></H4>
+        </td>
+    </tr>
+    <tr>
+            <td colspan="2" align="center">
+			<A href="http://www.psp.state.pa.us/portal/server.pt/community/psp/4451/getting_involved/452781"><IMG src="images/terrorismtipline.JPG" alt="Terrorism Tipline" border=0 ></a><BR>
+            <td>
+
+	</tr>
+  
+<!------------------------------ Please do NOT edit content below this line ------------------------------>
+</table>
+
+
+
+
+
+
+<br>
+<table width="800" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td>
+			<table width="600" border="0" cellspacing="0" cellpadding="0" align="center">
+				<tr align="center">
+					<td>
+						<font style="font-size:8pt">
+						<a href="Home.jsp">Home</a> | <a href="https://epatch.state.pa.us:443/RecordCheckHome.jsp">Record Check</a>
+						
+						
+						| <a href="https://epatch.state.pa.us:443/help/HelpHome.jsp">Help</a> | <a href="http://www.pa.gov/Pages/Privacy-Policy.aspx">Privacy Policy</a>
+						| <a href="http://www.psp.state.pa.us">PA State Police Home Page</a>
+						</font>
+					</td>
+				</tr>
+				<tr align="center">
+					<td height="60" valign="bottom" align="center" width="590">
+						<img src="images/57_footer_rule.gif" width="560" height="11" alt=""><br><br>
+					</td>
+				</tr>
+				<tr align="center">
+					<td><font color=#0d0eec style="font-size:8pt">
+						<A href="http://www.state.pa.us"><IMG height=50 alt="Pennsylvania Home Site" src="images/pasite.gif" width=112 border=0 name=palogo></A><BR><BR>&copy; Copyright 2003-20, Commonwealth of PA - Pennsylvania State Police <BR><BR>This Web Site is for Informational&nbsp;Purposes Only - If you have an emergency,&nbsp;crime, or&nbsp;
+						incident &nbsp;to report, &nbsp;please contact your nearest Police Agency or call 911.<BR>
+						<!--<P>Please send technical comments and problems to the <A href="mailto:1-888-QUERY-PA (1-888-783-7972)?Subject=e-mail from PSP PATCH Web Site   ">PATCH Administrator</A>--><BR><BR>
+						</font>
+					</td>
+				</tr>
+				<tr align="center">
+					<td><font color=#0d0eec style="font-size:8pt"><BR>
+							49AD1EA12721A46CA3E0D2B6175A443C<BR><BR>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</BODY>
+
+</body>
+</HTML>

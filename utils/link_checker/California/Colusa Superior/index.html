@@ -1,0 +1,366 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+						
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--<meta name="ROBOTS" content="all" />-->
+		<meta name="Description" content="Colusa County Superior Court. Get general Information about Colusa Superior Court including online searchable court records and case index.  Find civil, criminal, traffic, and family law case information by party name or case number." />
+		<meta name="Keywords" content="Superior Court, County of Colusa, Online Case Index, Traffic case, court record, Civil, Family Law, Criminal, Traffic, Court Records. Colusa Superior Court, Colusa County, Jury Duty, Jury Information, Grand Jury" />
+		<meta name="Author" content="Michael Bunker, Aragent, Inc." />
+<!-- 				 , 2009, Last modified 1-2-18				-->
+		<title>Online Case Index - Colusa County, Superior Court of California</title>
+		<script src="spry/SpryMenuBar.js" type="text/javascript"></script>
+		<link href="css/search_style.css" rel="stylesheet" type="text/css" />
+		<link href="style/layoutnewnosidebar.css" rel="stylesheet" type="text/css" />
+		<link href="spry/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+	<!--[if IE]>
+        <style type="text/css"> 
+        /* place css fixes for all versions of IE in this conditional comment */
+        .thrColHybHdr #sidebar1 { padding: 25px 5px 0 5px; }
+        .thrColHybHdr #header  { zoom: 1; }
+		.thrColHybHdr #header .clipimg { overflow:hidden; }
+        .thrColHybHdr #mainContent { zoom: 1; padding-top: .9375em; }
+		.displayinline { display:inline; }
+		.fltltlist { margin-right:0px; }
+        /* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+        </style>
+  	<![endif]-->
+    
+    	<!--[if lt IE 8]>
+		<style type="text/css"> 
+        /* place css fixes for all versions of IE in this conditional comment */
+		.thrColHybHdr #mainContent ul.bullet2 {padding-left:2em; }
+		.thrColHybHdr #mainContent ul{ padding-left:3em; }
+		.thrColHybHdr #mainContent ol{ padding-left:3em; }
+		.thrColHybHdr #mainContent div.spaces{ padding-left:2em; }
+        /* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+        </style>
+		<![endif]-->
+
+
+		<script language="JavaScript" type="text/javascript">
+			<!-- // Search by Name form validation
+			function validSearchForm(frmSearchTitle) {
+				invalidSpace = " ";
+				var searchStr = frmSearchTitle.searchstring.value;
+				
+				//checks for empty search name
+				if (frmSearchTitle.searchstring.value == "") {							
+					 alert("Please enter a Party Name or \nCase Number to search for.")
+					 frmSearchTitle.searchstring.focus()
+					 return false;
+				}
+				
+				//checks min & max search characters
+				if (frmSearchTitle.searchstring.value.length < 3 || frmSearchTitle.searchstring.value.length > 21) {
+					alert("Names or Case Number must be at least \n3 characters in length and no more than 21.");
+					frmSearchTitle.searchstring.focus()
+					return false; 
+				}
+				
+				if ((frmSearchTitle.styyyy.value == "") && (frmSearchTitle.endyyyy.value == "")) {	
+				}else{
+					if(frmSearchTitle.styyyy.value > frmSearchTitle.endyyyy.value) {		
+						alert("The \"End Year\" can't be before the \"Start Year\".");
+						frmSearchTitle.endyyyy.focus();
+						return false;
+					}
+				}
+				
+				//checks the start & end year and if they are the same checks month
+				if(frmSearchTitle.styyyy.value == frmSearchTitle.endyyyy.value) {	
+					if(frmSearchTitle.stmm.value > frmSearchTitle.endmm.value) {
+						alert("The \"Start Month\" can't be \nbefore the \"End Month\" \ndurning the same year.");
+						frmSearchTitle.endmm.focus();
+						return false;
+					}
+				}
+				
+				if(frmSearchTitle.website.value != ""){
+						alert("Are you a human?");
+						return false;
+				}
+				return true;
+			}
+			//-->	
+		</script>	
+	</head>
+
+    <body class="thrColHybHdr">
+      
+        <div id="container">
+			<div id="header">  
+              	<div class="clipimg"><a href="http://www.colusa.courts.ca.gov"><img src="images/bannerblur.jpg" height="125px" width="943px" border="0" alt="Home" /></a></div>
+       	  	</div>
+           	<!-- end #header -->
+            <div id="sidebar1">
+						<h1 class="heading">Menu</h1>
+			<ul id="MenuBar3" class="MenuBarVertical">
+				<li><a href="http://www.colusa.courts.ca.gov">Home</a></li>
+				<li><a class="MenuBarItemSubmenu" href="#">General Information</a>
+					<ul>
+						<li><a href="http://www.colusa.courts.ca.gov/contact_info.asp">Department Locations</a></li>
+						<li><a href="http://www.colusa.courts.ca.gov/holidays.asp">Court Holidays</a></li>
+						<li><a href="http://www.colusa.courts.ca.gov/schedule.asp">Court Schedule</a></li>
+					</ul>
+				</li>
+				<li><a class="MenuBarItemSubmenu" href="#">Online Resources</a>
+					<ul>
+						<li><a href="case_search.asp">Case Index Search</a></li>
+						<li><a href="court_calendars.asp">Court Calendar</a></li>
+						<li><a href="http://www.colusacourtpay.com/" target="_blank">Online Payment</a></li>
+					</ul>
+				</li>
+				<li><a href="http://www.colusa.courts.ca.gov/contact_info.asp">Contact Us</a></li>
+			</ul>
+			<h1 class="heading">Court&nbsp;Information</h1>
+			<ul id="MenuBar2" class="MenuBarVertical">
+				<li><a href="http://www.colusa.courts.ca.gov/filing_fees.asp">Filing Fees</a></li>
+				<li><a href="http://www.colusa.courts.ca.gov/jury_service.asp">Jury Service</a></li>
+				<li><a href="http://www.colusa.courts.ca.gov/self_help.asp">Self-Help&nbsp;Center</a></li>
+				<li><a href="http://www.colusa.courts.ca.gov/rules.asp">Local Rules</a></li>
+				<li><a href="http://www.colusa.courts.ca.gov/small_claims.asp">Small Claims</a></li>
+				<li><a href="http://www.colusa.courts.ca.gov/links.asp">Court Links</a></li>
+				<li><a href="http://www.colusa.courts.ca.gov/miscellaneous.asp">Grand Jury</a></li>
+				<li><a href="http://www.colusa.courts.ca.gov/mediator.asp">Court Mediator</a></li>			
+				<li><a href="http://www.colusa.courts.ca.gov/family.asp">Family&nbsp;Law&nbsp;Facilitator</a></li>
+				<li><a href="http://www.colusa.courts.ca.gov/traffic.asp">Traffic Information</a></li>
+				<li><a href="http://www.colusa.courts.ca.gov/employment.asp">Employment</a></li>
+			</ul>
+            <br />
+
+	<!-- end #sidebar1 -->
+
+			</div>	
+            <!-- end #sidebar1 -->
+            
+            <div id="mainContent"><a href="#" id="top" name="top"></a>
+
+				<h1>Online Case Index</h1>
+                		
+                <div class="paratable">
+					<h2>Case Index Search Form</h2>
+               		<form onsubmit="return validSearchForm(this)" action="case_search_results.asp" method="get" name="frmSearchTitle">
+						<div class="blueboarder">
+						<table class="tablesearch">
+							<tr>
+								<td style="vertical-align:middle; padding-bottom:.125em; width:50%;">
+									<div class="formlabelalt">Party Name<input type="radio" name="searchtype" value="party" tabindex="1" id="searchtype_0" checked /> &nbsp;|&nbsp; Case Number<input type="radio" name="searchtype" value="number" tabindex="2" id="searchtype_1" />:</div>
+								</td>
+								<td width="20.3125em" style="vertical-align:middle;">
+									<div class="formfield"><input name="searchstring" id="searchstring" type="text" size="25" maxlength="21" tabindex="3"/></div>
+								</td>
+							</tr>
+							<tr>
+								<td style="vertical-align:middle; padding-top:.1875em;">
+									<div class="formlabelalt">Filing Date Between&nbsp;<span class="formfielditalic">(Optional)</span> :</div>
+								</td>									
+								<td style="vertical-align:middle; text-align:left;">
+									<span class="formfield">
+											<select name="stmm" size="1" class="text" tabindex="4">
+												<option value="" selected="selected">Month</option>
+												<option value="01">01-Jan.</option>
+												<option value="02">02-Feb.</option>
+												<option value="03">03-March</option>
+												<option value="04">04-April</option>
+												<option value="05">05-May</option>
+												<option value="06">06-June</option>
+												<option value="07">07-July</option>
+												<option value="08">08-Aug.</option>
+												<option value="09">09-Sept.</option>
+												<option value="10">10-Oct.</option>
+												<option value="11">11-Nov.</option>
+												<option value="12">12-Dec.</option>
+											</select>
+											<select name="styyyy" size="1" class="text" tabindex="5">
+												<option value="" selected="selected">Year</option>
+
+                                                <option value="2019">2019</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2017">2017</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2015">2015</option>
+                                                <option value="2014">2014</option>
+                                                <option value="2013">2013</option>
+                                                <option value="2012">2012</option>
+                                                <option value="2011">2011</option>
+                                                <option value="2010">2010</option>															
+												<option value="2009">2009</option>
+												<option value="2008">2008</option>
+												<option value="2007">2007</option>
+												<option value="2006">2006</option>
+												<option value="2005">2005</option>
+												<option value="2004">2004</option>
+												<option value="2003">2003</option>
+												<option value="2002">2002</option>
+												<option value="2001">2001</option>
+												<option value="2000">2000</option>
+												<option value="1999">1999</option>
+												<option value="1998">1998</option>
+												<option value="1997">1997</option>
+												<option value="1996">1996</option>
+												<option value="1995">1995</option>
+												<option value="1994">1994</option>
+												<option value="1993">1993</option>
+											</select>
+										</span>
+										<span class="formfielditalic" style="text-align:left;">(Beginning Date)</span>													
+								</td>
+							</tr>
+							<tr>
+								<td style="vertical-align:middle; padding-top:.1875em">
+									<div class="formlabelalt" style="text-transform:lowercase;">and :</div>
+								</td>
+								<td style="vertical-align:middle; text-align:left;">
+										<span class="formfield">
+											<select name="endmm" size="1" tabindex="6" class="text">
+												<option value="" selected="selected">Month</option>
+												<option value="01">01-Jan.</option>
+												<option value="02">02-Feb.</option>
+												<option value="03">03-March</option>
+												<option value="04">04-April</option>
+												<option value="05">05-May</option>
+												<option value="06">06-June</option>
+												<option value="07">07-July</option>
+												<option value="08">08-Aug.</option>
+												<option value="09">09-Sept.</option>
+												<option value="10">10-Oct.</option>
+												<option value="11">11-Nov.</option>
+												<option value="12">12-Dec.</option>
+											</select>
+											<select name="endyyyy" size="1" class="text" tabindex="7">
+												<option value="" selected="selected">Year</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2017">2017</option>
+                                                <option value="2016">2016</option> 
+                                                <option value="2015">2015</option>
+                                                <option value="2014">2014</option>
+                                                <option value="2013">2013</option>
+                                                <option value="2012">2012</option>
+                                                <option value="2011">2011</option>
+                                                <option value="2010">2010</option>
+												<option value="2009">2009</option>
+												<option value="2008">2008</option>
+												<option value="2007">2007</option>
+												<option value="2006">2006</option>
+												<option value="2005">2005</option>
+												<option value="2004">2004</option>
+												<option value="2003">2003</option>
+												<option value="2002">2002</option>
+												<option value="2001">2001</option>
+												<option value="2000">2000</option>
+												<option value="1999">1999</option>
+												<option value="1998">1998</option>
+												<option value="1997">1997</option>
+												<option value="1996">1996</option>
+												<option value="1995">1995</option>
+												<option value="1994">1994</option>
+												<option value="1993">1993</option>
+											</select>
+										</span>
+										<span class="formfielditalic" style="text-align:left;">(Ending Date)</span>																					
+								</td>
+							</tr>
+							<tr>
+								<td style="vertical-align:middle; padding-top:.1875em;">
+									<div class="formlabelalt">Case Type&nbsp;<span class="formfielditalic">(Optional)</span> :</div>
+								</td>
+								<td>
+									<div class="formfield">
+											<select name="casetype" size="1" tabindex="8">
+												<option value="" selected="selected">All Available</option>
+												<option value="CI">Civil/Family Law</option>
+												<option value="CR">Criminal/Traffic</option>
+											</select>
+									</div>										
+								</td>
+							</tr>
+							<tr>
+								<td style="vertical-align:text-top; padding-top:.25em;">
+										<div class="formlabelalt">Sort by :</div>
+								</td>
+								<td style="vertical-align:bottom; width:50%; text-align:left;"> 
+										<div><span style="vertical-align:middle; text-align:left;"><input type="radio" name="sorttype" value="date" id="sorttype_1" tabindex="9" checked /></span><span class="formlabelleft">Date</span></div>
+										<div><span style="vertical-align:middle;text-align:left;"><input type="radio" name="sorttype" value="name" id="sorttype_0" tabindex="10" /></span><span class="formlabelleft">Name</span></div>
+								</td>
+							</tr>	
+							<tr>
+								<td>
+										<div class="terms">By clicking the Search button, you agree to the Limitations and Conditions-of-Use associated with the Online Case Index search.<br /><a href="http://www.colusa.courts.ca.gov/usenotice.asp" class="termslink" target="_blank">Click to view Terms of Use</a>.</div>						
+								</td>
+								<td style="text-align:left; width:20.3125em;">
+                                			<input class="h1dd3n-cAp" type="text" name="website" value="" />
+											<input type="Submit" value="Search" tabindex="11" />
+																	
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="text-align:center;">
+									<div class="searchhelp" style="width:89%; padding-left:2.5em;">* Search by entering a full or partial name of the Party you are searching for using <span style="font-style:italic;">Last, First</span> (SMITH, JOHN) format.<br />* You can also search by entering in the Case Number.<br />* To get more result matches, enter a partial name or just the first few letters.<br />* The search term is not case sensitive.</div>										
+								</td>
+							</tr>
+						</table>
+						</div>
+						</form>	
+                        <hr />
+                        <table style="text-align:center; margin:0 auto;">
+                        	<tr>
+								<td style="padding:0.3125em 0px; text-align:center; background-color:#fff;">	
+									<span class="links"><a href="#top" class="link" style="cursor:pointer; font-family: Arial, 'Courier New', Verdana, 'MS Sans Serif'; font-size:.75em; font-weight:500; color:#20007B; background-color:#fff; text-decoration:underline;">Back To Top</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.colusa.courts.ca.gov/" class="link" target="_blank" style="cursor:pointer; font-family: Arial, 'Courier New', Verdana, 'MS Sans Serif'; font-size:.75em; font-weight:500;">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="court_calendars.asp" target="_blank" class="link" style="cursor:pointer; font-family: Arial, 'Courier New', Verdana, 'MS Sans Serif'; font-size:.75em; font-weight:500;">Court Calendar</a>&nbsp;&nbsp;|</span>
+								</td>
+							</tr>					
+						</table>
+              		</div>            
+				</div>
+           		 <!-- end #mainContent -->
+                  <br class="clearfloat" />
+           	    
+            	<div id="footer">
+					<!-- Included  Bottom of  webpage-->
+<!-- file located at /includes/inc_footer.inc -->
+		<p>
+		<div class="fltlftfooter">This web site is owned by <a href="http://www.colusa.courts.ca.gov" target="_self">Colusa County Superior Court</a>.<br /><br /> Phone (530) 458-5149 with questions or comments about this web site.</div>
+		<div class="fltrtfooter"><a href="http://www.colusa.courts.ca.gov/usenotice.asp" target="_self">PRIVACY POLICY:CONDITIONS OF USE</a>.<br /><br />The site was built by <a href="http://www.itinnovations.com" target="_blank"> IT Innovations</a>
+			<script language="JavaScript">
+				var mydate=new Date() 
+				var year=mydate.getYear() 
+				if (year < 1000) year+=1900 
+				var day=mydate.getDay() 
+				var month=mydate.getMonth() 
+				var daym=mydate.getDate() 
+				if (daym<10) daym="0"+daym 
+				var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday") 
+				var montharray=new Array("Jan","Feb","March","April","May","June","July","Aug","Sept","Oct","Nov","Dec") 
+				document.write("&copy;&nbsp;"+year+" all rights reserved")
+			</script>
+		</div>
+		</p>
+<!-- end #footer -->
+           	</div>
+            	<!-- end #footer -->
+        	<!-- end #container -->
+   		</div>
+    
+    	<script type="text/javascript">
+        	<!--
+        	var MenuBar2 = new Spry.Widget.MenuBar("MenuBar2", {imgRight:"spry/SpryMenuBarRightHover.gif"});
+        	var MenuBar3 = new Spry.Widget.MenuBar("MenuBar3", {imgRight:"spry/SpryMenuBarRightHover.gif"});
+        	//-->
+        </script>
+        <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6408755-1");
+pageTracker._setDomainName(".colusa.courts.ca.gov");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

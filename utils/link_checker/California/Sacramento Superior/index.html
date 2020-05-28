@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Public Case Access System</title>
+
+
+    <link href="/PublicCaseAccess/Content/css?v=p63ScBeXLvhQ89QQhTToqIaMq9qCIF5o4Y1BaBKPSpA1" rel="stylesheet"/>
+
+    <link href="/PublicCaseAccess/Content/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <script src="/PublicCaseAccess/bundles/jquery?v=8Oos0avDZyPg-cbyVzvkIfERIE1DGSe3sRQdCSYrgEQ1"></script>
+
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.114/styles/kendo.bootstrap-v4.min.css" />
+    <script src="https://kendo.cdn.telerik.com/2020.1.114/js/kendo.all.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.1.114/js/kendo.aspnetmvc.min.js"></script>
+
+    
+    
+
+    <link href="/PublicCaseAccess/Content/cssaddon?v=a6wC6SWy995PMlD_XGheDePb2WCvIF6D8-8hk35jQKw1" rel="stylesheet"/>
+
+    <link href="/PublicCaseAccess/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1" rel="stylesheet"/>
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div id="topBar" class="dark hidden-print">
+                <div class="container">
+                    <ul class="top-links list-inline pull-right">
+                        
+    <li><a href="/PublicCaseAccess/Account/LogOn?returnUrl=%2FPublicCaseAccess%2F">Log In</a></li> 
+    <li><a href="/PublicCaseAccess/Account/CreateAccountType">Create Account</a></li> 
+    <li><a href="/PublicCaseAccess/Account/RetrievePassword">Forgot Password?</a></li>
+    <li><a href="/PublicCaseAccess/Order/SearchDocumentOrder">Find Order</a></li> 
+    <li>
+
+
+<a href="/PublicCaseAccess/ShoppingCart/DocumentCart" class="cart-count"><i class="fa fa-shopping-cart"></i> Document Cart (0)</a>
+        
+    </li>
+
+                    </ul><!--//menu-top-->
+                    <ul class="top-links list-inline hidden-xs hidden-sm">
+                        <li><a href="/PublicCaseAccess/Home/Help">How this site works</a></li>
+                        <li><a href="https://www.saccourt.ca.gov/contact.aspx?contact=technical&system=PCAS" target="_blank">Contact</a></li>
+                    </ul>
+                </div>
+            </div><!--//to-bar-->
+            <div class="header-main container hidden-print">
+                <h1 class="logo col-sm-6">
+                    <a href="/PublicCaseAccess/"><img src="/PublicCaseAccess/Content/Images/banner-trans.png" alt="Public Case Access System" class="img-responsive" /></a> 
+                </h1><!--//logo-->
+                <div class="info col-sm-5">
+                        <div class="pull-right">
+                            
+                        </div>
+                    </div>
+            </div><!--//header-main-->
+        </header><!--//header-->
+        <nav class="main-nav hidden-print" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button><!--//nav-toggle-->
+                </div><!--//navbar-header-->
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item visible-xs visible-md visible-lg" id="home"><a href="/PublicCaseAccess/">Home</a></li>
+                        <li class="nav-item visible-sm hidden-md" id="home"><a href="/PublicCaseAccess/"> <i class="fa fa-home"></i></a></li>
+                        <li class="nav-item dropdown" id="civil">
+                            <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Civil <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/PublicCaseAccess/Civil">General Information and Usage</a></li>
+                                <li><a href="/PublicCaseAccess/Civil/SearchByName">Search by Name</a></li>
+                                <li><a href="/PublicCaseAccess/Civil/SearchByCaseNumber">Search by Case</a></li>
+                                <li><a href="/PublicCaseAccess/Civil/SearchByFilingDate">Search by Filing Date</a></li>
+                                <li><a href="/PublicCaseAccess/Civil/TentativeRulingSearchByCaseNumber">Search Tentative Rulings By Case</a></li>
+                                <li><a href="/PublicCaseAccess/Civil/TentativeRulingSearchByDepartment">Search Tentative Rulings By Department</a></li>
+                                <li><a href="https://www.saccourt.ca.gov/civil/civil.aspx" target="_blank">Civil Home Page on Saccourt</a></li>
+                                <li><a href="https://www.saccourt.ca.gov/civil/arbitration-selection.aspx" target="_blank">Arbitrator Selection Process</a></li>
+                                <li><a href="https://www.saccourt.ca.gov/civil/trial-notification.aspx" target="_blank">Trial Readiness Notification</a></li>
+                                <li><a href="https://www.saccourt.ca.gov/civil/trial-setting.aspx" target="_blank">Trial Setting Process</a></li>
+                                <li><a href="https://www.saccourt.ca.gov/civil/complex-case-calendar.aspx" target="_blank">Complex Case Calendar</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" id="criminal">
+                            <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Criminal <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/PublicCaseAccess/Criminal">General Information and Usage</a></li>
+                                <li><a href="/PublicCaseAccess/Criminal/SearchByName">Search by Name</a></li>
+                                <li><a href="/PublicCaseAccess/Criminal/SearchByCaseNumber">Search by Case</a></li>
+                                <li><a href="/PublicCaseAccess/Criminal/SearchByXref">Search by Xref</a></li>
+                                <li><a href="https://www.saccourt.ca.gov/criminal/criminal.aspx" target="_blank">Criminal Home Page on Saccourt</a></li>
+                                <li><a href="https://services.saccourt.ca.gov/ctrn" target="_blank">Trial Readiness Notification</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" id="family">
+                            <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Family <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/PublicCaseAccess/Family">General Information and Usage</a></li>
+                                <li><a href="/PublicCaseAccess/Family/SearchByName">Search by Name</a></li>
+                                <li><a href="/PublicCaseAccess/Family/SearchByCaseNumber">Search by Case</a></li>
+                                <li><a href="/PublicCaseAccess/Family/SearchByFilingDate">Search by Filing Date</a></li>
+                                <li><a href="https://www.saccourt.ca.gov/family/family-law.aspx" target="_blank">Family Law Home Page on Saccourt</a></li>
+                                <li><a href="https://services.saccourt.ca.gov/flfoecorrespondence/" target="_blank">e-Correspondence (Family Law Self-Help Assistance)</a></li>
+                                <li><a href="https://www.saccourt.ca.gov/family/records.aspx" target="_blank">Order a File and Records</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" id="probate">
+                            <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Probate <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/PublicCaseAccess/Probate">General Information and Usage</a></li>
+                                <li><a href="/PublicCaseAccess/Probate/SearchByName">Search by Name</a></li>
+                                <li><a href="/PublicCaseAccess/Probate/SearchByCaseNumber">Search by Case</a></li>
+                                <li><a href="/PublicCaseAccess/Probate/SearchByFilingDate">Search by Filing Date</a></li>
+                                <li><a href="/PublicCaseAccess/Probate/ProbateNoteSearchByCaseNumber">Search Probate Notes By Case</a></li>
+                                <li><a href="/PublicCaseAccess/Probate/ProbateNoteSearchByDepartment">Search Probate Notes By Department</a></li>
+                                <li><a href="https://www.saccourt.ca.gov/probate/probate.aspx" target="_blank">Probate Home Page on Saccourt</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" id="small-claims">
+                            <a class="dropdown-toggle visible-xs visible-md visible-lg" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Small Claims <i class="fa fa-angle-down"></i></a>
+                            <a class="dropdown-toggle visible-sm hidden-md" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Sm. Claims <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/PublicCaseAccess/SmallClaims">General Information and Usage</a></li>
+                                <li><a href="/PublicCaseAccess/SmallClaims/SearchByName">Search by Name</a></li>
+                                <li><a href="/PublicCaseAccess/SmallClaims/SearchByCaseNumber">Search by Case</a></li>
+                                <li><a href="/PublicCaseAccess/SmallClaims/SearchByFilingDate">Search by Filing Date</a></li>
+                                <li><a href="https://www.saccourt.ca.gov/small-claims/small-claims.aspx" target="_blank">Small Claims Home Page on Saccourt</a></li>
+                                <li><a href="https://www.saccourt.ca.gov/efiling/small-claims.aspx" target="_blank">E-Filing Services</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item dropdown" id="traffic">
+                            <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Traffic  <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/PublicCaseAccess/Traffic">General Information and Usage</a></li>
+                                <li><a href="/PublicCaseAccess/Traffic/SearchByCase">Search by Case Number</a></li>
+                                <li><a href="/PublicCaseAccess/Traffic/SearchByCitation">Search by Citation Number</a></li>
+                                <li><a href="/PublicCaseAccess/Traffic/SearchByLicense">Search by Driver License</a></li>
+                                <li><a href="/PublicCaseAccess/Traffic/SearchByXref">Search by Xref</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" id="unlawful-detainer">
+                            <a class="dropdown-toggle visible-xs visible-md visible-lg" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Unlawful Detainer <i class="fa fa-angle-down"></i></a>
+                            <a class="dropdown-toggle visible-sm hidden-md" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">UD <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/PublicCaseAccess/UD">General Information and Usage</a></li>
+                                <li><a href="/PublicCaseAccess/UD/SearchByName">Search by Name</a></li>
+                                <li><a href="/PublicCaseAccess/UD/SearchByCaseNumber">Search by Case</a></li>
+                                <li><a href="/PublicCaseAccess/UD/SearchByFilingDate">Search by Filing Date</a></li>
+                                <li><a href="https://www.saccourt.ca.gov/efiling/unlawful-detainer.aspx" target="_blank">E-Filing Services</a></li>
+                                <li><a href="https://www.saccourt.ca.gov/ud/ud-events.aspx" target="_blank">Answer / Default / Hearing / Fee Waiver Report</a></li>
+                            </ul>
+                        </li>
+
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="content container">
+            <div class="page-wrapper">
+                
+
+
+<div class="page-content" data-link-group="home">
+    <div class="row page-row">
+        <div class="col-md-12">
+            <div class="page-row">
+                
+
+
+<div>
+    <h2 class="index-header">Welcome to the Sacramento Superior Court’s Public Case Access System</h2>
+    <div class="covid19 alert alert-danger text-center size-18 bold">
+        If you were scheduled for a court appearance during the COVID-19 Pandemic, and your
+        hearing did not take place, please continue to check this system for updates on your new court appearance date.
+    </div>
+    <p>
+        The purpose of the Public Case Access System is to provide the ability to research and locate Superior Court 
+        of California, County of Sacramento cases on a particular individual or a case number. The Public Case Access 
+        System provides you with the ability to search for cases by name, case number, or filing date. In Civil and 
+        Probate cases, you are able to view information regarding case participants, events, and documents (where 
+        applicable). The Traffic section allows you to look up and pay your traffic citation online. In Family Law cases,
+        participants, with a court assigned case subscription, are able to view/download Finding and Orders after Hearing documents
+        for some departments and Mediator Reports prepared by Family Court Services. Other case types provide limited case 
+        information, primarily the case number, date filed, and the case participants.
+    </p>
+    
+    <h3>Disclaimer</h3>
+    <p>
+        The most current filings may or may not be in the system. While the court strives to ensure the accuracy of 
+        the information it provides, the court recognizes that on occasion errors occur. Use of this information is the 
+        user’s responsibility. 
+    </p>
+    
+    <p>
+        Prior to using this system, please review the <a href="https://www.saccourt.ca.gov/privacy.aspx">Court’s Use and Privacy Policy</a>. 
+    </p>
+    
+    <h3>Public Access Fees</h3>
+    <p>
+        Name searches and document downloads will incur a public access fee that reimburses 
+        the Court for the cost of providing public access to its electronic records<sup>1</sup>. A credit card is required for 
+        payment of these fees. If you want to see documents on a case you are part of and have an approved fee waiver, 
+        you must come to the court to view your documents for free. Members of governmental entities within California 
+        and the Federal government may use the system for free. 
+    </p>
+    <p>
+        You may also come to the court and access the case information and documents online through one of the 
+        court’s kiosks free of charge (requests for printed copies will be charged at the rate published in the 
+        <a href="https://www.saccourt.ca.gov/indexes/fees-forms.aspx">Court’s Fee Schedule</a>).
+    </p>
+    
+    <h3>Name Search Fees</h3>
+    <p>
+        A public access fee will be charged when searching for cases by name. In order to conduct a name search, 
+        you must first create an account then purchase the desired number of name searches. The fees are as follows: 
+    </p>
+    <ul>
+        <li>$1.00 for one (1) name search</li>
+        <li>$3.50 for five (5) name searches</li>
+        <li>$25.00 for 75 name searches</li>
+        <li>$250.00 for 30 consecutive days of unlimited name searches</li>
+        <li>$2,500.00 for 365 consecutive days of unlimited name searches</li>
+    </ul>
+    
+    <p>
+        There are no refunds for unused name search credits. Name search credits do not expire, with the exception 
+        of the 30- and 365-day name search options.
+    </p>
+
+    <h3>Document Downloading Fees</h3>
+    <p>
+        A public access fee will be charged for viewing case documents. These fees will be calculated at the 
+        time of check-out. The fees are as follows:
+    </p>
+    <ul>
+        <li>$1.00 per page for the first five (5) pages of a document</li>
+        <li>$0.40 per page for each additional page up to a maximum of $40.00 per document.</li>
+    </ul>
+    
+    <h3>Accounts</h3>
+    <p>
+        An account is required to conduct name searches, subscribe to cases, or access the system for free as a 
+        government entity. One of the major benefits of establishing an account is the case subscription feature. 
+        With this feature, a user can subscribe to a Civil or Probate case and receive automated notifications 
+        whenever a new document is filed on that case. For detailed information regarding case subscriptions, please
+        review the <a href="https://www.saccourt.ca.gov/pdf-content/pca/pca-user-guide-jan-2015.pdf">User Guide for Public Case Access</a>.
+    </p>
+    <p>
+        Attorneys and self-represented litigants that are parties to a Civil or Probate case can subscribe to
+        their cases and receive notifications when new documents are filed. They may be able to view and print
+        newly filed documents free of charge for 72 hours. 
+    </p>
+    
+    <p>
+        Attorneys or self-represented litigants that are parties to a Family Law case must file with the court a 
+        <a href="/PublicCaseAccess/Family">Family Law Case Participant Enrollment Form</a>, 
+        along with a copy of your driver license or bar number. The court will create an account and subscribe the participant to their case.  
+        Findings and Orders After Hearing and Mediation Reports prepared by Family Court Services will be provided 
+        free of charge for 72 hours.
+    </p>
+        
+    <p>
+        Please see the <a href="/PublicCaseAccess/Account/CreateAccountType">Create Account</a> page for more details.<sup>2</sup>
+    </p>
+    <p><sup>2</sup> Please Note: the court only data enters into its case management system the first named attorney
+        listed on a party’s initial filing. While any attorney may subscribe to the case, only the first named attorney
+         will be able to view newly filed documents free of charge for 72 hours. </p>
+    
+     <h3>Use of Documents</h3>
+    <p>
+        Copyright and other proprietary rights may apply to filed documents, absent an express grant of 
+        additional rights by the holder of the copyright or other proprietary right. Take notice that:
+    </p>
+    <ol class="alpha">
+        <li>Use of such information in a case file is permissible only to the extent permitted by law or court order;</li>
+        <li>Any use inconsistent with proprietary rights is prohibited.</li>
+    </ol>
+    <p>
+        Be advised that any person who willfully destroys or alters any court record maintained in electronic 
+        form is subject to the penalties imposed by Government Code section 6201.
+    </p>
+    
+   <p style="font-size:90%;font-style:italic;">
+    <sup>1</sup> In order to provide electronic public access to court information, Sacramento Superior Court 
+    incurs technology development, maintenance, and operational expenses. Pursuant to California Rule of Court 2.506 
+    and Government Code Section 68150(l), the Court may impose fees for the costs of providing access to its electronic 
+    records.
+    </p>
+
+    
+    <p><a href="https://www.courts.ca.gov/42512.htm">Access to Electronic Records</a></p>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div><!--//content-->
+    </div><!--//wrapper-->
+    <footer class="footer hidden-print">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-2 col-sm-4 about">
+                        <div class="footer-col-inner">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="/PublicCaseAccess/Home/Help">How this site works</a></li>                                
+                                <li><a href="https://www.saccourt.ca.gov/privacy.aspx" target="_blank">Use and Privacy Policy</a></li>
+                                <li><a href="http://get.adobe.com/reader/" target="_blank">Download Adobe Reader</a></li>
+                            </ul>
+                        </div><!--//footer-col-inner-->
+                    </div><!--//foooter-col-->
+                </div>
+            </div>
+        </div><!--//footer-content-->
+        <div class="bottom-bar">
+            <div class="container">
+                <div class="row">
+                    <small class="copyright col-md-6 col-sm-12 col-xs-12" id="copyright">&#169; 2020 Superior Court of California, County of Sacramento</small>
+                </div><!--//row-->
+            </div><!--//container-->
+        </div><!--//bottom-bar-->
+    </footer><!--//footer-->
+
+
+    
+
+    <script src="/PublicCaseAccess/plugins/backtotop?v=LoLAUWOggm3nx5UCi8k1PepkQKtvJp1dq2hJyYLmQKg1"></script>
+
+    <script src="/PublicCaseAccess/bundles/bootstrap?v=z1V9V2r7fcM0o_rdmqShwaqObAoF9p7Xt1HzRbnjk-k1"></script>
+
+    
+    <script type="text/javascript">
+
+    $(function () {
+        setNavigation();
+    });
+
+    function setNavigation() {
+        var linkGroup = $("div.page-content").attr("data-link-group");
+        $("#" + linkGroup).addClass("active");
+    }
+    </script>
+
+    <script type="text/javascript">
+        // helps to establish the correct path whether the app is at the root or in a virtual dir under a site
+        var AppPath = '/PublicCaseAccess/';
+    </script>
+    
+                    
+                
+    
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-4132807-13', 'ca.gov');
+        ga('send', 'pageview');
+
+    </script>
+
+</body>
+</html>

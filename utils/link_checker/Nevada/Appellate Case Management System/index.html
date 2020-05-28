@@ -1,0 +1,388 @@
+
+				 
+				 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+    
+
+
+<head>
+	<title>Case Search</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>	
+
+	<!-- iOS icons -->
+	<link rel="apple-touch-icon" href="/ctrack/images/apple-touch-icon-precomposed.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="/ctrack/images/apple-touch-icon-72x72-precomposed.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="/ctrack/images/apple-touch-icon-114x114-precomposed.png" />
+
+	<link rel="stylesheet" type="text/css" href="/include/css/normalize.css" media="all"/>
+	<link rel="stylesheet" type="text/css" href="/include/css/jquery-ui/jquery-ui.css" media="all"/>	
+	<link rel="stylesheet" type="text/css" href="/include/css/jquery.qtip.css"/>
+	<link rel="stylesheet" type="text/css" href="/include/css/efile.css" media="all">
+	
+     
+<link rel="stylesheet" type="text/css" href="/public/include/css/efileState.css" media="all"/>
+	<link rel="stylesheet" type="text/css" href="/include/css/print.css" media="print">
+	
+	<style type="text/css">
+		
+	</style>
+	
+	<script type="text/javascript" src="/include/js/jquery.js"></script>
+	<script type="text/javascript" src="/include/js/jquery.blockUI.js"></script>
+	<script type="text/javascript" src="/include/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="/include/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="/include/js/jquery.qtip.js"></script>
+	<script type="text/javascript" src="/include/js/jquery.ui.ctrack.datepicker.js"></script>
+	
+	<script type="text/javascript" src="/dwr/engine.js"></script>
+	<script type="text/javascript" src="/dwr/interface/AJAX.js"></script>
+	
+	<script type="text/javascript" src="/include/js/efile.js"></script>
+	<script type="text/javascript" src="/include/js/menuHeaderDropdown.js"></script>
+	<script type="text/javascript" src="/include/js/DynamicOptionList.js"></script>
+	<script type="text/javascript" src="/include/js/menuPopup.js"></script>
+	
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-5436882-7']);
+		_gaq.push(['_trackPageview']);
+	
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-5436882-7', 'auto');
+			  ga('send', 'pageview');
+
+	</script>
+
+	
+	<script type="text/javascript">
+		
+	</script> 
+	
+</head>
+
+
+
+<body onLoad="">
+
+
+	<div id="application-header-background"></div>
+
+
+<table id="application-table">
+	
+	
+	
+		<tr>
+			<td>
+				<table id="header-table">
+					<tr>
+						<td id="app-logo-container">
+							
+
+<div id="app-logo"></div>
+
+<div id="app-logo-text">
+	<div>Nevada</div>
+	<div>Appellate Courts</div>
+</div>
+
+<div id="app-logo2"></div>
+
+<div class="clear-floats"></div>
+
+
+						</td>
+						<td id="app-title-container">
+							
+
+<table id="app-title-table">
+	<tr>
+		<td>
+			<div class="title">Appellate Case Management System</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="subtitle">C-Track, the browser based CMS for Appellate Courts</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			
+
+<div id="menu-container">
+	
+	<div id="menus">
+	
+		
+			
+				<div id="menus-placeholder"></div>
+			
+		
+			
+		
+		
+		<div class="clear-floats"></div>
+	</div>
+	
+</div>
+
+
+
+	
+	
+	
+		<div class="menu-header-dropdown menu-selected"
+			id="menu1">
+			
+			
+				
+				<a href="/public/caseSearch.do" onclick="menuHeaderClose();" class="first-menu">
+					Case Search
+				</a>
+			
+				
+				<a href="/public/publicActorSearch.do" onclick="menuHeaderClose();" class="last-menu">
+					Participant Search
+				</a>
+			
+			
+		</div>
+		
+	
+	
+
+		</td>
+	</tr>
+</table>
+						</td>
+						<td id="app-controls-container">
+							
+
+<div id="app-controls" class="loggedOut">
+		<!-- 
+	
+	
+		
+			<div class="header-icons">
+				<div id="power-icon" class="header-icon" title="Login"
+					onclick="window.location = '/login.do';">
+				</div>
+				
+				<div class="clear-floats"></div>
+			</div>
+		
+		
+		
+	
+	 -->
+	
+	
+	<div id="quicksearch" class="public-search">
+		<input type="text" name="quickCaseSearchCsNumber"
+			value="Find Case..." id="quickSearchValue"
+			data-defaulttext="Find Case..."/>
+		<span class="search-icon"></span>
+	</div>
+	
+	<div class="clear-floats"></div>
+</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	
+	
+		<tr>
+			<td>
+				<table id="content-table">
+					<tr id="content-row">
+						
+						
+						
+							<td id="navigation-cell" class="visible">
+								
+
+<div id="navigation" style="display:;">
+
+	<table id="navigation-table">
+		<tr>
+			<td>
+				<div id="navigation-list-title">Cases</div>
+				
+				<ul id="navigation-list">
+				
+					
+						
+						
+						
+						<li class="navigation-selected">
+							<a href="/public/caseSearch.do" class="menu-top" onclick="">
+								Case Search
+							</a>
+						</li>
+						
+					
+						
+						
+						
+						<li class="">
+							<a href="/public/publicActorSearch.do" class="menu-bottom" onclick="">
+								Participant Search
+							</a>
+						</li>
+						
+					
+				</ul>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+							</td>
+							
+						
+						
+						<td id="content-cell">
+							<div id="content-container" class="">
+								
+									
+								
+
+
+<div id="public-splash-message">
+	<center><span style="font-weight:bold">Disclaimer:</span> The information and documents available here should not be relied upon as an official record of action.<br/>Only filed documents can be viewed.  Some documents received in a case may not be available for viewing.<br/>Some documents originating from a lower court, including records and appendices, may not be available for viewing.<br/>For official records, please contact the Clerk of the Supreme Court of Nevada at (775) 684-1600.<br/><br/></center>
+</div>
+
+<form name="caseSearchForm" id="paginatedSearchForm" method="post" action="/public/caseSearch.do;jsessionid=78E99FC1DEF6DF8F3CC3678691AAF604">
+	<input type="hidden" name="action" value="">
+	
+	<table class="FormTable">
+		<tr class="TableHeading">
+			<td colspan="4">Search for Case</td>
+		</tr>
+		<tr class="TableSubHeading">
+			<td colspan="4">Search</td>
+		</tr>
+		<tr>
+			<td class="label">Case No.:</td>
+			<td>
+				<input type="text" name="csNumber" maxlength="50" size="12" value="" class="content">
+			</td>
+			<td class="label">Caption Contains:</td>
+			<td><input type="text" name="shortTitle" maxlength="50" size="50" value="" class="content"></td>
+		</tr>
+		<tr>
+			<td class="label">Court:</td>
+			<td colspan="3">
+				<select name="courtID"><option value="-1" selected="selected">&nbsp;</option>
+					<option value="10002">Court of Appeals</option>
+<option value="10001">Supreme Court</option></select>
+			</td>
+		</tr>
+		<tr>
+			<td class="label">Exclude Closed:</td>
+			<td colspan="3"><input type="checkbox" name="exclude" value="on" checked="checked"></td>			
+		</tr>
+		<tr>
+
+		</tr>
+		<tr>
+			<td colspan="4" class="buttonbox"> 
+				<input type="button" class="button" value="Clear"
+					onclick="document.location='/public/caseSearch.do';"/>
+				<input type="button" class="button" value="Search" 
+					onclick="submitForm(this.form, this.value);"/> 
+			</td>		
+		</tr>
+	</table>
+	
+	<input type="hidden" name="startRow" value="1">
+<input type="hidden" name="displayRows" value="50">
+<input type="hidden" name="orderBy" value="CsNumber">
+<input type="hidden" name="orderDir" value="DESC">
+<input type="hidden" name="href" value="/public/caseView.do">
+
+<input type="hidden" name="submitValue" value="">
+
+<script type="text/javascript">
+
+	//re-enable the enter key submit for the paginated form
+	//doesn't seem to affect the quick case search	
+	$(window).load(function() {
+		$('#paginatedSearchForm').keypress(function(event){
+			if(event.which == 13)
+			{
+				submitForm($('#paginatedSearchForm').get(0), 'Search');
+			}
+		});
+	});
+	
+	function postSortOrder(orderBy, orderDir)
+	{
+		var form = $('#paginatedSearchForm').get(0);
+		form.orderBy.value = orderBy;
+		form.orderDir.value = orderDir;
+		form.startRow.value = 1;
+		submitForm(form, 'Search');
+	}
+	
+	function postPaging(startRow, displayRows)
+	{
+		var form = $('#paginatedSearchForm').get(0);
+		form.startRow.value = startRow;
+		form.displayRows.value = displayRows;
+		submitForm(form, 'Search');
+	}
+	
+	function submitForm(form, submitValue)
+	{
+		form.submitValue.value = submitValue;
+		form.submit();
+	}
+</script>
+
+	
+</form>
+<br/>
+
+
+						</div> 
+					</td> 
+				</tr> 
+			</table> 
+		</td>
+	</tr>
+</table> 
+
+</body>
+</html>

@@ -1,0 +1,938 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+
+
+
+
+<script language="JavaScript1.2" type="text/javascript">
+    var isSubJS='f';
+</script>
+
+
+
+
+
+
+
+<HTML>
+    <HEAD>
+        <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+        <META HTTP-EQUIV="Cache-Control" CONTENT="no-store, no-cache, must-revalidate"> 
+        <META HTTP-EQUIV="Expires" CONTENT="0">
+        <META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+        <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+        <meta name="robots" content="noindex" />
+        
+        <TITLE>Pinellas Public Records Login</TITLE>
+        
+        <LINK href="/theme/Master.css" rel="stylesheet" type="text/css">
+        <title>Clerk of the Circuit Court Homepage</title>
+<link href="https://www.pinellasclerk.org/aspInclude2/theme/master.css" rel="stylesheet" type="text/css">
+
+<script language="JavaScript1.2" type="text/javascript">
+
+            function movepic(img_name,img_src) {
+
+                        document.getElementById(img_name).src = img_src;
+
+            }
+
+</script>
+
+        <SCRIPT LANGUAGE="JavaScript1.2" type="text/javascript" SRC="/javascript/validate.js"></SCRIPT>
+        <SCRIPT language="JavaScript1.2" type="text/javascript" src="/javascript/PinellasHeading.js"></SCRIPT>
+        <SCRIPT LANGUAGE="JavaScript1.2" type="text/javascript">
+
+            function CheckFields() {
+                if (IsBlank(document.LoginForm.username.value) || IsBlank(document.LoginForm.password.value)) {
+                    alert("Must provide a username and password!")
+                    return false
+                } else {
+                    return true
+                }
+            }
+ 
+            function getCookieData(label) {
+                var labelLen = label.length
+                var cLen = document.cookie.length
+                var i = 0
+                var cEnd
+                
+                while (i < cLen) {
+                    var j = i + labelLen
+                    
+                    if (document.cookie.substring(i,j) == label) {
+                        cEnd = document.cookie.indexOf(";", j)
+                        if (cEnd == -1) {
+                            cEnd = document.cookie.length
+                        }
+                        return unescape(document.cookie.substring(j + 1, cEnd))
+                    }
+                    
+                    i++
+                }
+                return ""
+            }
+
+            function setLoadPageFocus () {
+                //SET DEFAULTS TO CLOSE
+                //document.getElementById("divgeninfo").style.display='none';           
+          
+                document.getElementById("divlegal").style.display='none';    
+                document.getElementById("orlogin").style.display='none';
+            }
+
+            function OpenCloseToggle(elementID) {
+                
+                if (document.getElementById(elementID).style.display=='block') {
+                    document.getElementById(elementID).style.display='none';                        
+                } else if (document.getElementById(elementID).style.display=='none') {
+                    document.getElementById(elementID).style.display = 'block';
+                }
+            //alert('elementID=' + elementID);
+            }
+            
+            function submitform()
+            {
+              document.LoginForm2.submit();
+            }
+
+        </SCRIPT>
+        
+        <STYLE type="text/css">
+            
+            body {
+                margin: 0px;
+            }
+            
+            .submit {
+                background-color: #EAEAD7;
+                border: black solid 1px;
+                font-size: 10pt;
+                font-family: Arial, sans-serif;
+                font-weight: bold;
+                height: 22px;
+            }
+            
+            .menuTable, .loginTable, .loginTable1, .loginTable2 {
+                border: 2px solid #c7d6f7;
+            }
+            
+            .menuTable {
+                width: 100%;
+            }
+            
+            .menuHeader {
+                background-color: #c7d6f7;
+                border: 1px solid black;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                text-align: left;
+                width: 100%;
+            }
+            
+            .noscriptcs {
+                background-color: #E18583;
+                border: 1px solid black;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                text-align: center;
+                width: 100%;
+            }
+
+            .indentContent {
+                padding-left: 15px;
+            }
+
+            .address {
+                padding-left: 15px;
+                font-size: 9pt;
+            }
+            
+           .wrap
+                {
+                 
+                word-wrap:break-word;
+                }
+                
+                .startlink{   color: maroon;}
+        
+               a.maroonlink:link, a.maroonlink:visited{
+                    FONT-WEIGHT: bold;
+                    FONT-SIZE: 11pt;
+                    COLOR: #820024;
+                    TEXT-DECORATION: underline;
+                  }
+
+                .link-lookalike {
+                    background: none;
+                    -moz-outline:0 none;
+                    outline:0 none;
+                    border: none;
+                    color: maroon;
+                    text-decoration: underline;
+                    cursor: pointer;
+                    FONT-WEIGHT: bold;
+                    FONT-SIZE: 11pt;
+                }
+                
+                noscript
+                    {
+                        position: fixed;
+                        top: 20px;
+                    }
+        
+        </STYLE>
+        
+        
+    </HEAD>
+    
+    <body onload="javascript:setLoadPageFocus()">
+     
+
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META http-equiv="EXPIRES" CONTENT="TUES, 31 DEC 1996 12:00:00 GMT">
+
+<html>
+  
+  <style type="text/css">
+
+<!--
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+
+}
+-->
+</style>
+
+<script src="https://www.pinellasclerk.org/aspInclude2/SpryCollapsiblePanel.js" type="text/javascript"></script>
+ <link href="https://www.pinellasclerk.org/aspInclude2/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css" />
+
+<head>
+     
+     <title>Pinellas County, FL -  Clerk of the Circuit Court</title>
+      <LINK href="https://www.pinellasclerk.org/aspInclude2/theme/master.css" rel="stylesheet" type="text/css">
+      <script language="JavaScript1.2" type="text/javascript">
+	var dhsmvMessage = "This is not a function of the Clerk's office.  We put this link for your convenience.\n Any questions, please contact the Florida Department of Highway 	and Motor Vehicles.";
+	var taxMessage = "This is not a function of the Clerk's office.  We put this link for your convenience.\n Any questions, please contact the Tax Collector's Office - Diane Nelson";
+	var tagMessage = "This is a service provided by the Tax Collector's Office, NOT the Clerk's Office. \n We have provided this link for your convenience. \n For more information, please contact the Tax Collector's Office - Diane Nelson";
+	var vitMessage = "This is a service provided by the Florida Department of Health, NOT the Clerk's Office \n We have provided this link for your convenience. \n For more information, please contact FL Dept. of Health";
+	var byeMessage = "You are now leaving the Pinellas County Clerk of the Circuit Court's website";
+	function movepic(img_name,img_src) {
+	            document.getElementById(img_name).src=img_src;
+                 }
+
+	function outsideLink(message){
+	  alert(message);
+
+	}
+    </script>
+
+  </head>
+<body>
+ 	 
+
+
+<table  border="0" cellspacing="0" cellpadding="0" align="center" width ="950">
+            <tr>
+      <td width="950" height="97" background="https://www.pinellasclerk.org/aspInclude2/images2/newwebbanner.jpg" align="right">
+<font size="3"><a href="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=index.htm"><font color="black" font face="garamond" style="text-decoration:none"><b>&nbsp; HOME &nbsp;</a>  |  <a href="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=locations.htm"><font color="black" style="text-decoration:none">&nbsp; CONTACT US &nbsp;</a></font></td></b><br>
+
+
+</tr>
+</table>
+
+
+<table  border="0" cellspacing="0" cellpadding="0" align="center" width ="850">
+
+   	  
+<tr bg color ="#820024"><td colspan="3" align="left">
+	  <table border="0" cellspacing="0" cellpadding="0" bg color ="#820024" width ="100%">
+	  <tr bg color ="#820024">
+<td class="toplinks2" align="center" width ="850">      
+
+<table width="950" face="garamond" align="center" border="0" bordercolor="#820024" cellpadding="6" cellspacing="0">
+
+
+<tr width="210">
+<td align="center" bgcolor="#820024"><b><a href="https://public.co.pinellas.fl.us/credit/accountspayable/CourtChargeIntro.jsp?cookieexists=false&x=10&y=9" target="_blank"><font color="#c5c19d">ONLINE PAYMENT CENTER</td></a> 
+<td align="center" bgcolor="#820024"><b><a href="https://public.co.pinellas.fl.us/login/loginx.jsp" target="_blank"><font color="#c5c19d">PUBLIC RECORDS</td> 
+<td align="center" bgcolor="#820024"><b><a href="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=ATTYS.htm"><font color="#c5c19d">ATTORNEYS' PAGE</td> 
+<td align="center" bgcolor="#820024"><b><a href="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=selfhelp.htm"><font color="#c5c19d">SELF HELP CENTER</td> 
+<td align="center" bgcolor="#820024"><b><a href="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=community.htm"><font color="#c5c19d">COMMUNITY NEWS</td> 
+
+
+<tr width="210">
+<td align="center" bgcolor="#820024"><b><a href="https://www.pinellascounty.org/spending-in-the-sunshine.htm" target="_blank" ><font color="#c5c19d">SPENDING IN THE SUNSHINE</td> 
+<td align="center" bgcolor="#820024"><b><a href="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=transparency2.htm"><font color="#c5c19d">FINANCIAL REPORTS</td> 
+<td align="center" bgcolor="#820024"><b><a href="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=stats.htm"><font color="#c5c19d">STATISTICS</td> 
+<td align="center" bgcolor="#820024"><b><a href="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=forms.htm"><font color="#c5c19d">GET FORMS</td> 
+<td align="center" bgcolor="#820024"><b><a href="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=videos.htm"><font color="#c5c19d">WATCH VIDEOS</td> 
+
+</tr>
+
+</table>
+
+
+	
+  
+<tr >
+	<td class="toplinks2"  align="center" width ="850"> 
+
+ </tr>
+	</table>
+
+  	    </td>
+</tr>	
+
+  
+	 <tr align="left" bgcolor="#FFFFFF"> 	
+
+	
+	<td width="2" valign="top" nowrap class="navbar">&nbsp; </td>
+		<td width="200" valign="top" nowrap bgcolor="#ffffff" class="navbar">
+<table width="239" cellpadding="4" cellspacing="1" bordercolor="ffffff">
+  <font size="2">
+  
+  </tr>
+   
+ <p><tr align="left" valign="middle" bgcolor="#FFFFFF" border="1" bordercolor="#FFFFFF" >
+	
+	<tr>  
+	<td><img src="https://www.pinellasclerk.org/aspInclude2/images/iwantto.jpg" alt="I want to..." width="130" height="25"  border="0" align="center"></a></td></tr>
+    
+  <tr bgcolor="#ffffff" >
+    <td width="223" ><span ><li><a href="http://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=services.htm"><strong><font color="#000000" style="text-decoration:none" size="2" link="000000">Find a Service</font></strong></a>
+      
+  </tr>
+  <tr bgcolor="#ffffff">
+    <td><li><a href="http://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=sitemap.htm"><strong><font style="text-decoration:none" size="2" color="#000000">Find a Department</font></strong></a></td>
+  </tr>
+  </font>
+  <tr bgcolor="#ffffff">
+    <td><li><font size="2"><a href="http://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=fees.htm"><strong><font style="text-decoration:none" color="#000000">Look up Fees & Service Charges</font></strong></a></font></td>
+  <tr bgcolor="#ffffff">
+    <td><li><font size="2"><a href ="https://public.co.pinellas.fl.us/copyrequest/index.jsp" target="_blank"><strong><font style="text-decoration:none" color="#000000">Request & Order Copies Online</strong></a></font></td>
+  </tr>
+  <tr bgcolor="#ffffff">
+    <td><li><font size="2"><a href="http://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=publicrecordsliaisonnotice.htm"><strong><font style="text-decoration:none" color="#000000">Contact Public Records Liaison</font></strong></a></font></td>
+  </tr><font size="2">
+<tr bgcolor="#ffffff" >
+    <td width="223" ><li><span ><a href="http://www.pinellasclerk.org/ASPInclude2/pdf/clerkholidays.pdf"><strong><font color="#000000" style="text-decoration:none" size="2" link="000000">Look up Holiday Hours</font></strong></a></span></td>
+  </tr>
+
+<tr><td> </td></tr>
+
+
+  <tr bgcolor="#ffffff">
+    <td>
+    
+    <a href="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=fraudalert.htm" target="_blank"><img src="https://www.pinellasclerk.org/aspInclude2/images/FA_black.jpg" alt="Fraud Alert Service" width="190" height="30"  border="2" align="absbottom"></a> </tr>
+	<tr bgcolor="#ffffff"><td><b><a href="http://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=fraudalert.htm" target="_blank"><font color="#000000"> Receive FREE alerts to possible fraud in Official Records. Sign up today!</b></a></font>
+
+<tr><td>&nbsp;
+</td></tr>
+              
+          
+   </tr>
+   
+   
+   <tr>  
+	<td><a href="https://public.co.pinellas.fl.us/clerk/emailform/CommentCard.jsp"><img src="https://www.pinellasclerk.org/aspInclude2/images/commentcard.jpg" alt="Comment Card" width="140" height="30"  border="0" align="center"></a></td></tr>
+    
+  <tr bgcolor="#ffffff" >
+    <td width="223" ><span ><a href="https://public.co.pinellas.fl.us/clerk/emailform/CommentCard.jsp"><strong><font color="#000000" style="text-decoration:none" size="2" link="000000">Give us your feedback!</font></strong></a></span></td>
+  </tr>
+  
+
+  </td>
+  
+  
+    
+    <tr bgcolor="#ffffff">
+<td><br>
+
+<a href="http://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=scamalerts.htm" target="_blank">
+<img src="https://www.pinellasclerk.org/aspInclude2/images/scamalertspic.jpg" alt="Scam Alerts" width="150" height="30"  border="0" align="absbottom"></a> </tr> 
+<tr bgcolor="#ffffff"><td><b><a href="http://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=scamalerts.htm" target="_blank"><font color="#000000">Learn about the latest scams affecting our area!</font></b></a>
+
+</td></tr>
+<tr><td>&nbsp;
+</td></tr>
+
+   <tr>  
+	<td><img src="https://www.pinellasclerk.org/aspInclude2/images/quicklinks.jpg" alt="Quick Links" width="130" height="25"  border="0" align="center"></a></td></tr>
+    
+   <tr>
+     <td>    
+     
+ <div id="CollapsiblePanel1" class="CollapsiblePanel">
+        <div class="CollapsiblePanelTab" tabindex="0">MAKE A PAYMENT</div>
+        <div class="CollapsiblePanelContent">
+        
+        <p><a href="https://www.myfloridacounty.com/child_support/index.html" target="_blank">Pay Child Support <font><img src="images/world.gif" alt="" border="0" /></font></a> <br />
+  <p><a href = "https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=payonlinetraffic.htm">Pay a Fine and/or Traffic Ticket</a> <br />
+  <p><a href="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=parking-cities.htm" target="_blank">Pay a Parking Ticket</a> <br />
+  <p><a href = "https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=recordingfeecalc.htm">Calculate Recording Services Fees</a> <br />
+  </div>
+</div>
+        
+   
+   <div id="CollapsiblePanel2" class="CollapsiblePanel1">
+      <div class="CollapsiblePanelTab" tabindex="0">JURY SERVICE</div>
+      <div class="CollapsiblePanelContent"> 
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=juryduty.htm" target="_blank">General Information</a>
+  <br />     
+  <p><a href="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=juryduty.htm#WhentoReport" target="_blank">Check Reporting Status</a>
+  <br />
+  <p><a href="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=juryduty.htm#Reprint" target="_blank">Reprint Summons</a>
+  <br />
+  <p><a href="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=juryduty.htm#Excusals" target="_blank">Excusals</a>
+   </div>
+    </div>     
+        
+    
+    <div id="CollapsiblePanel3" class="CollapsiblePanel1">
+        <div class="CollapsiblePanelTab" tabindex="0">DIVISION OF INSPECTOR GENERAL</div>
+        <div class="CollapsiblePanelContent"> 
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=audit.htm" target="_blank">General Information</a> <br />      
+  <p><a href ="https://public.co.pinellas.fl.us/clerk/emailform/ReportFraud.jsp" target="_blank">Report Fraud of County Resources</a> <br />
+  <p><a href ="https://public.co.pinellas.fl.us/clerk/emailform/ReportFraudGuard.jsp">Report Fraud in Guardianship Cases</a> <br />
+  <p><a href ="https://public.co.pinellas.fl.us/clerk/emailform/CostSavingsIdeas.jsp" target="_blank">Submit Cost Saving Ideas</a> <br />
+ 
+  </div>
+        <div id="CollapsiblePanel4" class="CollapsiblePanel1">
+          <div class="CollapsiblePanelTab" tabindex="0">PUBLIC RECORDS</div>
+            
+             <div class="CollapsiblePanelContent"> 
+   
+  <p><a href ="https://public.co.pinellas.fl.us/login/loginx.jsp" target="_blank">Child Support/Alimony Inquiries</a> <br />
+  <p><a href ="https://ccmspa.pinellascounty.org/" target="_blank">Civil & Small Claims Court Records</a> <br />
+  <p><a href ="http://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=publicrecordsliaisonnotice.htm" target="_blank">Contact Public Records Liaison</a> <br /> 
+  <p><a href="http://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=RecordsSearch.htm">County Public Records Search</a><br>
+  <p><a href ="https://ccmspa.pinellascounty.org/PublicAccess/default.aspx">Criminal Court Calendar </a> <br />
+  <p><a href ="https://ccmspa.pinellascounty.org/" target="_blank">Criminal Court Records</a> <br />     
+  <p><a href ="http://www.jud6.org/ContactInformation/JudgesPhoneNumbers.html" target="_blank">Judges' Contact Information</a> <br />            
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=landsavailable.htm" target="_blank">Lands Available for Taxes</a> <br /> 
+  <p><a href ="https://www.pinellas.realforeclose.com/index.cfm?zaction=USER&zmethod=CALENDAR" target="_blank">Mortgage Foreclosure Calendar</a> <br />  
+  <p><a href ="https://officialrecords.mypinellasclerk.org/" target="_blank">Official Records, Deeds & Mortgages</a> <br />  
+  <p><a href ="https://ccmspa.pinellascounty.org/PublicAccess/default.aspx" target="_blank">Probate Court Records</a> <br />              
+  <p><a href ="https://offender.fdle.state.fl.us/offender/Search.jsp" target="_blank">Sexual Offenders and Predators</a> <br />    
+  <p><a href ="https://www.pinellasclerk.org/tributeweb/" target="_blank">Tax Deed Sales (Search)</a> <br />    
+  <p><a href ="https://ccmspa.pinellascounty.org/PublicAccess/default.aspx" target="_blank">Traffic Citation Look-up</a> <br />    
+  
+     
+     </div>
+     </div>
+            
+                      
+            
+            <div id="CollapsiblePanel5" class="CollapsiblePanel1">
+              <div class="CollapsiblePanelTab" tabindex="0">OTHER SERVICES</div>
+              
+              <div class="CollapsiblePanelContent"> 
+              
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=bdmeet.htm" target="_blank">BCC Minutes</a> 
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=civilindex.htm">Civil, Family & Small Claims Courts </a> <br />
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=depositacct.htm" target="_blank">Deposit Accounts</a> <br />     
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=dockshome.htm" target="_blank">Dock Permits - Water Navigation</a> <br />            
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=domestic.htm" target="_blank">Domestic, Dating or Repeat Violence </a> <br /> 
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=career.htm" target="_blank">Employment</a> <br />  
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pagename=finance.htm" target="_blank">Finance Division</a> <br />  
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pagename=clerksweb.htm" target="_blank">Florida Clerks' Websites</a> <br />
+  <p><a href ="https://help.flcourts.org/download-the-app/" target="_blank">Florida Courts Help</a> <br />              
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pagename=probateindex.htm" target="_blank">Guardianships, Wills & Estates</a> <br />    
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=homesolic.htm" target="_blank">Home Solicitation Permits</a> <br />    
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=ori.htm" target="_blank">Marriage Licenses & Passports</a> <br />            
+  <p><a href ="http://www.jud6.org/ContactInformation/AlternativeDisputeResolution.html" target="_blank">Mediators </a> <br />
+  <p><a href ="https://www.pinellas.realforeclose.com/index.cfm" target="_blank">Mortgage Foreclosure Sales</a> <br /> 
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=ori.htm" target="_blank">Recording & Official Records</a> <br /> 
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=redaction.htm" target="_blank">Remove Private Information from Public Records</a> <br /> 
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=selfhelp.htm" target="_blank">Self Help Centers</a> <br /> 
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=ori.htm#tax" target="_blank">Tax Deed Information</a> <br /> 
+  <p><a href ="https://www.pinellas.realtaxdeed.com/index.cfm" target="_blank">Tax Deed Sales (Auction site)</a> <br /> 
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=traffic.htm" target="_blank">Traffic Citation & Driver License</a> <br /> 
+  <p><a href ="http://www.jud6.org/LegalCommunity/CourtReporters.html" target="_blank">Transcript Requests</a> <br /> 
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=unclaimed_funds.htm" target="_blank">Unclaimed Monies</a> <br /> 
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=VABHome.htm" target="_blank">Value Adjustment Board</a> <br /> 
+  <p><a href ="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=volunteer.htm" target="_blank">Volunteer with the Clerk</a> <br /> 
+            
+        </div>
+   </div>
+  
+  
+  
+  
+  
+    <div id="CollapsiblePanel6" class="CollapsiblePanel1">
+      <div class="CollapsiblePanelTab" tabindex="0"><a href="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=agencies.htm">OUTSIDE AGENCY LINKS</a></div>
+      
+</div>
+    </div>
+    <p>&nbsp;</p>
+  </div>
+</div>
+
+  
+
+	     <p>&nbsp;</p></td>
+	   </tr>
+    
+  <script type="text/javascript">
+<!--
+var CollapsiblePanel1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1", {contentIsOpen:false});
+//-->
+  </script>
+  <script type="text/javascript">
+<!--
+var CollapsiblePanel3 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel3", {contentIsOpen:false});
+//-->
+  </script>
+  <script type="text/javascript">
+<!--
+var CollapsiblePanel2 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel2", {contentIsOpen:false});
+//-->
+  </script>
+
+<script type="text/javascript">
+<!--
+var CollapsiblePanel4 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel4", {contentIsOpen:false});
+var CollapsiblePanel5 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel5", {contentIsOpen:false});
+var CollapsiblePanel6 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel6", {contentIsOpen:false});
+
+//-->
+</script>
+
+
+</table>
+    
+    
+
+
+
+<p><span class="SideMenuHeading"><a href="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=agencies.htm"  target="_blank"></a></span></br>	 
+  </td>
+  
+  
+
+
+<td valign="top" align="right" width="708" >
+<table border="0" width="708">
+		          <tr><td width="30" NOWRAP>&nbsp; </td>
+			<td width="100%">
+			<p>&nbsp;</p>
+              
+
+</body>
+        <SCRIPT LANGUAGE="JavaScript1.2" type="text/javascript">
+            // Test to see if cookies turned on.  If not, redirect to an error page
+            document.cookie = "TEST=TEST"
+            var cookieStr = getCookieData("TEST")
+            
+            if (cookieStr != "TEST") {
+                location.href = "/login/cookies_disabled.html"
+            }
+            
+            if ('' != "") {
+                location.href = "/TermNameAuto.jsp";
+            }
+        </SCRIPT>
+   	  
+        <noscript>
+        <div class="noscriptcs">
+           <p> This site requires Javascript. Please enable Javascript in your browser for this site.</p>
+        </div
+           HEAD>
+        </noscript>
+            
+        <table border=0 cellspacing=0 align="center">
+            <tr>    
+                <td class="pagemainouter" valign="top" align="center">
+                
+                    <br>
+                    
+                    <SCRIPT language="JavaScript1.2" type="text/javascript">
+                        DisplayTitle("User Login");
+                    </SCRIPT>
+                    
+                    <TABLE border=0 cellspacing=0 align="center">
+                        <TR> 
+                            
+                            <TD class="results-smallnote">
+                                <a href="/login/support.jsp">Support Center</a>&nbsp;&nbsp;&nbsp;
+                            </TD>
+                           
+                            
+                        </TR>
+                    </TABLE>
+                    
+                    <br>
+                    
+                
+                    
+                    <table class="loginTable" cellSpacing=0 cellPadding=0 align="center" width=650>
+                        <tr>
+                            <td class="menubody">
+                 
+                                <div>
+                                    <font color=red><b>Normal Scheduled Maintenance Window:</b> Access to records may be unavailable on Sundays during the hours of 6 PM to 10 PM for regularly scheduled enterprise maintenance.
+                                                      
+                                    </font>
+                                </div>
+                                <br>
+                                <div>
+                                                           
+                                                                    
+                                         
+                                </div>
+                                <br>
+                                <div class="wrap">
+                                                The Public Records User Login page has recently undergone several modifications. 
+                                                If you require support with a Court Records View account, please contact <a href="mailto:publicview@mypinellasclerk.org">publicview@mypinellasclerk.org</a> . If you require support for an Official Records Subscriber Account, please contact Recording Services at <a href="mailto:recording@mypinellasclerk.org">recording@mypinellasclerk.org</a>  or call 727-464-3223.  
+                                                  
+                                </div> 
+                                <br>
+                                
+                          
+                              
+                            </td>
+                        </tr>
+                    </table>
+                    
+                
+                 
+                            
+                                                        
+                    
+              
+                          
+                      
+                    
+                
+                
+                    <table class="loginTable" cellSpacing=0 cellPadding=0 align="center" width=650>                                         
+                        <tr>
+                            <td valign="top" width=650> 
+                                        <tr cellSpacing="3" cellPadding="3"  >
+                                            <td class="menuHeader"   width=650>
+                                                <strong><font size=2>&nbsp; Court Records View Links </font></strong>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td  colspan="3" align="left">
+                                               
+                                                
+                                                <br>
+                                                <div  >
+                                                        
+                                                     <a   class="maroonlink" HREF="https://ccmspa.pinellascounty.org/PublicAccess/default.aspx" TARGET="_blank">Court Records Public View </a> &nbsp;&nbsp;(No registration required) 
+                                                     <br> 
+                                                     <a class="maroonlink"  HREF="https://ccmspa.pinellascounty.org/attorneyaccess/default.aspx" TARGET="_blank">Court Records Attorney Login </a> 
+                                                     <br>   
+                                                     
+                                                    
+                                                     <a class="maroonlink"  HREF="https://ccmspa.pinellascounty.org/RegUserAccess/default.aspx" TARGET="_blank">Court Records Registered User Login </a>  &nbsp;&nbsp;(Enhanced viewing capabilities for Family and Probate cases only)
+                                                     <br> 
+                                                             
+                                                    
+                                                </div>
+                 
+                            </td>
+                        </tr> 
+                    
+                 
+              
+                     
+                                            </td>
+                                        
+                                                
+                                    
+                                                        
+                                     
+                        </tr> 
+                    </table>
+                     
+                    <table class="loginTable" cellSpacing=0 cellPadding=0 align="center" width=650>   
+                       <tr cellSpacing="3" cellPadding="3"  >
+                            <td class="menuHeader"   width=650>
+                                <div>
+                                   <strong><font size=2>Official Records Links </font></strong>                                                                   
+                                    &nbsp;(Deeds, Mortgages, Marriage Licenses,  etc.)
+                                 </div>
+                            </td>                                    
+                                         
+                        </tr>
+                        <br>
+                        
+                        <tr>
+                            <td valign="top" width=650>  
+                                        <table cellSpacing=0 cellPadding=0> 
+                                            <tr>
+                                                <td class="menubody" align="left">
+                                                   
+                                                   <div>
+                                                
+                                                    <br>
+                                                   <a class="maroonlink" HREF="https://officialrecords.mypinellasclerk.org" TARGET="_blank">
+                                                         Official Records Search 
+                                                   </a> 
+                                                      &nbsp;<br>Search by Book/Page, Date, Instrument Number, Instrument Type, Marriage Licenses (November 2003 to Current) or Name
+                                                     <br> 
+                                                     <a class="maroonlink"  href="/mfilm/faces/index.jspx" TARGET="_blank">Official Records Microfilm Index 1957-1990</A>
+                                                     <br> 
+                                                 
+                                                     <a class="maroonlink"  href="/pbinquiry/faces/index.jspx" TARGET="_blank">Official Records Probate Inquiry 1973-1987</A>
+                                                     <br> 
+                                                     <a class="maroonlink"  href="https://www.mypinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=dpr.htm" TARGET="_blank">Domestic Partnership Registry</A>
+                                                     <br> 
+                                                    </div>
+                                                </td>
+                                            </tr> 
+                                        </table> 
+                            </td> 
+                           
+                        </tr> 
+                    </table>  
+                    
+                    <table class="loginTable2" cellSpacing=0 cellPadding=0 align="center" width=650>   
+                       <tr cellSpacing="3" cellPadding="3"  >
+                            <td class="menuHeader"   width=650>
+                                <div>
+                                   <strong><font size=2>Other Records Links </font></strong>     
+                                 </div>
+                            </td>                                    
+                                         
+                        </tr>
+                        <br>
+                        
+                        <tr>
+                            <td valign="top" width=650>  
+                                        <table cellSpacing=0 cellPadding=0> 
+                                            <tr>
+                                                <td class="menubody" align="left">
+                                                   
+                                                   <div>
+                                                        <a class="maroonlink"  href="/clerk/jurymgmt/pub/excuse/GCB1WSInput.jsp" target="_blank">Jury Duty</A><br>
+                                                        <a class="maroonlink"  href="https://www.pinellas.realforeclose.com/index.cfm?zaction=USER&zmethod=CALENDAR" target="_blank">Mortgage Foreclosure Calendar</A><br>
+                                                        <a class="maroonlink"  href="https://www.mypinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=payonlinetraffic.htm" target="_blank">Pay Citations/Fines</A> <br>
+                                                        <a class="maroonlink"  href="https://www.pcpao.org/" TARGET="_blank">Property Appraiser Records</A>   <br>                                                       
+                                                        <a class="maroonlink"  href="https://pinellas.county-taxes.com" TARGET="_blank">Tax Collector Records</A><br>
+                                                        <a class="maroonlink"  href="https://www.mypinellasclerk.org/tributeweb2" TARGET="_blank">Tribute Tax Deed Search</A><BR>Browse certificate listings, display status reports, and lands available for taxes
+                                                     <br>  
+                                                 
+                                                    </div>
+                                                </td>
+                                            </tr> 
+                                        </table> 
+                            </td> 
+                           
+                        </tr> 
+                    </table>  
+                    
+                    <table class="loginTable" cellSpacing=0 cellPadding=0 align="center" width=650>   
+                       <tr cellSpacing="3" cellPadding="3"  >
+                            <td class="menuHeader"   width=650>
+                                <div>
+                                   <strong><font size=2> Records That Require Login </font></strong>                                                                   
+                                    &nbsp;(Child Support,Marriage Licenses (Prior to November 2003) etc.)
+                                 </div>
+                            </td>                                    
+                                         
+                        </tr>
+                        <br>
+                        
+                        <tr>
+                            <td valign="top" width=650> 
+                                <br>
+                                
+                                    
+                                    <form name="LoginForm2" method="POST" action="/captcha/captcha.jsp?successPage=/login/captcha_success.jsp" >
+                                        <table cellSpacing=0 cellPadding=0> 
+                                            <tr>
+                                                <td class="menubody" align="left">
+                                                   
+                                                   <div>
+                                                        <a class="maroonlink" href="javascript: submitform()"> Other Records Public View</a> &nbsp; (No registration required) 
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <br>
+                                                        <a class="maroonlink" href="#" onclick="OpenCloseToggle('orlogin');" title="Click to expand and access Official Records">
+                                                            Other Records - Internal Login                                                        
+                                                        </a>
+                                                     
+                                                    </div>
+                                                </td>
+                                            </tr> 
+                                        </table>
+                                
+                                        <input type="hidden" name="username" ID="username" value="1WEBUSER">
+                                        <input type="hidden" name="password" ID="password" value="FREEACCNT">
+                                        <input type="hidden" name="redirect" value="">
+                                    </form>
+                                
+                                
+                                <div id="orlogin">
+                                    <form name="LoginForm" method="POST" action="/servlet/com.pinellas.login.Loginx" onSubmit="return CheckFields()">
+                                        <table cellSpacing=3 cellPadding=3>       
+                                            <tr>
+                                                <td class="menubody" align="center">
+                                                    <b>Username:</b> &nbsp;<INPUT size="20" type="text" maxlength="30" name="username" tabindex="1">&nbsp;&nbsp;<br><br>
+                                                    <b>Password:</b> <INPUT size="20" type="password" maxlength="30" name="password" tabindex="2"><br>
+                                                    <INPUT class="submit" type="submit" value="Login" title="Subscriber Login" tabindex="3">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                </td>
+                                            </tr>
+                                        </table>                                     
+                                    </form>
+                                </div>           
+                            </td> 
+                           
+                        </tr> 
+                    </table>
+              
+                 
+                         
+                    
+                         
+                    <div class="pagemainbody">
+                        <br>
+    
+
+                    </div>
+
+                    <table cellSpacing=1 cellPadding=1 width="650" border=0>
+
+                                       
+                                    
+                        <!-- 2 Begin -->
+          
+            
+                        <!-- 3 Begin -->
+                                    
+                        <!-- 4 Begin -->
+
+                                        
+                        <!-- 5 Begin -->
+                        <tr>
+                            <td class="menuHeader" width="650" align="left">
+                                <div>
+                                    <a href="#" onclick="OpenCloseToggle('divlegal');" title="Click to expand and see Legal Information">
+                                    <STRONG><font color=maroon size=2>Legal Information</font></STRONG>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="menubody" width="650" align="left">
+                                <div id="divlegal">
+                                        <b>NOTICE: </b> The following information is provided in compliance with <A href="http://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0119/0119.html" TARGET="_blank">Fla. Stat. 119.12: </A> <br><br>
+                                        <b>CUSTODIAN OF PUBLIC RECORDS CONTACT INFORMATION </b> <br><br>
+
+                                        Pinellas County Clerk of the Circuit Court and Comptroller <br>
+                                        Attn: Public Records Liaison <br>
+                                        315 Court Street, Room 400 <br>
+                                        Clearwater, FL 33756 <br> <br>
+                                        <b>Phone:</b> (727) 464-3341 <br> 
+                                        <b>Email:</b> <A href="mailto:clerkinfo@mypinellasclerk.org">clerkinfo@mypinellasclerk.org</A>   <br><br>
+                                        The Pinellas County Public Records website was established to provide access to the public records. The rights to view this information are in compliance with Florida statutes.<br><br>
+                                        Please review our <A href="https://www.pinellascounty.org/privacy.htm" TARGET="_blank">Privacy Statement</A> and <A href="http://www.pinellascounty.org/disclaimer.htm" TARGET="_blank">Disclaimer</A> for more information.  
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <script language="JavaScript1.2" type="text/javascript">
+            document.forms[0].elements[0].focus();
+            document.forms[0].elements[0].select();
+        </script>
+ 
+    		 <LINK href="https://www.pinellasclerk.org/aspInclude2/theme/master.css" rel="stylesheet" type="text/css">
+       		
+            <br /><br />	
+            <tr bgcolor="#ffe1bb">    
+		<td class="footer" align="center" colspan="3" ></td>
+	  </tr>
+	   <tr bgcolor="#ffe1bb">    
+		<td align="center" colspan="3" >
+			
+			
+		</p>
+		
+         
+          
+		  <table width="" border="0" cellspacing="3" cellpadding="2">
+		             <tr><td>
+          </tr></td>
+                     
+                     <tr>
+		      <td width="300" rowspan="15"><a href="http://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=publicrecordsliaisonnotice.htm" target="_blank"><img src="https://www.pinellasclerk.org/aspInclude2/images/publicrecordsliaisonwebimage.jpg" width="268" height="370" ALT="Clerk's Commitment: Access to Public Records"ALIGN=left></a></td>
+		      <td width="300"><div align="left"><font size="3"><b>CONTACT US</b></font></div></td>
+		      <td width="300"><font size="3"><b>USING THIS WEBSITE</b></font></td>
+	        </tr>
+		    <tr>
+		      <td><div align="left"><b>Phone:</b></div></td>
+		      <td><a href="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=services.htm" target="_blank">Sitemap</a></td>
+	        </tr>
+		    <tr>
+		      <td><div align="left">(727) 464-7000</div></td>
+		      <td><a href="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=publicrecordsliaisonnotice.htm" target="_blank">Public Records Liaison</a></td>
+	        </tr>
+		    <tr>
+		      <td><div align="left">&nbsp;</div></td>
+		      <td><a href="http://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=emailusenotice.htm" target="_blank">Email Use Notice</a>/ <a href=
+              "http://www.pinellascounty.org/disclaimer.htm" target="_blank">Liability Disclaimer</a></td>
+	        </tr>
+		    <tr>
+		      <td><div align="left"><b>Hours of Operation:</b></div></td>
+		      <td><a href="http://www.jud6.org/GeneralPublic/ADAAssistance.html" target="_blank">ADA Requests</a></td>
+	        </tr>
+		    <tr>
+		      <td><div align="left">8:30 a.m. - 4:30 p.m.</div></td>
+		      <td><a href="https://www.pinellasclerk.org/aspInclude2/ASPInclude.asp?pageName=duties.htm" target="_blank">About the Clerk</a></td>
+	        </tr>
+		    <tr>
+		      <td><div align="left">Monday - Friday <em><a href="https://www.pinellasclerk.org/ASPInclude2/pdf/clerkholidays.pdf" target="_blank">(excluding Holidays)</a></em></div></td>
+		      <td>&nbsp;</td>
+	        </tr>
+		    <tr>
+		      <td><div align="left">&nbsp;</div></td>
+		      <td><font size="3"><b><a href="https://public.co.pinellas.fl.us/clerk/emailform/CommentCard.jsp" target="_blank">COMMENT CARD</a></b></font> <em>(give us your feedback!)</em></td>
+	        </tr>
+		    <tr>
+		      <td><div align="left"><b>Clerk Webmaster:</b></div></td>
+		      <td>&nbsp;</td>
+	        </tr>
+		    <tr>
+		      <td><div align="left"><a href="mailto:clerkwebmaster@mypinellasclerk.org">clerkwebmaster@mypinellasclerk.org</a></div></td>
+		      <td><font size="3"><b>CONNECT WITH US</b></font></td>
+	        </tr>
+		    <tr>
+		      <td><div align="left">&nbsp;</div></td>
+		      <td>
+              <a href="https://www.facebook.com/PinellasClerk" target="_blank"><img src="https://www.pinellasclerk.org/aspInclude2/images/facebook_icon.jpg" alt="Like Us On Facebook!" width="23" height="23" border="0" align="absbottom"></a> &nbsp;
+              <a href="https://twitter.com/#!/PinellasClerk" target="_blank"><img src="https://www.pinellasclerk.org/aspInclude2/images/twitter_icon.jpg" alt="Follow Us On Twitter!" width="23" height="23" border="0" align="absbottom"></a> &nbsp;
+              <a href="https://www.youtube.com/user/PinellasCountyClerk" target="_blank"><img src="https://www.pinellasclerk.org/aspInclude2/images/youtube_icon.jpg" alt="Subscribe to our YouTube Channel!" width="23" height="23" border="0" align="absbottom"></a>&nbsp;
+              <a href="https://www.flickr.com/photos/pinellasclerk/" target="_blank"><img src="https://www.pinellasclerk.org/aspInclude2/images/flickr_icon.jpg" alt="Like our Flickr page" width="23" height="23" border="0" align="absbottom"></a>&nbsp;
+              </td>
+	        </tr>
+		    <tr>
+		      <td><div align="left"><b>General Inquiries:</b></div></td>
+		      <td>&nbsp;</td></tr>
+	        <tr>
+		      <td><div align="left"><a href="mailto:clerkinfo@mypinellasclerk.org">clerkinfo@mypinellasclerk.org</a></div></td>
+		      <td><div id="google_translate_element" ></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en'
+  }, 'google_translate_element');
+}
+</script></td><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></td>
+	        </tr>
+		    </table>
+	     <p>&nbsp;</p></td>
+	   </tr>
+    
+    </body>
+</html>

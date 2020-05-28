@@ -1,0 +1,211 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//en" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>California Courts - Appellate Court Case Information</title>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="Thu, 1 Jan 1970 01:00:00 GMT">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- jQuery -->
+<!--<script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>-->
+<script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+<script src="/includes/js/jquery-migrate-1.4.1.js"></script>
+<script src="/includes/js/modernizr.js"></script>
+<script src="/includes/js/bootstrap.js"></script>
+<script src="/includes/js/bootstrap-hover-dropdown.js"></script>
+<script src="/includes/js/bootstrap-datepicker.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.js"></script>
+<script src="/includes/js/custom.js?v2"></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='/includes/js/html5shiv.min.js'></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type='text/javascript' src='/includes/js/respond.min.js'></script>
+<![endif]-->
+<!-- CSS -->
+<!-- Required CSS Files - Responsive -->
+<link rel="stylesheet" type="text/css" href="/includes/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="/includes/css/jquery.validate.css" />
+<link rel="stylesheet" type="text/css" href="/includes/css/bootstrap-datepicker.css" />
+<link rel="stylesheet" type="text/css" href="/includes/css/custom-bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/includes/css/default.css" />
+<link rel="stylesheet" type="text/css" href="/includes/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/includes/css/media.css" />
+</head>
+<body>
+<div id="pageWrapper" class="row shadow container">
+<div class="col-sm-12">
+<div id="headerWrap" class="row">
+<nav class="navbar navbar-default" role="navigation">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+</nav>
+</div>
+<div id="header" class="logo row">
+<div class="col-sm-7">
+<p class="fontH1">Appellate Courts Case Information</p>
+</div>
+<div class="hidden-xs col-sm-5">
+<img class="pull-right" src="/images/jcc-logo.png" alt="Courts: The Judicial Branch of California" />
+</div>
+</div>
+<div class="fullLine row"><!-- Full Line --></div>
+<div id="mainContent" class="row">
+<div id="menuColumn" class="col-sm-3">
+<div class="row">
+<div class="col-sm-12">
+<nav class="navbar navbar-default" role="navigation">
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+<ul class="nav navbar-nav">
+<li>Welcome</li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div id="mainColumn" class="col-sm-9">
+<div id="msgBox" class="bold RedFont textLeft noDisplay"></div>
+<div class="row">
+<div id="centerColumn" class="col-sm-12">
+<div class="row">
+<div id="innerCenter" class="col-xs-12 col-sm-8">
+<p><strong>Welcome to the California Appellate Courts Case Information System.</strong></p>
+<span class="hidden-xs">
+<p>This system provides case information for California Supreme Court and Court of Appeal cases. Case information is updated once an hour throughout the business day.</p>
+<p>Searches for Supreme Court and Court of Appeal case information can be initiated by supplying trial court, Court of Appeal, or Supreme Court case number or by supplying case caption, attorney, or party information.</p>
+<p>Searches for Court of Appeal cases can also be initiated by supplying court calendar date.</p>
+<p>Notifications by e-mail of specific case activity can be set up by providing a case number and e-mail address.</p>
+<p><strong>Important Information</strong></p>
+<p>Please review our Privacy Policy concerning information exchanged through this facility.</p>
+</span>
+</div>
+<div id="rightColumn" class="col-xs-12 col-sm-4">
+<div class="row">
+<div class="col-sm-12">
+<div class="grayModule">
+<div class="inner">
+<form name="searchForm" id="searchForm" method="post">
+<p><strong>1) Please select</strong></p>
+<p><input type="radio" name="selectType" id="selectTypeSC" value="SC" checked> <strong>Supreme Court</strong></p>
+<p class="textCenter"><strong>OR</strong></p>
+<p><input type="radio" name="selectType" id="selectTypeAD" value="AD"><strong>Appellate District</strong></p>
+<p>
+<select name="District" id="DistrictSelector" size=8>
+<option value="1">First Appellate District</option>
+<option value="2">Second Appellate District</option>
+<option value="3">Third Appellate District</option>
+<option value="41">Fourth Appellate District Div 1</option>
+<option value="42">Fourth Appellate District Div 2</option>
+<option value="43">Fourth Appellate District Div 3</option>
+<option value="5">Fifth Appellate District</option>
+<option value="6">Sixth Appellate District</option>
+</select>
+</p>
+<p class="textCenter"><strong>find district by County</strong><br />
+<select id="CountySelector" name="County">
+<option>select County below</option>
+<option value="1">Alameda</option>
+<option value="3">Alpine</option>
+<option value="3">Amador</option>
+<option value="3">Butte</option>
+<option value="3">Calaveras</option>
+<option value="3">Colusa</option>
+<option value="1">Contra Costa</option>
+<option value="1">Del Norte</option>
+<option value="3">El Dorado</option>
+<option value="5">Fresno</option>
+<option value="3">Glenn</option>
+<option value="1">Humboldt</option>
+<option value="41">Imperial</option>
+<option value="42">Inyo</option>
+<option value="5">Kern</option>
+<option value="5">Kings</option>
+<option value="1">Lake</option>
+<option value="3">Lassen</option>
+<option value="2">Los Angeles</option>
+<option value="5">Madera</option>
+<option value="1">Marin</option>
+<option value="5">Mariposa</option>
+<option value="1">Mendocino</option>
+<option value="5">Merced</option>
+<option value="3">Modoc</option>
+<option value="3">Mono</option>
+<option value="6">Monterey</option>
+<option value="1">Napa</option>
+<option value="3">Nevada</option>
+<option value="43">Orange</option>
+<option value="3">Placer</option>
+<option value="3">Plumas</option>
+<option value="42">Riverside</option>
+<option value="3">Sacramento</option>
+<option value="42">San Bernardino</option>
+<option value="6">San Benito</option>
+<option value="41">San Diego</option>
+<option value="1">San Francisco</option>
+<option value="3">San Joaquin</option>
+<option value="2">San Luis Obispo</option>
+<option value="1">San Mateo</option>
+<option value="2">Santa Barbara</option>
+<option value="6">Santa Clara</option>
+<option value="6">Santa Cruz</option>
+<option value="3">Shasta</option>
+<option value="3">Sierra</option>
+<option value="3">Siskiyou</option>
+<option value="1">Solano</option>
+<option value="1">Sonoma</option>
+<option value="5">Stanislaus</option>
+<option value="3">Sutter</option>
+<option value="3">Tehama</option>
+<option value="3">Trinity</option>
+<option value="5">Tulare</option>
+<option value="5">Tuolumne</option>
+<option value="2">Ventura</option>
+<option value="3">Yolo</option>
+<option value="3">Yuba</option>
+</select>
+</p>
+<p><strong>2) Select a function</strong></p>
+<p class="textCenter">
+<input class="btn btn-primary" type="button" name="Search" id="Search" value="Search">
+<input class="btn btn-primary" type="button" name="Email" id="Email" value="E-mail">
+<br />
+<input class="btn btn-primary" type="button" name="Calendar" id="Calendar" value="Calendar">
+<input class="btn btn-primary" type="button" name="Help" id="Help" value="Help">
+</p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footerWrap" class="row">
+<div class="col-sm-12">
+<div class="col-sm-3 pull-right">&copy; 2020 Judicial Council of California</div>
+<div class="col-sm-9">
+<a href="https://www.courts.ca.gov/careers.htm">Careers</a>
+| <a href="https://www.courts.ca.gov/9149.htm">Contact Us</a>
+| <a href="https://www.courts.ca.gov/11524.htm">Accessibility</a>
+| <a href="https://www.courts.ca.gov/publicrecords.htm">Public Access to Records</a>
+| <a href="https://www.courts.ca.gov/11529.htm">Terms of Use</a>
+| <a href="https://www.courts.ca.gov/11530.htm">Privacy</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>

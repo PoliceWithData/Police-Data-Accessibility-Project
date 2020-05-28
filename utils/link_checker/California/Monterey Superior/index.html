@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html ng-app="mcsPortal">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8,IE=EmulateIE9,IE=EmulateIE10,chrome=1" />
+    <meta name="description" content="Superior Court of California, County of Monterey Case Portal">
+    <base href="/">
+    <title>Public Portal - Superior Court of Monterey, County of Monterey</title>
+    <link href="/Content/dist/vendor?v=79yfPzoBLHqURO0fu9T9NVHsaGhLzYovkhtwba6lt8M1" rel="stylesheet"/>
+
+    <link href="/Content/dist/css?v=SEr_NlNySL6gFzm6qARTmV3K6a6yL4hQieGSWVLN6RQ1" rel="stylesheet"/>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=kP3OdaMgMO">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=kP3OdaMgMO">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=kP3OdaMgMO">
+    <link rel="manifest" href="/site.webmanifest?v=kP3OdaMgMO">
+    <link rel="shortcut icon" href="/favicon.ico?v=kP3OdaMgMO">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="/Scripts/tools/web/viewer.css?_v=442aa2f4546139ae89656355ec9705d0" />
+    <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="/bundles/shiv?v=wvQ7fJRdXCR9VmAxttVgIoUeO3SDSDwOwkRUrvSLV3s1"></script>
+
+    <![endif]-->
+    <script src="/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
+
+</head>
+<body ng-cloak>
+
+    <!-- Navigation Bar-->
+    <header id="topnav" data-ng-init="vm.init()" ng-controller="navigationController as vm" ng-cloak>
+        <div class="topbar-main">
+            <div class="container">
+                <!-- Logo container-->
+                <div class="logo">
+                    <a ui-sref="home" class="logo">
+                        <img src="/Content/images/logo.png?_v=1484768637158" class="img-responsive hidden-xs hidden-sm" alt="">
+                        <img src="/Content/images/logo.png?_v=1484768637158" class="img-responsive hidden-md hidden-lg" style="height: 60px;" alt="">
+                    </a>
+                </div>
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End topbar -->
+        <!-- Navbar Start -->
+        <div class="navbar-custom"  data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+            <div class="container">
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <li class="has-submenu" ui-sref-active="active">
+                            <a ui-sref="home" class="close-nav"><i class="md md-home"></i>HOME</a>
+                        </li>
+                        <li class="has-submenu" ui-sref-active="active">
+                            <a href="#" aria-haspopup="true"><i class="md md-search"></i>SEARCH</a>
+                            <ul class="submenu">
+                                <li><a ui-sref="search">CASE INFORMATION</a></li>
+                                <li><a ui-sref="probate-notes">PROBATE NOTES</a></li>
+                                <li ng-if="vm.isLea()"><a ui-sref="warrants">WARRANTS</a></li>
+                                <li ng-if="vm.payload.role.indexOf('PAS')>-1">
+                                    <a ui-sref="attorney-search">My Attorney Cases</a>
+                                </li>
+                                <li ng-if="vm.isLea()">
+                                    <a ui-sref="advanced-search">ADVANCED SEARCH</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li ng-show="!vm.profile.loggedIn" class="has-submenu" ui-sref-active="active">
+                            <a ui-sref="traffic" class="close-nav"><i class="md md-directions-car"></i>PAY TICKET</a>
+                        </li>
+
+                        <li class="has-submenu" ui-sref-active="active">
+                            <a href="#" aria-haspopup="true"><i class="md md-event"></i>CALENDARS</a>
+                            <ul class="submenu">
+                                <li><a ui-sref="final-daily">Final Daily Calendars</a></li>
+                                <li><a ui-sref="law-motion">Law & Motion Calendars</a></li>
+                                <li ng-if="vm.profile.loggedIn">
+                                    <a href="https://www.justicepartners.monterey.courts.ca.gov/Calendars/09_Alpha_Split.pdf" target="_blank">
+                                        Alpha Split <i class="fa fa-file-pdf-o"></i>
+                                    </a>
+                                </li>
+                                <li ng-if="vm.isPublicDefender()">
+                                    <a ui-sref="felony-arraignment">Arraignment Calendar</a>
+                                </li>
+                                <li ng-if="vm.isLea()">
+                                    <a ui-sref="alpha-sorted">Alpha Sorted Daily Calendar</a>
+                                </li>
+                                <li ng-if="vm.isLea()">
+                                    <a ui-sref="preliminary-calendar">Preliminary Calendar</a>
+                                </li>
+                                <li ng-if="vm.isSuperAdmin()">
+                                    <a ui-sref="remote-hearing">Remote Hearings Calendar</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li ng-show="!vm.profile.loggedIn" ui-sref-active="active">
+                            <a ui-sref="jury" class="close-nav">
+                                <i class="md md-people"></i>JURY DUTY
+                            </a>
+                        </li>
+
+                        
+                        <li ng-show="vm.isSuperAdmin()" class="has-submenu" ui-sref-active="active">
+                            <a href="#" aria-haspopup="true"><i class="md md-account-balance"></i> COURTS</a>
+                            <ul class="submenu">
+                                <li><a ui-sref="call-forwarding">Search Warrant Forwarding</a></li>
+                                <li><a ui-sref="admin-stats">Portal Stats</a></li>
+                            </ul>
+                        </li>
+
+                        <li ng-show="vm.profile.loggedIn && vm.payload.jpawrole == 'ADMIN'" class="has-submenu" ui-sref-active="active">
+                            <a href="#" aria-haspopup="true"><i class="md md-account-box"></i> ADMIN</a>
+                            <ul class="submenu">
+                                <li><a ng-if="vm.payload.jpawtype == 'IT'" ui-sref="admin-manage-agencies">MANAGE AGENCIES</a></li>
+                                <li><a ui-sref="admin-manage-accounts">MANAGE ACCOUNTS</a></li>
+                                <li><a ui-sref="admin-manage-user-authorization">MANAGE USER AUTH</a></li>
+                            </ul>
+                        </li>
+
+                        <li ng-show="!vm.profile.loggedIn" class="has-submenu pull-right" ui-sref-active="active">
+                            <a ui-sref="login" class="close-nav"><i class="md md-person"></i>LOGIN </a>
+                        </li>
+                        <li ng-show="vm.profile.loggedIn" class="has-submenu pull-right" ui-sref-active="active">
+                            <a ui-sref="logoff" class="close-nav"><i class="md md-input"></i>LOGOFF</a>
+                        </li>
+                        <li ng-show="vm.profile.loggedIn" class="has-submenu pull-right" ui-sref-active="active">
+                            <a ui-sref="dashboard" class="close-nav"><i class="md md-person"></i> {{vm.currentUser.firstName + ' ' + vm.currentUser.lastName}}</a>
+                        </li>
+
+                    </ul>
+                    <!-- End navigation menu -->
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <!-- End Navigation Bar-->
+    <!-- =======================
+             ===== START PAGE ======
+             ======================= -->
+
+    <div class="wrapper">
+        <div class="container">
+
+            
+<div ui-view autoscroll="true"></div>
+
+
+            <!-- Footer -->
+            <footer class="footer text-right hidden-xs">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            2020 &copy; Superior Court of California, County of Monterey <br />
+                            Build Information: Production - 1.1.996 <br />
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6" style="text-align: right;">
+                            <a href="https://www.monterey.courts.ca.gov/disclaimer" target="_blank">Disclaimer</a> |
+                            <a href="https://www.monterey.courts.ca.gov/terms-of-use" target="_blank">Terms of Use</a> |
+                            <a href="https://www.monterey.courts.ca.gov/privacy-policy" target="_blank">Privacy Policy</a>
+                        </div>
+                        <div class="col-xs-12">             
+                            Website is best viewed using the latest version of Microsoft Internet Explorer*, Mozilla Firefox, or Google Chrome for the PC (running Windows 7 or 10).
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End Footer -->
+
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- End wrapper -->
+
+    <script src="/bundles/dist/vendor?v=LJwKFpO_cFvjvo2PWfSQCsz4uWqw8fLtGPiSNi4Kmi41"></script>
+
+    <script src="/Scripts/tools/web/pdf.js?_v=9710362adf3e7e6523df2a06feb6ba35"></script>
+    <script src="/Scripts/libs/print.min.js?_v=9710362adf3e7e6523df2a06feb6ba35"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="/bundles/dist/app?v=p5-Ra48pxInyJbY7lquHQ2SyMsw7-jwrU2oMpXCS87I1"></script>
+
+    <!-- inject:templates:js -->
+    <script src="/Scripts/templates.js"></script>
+    <!-- endinject -->
+
+</body>
+</html>

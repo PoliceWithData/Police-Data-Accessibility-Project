@@ -1,0 +1,658 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head id="Head1"><title>
+	Montgomery County PRO V2
+</title>
+    <script language="javascript" type="text/javascript" src="JS/test.aspx"></script>
+
+    <script language="javascript" type="text/javascript" src="JS/jsLoader.js"></script>
+
+    <script language="javascript" type="text/javascript" src="JS/ajax.js"></script>
+    
+    <script language="javascript" type="text/javascript" src="JS/jquery-1.5.js"></script>
+
+    <script language="javascript" type="text/javascript" src="JS/splash.js"></script>
+    
+
+    <script language="javascript" type="text/javascript">
+        var cal_obj2 = null;
+        var cal_obj3 = null;
+        var cal_obj4 = null;
+        var cal_obj5 = null;
+        var cal_obj6 = null;
+        var cal_obj7 = null;
+        var format = '%m/%d/%Y';
+        // show calendar
+
+function AjaxCall(GUID, applicationPath, handler) {
+    if (document.getElementById("basicCaseNumber").style.display == 'block') {
+        document.getElementById("basicCaseNumber").focus();
+    }
+    //alert(arguments[3]);
+    var hostName = window.location.protocol + "//" + window.location.host;
+    var url = hostName + applicationPath;
+  
+    xmlHttp = GetXmlHttpObject();
+    xmlHttp.onreadystatechange =
+        function () {
+            if (xmlHttp.readyState == 4) 
+            {
+                if (xmlHttp.status == 200 && xmlHttp.responseText != '') 
+                {
+                    doFunc(xmlHttp, handler);
+                }
+                else if (xmlHttp.status == 500) 
+                {
+                    doFunc(xmlHttp, handler);
+                }
+                else 
+                {
+                    if (handler != 'none')
+                    {
+                         document.getElementById(handler).innerHTML = "No Data Found";
+                    }
+                }
+            }
+            else {
+                if (handler != 'none') 
+                {
+                    if (!document.getElementById("loading1")) {
+                        var oNewElement = document.createElement("DIV");
+                        var innerHTML = "";
+                        oNewElement.style.position = "absolute";
+                        oNewElement.style.height = "50px";
+                        oNewElement.style.width = "500px";
+                        oNewElement.style.color = "#000000";
+                        innerHTML += "<table style='text-align:center;width:80%;background-color:#ffffff;border:#164891 double 6px;z-index:50;'>";
+                        innerHTML += "<tr>";
+                        innerHTML += "<td style='padding:10px;font-weight:bold;'>Page Loading!</td>";
+                        innerHTML += "</tr>";
+                        innerHTML += "<tr>";
+                        innerHTML += "<td><img src='Images/progress_bar.gif' alt = 'Loading Page'></td>";
+                        innerHTML += "</tr>";
+                        innerHTML += "</table>";
+                        oNewElement.innerHTML = innerHTML;
+                        document.body.appendChild(oNewElement);
+                        oNewElement.id = "loading1";
+                        positionWaitDialog(oNewElement);
+                        //document.body.setCapture();
+                    }
+                }
+            }
+        }
+        xmlHttp_Post(xmlHttp, url, GUID, arguments[3]);
+}
+
+function Judge()
+{
+       var url = "judgeSearch.aspx";
+       var string = "width=1500 ,height=800 toolbar=no,titlebar=yes,scrollbars=yes,menubar=no,resizable=no,dependent=no"
+       hwnd = window.open(url,"Judge",string) ;
+       if (navigator.appName == "Netscape") 
+       {
+          hwnd.focus()
+       }
+       
+}
+
+function viewFinancial(casenumber)
+{
+             
+       var url = "financial.aspx?casenumber="+casenumber;
+       var string = "width=800 ,height=800 toolbar=no,titlebar=yes,scrollbars=yes,menubar=no,resizable=no,dependent=no"
+       hwnd = window.open(url,"Financial",string) ;
+       
+}
+function qfile(obj) {
+
+    var testcase = obj.getAttribute('casenumber');
+    AjaxCall('49760DD8-3212-4ce2-8784-684754AB8634', '/pro/process.prov2?begindate=' + document.getElementById('qfbegindate').value + '&enddate=' + document.getElementById('qfenddate').value + '&typeselect=' + document.getElementById('qftypeselect').value + '&ascending=' + document.getElementById('qfascending').checked, 'divPageHTMLContent', testcase);
+
+}
+
+
+function launch(myCase, myDocument, name, winwidth, winheight) {
+    var qstring = "casenum="+myCase+"&itemnum="+myDocument+"&itype=qfile";
+    var url = "imgframe.aspx?" + qstring;
+    var string = "width=" + winwidth + ",height=" + winheight + "toolbar=no,directories=no,menubar=no,resizable=yes,dependent=yes"
+    hwnd = window.open(url,name,string) ;
+    if (navigator.appName == "Netscape") 
+          {
+             hwnd.focus()
+          }
+
+}
+
+        
+        function show_cal(el) {
+
+	        if (cal_obj2) return;
+
+        if(document.getElementById("edit1"))
+        {        
+            var text_field = document.getElementById("edit1");
+        }
+        
+
+	        cal_obj2 = new RichCalendar();
+	        cal_obj2.start_week_day = 0;
+	        cal_obj2.show_time = false;
+	        cal_obj2.language = 'en';
+	        cal_obj2.user_onchange_handler = cal2_on_change;
+	        cal_obj2.user_onclose_handler = cal2_on_close;
+	        cal_obj2.user_onautoclose_handler = cal2_on_autoclose;
+
+	        cal_obj2.parse_date(text_field.value, format);
+
+	        cal_obj2.show_at_element(text_field, "adj_right-");
+	        //cal_obj2.change_skin('alt');
+
+        }
+
+        // user defined onchange handler
+        function cal2_on_change(cal, object_code) {
+	        if (object_code == 'day') {
+	            if(document.getElementById("edit1"))
+	            {
+		            document.getElementById("edit1").value = cal.get_formatted_date(format);
+		        }
+		       
+		        cal.hide();
+		        cal_obj2 = null;
+	        }
+        }
+
+        // user defined onclose handler (used in pop-up mode - when auto_close is true)
+        function cal2_on_close(cal) {
+	        if (window.confirm('Are you sure to close the calendar?')) {
+		        cal.hide();
+		        cal_obj2 = null;
+	        }
+        }
+
+        // user defined onautoclose handler
+        function cal2_on_autoclose(cal) {
+	        cal_obj3 = null;
+        }
+        
+        
+        function show_cal2(el) {
+
+	        if (cal_obj3) return;
+
+        if(document.getElementById("fileDateFileDate"))
+        {        
+            var text_field = document.getElementById("fileDateFileDate");
+        }
+        
+
+	        cal_obj3 = new RichCalendar();
+	        cal_obj3.start_week_day = 0;
+	        cal_obj3.show_time = false;
+	        cal_obj3.language = 'en';
+	        cal_obj3.user_onchange_handler = cal3_on_change;
+	        cal_obj3.user_onclose_handler = cal3_on_close;
+	        cal_obj3.user_onautoclose_handler = cal3_on_autoclose;
+
+	        cal_obj3.parse_date(text_field.value, format);
+
+	        cal_obj3.show_at_element(text_field, "adj_left-");
+	        //cal_obj3.change_skin('alt');
+
+        }
+
+        // user defined onchange handler
+        function cal3_on_change(cal, object_code) {
+	        if (object_code == 'day') {
+	            if(document.getElementById("fileDateFileDate"))
+	            {
+		            document.getElementById("fileDateFileDate").value = cal.get_formatted_date(format);
+		        }
+		       
+		        cal.hide();
+		        cal_obj3 = null;
+	        }
+        }
+
+        // user defined onclose handler (used in pop-up mode - when auto_close is true)
+        function cal3_on_close(cal) {
+	        if (window.confirm('Are you sure to close the calendar?')) {
+		        cal.hide();
+		        cal_obj3 = null;
+	        }
+        }
+
+        // user defined onautoclose handler
+        function cal3_on_autoclose(cal) {
+	        cal_obj3 = null;
+        }
+        
+        function show_cal3(el) {
+
+	        if (cal_obj4) return;
+
+        if(document.getElementById("actionCodeBeginDate"))
+        {        
+            var text_field = document.getElementById("actionCodeBeginDate");
+        }
+        
+
+	        cal_obj4 = new RichCalendar();
+	        cal_obj4.start_week_day = 0;
+	        cal_obj4.show_time = false;
+	        cal_obj4.language = 'en';
+	        cal_obj4.user_onchange_handler = cal4_on_change;
+	        cal_obj4.user_onclose_handler = cal4_on_close;
+	        cal_obj4.user_onautoclose_handler = cal4_on_autoclose;
+
+	        cal_obj4.parse_date(text_field.value, format);
+
+	        cal_obj4.show_at_element(text_field, "adj_left-");
+	        //cal_obj4.change_skin('alt');
+
+        }
+
+        // user defined onchange handler
+        function cal4_on_change(cal, object_code) {
+	        if (object_code == 'day') {
+	            if(document.getElementById("actionCodeBeginDate"))
+	            {
+		            document.getElementById("actionCodeBeginDate").value = cal.get_formatted_date(format);
+		        }
+		       
+		        cal.hide();
+		        cal_obj4 = null;
+	        }
+        }
+
+        // user defined onclose handler (used in pop-up mode - when auto_close is true)
+        function cal4_on_close(cal) {
+	        if (window.confirm('Are you sure to close the calendar?')) {
+		        cal.hide();
+		        cal_obj4 = null;
+	        }
+        }
+
+        // user defined onautoclose handler
+        function cal4_on_autoclose(cal) {
+	        cal_obj4 = null;
+        }
+        
+        function show_cal4(el) {
+
+	        if (cal_obj5) return;
+
+        if(document.getElementById("actionCodeEndDate"))
+        {        
+            var text_field = document.getElementById("actionCodeEndDate");
+        }
+        
+
+	        cal_obj5 = new RichCalendar();
+	        cal_obj5.start_week_day = 0;
+	        cal_obj5.show_time = false;
+	        cal_obj5.language = 'en';
+	        cal_obj5.user_onchange_handler = cal5_on_change;
+	        cal_obj5.user_onclose_handler = cal5_on_close;
+	        cal_obj5.user_onautoclose_handler = cal5_on_autoclose;
+
+	        cal_obj5.parse_date(text_field.value, format);
+
+	        cal_obj5.show_at_element(text_field, "adj_left-");
+	        //cal_obj5.change_skin('alt');
+
+        }
+
+        // user defined onchange handler
+        function cal5_on_change(cal, object_code) {
+	        if (object_code == 'day') {
+	            if(document.getElementById("actionCodeEndDate"))
+	            {
+		            document.getElementById("actionCodeEndDate").value = cal.get_formatted_date(format);
+		        }
+		       
+		        cal.hide();
+		        cal_obj5 = null;
+	        }
+        }
+
+        // user defined onclose handler (used in pop-up mode - when auto_close is true)
+        function cal5_on_close(cal) {
+	        if (window.confirm('Are you sure to close the calendar?')) {
+		        cal.hide();
+		        cal_obj5 = null;
+	        }
+        }
+
+        // user defined onautoclose handler
+        function cal5_on_autoclose(cal) {
+	        cal_obj6 = null;
+        }
+        
+        
+        
+        
+        
+        
+        
+        function show_cal5(el) {
+
+	        if (cal_obj6) return;
+
+        if(document.getElementById("basicBeginDate"))
+        {        
+            var text_field = document.getElementById("basicBeginDate");
+        }
+        
+
+	        cal_obj6 = new RichCalendar();
+	        cal_obj6.start_week_day = 0;
+	        cal_obj6.show_time = false;
+	        cal_obj6.language = 'en';
+	        cal_obj6.user_onchange_handler = cal6_on_change;
+	        cal_obj6.user_onclose_handler = cal6_on_close;
+	        cal_obj6.user_onautoclose_handler = cal6_on_autoclose;
+
+	        cal_obj6.parse_date(text_field.value, format);
+
+	        cal_obj6.show_at_element(text_field, "adj_left-");
+	        //cal_obj6.change_skin('alt');
+
+        }
+
+        // user defined onchange handler
+        function cal6_on_change(cal, object_code) {
+	        if (object_code == 'day') {
+	            if(document.getElementById("basicBeginDate"))
+	            {
+		            document.getElementById("basicBeginDate").value = cal.get_formatted_date(format);
+		        }
+		       
+		        cal.hide();
+		        cal_obj6 = null;
+	        }
+        }
+
+        // user defined onclose handler (used in pop-up mode - when auto_close is true)
+        function cal6_on_close(cal) {
+	        if (window.confirm('Are you sure to close the calendar?')) {
+		        cal.hide();
+		        cal_obj6 = null;
+	        }
+        }
+
+        // user defined onautoclose handler
+        function cal6_on_autoclose(cal) {
+	        cal_obj6 = null;
+        }
+        
+        
+        
+        
+        
+        
+        
+        function show_cal6(el) {
+
+	        if (cal_obj7) return;
+
+        if(document.getElementById("basicEndDate"))
+        {        
+            var text_field = document.getElementById("basicEndDate");
+        }
+        
+
+	        cal_obj7 = new RichCalendar();
+	        cal_obj7.start_week_day = 0;
+	        cal_obj7.show_time = false;
+	        cal_obj7.language = 'en';
+	        cal_obj7.user_onchange_handler = cal7_on_change;
+	        cal_obj7.user_onclose_handler = cal7_on_close;
+	        cal_obj7.user_onautoclose_handler = cal7_on_autoclose;
+
+	        cal_obj7.parse_date(text_field.value, format);
+
+	        cal_obj7.show_at_element(text_field, "adj_left-");
+	        //cal_obj7.change_skin('alt');
+
+        }
+
+        // user defined onchange handler
+        function cal7_on_change(cal, object_code) {
+	        if (object_code == 'day') {
+	            if(document.getElementById("basicEndDate"))
+	            {
+		            document.getElementById("basicEndDate").value = cal.get_formatted_date(format);
+		        }
+		       
+		        cal.hide();
+		        cal_obj7 = null;
+	        }
+        }
+
+        // user defined onclose handler (used in pop-up mode - when auto_close is true)
+        function cal7_on_close(cal) {
+	        if (window.confirm('Are you sure to close the calendar?')) {
+		        cal.hide();
+		        cal_obj7 = null;
+	        }
+        }
+
+        // user defined onautoclose handler
+        function cal7_on_autoclose(cal) {
+	        cal_obj7 = null;
+        }
+    </script>
+
+    <script language="javascript" type="text/javascript" src="JS/rich_calendar.js"></script>
+
+    <script language="javascript" type="text/javascript" src="JS/rc_lang_en.js"></script>
+
+    <script language="javascript" type="text/javascript" src="JS/rc_lang_ru.js"></script>
+
+    <script language="javascript" type="text/javascript" src="JS/domready.js"></script>
+
+    <link href="CSS/splash.css" media="screen" rel="stylesheet" type="text/css" /><link href="CSS/mainprint.css" media="print" rel="stylesheet" type="text/css" /><link href="CSS/rich_calendar.css" media="screen" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+        var appInsights=window.appInsights||function(a){
+            function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+        }({
+            instrumentationKey: "f3aed3ab-4437-4d9c-ac4f-aafcca3f4e0e"
+        });
+   
+        window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+   </script>
+   
+</head>
+<body onload="javascript:init()" style="overflow:auto;" onresize="positionPage()">
+
+    <div id="divMainContainer">
+        <div id="divFileMenu">
+            <div id="divAppName">
+                Public Records Online [V2]</div>
+            <div id="divUserOptions">
+                Your IP Address <span id="ipAddress">199.249.230.70</span>| Welcome <span id="loggedInUser">Internet</span> User
+                </div>
+        </div>
+        <div id="divTabBar">
+            <div id="divCityName">
+            </div>
+            <div id="divTabContainer"><div id='tabs'><div class='selectedTab' onclick="ChangeTab('tabhome');AjaxCall('C6C7C61F-CDDD-48ef-A280-28E4F7194F71', '/pro/process.prov2', 'divPageHTMLContent')" id='tabhome'>Home</div><div class='nonSelectedTab' style='visibility:hidden;' onclick="GetHitListAgain()" id='tabhitlist'>Hit List</div><div class='nonSelectedTab' style='visibility:hidden;' onclick="GetCaseInformation(this.fish)"  id='tabcaseinformation'>Case Info.</div><div class='nonSelectedTab' style='visibility:hidden;' onclick="ChangeTab2('tabimageinformation');AjaxCall('E17E5725-4C3D-4cb2-B1FD-1C5F0B89F8E0','/pro/process.prov2', 'divImageContent', this.fish, document.getElementById('divAppPageContent').offsetWidth);" id='tabimageinformation'>Image Info</div><div class='nonSelectedTab' style='visibility:hidden;' onclick="ChangeTab('tabattorneyinformation');AjaxCall('60355679-56D8-4524-86D4-F17CD8C17118','/pro/process.prov2', 'divPageHTMLContent');" id='tabattorneyinformation'>Atty Search</div><div class='nonSelectedTab' style='visibility:hidden;' onclick="ChangeTab('tabattorneyhitlistinformation');AjaxCall('BFBCD208-5D5D-44c8-AF6D-EE8B0F06B085','/pro/process.prov2', 'divPageHTMLContent', 'undefined');" id='tabattorneyhitlistinformation'>Atty Case HitList</div></div></div>
+        </div>
+        <div id="divPageContent">
+            <div id="divVertMenu">
+		<div class='pagemarker'>Montgomery County</div>
+		<div class='pagemarker'>Clerk Of Courts</div>
+		<div class='pagemarker'>Mike Foley</div>
+		<!--<div class='pagemarker'>PROv2</div>-->
+		
+			<div id = "divSearch" onclick = "javascript:chooseQry('divSearchContent')">
+			<div class='verMenuHeading'>General Search<img id='divSearchContentImg' alt = 'collapse or expand' src='Images/8.png'/ alt="Search Menu Header"></div>
+			</div>
+			<div id='divSearchContent'>
+			
+						<div class='verMenuItem'>
+						<label for="basicCaseNumber">CASE NUMBER:</label>
+						<input id='basicCaseNumber' type='text' />
+						</div>
+					
+						<div class='verMenuItem'>
+						<label for="basicLastName">LAST NAME:</label>
+						<input id='basicLastName' type='text' />
+						</div>
+					
+						<div class='verMenuItem'>
+						<label for="basicFirstName">FIRST NAME:</label>
+						<input id='basicFirstName' type='text' />
+						</div>
+					
+						<div class='verMenuItem'>
+						<label for="basicCompanyName">COMPANY NAME:</label>
+						<input id='basicCompanyName' type='text' />
+						</div>
+					
+						<div class='verMenuItem'>
+						<label for="fileDateCaseType">CASE TYPE:</label>
+						<select style='width:150px;border:0px;font-size:.9em;' id='fileDateCaseType'>
+						<option value=''></option>
+				        <option value='AN'>ANNULMENT</option>
+                <option value='BR'>Board of Revision</option>
+				        <option value='CJ'>CERT OF JUDG.</option>
+				        <option value='CV'>CIVIL</option>
+				        <option value='GO'>CJ TO GO</option>
+                <option value='CVFE'>CONTRACT EASTERN DIVISION</option>
+                <option value='CVFW'>CONTRACT WESTERN DIVISION</option>
+				        <option value='CR'>CRIMINAL</option>
+                <option value='CRBE'>CRIMINAL MISDEMEANOR EASTERN DIVISION</option>
+                <option value='CRBW'>CRIMINAL MISDEMEANOR WESTERN DIVISION</option>
+				        <option value='CA'>CRT OF APPEALS</option>
+				        <option value='DM'>DISSOLUTION OF MARR.</option>
+				        <option value='DR'>DOMESTIC REL.</option>
+				        <option value='EX'>EXECUTION</option>
+                <option value='CVGE'>FED EASTERN DIVISION</option>
+                <option value='CVGW'>FED WESTERN DIVISION</option>
+                <option value='CRAE'>FELONY EASTERN DIVISION</option>
+                <option value='CRAW'>FELONY WESTERN DIVISION</option>
+				        <option value='LS'>LEGAL SEPARATION</option>
+				        <option value='LP'>LIS PENDENS</option>
+				        <option value='NO'>NOTARY</option>
+				        <option value='OWO'>OUT OF ST WITHOLD. ORD.</option>
+                <option value='TRCE'>O.V.I. EASTERN DIVISION</option>
+                <option value='TRCW'>O.V.I. WESTERN DIVISION</option>
+                <option value='CVHE'>OTHER CIVIL EASTERN DIVISION</option>
+                <option value='CVHW'>OTHER CIVIL WESTERN DIVISION</option>
+                <option value='TRPE'>PARKING VIOLATION EASTERN DIVISION</option>
+                <option value='TRPW'>PARKING VIOLATION WESTERN DIVISION</option>
+                <option value='CVEE'>PROPERTY INJURY AND DAMAGE EASTERN</option>
+                <option value='CVEW'>PROPERTY INJURY AND DAMAGE WESTERN</option>
+				        <option value='OS'>REG. OF FOREIGN JUDG.</option>
+				        <option value='FSO'>REG. OF FOREIGN SUP ORD.</option>
+                <option value='CVRE'>RENT ESCROW EASTERN DIVISION</option>
+                <option value='CVRW'>RENT ESCROW WESTERN DIVISION</option>
+                <option value='CVIE'>SMALL CLAIMS EASTERN DIVISION</option>
+                <option value='CVIW'>SMALL CLAIMS WESTERN DIVISION</option>
+				        <option value='SCJ'>ST CERT OF JUDGMENT</option>
+                <option value='TRDE'>TRAFFIC EASTERN DIVISION</option>
+                <option value='TRDW'>TRAFFIC WESTERN DIVISION</option>
+				        <option value='UJ'>UCCJA FILINGS</option>
+                <option value='WEDE'>WEDDING EASTERN DIVISION</option>
+                <option value='WEDW'>WEDDING WESTERN DIVISION</option>
+						</select>
+						</div>
+					
+						<div class='verMenuItem'>
+						<label for="actionCodeActionType">ACTION TYPE:</label>
+						<select style='width:150px;border:0px;font-size:.9em;' id='actionCodeActionType'>
+			            <option value=''></option>
+			            <option value='AA'>ADMINISTRATIVE APPEAL</option>
+			            <option value='A'>APPROPRIATION</option>
+			            <option value='CVAO'>CIVIL ALL OTHERS-STATE TYPE</option>
+			            <option value='DJ'>DECLATORY JUDGMENT</option>
+			            <option value='DMC'>DIS. WITH CHILDREN</option>
+			            <option value='DM'>DIS. WITHOUT CHILDREN</option>
+			            <option value='DRC'>DIV. WITH CHILDREN</option>
+			            <option value='DR'>DIV. WITHOUT CHILDREN</option>
+			            <option value='FE'>FORCIBLE ENTRY</option>
+			            <option value='HC'>HABEAS CORPUS</option>
+			            <option value='I'>INJUNCTION</option>
+			            <option value='MM'>MEDICAL MALPRACTICE</option>
+			            <option value='MF'>MORTGAGE FORECLOSURE</option>
+			            <option value='OT'>OTHER TORTS</option>
+			            <option value='PI'>PERSONAL INJURY</option>
+			            <option value='PISB80'>PERSONAL INJURY PRE SB80</option>
+			            <option value='PL'>PRODUCT LIABILITY</option>
+			            <option value='PT'>PROFESSIONAL TORT</option>
+			            <option value='SCJ'>STATE OF OHIO CJ</option>
+			            <option value='WC'>WORKER'S COMPENSATION</option>
+						</select>
+						</div>
+					
+						<div class='verMenuItem'>
+						<label for="basicBeginDate">BEGIN DATE:</label>
+						<input id='basicBeginDate' onclick='javascript:show_cal5(this);' type='text' />
+						</div>
+					
+						<div class='verMenuItem'>
+						<label for="basicEndDate">END DATE:</label>
+						<input id='basicEndDate' onclick='javascript:show_cal6(this);' type='text' />
+						</div>
+          
+					<DIV class='verMenuItem2'>
+					<div><label for="capText">COMPLETE:</label></div>
+					<DIV class='verMenucap'>
+					<IMG id='capImg' alt ='captcha' style='WIDTH: 65px; HEIGHT: 30px;margin-top: 2px;margin-left: 6px;' src='process.prov2?image=new' />
+					</DIV>
+					<DIV class='verMenucap2'>
+					<INPUT id='capText' style='WIDTH: 50px; HEIGHT: 28px; margin-left: 1px' value='' />
+					</DIV>
+					</DIV>
+					
+			<div class='verMenuItem' style='text-align:middle;height=0px'><input type='hidden' value='YES5447514847504850483255585254585150328077' id='allow5347505547504850483255585254585150328077' />
+        	<div class='divSrchText' onclick="javascript:BuildQryXML('basic')">SEARCH</div><div class='divSrchImg'><input type='image' alt='Search' id='imgSrch' onclick="javascript:BuildQryXML('basic')" src='Images/76.png' /></div>
+        	</div>
+        	<div class='verMenuItem' style='text-align:middle;'>
+       	    <div class='divSrchText' onclick="javascript:ClearFilterCritera('basic')">CLEAR FILTER CRITERA</div><div class='divSrchImg'><input type='image' alt='Clear Search' id='imgSrch' onclick="javascript:ClearFilterCritera('basic')" src='Images/12.png' /></div>
+        	</div>
+       		</div>
+			
+			<div id='divAttorneySearch' onclick="javascript:chooseQry('divAttorneySearchContent')">
+			<div class='verMenuHeading'>Attorney Search<img id='divAttorneySearchContentImg' alt = 'collapse or expand' src='Images/7.png'/></div>
+			</div>
+			<div id='divAttorneySearchContent' style='display:none;'>
+			
+						<div class='verMenuItem'>
+						<label for="attorneyLastName">LAST NAME:</label>
+						<input id='attorneyLastName' type='text' />
+						</div>
+					
+						<div class='verMenuItem'>
+						<label for="attorneyFirstName">FIRST NAME:</label>
+						<input id='attorneyFirstName' type='text' />
+						</div>
+					
+					 <div class='verMenuItem'>
+       				 <div class='divSrchText' onclick="javascript:GetInitialAttorneyInformation()">SEARCH</div><div class='divSrchImg'><input type='image' alt = 'search' id='imgSrch' onclick="javascript:GetInitialAttorneyInformation()" src='Images/76.png' /></div>
+       				 </div>
+       				 <div class='verMenuItem' style='text-align:middle;'>
+       				 <div class='divSrchText' onclick="javascript:ClearFilterCritera('attorney')">CLEAR FILTER CRITERA</div><div class='divSrchImg'><input type='image' alt='clear filter critera' id='imgSrch' onclick="javascript:ClearFilterCritera('attorney')" src='Images/12.png' /></div>
+       				 </div>
+               </div>
+				
+		
+	</div>
+            <div id="divFunctionContent">
+                <div id="divToolBar">
+                </div>
+                <div id="divAppPageContent">
+                    <div id="divPageHTMLContent" style="margin-left:10px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
